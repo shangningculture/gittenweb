@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="page-release-hash" value="c5622a9d-4224-430e-892f-734c2f840c25">
+    <title></title>
+
+    <link href="index_files/swiper.css" tppabs="http://ah.bestyizhe.cn/css/swiper.css" type="text/css" rel="stylesheet">
+    <link href="index_files/css.css" tppabs="http://ah.bestyizhe.cn/css/css.css" type="text/css" rel="stylesheet">
+    <link href="index_files/index.css" tppabs="http://ah.bestyizhe.cn/css/index.css" type="text/css" rel="stylesheet">
+    <script src="index_files/jquery-1.11.0.min.js"></script>
+    <script src="https://b.yougou520.cn/api/count/tj_stat.html?id=2407&web_id=2407&code=1228c80753dacebf7b8f9ba5a0599cec" language="JavaScript"></script>
+    <script src="index_files/main.js"></script>
+
+
+    <style>
+        .botto {
+            width: 100%;
+            background: #be0000;
+            color: #FFF;
+            font-size: 20px;
+            line-height: 3rem;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            max-width: 780px;
+            letter-spacing: 1px;
+        }
+
+        .pinglun {
+            width: 90%;
+            overflow: hidden;
+            margin: 20px auto;
+            border-left: solid 1px #cfcfcf;
+            border-right: solid 1px #cfcfcf;
+            border-bottom: solid 1px #cfcfcf;
+        }
+
+        .weixinpic {
+            margin: 0 auto;
+            max-width: 300px;
+        }
+
+        .zan {
+            background: #eee;
+            color: #999;
+            font-size: 17px;
+            line-height: 3rem;
+            padding: 0 .5rem;
+            border-top: 1px solid #cfcfcf;
+            border-bottom: 1px solid #cfcfcf;
+            padding-left: 15px;
+            letter-spacing: 0.5px;
+        }
+
+        .pinglun li {
+            border-bottom: 1px solid #cfcfcf;
+            padding: 1rem 0 1rem 1rem;
+            overflow: hidden;
+            margin-right: 20px;
+        }
+
+        .pinglun dl {
+            width: 100%;
+            overflow: hidden;
+            margin-bottom: .5rem
+        }
+
+        .pinglun dt {
+            float: left;
+            width: 50px;
+        }
+
+        .pinglun dd {
+            margin-left: 60px;
+            font-size: 18px;
+        }
+
+        .pinglun dd img {
+            width: 50px;
+            height: 50px;
+            display: inline-block;
+            margin: 0 .2rem;
+        }
+
+        .pinglun dd p {
+            color: #999;
+            margin-top: 1%
+        }
+
+        .pinglun .pl {
+            margin-left: 60px;
+            font-size: 0.8rem;
+            line-height: 2.5rem;
+            padding: .1rem 0 .5rem;
+            text-indent: 0px;
+        }
+
+        .pinglun .hf {
+            margin-left: 60px;
+            font-size: 1.0rem;
+            line-height: 2rem;
+            padding: .5rem 0 0;
+            border-top: 1px solid #cfcfcf
+        }
+
+        .pinglun .hf span {
+            color: #1c61df
+        }
+
+        body {
+            text-align: center;
+            font-family: 微软雅黑;
+            background: #fff;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+            margin: 0 auto;
+            margin-top: -10px;
+        }
+
+        .kuang {
+            margin: 0 auto;
+            background-color: #fff;
+            max-width: 780px;
+            text-align: left;
+            border-left: solid 1PX #e8e8e8;
+            border-right: solid 1PX #e8e8e8;
+        }
+
+        .con {
+            margin: 5px;
+        }
+
+        .con h2 {
+            margin: 0;
+            background: #df4444;
+            color: #FFFFFF;
+            text-indent: 5px;
+            line-height: 42px;
+        }
+
+        .con h3 {
+            margin: 0;
+            background: #df4444;
+            color: #FFFFFF;
+            text-indent: 5px;
+        }
+
+        .con p {
+            max-width: 680px;
+            color: #480e00;
+            margin: 15px auto;
+            text-indent: 1em;
+        }
+
+        .con p span {
+            color: #480e00;
+        }
+
+        .top li {
+            float: left;
+        }
+
+        .clear {
+            height: 20px;
+        }
+
+        h1 {
+            font-size: 36px;
+            color: #fff;
+        }
+
+        .jij {
+            font-size: 18px;
+            color: #480e00;
+            ;
+            line-height: 30px;
+        }
+
+        .nin {
+            font-size: 19px;
+            line-height: 35px;
+        }
+
+        .twe {
+            font-size: 23px;
+            line-height: 40px;
+        }
+
+        .fiv {
+            font-size: 25px;
+            line-height: 40px;
+        }
+
+        .sev {
+            font-size: 27px;
+            line-height: 45px;
+        }
+
+        .jijz {
+            font-size: 20px;
+            line-height: 35px;
+        }
+
+        .jijs {
+            font-size: 30px;
+            line-height: 50px;
+        }
+
+        .jija {
+            font-size: 26px;
+            line-height: 52px;
+        }
+
+        p {
+            width: 96%
+        }
+
+        .mey {
+            font-size: 36px;
+        }
+
+        @media (max-width:768px) {
+            .titleH1 {
+                font-size: 28px;
+                line-height: 40px;
+                color: #fff;
+            }
+            .jij {
+                font-size: 18px;
+                line-height: 30px;
+            }
+            .nin {
+                font-size: 18px;
+                line-height: 26px;
+            }
+            .twe {
+                font-size: 19px;
+                line-height: 26px;
+            }
+            .fiv {
+                font-size: 22px;
+                line-height: 28px;
+            }
+            .sev {
+                font-size: 19px;
+                line-height: 26px;
+            }
+            .jijz {
+                font-size: 16px;
+                line-height: 24px;
+            }
+            .jijs {
+                font-size: 20px;
+                line-height: 34px;
+            }
+            .jija {
+                font-size: 18px;
+                line-height: 30px;
+            }
+            .pc {
+                display: none;
+            }
+            .mey {
+                font-size: 26px;
+            }
+        }
+
+        @media (min-width:768px) {
+            .phoneList {
+                display: none;
+            }
+            .pcnone {
+                display: none;
+            }
+        }
+
+        .weChat {
+            color: #480e00;
+            background-color: rgb(255, 247, 41);
+            padding: 0.1rem;
+        }
+
+        .touch {
+            position: fixed;
+            z-index: 999;
+            width: 100%;
+            top: 65%;
+        }
+
+        #touch {
+            float: right;
+            width: 70px;
+            padding-right: 4px;
+        }
+
+        .top_tip {
+            margin: 0px auto;
+            position: fixed;
+            left: 0px;
+            width: 100%;
+            bottom: 0px;
+            background: rgb(243, 242, 242) none repeat scroll 0% 0%;
+            border: 1px solid rgb(204, 204, 204);
+            z-index: 99999;
+        }
+
+        .to_pc {
+            float: left;
+        }
+
+        .jij {
+            font-size: 20px;
+            line-height: 36px;
+        }
+
+        .navigation {
+
+            max-width: 800px;
+            margin: 0 auto;
+            background: #f5f5f5;
+            font-size: 14px;
+            max-height: 150px;
+            height: 100%;
+        }
+
+        .navigation .company {
+            line-height: 30px;
+            text-align: center;
+        }
+
+        .navigation nav {
+            background: #06F;
+            height: 30px;
+            line-height: 30px;
+            color: #fff;
+            margin-bottom: 5px;
+        }
+
+        .navigation nav ul {
+            overflow: hidden;
+        }
+
+        .navigation nav li {
+            float: left;
+            width: 25%;
+            text-align: center;
+            list-style: none;
+        }
+
+        .navigation nav a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .navigation .pic {
+            text-align: center;
+            background: #fff;
+            width: 100%;
+        }
+    </style>
+
+    <!--wx-->
+
+
+</head>
+
+<body style="">
+
+
+    <div class="kuang">
+
+
+
+
+
+
+        <div align="center">
+            <img src="index_files/TB2_R_giAKWBuNjy1zjXXcOypXa_2688026425.png" alt="" style="width:100%;" id="pic" height="160" align="middle">
+        </div>
+    </div>
+
+
+    <div class="kuang" style="box-sizing: border-box; margin: 0px auto; max-width: 780px; border-left: 1px solid #e8e8e8; border-right: 1px solid #e8e8e8; color: #333333; font-family:微软雅黑; font-size: 14px;">
+        <div class="con" style="box-sizing: border-box; margin: 5px;">
+            <div style="box-sizing: border-box;">
+
+
+                <div class="row tn-board-head" style="">
+                    <p class="ng-binding" style="text-indent:0em;font-size: 25px;line-height:34px;font-weight: 500;margin:10px 0 10px 0;">30-45岁女人：月经量少、闭经、老得快，还有妇科病！教你这样调，可快速改善！</p>
+                    <div class="tn-head-info" style="font-size: 14px;padding:4px 0 4px 0;">
+                        <span style="padding:4px 6px 4px 0px;font-size:15px;">
+                            <span style="color:#607fa6;padding-left:1px;">健康调理</span>
+                        </span>
+
+                    </div>
+                </div>
+
+                <p class="jij" style="box-sizing: border-box; margin: 10px auto; width: 100%; font-size: 18px; line-height: 30px; max-width: 680px; color: #480e00; text-indent: 1em;">女人每月一次月经，一次5-7天，一年有60天以上都是月经陪着度过，可以说，月经是女人健康的晴雨表。如果有一天月经不来了，那就意味着你的卵巢和美丽正在逐渐衰退，气虚血亏。卵巢一旦早衰，女人就会提前变老，
+                    <span style="color: rgb(239, 0, 0);">"月经决定女人衰老速度"</span>
+                </p>
+
+
+                <!-- <p class="jij" style="margin: 20px 10px 0px 10px"> -->
+                <!-- <img src="picture/1.jpg" class="width_img"> -->
+                <!-- </p> -->
+                <!-- <p style="margin:0px 0 0 0;">珍红颗粒研发人、知名药学专家曲寿河</p> -->
+                <p class="jij" style="box-sizing: border-box; margin: 10px auto; width: 100%; font-size: 18px; line-height: 30px; max-width: 680px; color: #480e00; text-indent: 1em;">女人闭经、停经、绝经、月经不调、月经量少推迟、肤色暗黄、色斑黄褐斑老年斑、潮热盗汗、心慌心悸、失眠多梦……
+                    <span style="color: #480e00; box-sizing: border-box; ">其实都是气血不足、卵巢衰老的外在表现！</span>
+                </p>
+
+                <p class="jij" style="box-sizing: border-box; margin: 10px auto; width: 100%; font-size: 18px; line-height: 30px;  max-width: 680px; color: #480e00;text-indent: 1em;">很多女性朋友不懂如何益气养血、保养卵巢、调理月经。吃了各种各样的补品，基本没啥效果，凭白花了好多冤枉钱！</p>
+
+                <!--��һ��΢�ź�-->
+                <p class="jij" style="box-sizing: border-box; margin: 10px auto; width: 100%; font-size: 18px; line-height: 30px; max-width: 680px; color: #480e00; text-indent: 1em;">
+                    女人如花，需要呵护。月经不调一定要重视，千万别等到停经了、闭经了再开始后悔！</p>
+
+
+
+
+
+                <div style="border: 2px dashed red;text-align: center;line-height: 25px;padding: 5px 0px; margin-bottom:50px;">
+                    <span style="font-size:18px; padding:2px 10px; display:block">加宝芝林医药老师微信咨询</span>
+                    <span style="color: red; font-weight: bold; font-size: 20px;"> 长按识别下方二维码 </span>
+                    <img src="" class="weixinpic" alt="">
+
+                    <span style="text-align:center;  display:block">
+                        <span class="wxhspan" style="padding:5px; font-size:30px;border-radius:10px; color: #FF0000; display:block; margin:auto; text-align:center; width:70%">&nbsp;
+                            <script>
+                                document.write(stxlwx);
+                            </script>&nbsp;</span>
+                    </span>
+
+                    <span style="text-align:center; font-size:15px; display:block; margin-bottom:10px;">
+                        ↑长按微信号可复制↑</span>
+
+
+                </div>
+
+
+
+
+
+
+
+
+                <img style="box-sizing: border-box; vertical-align: middle; max-width: 100%; display: block; margin-left: auto; margin-right: auto;"
+                    src="index_files/1.jpg">
+
+
+
+
+
+                <p class="jij" style="box-sizing: border-box; margin: 10px auto; width: 100%; font-size: 18px; line-height: 30px; max-width: 680px; color: #480e00; text-indent: 1em;">
+                    <span style="box-sizing: border-box; font-weight: bold;">月经能排出毒素，滋润容颜！</span>可很多女性却因闭经、绝经，提前衰老，皮肤发暗、长斑、皱纹增多，失眠多梦、潮热盗汗、月经紊乱、胸部松驰、腰部赘肉、性生活质量下降，还难怀孕甚至易流产！
+                    <span style="box-sizing: border-box;font-weight:600; ">这都是气血亏虚、卵巢早衰导致的！</span>
+                </p>
+
+                <p class="jij" style="box-sizing: border-box; margin: 10px auto; width: 100%; font-size: 18px; line-height: 30px;  max-width: 680px; color: #480e00; text-indent: 1em;">
+                    女性35岁后开始气血不足、卵巢衰退，容颜日渐衰老。然而，大部分女性调理方法不科学，"头痛医头，脚痛医脚"。月经不来，就服用黄体酮；脸有斑了，就用 各样祛斑霜；皱纹增多，就美容除皱；乳房松驰，只知道丰胸；胖了，就吃减肥葯……殊不知，这些都治标不治本，这些症状都是卵巢早衰前兆，以下是常见的调理
+                    误区——
+                </p>
+
+
+                <p class="jij" style="box-sizing: border-box; margin: 10px auto; width: 100%; font-size: 18px; line-height: 30px;  max-width: 680px; color: #480e00; text-indent: 1em;">
+                    <span style="box-sizing: border-box; color: #be0000; font-weight: bold;">误区1、吃克龄蒙、黄体酮：</span>破坏人体细胞，长期服用还会对胃、肾等脏器都有一定损害。时间久了极易产生依赖性，甚至还会加速卵巢早衰引起子宫肿块、骨质疏松。
+                </p>
+                <p class="jij" style="box-sizing: border-box; margin: 10px auto; width: 100%; font-size: 18px; line-height: 30px;  max-width: 680px; color: #480e00; text-indent: 1em;">
+                    <span style="box-sizing: border-box; color: #be0000; font-weight: bold;">误区2、补充雌激素：</span>补充雌激素，虽然短期内看到了效果，却不能从根本上解决问题。体内的激素水平，依旧处于失衡状态，长此以往，还会因激素摄入过多造成肥胖的问题，并且会抑制自身的正常激素分泌，导致卵巢机能退化和卵巢早衰，甚至有引发卵巢囊肿、子宫肌瘤、乳腺增生等病症。</p>
+                <p class="jij" style="box-sizing: border-box; margin:10px auto; width: 100%; font-size: 18px; line-height: 30px;  max-width: 680px; color: #480e00; text-indent: 1em;">
+                    <span style="box-sizing: border-box; color: #be0000; font-weight: bold;">误区3、吃人参、阿胶就能补气补血：</span>民间一直都认为人参、阿胶有很强大的补气补血功效，其实不然。对于气血亏空的人来说，身体虚弱，无法全面吸收其中的营养，导致虚不受补。而且血液匮乏跟不上气的运行，反而让人更加虚弱！</p>
+
+
+                <p class="jij" style="box-sizing: border-box; margin: 10px auto; width: 100%; font-size: 18px; line-height: 30px;  max-width: 680px; color: #480e00; text-indent: 1em;">月经量少、闭经、停经等都是卵巢早衰引起的。月经是女性健康的晴雨表，可总有些人不当回事，甚至年纪不大就直接闭经了，让30多岁的人看上去像50岁！
+                    <span style="box-sizing: border-box; font-weight: bold;">女性朋友一定要注意！如果月经出现问题，一定要尽早调理，否则不仅影响下半生的幸福，更会导致一系列妇科疾病！</span>
+                </p>
+
+
+                <div style="border: 2px dashed red;text-align: center;line-height: 25px;padding: 5px 0px; margin-bottom:50px;">
+                    <span style="font-size:18px; padding:2px 10px; display:block">加宝芝林医药老师微信咨询</span>
+
+                    <span style="color: red; font-weight: bold; font-size: 20px;"> 长按识别下方二维码 </span>
+                    <img src="" class="weixinpic" alt="">
+                    <span style="text-align:center;  display:block">
+                        <span class="wxhspan" style="padding:5px; font-size:30px;border-radius:10px; color: #FF0000; display:block; margin:auto; text-align:center; width:70%">&nbsp;
+                            <script>
+                                document.write(stxlwx);
+                            </script>&nbsp;</span>
+                    </span>
+
+                    <span style="text-align:center; font-size:15px; display:block; margin-bottom:10px;">
+                        ↑长按微信号可复制↑</span>
+
+
+
+                </div>
+
+
+
+                <img style="box-sizing: border-box; vertical-align: middle; max-width: 100%; display: block; margin-left: auto; margin-right: auto;"
+                    src="index_files/TB2RjWmeN1YBuNjy1zcXXbNcXXa_2688026425.jpg">
+
+
+                <p class="jij" style="box-sizing: border-box; margin: 10px auto; width: 100%; font-size: 18px; line-height: 30px;  max-width: 680px; color: #480e00; text-indent: 1em;">很多月经问题，都是气血两虚引起卵巢早衰，大家可以自查看看。要是符合其中一项，说明身体在向你拉警报，该养卵巢、补气血了！</p>
+
+
+                <p class="jij" style="box-sizing: border-box; margin: 10px auto; width: 100%; font-size: 18px; line-height: 30px;  max-width: 680px; color: #480e00; text-indent: 1em;">
+                    <span style="box-sizing: border-box; color: #ffffff; font-weight: bold; background-color: #b30000; padding: 3px 15px; border-radius: 8px;">1、闭经、停经、更年期并发症</span>
+                </p>
+                <p class="jij" style="box-sizing: border-box; margin: -10px auto 20px; width: 100%; font-size: 18px; line-height: 30px;  max-width: 680px; color: #480e00; text-indent: 1em;">一般女性绝经年龄是
+                    <b>55岁</b>左右，气血严重匮乏、卵巢功能下降，会导致难以维持每月一次的月经来潮，甚至不到40岁就提前闭经了。这不仅让衰老加速，更会提前步入更年期。
+                </p>
+
+                <p class="jij" style="box-sizing: border-box; margin: 10px auto; width: 100%; font-size: 18px; line-height: 30px;  max-width: 680px; color: #480e00; text-indent: 1em;">
+                    <span style="box-sizing: border-box; color: #ffffff; font-weight: bold; background-color: #b30000; padding: 3px 15px; border-radius: 8px;">2、月经推后</span>
+                </p>
+                <p class="jij" style="box-sizing: border-box; margin: -10px auto 20px; width: 100%; font-size: 18px; line-height: 30px;  max-width: 680px; color: #480e00; text-indent: 1em;">月经推迟7天以上，甚至40～50天才来一次，并连续出现两个月经周期以上，说明身体的气血匮乏，卵巢功能下降，月经周期自然推迟。</p>
+
+                <p class="jij" style="box-sizing: border-box; margin: 10px auto; width: 100%; font-size: 18px; line-height: 30px;  max-width: 680px; color: #480e00; text-indent: 1em;">
+                    <span style="box-sizing: border-box; color: #ffffff; font-weight: bold; background-color: #b30000; padding: 3px 15px; border-radius: 8px;">3、月经异常</span>
+                </p>
+
+                <p class="jij" style="box-sizing: border-box; margin: 10px auto; width: 100%; font-size: 18px; line-height: 30px;  max-width: 680px; text-indent: 1em;">
+                    <span style="box-sizing: border-box; font-weight: bold; padding: 3px 15px; border-radius: 8px;">（1）、经量大、提前、经期长</span>
+                </p>
+
+                <p class="jij" style="box-sizing: border-box; margin: -10px auto 20px; width: 100%; font-size: 18px; line-height: 30px;  max-width: 680px; color: #480e00; text-indent: 1em;">月经总是提前，经期相对较长，流起来止不住！导致身体虚弱，抵抗力差，经常容易感冒发烧、脸色差、这是气太虚，固摄不住血液导致的。</p>
+
+                <p class="jij" style="box-sizing: border-box; margin: 20px auto; width: 100%; font-size: 18px; line-height: 30px;  max-width: 680px;  text-indent: 1em;">
+                    <span style="box-sizing: border-box; font-weight: bold;padding: 3px 15px; border-radius: 8px;">（2）、 经血发黑、有血块</span>
+                </p>
+
+                <p class="jij" style="box-sizing: border-box; margin: -10px auto 20px; width: 100%; font-size: 18px; line-height: 30px;  max-width: 680px; color: #480e00; text-indent: 1em;">正常的经血颜色应该是鲜红的，没有血块说明气血充盈。若是气血不足，没法推动血液运行，血液活不起来停留久了，新鲜的血液就会变质发黑，甚至变成血块！</p>
+
+
+                <p class="jij" style="box-sizing: border-box; margin: 10px auto; width: 100%; font-size: 18px; line-height: 30px;  max-width: 680px;  text-indent: 1em;">
+                    <span style="box-sizing: border-box; font-weight: bold;  padding: 3px 15px; border-radius: 8px;">（3）、月经忽前忽后</span>
+                </p>
+
+                <p class="jij" style="box-sizing: border-box; margin: -10px auto 20px; width: 100%; font-size: 18px; line-height: 30px;  max-width: 680px; color: #480e00; text-indent: 1em;">月经不定期的来，有时候周期或短于21天，有时候就长于35天，卵巢长此以往得不到充足的气血供应，极易导致不孕不育，甚至怀上孩子可能会流产！</p>
+
+
+                <p class="jij" style="box-sizing: border-box; margin: 10px auto; width: 100%; font-size: 18px; line-height: 30px;  max-width: 680px; color: #480e00; text-indent: 1em;">
+                    <span style="box-sizing: border-box; color: #ffffff; font-weight: bold; background-color: #b30000; padding: 3px 15px; border-radius: 8px;">4、痛经、经量少</span>
+                </p>
+                <p class="jij" style="box-sizing: border-box; margin: -10px auto 20px; width: 100%; font-size: 18px; line-height: 30px;  max-width: 680px; color: #480e00; text-indent: 1em;">平时小腹疼痛，或月经期间小腹疼痛加重，每次月经，姨妈巾只用几片就够了，
+                    <b>经血少，颜色暗红或是发黑，甚至还有血块，都是气血不足无法滋养卵巢导致的</b>，说明子宫缺血少气，已经没法维持正常月经来潮！伴随
+                    <b>脸色差、冒冷汗、怕冷、乏力、手脚冰凉</b>等症状出现。
+                </p>
+
+                <!--������΢�ź�-->
+
+                <p class="jij" style="box-sizing: border-box; margin: 20px auto; width: 100%; font-size: 18px; line-height: 30px;  max-width: 680px; color: #480e00; text-indent: 1em;">
+                    <span style="box-sizing: border-box; ">所以说出现停经、闭经等月经问题，一定要及早重视调理，千万别等到卵巢彻底萎缩，才去调理！</span>
+                </p>
+
+                <div style="border: 2px dashed red;text-align: center;line-height: 25px;padding: 5px 0px; margin-bottom:50px;">
+                    <span style="font-size:18px; padding:2px 10px; display:block">加宝芝林医药老师微信咨询</span>
+                    <span style="color: red; font-weight: bold; font-size: 20px;"> 长按识别下方二维码 </span>
+                    <img src="" class="weixinpic" alt="">
+                    <span style="text-align:center;  display:block">
+                        <span class="wxhspan" style="padding:5px; font-size:30px;border-radius:10px; color: #FF0000; display:block; margin:auto; text-align:center; width:70%">&nbsp;
+                            <script>
+                                document.write(stxlwx);
+                            </script>&nbsp;</span>
+                    </span>
+
+                    <span style="text-align:center; font-size:15px; display:block; margin-bottom:10px;">
+                        ↑长按微信号可复制↑</span>
+
+
+                </div>
+
+
+
+            </div>
+        </div>
+
+        <p style="text-indent: 0em;text-align: center;">
+            <span style="font-size: 18px; text-align: justify; text-indent: 2em;">
+                <img alt="΢��ͼƬ_20171028093718.png" class="lazy" src="index_files/TB2bTzPkeuSBuNjSsziXXbq8pXa_2688026425.jpg" data-bd-imgshare-binded="1">
+            </span>
+        </p>
+        <p style="text-indent: 2em; margin-top: 15px; margin-bottom: 15px;">
+            <strong>
+                <span style="font-family: 微软雅黑; text-indent: 40px; font-size: 18px; color: #D82821;">说健康：气血问题各不相同，了解清楚各种病症的原因，才能对症滋补，从根源调理！</span>
+            </strong>
+            <span style="color: #480E00; font-family:微软雅黑; text-indent: 40px; font-size: 18px;">
+                <br>
+            </span>
+        </p>
+        <section class="_135editor" data-id="87829" style="border: 0px none; padding: 0px; box-sizing: border-box;">
+            <section class="layout" style="margin: 10px auto; padding: 0px; box-sizing: border-box;">
+                <section class="135brush" style="border-style: solid; -webkit-border-image: url(&quot;http://image3.135editor.com/cache/remote/aHR0cHM6Ly9tbWJpei5xbG9nby5jbi9tbWJpei96OTQzM3JBR1REZUdEUjBHMUtWR0N6RjRJSGNKdmliRjhtMUI0RGZCemJ0aWJaT1RIekQycE1DQ0VGZVl1VjJ5emFTYlBsQThtOWEwdnFzU01hS0RKU1lnLzA/d3hfZm10PXBuZw==&quot;) 35 fill repeat; border-width: 20px; padding: 10px; box-sizing: border-box;">
+                    <p style="margin-top: 15px; margin-bottom: 15px; text-align: justify; text-indent: 2em; line-height: 2em;">
+                        <span style="color: #480E00; font-family: 微软雅黑; text-indent: 40px; font-size: 18px;">"所谓不通则痛，气能推动血液运行全身，
+                            <strong>痛经说明血液不足，子宫内缺血少气没有营养，导致瘀血毒素排不净，堵在一起，瘀血出不去变成血块堵着，可不就引发疼痛了，</strong>&nbsp;得内调气血好好调理才行！"</span>
+                    </p>
+                    <p style="margin-top: 15px; margin-bottom: 15px; text-align: justify; text-indent: 2em; line-height: 2em;">
+                        <span style="color: #480E00; font-family: &quot;微软雅黑&quot;, 微软雅黑; text-indent: 40px; font-size: 18px;">"月经量少推迟，
+                            <strong>更是进一步说明了子宫内气血不够，</strong>子宫就像一个活水池，里面筹备充足的血液，才能保证子宫内膜脱落更新，要是气血不足，
+                            <strong>不仅让子宫内滞留的血液变质发黑，更没有充足血液推动旧的子宫内膜脱落，子宫都没有气血，经血还怎么流出？</strong>
+                        </span>
+                    </p>
+                    <p style="margin-top: 15px; margin-bottom: 15px; text-align: justify; text-indent: 2em; line-height: 2em;">
+                        <strong>
+                            <span style="color: #480E00; font-family: 微软雅黑; text-indent: 40px; font-size: 18px;">"气能推动血液运行，也能固摄血液不外流。
+                                <strong>月经量大提前、甚至是经期长，都是气虚的表现！经血不受控制的外流，不仅流失了子宫内的气血，也把养分带走了，</strong>这时候光补气不行，还要辅助补血"</span>
+                        </strong>
+                    </p>
+                    <p style="margin-top: 15px; margin-bottom: 15px; text-align: justify; text-indent: 2em; line-height: 2em;">
+                        <strong>
+                            <span style="color: #480E00; font-family: 微软雅黑; text-indent: 40px; font-size: 18px;">"
+                                <strong>月经忽前忽后的不定期，不仅是气血匮乏，更是子宫缺少滋养的表现，</strong>不仅导致很多女性要不上孩子，更加大了孕后流产的风险！而且长期气血失养，经期不稳定极易引发肾虚等症状，脾气暴躁，更会加速衰老！"</span>
+                        </strong>
+                    </p>
+                    <p style="margin-top: 15px; margin-bottom: 15px; text-align: justify; text-indent: 2em; line-height: 2em;">
+                        <strong>
+                            <span style="color: #480E00; font-family: 微软雅黑; text-indent: 40px; font-size: 18px;">"
+                                <strong>停经闭经绝经是严重的气血亏空，</strong>
+                                <strong>你想想，月经都不来了，说明子宫哪还有气血的滋养？</strong>毒素都没法排出，更别说滋养皮肤了，这时候不仅脸上皱纹横生，身体状况也会像老年人一样抵抗力低容易生病"</span>
+                        </strong>
+                    </p>
+                    <p style="margin-top: 15px; margin-bottom: 15px; text-align: justify; text-indent: 2em; line-height: 2em;">
+                        <strong>
+                            <span style="color: #480E00; font-family: 微软雅黑;text-indent: 40px; font-size: 18px;">"这都是标准的
+                                <strong>
+                                    <span style="font-family: 微软雅黑; text-indent: 40px; font-size: 18px; color: #D82821;">卵巢衰老！气血两虚不仅会绝经、闭经、痛经、月经量少推迟、经血发黑、有血块、月经忽前忽后、月经量大提前、经期长、经血淋漓不尽......严重的还会宫寒、不孕不育、引发一系列妇科疾病，甚至加速早衰，让更年期提前！</span>
+                                </strong>
+                            </span>
+                        </strong>
+                    </p>
+                </section>
+            </section>
+        </section>
+        <strong>
+
+
+            <div class="kuang" style="box-sizing: border-box; margin: 0px auto; max-width: 780px; border-left: 1px solid #e8e8e8; border-right: 1px solid #e8e8e8; color: #333333; font-family: 微软雅黑; font-size: 14px;">
+                <div class="con" style="box-sizing: border-box; margin: 5px;">
+
+                    <p class="jij" style="box-sizing: border-box; margin: 20px auto; width: 100%; font-size: 18px; line-height: 30px;  max-width: 680px; color: #480e00; text-indent: 1em;">"
+                        <span style="box-sizing: border-box; font-weight: bold;">别以为吃大枣就补了血，其实不讲究的乱补，效果还不如一只老母鸡！</span>你这样漫无目的乱吃乱补，不光不对症，吃进去的食物也没法吸收掉。效果没法把握不说，反而浪费时间，拖重病情，
+                        <span style="box-sizing: border-box; font-weight: bold;">让气血更加匮乏，加速早衰不说，还让更年期提前！</span>"</p>
+
+                    <p class="jij" style="box-sizing: border-box; margin: 10px auto; width: 100%; font-size: 18px; line-height: 30px;  max-width: 680px; color: #480e00; text-indent: 1em;">小结：想要养巢补血、调理月经、美容养颜，必须气血同调，养巢补气补血才是比较好的选择。</p>
+
+                    <p style="margin-top:-1px;text-align: center;">
+                        <img alt="1" class="lazy" src="index_files/TB2EPK8kgaTBuNjSszfXXXgfpXa_2688026425.jpg" data-bd-imgshare-binded="1">
+                    </p>
+
+
+                </div>
+            </div>
+            <div class="kuang" style="box-sizing: border-box; margin: 0px auto; max-width: 780px; border-left: 1px solid #e8e8e8; border-right: 1px solid #e8e8e8; color: #333333; font-family: 微软雅黑; font-size: 14px;">
+                <div class="con" style="box-sizing: border-box; margin: 5px;">
+
+
+
+                    <p class="jij" style="box-sizing: border-box; margin: 20px auto; width: 100%; font-size: 18px; line-height: 30px;  max-width: 680px; color: #480e00; text-indent: 1em;">对以下症状的调理，得到广大女性患者朋友积极的反馈与响应</p>
+
+                    <p class="jij" style="box-sizing: border-box; margin: 10px auto; width: 100%; font-size: 18px; line-height: 30px;  max-width: 680px; color: #480e00; text-indent: 1em;">
+
+                        <span style="box-sizing: border-box; color:#0099e3;font-weight: bold; margin-top: -12px; display: block;">
+                            月经不调十几年、痛经
+                            <br style="box-sizing: border-box;">
+                            <a style="box-sizing: border-box; background-color: transparent; text-indent: 1em; display: block;">经血发黑有血块、月经量少</a>
+                            <a style="box-sizing: border-box; background-color: transparent; text-indent: 1em; display: block;">绝经、闭经、卵巢早衰</a>
+                            <a style="box-sizing: border-box; background-color: transparent; text-indent: 1em; display: block;">月经忽前忽后、气虚、血虚</a>
+                            <a style="box-sizing: border-box; background-color: transparent; text-indent: 1em; display: block;">潮热盗汗、心慌心悸、视力下降、记忆力减退、乏力、失眠、易怒更年期提前......</a>
+                        </span>
+                    </p>
+
+                    <div style="border: 2px dashed red;text-align: center;line-height: 25px;padding: 5px 0px; margin-bottom:50px;">
+                        <span style="font-size:18px; padding:2px 10px; display:block">加宝芝林医药老师微信咨询</span>
+                        <span style="color: red; font-weight: bold; font-size: 20px;"> 长按识别下方二维码 </span>
+                        <img src="" class="weixinpic" alt="">
+
+                        <span style="text-align:center;  display:block">
+                            <span class="wxhspan" style="padding:5px; font-size:30px;border-radius:10px; color: #FF0000; display:block; margin:auto; text-align:center; width:70%">&nbsp;
+                                <script>
+                                    document.write(stxlwx);
+                                </script>&nbsp;</span>
+                        </span>
+
+                        <span style="text-align:center; font-size:15px; display:block; margin-bottom:10px;">
+                            ↑长按微信号可复制↑</span>
+
+                    </div>
+
+
+
+
+
+                    <img style="box-sizing: border-box; vertical-align: middle; max-width: 100%; display: block; margin: 0px auto;" src="index_files/o_1bbvp01vd1ftj1a2l4u4am79d79.jpg"
+                        tppabs="http://ah.bestyizhe.cn/picture/o_1bbvp01vd1ftj1a2l4u4am79d79.jpg" alt="">
+
+
+                </div>
+
+
+
+
+                <p class="jij" style="box-sizing: border-box; margin: 10px 0px 10px; width: 100%; font-size: 18px; line-height: 30px;  color: #333333; font-family: 微软雅黑; text-align:center; font-weight:bold">养巢养经对女性的作用可大着呢：</p>
+
+                <p class="jij" style="box-sizing: border-box; margin: 10px 0px 10px; width: 100%; font-size: 18px; line-height: 30px;  color: #333333; font-family: 微软雅黑; text-align: left;">
+                    <span style="box-sizing: border-box; background-color: #b30000; color: #ffffff; padding: 3px 3px 3px 6px;">1、&nbsp;补充气血，改善痛经！</span>
+                </p>
+
+                <p class="jij" style="box-sizing: border-box; margin: 0px 0px 10px; width: 100%; font-size: 18px; line-height: 30px;  color: #333333; font-family: 微软雅黑; text-align: left; text-indent:2em">痛经就由气血不足以引起卵巢功能下降，调理办法自然也要从补充气血入手，
+                    <span style="box-sizing: border-box;">珍珠、红参、灵芝、益母草等是补气养血的佳品，能从内补充亏空的气血，给子宫提供营养，打通瘀滞血液，加速血液流动，通则不痛！</span>
+                </p>
+
+                <p class="jij" style="box-sizing: border-box; margin: 10px 0px 10px; width: 100%x; font-size: 18px; line-height: 30px;  color: #333333; font-family: 微软雅黑; text-align: left;">
+                    <span style="box-sizing: border-box; background-color: #b30000; color: #ffffff; padding: 3px 3px 3px 6px;">2、&nbsp;滋养卵巢，调节经量远离闭经</span>
+                </p>
+
+                <p class="jij" style="box-sizing: border-box; margin: 0px 0px 10px; width: 100%; font-size: 18px; line-height: 30px;  color: #333333; font-family: 微软雅黑;text-align: left;text-indent:2em">月经量少说白了就是血虚，气血供应不上卵巢内没有营养，缺血少气的，哪里还能保证正常的月经量？
+                    <span style="box-sizing: border-box;">而气血双调补血养巢，着重身体内调，补充气血，没有血块，再也不担心是不是提前闭经了！</span>
+                </p>
+
+                <p class="jij" style="box-sizing: border-box; margin: 10px 0px 10px; width: 100%; font-size: 18px; line-height: 30px;  color: #333333; font-family: 微软雅黑; text-align: left;">
+                    <span style="box-sizing: border-box; background-color: #b30000; color: #ffffff; padding: 3px 3px 3px 6px;">3、&nbsp;稳定经期，赶走月经拖延症</span>
+                </p>
+
+                <p class="jij" style="box-sizing: border-box; margin: 0px 0px 10px; width: 100%; font-size: 18px; line-height: 30px;  color: #333333; font-family: 微软雅黑; text-align: left;text-indent:2em">现代人营养结构比较单一，特别是一些上班族，每天外卖夜宵没有营养，本来气血就不够用，一来月经更是耗气耗血，气血跟不上，子宫内膜都没法正常更新换代。通过补充气血，滋养卵巢，养分跟上了，经血颜色鲜红，月经准时到来！</p>
+
+                <p class="jij" style="box-sizing: border-box; margin: 0px 0px 10px; width: 100%; font-size: 18px; line-height: 30px;  color: #333333; font-family: 微软雅黑; text-align: left;">
+                    <span style="box-sizing: border-box; background-color: #b30000; color: #ffffff; padding: 3px 3px 3px 6px;">4、&nbsp;疏通月经，调节月经不调！</span>
+                </p>
+
+                <p class="jij" style="box-sizing: border-box; margin: 0px 0px 10px; width: 100%; font-size: 18px; line-height: 30px;  color: #333333; font-family: 微软雅黑; text-align: left; text-indent:2em">
+                    <span class="jij" style="box-sizing: border-box; line-height: 36px; margin-top: -15px;">珍珠、红参、</span>灵芝、熟地黄、益母草，
+                    <span style="box-sizing: border-box;">针对气血不调引发的
+                        <span style="box-sizing: border-box; font-weight: bold;">更年期、停经、闭经、绝经、月经不调、月经量少推迟</span>都有极大的改善效果</span>，血块减少甚至没有了，颜色也鲜红了。</p>
+
+                <p class="jij" style="box-sizing: border-box; margin: 0px 0px 10px; width: 100%; font-size: 18px; line-height: 30px;  color: #333333; font-family:微软雅黑; text-indent:2em; text-align:left">再华丽的语言也抵不过实实在在的效果，这可是比工作挣钱更令人骄傲的事！</p>
+                <div class="chatu" align="center">
+                    <p>
+                        <img src="index_files/__002.jpg">
+                        <font size="+2" face="微软雅黑" color="#FF0000">李艳萍，45岁，停经3年！整个人看起来特别显老！潮热盗汗，失眠多梦，心慌心悸，烦躁不安，脸色差，皱纹黑眼圈也出来了，天天吃补品，也不见效果！接孩子放学愣是被说成奶奶！自尊心很受挫！坚持服用气血散的配方调理后，月经正常了，没有那些更年期症状，人都跟着年轻了！</font>
+                    </p>
+                    <p>
+                        <img src="index_files/__003.jpg">
+                        <font size="+2" face="微软雅黑" color="#FF0000">刘梅，32岁的萌妹子，结婚4年，闭经1年，皮肤暗黄脸上长斑，也没能怀上孩子。坚持吃我的配方内调气血，温宫养巢，不到2个月月经就来，卵巢功能提升排卵正常，已经成功怀上宝宝！她高兴地不得了，还说等孩子出生认我当干爸呢~</font>
+                    </p>
+                    <p>
+                        <img src="index_files/_.jpg">
+                        <font size="+2" face="微软雅黑" color="#FF0000">25岁的李霞妹子，月经量大还提前，伴随痛经，而且一次月经要持续一周左右，经期就是一场噩梦，整个人特别虚弱，脸上长痘，还经常感冒。经血颜色发黑伴有血块。吃我的配方，把亏空的气血找回来，姨妈轻松来，人也美美的！</font>
+                    </p>
+                    <p>
+                        <img src="index_files/chatu13.png">
+                    </p>
+                </div>
+
+
+
+                <p class="jij" style="font-weight: bold; color:#3e3e3e;width: 95%;margin: auto;text-align: left">女性彻底闭经后，能否再次回经？</p>
+
+                <p class="jij" style="box-sizing: border-box; margin: 10px auto; width: 100%; font-size: 18px; line-height: 30px;  max-width: 680px; color: #480e00;border-bottom: 1px dotted #3e3e3e; padding-bottom: 1rem;text-indent: 1em;">
+                    <span style="color: rgb(239, 0, 0);font-weight: bold">说健康:</span>
+                    <span style="color:#3e3e3e ">闭经是卵巢早衰造成的。调节内分泌，平衡体内代谢，修复受损的卵巢组织，增强卵巢的生物活性，激活内部干瘪和老化细胞，维持身体六项激素的平衡状态，使生理周期恢复正常，是可以重新回经的，不要盲目跟风吃药，要对症调理。</span>
+                </p>
+
+
+                <p class="jij" style="font-weight: bold; color:#3e3e3e;width: 95%;margin: auto;text-align: left">什么样的人适合宝芝林医药老师健康调理方案？</p>
+                <p class="jij" style="border-bottom: 1px dotted #3e3e3e; padding-bottom: 1rem;box-sizing: border-box; margin: 10px auto; width: 100%; font-size: 18px; line-height: 30px;  max-width: 680px; color: #480e00; text-indent: 1em;">
+                    <span style="color: rgb(239, 0, 0);font-weight: bold">说健康:</span>
+                    <span style="color:#3e3e3e ">30-35 岁左右：出现色斑，痛经、松弛、粗糙、痤疮等现象；35-45岁之间：月经不调，乳房下垂、腰酸腿疼、性欲减退等女性性征明显衰退、减弱者以及出现更年期 症状的女性；45-55岁之间：出现失眠、多梦、盗汗、潮热、烦躁易怒、精力体力下降，记忆力减退、骨质疏松等更年期症状；
+                    </span>
+                </p>
+                <p class="jij" style="font-weight: bold; color:#3e3e3e;width: 95%;margin: auto;text-align: left">女人为什么要养巢？</p>
+                <p class="jij" style="border-bottom: 1px dotted #3e3e3e; padding-bottom: 1rem;box-sizing: border-box; margin: 10px auto; width: 100%; font-size: 18px; line-height: 30px;  max-width: 680px; color: #480e00; text-indent: 1em;">
+                    <span style="color: rgb(239, 0, 0);font-weight: bold">说健康:</span>
+                    <span style="color:#3e3e3e ">饱满的卵巢会带来：光滑无暇，水嫩有弹性的肌肤，乳房饱满、腰肢纤细，臀部微翘，凹凸有致的身材，充满年轻活力，卵巢健康，女性自然换发青春魅力！</span>
+                </p>
+                <p class="jij" style="font-weight: bold; color:#3e3e3e;width: 95%;margin: auto;text-align: left">常见的更年期12种症状？</p>
+
+                <p class="jij" style="border-bottom: 1px dotted #3e3e3e; padding-bottom: 1rem;box-sizing: border-box; margin: 10px auto; width: 100%; font-size: 18px; line-height: 30px;  max-width: 680px; color: #480e00; text-indent: 1em;">
+                    <span style="color: rgb(239, 0, 0);font-weight: bold">说健康:</span>
+                    <span style="color:#3e3e3e ">月经紊乱、异常出血，潮热面红、心悸、盗汗失眠、皮肤干燥瘙痒、性生活问题、头晕目眩、腰酸背痛、骨质酥松、身材走形、乳房下垂，阴道干涩；</span>
+                </p>
+                <p class="jij" style="font-weight: bold; color:#3e3e3e;width: 95%;margin: auto;text-align: left">更年期是不是病？</p>
+
+                <p class="jij" style="border-bottom: 1px dotted #3e3e3e; padding-bottom: 1rem;box-sizing: border-box; margin: 10px auto; width: 100%; font-size: 18px; line-height: 30px;  max-width: 680px; color: #480e00; text-indent: 1em;">
+                    <span style="color: rgb(239, 0, 0);font-weight: bold">说健康:</span>
+                    <span style="color:#3e3e3e ">更年期不是病，是女性卵巢功能从旺盛状态逐渐到衰退的一个过渡时期。当代女性人流，避孕药，减肥药，滥用药导致不正常闭经。不同体质的女性更年期综合症的表现不尽相同，据统计，90%以上女性都会出现不同程度的症状，影响个人健康和生活质量。</span>
+                </p>
+                <p class="jij" style="font-weight: bold; color: rgb(239, 0, 0);width: 95%;margin: auto;text-align: left">说健康善意提醒广大女性:</p>
+
+                <p class="jij" style="box-sizing: border-box; margin: 10px auto; width: 100%; font-size: 18px; line-height: 30px;  max-width: 680px; color: #480e00; text-indent: 1em;">
+                    <span style="color:#3e3e3e">月经健康不是用激素药能解决的，美丽也不是名贵化妆品专化出来，更不是用整形 手术做出来的，女人的美是由内而外散发出来的，内调外养才是根本。中医最擅长的就是内脏调理，像面黄长斑、更年期症状、月经女人病，中医一副方就能彻底解
+                        决！聪明的女人都知道如何选择，无论是女人健康保养方面的问题，还是治病调理方面的问题，一定知无不言，言无不尽!
+                    </span>
+                </p>
+
+                <div style="border: 2px dashed red;text-align: center;line-height: 25px;padding: 5px 0px; margin-bottom:50px;">
+                    <span style="font-size:18px; padding:2px 10px; display:block">加宝芝林医药老师微信咨询</span>
+                    <span style="color: red; font-weight: bold; font-size: 20px;"> 长按识别下方二维码 </span>
+                    <img src="" class="weixinpic" alt="">
+
+                    <span style="text-align:center;  display:block">
+                        <span class="wxhspan" style="padding:5px; font-size:30px;border-radius:10px; color: #FF0000; display:block; margin:auto; text-align:center; width:70%">&nbsp;
+                            <script>
+                                document.write(stxlwx);
+                            </script>&nbsp;</span>
+                    </span>
+
+                    <span style="text-align:center; font-size:15px; display:block; margin-bottom:10px;">
+                        ↑长按微信号可复制↑</span>
+
+
+
+                </div>
+
+                <span style="background-color:#b30000; color:#ffffff; padding:3px; padding-left:10px; padding-right:12px; border-radius:6px;">特别提示：</span>
+                <p class="jij">咨询人多，添加微信后，留言说明年龄，症状，想法。宝芝林医药老师会按咨询顺序回复！</p>
+
+                <br>
+                <br>
+
+
+                <br>
+
+
+
+                <!-- 
+                <div style="position: fixed;bottom: 0;background: #eee;border-top: 1px solid #ccc;font-size: 16px;padding:5px;z-index:9999;width: 100%;left:0">
+                    <table cellspacing="0" cellpadding="0" border="0">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div style="background: #fff; border:#ccc 1px solid; padding: 5px; margin-top: -10px; overflow: hidden;">
+                                        <img src="index_files/TB2jojVkeySBuNjy1zdXXXPxFXa_2688026425.png" style="float:left; " width="40px">
+                                    </div>
+                                </td>
+                                <td style="padding-left:8px;">微信号：
+                                    <font class="statistics02" style="background:#ff0000;color:#fff; font-weight:bold;" oncopy="wx()">
+                                        <span class="manxing statistics02" oncopy="wx()">
+                                            <a oncopy="copy('长按','复制')" style="color:#ffffff; display: inline-block">
+                                                &nbsp;
+                                                <script>
+                                                    document.write(stxlwx);
+                                                </script>&nbsp;
+                                            </a>
+                                        </span>
+                                    </font>
+                                    <br> +宝芝林老师微信↑ 咨询
+
+                                </td>
+
+                            </tr>
+                        </tbody>
+                    </table>
+                </div> -->
+
+
+
+
+
+
+            </div>
+        </strong>
+    </div>
+
+    <div class="buttomess">
+        <div class="_buttomess">
+            <table>
+                <tr>
+                    <td valign="middle" style="width: 50px;">
+                        <img class="touxiang" src="index_files/TB2jojVkeySBuNjy1zdXXXPxFXa_2688026425.png" alt="">
+
+                    </td>
+                    <td>
+                        <span class="red">点击加微信教你调经养颜秘籍</span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="popup">
+        <div class="close">
+            <span>关闭</span>
+        </div>
+        <div class="first">
+            <span>长按扫描下方二维码
+                <span class="spance">↓↓↓↓</span>
+            </span>
+        </div>
+        <img class="weixinpic" src="" alt="" width="96%">
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $(".buttomess").click(function () {
+                $(".popup").fadeIn()
+            })
+            $(".close").click(function () {
+                $(".popup").fadeOut()
+            })
+        })
+    
+    
+    </script>
+</body>
+
+</html>

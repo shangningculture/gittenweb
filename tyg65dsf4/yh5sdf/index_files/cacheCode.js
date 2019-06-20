@@ -1,0 +1,1 @@
+document.write("<script type='text/javascript' src='http://statics.yirongtang.cn//static/bb4145fa-5d98-474d-8853-10ca59184fca/initCode.js?r="+Math.random()+"'></script>")

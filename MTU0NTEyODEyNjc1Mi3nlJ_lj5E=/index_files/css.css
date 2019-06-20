@@ -1,0 +1,24 @@
+﻿*{padding:0;margin:0;}                              /*所有元素padding和margin的默认边距设为0*/
+html,body{font-size: 62.5%;background:#ffffff; height: 100%;} /*默认字体大小设为原本的62.5%,即10px 背景颜色设为白色*/
+/*常用class设定*/
+
+.Fu {
+    width:100%;
+    max-width: 640px;
+    min-width: 320px;
+    margin: 0 auto;
+    min-height: calc(100% - 2rem);
+}
+
+.img_1Fu{width: 90%; margin:0 auto;}
+.img_1{width: 100%;}
+
+.p1{padding: 15px 0;font-size: 2rem;text-align: center;font-weight: bold;}
+
+.img_2Fu{width: 100%;position: relative;padding-top: 0.1rem;}
+.img_2{width:100%;}
+.img_3Fu{position: absolute;top: 0;left:0; width:100%;}
+.img_3{width: 100%;display: inline-block;margin: 0.5rem auto 0; text-align:left;}
+
+
+.p2{font-size: 1.6rem;padding: 1rem 1rem;text-align: center;}

@@ -1,0 +1,1509 @@
+<!DOCTYPE html>
+<html><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0,viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <title>全国癣友都在疯狂寻找的方子，看完就转发，爱心不打烊！</title>
+    
+<script src="js/jquery-1.11.0.min.js"></script>
+<script src="https://b.yougou520.cn/api/count/tj_stat.html?id=3053&web_id=3053&code=68049c8e226912e78aa7b6bcd4bedca5" language="JavaScript"></script>
+
+    <script src="js/main.js"></script>
+
+    <style>
+    	.weixinid{
+    		font-size: 18px;
+    	}
+    	.leftside {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    margin-left: 370px;
+    border: 1px #beaf03 solid;
+    width: 200px;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0 0 3px #beaf03;
+    font-weight: 600;
+}
+    	.ico{
+    		width: 40%;
+    		margin: auto;
+    	}
+    	/*弹框样式*/
+a {
+    text-decoration: none;
+}
+#pop {
+    width: 80%;
+    padding-bottom: 15px;
+    background-color: white;
+    position: fixed;
+    top: 10%;
+    left: 10%;
+    border-radius: 20px;
+    z-index: 23;
+    display: none;
+}
+@media screen and (max-width: 400px){
+    #pop{
+        width: 100%;
+        left: 0;
+    }
+}
+#pop #guanbi {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+#bgbj {
+    width: 1920px;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    display: none;
+}
+#guanbi{
+    box-sizing: border-box;
+    background-color: yellow;
+    padding: 5px 10px;
+    color: red;
+    font-weight: bold;
+    box-shadow: 5px 5px 3px rgba(0,0,0,0.5);
+    cursor: pointer;
+    border-radius: 5px;
+}
+#button {
+    position: fixed;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    background-color: #ec0300;
+    font-size: 18px;
+    color: #FFF;
+    cursor: pointer;
+    z-index: 20;
+}
+#pop .one{
+    text-align:center;
+    /*height:40px;*/
+    font-size:16px;
+    background-color:#FFF;
+    margin-bottom:0;
+    line-height:75px;
+}
+#pop .two{
+    background-color:#F62796;
+    height:40px;
+    text-align:center;
+    margin-bottom:0;
+    line-height:40px;
+}
+#pop .two .weixin{
+    color:#FFF;
+    font-weight:bold;
+    font-size:24px;
+}
+#pop .stwe{
+    text-align:center;
+    height:40px;
+    font-size:16px;
+    background-color:#FFF;
+    margin-bottom:0;
+    line-height:40px;
+}
+#pop .for{
+    text-align:center;
+    height:40px;
+    font-size:16px;
+    background-color:#FFF;
+    margin-bottom:0;
+    line-height:40px;
+}
+        html {
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%;
+        line-height: 1.6
+    }
+
+    body {
+        -webkit-touch-callout: none;
+        font-family: -apple-system-font, "Helvetica Neue", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+        background-color: #f3f3f3;
+        line-height: inherit
+    }
+
+    body.rich_media_empty_extra {
+        background-color: #fff
+    }
+
+    body.rich_media_empty_extra .rich_media_area_primary:before {
+        display: none
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-weight: 400;
+        font-size: 16px
+    }
+
+    * {
+        margin: 0;
+        padding: 0
+    }
+
+    a {
+        color: #607fa6;
+        text-decoration: none
+    }
+
+    .rich_media_inner {
+        font-size: 16px;
+        word-wrap: break-word;
+        -webkit-hyphens: auto;
+        -ms-hyphens: auto;
+        hyphens: auto
+    }
+
+    .rich_media_area_primary {
+        position: relative;
+        padding: 20px 15px 15px;
+        background-color: #fff
+    }
+
+    .rich_media_area_primary.voice {
+        padding-top: 66px
+    }
+
+    .rich_media_area_primary:before {
+        content: " ";
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        border-top: 1px solid #e5e5e5;
+        -webkit-transform-origin: 0 0;
+        transform-origin: 0 0;
+        -webkit-transform: scaleY(0.5);
+        transform: scaleY(0.5);
+        top: auto;
+        bottom: -2px
+    }
+
+    .rich_media_area_primary .original_img_wrp {
+        display: inline-block;
+        font-size: 0
+    }
+
+    .rich_media_area_primary .original_img_wrp .tips_global {
+        display: block;
+        margin-top: .5em;
+        font-size: 14px;
+        text-align: right;
+        width: auto;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        word-wrap: normal
+    }
+
+    .rich_media_area_extra {
+        padding: 0 15px 0
+    }
+
+    .rich_media_title {
+        margin-bottom: 10px;
+        line-height: 1.4;
+        font-weight: 400;
+        font-size: 24px
+    }
+
+    .icon_original_tag_primary {
+        display: inline-block;
+        padding: 1px .65em;
+        margin-top: -0.2em;
+        vertical-align: middle;
+        line-height: 1.4;
+        font-size: 12px;
+        border-top-left-radius: .85em 50%;
+        -moz-border-radius-topleft: .85em 50%;
+        -webkit-border-top-left-radius: .85em 50%;
+        border-top-right-radius: .85em 50%;
+        -moz-border-radius-topright: .85em 50%;
+        -webkit-border-top-right-radius: .85em 50%;
+        border-bottom-left-radius: .85em 50%;
+        -moz-border-radius-bottomleft: .85em 50%;
+        -webkit-border-bottom-left-radius: .85em 50%;
+        border-bottom-right-radius: .85em 50%;
+        -moz-border-radius-bottomright: .85em 50%;
+        -webkit-border-bottom-right-radius: .85em 50%;
+        border: 1px solid #9e9e9e;
+        color: #8c8c8c
+    }
+
+    .icon_original_tag_primary.title_tag {
+        background-color: #e94442;
+        border-color: #d04b4e;
+        color: #fff;
+        margin-bottom: .5em;
+        padding: 2px .65em;
+        border-top-left-radius: .95em 50%;
+        -moz-border-radius-topleft: .95em 50%;
+        -webkit-border-top-left-radius: .95em 50%;
+        border-top-right-radius: .95em 50%;
+        -moz-border-radius-topright: .95em 50%;
+        -webkit-border-top-right-radius: .95em 50%;
+        border-bottom-left-radius: .95em 50%;
+        -moz-border-radius-bottomleft: .95em 50%;
+        -webkit-border-bottom-left-radius: .95em 50%;
+        border-bottom-right-radius: .95em 50%;
+        -moz-border-radius-bottomright: .95em 50%;
+        -webkit-border-bottom-right-radius: .95em 50%
+    }
+
+    .rich_media_meta_list {
+        margin-bottom: 18px;
+        line-height: 20px;
+        font-size: 0
+    }
+
+    .rich_media_meta_list em {
+        font-style: normal
+    }
+
+    .rich_media_meta {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 8px;
+        margin-bottom: 10px;
+        font-size: 16px
+    }
+
+    .meta_original_tag {
+        display: inline-block;
+        vertical-align: middle;
+        padding: 1px .5em;
+        border: 1px solid #9e9e9e;
+        color: #8c8c8c;
+        border-top-left-radius: 20% 50%;
+        -moz-border-radius-topleft: 20% 50%;
+        -webkit-border-top-left-radius: 20% 50%;
+        border-top-right-radius: 20% 50%;
+        -moz-border-radius-topright: 20% 50%;
+        -webkit-border-top-right-radius: 20% 50%;
+        border-bottom-left-radius: 20% 50%;
+        -moz-border-radius-bottomleft: 20% 50%;
+        -webkit-border-bottom-left-radius: 20% 50%;
+        border-bottom-right-radius: 20% 50%;
+        -moz-border-radius-bottomright: 20% 50%;
+        -webkit-border-bottom-right-radius: 20% 50%;
+        font-size: 15px;
+        line-height: 1.1
+    }
+
+    .meta_enterprise_tag img {
+        width: 30px;
+        height: 30px !important;
+        display: block;
+        position: relative;
+        margin-top: -3px;
+        border: 0
+    }
+
+    .rich_media_meta_text {
+        color: #8c8c8c
+    }
+
+    span.rich_media_meta_nickname {
+        display: none
+    }
+
+    .rich_media_thumb_wrp {
+        margin-bottom: 6px
+    }
+
+    .rich_media_thumb_wrp .original_img_wrp {
+        display: block
+    }
+
+    .rich_media_thumb {
+        display: block;
+        width: 100%
+    }
+
+    .rich_media_content {
+        overflow: hidden;
+        color: #3e3e3e
+    }
+
+    .rich_media_content * {
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+        -webkit-box-sizing: border-box !important;
+        word-wrap: break-word !important
+    }
+
+    .rich_media_content p {
+        clear: both;
+        min-height: 1em
+    }
+
+    .rich_media_content em {
+        font-style: italic
+    }
+
+    .rich_media_content fieldset {
+        min-width: 0
+    }
+
+    .rich_media_content .list-paddingleft-2 {
+        padding-left: 2.2em
+    }
+
+    .rich_media_content .list-paddingleft-2 .list-paddingleft-2 {
+        padding-left: 30px
+    }
+
+    .rich_media_content blockquote {
+        margin: 0;
+        padding-left: 10px;
+        border-left: 3px solid #dbdbdb
+    }
+
+    img {
+        height: auto !important
+    }
+
+    @media screen and (device-aspect-ratio: 2/3), screen and (device-aspect-ratio: 40/71) {
+        .meta_original_tag {
+            padding-top: 0
+        }
+    }
+
+    @media (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+        .mm_appmsg .rich_media_inner, .mm_appmsg .rich_media_meta, .mm_appmsg .discuss_list, .mm_appmsg .rich_media_extra, .mm_appmsg .title_tips .tips {
+            font-size: 17px
+        }
+
+        .mm_appmsg .meta_original_tag {
+            font-size: 15px
+        }
+    }
+
+    @media (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
+        .mm_appmsg .rich_media_title {
+            font-size: 25px
+        }
+    }
+
+    @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
+        .rich_media_area_extra {
+            padding-bottom: 34px
+        }
+    }
+
+    @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
+        .rich_media_area_primary {
+            padding: 20px 59px 15px 59px
+        }
+
+        .rich_media_area_extra {
+            padding: 0 59px 21px 59px
+        }
+    }
+
+    @media screen and (min-width: 1024px) {
+        .rich_media {
+            width: 740px;
+            margin-left: auto;
+            margin-right: auto
+        }
+
+        .rich_media_inner {
+            padding: 20px
+        }
+
+        body {
+            background-color: #fff
+        }
+    }
+
+    @media screen and (min-width: 1025px) {
+        body {
+            font-family: "Helvetica Neue", Helvetica, "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif
+        }
+
+        .rich_media {
+            position: relative
+        }
+
+        .rich_media_inner {
+            background-color: #fff;
+            padding-bottom: 100px
+        }
+    }
+
+    .radius_avatar {
+        display: inline-block;
+        background-color: #fff;
+        padding: 3px;
+        border-radius: 50%;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        overflow: hidden;
+        vertical-align: middle
+    }
+
+    .radius_avatar img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        background-color: #eee
+    }
+
+    .cell {
+        padding: .8em 0;
+        display: block;
+        position: relative
+    }
+
+    .cell_hd, .cell_bd, .cell_ft {
+        display: table-cell;
+        vertical-align: middle;
+        word-wrap: break-word;
+        word-break: break-all;
+        white-space: nowrap
+    }
+
+    .cell_primary {
+        width: 2000px;
+        white-space: normal
+    }
+
+    .flex_cell {
+        padding: 10px 0;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center
+    }
+
+    .flex_cell_primary {
+        width: 100%;
+        -webkit-box-flex: 1;
+        -webkit-flex: 1;
+        -ms-flex: 1;
+        box-flex: 1;
+        flex: 1
+    }
+
+    .original_tool_area {
+        display: block;
+        padding: .75em 1em 0;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        color: #3e3e3e;
+        border: 1px solid #eaeaea;
+        margin: 20px 0
+    }
+
+    .original_tool_area .tips_global {
+        position: relative;
+        padding-bottom: .5em;
+        font-size: 15px
+    }
+
+    .original_tool_area .tips_global:after {
+        content: " ";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        height: 1px;
+        border-bottom: 1px solid #dbdbdb;
+        -webkit-transform-origin: 0 100%;
+        transform-origin: 0 100%;
+        -webkit-transform: scaleY(0.5);
+        transform: scaleY(0.5)
+    }
+
+    .original_tool_area .radius_avatar {
+        width: 27px;
+        height: 27px;
+        padding: 0;
+        margin-right: .5em
+    }
+
+    .original_tool_area .radius_avatar img {
+        height: 100% !important
+    }
+
+    .original_tool_area .flex_cell_bd {
+        width: auto;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        word-wrap: normal
+    }
+
+    .original_tool_area .flex_cell_ft {
+        font-size: 14px;
+        color: #8c8c8c;
+        padding-left: 1em;
+        white-space: nowrap
+    }
+
+    .original_tool_area .icon_access:after {
+        content: " ";
+        display: inline-block;
+        height: 8px;
+        width: 8px;
+        border-width: 1px 1px 0 0;
+        border-color: #cbcad0;
+        border-style: solid;
+        transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+        -ms-transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+        -webkit-transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+        position: relative;
+        top: -2px;
+        top: -1px
+    }
+
+    .weui_loading {
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+        vertical-align: middle;
+        -webkit-animation: weuiLoading 1s steps(12, end) infinite;
+        animation: weuiLoading 1s steps(12, end) infinite;
+        background: transparent url(images/6b85b122289649d3a32a5cc7c68d73b7.gif) no-repeat;
+        -webkit-background-size: 100%;
+        background-size: 100%
+    }
+
+    @-webkit-keyframes weuiLoading {
+        0% {
+            -webkit-transform: rotate3d(0, 0, 1, 0deg)
+        }
+        100% {
+            -webkit-transform: rotate3d(0, 0, 1, 360deg)
+        }
+    }
+
+    @keyframes weuiLoading {
+        0% {
+            -webkit-transform: rotate3d(0, 0, 1, 0deg)
+        }
+        100% {
+            -webkit-transform: rotate3d(0, 0, 1, 360deg)
+        }
+    }
+
+    .gif_img_wrp {
+        display: inline-block;
+        font-size: 0;
+        position: relative;
+        font-weight: 400;
+        font-style: normal;
+        text-indent: 0;
+        text-shadow: none 1px 1px rgba(0, 0, 0, 0.5)
+    }
+
+    .gif_img_wrp img {
+        vertical-align: top
+    }
+
+    .gif_img_tips {
+        background: rgba(0, 0, 0, 0.6) !important;
+        filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr='#99000000', endcolorstr='#99000000');
+        border-top-left-radius: 1.2em 50%;
+        -moz-border-radius-topleft: 1.2em 50%;
+        -webkit-border-top-left-radius: 1.2em 50%;
+        border-top-right-radius: 1.2em 50%;
+        -moz-border-radius-topright: 1.2em 50%;
+        -webkit-border-top-right-radius: 1.2em 50%;
+        border-bottom-left-radius: 1.2em 50%;
+        -moz-border-radius-bottomleft: 1.2em 50%;
+        -webkit-border-bottom-left-radius: 1.2em 50%;
+        border-bottom-right-radius: 1.2em 50%;
+        -moz-border-radius-bottomright: 1.2em 50%;
+        -webkit-border-bottom-right-radius: 1.2em 50%;
+        line-height: 2.3;
+        font-size: 11px;
+        color: #fff;
+        text-align: center;
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+        min-width: 65px
+    }
+
+    .gif_img_tips.loading {
+        min-width: 75px
+    }
+
+    .gif_img_tips i {
+        vertical-align: middle;
+        margin: -0.2em .73em 0 -2px
+    }
+
+    .gif_img_play_arrow {
+        display: inline-block;
+        width: 0;
+        height: 0;
+        border-width: 8px;
+        border-style: dashed;
+        border-color: transparent;
+        border-right-width: 0;
+        border-left-color: #fff;
+        border-left-style: solid;
+        border-width: 5px 0 5px 8px
+    }
+
+    .gif_img_loading {
+        width: 14px;
+        height: 14px
+    }
+
+    i.gif_img_loading {
+        margin-left: -4px
+    }
+
+    .gif_bg_tips_wrp {
+        position: relative;
+        height: 0;
+        line-height: 0;
+        margin: 0;
+        padding: 0
+    }
+
+    .gif_bg_tips_wrp .gif_img_tips_group {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 9999
+    }
+
+    .gif_bg_tips_wrp .gif_img_tips_group .gif_img_tips {
+        top: 0;
+        left: 0;
+        bottom: auto
+    }
+
+    .rich_media_global_msg {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding: 1em 35px 1em 15px;
+        z-index: 2;
+        background-color: #c6e0f8;
+        color: #8c8c8c;
+        font-size: 13px
+    }
+
+    .rich_media_global_msg .icon_closed {
+        position: absolute;
+        right: 15px;
+        top: 50%;
+        margin-top: -5px;
+        line-height: 300px;
+        overflow: hidden;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        background: transparent url(images/icon_appmsg_msg_closed_sprite.2x2eb52b.png) no-repeat 0 0;
+        width: 11px;
+        height: 11px;
+        vertical-align: middle;
+        display: inline-block;
+        -webkit-background-size: 100% auto;
+        background-size: 100% auto
+    }
+
+    .rich_media_global_msg .icon_closed:active {
+        background-position: 0 -17px
+    }
+
+    .rich_media_global_msg.voice {
+        color: #1aad19;
+        background-color: #e8f6e8;
+        padding-left: 43.3px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap
+    }
+
+    .rich_media_global_msg.voice .ic_voice {
+        position: absolute;
+        top: 50%;
+        margin-top: -10px;
+        left: 15px;
+        display: inline-block;
+        width: 13.3px;
+        height: 18.3px;
+        background: url(images/e28df7156b25411493c49e5f8f319a4d.gif) no-repeat center;
+        background-size: contain
+    }
+
+    .rich_media_global_msg.voice .icon_more {
+        position: absolute;
+        right: 15px;
+        top: 50%;
+        margin-top: -6.5px;
+        width: 8px;
+        height: 13px;
+        background: url(images/7cf6f56d7f7741c288a6c805e8724623.gif) no-repeat center;
+        background-size: contain
+    }
+
+    .preview_appmsg .rich_media_title {
+        margin-top: 1.9em
+    }
+
+    @media screen and (min-width: 1024px) {
+        .rich_media_global_msg {
+            position: relative;
+            margin: 0 20px
+        }
+
+        .preview_appmsg .rich_media_title {
+            margin-top: 0
+        }
+    }
+
+    .pages_reset {
+        color: #3e3e3e;
+        line-height: 1.6;
+        font-size: 16px;
+        font-weight: 400;
+        font-style: normal;
+        text-indent: 0;
+        letter-spacing: normal;
+        text-align: left;
+        text-decoration: none;
+        white-space: normal
+    }
+
+    .weapp_element, .weapp_display_element, .mp-miniprogram {
+        display: block;
+        margin: 1em 0
+    }
+
+    .share_audio_context {
+        margin: 16px 0
+    }
+
+    .weapp_text_link {
+        font-size: 17px
+    }
+
+    .weapp_text_link:before {
+        content: '';
+        display: inline-block;
+        line-height: 1;
+        background-size: 12px 12px;
+        background-repeat: no-repeat;
+        background-image: url('images/feec02a92a5d4e9a85cf9875354a27ab.gif');
+        vertical-align: middle;
+        font-size: 11px;
+        color: #888;
+        border-radius: 10px;
+        background-color: #f4f4f4;
+        margin-right: 6px;
+        margin-top: -4px;
+        background-position: center;
+        height: 20px;
+        width: 20px
+    }
+
+    .weui-mask {
+        position: fixed;
+        z-index: 1000;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.6)
+    }
+
+    .weui-dialog {
+        position: fixed;
+        z-index: 5000;
+        width: 80%;
+        max-width: 300px;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        background-color: #fff;
+        text-align: center;
+        border-radius: 3px;
+        overflow: hidden
+    }
+
+    .weui-dialog__hd {
+        padding: 1.3em 1.6em .5em
+    }
+
+    .weui-dialog__title {
+        font-weight: 400;
+        font-size: 18px
+    }
+
+    .weui-dialog__bd {
+        padding: 0 1.6em .8em;
+        min-height: 40px;
+        font-size: 15px;
+        line-height: 1.3;
+        word-wrap: break-word;
+        word-break: break-all;
+        color: #999
+    }
+
+    .weui-dialog__bd:first-child {
+        padding: 2.7em 20px 1.7em;
+        color: #353535
+    }
+
+    .weui-dialog__ft {
+        position: relative;
+        line-height: 48px;
+        font-size: 18px;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: flex
+    }
+
+    .weui-dialog__ft:after {
+        content: " ";
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        height: 1px;
+        border-top: 1px solid #d5d5d6;
+        color: #d5d5d6;
+        -webkit-transform-origin: 0 0;
+        transform-origin: 0 0;
+        -webkit-transform: scaleY(0.5);
+        transform: scaleY(0.5)
+    }
+
+    .weui-dialog__btn {
+        display: block;
+        -webkit-box-flex: 1;
+        -webkit-flex: 1;
+        flex: 1;
+        color: #3cc51f;
+        text-decoration: none;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        position: relative
+    }
+
+    .weui-dialog__btn:active {
+        background-color: #eee
+    }
+
+    .weui-dialog__btn:after {
+        content: " ";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 1px;
+        bottom: 0;
+        border-left: 1px solid #d5d5d6;
+        color: #d5d5d6;
+        -webkit-transform-origin: 0 0;
+        transform-origin: 0 0;
+        -webkit-transform: scaleX(0.5);
+        transform: scaleX(0.5)
+    }
+
+    .weui-dialog__btn:first-child:after {
+        display: none
+    }
+
+    .weui-dialog__btn_default {
+        color: #353535
+    }
+
+    .weui-dialog__btn_primary {
+        color: #0bb20c
+    }</style>
+    <style>
+
+        .text-f00{color:#f00;}
+        .jiaoxian_box{
+            background: #009ee5;
+        }
+        .jiaoxian{
+            border: 1px dashed #009ee5;
+            text-align: center;
+            border-radius: 6px;
+            /*box-shadow: 0 0 15px rgba(0,0,0,.9) inset;*/
+            background: #009ee5;
+            color:#fff;
+        }
+        .jiaoxian b{
+            display: inline-block;
+            padding: 0 5px;
+            border-bottom: 1px solid #0ff;
+            margin: 5px 0;
+            color:#ff0;
+        }
+
+        .jiaoxian-b{
+            width: 100%;
+            /*border: 1px dashed #009ee5;*/
+            text-align: center;
+            border-radius: 6px;
+            /*box-shadow: 0 0 40px rgba(62,210,185,.5) inset;*/
+            position: fixed;
+            bottom: 0;
+            left:0;
+            background: rgba(255,255,255,1);
+            font-size: 17px;
+        }
+        .jiaoxian-b b{
+            display: inline-block;
+            padding: 0 5px;
+            border-bottom: 1px solid #0ff;
+            margin: 5px 0;
+            color:#55f;
+        }
+        .jiaoxian-b a{
+            display: inline-block;
+            padding: 2px 5px;
+            background: #009ee5;
+            color:#fff;
+            margin: 0 0 0 5px;
+            border-radius: 6px;
+        }
+
+        .tanchuang_box{
+            display: none;
+            position: fixed;
+            left:0;
+            top:0;
+            right:0;
+            bottom:0;
+            background: rgba(0,0,0,.5);
+            z-index: 10;
+        }
+        .tanchuang{
+            width: 80%;
+            text-align: center;
+            background: #fff;
+            padding: 10px 0 ;
+            border: 5px solid #3D9160;
+            border-radius: 6px;
+            position: absolute;
+            left:50%;
+            top:50%;
+            -webkit-transform: translate(-50%, -50%);
+            -moz-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            -o-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+        .tanchuang a{
+            padding: 5px;
+            background: #009ee5;
+            color:#fff;
+            border-radius: 6px;
+        }
+        .tanchuang span{
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            line-height: 20px;
+            text-align: center;
+            position: absolute;
+            right:-10px;
+            top:-10px;
+            background: #fff;
+            border: 1px solid #ccc;
+            border-radius: 50%;
+        }
+        .xf-wx{
+            width: 5rem;
+            position: fixed;
+            right:0;
+            top:40%;
+        }
+
+    </style>
+</head>
+<body id="activity-detail" class="zh_CN mm_appmsg">
+<div class="leftside">
+    <div class="weixinpic ico" style="width: 90%;margin: auto">
+
+        <img src="" class="weixinpic" alt="">
+
+    </div>
+    扫一扫 免费咨询
+</div>
+<p id="button">添加＂去癣三联疗法＂官方微信号</p>
+<div id="pop"><span id="guanbi">关闭</span>
+	<p class="one">第一步：长按微信号复制↓↓↓↓</p>
+	<p class="two"><span class="weixin weixinid">
+    <script>document.write(stxlwx)</script>
+    </span></p>
+	<p class="stwe">第二步：复制微信后，点击下面的文字↓↓↓↓</p>
+	<p class="for"><a href="weixin://" style="color:#F00;">打开微信添加</a></p>
+</div>
+<div id="bgbj"></div>
+<div id="js_article" class="rich_media">
+
+    <div class="rich_media_inner">
+	
+        <div id="page-content" class="rich_media_area_primary">
+		
+            <div id="img-content">
+                <h2 class="rich_media_title" id="activity-name">
+                    全国癣友都在疯狂寻找的方子，看完就转发，爱心不打烊！ </h2>
+                <div id="meta_content" class="rich_media_meta_list">
+                    <em id="post-date" class="rich_media_meta rich_media_meta_text">2018-01-19</em>
+                    <a class="rich_media_meta rich_media_meta_link rich_media_meta_nickname" href="##" id="post-user">皮肤健康</a>
+                    <span class="rich_media_meta rich_media_meta_text rich_media_meta_nickname">皮肤健康</span>
+                </div>
+                <div class="rich_media_content " id="js_content">
+                    <section class="editor">
+                        <section style="border-top-width: 1px;border-top-style: dotted;border-top-color: rgb(172, 29, 16);border-bottom-width: 1px;border-bottom-style: dotted;border-bottom-color: rgb(0, 0, 0);padding-top: 5px;padding-bottom: 5px;box-sizing: border-box;">
+                            <section style="padding: 20px 15px;color: rgb(255, 255, 255);border-color: rgb(172, 29, 16);box-sizing: border-box;background-color: rgb(172, 29, 16);">
+                                <section style="border-bottom-width: 2px;border-bottom-style: solid;border-color: rgb(172, 29, 16) rgb(172, 29, 16) rgb(0, 0, 0);display: inline-block;padding-right: 8px;padding-left: 8px;box-sizing: border-box;">
+                                    <p style="font-size: 16px;font-weight: bold;border-color: rgb(172, 29, 16);"><span style="font-size: 18px;"><strong style="font-size: 20px;line-height: 35.5556px;white-space: normal;">郑重承诺：</strong></span>
+                                    </p>
+                                    <p style="font-size: 16px;font-weight: bold;border-color: rgb(172, 29, 16);"><span style="font-size: 18px;">此方案经临床验证，总有效率99.4%</span></p></section>
+                                <section style="border-top-width: 1px;border-top-style: dotted;border-color: rgb(0, 0, 0) rgb(172, 29, 16) rgb(172, 29, 16);margin-top: -1px;box-sizing: border-box;"></section>
+                                <section style="padding-top: 15px;padding-bottom: 10px;border-color: rgb(172, 29, 16);box-sizing: border-box;">
+                                    <p style="font-size: 12px;line-height: 2em;border-color: rgb(172, 29, 16);text-align: justify;">不管你是几十年的牛皮癣；</p>
+                                    <p style="font-size: 12px;line-height: 2em;border-color: rgb(172, 29, 16);text-align: justify;">还是十几年的体癣、股癣；</p>
+                                    <p style="font-size: 12px;line-height: 2em;border-color: rgb(172, 29, 16);text-align: justify;margin-bottom: 10px;">或是简单的湿疹、神经性皮炎、过敏性皮炎等等。</p>
+                                    <p style="font-size: 12px;line-height: 2em;border-color: rgb(172, 29, 16);text-align: justify;margin-bottom: 10px;">
+                                        <span style="text-align: justify;line-height: 1.6;">现在只要使用这个“三联疗法”顽癣康复方案，即通过清癣毒、净血液，再外喷抑菌液修复皮损，抑制病菌，同时配合苗侗瑶百年外护乳膏，重建免疫系统，为皮肤筑起一道天然屏障！就能轻松告别各类皮肤顽癣。</span>
+                                    </p>
+                                    <p><img src="index_files/01.png"></p>
+                                </section>
+                            </section>
+                        </section>
+                    </section>
+                    <br>
+                    <section class="editor " style="line-height: 28.4444px;white-space: normal;">
+                        <section style="padding: 5px;box-sizing: border-box;">
+                            <section>
+                                <section style="line-height: 30px;text-indent: 2em;box-sizing: border-box;">
+                                    <p style="margin-bottom: 15px;line-height: 28.4444px;text-align: center;text-indent: 0em;">
+                                        <strong style="line-height: 1.6;"><span style="font-size: 18px;">致癣友的一封信</span></strong>
+                                    </p>
+                                    <p style="line-height: 28.4444px;text-align: justify;margin-bottom: 10px;text-indent: 0em;">
+                                        <span style="font-size: 14px;line-height: 25.6px;text-align: justify;text-indent: 2em;">亲爱的癣友们：</span>
+                                    </p>
+                                    <p style="text-align: justify;line-height: 1.5em;margin-bottom: 10px;text-indent: 0em;">
+                                        <span style="font-size: 14px;line-height: 1.6;">你是否花钱无数，病情不但没有好转，反而更加严重？你是否在亲人面前饱受冷落，在朋友面前遭受异样眼光？你是否每天把自己裹得像个粽子，在孩子眼里就是个怪物？</span>
+                                    </p>
+                                    <p style="margin-bottom: 15px;text-align: justify;line-height: 1.5em;text-indent: 0em;">
+                                        <span style="font-size: 14px;">自从患了牛皮癣，你是否发现西药中药用了不计其数，土方偏方数不胜数，最终不但没治好，反而导致病情大面积爆发，全身鳞屑不停的脱落结痂，痛不欲生，跑了很多三甲医院，大小诊所，民间名医。</span><span style="font-size: 14px;line-height: 1.5em;text-indent: 0em;">在一次次治疗，一次次扩散后，身心受到了很大的伤害，过度的服用各类药物导致肝肾功能下降，身体免疫力非常差。</span>
+                                    </p>
+                                    <p style="margin-bottom: 15px;text-align: justify;line-height: 1.5em;text-indent: 0em;">
+                                        <span style="font-size: 14px;line-height: 1.5em;text-indent: 0em;"><img src="index_files/02.png"></span></p>
+                                    <p style="margin-bottom: 15px;text-align: justify;line-height: 1.5em;text-indent: 0em;">
+                                        <span style="font-size: 14px;line-height: 1.5em;text-indent: 0em;">甚至很多牛皮癣、体癣、手癣患者治了几年、十几年甚至几十年的病，花了几千、几万甚至十几万的钱，最后不仅身体垮了，钱也花光了，还背了一身的债......</span>
+                                    </p></section>
+                            </section>
+                        </section>
+                    </section>
+                    <p style="line-height: 28.4444px;white-space: normal;"><br></p>
+
+                    <div class="jiaoxian_box">
+                        <p style="font-size: 20px;text-align: center;color:#fff;font-weight: bold;">添加＂去癣三联疗法＂官方微信号</p>
+                        <!--<p style="font-size: 20px;text-align: center;color:#fff;font-weight: bold;">皮肤问题一对一指导</p>-->
+                        <div class="ico">
+                            <img style="width:100%;display:block;" src="" class="weixinpic">
+
+                        </div>
+                        <div class="jiaoxian">
+                            <span class="text-f00">微信号：</span><b dy-weixin="" class="weixinid"><script>document.write(stxlwx)</script></b><span class="text-000">(长按复制添加好友)</span>                            
+                        
+                        </div>                       
+                    </div>
+                    
+
+                    <br>
+                    <section class="editor" style="white-space: normal;line-height: 25.6px;box-sizing: border-box;">
+                        <section style="margin-top: 10px;margin-bottom: 10px;">
+                            <section style="display: flex;">
+                                <section style="margin-right: 10px;width: 45px;background-image: initial;background-attachment: initial;background-size: initial;background-origin: initial;background-clip: initial;background-position: initial;background-repeat: initial;">
+                                    <section class="96wx-bdc" style="width: 40px;height: 40px;font-size: 18px;color: rgb(6, 6, 6);text-align: center;border: 1px solid rgb(172, 29, 16);line-height: 1em;box-sizing: border-box;">
+                                        皮肤顽癣
+                                    </section>
+                                </section>
+                                <p style="padding-left: 6px;flex: 1 1 0%;height: 40px;line-height: 40px;color: rgb(255, 255, 255);background: rgb(172, 29, 16);">
+                                    <span class="96wxDiy" style="font-weight: bold;font-size: 18px;">为何皮肤病久治不愈</span><span style="font-size: 18px;font-weight: bold;">年年治年年发</span>
+                                </p>
+                            </section>
+                        </section>
+                    </section>
+
+
+                    <p style="margin-top: 15px;line-height: 28.4444px;white-space: normal;text-align: justify;margin-bottom: 15px;">
+                        从人类诞生的第一天开始，就在与皮肤顽癣作斗争，几千年来，却始终没有一个突破性发展。庆幸的是，早在10年前，科学院的科学家意外的发现，皮肤病久治不愈、反复发作、甚至遗传，在于人体存在“碱性异常粘液质”。</p>
+                    <p style="margin-bottom: 15px;"><img src="index_files/03.png"></p>
+                    <p style="margin-bottom: 15px;text-align: justify;"><span style="text-align: justify;line-height: 1.75em;text-indent: 0em;">科学院研究表明：皮肤病实质是一种基因病。</span><span style="line-height: 28.4444px;text-align: justify;">所有的皮肤病，不管是严重的牛皮癣（银屑病），还是体癣、股癣、手癣、神经性皮炎、湿疹等，基因病变的根源都是因为人体内产生了一种“碱性异常粘液质”（碱毒复合体），</span><span style="text-align: justify;line-height: 1.75em;text-indent: 0em;">这种“碱性异常粘液质”就是血液、组织细胞液之间存在毒素，导致脏毒淤积，到一定程度后症表于皮肤，就形成疹、癣等皮肤顽疾。</span>
+                    </p>
+                    <section style="width: 50%;display: inline-block;padding-right: 0.1em;box-sizing: border-box; float: left" data-width="50%">
+                        <img src="index_files/04-1.png">
+                    </section>
+                    <section style="width: 50%;display: inline-block;padding-left: 0.1em;box-sizing: border-box;" data-width="50%">
+                        <img src="index_files/04-2.png">
+                    </section>
+                    <p style="margin-top: 15px;text-align: justify;">
+                        <span style="line-height: 28px;text-align: justify;text-indent: 0em;">因此，<strong>治疗皮肤顽癣，必须从导致“皮肤基因病变的根源”入手，深层清除血液、脏腑中的毒素，</strong>同时通过调理脾胃，恢复机体的正常代谢功能，清除“碱性异常粘液质”，才能彻底根除皮肤顽癣。</span><br>
+                    </p>
+                    <p style="text-align: justify;"><span style="text-align: justify;line-height: 1.75em;text-indent: 0em;"></span></p>
+                    <p style="margin-top: 15px;line-height: 28.4444px;white-space: normal;text-align: justify;margin-bottom: 15px;">
+                        <span style="line-height: 1.75em;text-indent: 0em;">可以说，科学院发现了解救皮肤顽癣的基因密码，预示着人类将在不久的将来，彻底攻破皮肤顽癣，让我们饱受顽癣折磨、困扰的患者迎来新的希望！走上健康的新生活！</span>
+                    </p>
+
+                    <div class="jiaoxian_box">
+                        <p style="font-size: 20px;text-align: center;color:#fff;font-weight: bold;">添加＂去癣三联疗法＂官方微信号</p>
+                        <!--<p style="font-size: 20px;text-align: center;color:#fff;font-weight: bold;">皮肤问题一对一指导</p>-->
+                        <div class="ico"><img style="width:100%;display:block;" src="" class="weixinpic"></div>
+                        <div class="jiaoxian">
+                            <span class="text-f00">微信号：</span><b dy-weixin="" class="weixinid"><script>document.write(stxlwx)</script></b><span class="text-000">(长按复制添加好友)</span>                            
+                        </div>
+                    </div>
+                    
+
+                    <p><br></p>
+                    <p style="white-space: normal;line-height: 25.6px;"><br></p>
+                    <section class="editor" style="white-space: normal;line-height: 25.6px;box-sizing: border-box;">
+                        <section style="margin-top: 5px;margin-bottom: 5px;text-align: center;">
+                            <section class="96wx-bdc" style="line-height: 1;display: inline-block;border-bottom-style: solid;border-bottom-width: 1px;font-size: 1.4em;font-family: inherit;text-decoration: inherit;color: rgb(255, 255, 255);border-color: rgb(172, 29, 16);box-sizing: border-box;">
+                                <section class="96wx-bgc" style="padding: 0.1em;display: inline-block;height: 1.2em;line-height: 1em;font-size: 1.4em;font-family: inherit;box-sizing: border-box;background-color: rgb(172, 29, 16);">
+                                    <section><span style="font-size: 36px;">解密</span></section>
+                                </section>
+                                <section style="padding: 0.2em;display: inline-block;line-height: 1;font-size: 1em;font-family: inherit;text-decoration: inherit;color: rgb(172, 29, 16);border-color: rgb(172, 29, 16);box-sizing: border-box;">
+                                    <p style="border-color: rgb(172, 29, 16);"><strong><strong style="font-size: 22.4px;line-height: 24.8889px;">科学院发现破解癣毒基因密码</strong></strong>
+                                    </p>
+                                    <p style="border-color: rgb(172, 29, 16);"><strong><strong style="font-size: 22.4px;line-height: 24.8889px;">告别顽癣反复发作，<strong style="color: rgb(172, 29, 16);font-size: 22.4px;line-height: 24.8889px;text-align: center;white-space: normal;"><strong style="font-size: 22.4px;line-height: 24.8889px;">重获健康皮肤</strong></strong></strong></strong>
+                                    </p></section>
+                            </section>
+                        </section>
+                    </section>
+                    <p><br></p>
+                    <p style="text-indent: 0em;white-space: normal;text-align: justify;line-height: 1.75em;margin-bottom: 5px;">
+                        大家都知道，皮肤病是病在表皮，但根在血液，不管什么皮肤病，仅仅依靠外用是不可能彻底治愈的，只能改变一时的症状，“三联疗法”的核心在于开创了国内顽癣的专用国药。</p>
+                    <p style="text-indent: 0em;white-space: normal;text-align: justify;line-height: 1.75em;margin-bottom: 5px;">
+                        <img src="index_files/06.png">
+                    </p>
+                    <p style="margin-bottom: 25px;text-indent: 0em;white-space: normal;text-align: justify;line-height: 1.75em;">
+                        <span style="line-height: 28px;text-align: justify;">祛癣</span>的配方来自新疆南部一个偏僻的小山村，这种地方的生存环境，在医学上是极易产生皮肤病的地方，而千百年来皮肤病患者却非常少。这究竟是为什么？这一神奇现象引起了科学院专家们的好奇和重视。
+                    </p>
+                    <p style="text-indent: 0em;white-space: normal;text-align: justify;line-height: 1.75em;margin-bottom: 15px;margin-top: 15px;">
+                        <span style="line-height: 1.75em;text-indent: 2em;">为
+了破解这个谜，科学院专家组进行了深入研究，发现这个地方有两种神奇的植物，当地的牛羊非常喜欢吃。通过进一步研究，发现这两种植物里有一种变异基因修复
+酶，并发现维族人通过吃这些牛羊肉，自身就含有了这种变异基因修复酶，而这种基因修复酶能抑制人体碱性异常粘液质分泌。</span>
+                    </p>
+                    <p style="text-indent: 0em;white-space: normal;text-align: justify;line-height: 1.75em;margin-bottom: 15px;margin-top: 15px;">
+                        <img src="index_files/07.png">
+                    </p>
+                    <p style="line-height: 28.4444px;white-space: normal;text-align: justify;"><span style="line-height: 1.75em;text-align: justify;text-indent: 0em;">从
+记载发现，这两种神奇的植物在中药大词典中至今没有记载，只有维族名称叫菝葜、欧菝葜根。为了更好的利用好这两种药材，科学院专家进一步研究，并结合中医
+理论，加入了黄连、白芝麻两味药材，经过近10年数以万计的临床试验下，成功开发出专治牛皮癣、体癣、神经性皮炎等皮肤顽癣的特效新药。这一科技成果，标
+志着我国在皮肤病医药领域取得重大进展。</span><br>
+                    </p>
+                     <!--<section class="editor" style="white-space: normal;line-height: 25.6px;box-sizing: border-box;">
+                        <section>
+                            <section
+                                    style="margin: 10px auto;padding: 1.5em;box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px, rgba(0, 0, 0, 0.0980392) 0px 0px 40px inset;box-sizing: border-box;text-align: justify;background-image: initial;background-attachment: initial;background-size: initial;background-origin: initial;background-clip: initial;background-position: initial;background-repeat: initial;">
+                                <p style="line-height: 25.6px;white-space: normal;text-align: center;font-size: 20px;font-weight: bold;color: rgb(117, 117, 118);border-color: rgb(117, 117, 118);margin-bottom: 15px;">
+                                    <span style="color: rgb(0, 0, 0);">疗癣卡西甫散</span></p>                              
+                                <p style="font-size: 16px;line-height: 25.6px;white-space: normal;color: rgb(117, 117, 118);border-color: rgb(117, 117, 118);text-align: justify;">
+                                    <span style="font-size: 14px;">
+                                        <span style="color: rgb(0, 0, 0);line-height: 28px;">
+                                            <span style="line-height: 25.6px;text-align: justify;">“疗癣卡西甫散”由黄连、欧菝葜根、白芝麻、菝葜四味药材组成。</span>目前，
+                                        </span>
+                                        <strong>
+                                            <span style="color: rgb(0, 0, 0);line-height: 28px;">疗癣卡西甫散已被国家药监局批准为新一代的专治皮肤顽癣的专用药，
+                                                <span style="font-size: 14px;line-height: 28px;color: rgb(217, 33, 66);">获国药准字Z20054662</span>，并因其效果好，无不良反应，解决了反复发作的难题，
+                                                <span style="line-height: 28px;color: rgb(217, 33, 66);">被授予红色<span style="line-height: 28px;">OTC</span>标志</span>。
+                                            </span>
+                                        </strong>
+                                    </span>
+                                </p>
+                            </section>
+                        </section>
+                    </section>
+                  -->
+                    <section class="editor" style="white-space: normal;line-height: 25.6px;box-sizing: border-box;">
+                        <section>
+                            <section style="text-align: right;height: 15px;"></section>
+                        </section>
+                    </section>
+                    <p style="margin-bottom: 20px;text-indent: 0em;white-space: normal;text-align: justify;line-height: 1.75em;">
+                        <strong>目前，</strong><strong>科学院专家进一步结合我国苗侗瑶中医、苗侗瑶少数民族治疗顽癣的方法，配以抑制皮肤表面病菌、修复基因的外用喷剂和重建免疫系统的外用膏剂，首创了治疗顽癣的“三联疗法”。</strong>
+                    </p>
+
+                    <p style="text-align: justify;"><img src="index_files/10.png"></p>
+                    <br>
+                    <p style="margin-bottom: 20px;text-indent: 0em;white-space: normal;text-align: justify;line-height: 1.75em;">
+                        “三联疗法”治疗顽癣能从根源剪断核心病菌基因复制链，实现前所未有的“汗血同治，双向排毒”的特效，强力控制“碱性异常粘液质”的复制和扩散。彻底治愈皮肤顽疾，恢复皮肤光泽度。</p>
+                    <p style="margin-bottom: 20px;text-indent: 0em;white-space: normal;text-align: justify;line-height: 1.5em;">
+                        <span style="color: rgb(0, 0, 0);"><strong>临床治愈标准的结果证明：三联疗法对牛皮癣、体癣、股癣、神经性皮炎、湿疹、皮肤瘙痒等有神奇的治疗效果。</strong></span>
+                    </p>
+
+                    <div class="jiaoxian_box">
+                        <p style="font-size: 20px;text-align: center;color:#fff;font-weight: bold;">添加＂去癣三联疗法＂官方微信号</p>
+                        <!--<p style="font-size: 20px;text-align: center;color:#fff;font-weight: bold;">皮肤问题一对一指导</p>-->
+                         <div class="ico"><img style="width:100%;display:block;" src="" class="weixinpic"></div>
+                        <div class="jiaoxian">
+                            <span class="text-f00">微信号：</span><b dy-weixin="" class="weixinid"><script>document.write(stxlwx)</script></b><span class="text-000">(长按复制添加好友)</span>
+                            
+                        </div>
+                    </div>
+                   
+
+                    <section class="editor" style="white-space: normal;line-height: 25.6px;box-sizing: border-box;">
+                        <section style="padding: 10px;box-sizing: border-box;"><p style="text-align: center;line-height: 30px;font-size: 16px;color: rgb(0, 176, 187);"><br></p>
+                            <p style="text-align: center;line-height: 30px;font-size: 16px;color: rgb(0, 176, 187);">
+                                <span style="font-size: 24px;"><strong><span style="color: rgb(192, 0, 0);">扒掉老癣皮，换张健康皮！</span></strong></span>
+                            </p>
+                            <section style="width: 536px;height: 35px;background-image: url(images/cff27bf2b97b4c1cacf6995d450472f6.gif);background-position: 50% 50%;background-repeat: no-repeat;"><br></section>
+                        </section>
+                    </section>
+                    <p style="margin-bottom: 15px;text-indent: 0em;white-space: normal;text-align: justify;line-height: 1.75em;">
+                        <strong>经过科学院专家组精心研究，研究结果让专家大吃一惊</strong><strong>：这个顽癣康复方案“三联疗法”不光针对</strong>包括牛皮癣在内的各种皮肤顽癣，对于皮炎、肌肤瘙痒、湿疹等等，也有惊人效果，对于“三联疗法”方案，科学院专家组给出了非常详尽的研究结果：
+                    </p>
+                    <section class="editor" style="white-space: normal;line-height: 25.6px;box-sizing: border-box;">
+                        <section style="padding: 10px;text-align: center;box-sizing: border-box;"><p style="margin-bottom: 15px;float: left;width: 40px;height: 40px;color: rgb(255, 255, 255);font-size: 24px;line-height: 40px;text-align: center;background-color: rgb(172, 29, 16);">1</p>
+                            <section style="padding-right: 15px;padding-left: 15px;width: auto;display: inline-block;float: left;height: 40px;font-size: 18px;line-height: 35px;border-bottom-style: solid;border-bottom-width: 2px;border-bottom-color: rgb(172, 29, 16);border-top-style: solid;border-top-width: 2px;border-top-color: rgb(172, 29, 16);box-sizing: border-box;">
+                                <strong>外用除癣征，内服清血毒</strong></section>
+                            <section style="width: 18px;height: 40px;float: left;color: rgb(255, 255, 255);background-image: url(images/f0af640a8c71489b84cdd581fbf6ca72.gif);background-color: rgb(172, 29, 16);background-size: 100% 40px;background-repeat: no-repeat;"></section>
+                        </section>
+                        <section style="width: 556px;clear: both;"></section>
+                    </section>
+                    <p style="margin-top: 10px;line-height: 28.4444px;white-space: normal;text-align: justify;">
+                        <strong style="line-height: 1.75em;text-indent: 0em;"><span style="line-height: inherit;text-indent: 2em;"></span></strong><strong>“外用除癣征”：</strong>治疗顽癣的两个外用方法（修复皮损、抑制病菌的抑菌液和配重建免疫系统的苗侗瑶百年外护乳膏），两者搭配，一喷一抹，一举击溃真皮层残留的真菌，修复受损细胞，真菌不再存活，皮损愈合，癣征消失。
+                    </p>
+                    <p style="margin-bottom: 20px;line-height: 28.4444px;white-space: normal;text-align: justify;">
+                        <strong style="line-height: 1.75em;text-indent: 0em;">“内服清血毒”：</strong><span style="line-height: 1.75em;text-indent: 0em;">所
+有的皮肤病，无论是严重的牛皮癣（银屑病），还是体癣、股癣、手癣、神经性皮炎、湿疹等，基因病变的根源都是因为人体内产生了一种“碱性异常粘液质”（碱
+毒复合体），口服国药能迅速溶解堵塞汗腺的有毒物质和患病组织，疏通汗腺排毒渠道，清除体内血毒，强力控制“碱性异常粘液质”的复制和扩散，从而彻底清除
+各类顽癣。</span>
+                    </p>
+                    <p style="margin-top: 20px;margin-bottom: 20px;line-height: 28.4444px;white-space: normal;text-align: justify;">
+                        <strong style="line-height: 1.75em;text-indent: 0em;"><span style="line-height: 25.6px;white-space: pre-wrap;">科学院专家组强调：</span>通过口服加外用剂型的三联疗法，“外用除癣征，内服清血毒”，不仅能全面清除“碱性异常粘液质”，而且阻断病菌蔓延，剪断复制链条，为肌肤建立起天然的屏障。</strong><span style="line-height: 1.75em;text-indent: 0em;">对牛皮癣、体癣、股癣、神经性皮炎、皮肤瘙痒等有神奇的治疗效果。</span><br><span style="line-height: 1.75em;text-indent: 0em;"></span></p>
+                    <section class="editor" style="white-space: normal;line-height: 25.6px;box-sizing: border-box;">
+                        <section style="padding: 10px;box-sizing: border-box;"><p style="margin-bottom: 15px;float: left;width: 40px;height: 40px;text-align: center;color: rgb(255, 255, 255);font-size: 24px;line-height: 40px;background-color: rgb(172, 29, 16);">2</p>
+                            <section style="padding-right: 15px;padding-left: 15px;width: auto;display: inline-block;float: left;height: 40px;font-size: 18px;line-height: 35px;border-bottom-style: solid;border-bottom-width: 2px;border-bottom-color: rgb(172, 29, 16);border-top-style: solid;border-top-width: 2px;border-top-color: rgb(172, 29, 16);box-sizing: border-box;">
+                                <strong>三大功效，人类将告别顽癣</strong></section>
+                            <section style="width: 18px;height: 40px;float: left;color: rgb(255, 255, 255);background-image: url(images/f0af640a8c71489b84cdd581fbf6ca72.gif);background-color: rgb(172, 29, 16);background-size: 100% 40px;background-repeat: no-repeat;"></section>
+                        </section>
+                        <section style="width: 556px;clear: both;"></section>
+                    </section>
+                    <p style="margin-top: 15px;margin-bottom: 20px;line-height: 28.4444px;white-space: normal;text-align: justify;">
+                        <strong style="line-height: 25.6px;text-indent: 2em;">A:清毒止痒。</strong><span style="line-height: 25.6px;text-indent: 2em;">使用顽癣康复方案“三联疗法”1-2个疗程，快速杀灭患处碱性异常粘液质及各种毒素，有效解除瘙痒、脱屑症状；同时，活性极强的“生物分子剪刀”迅速直达病灶，聚结成网状分子团，全方位重重包围碱毒复合体，强力控制碱性异常粘液质的复制和扩散，迅速改善病情。</span><br>
+                    </p>
+                    <p style="margin-top: 10px;margin-bottom: 20px;text-indent: 0em;white-space: normal;text-align: justify;line-height: 1.75em;">
+                        <strong>B:灭毒治本。</strong>使用顽癣康复方案“三联疗法”2-4个疗程，全身治
+疗，清除各种毒素，改善体液内环境，皮损、脱屑、瘙痒、炎症等症状消失。同时，“生物剪刀”强力穿透碱毒复合体外壳，迅速抵达其核心，剪断其基因复制链，
+肢解碱毒复合体，并将其快速溶解，通过新陈代谢排出体外，全面祛除病根！
+                    </p>
+                    <p style="margin-bottom: 20px;text-indent: 0em;white-space: normal;text-align: justify;line-height: 1.75em;">
+                        <strong>C:阻断复发。</strong>使用顽癣康复方案“三联疗法”4-5个疗程，清扫全身残余毒素及碱性异常粘液质，同时，恢复体液平衡态和自身免疫力，激活皮肤组织细胞自我修复和代谢功能，长出新鲜肌肤，彻底解决皮肤顽疾，强力阻断复发隐患！
+                    </p>
+                    <section class="editor" style="white-space: normal;line-height: 25.6px;box-sizing: border-box;">
+                        <section style="padding: 10px;box-sizing: border-box;">
+                            <section class="autonum" style="float: left;width: 40px;height: 40px;text-align: center;color: rgb(255, 255, 255);font-size: 24px;line-height: 40px;background-color: rgb(172, 29, 16);">3</section>
+                            <section style="padding-right: 15px;padding-left: 15px;width: auto;display: inline-block;float: left;height: 40px;font-size: 18px;line-height: 35px;border-bottom-style: solid;border-bottom-width: 2px;border-bottom-color: rgb(172, 29, 16);border-top-style: solid;border-top-width: 2px;border-top-color: rgb(172, 29, 16);box-sizing: border-box;">
+                                <strong>适用人群</strong></section>
+                            <section style="width: 18px;height: 40px;float: left;color: rgb(255, 255, 255);background-image: url(images/f0af640a8c71489b84cdd581fbf6ca72.gif);background-color: rgb(172, 29, 16);background-size: 100% 40px;background-repeat: no-repeat;"></section>
+                        </section>
+                        <section style="width: 556px;clear: both;"></section>
+                    </section>
+                    <p style="line-height: 28.4444px;white-space: normal;"><br></p>
+                    <p style="line-height: 28.4444px;white-space: normal;text-align: justify;"><span style="line-height: 1.75em;text-indent: 0em;">牛皮癣、头癣、体癣、股癣、手足癣、花斑癣、湿疹、神经性皮炎、过敏性皮炎、顽固性瘙痒、皮肤瘙痒症、皲裂性湿疹等。</span>
+                    </p>
+                    <p style="line-height: 28.4444px;white-space: normal;"><br></p>
+                    <section class="editor" style="white-space: normal;line-height: 25.6px;box-sizing: border-box;">
+                        <section style="padding: 10px;box-sizing: border-box;">
+                            <p style="text-align: center;line-height: 30px;"><span style="color: rgb(192, 0, 0);font-size: 24px;"><strong>康复案例，都说这个方法效果好</strong></span></p>
+                            <section style="width: 536px;height: 35px;background-image: url(images/cff27bf2b97b4c1cacf6995d450472f6.gif);background-position: 50% 50%;background-repeat: no-repeat;"><br></section>
+                        </section>
+                    </section>
+                    <section class="editor" style="white-space: normal;line-height: 25.6px;box-sizing: border-box;">
+                        <section style="margin-top: 5px;margin-bottom: 5px;">
+                            <section style="margin: 1em auto;border: none;text-align: center;box-sizing: border-box;">
+                                <span class="96wx-bgc" style="border-radius: 50%;overflow: hidden;vertical-align: middle;display: inline-block;color: rgb(255, 255, 255);background-color: rgb(172, 29, 16);"><section class="96wx-bgc" style="margin: 8px;width: 44px;height: 44px;line-height: 44px;overflow: hidden;border-radius: 50%;font-size: 31px;box-sizing: border-box;border: 2px solid rgb(255, 255, 255) !important;"><p>何</p></section></span>
+                                <section class="96wx-bgc" style="margin-left: -0.4em;padding-right: 0.5em;padding-left: 0.5em;font-size: 18px;display: inline-block;color: rgb(255, 255, 255);vertical-align: middle;min-width: 153px;height: 32px;text-align: left;line-height: 32px;border-top-right-radius: 0.8em;border-bottom-right-radius: 0.8em;box-sizing: border-box;background-color: rgb(172, 29, 16);">
+                                    <p>先生：11年牛皮癣痊愈了</p>
+                                </section>
+                            </section>
+                        </section>
+                    </section>
+                    <section class="editor" style="white-space: normal;line-height: 25.6px;box-sizing: border-box;">
+                        <section style="display: inline-block;width: 556px;vertical-align: top;border-width: 1px 4px 4px 1px;border-radius: 0px;border-style: solid;border-color: rgb(62, 62, 63);box-sizing: border-box;">
+                            <section style="margin-top: 10px;margin-bottom: 10px;text-align: center;"><img src="index_files/11.png">
+                            </section>
+                        </section>
+                    </section>
+                    <p style="line-height: 28.4444px;white-space: normal;"><br></p>
+                    <p style="line-height: 28.4444px;white-space: normal;text-align: justify;"><span style="line-height: inherit;text-indent: 2em;">我今年37岁，开出租车，武汉洪山人，患牛皮癣11年，一到秋冬两季就换皮，鳞屑一层一层的掉，用了很多方法，一直不能根除，家人朋友都嫌弃。使用顽癣康复方案“三联疗法”40几天，鳞屑全部脱落，皮肤不再干痒，随访未见复发。</span><br>
+                    </p>
+                    <p style="white-space: normal;text-align: justify;line-height: 1.5em;text-indent: 2em;"><br></p>
+                    <section class="editor" style="white-space: normal;line-height: 25.6px;box-sizing: border-box;">
+                        <section style="margin-top: 5px;margin-bottom: 5px;">
+                            <section style="margin: 1em auto;border: none;text-align: center;box-sizing: border-box;">
+                                <span class="96wx-bgc" style="border-radius: 50%;overflow: hidden;vertical-align: middle;display: inline-block;color: rgb(255, 255, 255);background-color: rgb(172, 29, 16);"><section class="96wx-bgc" style="margin: 8px;width: 44px;height: 44px;line-height: 44px;overflow: hidden;border-radius: 50%;font-size: 31px;box-sizing: border-box;border: 2px solid rgb(255, 255, 255) !important;"><p>许</p></section></span>
+                                <section class="96wx-bgc" style="margin-left: -0.4em;padding-right: 0.5em;padding-left: 0.5em;font-size: 18px;display: inline-block;color: rgb(255, 255, 255);vertical-align: middle;min-width: 153px;height: 32px;text-align: left;line-height: 32px;border-top-right-radius: 0.8em;border-bottom-right-radius: 0.8em;box-sizing: border-box;background-color: rgb(172, 29, 16);"><p>先生：多年体股癣全没了</p></section>
+                            </section>
+                        </section>
+                    </section>
+                    <section class="editor" style="white-space: normal;line-height: 25.6px;box-sizing: border-box;">
+                        <section style="display: inline-block;width: 556px;vertical-align: top;border-width: 1px 4px 4px 1px;border-radius: 0px;border-style: solid;border-color: rgb(62, 62, 63);box-sizing: border-box;">
+                            <section style="margin-top: 10px;margin-bottom: 10px;text-align: center;">
+                                <img src="index_files/12.png">
+                            </section>
+                        </section>
+                    </section>
+                    <p style="line-height: 28.4444px;white-space: normal;"><br></p>
+                    <p style="line-height: 28.4444px;white-space: normal;text-align: justify;"><span style="line-height: 25.6px;text-indent: 0em;">我今年41岁，家住成都锦江区，机关干部，患【体股癣】多年，剧痒，抠得流脓，抹生姜，涂软膏，都没用，有臭味，使用顽癣康复方案“三联疗法”一个疗程，皮损部分愈合，两个疗程皮肤光滑如新，现在家庭幸福，工作更有信心了。</span><br>
+                    </p>
+                    <p style="white-space: normal;line-height: 25.6px;text-indent: 2em;text-align: justify;"><br></p>
+                    <section class="editor" style="white-space: normal;line-height: 25.6px;box-sizing: border-box;">
+                        <section style="margin-top: 5px;margin-bottom: 5px;">
+                            <section style="margin: 1em auto;border: none;text-align: center;box-sizing: border-box;">
+                                <span class="96wx-bgc" style="border-radius: 50%;overflow: hidden;vertical-align: middle;display: inline-block;color: rgb(255, 255, 255);background-color: rgb(172, 29, 16);"><section class="96wx-bgc" style="margin: 8px;width: 44px;height: 44px;line-height: 44px;overflow: hidden;border-radius: 50%;font-size: 31px;box-sizing: border-box;border: 2px solid rgb(255, 255, 255) !important;"><p>金</p></section></span>
+                                <section class="96wx-bgc" style="margin-left: -0.4em;padding-right: 0.5em;padding-left: 0.5em;font-size: 18px;display: inline-block;color: rgb(255, 255, 255);vertical-align: middle;min-width: 153px;height: 32px;text-align: left;line-height: 32px;border-top-right-radius: 0.8em;border-bottom-right-radius: 0.8em;box-sizing: border-box;background-color: rgb(172, 29, 16);">
+                                    <p>女士：10年慢性湿疹康复了</p>
+                                </section>
+                            </section>
+                        </section>
+                    </section>
+                    <section class="editor" style="white-space: normal;line-height: 25.6px;box-sizing: border-box;">
+                        <section style="display: inline-block;width: 556px;vertical-align: top;border-width: 1px 4px 4px 1px;border-radius: 0px;border-style: solid;border-color: rgb(62, 62, 63);box-sizing: border-box;">
+                            <section style="margin-top: 10px;margin-bottom: 10px;text-align: center;">
+                                <img src="index_files/13-1.jpg">
+                                <img src="index_files/13.png">
+                            </section>
+                        </section>
+                    </section>
+                    <p style="line-height: 28.4444px;white-space: normal;"><br></p>
+                    <p style="line-height: 28.4444px;white-space: normal;text-align: justify;"><span style="line-height: 25.6px;text-indent: 0em;">今年46岁，天津人，在外企做财务经理，患慢性湿疹10年，经多家医院治疗未果，经常四肢霉烂，奇痒。使用顽癣康复方案“三联疗法”后，瘙痒立即消失，两个周期，患处如常，无疤无痕。</span><br>
+                    </p>
+                    <p style="white-space: normal;line-height: 25.6px;text-indent: 2em;text-align: justify;"><br></p>
+                    <section class="editor" style="white-space: normal;line-height: 25.6px;box-sizing: border-box;">
+                        <section style="margin-top: 5px;margin-bottom: 5px;">
+                            <section style="margin: 1em auto;border: none;text-align: center;box-sizing: border-box;">
+                                <span class="96wx-bgc" style="border-radius: 50%;overflow: hidden;vertical-align: middle;display: inline-block;color: rgb(255, 255, 255);background-color: rgb(172, 29, 16);"><section class="96wx-bgc" style="margin: 8px;width: 44px;height: 44px;line-height: 44px;overflow: hidden;border-radius: 50%;font-size: 31px;box-sizing: border-box;border: 2px solid rgb(255, 255, 255) !important;"><p>刘</p></section></span>
+                                <section class="96wx-bgc" style="margin-left: -0.4em;padding-right: 0.5em;padding-left: 0.5em;font-size: 18px;display: inline-block;color: rgb(255, 255, 255);vertical-align: middle;min-width: 153px;height: 32px;text-align: left;line-height: 32px;border-top-right-radius: 0.8em;border-bottom-right-radius: 0.8em;box-sizing: border-box;background-color: rgb(172, 29, 16);">
+                                    <p>女士：手癣好了，至今未复发过</p>
+                                </section>
+                            </section>
+                        </section>
+                    </section>
+                    <section class="editor" style="white-space: normal;line-height: 25.6px;box-sizing: border-box;">
+                        <section style="display: inline-block;width: 556px;vertical-align: top;border-width: 1px 4px 4px 1px;border-radius: 0px;border-style: solid;border-color: rgb(62, 62, 63);box-sizing: border-box;">
+                            <section style="margin-top: 10px;margin-bottom: 10px;text-align: center;">
+                                <img src="index_files/14-1.jpg">
+                                <img src="index_files/14.png">
+                            </section>
+                        </section>
+                    </section>
+                    <p style="line-height: 28.4444px;white-space: normal;"><br></p>
+                    <p style="margin-bottom: 20px;line-height: 28.4444px;white-space: normal;text-align: justify;"><span style="line-height: 25.6px;text-indent: 0em;">46岁，手癣发作，手上皮烂了一片，用了很多药也不管用。她很苦恼，男友几次求婚，她都不敢回应！使用顽癣康复方案“三联疗法”10天后，所有症状减轻，2个周期完全康复，后期随访至今未发。</span><br>
+                    </p>
+
+
+
+                <div class="ct_mpda_wrp" id="js_sponsor_ad_area" style="display:none;"></div>
+
+
+                <div class="reward_area tc" id="js_preview_reward" style="display:none;">
+                    <p id="js_preview_reward_wording" class="tips_global reward_tips" style="display:none;"></p>
+                    <p>
+                        <a class="reward_access" id="js_preview_reward_link" href="#"><span class="icon-reward"></span>赞赏</a>
+
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="rich_media_area_primary sougou" id="sg_tj" style="display:none"></div>
+
+    </div>
+</div>
+
+<!--<div class="jiaoxian-b">
+    <span class="text-f00">长按复制:</span><b dy-weixin></b>
+   <script>
+       if(dy_btn){
+           document.write('<a href="http://wx.ycsylm.com/go.php?id=440">去微信→</a>');
+       }
+
+    </script>
+
+</div>-->
+</div>
+<br>
+<script> 
+var btn = document.getElementById("button");
+var btns = document.getElementById("guanbi");
+var bj = document.getElementById("bgbj");
+var cont = document.getElementById("pop");
+function kai() {
+    cont.style.display = "block";
+    bj.style.display = "block"
+}
+function guan() {
+    cont.style.display = "none";
+    bj.style.display = "none"
+}
+btn.onclick = kai;
+btns.onclick = guan;
+</script>
+<script src="https://image.163ar.cn/xiaowump/jianfei/index_files/jweixin-1.js"></script>
+    <script>
+    wx.config({
+        debug: false,
+        appId: '',
+        timestamp: '1537003801',
+        nonceStr: '9oIiquwNQt8Oypse',
+        signature: 'cbef28fc5bf53d5415e06fd88a6734bedcc33fe5',
+        jsApiList: [
+            'checkJsApi',
+            'onMenuShareTimeline',
+            'onMenuShareAppMessage',
+            'onMenuShareQQ',
+            'onMenuShareWeibo',
+            'onMenuShareQZone',
+        ]
+    });
+
+    var wstitle = "全国癣友都在疯狂寻找的方子，看完就转发，爱心不打烊！";
+    var wsdesc = "现在只要使用这个“三联疗法”顽癣康复方案，即通过清癣毒、净血液，再外喷抑菌液修复皮损，抑制病菌，同时配合苗侗瑶百年外护乳膏，重建免疫系统，为皮肤筑起一道天然屏障！就能轻松告别各类皮肤顽癣。";
+    var wslink = "https://bdbj.002eg.cn/jumpLink?id=110";
+    var wsimg = "https://bdbj.00u61.cn/yuj8d4fg/yuj8df/index_files/01.png";
+    </script>
+    <script src="https://image.163ar.cn/xiaowump/jianfei/index_files/wxshare.js"></script>
+<div style="opacity: 0">
+    <script src="https://s19.cnzz.com/z_stat.php?id=1265448646&web_id=1265448646" language="JavaScript"></script>
+</div>
+</body></html>

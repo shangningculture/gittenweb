@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="zh_cn">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="static/zui/css/zui.min.css">
+  <script src="static/js/jquery-1.11.0.min.js"></script>
+  <script src="static/zui/js/zui.min.js"></script>
+  <link rel="stylesheet" href="static/zui/lib/uploader/zui.uploader.min.css">
+  <script src="static/zui/lib/uploader/zui.uploader.js"></script>
+  <link rel="stylesheet" href="static/cropper/cropper.min.css">
+  <script src="static/cropper/cropper.min.js"></script>
+  <script src="static/gif/gif.js"></script>
+  <style>
+    #uploadEwmList .file-list {
+      border: 1px solid #ddd;
+    }
+    #uploadEwmList .file-status,
+    #uploadEwmList .btn-rename-file {
+      display: none;
+    }
+    #uploadEwmList .uploader-files {
+      margin-bottom: 0;
+    }
+    #uploadEwmList .file-list-grid {
+      margin: 0;
+    }
+    #uploadEwmBg .file-list {
+      border: 1px solid #ddd;
+    }
+    #uploadEwmBg .file-status,
+    #uploadEwmList .btn-rename-file {
+      display: none;
+    }
+    #uploadEwmBg .uploader-files {
+      margin-bottom: 0;
+    }
+    #cutterMask {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 99999;
+      display: none;
+    }
+    #imgCutters {
+      position: absolute;
+      display: inline-block;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: #fff;
+      padding: 15px;
+    }
+    #imgCutters img {
+      max-width: 900px;
+      max-height: 900px;
+    }
+  </style>
+  <title>二维码闪图合成</title>
+</head>
+
+<body>
+  <div class="container">
+    <nav class="navbar navbar-inverse" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse-example">
+            <span class="sr-only">切换导航</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">Tools</a>
+        </div>
+        <div class="collapse navbar-collapse navbar-collapse-example">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="/ewm">二维码合成</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div id='uploadEwmBg' class="container uploader">
+      <div class="uploader-files file-list"></div>
+      <button type="button" class="btn btn-link uploader-btn-browse"><i class="icon icon-plus"></i>选择底图</button>
+      <button onclick="setEwmPosition()" type="button" class="btn btn-link"><i
+          class="icon icon-resize"></i>设置二维码位置</button>
+    </div>
+    <div id='uploadEwmList' class="container uploader">
+      <div class="uploader-message text-center">
+        <div class="content"></div>
+        <button type="button" class="close">×</button>
+      </div>
+      <div class="uploader-files file-list file-list-grid"></div>
+      <button type="button" class="btn btn-link uploader-btn-browse"><i class="icon icon-plus"></i>选择二维码</button>
+    </div>
+    <div class="container">
+      <div class="input-group">
+        <span class="input-group-addon"><i class="icon icon-time"></i>跳转速度</span>
+        <input type="number" value="200" onchange="Ewmtime = parseInt(this.value)" class="form-control"
+          placeholder="跳转速度(ms)">
+        <span class="input-group-addon"><i class="icon icon-collapse-full"></i>缩放比例</span>
+        <input type="number" value="1" onchange="Ewmscale = parseFloat(this.value)" class="form-control"
+          placeholder="缩放比例">
+      </div>
+    </div>
+    <br>
+    <div class="container"><button onclick="renderEwm()" class="btn btn-block btn-primary" type="button">生成二维码</button>
+    </div>
+    <br>  
+    <div class="container result">
+      <img id="resultImg" style="display: none;" src="" width="50%" alt="">
+    </div>
+    <div id="cutterMask">
+      <div id="imgCutters">
+        <div class="canvas">
+          <img id="image" src="static/images/1.jpg">
+        </div>
+        <div class="actions">
+          <h5>拖拽确认二维码位置</h5>
+          <button onclick="getEwmPosition()" type="button" class="btn btn-success">确认</button>
+          <button onclick="$('#image').cropper('reset')" type="button" class="btn btn-warning ">重置</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    var EwmBg = null
+    var EwmPosition = null
+    var EwmList = []
+    var Ewmtime = 200
+    var Ewmscale = 1
+    var uploadEwmBg = $('#uploadEwmBg').uploader({
+      limitFilesCount: 1, onQueueChanged: function () {
+        if (this.plupload.files.length >= 1) {
+          EwmBg = this.plupload.files[0].getNative()
+        } else {
+          EwmBg = null
+          EwmPosition = null
+        }
+      }
+    });
+    var uploadEwmList = $('#uploadEwmList').uploader({
+      onQueueChanged: function () {
+        EwmList = []
+        this.plupload.files.forEach(function (item) {
+          EwmList.push(item.getNative())
+        })
+      }
+    });
+    function setEwmPosition() {
+      if (!EwmBg) {
+        new $.zui.Messager('请先上传底图', {
+          type: 'danger' // 定义颜色主题
+        }).show();
+        return
+      }
+      $('#image').attr('src', URL.createObjectURL(EwmBg))
+      var $image = $('#image');
+      $image.cropper({
+        aspectRatio: 1 / 1,
+        crop: function (event) {
+          EwmPosition = event.detail
+          EwmPosition.Owidth = event.target.width
+          EwmPosition.Oheight = event.target.height
+        }
+      });
+      var cropper = $image.data('cropper');
+      $('#cutterMask').fadeIn();
+    }
+    function getEwmPosition() {
+      console.log(EwmPosition)
+      $('#cutterMask').fadeOut()
+    }
+    function renderEwm() {
+      if (EwmBg) {
+        if (!EwmPosition) {
+          new $.zui.Messager('请设置二维码在底图的位置', {
+            type: 'danger' // 定义颜色主题
+          }).show();
+          return
+        }
+      }
+      if (EwmList.length <= 0) {
+        new $.zui.Messager('请上传二维码图片', {
+          type: 'danger' // 定义颜色主题
+        }).show();
+        return
+      }
+      if (!EwmBg) {
+        EwmBg = EwmList[0]
+      }
+      var gif = new window.GIF({
+        workers: 2,
+        quality: 10,
+        workerScript: 'gif.worker.js'
+      });
+      gif.on('finished', function (blob) {
+        $('#resultImg').show()
+        $('#resultImg').attr('src', URL.createObjectURL(blob))
+      });
+      // 设置背景图
+      var bgimg = new Image();
+      bgimg.onload = function () {
+        if (!EwmPosition) {
+          EwmPosition = {
+            x: 0, y: 0,
+            Oheight: bgimg.height,
+            Owidth: bgimg.width,
+            width: bgimg.width,
+            height: bgimg.height,
+          }
+        }
+        (function _Iterator(index) {
+          if (index >= EwmList.length) {
+            gif.render();
+            return
+          }
+          var file = EwmList[index];
+          var canvas = document.createElement('canvas');
+          canvas.width = EwmPosition.Owidth * Ewmscale;
+          canvas.height = EwmPosition.Oheight * Ewmscale;
+          var cxt = canvas.getContext("2d");
+          cxt.drawImage(bgimg, 0, 0, EwmPosition.Owidth * Ewmscale, EwmPosition.Oheight * Ewmscale);
+          cxt.save();
+          var ewm = new Image();
+          ewm.onload = function () {
+            cxt.drawImage(ewm, EwmPosition.x * Ewmscale, EwmPosition.y * Ewmscale, EwmPosition.width * Ewmscale, EwmPosition.height * Ewmscale);
+            gif.addFrame(canvas, { delay: Ewmtime });
+            _Iterator(index + 1);
+          }
+          ewm.src = URL.createObjectURL(file);
+        })(0)
+      }
+      bgimg.src = URL.createObjectURL(EwmBg);
+    }
+  </script>
+</body>
+
+</html>

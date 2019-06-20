@@ -1,0 +1,264 @@
+body,html{
+    margin:0 ;padding:0;font-family: 微软雅黑;font-size: 16px;color:#333;
+}
+.main{
+    max-width:660px;padding:5px;margin:0 auto;
+}
+.top{
+    font-size: 1.5rem;margin-top:2rem;border-bottom:1px #e7e7eb solid;padding-bottom:10px;margin-bottom:10px;
+}
+.info{
+    font-size: 1rem;color:#9a8c8c;margin-bottom:20px;
+}
+.info span{
+    color:#607fa6;cursor: pointer;
+}
+img{
+    max-width: 100%;
+}
+p{
+    margin:15px 0;line-height: 25px;letter-spacing: 1px;
+}
+.pink{
+    color:#ff4f79;
+}
+.bpink{
+    background:#ff4f79; color:#fff;padding:3px 5px;
+}
+.bpink .touchArea{
+    color:#ffff00;font-size: 1.3rem;
+}
+center{
+    margin:5px 0;
+}
+p.title{
+    font-size: 1.3rem;font-weight: bold;color:#fff;text-align: center;
+}
+p.title b{
+    background:#ff4f79;
+}
+center .pink{
+    font-size: 1.1rem;line-height: 30px;
+}
+.hei{
+    color:#333;
+}
+.byellow{
+    background:#fffb00;
+}
+.pl{
+    margin:40px 0;
+}
+.pltitle span{
+    line-height: 35px;background:#a3a9c5;color:#fff;display:inline-block;padding:0 20px;border-radius:100px;
+
+}
+.pl1{
+    margin-bottom:10px;
+}
+.pl1 .tx{
+    float:left;padding:0 10px;
+}
+.pl1 p{
+    display:block;padding-left:80px;margin:2px 0;
+}
+.pl1 .name{
+    color:#888888;
+}
+.pl1 p img{
+    max-width: 100%;
+}
+.pl1 .time{
+    color:#999;font-size:0.8rem;margin-top:-10px;
+}
+.pl1 .bpink{
+    background:red;
+}
+
+
+.buttomess{
+    position: fixed;bottom:0;left:0;height:auto;width:100%;z-index: 999;
+}
+._buttomess{
+    max-width: 840px;margin:0 auto;padding:10px;background:#ffc0cb;
+}
+._buttomess table{
+    width:100%;
+}
+._buttomess {
+    font-weight: 400;font-size:16px;color: #333;
+}
+._buttomess span .weixin{
+    background:yellow;color:red;font-weight: 600;font-size: 18px;
+}
+.touxiang{
+    float:left;width:70px;height:70px;margin-top:-30px;margin-right: 5px;
+}
+
+._buttomess a{
+    display: inline-block;background:#217519;color:#fff;line-height: 30px;padding:0 10px;border-radius: 5px;
+    text-decoration: none;
+}
+
+
+/*.bottom{
+    width:100%;height:auto;position: fixed;bottom:0px;
+}
+.bottom-cont{
+    max-width:660px;padding:5px;height:auto;margin:0 auto;background:#ffc0cb;
+}
+.bottom-cont .tx{
+    height:70px;width:70px;margin-top:-30px;margin-left:20px;float:left;
+}
+
+
+
+.towx{
+    background:#008000;line-height: 30px;border-radius:10px;display:block;padding:0 10px;color:#fff;text-decoration: none;float:right;
+}
+.red{
+    color:red;
+}
+#window{
+    color:red;background:yellow;
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+.ewm{
+    overflow: auto;
+}
+.ewm img{
+    float:right;
+}
+.ewm .text{
+    float:left;font-size: 14px;color:red;padding:13% 0 0 5%;
+}
+.ewm .text span{
+    color:#333;
+}
+
+
+.right_button{
+    position: fixed;
+    text-align: center;
+    color: #aaa;
+    top: 40%;
+    left: 50%;
+    margin-left: 340px;
+    background: #fff;
+    border-radius: 0.3rem;
+    padding: 0.24rem 0.24rem 0.16rem;
+    border: 0.05rem solid #217519;
+}
+img{
+    display: block;
+}
+.right_button a span{
+    color: #217519!important;
+    font-weight: bold;
+    font-size: 0.55rem;
+    line-height: 20px;
+}
+@media screen and (max-width: 870px){
+    .right_button{
+        left: 100%;
+        margin-left: -80px;
+    }
+}
+
+#layer {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(60,60,60,.9);
+}
+
+.wechat {
+    position: absolute;
+    top: 14%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    max-width: 620px;
+}
+
+.wechat-inner {
+    position: relative;
+}
+
+.wechat img {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.num-1 {
+    position: absolute;
+    z-index: 200;
+    top: 60%;
+    left: 36%;
+    color: yellow;
+    font-size: 18px;
+    background-color: transparent;
+    line-height: 28px;
+    font-weight: 600;
+}
+
+.go-2 {
+    position: absolute;
+    top: 75%;
+    right: 17%;
+    width: 16%;
+    height: 2.5rem;
+
+}
+
+#close {
+    position: absolute;
+    top: 40%;
+    right: 2%;
+    width: 40px;
+    height: 40px;
+}
+
+.button{
+    position: fixed;
+    text-align: center;
+    color: #aaa;
+    top: 40%;
+    left: 50%;
+    margin-left: 340px;
+    background: #fff;
+    border-radius: 0.3rem;
+    padding: 0.24rem 0.24rem 0.16rem;
+    border: 0.05rem solid #217519;
+}
+img{
+    display: block;
+}
+.button a span{
+    color: #217519!important;
+    font-weight: bold;
+    font-size: 0.55rem;
+    line-height: 20px;
+}
+@media screen and (max-width: 870px){
+    .button{
+        left: 100%;
+        margin-left: -80px;
+    }
+}

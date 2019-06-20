@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://cdn.rongyu99.cn/awen/013/static/js/jquery.min.js"></script>
+  <script src="https://cdn.rongyu99.cn/awen/013/static/js/key.js"></script>
+  <title>订单详情</title>
+  <style>
+    body,
+    html {
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .main {
+      max-width: 640px;
+      margin: 0 auto;
+    }
+
+    .error {
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .error img {
+      width: 40%;
+    }
+
+    .success {
+      padding: 2rem 0;
+      text-align: center;
+    }
+
+    .success img {
+      width: 30%;
+    }
+
+    h2 {
+      margin: 0.5rem;
+    }
+
+    .item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.5rem 0.8rem;
+      font-size: 0.9rem;
+      text-align: left;
+      border-top: 1px solid #f6f6f6;
+    }
+
+    .item .title {
+      flex-basis: 5rem;color: #666;
+    }
+    .item .cont {
+      flex: 1;color: #333;font-weight: 600;
+    }
+    .btn{
+      margin:0.5rem;border:1px solid #0bc638;height: 1.8rem;font-size:0.8rem;line-height: 1.8rem;
+      border-radius: 4px;
+    }
+  </style>
+  <script>
+    function formatDateTime(inputTime) {
+      var date = new Date(inputTime);
+      var y = date.getFullYear();
+      var m = date.getMonth() + 1;
+      m = m < 10 ? ('0' + m) : m;
+      var d = date.getDate();
+      d = d < 10 ? ('0' + d) : d;
+      var h = date.getHours();
+      h = h < 10 ? ('0' + h) : h;
+      var minute = date.getMinutes();
+      var second = date.getSeconds();
+      minute = minute < 10 ? ('0' + minute) : minute;
+      second = second < 10 ? ('0' + second) : second;
+      return y + '-' + m + '-' + d + ' ' + h + ':' + minute + ':' + second;
+    };
+    window.onresize = function () {
+      var pagewidth = document.getElementsByTagName('html')[0].clientWidth;
+      var rem_root = (pagewidth > 640 ? 640 : pagewidth) / 375 * 18;
+      document.getElementsByTagName('html')[0].style.fontSize = rem_root + 'px';
+    }
+    window.onresize();
+    var SecreKey = new secreKey()
+    function GetQueryString(name) {
+      var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+      var r = window.location.search.substr(1).match(reg);
+      if (r != null) return unescape(r[2]); return null;
+    }
+    var data = null
+    try {
+      data = JSON.parse(SecreKey.decode(GetQueryString('id')))
+    } catch (e) { data = null }
+    console.log(data)
+  </script>
+</head>
+
+<body>
+  <div class="main">
+    <div class="success" style="display: none;">
+      <img src="https://cdn.rongyu99.cn/awen/013/static/images/success.png" alt="">
+      <h2>下单成功</h2>
+      <div class="item">
+        <div class="title">下单时间:</div>
+        <div class="cont">
+          <script>document.write(formatDateTime(new Date(data.timeat)));</script>
+        </div>
+      </div>
+      <div class="item">
+        <div class="title">商品名称:</div>
+        <div class="cont">
+          <script>document.write(data.proname);</script>
+        </div>
+      </div>
+      <div class="item">
+        <div class="title">商品数量:</div>
+        <div class="cont">
+          <script>document.write(data.pro_num);</script> 份
+        </div>
+      </div>
+      <div class="item">
+        <div class="title">订单总价:</div>
+        <div class="cont">
+          ￥
+          <script>document.write(parseFloat(data.pro_price));</script>
+        </div>
+      </div>
+      <div class="item">
+        <div class="title">支付方式:</div>
+        <div class="cont">货到付款</div>
+      </div>
+      <div class="item">
+        <div class="title">收 件 人:</div>
+        <div class="cont">
+          <script>document.write(data.name);</script>
+        </div>
+      </div>
+      <div class="item">
+          <div class="title">联系方式:</div>
+          <div class="cont">
+            <script>document.write(data.phone);</script>
+          </div>
+        </div>
+      <div class="item">
+          <div class="title">收货地址:</div>
+          <div class="cont">
+            <script>document.write(data.s_province + '-' + data.s_city + data.addr);</script>
+          </div>
+        </div>
+        <div class="item">
+            <div class="title">备注信息:</div>
+            <div class="cont">
+              <script>document.write(data.message);</script>
+            </div>
+          </div>
+        <div class="btn" onclick="window.history.back(-1)">返回</div>
+    </div>
+    <div class="error" style="display: none;">
+      <img src="https://cdn.rongyu99.cn/awen/013/static/images/error.png" alt=""><br>
+      <p>参数错误</p>
+    </div>
+  </div>
+  <script>
+    if (!data) {
+      window.history.back(-1);
+      $('.error').show()
+    } else {
+      $('.success').show()
+    }
+
+  </script>
+</body>
+
+</html>

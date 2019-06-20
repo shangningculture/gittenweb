@@ -1,0 +1,262 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-title" content="">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telphone=no, email=no" />
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>不用你就继续丑，一白遮三丑，想变美变白就跟我学</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script type="text/javascript">
+        var deviceWidth = document.documentElement.clientWidth;
+        if (320 >= deviceWidth <= 640) {
+            document.documentElement.style.fontSize = parseInt(10 * deviceWidth / 320) + 4 + 'px';
+        }
+        if (deviceWidth > 640) {
+            document.documentElement.style.fontSize = 24 + "px";
+        }
+        function isPhone(){
+          var sUserAgent = navigator.userAgent.toLowerCase();
+          var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
+          var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+          var bIsMidp = sUserAgent.match(/midp/i) == "midp";
+          var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+          var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
+          var bIsAndroid = sUserAgent.match(/android/i) == "android";
+          var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
+          var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
+          if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
+            return true;
+          }else {
+            return false;
+          }
+        }
+
+    </script>
+    <script type="text/javascript" src="js/jquery.min-1.11.3.js"></script>
+    <script src="https://a.yougou520.cn/api/count/tj_stat.html?id=447&web_id=447&code=9d197bab53101a30b214ad06623a7462" language="JavaScript"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript">
+        $(document).bind('mobileinit', function() {　　
+            $.mobile.autoInitializePage = false;
+        });
+        $(function() {
+
+            //微信引导层显示
+            $(".add_btn").click(function() {
+                
+                $('body,html').animate({ scrollTop: $('.ewmbox')[0].offsetTop }, 100);
+
+            });
+
+
+
+            /*苹果fixed定位*/
+            //动态获取document.domain
+            function getPrimaryHost(host) {
+                var hostExts = [".com", ".cn", ".net", ".cc", ".sh", ".org", '.com.cn'],
+                    ext = [],
+                    reExt;
+                for (var i = 0; i < hostExts.length; i++) {
+                    if (host.indexOf(hostExts[i]) != -1) {
+                        ext[ext.length] = hostExts[i];
+                        reExt = new RegExp("\\" + hostExts[i]);
+                        host = host.replace(reExt, "{" + (ext.length - 1) + "}");
+                    }
+                }
+                var hostarray = host.split('.');
+                host = hostarray[hostarray.length - 1];
+                for (var i = 0; i < ext.length; i++) {
+                    reExt = new RegExp("\\{" + i + "\\}");
+                    host = host.replace(reExt, ext[i]);
+                }
+                return host;
+            }
+
+
+        })
+
+    </script>
+    <script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
+    <script type="text/javascript" src="js/jquery.cookie.js"></script>
+    <script type="text/javascript">
+        //        $(function() {
+        //            window.article_random = $.cookie('sihe_article_random') ? $.parseJSON($.cookie('sihe_article_random')) : {
+        //                wx_id: 'yiyiweixin510',
+        //                wx_name: '伊伊'
+        //            };
+        //            window.redirect_uri = $.cookie('sihe_article_redirect_uri') ? $.cookie('sihe_article_redirect_uri') : '';
+        //            $('.wx-id').text(window.article_random.wx_id);
+        //            $('.wx-name').text(window.article_random.wx_name);
+        ////            $('.wechat_guide').attr('src', window.redirect_uri + '../wxblogkka/images/qrcode/' + window.article_random.wx_id + '.gif');
+        //            
+        ////            $("#alertimg").attr("src", window.redirect_uri + "img/" + window.article_random.wx_name + "alert.png");
+        //
+        //            
+        //
+        //            setInterval('checkSelection()', 50);
+        //        });
+
+    </script>
+    <script type="text/javascript">
+
+
+    </script>
+</head>
+
+<body>
+    <div class="warp">
+        <div class="banner">
+            <p><img src="picture/banner_01_.jpg" alt="" /><img id="name" src="picture/yiyi.png" alt="伊伊" /></p>
+            <p><img src="picture/banner_02_.jpg" alt="" /><a href="javascript:;" class="add_btn">&nbsp;</a></p>
+        </div>
+
+        <div class="tips">
+            <img src="picture/tips_top.jpg" alt="" />
+            <div>
+                <p>我以前可是个十足的丑女啊，出身于农村的我，以前不懂护肤，脸蛋不仅像裹了层黄泥，竟然还长出了很多斑对于当时的我来说，简直就是雪上加霜啊，经常被同学嘲笑斑点妹，别提多无奈了。后来我开始疯狂的在网上找偏方，尝试过什么醋酸祛斑变美、柠檬片祛斑美白等，搞得我皮肤又红又痒。经过转业的学习和实践，我终于找到了正确的祛斑美白方法，现在我已经没了斑，还变白变美了。</p>
+<!--                <a href="javascript:;" class="add_btn"><img src="picture/tips_btn_.jpg" alt="" /></a>-->
+               
+            </div>
+            
+            <img src="picture/tips_bottom.jpg" alt="" />
+        </div>
+        <div class="ewmbox">
+                  <span>↓↓↓长按识别下方二维码↓↓↓</span>
+                   <img src="" alt="" class="weixinpic">
+               </div>
+
+        <div class="container">
+            <img src="picture/1.jpg" alt="" />
+            <p>正是源于我那时的那种盲从心理，导致现在市面上出现了很多营销手段！快速祛斑，真的就只是传说而已，到目前为止都没有一劳永逸的祛斑产品！</p>
+            <p>今天，在这里我也不藏着掖着了，我知道有很多妹子都想祛斑但苦于没有祛斑方法，盲目地的听别人说，在网上看等，走了不少弯路，花了不少冤枉钱！其实祛斑没有想象中的那么难，只要找对适合的方法，坚持到最后你就能看到自己的变化。</p>
+            <p>现在很多以前的同学看到我都说，你是不是整容了？笑哭了,明明脸型没有变化，敢不敢说我换皮了？所以说祛斑后，整个人给人的感觉就是不一样，有种眼前一亮的感觉。好吧，我终于和祛斑修成正果了。<span class="purpel add_btn">&gt;&gt;点这教你具体祛斑美白方法&lt;&lt;</span></p>
+            <img src="picture/2.jpg" alt="" />
+            <p>今天跟大家分享我成功的经历，就是想让更多脸上长斑的朋友，也能拥有梦想已久的美。祛斑美白不是一朝一夕的事情需要经过一个修复的过程，又或者是心态太着急，三天打鱼两天晒网的朋友，是坚持不到最后的。<span class="purpel add_btn">&gt;&gt;祛斑快跟我学&lt;&lt;</span></p>
+            <div class="ewmbox">
+                  <span>↓↓↓长按识别下方二维码↓↓↓</span>
+                   <img src="" alt="" class="weixinpic">
+               </div>
+            <div class="casebox">
+                <img src="picture/case_top.jpg" alt="" />
+                <div class="case case1">
+                    <img src="picture/case1_.jpg" alt="" />
+                    <strong>薛晓 &nbsp;27岁 &nbsp;公司白领</strong>
+                    <p>从大学毕业后，就进入职场，一开始就天天加班，持续了一段时间后，脸上就长了不少的斑，起初她用了不少化妆品遮盖，后来越来越多，越长越密了。害怕的她试了网上的偏方，差点毁容。偶然在网上看到网友推荐我，就过来找到我了，我跟她说了一个方法，她试了3个月的时间，终于把脸上的这些斑都祛净了，现在简直就是女神般的存在，人美又能干，活出了她自己的精彩了。</p>
+                </div>
+                <div class="case case2">
+                    <img src="picture/case2_.jpg" alt="" />
+                    <strong>张婷 &nbsp;32岁 &nbsp;全职宝妈</strong>
+                    <p>张婷跟多少怀孕之后的年轻女性朋友一样，从怀孕开始就长妊娠斑。生下宝宝之后，她一直有尝试各种祛斑方法，不过盲目尝试，不懂根治也是白费功夫的。张婷因为脸上的斑，胡乱在脸上折腾4年了，后来经朋友推荐我，在经过了长达3个月的治疗之后，终于把她脸上的斑弄没了，现在看着哪里像已经生了一个4岁的小宝宝呢，惊讶到我了。</p>
+                </div>
+                <div class="case case3">
+                    <img src="picture/case3_.jpg" alt="" />
+                    <strong>小姜 &nbsp;20岁 &nbsp;大学生</strong>
+                    <p>天生脸蛋黑黄的她，从小就被叫成“黑妹”在公众场合总是不自信，在大学还因为皮肤被同学冷落，别提多伤心了。一次偶然的相遇，她加了我为好友，我跟她说如果你想白，记得每天都做一件事，她坚持了3个多月，脸蛋越来越白，现在已经可以用水嫩来形容了，看上面的对比图，不说我都想象不到她们真的是同一个人，她周围的同学都惊呆了。</p>
+                    <p>我们生活在一个满是视觉的时代，没有美丽的颜值做什么都难上加难，没有好的外貌资本，好的才华都难以被发现！</p>
+                </div>
+                <a href="javascript:;" class="add_btn"><img src="picture/case_bottom_.jpg" alt="" /></a>
+            </div>
+            <div class="ewmbox">
+                  <span>↓↓↓长按识别下方二维码↓↓↓</span>
+                   <img src="" alt="" class="weixinpic">
+               </div>
+            <div class="box3">
+                <div class="xian3"></div>
+                <h6>精彩留言</h6>
+                <div class=" xian3 xian3-1"></div>
+            </div>
+            <div class="tab_item">
+                <ul>
+                    <li>
+                        <div class="com">
+                            <i><img class="loaded" src="picture/user_01.png"></i>倾慕又倾城<span class="time1"></span>
+                        </div>
+                        <p>没想到<span class="wx-name">伊伊</span>教的方法这么管用，到现在还不敢相信我已经祛净斑点美回来了<img class="emoij" src="picture/emoij1.jpg" alt=""></p>
+                    </li>
+                    <li>
+                        <div class="com">
+                            <i><img class="loaded" src="picture/user_02.png"></i>来自火星的姑凉<span class="time1"></span>
+                        </div>
+                        <p>从一开始的半信半疑，到现在的死心塌地真不是没有道理，<span class="wx-name">伊伊</span>让我重获自信，带给我的改变太多了，有肌肤问题加她吧，相信你会有所收获的<img class="emoij" src="picture/emoij2.jpg" alt=""></p>
+                    </li>
+                    <li>
+                        <div class="com">
+                            <i><img class="loaded" src="picture/user_03.png"></i>天天十八<span class="time2"></span>
+                        </div>
+                        <p>天生的斑点，从来没想到有一天能甩掉斑点，如果不是遇到了<span class="wx-name">伊伊</span>，可能我还不知道在哪个美容院烧钱呢，大家可以看看我的改变哦</p>
+                    </li>
+                    <li>
+                        <div class="com">
+                            <i><img class="loaded" src="picture/user_04.png"></i>单心儿<span class="time2"></span>
+                        </div>
+                        <p>已经加了<span class="wx-name">伊伊</span>，坐等通过<img class="emoij" src="picture/emoij3.jpg" alt=""></p>
+                    </li>
+                    <li>
+                        <div class="com">
+                            <i><img class="loaded" src="picture/user_05.png"></i>文艺小青年<span class="time3"></span>
+                        </div>
+                        <p>我经常熬夜，皮肤黄又差，能好回来吗？求解答~~~~</p>
+                    </li>
+                    <li>
+                        <div class="com">
+                            <i><img class="loaded" src="picture/user_06.png"></i>MT-anda<span class="time3"></span>
+                        </div>
+                        <p>我长斑好多年了，已经加你了，我也想祛斑变美</p>
+                    </li>
+                    <li>
+                        <div class="com">
+                            <i><img class="loaded" src="picture/user_07.png"></i>我是狮迷我是狮迷<span class="time4"></span>
+                        </div>
+                        <p><span class="wx-name">伊伊</span>的方法真是不一样，效果就摆在眼前，不佩服都不行<img class="emoij" src="picture/emoij1.jpg" alt=""><img class="emoij" src="picture/emoij1.jpg" alt=""></p>
+                    </li>
+                    <li>
+                        <div class="com">
+                            <i><img class="loaded" src="picture/user_08.png"></i>请叫我小迪<span class="time4"></span>
+                        </div>
+                        <p>很有耐心的姑娘，放心咨询就好，好了我要回家试试她教的方法了，期待效果<img class="emoij" src="picture/emoij4.jpg" alt=""></p>
+                    </li>
+                </ul>
+            </div>
+            <div class="ewmbox">
+                  <span>↓↓↓长按识别下方二维码↓↓↓</span>
+                   <img src="" alt="" class="weixinpic">
+               </div>
+        </div>
+    </div>
+    <!--微信弹框-->
+    <div class="Mask" id="weixin">
+        <div class="pr">
+            <img id="alertimg" src="picture/yiyialert.png" alt="" />
+            <p>&nbsp;<span class="wx-id">yiyiweixin510</span>&nbsp;</p>
+            <div class="small">第1步：先复制微信号哦～</div>
+            <button><a href="weixin://" target="_blank" style="color:#fff">第2步：点击去微信》</a></button>
+            <div class="close_Mask"></div>
+        </div>
+    </div>
+    <div class="Mask" id="ewm">
+        <div class="ewm-cont">
+            <img src="picture/ewm.gif">
+            <p><img class="wechat_guide" src=""></p>
+            <div class="close_Mask">×</div>
+        </div>
+    </div>
+    
+    <script type="text/javascript" src="js/mrocpc.js"></script>
+    <script type="text/javascript" src="js/b30a7fdea72c47a3bdc39787506429c1.js"></script>
+    <script type="text/javascript" src="js/import-javascript.js"></script>
+    <script type="text/javascript">
+
+
+    </script>
+</body>
+
+</html>

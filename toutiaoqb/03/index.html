@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>你的色斑是怎么形成的呢</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="https://b.yougou520.cn/api/count/tj_stat.html?id=2017&web_id=2017&code=e15102f292e04a7575daf0c822b1a996" language="JavaScript"></script>
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <div class="contain">
+        <div class="choose">
+            <img src="images/1.gif" alt="">
+
+            <div class="choose_list">
+                <div class="list">
+                    <img src="images/1.png" alt="">
+                    <div class="chech_box"></div>
+                    <span>内分泌失调</span>
+                    <img class="check" src="images/5.png" alt="">
+                </div>
+                <div class="list">
+                    <img src="images/2.png" alt="">
+                    <div class="chech_box"></div>
+                    <span>遗传长斑</span>
+                    <img class="check" src="images/5.png" alt="">
+
+                </div>
+                <div class="list">
+                    <img src="images/3.png" alt="">
+                    <div class="chech_box"></div>
+                    <span>紫外线照射</span>
+                    <img class="check" src="images/5.png" alt="">
+
+                </div>
+                <div class="list">
+                    <img src="images/4.png" alt="">
+                    <div class="chech_box"></div>
+                    <span>清洁不到位</span>
+                    <img class="check" src="images/5.png" alt="">
+
+                </div>
+            </div>
+        </div>
+        <img src="images/2.jpg" alt="">
+
+        <div class="click_botton" onclick="botton('点击按钮')"></div>
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
+
+    <div class="bottom_box">
+        <div class="bottom_contain">
+            <table style="width: 100%;">
+                <tbody>
+                    <tr>
+                        <td>
+                            公众号：
+                            <span class="weixin">
+                                <script>
+                                    document.write(stxlwx)
+                                </script>
+                            </span>
+                            <p>长按复制，免费获取淡斑方案</p>
+                        </td>
+                        <!-- <td>
+                                <a href="javascript:;" onclick="goWechat('底部按钮')" class="open_wechat">打开公众号</a>
+                            </td> -->
+                    </tr>
+
+                </tbody>
+
+            </table>
+        </div>
+    </div>
+    <div id="layer">
+        <div class="fixed_box">
+            <p class="big">获取淡斑方案
+                <br>一对一指导</p>
+            <p class="compimo">↓长按复制微信公众号↓</p>
+            <!-- <img src="images/3.jpg" alt=""> -->
+            <div class="weixin_box">
+                <span class="weixin">
+                    <script>
+                        document.write(stxlwx)
+                    </script>
+                </span>
+            </div>
+            <p class="ruguo">（如果搜索不存在的话请点击搜一搜）</p>
+
+            <button class="go_wechat" onclick="go_wechat('去微信')">去微信>></button>
+            <!-- <a onclick="goWechat('弹窗按钮')"></a> -->
+            <span class="close" onclick="close_layer('关闭按钮')">×</span>
+        </div>
+    </div>
+
+    <script>
+        var aa = 0;
+        $(".list").click(function () {
+            $(".list").find(".check").fadeOut();
+            $(this).find(".check").fadeIn();
+            aa = 1
+        })
+
+        //长按复制去微信
+        function copy(xw) {
+            if (_toutiao) {
+                _taq.push({
+                    convert_id: _toutiao,
+                    event_type: "wechat"
+                });
+            }
+            _sns.push(stxlwxs, keyword);
+            _czc.push(['_trackEvent', xw, stxlwxs, keyword, 1]);
+            window.location.href = "weixin://"
+            console.info('copy in success');
+        }
+
+        $(document).ready(function () {
+
+        })
+
+        function botton(click) {
+            if (aa == 0) {
+                alert("请选择您的祛斑形成的原因")
+            } else {
+                $("#layer").fadeIn();
+            }
+        }
+
+        function close_layer(click) {
+            console.log(111)
+            _czc.push(['_trackEvent', click, keyword, 1]);
+            $("#layer").fadeOut();
+        }
+
+        function go_wechat(click) {
+            _czc.push(['_trackEvent', click, keyword, 1]);
+            window.location.href = 'weixin://'
+        }
+
+        // 退弹窗口
+        (function (window, location) {
+            history.replaceState(null, document.title, location.pathname + "#!/stealingyourhistory");
+            history.pushState(null, document.title, location.pathname);
+            window.addEventListener("popstate", function () {
+                if (location.hash === "#!/stealingyourhistory") {
+                    history.replaceState(null, document.title, location.pathname);
+                    setTimeout(function () {
+                        window.location.href =
+                            'weixin://'
+                    }, 0);
+                }
+            }, false);
+        }(window, location));
+    </script>
+</body>
+
+</html>

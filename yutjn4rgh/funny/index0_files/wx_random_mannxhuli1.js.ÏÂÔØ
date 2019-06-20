@@ -1,0 +1,63 @@
+//retired func
+/*
+//校验
+hyz7854367
+
+/**************************************************/
+
+
+
+//weixiarr数组
+var weixiarr="hyz7854367".split(',');
+
+var numb = weixiarr.length;
+var eq = Math.round(Math.random()*(numb-1));
+/*
+//根据分钟来显示  一分钟换一个
+function inTurn(){
+	var nowDate = new Date(),
+		min = nowDate.getMinutes(),
+		len = weixiarr.length;
+		//console.log(len);
+	
+	 //* @param  {[type]} num 传入的时间
+	 //* @return {[type]}
+	
+	function con(){
+		//分钟取模得到数组索引值
+		var index=min%len;
+		//console.log(index);
+		//输出数组内第index个微信号
+		$(".public-name").text(weixiarr[index]);
+		//console.log(weixiarr[index]);
+	}
+	con(min);
+}
+inTurn(); 
+*/
+//刷新页面随机一个微信号
+//var weixiqr="".split(',');
+function sj(){
+	$(".public-name").text(weixiarr[eq]);
+	//$(".public-Qr").attr("src",test[eq].QrCodeSrc);
+}
+//sj();
+
+//var numb = weixiarr.length;
+//var numbb = weixiqr.length;
+//eq = Math.round(Math.random()*(numb-1));
+//var eqq = Math.round(Math.random()*(numbb-1));
+//刷新页面随机一个微信号
+function sjQR(){
+	//var numb = weixiarr.length;
+	//var numbb = weixiqr.length;
+	//eq = Math.round(Math.random()*(numb-1));
+	//eqq = Math.round(Math.random()*(numbb-1));
+	//$(".public-name").text(weixiarr[eq]);
+	document.writeln('<span class="wx_img public-Qr"><img src="http://mzxtrade.com/img/weixinQR/nx/'+weixiarr[eq]+'.jpg" style="margin:0 auto;"/></span> ');
+	//$(".public-Qr").attr("src",test[eq].QrCodeSrc);
+}
+
+
+
+

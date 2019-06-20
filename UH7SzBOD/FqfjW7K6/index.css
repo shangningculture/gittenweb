@@ -1,0 +1,80 @@
+/* ::::: http://www.quh75.cn/blz-051505/index_files/common.css ::::: */
+
+* { margin: 0px; padding: 0px; }
+body { font-size: 20px; font-family: "微软雅黑"; line-height: 30px; color: rgb(51, 51, 51); background: rgb(255, 255, 255) none repeat scroll 0% 0%; position: relative; }
+.wrap { width: 95%; margin: 0px auto; }
+.pic100 { padding: 10px 0px; }
+.pic100 img { width: 100%; }
+.justify { text-align: justify; }
+.mtb10 { margin-top: 10px; margin-bottom: 10px; }
+img { border: medium none; vertical-align: middle; }
+.clearfix::after { content: " "; display: block; clear: both; visibility: hidden; line-height: 0; height: 0px; }
+.ptb10 { padding-top: 10px; padding-bottom: 10px; }
+.plf10 { padding-left: 10px; padding-right: 10px; }
+.ptb10 { padding-top: 10px; padding-bottom: 10px; }
+.plf10 { padding-left: 10px; padding-right: 10px; }
+.top-15 { top: -15px; }
+.bgF8:nth-child(2n+1) { background-color: rgb(243, 248, 253); }
+.bgOddF3:nth-child(2n+1) { background-color: rgb(243, 248, 253); }
+.bgEvenF3:nth-child(2n) { background-color: rgb(243, 248, 253); }
+.top-15 { top: -15px; }
+.pr { position: relative; }
+.pa { position: absolute; }
+.dib { display: inline-block; }
+.w35 { width: 35px; }
+.wp80 { width: 80%; }
+.wp100 { width: 100%; }
+.h35 { height: 35px; }
+.lh25 { line-height: 25px; }
+.lh35 { line-height: 35px; }
+.lh50 { line-height: 50px; }
+.mc { margin: 0px auto; }
+.p5 { padding: 5px; }
+.p10 { padding: 10px; }
+.pl10 { padding-left: 10px; }
+.pt0 { padding-top: 0px; }
+.pt20 { padding-top: 20px; }
+.pb0 { padding-bottom: 0px; }
+.ml15 { margin-left: 15px; }
+.mt10 { margin-top: 10px; }
+.mr10 { margin-right: 10px; }
+.mb10 { margin-bottom: 10px; }
+.mb30 { margin-bottom: 30px; }
+.left0 { left: 0px; }
+.leftp50 { left: 50%; }
+.top20 { top: 20px; }
+.f14 { font-size: 14px; }
+.f15 { font-size: 15px; }
+.f16 { font-size: 16px; }
+.f18 { font-size: 18px; }
+.f22 { font-size: 22px; }
+.fwn { font-weight: normal; }
+.fwb { font-weight: bold; }
+.tc { text-align: center; }
+.b { border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0); }
+.bl { border-left-width: 1px; border-left-style: solid; }
+.bb { border-bottom-width: 1px; border-bottom-style: solid; }
+.bw2 { border-width: 2px; }
+.bw3 { border-width: 3px; }
+.bbs_dashed { border-bottom-style: dashed; }
+.br5 { border-radius: 5px; }
+.c333, .Hc333:hover { color: rgb(51, 51, 51); }
+.c666, .Hc666:hover { color: rgb(102, 102, 102); }
+.c999, .Hc999:hover { color: rgb(153, 153, 153); }
+.cfff, .Hcfff:hover { color: rgb(255, 255, 255); }
+.cBlue, .HcBlue:hover { color: rgb(10, 226, 239); }
+.cOrange, .HcOrange:hover { color: rgb(255, 165, 0); }
+.bcddd, .Hbcddd:hover { border-color: rgb(221, 221, 221); }
+.bcGreen, .HbcGreen:hover { border-color: rgb(0, 128, 0); }
+.bcOrange, .HbcOrange:hover { border-color: rgb(255, 165, 0); }
+.bcRed, .HbcRed:hover { border-color: rgb(255, 41, 65); }
+.bgceee, .Hbgceee:hover { background-color: rgb(238, 238, 238); }
+.bgcfff, .Hbgcfff:hover { background-color: rgb(255, 255, 255); }
+.bgcOrange, .HbgcOrange:hover { background-color: rgb(255, 165, 0); }
+.bgcRed, .HbgcRed:hover { background-color: rgb(255, 41, 65); }
+/* ::::: http://www.quh75.cn/blz-051505/index_files/style.css ::::: */
+
+.cred { color: rgb(216, 40, 33); }
+.bcred { border: 1px solid rgb(172, 29, 16); }
+.bcRed { border-color: rgb(207, 10, 6) !important; }
+.bdashed { border: 1px dashed rgb(255, 41, 65); }

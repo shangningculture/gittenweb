@@ -1,0 +1,1 @@
+cd /data/wwwroot/tenweb && git pull

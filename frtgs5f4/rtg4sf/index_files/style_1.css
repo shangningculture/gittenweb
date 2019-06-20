@@ -1,0 +1,339 @@
+﻿body {
+	background: rgb(249, 249, 249) !important;
+}
+.clearfix::after {
+	clear: both; display: table; content: "";
+}
+.articleHead .mainNav {
+	background: rgb(248, 248, 248); font-weight: normal; border-top-color: currentColor; border-bottom-color: rgb(216, 216, 216); border-top-width: medium; border-bottom-width: 1px; border-top-style: none; border-bottom-style: solid;
+}
+.articleHead .backPrevPage {
+	margin: 5px 0px 0px 5px;
+}
+.articleHead .center_tips {
+	text-align: center; color: rgb(26, 26, 26); overflow: hidden; padding-right: 43px; font-size: 14px;
+}
+.articleHead .center_tips span {
+	color: rgb(0, 160, 254);
+}
+.articleHead .user {
+	 top: 6px; width: 30px; height: 30px; right: 45px; text-indent: 999em; overflow: hidden; position: absolute;
+}
+.articleHead .user a {
+	width: 30px; height: 30px; display: block; position: relative;
+}
+.articleHead .hv_msg {
+	background: red; border-radius: 3px; top: 0px; width: 6px; height: 6px; right: 0px; position: absolute; box-shadow: 0px 0px 3px #fff; -webkit-border-radius: 3px; -moz-border-radius: 3px;
+}
+.articleHead .user img {
+	border-radius: 15px; width: 30px; height: 30px; line-height: 30px; display: block; -webkit-border-radius: 15px; -moz-border-radius: 15px;
+}
+.mainNav .navBtn {
+	 top: 0px; width: 43px; height: 43px; right: 0px; text-indent: 999em; position: absolute;
+}
+.input_wrap {
+	overflow: hidden; clear: both; position: relative;
+}
+.discipline {
+	color: rgb(57, 144, 230); padding-left: 12px; font-size: 12px;
+}
+a.input_smt {
+	background: rgb(33, 172, 253); border-radius: 2px; width: 50px; height: 28px; text-align: center; color: rgb(255, 255, 255); line-height: 28px; font-size: 13px; margin-top: 8px; float: right; display: block; -webkit-border-radius: 2px; -moz-border-radius: 2px;
+}
+.input_area {
+	background: rgb(255, 255, 255); padding: 10px; border-radius: 4px; border: 1px solid rgb(226, 226, 226); border-image: none; color: rgb(119, 119, 119); font-size: 14px; min-height: 20px; -webkit-border-radius: 4px; -moz-border-radius: 4px;
+}
+.input_area textarea {
+	border: currentColor; border-image: none; width: 100%; height: 20px; line-height: 20px; display: block;
+}
+.input_area textarea.on {
+	transition:0.8s; height: 100px; -webkit-transition: 0.8s ease;
+}
+.input_btm {
+	height: 40px; color: rgb(102, 102, 102); line-height: 40px; padding-bottom: 5px; font-size: 12px; border-bottom-color: rgb(240, 240, 240); border-bottom-width: 1px; border-bottom-style: solid;
+}
+.input_btm input {
+	margin-right: 8px; vertical-align: middle;
+}
+.cmnt_article {
+	overflow: hidden; clear: both;
+}
+.cmnt_title {
+	margin: 5px 0px; height: 24px; position: relative;
+}
+.cmnt_title span {
+	background: rgb(33, 172, 253); left: -15px; top: 0px; width: 72px; height: 24px; text-align: center; color: rgb(255, 255, 255); line-height: 24px; font-size: 12px; display: block; position: absolute;
+}
+.cmnt_item {
+	padding: 0px 0px 12px 38px; overflow: hidden; clear: both; border-bottom-color: rgb(240, 240, 240); border-bottom-width: 1px; border-bottom-style: solid; position: relative;
+}
+:last-child.cmnt_item {
+	border-bottom-color: currentColor; border-bottom-width: medium; border-bottom-style: none;
+}
+.cmnt_top {
+	margin: 14px 0px -8px -38px; height: 30px; color: rgb(0, 160, 254); line-height: 30px; overflow: hidden; clear: both; font-size: 13px; position: relative;
+}
+.cmnt_base .cmnt_top {
+	margin: 0px 0px 2px; height: 40px; color: rgb(51, 51, 51); line-height: 24px; font-size: 12px;
+}
+.cmnt_top span:first-child {
+	 color: rgb(57, 144, 230); padding-left: 38px; display: block; position: relative;
+}
+.cmnt_top .cmnt_source {
+	height: 16px; color: rgb(153, 153, 153); line-height: 16px; overflow: hidden; font-size: 10px; display: block; white-space: nowrap; -ms-text-overflow: ellipsis;
+}
+.cmnt_top .cmnt_nick {
+	height: 20px; line-height: 20px; overflow: hidden; font-style: normal; display: block; white-space: nowrap; -ms-text-overflow: ellipsis;
+}
+.cmnt_top .cmnt_nick em {
+	color: rgb(170, 170, 170); font-size: 10px; font-style: normal; margin-left: 4px; display: inline-block;
+}
+.phone {
+	width: 0px; vertical-align: middle; display: inline-block;
+}
+.cmnt_top .cmnt_time {
+	height: 14px; color: rgb(153, 153, 153); line-height: 14px; overflow: hidden; font-size: 10px; font-style: normal; display: block; white-space: nowrap; -ms-text-overflow: ellipsis;
+}
+.cmnt_base .cmnt_top span {
+	background: none; overflow: hidden; padding-left: 0px; white-space: nowrap; -ms-text-overflow: ellipsis;
+}
+.cmnt_top span img {
+	border-radius: 15px; left: 0px; top: 0px; width: 30px; height: 30px; position: absolute; -webkit-border-radius: 15px; -moz-border-radius: 15px;
+}
+.cmnt_top code {
+	top: 0px; width: 45px; height: 24px; text-align: right; right: 0px; color: rgb(153, 153, 153); line-height: 24px; font-size: 10px; display: block; position: absolute;
+}
+.cmnt_top .editor {
+	 padding: 0px 10px 1px 21px; border-radius: 10px; border: 1px solid rgb(254, 115, 88); border-image: none; color: rgb(254, 115, 88); line-height: 19px; font-size: 9px; font-style: normal; margin-left: 10px;
+}
+.cmnt_base .cmnt_top code {
+	top: 7px; width: 30px; text-align: center; color: rgb(139, 139, 126); font-size: 12px;
+}
+.cmnt_text {
+	padding: 2px 0px; text-align: justify; color: rgb(51, 51, 51); line-height: 20px; font-size: 15px; margin-top: 2px; -ms-word-break: break-all; -ms-word-wrap: break-word;
+}
+.cmnt_quote {
+	background: rgb(242, 242, 242); margin: 10px 0px 0px; padding: 10px 5px; color: rgb(57, 144, 230); text-indent: 2em; clear: both; font-size: 12px;
+}
+.cmnt_text a {
+	color: rgb(84, 148, 234); font-size: 12px; margin-left: 10px;
+}
+.cmnt_op {
+	top: 13px; height: 16px; text-align: right; right: 0px; line-height: 16px; overflow: visible; display: block; position: absolute;
+}
+.cmnt_op_all {
+	background: rgba(54, 62, 71, 0.95); border-radius: 4px; top: 0px; width: 264px; height: 44px; text-align: center; right: -284px; line-height: 44px; padding-left: 20px; position: absolute; z-index: 9; -webkit-border-radius: 4px; -moz-border-radius: 4px;
+}
+.cmnt_op a {
+	 color: rgb(170, 170, 170);
+}
+.cmnt_op_all a {
+	 color: rgb(170, 170, 170);
+}
+.cmnt_op a {
+	height: 16px; line-height: 16px; vertical-align: middle; display: inline-block;
+}
+.cmnt_op_all a {
+	height: 16px; line-height: 16px; vertical-align: middle; display: inline-block;
+}
+.cmnt_op_all a.pl {
+	background-position: -46px -69px; padding: 0px 16px; width: 16px;
+}
+.cmnt_op_all a {
+	border-right-color: rgb(82, 89, 96); border-right-width: 1px; border-right-style: solid;
+}
+.cmnt_op_all a:last-child {
+	border: currentColor; border-image: none;
+}
+.cmnt_op_all a.good {
+	background-position: -60px -105px; color: rgb(255, 255, 255); padding-right: 16px; padding-left: 22px; font-size: 12px; position: relative;
+}
+.cmnt_op_all a.on.good {
+	background-position: 0px -136px;
+}
+.cmnt_op a.good {
+	background-position: 0px -105px; color: rgb(153, 153, 153); padding-right: 10px; padding-left: 20px; font-size: 12px; position: relative; 
+}
+.cmnt_op a.good::after {
+	background: rgb(223, 223, 223); top: 1px; width: 1px; height: 14px; right: -1px; display: inline-block; position: absolute; content: "";
+}
+.cmnt_op a.on.good {
+	background-position: 0px -136px;
+}
+.cmnt_op a.cmntico {
+	background-position: 0px -69px; color: rgb(170, 170, 170); padding-right: 5px; padding-left: 22px; font-size: 12px; margin-left: 10px; position: relative; 
+}
+.cmnt_op_all a.send {
+	background-position: -42px -167px; padding: 0px 20px; width: 16px;
+}
+.cmnt_op_all a.fold {
+	background-position: 20px -190px; padding: 0px 20px; width: 16px;
+}
+.cmnt_op a.unfold {
+	background-position: -50px -190px; width: 28px;
+}
+.cmnt_op .fly {
+	 animation:flying 0.6s forwards; left: 0px; top: 0px; width: 16px; height: 16px; display: inline-block; position: absolute; opacity: 1; -moz-animation: flying 0.6s; -webkit-animation: flying 0.6s; -o-animation: flying 0.6s; -moz-animation-fill-mode: forwards; -webkit-animation-fill-mode: forwards; -o-animation-fill-mode: forwards;
+}
+.cmnt_op_all .fly {
+	 animation:flying 0.6s forwards; left: 0px; top: 0px; width: 16px; height: 16px; display: inline-block; position: absolute; opacity: 1; -moz-animation: flying 0.6s; -webkit-animation: flying 0.6s; -o-animation: flying 0.6s; -moz-animation-fill-mode: forwards; -webkit-animation-fill-mode: forwards; -o-animation-fill-mode: forwards;
+}
+.fadeIn {
+	animation:fadeIn 0.4s forwards; -moz-animation: fadeIn 0.4s; -webkit-animation: fadeIn 0.4s; -o-animation: fadeIn 0.4s; -moz-animation-fill-mode: forwards; -webkit-animation-fill-mode: forwards; -o-animation-fill-mode: forwards;
+}
+.fadeOut {
+	animation:fadeOut 0.4s forwards; -moz-animation: fadeOut 0.4s; -webkit-animation: fadeOut 0.4s; -o-animation: fadeIn 0.4s; -moz-animation-fill-mode: forwards; -webkit-animation-fill-mode: forwards; -o-animation-fill-mode: forwards;
+}
+.cmnt_tit {
+	line-height: 18px; font-size: 12px; margin-bottom: 13px;
+}
+.cmnt_tit a {
+	padding: 0px 10px; color: rgb(0, 160, 254);
+}
+.cmnt_base {
+	background: rgb(253, 253, 246); margin: 4px 0px; padding: 0px 4px; border: 1px solid rgb(232, 232, 222); border-image: none; overflow: hidden; clear: both;
+}
+.nobd.cmnt_base {
+	margin: 0px; padding: 0px; border: currentColor; border-image: none;
+}
+.nomg.cmnt_base {
+	margin: 0px;
+}
+.cmnt_base .cmnt_top {
+	padding: 5px 30px 0px 5px;
+}
+.cmnt_base .cmnt_text {
+	margin: 0px 5px 5px; color: rgb(93, 93, 93); font-size: 14px;
+}
+.cmnt_base .cmnt_quote {
+	background: rgb(242, 242, 242); margin: 0px 0px 5px; padding: 10px 5px; color: rgb(57, 144, 230); text-indent: 2em; clear: both; font-size: 12px;
+}
+.cmnt_quote a {
+	color: rgb(57, 144, 230);
+}
+a.cmnt_unfold {
+	background: rgb(253, 253, 246); width: 100%; height: 36px; text-align: center; color: rgb(139, 139, 126); line-height: 36px; padding-bottom: 4px; font-size: 14px; border-bottom-color: rgb(232, 232, 222); border-bottom-width: 1px; border-bottom-style: solid; display: block;
+}
+.cmnt_unfold i {
+	background: url("../images/all.png") no-repeat 0px -420px / 100px auto; width: 20px; height: 14px; vertical-align: middle; display: inline-block;
+}
+.cmnt_extra {
+	border-width: medium 1px 1px; border-style: none solid solid; border-color: currentColor rgb(232, 232, 222) rgb(232, 232, 222); border-image: none;
+}
+.loadingArt {
+	background: url("../images/loading_40.40.png") no-repeat 0px 100% / 30px auto; margin: 5px auto; width: 30px; height: 30px; vertical-align: middle; display: block; animation-name: loading; animation-duration: 1s; animation-timing-function: linear; animation-iteration-count: infinite; -moz-animation-name: loading; -moz-animation-duration: 1s; -moz-animation-iteration-count: infinite; -moz-animation-timing-function: linear; -webkit-animation-name: loading; -webkit-animation-duration: 1s; -webkit-animation-iteration-count: infinite; -webkit-animation-timing-function: linear; -o-animation-name: loading; -o-animation-duration: 1s; -o-animation-iteration-count: infinite; -o-animation-timing-function: linear;
+}
+.op_remind {
+	background: rgba(68, 68, 68, 0.9); left: 0px; top: 0px; width: 100%; height: 44px; text-align: center; color: rgb(255, 255, 255); line-height: 44px; font-size: 14px; display: none; position: fixed; z-index: 999; opacity: 0;
+}
+.animate {
+	animation:myfirst 3s; -moz-animation: myfirst 3s; -webkit-animation: myfirst 3s; -o-animation: myfirst 3s;
+}
+.j_float_remind {
+	background: rgb(33, 172, 253); left: 0px; top: 49px; width: 72px; height: 24px; text-align: center; color: rgb(255, 255, 255); line-height: 24px; font-size: 12px; position: fixed; z-index: 9; opacity: 1;
+}
+.list_empty {
+	margin: 40px 20px 20px; text-align: center; color: rgb(102, 102, 102); line-height: 30px; font-size: 16px; min-height: 30px;
+}
+.fade {
+	opacity: 0;
+}
+.winner_tips {
+	background: url("../images/lw.png") no-repeat 4px 7px / 24px auto; margin: 5px 0px; height: 40px; line-height: 40px; padding-left: 36px; font-size: 14px; border-top-color: rgb(240, 240, 240); border-bottom-color: rgb(240, 240, 240); border-top-width: 1px; border-bottom-width: 1px; border-top-style: solid; border-bottom-style: solid;
+}
+.winner_tips a {
+	color: rgb(57, 144, 230);
+}
+.winner_tips span {
+	color: rgb(242, 47, 109);
+}
+.cmnt_op_bottom {
+	color: rgb(170, 170, 170); clear: both; font-size: 10px; margin-top: 8px; margin-bottom: 4px; position: relative;
+}
+.cmnt_op_bottom_times {
+	line-height: 16px; float: left;
+}
+.cmnt_op {
+	top: 0px; height: 16px; text-align: right; right: 0px; line-height: 16px; overflow: visible; display: block; position: absolute;
+}
+.cmnt_op_bottom_report {
+	color: rgb(170, 170, 170); line-height: 16px; padding-left: 12px; float: left;
+}
+.on.cmnt_op_bottom_report {
+	color: rgb(210, 210, 210);
+}
+.more_btnbox {
+	overflow: hidden; clear: both;
+}
+.more_btn {
+	margin: 0px 6px 12px; border-radius: 4px; border: 1px solid rgb(249, 249, 249); border-image: none; height: 32px; text-align: center; line-height: 32px; clear: both; font-size: 14px; -webkit-border-radius: 4px; -moz-box-shadow: inset 0px 1px 0px #fff; -webkit-box-shadow: inset 0px 1px 0px #fff;
+}
+.more_btn span {
+	display: block; cursor: pointer;
+}
+.more_btn a {
+	display: block; cursor: pointer;
+}
+.more_btn_loading {
+	margin: 0px 6px 12px; text-align: center; clear: both;
+}
+.loadingbtn {
+	background: url("../images/loading_40.40.png") no-repeat 0px 100% / 30px auto; margin: 2px 0px; width: 30px; height: 30px; line-height: 30px; text-indent: 999em; overflow: hidden; vertical-align: middle; display: inline-block; -webkit-animation-name: loading; -webkit-animation-duration: 1s; -webkit-animation-iteration-count: infinite; -webkit-animation-timing-function: linear;
+}
+.cmnt_more {
+	margin: 10px 0px 23px; height: 6px; overflow: visible; border-bottom-color: rgb(216, 216, 216); border-bottom-width: 1px; border-bottom-style: solid; position: relative;
+}
+.cmnt_more a {
+	background: rgb(248, 248, 248); padding: 0px 12px; left: 50%; top: -4px; width: 88px; height: 20px; text-align: center; color: rgb(0, 160, 254); line-height: 20px; font-size: 12px; margin-left: -56px; display: inline-block; position: absolute;
+}
+.cmnt_more span {
+	background: rgb(248, 248, 248); padding: 0px 12px; left: 50%; top: -4px; width: 88px; height: 20px; text-align: center; color: rgb(0, 160, 254); line-height: 20px; font-size: 12px; margin-left: -56px; display: inline-block; position: absolute;
+}
+.cmnt_more span {
+	color: rgb(102, 102, 102);
+}
+.comment_report {
+	background: rgba(68, 68, 68, 0.9); border-radius: 6px; left: 50%; top: 40%; width: 160px; height: 50px; text-align: center; color: rgb(255, 255, 255); line-height: 50px; font-size: 14px; margin-left: -80px; position: fixed; z-index: 999;
+}
+.report_box {
+	left: 0px; top: 0px; text-align: center; right: 0px; position: fixed; z-index: 900;
+}
+.report_box .report_title {
+	background: rgb(248, 248, 248); height: 45px; line-height: 45px; font-size: 14px; font-weight: normal;
+}
+.report_box .report_reason {
+	background: rgb(243, 243, 243); height: 32px; color: rgb(153, 153, 153); line-height: 32px; font-size: 12px; border-top-color: rgb(213, 213, 213); border-top-width: 1px; border-top-style: solid; display: block;
+}
+.report_box .report_select_box {
+	background: rgb(255, 255, 255); padding: 0px 12px; border-top-color: rgb(232, 232, 232); border-bottom-color: rgb(232, 232, 232); border-top-width: 1px; border-bottom-width: 1px; border-top-style: solid; border-bottom-style: solid;
+}
+.report_select_box a {
+	padding: 0px 12px; height: 40px; text-align: left; line-height: 40px; border-bottom-color: rgb(232, 232, 232); border-bottom-width: 1px; border-bottom-style: solid; display: block;
+}
+.report_select_box a.on {
+	background: url("../images/all.png") no-repeat right -497px / 100px auto;
+}
+.report_select_box a:last-child {
+	border: currentColor; border-image: none;
+}
+.report_btn_box {
+	background: rgb(249, 249, 249); padding: 15px 12px; overflow: hidden; clear: both;
+}
+.report_btn_box a {
+	width: 60px; height: 30px; line-height: 30px; font-size: 14px; display: block;
+}
+.report_btn_box .report_cancel {
+	background: rgb(238, 238, 238); color: rgb(102, 102, 102);
+}
+.report_btn_box .report_smt {
+	background: rgb(84, 148, 234); color: rgb(255, 255, 255);
+}
+.off.report_smt {
+	background: rgb(238, 238, 238); color: rgb(102, 102, 102);
+}
+.report_bg {
+	background: rgba(0, 0, 0, 0.6); left: 0px; top: 0px; right: 0px; bottom: 0px; position: fixed; z-index: 500;
+}
+.transparent {
+	left: 0px; top: 0px; width: 100%; height: 90px; position: absolute;
+}

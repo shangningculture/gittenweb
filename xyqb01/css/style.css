@@ -1,0 +1,239 @@
+﻿@charset utf-8;
+
+html { -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; line-height: 1.6 }
+body { -webkit-touch-callout: none; font-family: -apple-system-font, "Helvetica Neue", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif; background-color: #f3f3f3; line-height: inherit }
+body.rich_media_empty_extra { background-color: #fff }
+body.rich_media_empty_extra .rich_media_area_primary:before { display: none }
+h1, h2, h3, h4, h5, h6 { font-weight: 400; font-size: 16px }
+* { margin: 0; padding: 0 }
+a { color: #607fa6; text-decoration: none }
+.rich_media_inner { font-size: 16px; word-wrap: break-word; -webkit-hyphens: auto; -ms-hyphens: auto; hyphens: auto }
+.rich_media_area_primary { position: relative; padding: 20px 15px 15px; background-color: #fff }
+.rich_media_area_primary:before { content: " "; position: absolute; left: 0; top: 0; width: 100%; height: 1px; border-top: 1px solid #e5e5e5; -webkit-transform-origin: 0 0; transform-origin: 0 0; -webkit-transform: scaleY(0.5); transform: scaleY(0.5); top: auto; bottom: -2px }
+.rich_media_area_extra { padding: 0 15px 0 }
+.rich_media_title { margin-bottom: 10px; line-height: 1.4; font-weight: 400; font-size: 24px }
+.rich_media_meta_list { margin-bottom: 18px; line-height: 20px; font-size: 0 }
+.rich_media_meta_list em { font-style: normal }
+.rich_media_meta { display: inline-block; vertical-align: middle; margin-right: 8px; margin-bottom: 10px; font-size: 16px }
+.meta_enterprise_tag img { width: 30px; height: 30px!important; display: block; position: relative; margin-top: -3px; border: 0 }
+.rich_media_meta_text { color: #8c8c8c }
+span.rich_media_meta_nickname { display: none }
+.rich_media_thumb_wrp { margin-bottom: 6px }
+.rich_media_thumb { display: block; width: 100% }
+.rich_media_content { overflow: hidden; color: #3e3e3e }
+.rich_media_content * { max-width: 100%!important; box-sizing: border-box!important; -webkit-box-sizing: border-box!important; word-wrap: break-word!important }
+.rich_media_content p { clear: both; min-height: 1em }
+.rich_media_content em { font-style: italic }
+img { max-width: 100%; height: auto!important }
+@media(min-device-width:414px) and (max-device-width:736px) and (-webkit-min-device-pixel-ratio:3) {
+.mm_appmsg .rich_media_title { font-size: 25px }
+}
+@media screen and (min-width:1024px) {
+.rich_media { width: 740px; margin-left: auto; margin-right: auto }
+.rich_media_inner { padding: 20px }
+body { background-color: #fff }
+}
+@media screen and (min-width:1025px) {
+body { font-family: "Helvetica Neue", Helvetica, "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif }
+.rich_media { position: relative }
+.rich_media_inner { background-color: #fff; padding-bottom: 100px }
+}
+@-webkit-keyframes weuiLoading { 0% {
+-webkit-transform:rotate3d(0, 0, 1, 0deg)
+}
+100% {
+-webkit-transform:rotate3d(0, 0, 1, 360deg)
+}
+}
+@keyframes weuiLoading { 0% {
+-webkit-transform:rotate3d(0, 0, 1, 0deg)
+}
+100% {
+-webkit-transform:rotate3d(0, 0, 1, 360deg)
+}
+}
+@media screen and (min-width:1024px) {
+.preview_appmsg .rich_media_title { margin-top: 0 }
+}
+ 
+.bottom{
+    width:100%;height:auto;position: fixed;bottom:0px;
+}
+.bottom-cont{
+    max-width:740px;padding:5px;height:auto;margin:0 auto;background:#ffc0cb;
+}
+.bottom-cont .tx{
+    height:70px;width:70px;margin-top:-30px;margin-left:20px;float:left;border-radius: 100%
+}
+.red {
+    color: red;
+}
+.towx {
+    background: #008000;
+    line-height: 30px;
+    border-radius: 10px;
+    display: block;
+    padding: 0 10px;
+    color: #fff;
+    text-decoration: none;
+    float: right;
+}
+#window {
+    color: red;
+    background: yellow;
+}
+
+.wx { background: #FF0; color: #F00; font-weight: bold; font-size: 1.3em; padding: 0 5px; }
+.btnshan { background-color: transparent; border: none; color: yellow; font-weight: bold; font-size: 18px; padding: 5px; }
+.wx-in{display: inline-block;word-break: break-all;}
+
+.bottom{
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+}
+
+.bottom-box{
+    max-width: 800px;
+    margin: 0 auto;
+    background: #DB7093 none repeat scroll 0% 0%;
+    border-bottom: 1px solid rgb(204, 204, 204);
+    padding: 10px 5px;
+    position: relative;
+}
+
+.bottom-img{
+    width: 80px;
+    margin-top: -45px;
+}
+
+.bottom-box a{
+    background: green;
+    color: #FFF;
+    border-radius: 10px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    width: 64px;
+    float: right;
+    margin-right: 4px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    text-decoration: none;
+
+}
+
+.white{
+    color: #FFFFFF;
+}
+
+.bottom-audio{
+    background: #fff;
+    border-radius: .6rem;
+    display: block;
+    width: 110px;
+    height: 28px;
+    border: 1px solid #d2d2d2;
+    position: absolute;
+    top: 5px;
+    left: 100px;
+}
+
+.bottom-box em{
+    width: 0.3rem;
+    height: 0.3rem;
+    border-radius: 50%;
+    background: rgb(255, 61, 109) none repeat scroll 0% 0%;
+    display: inline-block;
+    position: absolute;
+    right: 1rem;
+    top: 0.5rem;
+    animation: 0.5s ease 0s alternate none infinite running shake;
+}
+.weixin{
+    /*color: #ffffff;*/
+    color: red;
+    /*background-color: rgb(255, 79, 121);*/
+    background-color: yellow;
+    font-weight: 600;
+}
+
+
+/*网页微信右侧图标*/
+/*.button{
+    position: fixed;
+    text-align: center;
+    color: #aaa;
+    top: 40%;
+    right:1%;
+    background: #fff;
+    border-radius: 0.3rem;
+    padding: 0.24rem 0.24rem 0.16rem;
+    border: 0.05rem solid #217519;
+  }
+.button a span{
+    color: #217519!important;
+    font-weight: bold;
+    font-size: 0.55rem;
+    line-height: 20px;
+}
+.button-img{ width:50px;}*/
+
+
+/*弹窗部分样式*/
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1040;
+    overflow: hidden;
+    -webkit-overflow-scrolling: touch;
+    outline: 0;
+    background: rgba(0,0,0,.3);
+    font-size: 16px;
+    text-align: center;
+}
+.modal-sm {
+    width: 90%;
+    margin: 30px auto;
+    max-width: 400px;
+}
+.modal-header {
+    min-height: 16.43px;
+    padding: 15px;
+    border-bottom: 1px solid #e5e5e5;
+}
+#mydel {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    right: -16px;
+    top: 82px;
+    background: rgba(0,0,0,.85);
+    color: #fff;
+    border-radius: 50px;
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: 100;
+    text-align: center;
+}
+.modal-content {
+    position: relative;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #999;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 6px;
+    outline: 0;
+    -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
+    box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
+}
+.modal-body {
+    position: relative;
+    padding: 15px;
+}

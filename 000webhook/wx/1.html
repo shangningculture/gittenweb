@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0,viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <script src="https://image.163ar.cn/wechat/sf02/js/jquery-1.11.0.min.js"></script>
+<script src="https://b.yougou520.cn/api/count/tj_stat.html?id=4459&web_id=4459&code=bc084359a7b6671746d7fffd89cd28a4" language="JavaScript"></script>
+<script>
+        // var referrer_url = document.referrer;
+        // var host = window.location.host
+        // var data = ''
+        // $.get('https://a.yougou520.cn/api/Templatejump/wzapi/id/2273', function (res) {
+        // data = res
+        // console.log(data)
+        // if(referrer_url == ''){
+        //   window.location.href = 'https://' + data.url
+        // } else {
+        //   if (data.first === host) {
+        //     window.location.href = 'https://' + data.url
+        //   }
+        // }
+        // }) 
+    </script>
+    <style type="text/css">
+	body,html{
+		width:100%;height:100%;
+	}
+#adbox{
+    position: fixed;bottom:0;left:0;width:100%;font-size: 0;z-index: 9999999;
+}
+#adbox img{
+    width:100%;height:auto;
+}
+#adbox #closeadbox {
+    position: absolute;top:3px;right:3px;z-index: 9999999;border-radius: 50%;background:rgba(0,0,0,0.3);
+    width:20px;height:20px;color:#fff;font-size:14px;font-weight:600;line-height:18px;text-align:center;
+    text-shadow: 0 0 #666;
+}
+    </style>
+
+    <title>专业生发导师</title>
+   <script type="text/javascript">
+            // adv  --------------- 
+            
+            // adv end ----------------
+            function showAdv(link, img) {
+                if (document.getElementById('adbox')) {
+                    var adlink = document.getElementById('adbox').getElementsByTagName('a')[0]
+                    adlink.setAttribute('href',link || '/');
+                    var adimg = document.getElementById('adbox').getElementsByTagName('img')[0]
+                    adimg.setAttribute('src',img || '/');
+                    document.getElementById('adbox').style.display = 'block';
+                } else {
+                    var adbox = document.createElement('div');
+                    adbox.setAttribute('id','adbox')
+                    var adclose = document.createElement('div');
+                    adclose.setAttribute('id','closeadbox')
+                    adclose.innerText = '×'
+                    adclose.onclick = () => {
+                        document.getElementById('adbox').style.display = 'none';
+                    }
+                    var adlink =  document.createElement('a');
+                    adlink.setAttribute('href',link || '/');
+                    var adimg =  document.createElement('img');
+                    adimg.setAttribute('src',img||'/');
+                    adlink.appendChild(adimg);
+                    adbox.appendChild(adlink);
+                    adbox.appendChild(adclose);
+                    document.getElementsByTagName('body')[0].appendChild(adbox);
+                }
+            }
+
+            window.onload = () => {
+                showAdv('https://d.sbs62.cn/MTU0NzYyMzcwODY5MC3nlJ_lj5E=/index.html',  'https://image.163ar.cn/sf001/hair.jpg')
+            }
+   </script>
+   
+
+<body id="activity-detail" class="zh_CN mm_appmsg appmsg_skin_default appmsg_style_default not_in_mm">
+        <iframe frameborder='0' width="100%" height="100%" src="https://m.baidu.com/"></iframe>
+		
+</body>
+
+</html>

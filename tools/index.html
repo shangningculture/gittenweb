@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" href="img/icon.png">
+  <title>常用代码or工具</title>
+  <link rel="stylesheet" href="peak/css/common/ui.css">
+  <script src="peak/js/plugin/jquery.js"></script>
+  <script src="js/layer/layer.js"></script>
+  <script src="peak/js/common/all.js"></script>
+  <script src="monaco-editor/min/vs/loader.js"></script>
+  <script src="js/md5.js"></script>
+  <script src="js/code.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+    require.config({
+      paths: { 'vs': 'monaco-editor/min/vs' }, 'vs/nls': {
+        availableLanguages: {
+          '*': 'zh-cn'
+        }
+      }
+    });
+  </script>
+</head>
+
+<body>
+  <div class="main">
+    <div id="tabView" class="maxTabView ui-tab-tabs">
+      <a href="javascript:;" class="ui-tab-tab " data-rel="tools">常用工具</a>&emsp;&emsp;&emsp;
+      <a href="javascript:;" class="ui-tab-tab checked" data-rel="codes">常用代码</a>
+    </div>
+    <div class="minmainbox ui-tab-contents">
+      <div class="minmain tools ui-tab-content">
+        <div class="boxitem">
+          <div id="tools1" class="toolsitem">
+            <h2>0.批量打开网页</h2>
+            <div class="ui-textarea-x valubox" style="">
+              <textarea class="value" rows="8"></textarea>
+              <div class="ui-textarea"></div>
+            </div>
+            <div class="toolsbtnlist">
+              <div id="tools1btn" class="toolsbtn ui-button ui-button-primary" role="button" tabindex="0">批量打开(新窗口打开)
+              </div>
+              <div id="tools1btn2" class="toolsbtn ui-button ui-button-primary" role="button" tabindex="0">批量打开(弹窗打开)
+              </div>
+            </div>
+          </div>
+
+          <div id="tools2" class="toolsitem">
+            <h2>1.微信文件夹生成</h2>
+            <div class="tools2 setbox">
+              <div class="ui-input"><input placeholder="加密的备注（文字尽量少，不然加密出来字符串会很长！）" class="remarks"></div>
+              <center class="tips">（加密按照‘时间’ 和 ‘备注’的方法加密）</center>
+            </div>
+            <div class="ui-textarea-x valubox" style="">
+              <textarea class="codes value" rows="8"></textarea>
+              <div class="ui-textarea"></div>
+            </div>
+            <div class="toolsbtnlist">
+              <div class="encode toolsbtn ui-button ui-button-primary" role="button" tabindex="0">加密</div>
+              <div class="decode toolsbtn ui-button ui-button-primary" role="button" tabindex="0">解密</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="minmain codes ui-tab-content">
+        <div class="boxitem">
+          <div id="code1" class="codeitem">
+            <h2>0.页面底部悬浮点击弹出二维码（彩色版）</h2>
+            <div class="codetext" id="code1text"></div>
+            <script>
+              var code1text;
+              require(['vs/editor/editor.main'], function () {
+                code1text = monaco.editor.create(document.getElementById('code1text'), {
+                  value: codelist[0],
+                  language: 'html',
+                  theme: 'vs-dark',
+                  // contextmenu: false,
+                  minimap: { enabled: false }, // 隐藏代码小地图
+                  wordWrap: "on",   //自动换行，注意大小写
+                  wrappingIndent: "indent"
+                });
+              });
+            </script>
+          </div>
+          <div id="code2" class="codeitem">
+            <h2>1.页面底部悬浮点击弹出二维码</h2>
+            <div class="codetext" id="code2text"></div>
+            <script>
+              require(['vs/editor/editor.main'], function () {
+                monaco.editor.create(document.getElementById('code2text'), {
+                  value: codelist[1],
+                  language: 'html',
+                  theme: 'vs-dark',
+                  // contextmenu: false,
+                  minimap: { enabled: false }, // 隐藏代码小地图
+                  wordWrap: "on",   //自动换行，注意大小写
+                  wrappingIndent: "indent"
+                });
+              });
+            </script>
+          </div>
+          <div id="code3" class="codeitem">
+            <h2>2.测边悬浮二维码</h2>
+            <div class="codetext" id="code3text"></div>
+            <script>
+              require(['vs/editor/editor.main'], function () {
+                monaco.editor.create(document.getElementById('code3text'), {
+                  value: codelist[2],
+                  language: 'html',
+                  theme: 'vs-dark',
+                  // contextmenu: false,
+                  minimap: { enabled: false }, // 隐藏代码小地图
+                  wordWrap: "on",   //自动换行，注意大小写
+                  wrappingIndent: "indent"
+                });
+              });
+            </script>
+          </div>
+          <div id="code4" class="codeitem">
+            <h2>3.获取URL参数</h2>
+            <div class="codetext" id="code4text"></div>
+            <script>
+              require(['vs/editor/editor.main'], function () {
+                monaco.editor.create(document.getElementById('code4text'), {
+                  value: codelist[3],
+                  language: 'javascript',
+                  theme: 'vs-dark',
+                  contextmenu: false,
+                  minimap: { enabled: false }, // 隐藏代码小地图
+                  wordWrap: "on",   //自动换行，注意大小写
+                  wrappingIndent: "indent"
+                });
+              });
+            </script>
+          </div>
+          <div id="code5" class="codeitem">
+            <h2>4.判断设备移动PC端</h2>
+            <div class="codetext" id="code5text"></div>
+            <script>
+              require(['vs/editor/editor.main'], function () {
+                monaco.editor.create(document.getElementById('code5text'), {
+                  value: codelist[4],
+                  language: 'javascript',
+                  theme: 'vs-dark',
+                  contextmenu: false,
+                  minimap: { enabled: false }, // 隐藏代码小地图
+                  wordWrap: "on",   //自动换行，注意大小写
+                  wrappingIndent: "indent"
+                });
+              });
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

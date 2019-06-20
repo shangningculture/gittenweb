@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html>
+		<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+		<title>睡前用一物，脸上斑点不见了。看起来年轻又漂亮</title>
+        
+        <script src="./index_files/jquery-1.11.0.min.js"></script> 
+
+        
+		<style type="text/css">
+body {
+	max-width: 650px;
+	margin: 0 auto;
+}
+ @keyframes clock {
+ 0% {
+ transform: scale(0.95);
+}
+ 18% {
+ transform: scale(1.1);
+}
+ 32% {
+ transform: scale(0.95);
+}
+ 48% {
+ transform: scale(1.1);
+}
+ 64% {
+ transform: scale(0.95);
+}
+ 80% {
+ transform: scale(1.1);
+}
+ 100% {
+ transform: scale(0.95);
+}
+}
+.btn2 {
+	margin: 20px auto;
+	width: 90%;
+	background: #FF0000;
+	color: white;
+	text-align: center;
+	font-size: 1.3rem;
+	padding: 10px 5px;
+	border-radius: 10px;
+	-webkit-animation: clock 2.5s ease infinite alternate;
+	-moz-animation: clock 2.5s ease infinite alternate;
+	-ms-animation: clock 2.5s ease infinite alternate;
+	-o-animation: clock 2.5s ease infinite alternate;
+}
+.title {
+	font-size: 1.5rem;
+	line-height: 2rem;
+	padding: 10px;
+	color: #242424;
+}
+.title-list {
+	font-size: 0.8rem;
+	line-height: 2rem;
+	padding: 10px;
+	color: #576b95;
+}
+.title-main {
+	margin: 0 auto;
+	width: 100px;
+	color: white;
+	background-color: rgb(180, 38, 30);
+	text-align: center;
+	padding: 5px;
+	line-height: 1.3rem;
+	border-radius: 5px;
+	font-weight: 700;
+}
+.title-zmm {
+	margin: 30px auto;
+	width: 310px;
+	color: white;
+	background-color: rgb(180, 38, 30);
+	text-align: center;
+	padding: 5px;
+	line-height: 1.3rem;
+	border-radius: 5px;
+	font-weight: 700;
+}
+.zmm-xin {
+	border: 1px solid #242424;
+	border-radius: 10px;
+	margin: 10px;
+	padding: 10px;
+}
+.title-img {
+	margin: 10px auto;
+	text-align: center;
+	font-size: 1.1rem;
+	font-weight: 700;
+	color: #242424;
+}
+.div-text-b {
+	text-indent: 2rem;
+	color: #242424;
+	text-align: justify;
+	line-height: 2rem;
+	font-weight: 700;
+	margin: 10px;
+}
+.div-text-r {
+	color: rgb(192, 0, 0);
+	font-weight: 700;
+}
+.div-text {
+	line-height: 2rem;
+	text-indent: 2rem;
+	text-align: justify;
+	margin: 10px;
+}
+.span-b {
+	color: #242424;
+	font-weight: 700;
+}
+.img-text {
+	margin: 20px;
+	padding: 10px;
+	min-height: 200px;
+	position: relative;
+	display: inline-block;
+	background: -webkit-gradient(linear, 0% 20%, 0% 1000%, from(#fff), to(#fff), color-stop(.1, #f3f3f3));
+	border: 1px solid #ccc;
+	-webkit-box-shadow: 0px 3px 30px rgba(0, 0, 0, 0.1) inset;
+	-webkit-border-bottom-right-radius: 6px 50px;
+}
+.img-text:before {
+	content: '';
+	width: 50px;
+	height: 100px;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	-webkit-box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.1);
+	z-index: -1;
+	-webkit-transform: translate(-35px, -40px) skew(0deg, 30deg) rotate(-25deg);
+}
+.img-text:after {
+	content: '';
+	width: 100px;
+	height: 100px;
+	top: 0;
+	left: 0;
+	position: absolute;
+	display: inline-block;
+	z-index: -1;
+	-webkit-box-shadow: -10px -10px 10px rgba(0, 0, 0, 0.2);
+	-webkit-transform: rotate(2deg) translate(20px, 25px) skew(20deg);
+}
+.wx {
+	border: 1px solid #242424;
+	border-radius: 10px;
+	margin: 10px;
+	padding: 10px;
+	background-color: rgb(249, 235, 225);
+}
+.pbOpacity,  .pbOpacityError {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, .6);
+	z-index: 999999;
+}
+.pbContent {
+	width: 300px;
+	height: 320px;
+	background-color: #fff;
+	margin: 110px auto;
+	position: relative;
+	border-radius: 10px;
+	box-shadow: 0 0 30px rgba(0, 0, 0, .6);
+	text-align: center;
+}
+.pbCTitle1 {
+	padding: 10px 0;
+	text-align: center;
+	font-size: 18px;
+	color: #666;
+	border-bottom: 2px solid #eee;
+}
+.pbCcloseIcon {
+	background: url(http://baiduduank.kuaiyunds.com/baiduduank/fyp/close.png) no-repeat center center;
+	background-size: 100%;
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 31px;
+	height: 31px;
+	border-radius: 10px;
+}
+.pbCImg {
+	margin-top: 12%;
+	text-align: center;
+}
+.pbCImg img {
+	display: inline-block;
+	width: auto !important;
+}
+.pbCTitle2 {
+	font-size: 16px;
+	margin-top: 10px;
+	padding: 0 10px;
+}
+.pbCTitle2 .public {
+	color: #f54343;
+	font-weight: bold;
+}
+.pbCTitle3 {
+	font-size: 14px;
+	color: #999;
+	margin-top: 10px;
+	padding: 0 10px;
+}
+.pbCTowxBox {
+	position: absolute;
+	bottom: 18px;
+	width: 100%;
+}
+.pbCTowx {
+	width: 90%;
+	display: block;
+	margin: 0 auto;
+	text-decoration: underline;
+	background-color: #f54343;
+	border-radius: 5px;
+	color: #fff;
+	font-size: 16px;
+	padding: 10px 0;
+	border: 1px solid rgba(255, 0, 0, .5);
+	box-shadow: 1px 1px 2px rgba(0, 0, 0, .6);
+}
+.main {
+	padding: 5px 5%;
+}
+.main p {
+	line-height: 30px;
+}
+</style>
+<script>
+	var url = 'http://xe01.taoneigou.cn/fanhui/';   //公众号链接
+       $('#Go_wx').on('touchend',function(){
+        if($('#Copy_wx').attr('checked')== undefined){
+           alert('复制微信号自动到微信');
+            return false;
+        }      
+     })
+    function copyFunction() {
+		meteor.track('wechat', {convert_id: 1618164343795719 })
+      location.href = url 
+    }
+        function copyFunctionNo() {
+      location.href = url 
+    }
+    function jump(){
+      location.href = url 
+    }
+</script>
+		</head>
+
+		<body>
+<div class="title">睡前用一物，脸上斑点不见了。看起来年轻又漂亮</div>
+<div class="title-list">美化容貌的方法 <span style="color: grey;font-size: 0.8rem;margin-left: 10px;">1周前</span> </div>
+<div class="title-main">头条新闻</div>
+<div style="border: 1px solid rgb(180, 38, 30);border-radius: 15px;margin: -15px 10px 0px 0px;padding:20px;text-align: justify;text-indent: 2rem;line-height: 2rem;">一个42岁的女人，竟然毫无征兆的“穿越”回20年前，行为举止，皮肤相貌，跟二十几岁的青春少女无异！</div>
+<div class="div-text-b">一个42岁的女人，竟然在3个月的时间里逐渐“返老还童”，脸上密布的斑点和纹路一点点消失不见，肌肤白皙水嫩，看起来年轻了20岁！</div>
+<div class="div-text">这是刚刚发生在福建厦门市汪萍身上的真实经历。出差许久的老公看到她，惊得张大嘴巴；走在街上，男人们的视线总是追随着她；去学校看望儿子，却被误认成姐姐......汪萍老公说，现在带老婆出去别人都以为是他找的小三，看起来实在太年轻了！</div>
+<div class="div-text">看看汪萍前两天朋友圈发的自拍，<span class="span-b">脸上一颗斑点都没有，捕捉不到半点粗糙暗沉的影子，就连毛孔都看不出来，全脸零瑕疵，青春逼人！哪里像一个42岁的中年妇女？</span></div>
+<div class="img-text"><img style="width: 100%;" src="img/640.jpg"></div>
+<div class="title-img">
+          <div>▼可就在3个月前汪萍还是下面这副模样▼</div>
+        </div>
+<div class="img-text"><img style="width: 100%;" src="img/640 (1).jpg"></div>
+<div class="div-text">皮肤粗糙暗黄，毫无光泽，眼周和嘴角存在严重色素沉着，即使擦了粉底，<span class="span-b">脸颊成片的色斑依然特别明显，看上去比同龄人还要显老…</span>完全就是一张中年油腻脸。</div>
+<div class="div-text">对于妻子突然间的容貌变化，汪萍的丈夫和身边亲戚的第一反应是去了医院做整容，甚至还质问妻子：“换这样一张脸是不连家底都败掉了，挺大岁数没个正经！”</div>
+<div class="div-text">面对丈夫的指责，汪萍忍不住大笑，说：“我怎么舍得去整容呢，动不动得花个十几万，咱的钱我还留着给儿子结婚娶媳妇呢。再说谁整容脸不红不肿的？<span class="div-text-r">我皮肤变得这么好，其实都是郑明明老师团队的功劳！</span>”</div>
+<div class="img-text"><img style="width: 100%;" src="img/640 (2).jpg"></div>
+<div class="title-img">▲即使素颜，汪萍的皮肤也找不出一点儿瑕疵 </div>
+<div class="div-text">看老公一脸疑惑，汪萍解释道：“我同事张英之前也是满脸斑，<span class="div-text-b">后来她女儿给她找了一位叫郑明明的护肤老师团队微信，老师根据她的情况教了她一个祛斑的法子，</span><span class="div-text-r">用了两三个月不仅斑没了，皮肤还越来越好了。</span>我也跟着试试，没想到效果竟然这么好！” </div>
+<div class="img-text"> <img style="width: 100%;" src="img/640 (3).jpg"> </div>
+<div class="title-img"> ▲张英祛斑后，就像换了一张脸 </div>
+<div class="div-text"> “刚开始我也不太信，但从网上一查发现确实有好多人的色斑和皮肤问题都是被郑明明老师团队解决的。我想着多听听专家的建议也没啥没坏处，万一真有用呢。<span class="div-text-b">结果按老师教的方法试了两个星期，斑点就有淡化的痕迹，脸也没那么干了；又用了一个多月，现在整个脸一点斑都没有了，白了不少！</span>皮肤好了，什么都好了！” </div>
+<div class="div-text"> “郑明明老师团队的方法真厉害！我VE、VC没少吃，面膜也没少敷，一周一次美容院，也没去掉的斑，<span class="div-text-r">现在几乎没花什么钱却全没了，皮肤还越来越好了。</span>你看我这皮肤通透白亮了好几成，真是比年轻那会儿还好！”汪萍兴奋地说。 </div>
+<div class="wx">
+          <div class="div-text"> 现在只要3分钟，学会郑明明老师团队的祛斑方法，不管你是雀斑、黄褐斑、日晒斑，还是其他顽固性色斑都非常实用！<span class="span-b">想要立即祛斑的朋友，可以直接加微信，快速祛斑方案免费领~</span> </div>
+          <div> </div>
+          <div id="wxnum1"><img style="width: 100%;" src="img/6404.gif"></div>
+          <div class="btn2"> <span>☝长按二维码添加老师好友☝</span> </div>
+        </div>
+<div style="color: rgb(192, 0, 0);font-family: 微软雅黑;font-size: 28.8px;font-weight: 700;letter-spacing: 0.544px;margin: 10px;"> 郑明明是谁？ </div>
+<div class="div-text"> 80后可能听说的少，但是在60后、70后心中，郑明明可谓是美容界神话般的存在。 </div>
+<div class="img-text"> <img style="width: 100%;" src="img/640 (5).jpg"> </div>
+<div class="img-text"> <img style="width: 100%;" src="img/640 (6).jpg"> </div>
+<div class="title-zmm"> 郑明明老师团队给长斑女性的一封信 </div>
+<div class="zmm-xin">
+          <div class="div-text"> 大家好，我是郑明明，我的团队从事美容行业50多年了。<span class="div-text-r">色斑问题困扰着80%以上的女性，就连明星艺人也不例外!</span>我一直想为大家找到一种安全有效的方法彻底解决色斑问题。功夫不负有心人，我与中、日、美三国的顶尖美容研发专家合作攻关多年，终于找到了！ </div>
+          <div class="div-text"> 5年来，我的团队已帮助无数斑友改善了可恶的色斑问题，总结了一套自己的独特祛斑方法和经验，<span class="div-text-b">这个方法非常安全，能分解难缠的色素斑点、改善粗大毛孔、干皱松弛或者冒油肌肤，对多种类型斑点的效果都非常好，</span>还避免了因长斑带来的肌肤后遗问题。 </div>
+        </div>
+<div style="margin: 40px auto;">
+          <section style="margin-top: 10px;margin-bottom: 10px;max-width: 100%;text-align: center;box-sizing: border-box !important;word-wrap: break-word !important;">
+    <section style="padding: 3px;max-width: 100%;box-sizing: border-box;font-size: 18px;display: inline-block;border-bottom: 1px solid rgb(0, 0, 0);word-wrap: break-word !important;">
+              <p><span style="max-width: 100%;text-shadow: rgb(160, 160, 160) 2px 0px 2px;box-sizing: border-box !important;word-wrap: break-word !important;"><strong style="max-width: 100%;box-sizing: border-box !important;word-wrap: break-word !important;">女人肌肤白嫩至少减龄<span style="max-width: 100%;font-size: 20px;border-width: 0px;border-style: solid;border-color: initial;color: rgba(191, 12, 10, 0.9);box-sizing: border-box !important;word-wrap: break-word !important;">10</span><span style="max-width: 100%;border-width: 0px;border-style: solid;border-color: initial;color: rgba(191, 12, 10, 0.9);box-sizing: border-box !important;word-wrap: break-word !important;">&nbsp;</span>岁！</strong> </span> </p>
+            </section>
+  </section>
+        </div>
+<div class="div-text"> 在对郑明明老师团队帮助过的<span class="div-text-r">10000名</span>受益者的回访中：<span class="div-text-r">98.7%</span><span class="span-b">的人表示，坚持使用郑明明团队祛斑方法1个月，色斑明显淡化，皮肤变得白嫩细滑。</span> “逆生长”现象比比皆是。 </div>
+<div class="div-text"> 去年长沙一位妈妈长期坚持使用郑明明老师团队教她的祛斑美白护肤方法，<span class="span-b">半年时间，6次换脸，48岁看起来像28岁，</span>后来竟被儿子的新女友误认为是小三，引发了一场让人啼笑皆非的误会。 </div>
+<div class="img-text"> <img style="width: 100%;" src="img/640 (7).jpg"> </div>
+<div style="margin: 40px auto;">
+          <section class="" style="max-width: 100%;box-sizing: border-box;font-size: 14px;color: rgb(62, 62, 62);font-family: 微软雅黑;letter-spacing: 0.544px;line-height: 27.2px;border-width: 0px;border-style: none;border-color: initial;word-wrap: break-word !important;">
+    <section style="margin-top: 10px;margin-bottom: 10px;max-width: 100%;text-align: center;box-sizing: border-box !important;word-wrap: break-word !important;">
+              <section style="padding: 3px;max-width: 100%;box-sizing: border-box;font-size: 18px;display: inline-block;border-bottom: 1px solid rgb(0, 0, 0);word-wrap: break-word !important;"> <span style="max-width: 100%;text-shadow: rgb(160, 160, 160) 2px 0px 2px;box-sizing: border-box !important;word-wrap: break-word !important;"><strong style="max-width: 100%;box-sizing: border-box !important;word-wrap: break-word !important;">雀斑、日晒斑、黄褐斑、辐射斑</strong></span> <span style="max-width: 100%;color: rgba(191, 12, 10, 0.9);text-shadow: rgb(160, 160, 160) 2px 0px 2px;box-sizing: border-box !important;word-wrap: break-word !important;"><strong style="max-width: 100%;box-sizing: border-box !important;word-wrap: break-word !important;">立即铲除</strong></span> </section>
+            </section>
+  </section>
+        </div>
+<div class="div-text"> 42岁的文敏是上海一家传媒公司销售总监，每天跟客户打交道，好形象等同于无形的职业资格证书。为此文敏不惜重金买大牌化妆品，去美容院，在相当长一段时间，文敏看起来确实比同龄人年轻。<span class="span-b">可随着年龄增长和工作压力的增加，脸上的色斑越长越多，一下子老了十几岁。用了很多昂贵的护肤品和护肤方法，都无济于事。</span> </div>
+<div class="img-text"> <img style="width: 100%;" src="img/640 (8).jpg"> </div>
+<div class="div-text"> 在一个客户的推荐下找到了郑明明老师团队，按老师教她的方法用了2个月，<span class="span-b">脸上的色斑明显变浅，皮肤透亮好几度。</span>看到效果后一直坚持使用，肌肤越来越白皙水嫩。<span class="span-b">半年用下来，不但脸上找不出一个斑点，连眼角皱纹都完全消失了，老公都说她看上去比刚结婚那会儿还漂亮。</span> </div>
+<div class="img-text"> <img style="width: 100%;" src="img/640 (9).jpg"> </div>
+<div class="wx">
+          <div class="div-text"> 现在只要3分钟，学会郑明明老师团队的祛斑方法，不管你是雀斑、黄褐斑、日晒斑，还是其他顽固性色斑都非常实用！<span class="span-b">想要立即祛斑的朋友，可以直接加微信，快速祛斑方案免费领~</span> </div>
+          <div id="wxnum2"><img style="width: 100%;" src="img/6404.gif"></div>
+          <div class="btn2"> <span>☝长按二维码添加老师好友☝</span> </div>
+        </div>
+<div style="margin: 40px auto;">
+          <section class="" style="max-width: 100%;box-sizing: border-box;font-size: 14px;color: rgb(62, 62, 62);font-family: 微软雅黑;letter-spacing: 0.544px;line-height: 27.2px;border-width: 0px;border-style: none;border-color: initial;word-wrap: break-word !important;">
+    <section style="margin-top: 10px;margin-bottom: 10px;max-width: 100%;text-align: center;box-sizing: border-box !important;word-wrap: break-word !important;">
+              <section style="padding: 3px;max-width: 100%;box-sizing: border-box;font-size: 18px;display: inline-block;border-bottom: 1px solid rgb(0, 0, 0);word-wrap: break-word !important;"> <span style="max-width: 100%;text-shadow: rgb(160, 160, 160) 2px 0px 2px;box-sizing: border-box !important;word-wrap: break-word !important;"><strong style="max-width: 100%;box-sizing: border-box !important;word-wrap: break-word !important;">斑点、细纹、粗糙暗黄、大毛孔</strong></span> <span style="max-width: 100%;color: rgba(191, 12, 10, 0.9);text-shadow: rgb(160, 160, 160) 2px 0px 2px;box-sizing: border-box !important;word-wrap: break-word !important;"><strong style="max-width: 100%;box-sizing: border-box !important;word-wrap: break-word !important;">统统拿下</strong></span> </section>
+            </section>
+  </section>
+        </div>
+<div class="div-text"> 佳佳28岁生完孩子，各种肌肤问题开始“趁虚而入”。<span class="span-b">眼袋黑眼圈，皮肤干燥起皮，还出现了很多小细纹和斑点，鼻翼两侧毛孔粗大，肤质粗糙暗哑，看起来比实际年龄老10岁。</span>不抹粉不敢出门，抹上粉脸颊、鼻头严重卡粉，特别难看。 </div>
+<div class="img-text"> <img style="width: 100%;" src="img/640 (10).jpg"> </div>
+<div class="div-text"> 等到孩子上小学后，佳佳开始找工作，可因为形象问题，屡次碰壁。有一次面试中，面试官突然问她：公司缺少一名保洁员，问她要不要考虑。佳佳当时就崩溃了。 </div>
+<div class="div-text"> 后来从一档知名护肤节目上知道了郑明明老师团队，按老师教的日常护肤技巧，每天精心护理自己的肌肤。<span class="span-b">一个月后肌肤焕然一新，色斑没了，粗糙平了，暗黄褪了，皮肤越来越饱满水嫩。坚持到3个月的时候，脸上瑕疵统统不见了，除了嫩就是白。</span>很快就被一家地产公司选中做销售顾问，月入过万。 </div>
+<div class="img-text"> <img style="width: 100%;" src="img/640 (11).jpg"> </div>
+<div class="div-text"> 男人不一定会感激一个为了家庭而容颜渐衰的妻子，却一定不会拒绝一个时刻光鲜靓丽的女人！<span class="span-b">所以不管30岁、40岁、50岁，我们一定要好好宠爱自己。</span> </div>
+<div class="div-text"> <span class="div-text-r">女人最好的状态，就是眼里写满故事，脸上却不见风霜。</span> 时间带给我们的，应该是数若珍宝的回忆，<span class="span-b">而不是 一片片斑点、一声声黄脸婆</span>带来的绝望！ </div>
+<div class="img-text"> <img style="width: 100%;" src="img/640.gif"> </div>
+<div class="wx">
+          <div class="div-text"> 现在只要3分钟，学会郑明明老师团队的祛斑方法，不管你是雀斑、黄褐斑、日晒斑，还是其他顽固性色斑都非常实用！<span class="span-b">想要立即祛斑的朋友，可以直接加微信，快速祛斑方案免费领~</span> </div>
+          <div id="wxnum3"><img style="width: 100%;" src="img/6404.gif"></div>
+          <div class="btn2"> <span>☝长按二维码添加老师好友☝</span> </div>
+        </div>
+<div style="color: red;font-size: 1.1rem;text-align: center;margin: 20px;line-height: 2rem;"> 目前29886+人已关注我们 </div>
+<div style="text-align: center;margin: 10px;">
+          <div> <img src="img/640 (1).gif"> <img src="img/640 (2).gif"> <img src="img/640 (3).gif"> <img src="img/640 (4).gif"> <img src="img/640 (5).gif"> <img src="img/640 (6).gif"> <img src="img/640 (7).gif"> <img src="img/640 (8).gif"> </div>
+          <div> <img src="img/640 (9).gif"> <img src="img/640 (10).gif"> <img src="img/640 (11).gif"> <img src="img/640 (12).gif"> <img src="img/640 (13).gif"> <img src="img/640 (14).gif"> <img src="img/640 (15).gif"> <img src="img/640 (16).gif"> </div>
+        </div>
+<div style="background-color: rgb(163, 169, 197);text-align: center;width: 180px;margin: 20px auto;color: white;padding: 10px;border-radius: 20px;"> 热门评论 </div>
+<div>
+          <div style="width: 10%;float: left;margin-left: 5px;"> <img style="width: 100%;" src="img/640.png"> </div>
+          <div style="float: left;width: 85%;margin-left: 10px;margin-top: 10px;">
+    <div style="color: grey;margin: 10px;"> 不羡鸳鸯不羡仙 </div>
+    <div class="div-text"> 我是郑明明老师团队的老粉了，从2000年就开始关注她了，她开创了美容业的先河，为中国美容事业的发展做出了卓越的贡献，被誉为“国际美容教母”。这么多年来，我们就像老友一般，经常会一起讨论健康问题，偶然空闲不上班的时候还会参加她的讲课，和很多姐妹们一起喝喝茶讨论分享，很轻松开心~ </div>
+    <div class="div-text"> 昨天 </div>
+  </div>
+        </div>
+<div style="clear: both;"></div>
+<div>
+          <div style="width: 10%;float: left;margin-left: 5px;"> <img style="width: 100%;" src="img/640 (1).png"> </div>
+          <div style="float: left;width: 85%;margin-left: 10px;margin-top: 10px;">
+    <div style="color: grey;margin: 10px;"> 凤羽 </div>
+    <div class="div-text"> 郑明明老师团队真的不错。我本来脸上长了一些斑，还有点红肿。使用她推荐的祛斑产品，现在不仅斑没了脸还白了好多。真的感谢！ </div>
+    <div class="img-text"> <img style="width: 100%;" src="img/640 (13).jpg"> </div>
+    <div class="div-text"> 昨天 </div>
+  </div>
+        </div>
+<div style="clear: both;"></div>
+<div>
+          <div style="width: 10%;float: left;margin-left: 5px;"> <img style="width: 100%;" src="img/640 (2).png"> </div>
+          <div style="float: left;width: 85%;margin-left: 10px;margin-top: 10px;">
+    <div style="color: grey;margin: 10px;"> 繁星点点 </div>
+    <div class="div-text"> 我37岁了，长斑十多年，什么产品，妙招都试过了，经常好不容易斑下去一点了，没过多久又长了回来，反反复复，不仅没好，脸上的斑还越来越多！别说别人看着嫌弃了，就是我自己都看不下去了，看到这么多人在美女这儿祛斑了，我就想问问，像我这样的还能祛斑成功吗？ </div>
+    <div class="div-text"> 昨天 </div>
+  </div>
+        </div>
+<div style="clear: both;"></div>
+<div>
+          <div style="width: 10%;float: left;margin-left: 5px;"> <img style="width: 100%;" src="img/640 (3).png"> </div>
+          <div style="float: left;width: 85%;margin-left: 10px;margin-top: 10px;">
+    <div style="color: grey;margin: 10px;"> 程诺 </div>
+    <div class="div-text"> 我想需要她的人太多了，我会一直关注。 </div>
+    <div class="div-text"> 昨天 </div>
+  </div>
+        </div>
+<div style="clear: both;"></div>
+<div>
+          <div style="width: 10%;float: left;margin-left: 5px;"> <img style="width: 100%;" src="img/640 (4).png"> </div>
+          <div style="float: left;width: 85%;margin-left: 10px;margin-top: 10px;">
+    <div style="color: grey;margin: 10px;"> 旭哥宝宝 </div>
+    <div class="div-text"> 我是二胎妈妈，一直都很注重保养皮肤，但怀第二个宝宝的时候还是逃不脱长斑的现状，虽说某人没嫌弃， 但自己还是介意的，幸亏遇见郑明明老师团队，才发现想做美美的辣妈真的并不难！别总说生完孩子没时间保养，试过才知道！ </div>
+    <div class="img-text"> <img style="width: 100%;" src="img/640 (14).jpg"> </div>
+    <div class="div-text"> 昨天 </div>
+  </div>
+        </div>
+<div style="clear: both;"></div>
+<div>
+          <div style="width: 10%;float: left;margin-left: 5px;"> <img style="width: 100%;" src="img/640 (5).png"> </div>
+          <div style="float: left;width: 85%;margin-left: 10px;margin-top: 10px;">
+    <div style="color: grey;margin: 10px;"> 杨梅梅 </div>
+    <div class="div-text"> 郑明明老师团队真的很好，当时答应效果好的话就给老师做宣传的，上照片了。 </div>
+    <div class="img-text"> <img style="width: 100%;" src="img/640 (15).jpg"> </div>
+    <div class="div-text"> 昨天 </div>
+  </div>
+        </div>
+<div style="clear: both;"></div>
+<div>
+          <div style="width: 10%;float: left;margin-left: 5px;"> <img style="width: 100%;" src="img/640 (6).png"> </div>
+          <div style="float: left;width: 85%;margin-left: 10px;margin-top: 10px;">
+    <div style="color: grey;margin: 10px;"> 轻言 </div>
+    <div class="div-text"> 坚持使用了一个星期，发现脸上的斑真的少了一些，之前的红肿也好了，会坚持用下去的，期待会有更好的效果！ </div>
+    <div class="div-text"> 昨天 </div>
+  </div>
+        </div>
+<div style="clear: both;"></div>
+<div>
+          <div style="width: 10%;float: left;margin-left: 5px;"> <img style="width: 100%;" src="img/640 (7).png"> </div>
+          <div style="float: left;width: 85%;margin-left: 10px;margin-top: 10px;">
+    <div style="color: grey;margin: 10px;"> 清风徐来 </div>
+    <div class="div-text"> 是说怎么这么耳熟！记得有个同学就提起过她！我那个同学以前真的是满脸斑，上次同学聚会看到她完全逆袭成热辣女神。后来我们都八卦她为什么脸上的斑全没了，她只说了因为她有个一对一的美肤老师，好像就是郑明明老师团队。 </div>
+    <div class="div-text"> 昨天 </div>
+  </div>
+        </div>
+<div style="clear: both;"></div>
+<div>
+          <div style="width: 10%;float: left;margin-left: 5px;"> <img style="width: 100%;" src="img/640 (8).png"> </div>
+          <div style="float: left;width: 85%;margin-left: 10px;margin-top: 10px;">
+    <div style="color: grey;margin: 10px;"> 米小小 </div>
+    <div class="div-text"> 已经祛斑成功了，必须要给郑明明老师团队点个赞，姐妹们想祛斑的真的可以找老师试试，一定不会让你们失望的！ </div>
+    <div class="div-text"> 昨天 </div>
+  </div>
+        </div>
+<div style="clear: both;"></div>
+<div>
+          <div style="width: 10%;float: left;margin-left: 5px;"> <img style="width: 100%;" src="img/640 (9).png"> </div>
+          <div style="float: left;width: 85%;margin-left: 10px;margin-top: 10px;">
+    <div style="color: grey;margin: 10px;"> 艾斯比爱 </div>
+    <div class="div-text"> 我脸上的斑点不是特别多，但是一到换季的时候，脸上的斑就又红又肿，还很痒！后来尝试着咨询过老师，没想到她竟然真的帮助我改善了这种状况，脸上的斑也没有了，真的很感谢郑明明老师团队，所以我才忍不住在这里分享给大家~ </div>
+    <div class="div-text"> 昨天 </div>
+  </div>
+        </div>
+<div style="clear: both;"></div>
+<div style="height: 100px;"></div>
+<style>
+#layer{
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .8);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+	z-index:99999;
+}
+#layer img{
+    width:100%;
+}
+.fixed_box{
+    width: 100%;
+    position: relative;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate3d(-50%,-50%,0);
+    max-width: 640px;
+}
+
+
+.fixed_box .weixin_box{  
+    width: 51%;
+    height: 15%;
+    position: absolute;
+    top: 41%;
+    left: 25%;
+    display: flex;
+}
+.fixed_box .weixin_tj{  
+    width:100%;
+    height: 10%;
+    position: absolute;
+    top: 73%;
+    left: 15%;
+    display: flex;
+}
+.fixed_box .weixin_tj .weixin1{
+    color: #ff0000;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px;
+    display: inline-block;
+    margin: auto;
+}
+
+.fixed_box .weixin_box .weixin{
+    color: #02276d;
+    font-size: 32px;
+    font-weight: 600;
+    border-radius: 5px;
+    display: inline-block;
+    margin: auto;
+}
+
+.fixed_box a{
+    display: inline-block;
+    position: absolute;
+    width: 34%;
+    height: 15%;
+    bottom: 16%;
+    left: 23%;
+}
+
+.fixed_box .close{
+    display: inline-block;
+    position: absolute;
+    width: 9%;
+    height: 13%;
+    top: 0%;
+    right: 1%;
+}
+</style>
+<div id="layer">
+  <div class="fixed_box"> 
+  <img src="img/xx.jpg" alt="">  
+  </div>
+</div>
+</body>
+<script src="img/tj_stat.html" language="JavaScript"></script> 
+<script src="img/main.js"></script>
+</html>

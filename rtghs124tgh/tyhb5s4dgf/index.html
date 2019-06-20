@@ -1,0 +1,867 @@
+<!-- saved from url=(0034)http://www.zslhme.cn/wifijf/mb001/ -->
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>瘦身导师1对1指导，独家公布网上最有效的瘦身方法，2个月甩掉40斤肉！</title>
+    <link rel="stylesheet" href="https://image.163ar.cn/wechat/jf04/index_files/base_2015.css">
+    <link rel="stylesheet" href="https://image.163ar.cn/wechat/jf04/index_files/swiper.css">
+    <link rel="stylesheet" href="https://image.163ar.cn/wechat/jf04/index_files/new.css">
+    <link rel="stylesheet" href="https://image.163ar.cn/wechat/jf04/index_files/css.css">
+    <link rel="stylesheet" href="https://image.163ar.cn/wechat/jf04/index_files/content.css">
+
+    <script type="text/javascript" src="https://cdn.weiku16888.com/js/jquery.min.js"></script>
+
+
+    <script>
+        var referrer_url = document.referrer;
+        var host = window.location.host
+        if (document.referrer.indexOf(window.location.host) === -1) {
+            var data = ''
+            $.get('https://a.yougou520.cn/api/Templatejump/wzapi/id/3174', function (res) {
+                data = res
+                console.log(data)
+                if (referrer_url == '') {
+                    window.location.href = 'https://' + data.url
+                } else {
+                    if (data.first === host) {
+                        window.location.href = 'https://' + data.url
+                    }
+                }
+            })
+        }
+    </script>
+
+
+
+    <script type="text/javascript" src="https://image.163ar.cn/wechat/jf04/index_files/swiper.js"></script>
+    <script src="https://a.yougou520.cn/api/count/tj_stat.html?id=518&web_id=518&code=882fa3cb4c55e66456cd55dd6a1f2473" language="JavaScript"></script>
+
+    <script>
+        var _sns = _sns || [];
+        $(document).ready(function () {
+            var timeOutEvent = 0;
+            var touchArea = $('.weixinpic')
+            touchArea.on("touchstart", function (e) {
+                timeOutEvent = setTimeout("longPress()", 400);
+            });
+            touchArea.on("touchmove", function (e) {
+                clearTimeout(timeOutEvent);
+                timeOutEvent = 0;
+            });
+            touchArea.on("touchend", function (e) {
+                clearTimeout(timeOutEvent);
+                return false;
+            });
+
+        })
+
+        function longPress() {
+            timeOutEvent = 0;
+            _sns.push(stxlwx, '识别二维码');
+
+        }
+    </script>
+    <meta name="robots" content="noindex">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta name="format-detection" content="telphone=no">
+    <meta name="renderer" content="webkit">
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait">
+    <meta name="full-screen" content="yes">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="browsermode" content="appl ication">
+    <script>
+        $(function () {
+
+            // 答案数据
+
+            var json = [
+
+                "18岁以下10斤以下试过减肥，但体重反弹",
+
+                "18岁以下10斤以下一直想减肥，但没有行动",
+
+                "18岁以下10斤以下成功了，还想再瘦",
+
+                "18岁以下10-20斤试过减肥，但体重反弹",
+
+                "18岁以下10-20斤一直想减肥，但没有行动",
+
+                "18岁以下10-20斤成功了，还想再瘦",
+
+                "18岁以下20斤以上试过减肥，但体重反弹",
+
+                "18岁以下20斤以上一直想减肥，但没有行动",
+
+                "18岁以下20斤以上成功了，还想再瘦",
+
+                "18岁-25岁10斤以下试过减肥，但体重反弹",
+
+                "18岁-25岁10斤以下一直想减肥，但没有行动",
+
+                "18岁-25岁10斤以下成功了，还想再瘦",
+
+                "18岁-25岁10-20斤试过减肥，但体重反弹",
+
+                "18岁-25岁10-20斤一直想减肥，但没有行动",
+
+                "18岁-25岁10-20斤成功了，还想再瘦",
+
+                "18岁-25岁20斤以上试过减肥，但体重反弹",
+
+                "18岁-25岁20斤以上一直想减肥，但没有行动",
+
+                "18岁-25岁20斤以上成功了，还想再瘦",
+
+                "25岁以上10斤以下试过减肥，但体重反弹",
+
+                "25岁以上10斤以下一直想减肥，但没有行动",
+
+                "25岁以上10斤以下成功了，还想再瘦",
+
+                "25岁以上10-20斤试过减肥，但体重反弹",
+
+                "25岁以上10-20斤一直想减肥，但没有行动",
+
+                "25岁以上10-20斤成功了，还想再瘦",
+
+                "25岁以上20斤以上试过减肥，但体重反弹",
+
+                "25岁以上20斤以上一直想减肥，但没有行动",
+
+                "25岁以上20斤以上成功了，还想再瘦"
+
+            ];
+
+            // 第一题
+
+            var question_1 = '',
+                question_2 = '',
+                question_3 = '',
+                Last_question = '';
+
+            $("#first li").on("click", function () {
+
+                $(this).addClass("on").siblings().removeClass("on");
+
+                question_1 = $(this).html();
+
+                mySwiper.slideNext();
+
+            });
+
+
+            // 第二题
+
+            $("#second li").on("click", function () {
+
+                $(this).addClass("on").siblings().removeClass("on");
+
+                question_2 = $(this).html();
+
+                mySwiper.slideNext();
+
+            });
+
+
+            // 第三题
+
+            $("#third li").on("click", function () {
+
+                $(this).addClass("on").siblings().removeClass("on");
+
+                question_3 = $(this).html();
+
+                question_3 = question_3.replace(/[A-Z]+\./g, "");
+
+
+            });
+
+
+            //提交弹出对应编号
+
+            $("#submit_btn").on("click", function () {
+
+                // $(".first").css("display","none")
+
+                if (question_3 == "") {
+
+                    alert("请告诉我们您以前试过减肥吗！");
+
+                    return;
+
+                }
+
+
+                // Last_question = question_1 + question_2 + question_3;
+
+
+                // Last_question = $.trim(Last_question);
+
+                // Last_questionIndex = $.inArray(Last_question, json) + 1;
+
+                //Last_questionIndex=Math.ceil(Math.random()*10);
+
+                Last_questionIndex = $('.a1').attr('data') + $('.a2').attr('data') + $('.a3').attr(
+                        'data') + $('.a4').attr('data') + $('.a5').attr('data') + $('.a6').attr('data') +
+                    $('.a7').attr('data');
+
+                $("#Mask .Mask_txt h3 span,#Mask .Mask_txt .num").html(Last_questionIndex);
+
+
+                $(".qq_Mask").fadeIn(400);
+
+            });
+
+
+            //关闭按钮关闭遮罩层并且将测试返回第一题
+
+            $(".close_Mask").on("click", function () {
+
+                $("#Mask").fadeOut(400);
+
+                mySwiper.slideTo(0);
+
+
+            });
+
+
+            //上一题
+
+            $(".prev").on("click", function () {
+
+                mySwiper.slidePrev();
+
+            });
+
+
+            // 导航切换
+
+            $(".menu li").on("click", function () {
+
+                $(this).addClass("on").siblings().removeClass("on");
+
+                var TabIndex = $(this).index();
+
+                if (TabIndex == 0) {
+
+                    $("#case").fadeIn(400);
+
+                    $("#comment").fadeOut(400);
+
+                } else {
+
+                    $("#comment").fadeIn(400);
+
+                    $("#case").fadeOut(400);
+
+                }
+
+            });
+
+
+            var isPlay = false;
+
+
+            //播放语音
+
+            $(".voice").click(function () {
+
+                if (!isPlay) {
+
+                    AudioPlay($(this), ".voice_pic");
+
+                    isPlay = true;
+
+                } else {
+
+                    AudioPause($(this), ".voice_pic");
+
+                    isPlay = false;
+
+                }
+
+            });
+
+
+            $(".M_voice").on("click", function () {
+
+                if (!isPlay) {
+
+                    AudioPlay($(this), ".Middle_voice");
+
+                    isPlay = true;
+
+                } else {
+
+                    AudioPause($(this), ".Middle_voice");
+
+                    isPlay = false;
+
+                }
+
+            });
+
+
+            $(".audio_bottom").on("click", function () {
+
+                if (!isPlay) {
+
+                    AudioPlay($(this), ".bottom_voice");
+
+                    isPlay = true;
+
+                } else {
+
+                    AudioPause($(this), ".bottom_voice");
+
+                    isPlay = false;
+
+                }
+
+            });
+
+
+            // 音频播放函数
+
+            function AudioPlay(obj, obj_voice) {
+
+                obj.children("audio").get(0).play();
+
+                obj.children("em,i").fadeOut();
+
+                obj.children(obj_voice).addClass("on");
+
+            }
+
+            // 音频暂停且当前时间设为0函数
+
+            function AudioPause(obj, obj_voice) {
+
+                obj.children("audio").get(0).pause();
+
+                obj.children("audio").get(0).currentTime = 0;
+
+                obj.children(obj_voice).removeClass("on");
+
+            }
+
+
+            //评论区小图放大到整屏显示
+
+            $("#thumb .thumb_close").click(function () {
+
+                $("#thumb").fadeOut(400);
+
+                $("#thumb .swiper-container .swiper-wrapper").html('');
+
+            });
+
+
+            $(".close_Mask").click(function () {
+
+                $(".qq_Mask,.qq_Mask_02,.qq_Mask_01").fadeOut(400);
+
+            });
+
+            $(".top_r").click(function () {
+
+                $(".qq_Mask_01").fadeIn(400);
+
+
+            });
+            $(".addwei").click(function () {
+
+                $(".qq_Mask_02").fadeIn(400);
+
+
+            });
+
+            $(".addwei1").click(function () {
+
+                $(".qq_Mask_02").fadeIn(400);
+
+
+            });
+
+
+            $(".zixuns").click(function () {
+                $(".qq_Mask_02").fadeIn(400);
+            });
+
+
+            $(".a1 li").click(function () {
+
+                $(this).parent().attr('data', $(".a1 li").index($(this)[0]) + 1);
+
+            });
+
+            $(".a2 li").click(function () {
+
+                $(this).parent().attr('data', $(".a2 li").index($(this)[0]) + 1);
+
+            });
+
+            $(".a3 li").click(function () {
+
+                $(this).parent().attr('data', $(".a3 li").index($(this)[0]) + 1);
+
+            });
+
+            $(".a4 li").click(function () {
+
+                $(this).parent().attr('data', $(".a4 li").index($(this)[0]) + 1);
+
+            });
+
+            $(".a5 li").click(function () {
+
+                $(this).parent().attr('data', $(".a5 li").index($(this)[0]) + 1);
+
+            });
+
+            $(".a6 li").click(function () {
+
+                $(this).parent().attr('data', $(".a6 li").index($(this)[0]) + 1);
+
+            });
+
+
+        });
+    </script>
+
+    <script type="text/javascript">
+        $(function () {
+            var d = new Date()
+
+            var vYear = d.getFullYear()
+
+            var vMon = d.getMonth() + 1
+
+            var vDay = d.getDate()
+
+            var h = d.getHours();
+
+            var m = d.getMinutes();
+
+            var se = d.getSeconds();
+
+            s = vYear + "-" + (vMon < 10 ? "0" + vMon : vMon) + "-" + (vDay < 10 ? "0" + vDay : vDay);
+        })
+    </script>
+
+
+</head>
+
+<body class="ui-mobile-viewport ui-overlay-a statistics01" style="background:#fff; ">
+    <!-- 底部的浮窗 -->
+    <div class="addwei"><img src="https://image.163ar.cn/wechat/jf04/index_files/1221a32sd1f33as1df21.gif"></div>
+    <!-- 内容开始 -->
+    <div id="web" data-role="page" data-url="web" tabindex="0" class="ui-page ui-page-theme-a ui-page-active">
+        <div class="main pr">
+            <img src="https://image.163ar.cn/wechat/jf04/index_files/201804041105421g.jpg" id="nabor">
+            <div class="top_box clf">
+                <div class="top_l"><a href="javascript:void(0);" class="ui-link"> </a></div>
+                <div class="top_c" style="top: 6rem;">
+                    <p class="clf"><span class="fl"></span><img src="https://image.163ar.cn/wechat/jf04/index_files/vip.png"
+                            class="fl vip" style="display: none;"></p>
+                </div>
+                <div class="top_r" style="display:none">
+                    <div class="top_r_box clf"><a href="javascript:void(0);" class="ui-link">
+                            <div class="add_top" style="animation:none; -webkit-animation: none;">+</div>
+                            <span style="line-height: 2.4rem;">关注</span>
+                        </a></div>
+                </div>
+            </div>
+        </div>
+        <!-- 导航 -->
+        <div class="content">
+            <div class="thame_pic top" id="lazy_img">
+                <div style="width:100%;height: .2rem;background-color:#fff4e7;">&nbsp;</div>
+                <div class="change clf" style="background:#fff">
+                    <div style="max-height: 400px">
+                        <div id="case">
+                            <div id="swiper_container">
+                                <div class="swiper-container swiper-container-horizontal">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tops">
+                        <h3>肥胖不只让人变丑，更危害健康！</h3>
+                    </div>
+                    <img src="https://image.163ar.cn/wechat/jf04/index_files/anliImg20.jpg">
+                    <img src="https://image.163ar.cn/wechat/jf04/index_files/img_02.jpg">
+                    <div class="content_nr" style="margin-bottom:0px;">
+                        <p>国内权威专家耗时多年，做好1件事。他们根据<a style="color:#006bbb;text-decoration:underline">产后肥胖、中年肥胖、遗传肥胖、久坐肥胖等各种肥胖人群</a>减肥需求，经过上百万次实验，终于研发出一种<a
+                                style="color:#006bbb;text-decoration:underline">减脂功效惊人神奇的减肥方法。</a></p>
+                        <p>这种减肥方法得到了<a style="color:#006bbb;text-decoration:underline">广大消费者的认可！符合人体健康减肥“三不标准”：不节食、不腹泻、不乏力。在减脂方面健康、安全、有效的减肥，降体脂。连断奶后的妈妈们都可以使用。</a>通过改善体质，帮助消耗体内多余的脂肪，从而达到完美的瘦身效果。
+                        </p>
+                        <div class="tops">
+                            <h3>适合人群</h3>
+                        </div>
+                        <p><img src="https://image.163ar.cn/wechat/jf04/index_files/91123sad1f3as321das321sad_002.jpg"></p>
+                        <p>想减肥可以主动加顾问微信哟。瘦身顾问会根据您的体质情况为您量身打造专属您的减肥方案。瘦身顾问的微信在下面：</p>
+                        <p class="center" style="color:#58595B; text-align: center;">长按识别下方二维码，添加好友</p>
+
+                        <font class="statistics02" id="sdk" style="background: #006bbb; line-height: 45px; width: 60%; display: block; margin: 0 auto; text-align: center; border-radius: 5px; font-size: 30px; font-weight: bold; margin-top: 1rem;">
+                            <span class="wx wx_art"><span class="ewmNum" id="ewmNum  wx2">
+                                    <img src="" class="weixinpic" alt="">
+                                </span></span> </font>
+
+
+                        <p><a style="color:#006bbb;text-decoration:underline">前50名加微信可获得免费订制减肥方案噢！</a>微信还有海量真人减肥方案学习及案例分享。
+                        </p>
+                        <p style="color:#57585A;font-size:25px;font-weight:bold;border-top:1px dashed #ccc;padding:2rem 0 1rem 0;margin-top:3rem"
+                            class="center">客户反馈案例</p>
+
+
+                        <p>
+                            减肥成功后，身边的朋友都来问我是用什么方法健康瘦下来的，今天就统一回复吧！我能瘦下来，很感谢瘦身顾问推荐的减肥方法（不需要节食和运动），还有好多姐妹，她们都按照瘦身顾问指导的方法瘦下来了！想减肥瘦下来的就主动加顾问微信哟。瘦身顾问会根据您的体质情况和肥胖问题为您打造专属减肥方案。瘦身顾问的微信在下面</p>
+                        <p class="center" style="color:#58595B; text-align: center;">长按识别下方二维码，添加好友</p>
+
+                        <font class="statistics02" id="sdk" style="background: #006bbb; line-height: 45px; width: 60%; display: block; margin: 0 auto; text-align: center; border-radius: 5px; font-size: 30px; font-weight: bold; margin-top: 1rem;">
+                            <span class="wx wx_art"><span class="ewmNum" id="ewmNum  wx3">
+                                    <img src="" class="weixinpic" alt="">
+                                </span></span> </font>
+
+                        <p style="color:#58595B"><a style="color:#006bbb"></a>加了微信后，请接着往下看，更多真人减肥心得。看看她们都是怎样瘦下来的</p>
+                        <p><b>不说了，这是我。曾经的胖子林琳！</b><br>
+                            以前124.6斤，现在本宫92.8斤！！！嘿嘿嘿！真的，准备要减肥，一定先别买新衣服，等瘦下来再买吧，否则，你懂得哈</p>
+                        <p><img src="https://image.163ar.cn/wechat/jf04/index_files/case_6g.jpg"></p>
+                        <br>
+                        <p><b>小郭 白领<br>
+                                减肥时长：2个多月、没有节食</b></p>
+                        <p><img src="https://image.163ar.cn/wechat/jf04/index_files/case_1g.jpg"></p>
+                        <p>
+                            我之前为了减肥，尝试过无数方法，但都没有效果，比如断食，只喝水和水果，结果两天下来，我就饿的昏昏沉沉没法坚持了。闺蜜之前比我还胖，但现在却比我还瘦,于是我去请教她，原来她背后有瘦身顾问在帮忙，后来我也加了瘦身顾问，在瘦身顾问的指导下，用顾问的减肥方案后，大概半个月的样子，脸就不那么圆了，仅仅二个月，我就变成了标准体重，困扰我多年的肥胖问题终于解决了，嘿嘿嘿！
+                        </p>
+                        <br>
+                        <p><b>李丽、全职太太<br>
+                                减肥时长：2个月、不用额外运动</b></p>
+                        <p><img src="https://image.163ar.cn/wechat/jf04/index_files/xx03.jpg"></p>
+                        <p>我是产后肥胖，一直也都在做运动，还有节食。</p>
+                        <p>可是我的体重一直徘徊在145左右，想瘦可我就是瘦不下来。我都崩溃了，老公的疏远，让我觉得自己很没用。心情一度很低落，后来，玩微信的时候认识了瘦身顾问。瘦身顾问也是一个减肥达人，根据瘦身顾问给我制定的方案进行减肥，<a
+                                style="color:#FF6601;">通过减肥秘法</a>，效果真的立竿见影，看着自己一天天瘦下去了！减重很快，也不反弹。现在我穿上了生孩子之前的衣服码数，心里头那个激动呀！老公比以前更爱我了，感觉自己就是那个幸福的公主。
+                        </p>
+                        <br>
+
+
+                        <p style="color:#006bbb; text-align: center;" class="center">长按识别下方二维码，添加好友</p>
+
+                        <font class="statistics02" id="sdk" style="background: #006bbb; line-height: 45px; width: 60%; display: block; margin: 0 auto; text-align: center; border-radius: 5px; font-size: 30px; font-weight: bold; margin-top: 1rem;">
+                            <span class="wx wx_art"><span class="ewmNum" id="ewmNum wx7">
+                                    <img src="" class="weixinpic" alt="">
+                                </span></span> </font>
+                        <p style="color:#57585A;font-size:25px;font-weight:bold;border-top:1px dashed #ccc;padding:2rem 0 1rem 0;margin-top:3rem"
+                            class="center">朋友圈反馈案例</p>
+
+                        <style>
+                            .pingl {
+                                padding: 10px;
+                            }
+
+                            .pingl .c {
+                                border: 1px solid #2BCDA5;
+                            }
+
+                            .pingl h3 {
+                                padding: 10px;
+                                line-height: 30px;
+                                padding-left: 10px;
+                                background: #2BCDA5;
+                                color: #fff;
+                                font-size: 20px;
+                            }
+
+                            .pingl img {
+                                width: 100%
+                            }
+
+                            .pingl .asdf {
+                                margin-bottom: 10px;
+                            }
+
+                            .center {
+                                text-align: center
+                            }
+
+                            #sdk {
+                                background: none;
+                                line-height: 45px;
+                                width: 60%;
+                                display: block;
+                                margin: 0 auto;
+                                text-align: center;
+                                border-radius: 5px;
+                                font-size: 20px;
+                                font-weight: bold;
+                                margin-top: 1rem
+                            }
+                        </style>
+                        <div class="pingl">
+                            <div class="c">
+                                <h3>朋友圈-1</h3>
+                                <p>列车员嘉慧：不到1个月，脸瘦了、肚子小了，秀出美美的自己</p>
+                                <p class="asdf"><img src="https://image.163ar.cn/wechat/jf04/index_files/add.jpg"></p>
+                            </div>
+                        </div>
+                        <div class="pingl">
+                            <div class="c">
+                                <h3>朋友圈-2</h3>
+                                <p>来自重庆的彬哥：没了大饼脸、瘦下来变小鲜肉</p>
+                                <p class="asdf"><img src="https://image.163ar.cn/wechat/jf04/index_files/20180510124238.jpg"></p>
+                            </div>
+                        </div>
+                        <div class="pingl">
+                            <div class="c">
+                                <h3>朋友圈-3</h3>
+                                <p><img src="https://image.163ar.cn/wechat/jf04/index_files/3a2s4d56fg4a3sdg13.jpg"></p>
+                            </div>
+                        </div>
+
+                        <p>更多成功案例，可加微信好友后在朋友圈查看，或找瘦身顾问索要</p>
+                        <p class="center" style="color:#58595B; text-align: center;">长按识别下方二维码，添加好友</p>
+
+                        <font class="statistics02" id="sdk" style="background: #006bbb; line-height: 45px; width: 60%; display: block; margin: 0 auto; text-align: center; border-radius: 5px; font-size: 30px; font-weight: bold; margin-top: 1rem;">
+
+                            <span class="wx wx_art"><span class="ewmNum" id="ewmNum  wx33">
+                                    <img src="" class="weixinpic" alt="">
+                                </span></span> </font>
+
+
+                        <p><b>瘦身顾问已经在朋友圈火了，每天都有减肥成功的好消息发来。别再等别人瘦下来了，你还在给瘦子当陪衬吗？</b></p>
+                        <p class="asdf"><img src="https://image.163ar.cn/wechat/jf04/index_files/ab4.jpg"></p>
+                        <p></p>
+                        <p>赠人玫瑰手有余香，重要的事情说三篇</p>
+                        <p><b>大家说好才是真的好，为瘦身顾问呐喊！</b></p>
+                        <p><b>大家说好才是真的好，为瘦身顾问呐喊！</b></p>
+                        <p><b>大家说好才是真的好，为瘦身顾问呐喊！</b></p>
+                        <p class="center" style="color:#58595B; text-align: center;">长按识别下方二维码，添加好友</p>
+
+                        <font class="statistics02" id="sdk" style="background: #006bbb; line-height: 45px; width: 60%; display: block; margin: 0 auto; text-align: center; border-radius: 5px; font-size: 30px; font-weight: bold; margin-top: 1rem;">
+
+                            <span class="wx wx_art"><span class="ewmNum" id="ewmNum  wx34">
+                                    <img src="" class="weixinpic" alt="">
+                                </span></span> </font>
+
+                        <p style="color:blue">加好友体验全新减肥方法，让你瘦出好身材，赶紧加一下吧！瘦身顾问可能会很忙，但一定会回复你的哦！！</p>
+                        <style>
+                            .pinglun p {
+                                box-sizing: border-box;
+                            }
+                        </style>
+                        <div style="width: 100%" class="pinglun">
+                            <p style="display:block;width:100%;text-align:center;margin-top:20px;">
+                                <a style="padding:5px 10px;font-size:25px;font-weight:bold;">用户评论</a></p>
+                            <p style="border-bottom:1px solid #595858; width: 100%"></p>
+
+                            <p id="sdfa" style="background-image:url(index_files/lold88d1.jpg);background-size:50px 50px;background-position:left;background-repeat:no-repeat;height:40px;line-height:40px;padding-left:70px;">
+                                水水可里 <span class="name">2楼</span></p>
+                            <p style="font-size: 0.8rem;">
+                                我也是之前瘦下来。也是微信朋友介绍的。加了顾问的微信后，在其的分析和指导下用了她的减肥方法，我主要是大肚子，其他还好，我现在肚子上赘肉明显少了，不再突出了。穿衣好看，皮肤也变好了，希望能帮到你，减肥必须要坚持才能成功哦。</p>
+
+                            <p style="border-bottom:1px solid #939292; width: 100%"></p>
+
+                            <p style="background-image:url(index_files/lold88d2.jpg);background-size:50px 50px;background-position:left;background-repeat:no-repeat;height:40px;line-height:40px;padding-left:70px;">
+
+                                健身小王子 <span class="name">3楼</span></p>
+                            <p style="font-size: 0.8rem;">谢谢楼主，已经加了，希望今年能瘦下来！</p>
+                            <p style="border-bottom:1px solid #b0afaf; width: 100%"></p>
+
+                            <p style="background-image:url(index_files/lold88d3.jpg);background-size:60px 60px;background-position:left;background-repeat:no-repeat;height:60px;line-height:60px;padding-left:70px;">
+                                黄金满地 <span class="name">4楼</span></p>
+                            <p style="font-size: 0.8rem;">跟学习的，加了微信号，有问题可以咨询她的，她的很多案例的，一定可以帮到你的。</p>
+                            <p style="border-bottom:1px solid #b0afaf; width: 100%"></p>
+
+
+                            <p style="background-image:url(index_files/lold88d4.jpg);background-size:60px 60px;background-position:left;background-repeat:no-repeat;height:60px;line-height:60px;padding-left:70px;">
+                                小西 <span class="name">5楼</span></p>
+                            <p style="font-size: 0.8rem;">节食和运动，我也试过的，也是没啥用的。还是顾问帮我制定的方法，一个多月就瘦了30斤了，非常感谢顾问</p>
+                            <p style="border-bottom:1px solid #b0afaf; width: 100%"></p>
+
+                            <p style="background-image:url(index_files/lold88d5.jpg);background-size:60px 60px;background-position:left;background-repeat:no-repeat;height:60px;line-height:60px;padding-left:70px;">
+                                猫扑走天涯 <span class="name">6楼</span></p>
+                            <p style="font-size: 0.8rem;">楼上的，我也是在这个顾问的帮忙下减肥的</p>
+                            <p style="font-size: 0.8rem;">那个方法效果挺好的，之前担心的安全，后来也很放心的。</p>
+                            <p style="border-bottom:1px solid #b0afaf; width: 100%"></p>
+
+                            <p style="background-image:url(index_files/lold88d6.jpg);background-size:60px 60px;background-position:left;background-repeat:no-repeat;height:60px;line-height:60px;padding-left:70px;">
+                                巧巧 <span class="name">7楼</span></p>
+                            <p style="font-size: 0.8rem;">榜样呀</p>
+                        </div>
+                        <br>
+                        <center style="font-size:0.5rem; color:#aaa; margin-bottom: -20px;">
+                            版权：重庆每每康药房有限公司<br>
+                        </center>
+                        <br> <br> <br> <br>
+                    </div>
+                    <div class="bottom_float"><a href="javascript:void(0);" class="bottom_btn ui-link"> <img src="https://image.163ar.cn/wechat/jf04/index_files/add_btn.png">
+                        </a></div>
+                    <div id="Mask">
+                        <div class="pr"><img src="https://image.163ar.cn/wechat/jf04/index_files/Mask.png">
+                            <div class="Mask_txt">
+                                <h3>你的减肥档案编号是"<span class="col_pink">222222undefined</span>"</h3>
+                                <p style="text-align:center;">
+                                    想减脂咨询金牌减脂导师</p>
+                                <p style="text-align:center;">导师为你私人定制<span class="col_deepgreen">45天减脂15-30斤</span></p>
+                            </div>
+                            <div class="close_Mask"></div>
+                            <a href="javascript:void(0);" class="add_btn Link ui-link">确定</a>
+                        </div>
+                    </div>
+                    <div id="thumb">
+                        <div class="swiper-container swiper-container-horizontal" style="margin-top:7rem;">
+                            <div class="swiper-wrapper" style="transition-duration: 0ms;"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                        <div class="thumb_close">x</div>
+                    </div>
+                    <div class="qq_Mask" style="display: none;">
+                        <div class="pr">
+                            <div class="Mask_txt maskbor">
+                                <h3 style="font-size:1.3rem; text-align:center;">测试结果</h3>
+                                <div class="hr"></div>
+                                <h3 style="font-size:1.3rem; text-align:center;">你属于易胖体质,预计能减5~35斤</h3>
+                                <h4 style="font-size:1.25rem; text-align:center; margin-top: 0.8rem;">马上添加微信获取减肥方案<br>教你快速瘦30斤
+                                </h4>
+                                <p style="text-align: center; color: #f92a33; font-size: 1.1rem;"><span>★</span><span
+                                        class="plan">仅限50个名额</span><span>★</span></p>
+                                <div class="hr"></div>
+                                <p style="text-align: center; margin-top: .6rem; font-size: 1.2rem; color: #9b9b9b;">
+                                    ↓长按识别二维码↓</p>
+
+                                <font class="statistics02" id="sdk" style="background: #006bbb; line-height: 60px; width: 80%; display: block; margin: 0 auto; text-align: center; border-radius: 5px; font-size: 2rem; font-weight: bold; margin-top: 1rem;">
+                                    <span class="wx wx_art"><span class="ewmNum" id="ewmNum  wx9">
+                                            <img src="" class="weixinpic" alt="">
+                                        </span></span>
+                                </font>
+                                <br>
+                                <p style="text-align: center; color: #9b9b9b; font-size: 1.3rem;">↓添加好友↓</p>
+                                <!--<p style="text-align: center; color: #f92a33; font-size: 1.3rem;">
+                                <a onClick="gowechat('点击','去微信')" href="javascript:void(0);">
+                                    <img src="index_files/wxbutton.gif" alt="" style="position: static;">
+                                </a>
+                            </p>-->
+                                <div class="close_Mask">×</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="qq_Mask_01" style="display: none;">
+                        <div class="pr">
+                            <div class="Mask_txt maskbor">
+                                <h3 style="font-size:1.3rem; text-align:center;">马上添加微信获取减肥方案<br>教你快速瘦30斤</h3>
+                                <p style="text-align: center; color: #f92a33; font-size: 1.3rem;"><span>★</span><span
+                                        class="plan">帮限50个名额</span><span>★</span></p>
+                                <div class="hr"></div>
+                                <p style="text-align: center; margin-top: .6rem; font-size: 1.2rem; color: #9b9b9b;">
+                                    ↓长按识别二维码↓</p>
+
+                                <font class="statistics02" id="sdk" style="background: #006bbb; line-height: 60px; width: 80%; display: block; margin: 0 auto; text-align: center; border-radius: 5px; font-size: 2rem; font-weight: bold; margin-top: 1rem;">
+                                    <span class="wx wx_art"><span class="ewmNum" id="ewmNum  wx10">
+                                            <img src="" class="weixinpic" alt="">
+                                        </span></span>
+                                </font>
+                                <br>
+                                <p style="text-align: center; color: #9b9b9b; font-size: 1.3rem;">↓添加好友↓</p>
+                                <!--<p style="text-align: center; color: #f92a33; font-size: 1.3rem;">
+                                <a onClick="gowechat('点击','去微信')" href="javascript:void(0);">
+                                    <img src="index_files/wxbutton.gif" alt="" style="position: static;">
+                                </a>
+                            </p>-->
+                                <div class="close_Mask">×</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="qq_Mask_02" style="display: none;">
+                        <div class="pr">
+                            <div class="Mask_txt maskbor">
+                                <h3 style="font-size:1.3rem; text-align:center;">马上添加微信获取减肥方案<br>教你快速瘦30斤</h3>
+                                <p style="text-align: center; color: #f92a33; font-size: 1.3rem;"><span>★</span><span
+                                        class="plan">仅限50个名额</span><span>★</span></p>
+                                <div class="hr"></div>
+                                <p style="text-align: center; margin-top: .6rem; font-size: 1.2rem; color: #9b9b9b;">
+                                    ↓长按识别二维码↓
+                                </p>
+                                <font class="statistics02" id="sdk" style="background: #006bbb; line-height: 60px; width: 80%; display: block; margin: 0 auto; text-align: center; border-radius: 5px; font-size: 2rem; font-weight: bold; margin-top: 1rem;">
+                                    <span class="wx wx_art">
+                                        <span class="ewmNum" id="ewmNum  wx11">
+                                            <img src="" class="weixinpic" alt="">
+                                        </span>
+                                    </span>
+                                </font>
+                                <br>
+                                <p style="text-align: center; color: #9b9b9b; font-size: 1.3rem;">↓添加好友↓</p>
+                                <!--<p style="text-align: center; color: #f92a33; font-size: 1.3rem;">
+                                <a onClick="gowechat('点击','去微信')" href="javascript:void(0);">
+                                    <img src="index_files/wxbutton.gif" alt="" style="position: static;">
+                                </a>
+                            </p>-->
+                                <div class="close_Mask">×</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--侧边悬浮-->
+    <!--<style type="text/css">
+    .button{position: fixed;z-index: 9999;text-align: center;color: #aaa;top: 40%;right: 0;background: #fff;border-radius:7px;padding: 1px 1px 2px;border: 2px solid #217519;border-right: none;}
+    .button img{display: block;}
+    .button p{color: #217519!important ;font-weight: bold;font-size: 15px;line-height: 20px;}
+</style>
+<div class="button">
+    <a onclick="gowechat('点击','去微信')" href="javascript:void(0);">
+        <img src="index_files/wiconbutton.gif" alt="">
+        <p style="color: #aaa">点击咨询</p>
+    </a>
+</div>-->
+
+    <script>
+        var mySwiper = new Swiper('#case .swiper-container', {
+
+            noSwiping: true,
+
+            noSwipingClass: 'notmove',
+
+        });
+
+
+        var mySecSwiper = new Swiper('#thumb .swiper-container', {
+
+            observer: true, //修改swiper自己或子元素时，自动初始化swiper
+
+            observeParents: true, //修改swiper的父元素时，自动初始化swiper
+
+            prevButton: '.swiper-button-prev',
+
+            nextButton: '.swiper-button-next',
+
+            initialSlide: 0,
+
+        });
+    </script>
+    <script>
+        var ewmNum2 = $(".ewmNum2");
+        setInterval(function () {
+            if (ewmNum2.css("fontSize") == "20px") {
+                ewmNum2.css("fontSize", "19px")
+            } else {
+                ewmNum2.css("fontSize", "20px")
+            }
+        }, 200)
+    </script>
+
+
+
+</body>
+
+</html>

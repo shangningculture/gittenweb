@@ -1,0 +1,10 @@
+arr_wx=['BJ19511','BJ19533','BJ19544','BJ19555','BJ19566','BJ19588','BJ19522','BJ19599'];
+var now=new Date();
+var hours=now.getHours();
+var minutes=now.getMinutes();
+var seconds=now.getSeconds();
+//var countor=hours*60*6+minutes*6+Math.ceil(seconds/10);
+//var countor=hours*60*12+minutes*12+Math.ceil(seconds/5);
+var index = Math.floor(Math.random()*(arr_wx.length));
+//var wx_index = countor%arr_wx.length;
+stxlwx = arr_wx[index];

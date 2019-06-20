@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>有94012人已成功祛除狐臭、汗臭</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="https://b.yougou520.cn/api/count/tj_stat.html?id=2253&web_id=2253&code=47ec85301ba4346ff96ae7b654fc1794" language="JavaScript"></script>
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <div class="contain">
+        <img src="images/1.png" alt="">
+        <p class="center title">专业指导更适合你的祛狐臭、汗臭方案</p>
+
+        <div class="erweima-box">
+            <img src="images/2.png" alt="">
+            <img src="" id="erWeiMa" class="weixinpic" alt="">
+        </div>
+        <p class="center">↑长按上方二维码识别添加微信↑</p>
+        <p class="center">(如无法显示二维码，请点击
+            <a href="javascript:window.location.reload();">刷新</a>)</p>
+    </div>
+
+
+    <script>
+        var timeOutEvent = 0;
+        var touchArea = document.getElementById("erWeiMa");
+        touchArea.addEventListener("touchstart", function (e) {
+            timeOutEvent = setTimeout("longPress()", 400);
+        });
+        touchArea.addEventListener("touchmove", function (e) {
+            clearTimeout(timeOutEvent);
+            timeOutEvent = 0;
+        });
+        touchArea.addEventListener("touchend", function (e) {
+            clearTimeout(timeOutEvent);
+            if (timeOutEvent != 0) {
+                alert("你这是点击，请长按识别图中二维码！");
+            }
+            return false;
+        });
+
+        function longPress() {
+            timeOutEvent = 0;
+            _czc.push(["_trackEvent", "长按", "识别二维码", stxlwx, 1]);
+        }
+    </script>
+</body>
+
+</html>

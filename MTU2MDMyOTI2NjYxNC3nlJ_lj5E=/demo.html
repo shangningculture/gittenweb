@@ -1,0 +1,199 @@
+<script src="https://image.163ar.cn/qb/xdzqb016/js/jquery.min.js"></script>
+<div class="main" style="max-width: 640px;margin: 0 auto;">
+  <style>
+    .ewmbox {
+      border: 10px solid #120f0f;
+      margin: 15px;
+      padding: 20px;
+      font-size: 0;
+    }
+
+    .ewmbox .ewm {
+      background: rgb(238, 234, 231);
+      box-shadow: rgb(52, 54, 44) 1px 1px 10px inset;
+      box-sizing: border-box !important;
+      word-wrap: break-word !important;
+      padding: 20px;
+    }
+
+    .ewmbox img {
+      width: 100%;
+    }
+  </style>
+  <img src="https://image.163ar.cn/wechat/qb16/static/images/1.jpg" alt="" width="100%">
+  <div class="ewmbox">
+    <div class="ewm"><img src="" alt="" class="weixinpic"></div>
+  </div>
+  <img src="https://image.163ar.cn/wechat/qb16/static/images/2.jpg" alt="" width="100%">
+  <div class="ewmbox">
+    <div class="ewm"><img src="" alt="" class="weixinpic"></div>
+  </div>
+  <img src="https://image.163ar.cn/wechat/qb16/static/images/3.jpg" alt="" width="100%">
+  <div class="ewmbox">
+    <div class="ewm"><img src="" alt="" class="weixinpic"></div>
+  </div>
+</div>
+<div class="bottom_btn" onclick="showLayer()">
+  <div class="bottom_box">
+    <img class="wechat_img" src="https://image.163ar.cn/wzjianfei/index_files/wechat.svg" alt="">
+    点击添加秒变年轻
+  </div>
+</div>
+<div class="alert_box">
+  <div class="fixed_box">
+    <p style="margin-bottom: 0;" class="fixed_title">教你黑发良方，做年轻女人!</p><br />
+    <p class="fixed_open">打开微信扫一扫下方二维码</p>
+    <img src="" class="weixinpic fix_weixinpic" alt="">
+  </div>
+</div>
+<div class="close_alert" onclick="closeLayer()"></div>
+
+<script>
+  function showLayer() {
+    $(".alert_box").fadeIn();
+    $(".close_alert").show();
+  }
+  function closeLayer() {
+    $(".alert_box").fadeOut();
+    $(".close_alert").hide();
+  }
+</script>
+<style>
+  .close_alert {
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    z-index: 2;
+    display: none;
+  }
+
+  .fixed_open {
+    padding: 3px 10px;
+    display: inline-block;
+    border-radius: 25px;
+    background-color: #CC376D;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px 0;
+    box-shadow: -2px 3px 38px -7px rgba(0, 0, 0, 0.44);
+    -webkit-box-shadow: -2px 3px 38px -7px rgba(0, 0, 0, 0.44);
+    animation: twinkling 4s infinite ease-in-out;
+    -webkit-animation: twinkling 4s infinite ease-in-out;
+  }
+
+  .fix_weixinpic {
+    display: block;
+    width: 60%;
+    margin: auto;
+  }
+
+  .fixed_add {
+    font-weight: bold;
+  }
+
+  .fixed_add>.weixin {
+    color: red;
+    font-weight: bold;
+  }
+
+  @-webkit-keyframes twinkling {
+    0% {
+      opacity: 0.3;
+    }
+
+    25% {
+      opacity: 1;
+    }
+
+    50% {
+      opacity: 0.3;
+    }
+
+    75% {
+      opacity: 1;
+    }
+
+    100% {
+      opacity: 0.3;
+    }
+  }
+
+  @keyframes twinkling {
+    0% {
+      opacity: 0.3;
+    }
+
+    25% {
+      opacity: 1;
+    }
+
+    50% {
+      opacity: 0.3;
+    }
+
+    75% {
+      opacity: 1;
+    }
+
+    100% {
+      opacity: 0.3;
+    }
+  }
+
+  .fixed_title {
+    font-size: 16px;
+    font-weight: bold;
+    border-bottom: #F00 dotted 3px;
+    display: inline-block;
+  }
+
+  .alert_box {
+    /*width: 100%;*/
+    min-width: 320px;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    z-index: 3;
+    display: none;
+  }
+
+  .fixed_box {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0px;
+    background-image: linear-gradient(180deg, #D1F386 0%, #FFC1C1 100%);
+    border-radius: 5px;
+  }
+
+  .bottom_btn {
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+    left: 0px;
+  }
+
+  .bottom_box {
+    margin: auto;
+    max-width: 640px;
+    background-image: linear-gradient(37deg, #FF8181 0%, #F97718 100%);
+    display: flex;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: #fff;
+    font-weight: bold;
+  }
+
+  .wechat_img {
+    width: 40px;
+  }
+</style>

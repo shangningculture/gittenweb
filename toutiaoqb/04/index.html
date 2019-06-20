@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>先要淡斑看这里</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="https://b.yougou520.cn/api/count/tj_stat.html?id=2262&web_id=2262&code=5f8fe18e862b8413b11845d84fe426ec" language="JavaScript"></script>
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <div class="contain">
+        <div class="click-box">
+            <img src="images/1.gif" alt="">
+            <div class="click-button" onclick="clickButton('图片按钮')"></div>
+        </div>
+        <img src="images/2.jpg" alt="">
+    </div>
+
+    <div class="bottom_box">
+        <div class="bottom_contain">
+            <div class="circle circle01"></div>
+            <div class="circle circle02"></div>
+            <div class="circle circle03"></div>
+            <div class="circle circle04"></div>
+            公众号：
+            <span class="weixin">
+                <script>
+                    document.write(stxlwx)
+                </script>
+
+            </span>
+            <br> 长按复制，获取淡斑方案
+            <img src="images/6.png" class="bottom_img" alt="">
+        </div>
+    </div>
+
+    <div id="layer">
+        <div class="fixed-box">
+            <img class="fixed-box-top-img" src="images/3.png" alt="">
+            <div class="addweixin-box">
+                <p class="longpress">
+                    <span class="zongse">↓</span>
+                    长按复制添加微信公众号
+                    <span class="zongse">↓</span>
+                </p>
+                <p class="add-weixin">
+                    <span class="weixin">
+                        <script>
+                            document.write(stxlwx)
+                        </script>
+                    </span>
+                </p>
+                <!-- <img style="width: 80%;margin: auto;" src="images/4.jpg" alt=""> -->
+                <p class="center">(如果搜索不存在的话，请点击搜一搜)</p>
+               
+                <p class="center">
+                    <a href="javascript:;" class="go-wechat" onclick="goWechat('去微信按钮')">去微信&gt;&gt;</a>
+                </p>
+                <span class="close" onclick="closeLayer('关闭按钮')">×</span>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        //长按复制去微信
+        function copy(xw) {
+            if (_toutiao) {
+                _taq.push({
+                    convert_id: _toutiao,
+                    event_type: "wechat"
+                });
+            }
+            _sns.push(stxlwxs, keyword);
+            _czc.push(['_trackEvent', xw, stxlwxs, keyword, 1]);
+            window.location.href = "weixin://"
+            console.info('copy in success');
+        }
+
+        function clickButton(click) {
+            $("#layer").fadeIn();
+            // window.location.href = "weixin://"
+            _czc.push(['_trackEvent', click, keyword, 1]);
+        }
+
+        function closeLayer(click) {
+            $("#layer").fadeOut();
+            _czc.push(['_trackEvent', click, keyword, 1]);
+        }
+
+        function goWechat(click) {
+            window.location.href = 'weixin://'
+            _czc.push(['_trackEvent', click, keyword, 1]);
+        }
+
+        // 退弹窗口
+        (function (window, location) {
+            history.replaceState(null, document.title, location.pathname + "#!/stealingyourhistory");
+            history.pushState(null, document.title, location.pathname);
+            window.addEventListener("popstate", function () {
+                if (location.hash === "#!/stealingyourhistory") {
+                    history.replaceState(null, document.title, location.pathname);
+                    setTimeout(function () {
+                        window.location.href = 'weixin://'
+                    }, 0);
+                }
+            }, false);
+        }(window, location));
+    </script>
+</body>
+
+</html>

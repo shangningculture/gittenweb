@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="gif.js"></script>
+    <title>Document</title>
+    <style>
+        body,html{
+            width:100%;height:100%;
+        }
+        #setlocabox{
+            position: fixed;top:50%;left:50%;transform: translate(-50%,-50%);display:none;
+            padding:10px;background:red;border-radius: 5px;font-size: 0;min-width: 300px;min-height: 300px;
+        }
+        #setlocabox .close{
+            position: absolute;top:-5px;right:-5px;background:#fff;width:25px;height:25px;border-radius:100px;
+            border:2px solid red;font-size:20px;text-align: center;line-height: 25px;cursor: pointer;z-index: 2;
+            
+        }
+        #setlocabox .close::after{
+            content: "X";
+        }
+        #setlocabox img{
+            max-width: 500px;
+        }
+        #setlocaboximgbox{
+            position: relative;z-index: 1;
+        }
+        #selectbox{
+            position: absolute;width:0;height:0;background:red;opacity: 0.5;top:0;left:0;
+        }
+        #showimg{
+            display: none;max-width: 500px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <img src="" id="imageElement" alt=""> -->
+    <!-- <canvas style="display:none;" id="c1" width="300" height="300"></canvas>
+    <canvas style="display:none;" id="c2" width="300" height="300"></canvas>
+    <canvas style="display:none;" id="c3" width="300" height="300"></canvas> -->
+    
+    <input type="file" id="upewmbg">上传二维码背景
+    <button id="setlocation">设置二维码微信</button>
+    <div id="setlocabox">
+        <div class="close" onclick="closeSetLoca()"></div>
+        <div id="setlocaboximgbox">
+            <img id="setlocaboximg" oncontextmenu="return false;" ondragstart="return false;" onselectstart="return false;" onselect="document.selection.empty();" src="" alt="">
+            <div id="selectbox"></div>
+        </div>
+    </div>
+    <br><br>
+    <input type="file" id="upewmimages" multiple>上传二维码(多张)
+    <br><br>
+    <button id="buildewm" onclick="buildewm()">生成二维码</button>
+    <!-- <button id="buildewm" onclick="builBling()">生成闪图</button> -->
+    <br><br>
+    <img src="" id="showimg" alt="">
+    <script>
+        document.getElementById('upewmbg').onchange = function(e){
+            var file = document.getElementById('upewmbg').files[0];
+            if(file.type == 'image/jpeg' || file.type == 'image/png'){
+                file = URL.createObjectURL(file);
+                openSetLoca(file);
+                console.log('图片上传成功！');
+            }else{
+                alert('必须上传jpg或者png格式');
+            }
+        }
+        document.getElementById('setlocation').onclick = function(){
+            if(document.getElementById('upewmbg').files . length == 0){
+                alert('请先上传图片');
+                document.getElementById('upewmbg').click();
+                return;
+            }
+            var file = document.getElementById('upewmbg').files[0];
+            file = URL.createObjectURL(file);
+            openSetLoca(file);
+        }
+        var setSelect = {
+            isselect:false,
+            width:0,
+            height:0,
+            top:0,
+            left:0,
+            bw:0,
+            bh:0
+        }
+        document.getElementById('setlocaboximgbox').onmousemove = function(e    ){
+            if(setSelect.isselect){
+                setSelect.width = e.offsetX - setSelect.left;
+                // setSelect.height = e.offsetY - setSelect.top;
+                setSelect.height = setSelect.width;
+                document.getElementById('selectbox').style.width = setSelect.width + 'px';
+                document.getElementById('selectbox').style.height = setSelect.height + 'px';
+            }
+        }
+        document.getElementById('setlocaboximgbox').onmousedown = function(e){
+            // console.log('宽：',document.getElementById('setlocaboximgbox').offsetWidth,'高:',document.getElementById('setlocaboximgbox').offsetHeight);
+            setSelect.bw = document.getElementById('setlocaboximgbox').offsetWidth
+            setSelect.bh = document.getElementById('setlocaboximgbox').offsetHeight
+            setSelect.isselect = true;
+            setSelect.top = e.offsetY;
+            setSelect.left = e.offsetX;
+            document.getElementById('selectbox').style.top = e.offsetY+'px';
+            document.getElementById('selectbox').style.left = e.offsetX+'px';
+        }
+        document.getElementById('setlocaboximgbox').onmouseup = function(e){
+          setSelect.isselect = false;
+        }
+
+
+
+        document.getElementById('upewmimages').onchange = function(e){
+            var file = document.getElementById('upewmimages').files;
+            for(var i = 0; i < file.length; i++){
+                if(file[i].type == 'image/jpeg' || file[i].type == 'image/png'){
+                }else{
+                    alert('必须上传jpg或者png格式');
+                    return;
+                }
+            }
+
+        }
+
+
+        function openSetLoca(file){
+            var img = document.getElementById('setlocaboximg');
+            img.src = file;
+            document.getElementById('setlocabox').style.display = 'block';
+        }
+
+        function closeSetLoca(){
+            document.getElementById('setlocabox').style.display = 'none';
+        }
+
+        function buildewm(){
+            document.getElementById('showimg').style.display = 'none';
+            var files = document.getElementById('upewmimages').files;
+            if(document.getElementById('upewmbg').files.length <= 0){
+                alert('请选择二维码背景');
+                return;
+            }
+            if(files.length <= 0){
+                alert('至少选择一张二维码');
+                return;
+            }
+            var gif = new window.GIF({
+                workers: 2,
+                quality: 10,
+                workerScript: 'gif.worker.js'
+            });
+            gif.on('finished', function (blob) {
+                console.log(URL.createObjectURL(blob));
+                document.getElementById('showimg').style.display = 'block';
+                document.getElementById('showimg').src = URL.createObjectURL(blob);
+            });
+            var bgimg = new Image();
+            bgimg.onload = function () {
+                var wscale = setSelect.bw / bgimg.width;
+                var hscale = setSelect.bh / bgimg.height;
+                console.log(wscale);
+                setSelect.width = setSelect.width / wscale;
+                setSelect.height = setSelect.height / hscale;
+                setSelect.top = setSelect.top / hscale;
+                setSelect.left = setSelect.left / wscale;
+                (function _Iterator(index){
+                    if(index >= files.length){
+                        gif.render();
+                        return
+                    }
+                    var file = files[index];
+
+                    var canvas = document.createElement('canvas');
+                    canvas.width = bgimg.width;
+                    canvas.height = bgimg.height;
+                    var cxt = canvas.getContext("2d");
+                    cxt.drawImage(bgimg, 0, 0, bgimg.width, bgimg.height);
+                    cxt.save();
+                    var ewm = new Image();
+                    ewm.onload = function(){
+                        console.log(ewm);
+                        cxt.drawImage(ewm, setSelect.left||0, setSelect.top||0, setSelect.width||cxt.width, setSelect.height||cxt.height);
+                        gif.addFrame(canvas, { delay: 200 });
+                        console.log(canvas);
+                        _Iterator(index + 1);
+                    }
+                    ewm.src = URL.createObjectURL(file);
+                })(0)
+            };
+            bgimg.src = URL.createObjectURL(document.getElementById('upewmbg').files[0]);
+        }
+
+
+
+
+
+        function builBling(){
+            document.getElementById('showimg').style.display = 'none';
+            var files = document.getElementById('upewmimages').files;
+            if(files.length <= 0){
+                alert('至少选择一张二维码');
+                return;
+            }
+            var gif = new window.GIF({
+                workers: 2,
+                quality: 10,
+                workerScript: 'gif.worker.js'
+            });
+            gif.on('finished', function (blob) {
+                console.log(URL.createObjectURL(blob));
+                document.getElementById('showimg').style.display = 'block';
+                document.getElementById('showimg').src = URL.createObjectURL(blob);
+            });
+            (function _Iterator(index){
+                if(index >= files.length){
+                    gif.render();
+                    return
+                }
+                var file = files[index];
+                var ewm = new Image();
+                ewm.onload = function(){
+                    var canvas = document.createElement('canvas');
+                    canvas.width = ewm.width;
+                    canvas.height = ewm.height;
+                    var cxt = canvas.getContext("2d");
+                    document.getElementsByTagName('body')[0].appendChild(ewm)
+                    cxt.drawImage(ewm, 10, 10, canvas.wdith, canvas.height)
+                    cxt.save();
+                    
+                    document.getElementsByTagName('body')[0].appendChild(canvas);
+                    // cxt.drawImage(ewm, 10, 10, canvas.wdith, canvas.height);
+                    // gif.addFrame(canvas, { delay: 1000 });
+                    // _Iterator(index + 1);
+                }
+                ewm.src = URL.createObjectURL(file);
+            })(0)
+        }
+
+
+
+
+
+
+
+
+        // var c1=document.createElement("canvas");
+        // c1.width="300";
+        // c1.height="300";
+        // var ctx1=c1.getContext("2d");
+        // ctx1.fillStyle="#FF0000";
+        // ctx1.fillRect(0,0,300,300);
+        
+        // var c2=document.createElement("canvas");
+        // c2.width="300";
+        // c2.height="300";
+        // var ctx2=c2.getContext("2d");
+        // ctx2.fillStyle="#FFff00";
+        // ctx2.fillRect(0,0,300,300);
+
+        // var c3=document.createElement("canvas");
+        // c3.width="300";
+        // c3.height="300";
+        // var ctx3=c3.getContext("2d");
+        // ctx3.fillStyle="#00ff00";
+        // ctx3.fillRect(0,0,300,300);
+
+        // var imageElement = document.getElementById('imageElement');
+        // var gif = new GIF({
+        //     workers: 2,
+        //     quality: 10
+        // });
+        // var gif = new window.GIF({
+        //     workers: 2,
+        //     quality: 10,
+        //     workerScript: 'gif.worker.js'
+        // });
+
+        // //遍历图片对象
+        // gif.addFrame(c1, { delay: 1000 });
+        // gif.addFrame(c2, { delay: 1000 });
+        // gif.addFrame(c3, { delay: 1000 });
+        // gif.on('finished', function (blob) {
+        //     console.log(URL.createObjectURL(blob));
+        //     // imageElement.src=URL.createObjectURL(blob);
+        // });
+        // gif.render();
+    </script>
+</body>
+
+</html>

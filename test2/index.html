@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport"
+		content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0,viewport-fit=cover">
+	<title>吉米护肤专营店</title>
+	<link rel="stylesheet" href="https://cdn.rongyu99.cn/awen/013/static/swiper/css/swiper.min.css">
+	<link rel="stylesheet" href="https://cdn.rongyu99.cn/awen/013/static/css/style.css">
+	<link rel="stylesheet" href="https://cdn.rongyu99.cn/awen/013/static/css/addr.css">
+	<script src="https://cdn.rongyu99.cn/awen/013/static/js/jquery.min.js"></script>
+	<script src="https://cdn.rongyu99.cn/awen/013/static/js/key.js"></script>
+	<script src="https://cdn.rongyu99.cn/awen/013/static/swiper/js/swiper.min.js"></script>
+	<script src="sweetalert2.min.js"></script>
+	<script src="https://cdn.rongyu99.cn/awen/013/static/alert/sweetalert2.min.js"></script>
+	<link rel="stylesheet" href="https://cdn.rongyu99.cn/awen/013/static/alert/sweetalert2.min.css">
+	<script>
+		window.onload = function () {
+			var overscroll = function (els) {
+				for (var i = 0; i < els.length; ++i) {
+					var el = els[i];
+					el.addEventListener('touchstart', function () {
+						var top = this.scrollTop
+							, totalScroll = this.scrollHeight
+							, currentScroll = top + this.offsetHeight;
+						if (top === 0) {
+							this.scrollTop = 1;
+						} else if (currentScroll === totalScroll) {
+							this.scrollTop = top - 1;
+						}
+					});
+					el.addEventListener('touchmove', function (evt) {
+						if (this.offsetHeight < this.scrollHeight)
+							evt._isScroller = true;
+					});
+				}
+			};
+			//禁止body的滚动事件
+			document.body.addEventListener('touchmove', function (evt) {
+				if (!evt._isScroller) {
+					evt.preventDefault();
+				}
+			});
+			//给class为.scroll的元素加上自定义的滚动事件
+			overscroll(document.querySelectorAll('.scroll'));
+		}
+		function openMask() {
+			// $('#main').css({ overflowY: 'hidden' })
+		}
+		function closeMask() {
+			// $('#main').css({ overflowY: 'auto' })
+		}
+		var price = {
+			min: 298, max: 398, "11": 298, "12": 398
+		}
+		var _formdata = {
+			adtype: 93, // 订单IDname: '', // 收货人
+			pro: null, // 类型
+			phone: null, // 手机号码
+			addr: '', // 详细地址
+			message: '', // 买家留言
+			s_province: '', // 省份
+			s_city: '', // 省份
+			pro_num: 1, // 购买数量
+			pro_price: 0, // 产品总价
+		}
+	</script>
+	<script src="https://cdn.rongyu99.cn/awen/013/static/js/main.js"></script>
+</head>
+
+<body>
+	<div id="main" class="scroll">
+		<div class="swiper-container" id="banner">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide"><img src="https://cdn.rongyu99.cn/awen/013/static/images/banner/1.jpg" /></div>
+				<div class="swiper-slide"><img src="https://cdn.rongyu99.cn/awen/013/static/images/banner/2.jpg" /></div>
+				<div class="swiper-slide"><img src="https://cdn.rongyu99.cn/awen/013/static/images/banner/3.jpg" /></div>
+				<div class="swiper-slide"><img src="https://cdn.rongyu99.cn/awen/013/static/images/banner/4.jpg" /></div>
+				<div class="swiper-slide"><img src="https://cdn.rongyu99.cn/awen/013/static/images/banner/5.jpg" /></div>
+			</div>
+			<div class="swiper-pagination"></div>
+		</div>
+		<div class="info">
+			<div class="price">
+				<div class="number"><span>￥</span>298<span>~￥</span>398</div>
+				<div class="tags"><img src="https://cdn.rongyu99.cn/awen/013/static/images/hot.svg" />热销</div>
+			</div>
+			<div class="title">【明星蛋蛋霜】嫩白滋润，自带美颜无需卸妆!!!</div>
+			<div class="description">商家推荐语：【爆款面霜】敏感肌肤也适用！10秒即变素颜女神！官方直销，原厂正品！支持货到付款！</div>
+			<div class="service top">
+				<div class="name">月销<span>50562</span></div>
+			</div>
+			<div class="service " open="service">
+				<div class="name">服务</div>
+				<div class="box">
+					<span><i class="yes"></i>包邮</span>
+					<span><i class="yes"></i>假一赔三</span>
+					<span><i class="yes"></i>货到付款</span>
+					<span><i class="yes"></i>7天退货</span>
+					<span><i class="yes"></i>消费者保障服务</span>
+				</div>
+				<div class="right"><i class="right-arrow arrow"></i></div>
+			</div>
+			<div class="service" open="option">
+				<div class="name">商品参数</div>
+				<div class="right"><i class="right-arrow arrow"></i></div>
+			</div>
+		</div>
+		<div class="content" id="content">
+			<div class="header">
+				<div class="rolling_top taghead">
+					<div class="tabbtn active"><span>商品详情</span></div>
+					<div class="tabbtn"><span>买家评论</span></div>
+				</div>
+			</div>
+			<div class="tagbox">
+				<div class="tagitem active">
+					<div class="canshu">
+						<div class="subtitle">—&emsp;商品参数&emsp;—</div>
+						<div class="cstable">
+							<table cellspacing="0">
+								<tr>
+									<td class="name">上市时间</td>
+									<td>2018年</td>
+								</tr>
+								<tr>
+									<td class="name">品牌</td>
+									<td>吉米</td>
+								</tr>
+							</table>
+						</div>
+						<div class="subtitle">—&emsp;图文详情&emsp;—</div>
+					</div>
+				</div>
+				<div class="tagitem">
+					<div class="pinglunbox">
+						<!-- 评论项目 -->
+						<div class="plitem">
+							<div class="plheader">
+								<div class="headpic"><img src="https://cdn.rongyu99.cn/awen/013/static/images/tx/1.jpg" alt=""><span>j****e</span></div>
+								<div class="rejod">★★★★★</div>
+							</div>
+							<div class="plcont">气味温和不刺鼻，瓶子也很精致，东西收到了，试了一下，吸收很好味道也很清新，很自然，满意。</div>
+							<div class="plinfo">
+								<div class="type">【298元明星套装】30g蛋蛋霜+送1支水光针送1支水光针送1支水光针</div>
+								<div class="opt">26 <img src="https://cdn.rongyu99.cn/awen/013/static/images/zan.png" alt=""></div>
+							</div>
+						</div>
+						<!-- 评论项目 -->
+						<div class="plitem">
+							<div class="plheader">
+								<div class="headpic"><img src="https://cdn.rongyu99.cn/awen/013/static/images/tx/2.jpg" alt=""><span>y****元</span></div>
+								<div class="rejod">★★★★★</div>
+							</div>
+							<div class="plcont">
+								尤其是上班都是懒得化妆的恨不得多睡一下，现在好了很简单的一瓶蛋蛋霜搞定出门，白白嫩嫩的，真合适我这样的懒人啊，哈哈，敷在脸上舒服,无香料无色,无刺激,包装细心严实没有漏液,吸收好不油腻,量大超值。</div>
+							<div class="plinfo">
+								<div class="type">【398元超划算】30g蛋蛋霜+送9片淡斑面膜+1支水光针</div>
+								<div class="opt">65 <img src="https://cdn.rongyu99.cn/awen/013/static/images/zan.png" alt=""></div>
+							</div>
+						</div>
+						<!-- 评论项目 -->
+						<div class="plitem">
+							<div class="plheader">
+								<div class="headpic"><img src="https://cdn.rongyu99.cn/awen/013/static/images/tx/3.jpg" alt=""><span>m****酱</span></div>
+								<div class="rejod">★★★★</div>
+							</div>
+							<div class="plcont">
+								蛋蛋霜用上很均匀肤色，很美白，提亮功效非常不错，一整天妆感都很自然的，不假白，也不会起皮，味道也很怡人，清淡味道，轻轻的抹在脸上，涂抹均匀后很自然。</div>
+							<div class="plinfo">
+								<div class="type">【398元超划算】30g蛋蛋霜+送9片淡斑面膜+1支水光针</div>
+								<div class="opt">19 <img src="https://cdn.rongyu99.cn/awen/013/static/images/zan.png" alt=""></div>
+							</div>
+						</div>
+						<!-- 评论项目 -->
+						<div class="plitem">
+							<div class="plheader">
+								<div class="headpic"><img src="https://cdn.rongyu99.cn/awen/013/static/images/tx/4.jpg" alt=""><span>n****瓶</span></div>
+								<div class="rejod">★★★★★</div>
+							</div>
+							<div class="plcont">
+								很是滋润，保持的水润度很是持久，蛋蛋霜涂上去不油腻，不卡粉，非常的服贴，素颜霜的包装也非常的好看，敷在脸上舒服,无香料无色,无刺激,包装细心严实没有漏液,吸收好不油腻,量大超值，比较好</div>
+							<div class="plinfo">
+								<div class="type">【398元超划算】30g蛋蛋霜+送9片淡斑面膜+1支水光针</div>
+								<div class="opt">34 <img src="https://cdn.rongyu99.cn/awen/013/static/images/zan.png" alt=""></div>
+							</div>
+						</div>
+						<!-- 评论项目 -->
+						<div class="plitem">
+							<div class="plheader">
+								<div class="headpic"><img src="https://cdn.rongyu99.cn/awen/013/static/images/tx/5.jpg" alt=""><span>花****磊</span></div>
+								<div class="rejod">★★★★</div>
+							</div>
+							<div class="plcont">
+								皮肤比较干燥的宝宝们可以试试这款，保持的水润度很是持久</div>
+							<div class="plinfo">
+								<div class="type">【398元超划算】30g蛋蛋霜+送9片淡斑面膜+1支水光针</div>
+								<div class="opt">75 <img src="https://cdn.rongyu99.cn/awen/013/static/images/zan.png" alt=""></div>
+							</div>
+						</div>
+						<!-- 评论项目 -->
+						<div class="plitem">
+							<div class="plheader">
+								<div class="headpic"><img src="https://cdn.rongyu99.cn/awen/013/static/images/tx/6.jpg" alt=""><span>祝****丽</span></div>
+								<div class="rejod">★★★★★</div>
+							</div>
+							<div class="plcont">
+								一开始在手上试了一下,很容易推开,涂抹很均匀像牛奶一样丝滑的质地,提亮效果和美白效果很不错, 最大最好的一点就是使用起来不油堿很是清爽</div>
+							<div class="plinfo">
+								<div class="type">【398元超划算】30g蛋蛋霜+送9片淡斑面膜+1支水光针</div>
+								<div class="opt">37 <img src="https://cdn.rongyu99.cn/awen/013/static/images/zan.png" alt=""></div>
+							</div>
+						</div>
+						<!-- 评论项目 -->
+						<div class="plitem">
+							<div class="plheader">
+								<div class="headpic"><img src="https://cdn.rongyu99.cn/awen/013/static/images/tx/7.jpg" alt=""><span>a****j</span></div>
+								<div class="rejod">★★★★</div>
+							</div>
+							<div class="plcont">
+								虽然质地比较轻薄不过它的遮瑕效果还不错的,评价晚了很不错摸到脸上不油腻 很清爽很自然收到很满意 很滋润不油腻 延展性很好不假白 ，物美价廉</div>
+							<div class="plinfo">
+								<div class="type">【398元超划算】30g蛋蛋霜+送9片淡斑面膜+1支水光针</div>
+								<div class="opt">45 <img src="https://cdn.rongyu99.cn/awen/013/static/images/zan.png" alt=""></div>
+							</div>
+						</div>
+						<!-- 评论项目 -->
+						<div class="plitem">
+							<div class="plheader">
+								<div class="headpic"><img src="https://cdn.rongyu99.cn/awen/013/static/images/tx/8.jpg" alt=""><span>卧****活</span></div>
+								<div class="rejod">★★★★★</div>
+							</div>
+							<div class="plcont">
+								提亮肤色也是很赞啊，轻轻拍打就吸收了特滑腻和皮肤很融合。气味很淡几乎没味喜欢用这个牌子的，到货挺快的扫了下显示是正品</div>
+							<div class="plinfo">
+								<div class="type">【398元超划算】30g蛋蛋霜+送9片淡斑面膜+1支水光针</div>
+								<div class="opt">96 <img src="https://cdn.rongyu99.cn/awen/013/static/images/zan.png" alt=""></div>
+							</div>
+						</div>
+						<!-- 评论项目 -->
+					</div>
+				</div>
+			</div>
+			<div id="tuwenlist" class="tuwen">
+				<img src="https://cdn.rongyu99.cn/awen/013/static/images/info/1.jpg" alt="">
+				<img src="https://cdn.rongyu99.cn/awen/013/static/images/info/2.jpg" alt="">
+				<img src="https://cdn.rongyu99.cn/awen/013/static/images/info/3.jpg" alt="">
+				<img src="https://cdn.rongyu99.cn/awen/013/static/images/info/4.jpg" alt="">
+				<img src="https://cdn.rongyu99.cn/awen/013/static/images/info/5.jpg" alt="">
+				<img src="https://cdn.rongyu99.cn/awen/013/static/images/info/6.jpg" alt="">
+				<img src="https://cdn.rongyu99.cn/awen/013/static/images/info/7.jpg" alt="">
+				<img src="https://cdn.rongyu99.cn/awen/013/static/images/info/8.jpg" alt="">
+				<img src="https://cdn.rongyu99.cn/awen/013/static/images/info/9.jpg" alt="">
+				<img src="https://cdn.rongyu99.cn/awen/013/static/images/info/10.jpg" alt="">
+				<img src="https://cdn.rongyu99.cn/awen/013/static/images/info/11.jpg" alt="">
+			</div>
+			<div class="order" id="form">
+				<div class="subtitle">订单详情</div>
+				<div class="productbox">
+					<div class="rolling_top product">
+						<img src="https://cdn.rongyu99.cn/awen/013/static/images/banner/1.jpg" />
+						<div class="text">
+							<h2 class="title">【明星蛋蛋霜】嫩白滋润，自带美颜无需卸妆</h2>
+							<div class="price" id="price1"><span>￥</span>298<span>~￥</span>398</div>
+						</div>
+					</div>
+				</div>
+				<div class="form">
+					<div class="order_spec order_item">
+						<div class="title">套餐规格</div>
+						<div pid="11" class="spec_item">【298元明星套装】30g蛋蛋霜+送1支水光针</div>
+						<div pid="12" class="spec_item">【398元超划算】30g蛋蛋霜+送9片淡斑面膜+1支水光针</div>
+					</div>
+					<div class="order_num order_item">
+						<div class="title">购买数量</div>
+						<div class="setnum" id="setnum">
+							<div class="jian">-</div>
+							<div class="num">1</div>
+							<div class="jia">+</div>
+						</div>
+					</div>
+					<div class="diver"></div>
+					<div class="order_text">
+						<div class="title">收货人</div>
+						<input onchange="_formdata.name = this.value" type="text" placeholder="请输入收货人姓名">
+					</div>
+					<div class="order_text">
+						<div class="title">联系方式</div>
+						<input type="text" onchange="_formdata.phone = this.value" placeholder="11位手机号码">
+					</div>
+					<!-- 地区选择 -->
+					<div class="order_text express-area" id="expressArea">
+						<dl>
+							<dt class="title">选择地区</dt>
+							<dd>省 > 市 > 区/县</dd>
+						</dl>
+					</div>
+					<div class="order_text">
+						<div class="title">详细地址</div>
+						<input type="text" onchange="_formdata.addr = this.value" placeholder="如街道、小区门牌等详细地址">
+					</div>
+					<div class="diver"></div>
+					<div class="order_text">
+						<div class="title">优惠券</div>
+						<div class="sub_title">暂无可用优惠券</div>
+					</div>
+					<div class="diver"></div>
+					<div class="order_text">
+						<div class="title">运费</div>
+						<div class="sub_title">包邮</div>
+					</div>
+					<div class="order_text" id="sfk">
+						<div class="title">实付款<span>(请选择规格)</span></div>
+						<div class="price"></div>
+					</div>
+					<div class="diver"></div>
+					<div class="order_text">
+						<div class="title">买家留言</div>
+						<input type="text" onchange="_formdata.message = this.value" placeholder="选填: 对快递等的特殊需求">
+					</div>
+					<div id="tosend" class="button">立即抢购</div>
+				</div>
+				<div style="height: 3rem;"></div>
+			</div>
+		</div>
+	</div>
+	<div id="bottom">
+		<div class="bottom">
+			<a href="tel:13143696117" class="tel"><img
+					src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADYAAAA2CAMAAAC7m5rvAAAAjVBMVEUAAABQUFBRUVFSUlJTU1NUVFRRUVFRUVFQUFBpaWlRUVFRUVFZWVlRUVFQUFBQUFBQUFBVVVVQUFBQUFBRUVFSUlJRUVFQUFBRUVFeXl5QUFBRUVFSUlJTU1NRUVFRUVFRUVFQUFBRUVFSUlJTU1NWVlZQUFBRUVFQUFBRUVFRUVFWVlZRUVFQUFBQUFAdhexDAAAALnRSTlMAoY0xQy387PgF0rYPcPG5fhTYzYJLppxfDOBYUSTlxrKVhzspGty+rnpnHcC/pOndtgAAAfdJREFUSMftltmSojAYRiNKEkTQRsAVbde22+nz/o83bOO4YDJyN1V9Lqwi1Mn/J5EPRDOHaec7Uno1HjrJTPwbsyDiCvlrIey8bUPuOX55FitRFKxHy132tu8tnDkF472xv0k1+eFqzI2L8jp4bg3WgAq8+743Gtg8XdYYeB803NlHwKTZ8gpr+6SPIeA03toAX+IJXgdYNtxYVrWeemsIz4+bqPJ1GQ90Dv7D6CeogTDRA3YNxQJhxofh3VAAc8+iuRK6t0Nra7Gcd4hv1yvhYNUWML7Z3QDWwspAg3u56n5IcvpLs+Q5ihzlzKqVhtRMjdqQino7T6B8349AmfYyKR503y86K9tShOU5f4Br0LZ1N9P6Pw39ctyBnkHr1IfmQudHa9Q08zbaCt1G68OghTaEXQttBHELbQfjFpqnwbVrk1rrllo1T2rXRrD1iocVRqL2ZWbVuhKk1sVv95JI32XA5temchWX9Mp0Ufhwcixv2rQfRf00uZ5IGho05bRePoR+PPncmxOwD/I2uLIqqarGzS/g89VERypScz0fCEeXRE8hCnqxBsvXTKAB6U+7syq31VsV+0NhJkslJatorv58GYQoYcPdKGr+aithx0tifx5KJIYmDaRwnO5GGpJXtPOKipN4iWxMjpx44kWSeBPsxX/Lb8jIVmGR9LiTAAAAAElFTkSuQmCC" />
+				电话咨询</a>
+			<a href="#form" class="gomai">立即抢购</a>
+		</div>
+	</div>
+	<section id="areaLayer" class="express-area-box">
+		<header>
+			<h3>选择地区</h3>
+			<a id="backUp" class="back" href="javascript:void(0)" title="返回"></a>
+			<a id="closeArea" class="close" href="javascript:void(0)" title="关闭"></a>
+		</header>
+		<article id="areaBox" class="scroll">
+			<ul id="areaList" class="area-list"></ul>
+		</article>
+	</section>
+	<!--遮罩层-->
+	<div id="areaMask" class="mask"></div>
+	<script src="https://cdn.rongyu99.cn/awen/013/static/js/jquery.area.js"></script>
+	<div style="display: none;">
+		<script type="text/javascript" src="https://s19.cnzz.com/z_stat.php?id=1273588617&web_id=1273588617"></script>
+	</div>
+</body>
+
+</html>

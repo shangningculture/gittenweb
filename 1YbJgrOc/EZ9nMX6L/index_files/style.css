@@ -1,0 +1,31 @@
+.plbox{
+	padding:15px;
+}
+.pinglun{
+	margin:15px 0 25px;
+}
+.pinglun .name{
+	font-weight: 400;height:40px;line-height: 40px;
+}
+.pinglun .name img{
+	width:40px;height:40px;border-radius: 50%;float:left;margin:0;margin-right: 10px;
+}
+.pinglun .name b{
+	font-weight: 400;font-size: 18px;color:#000;
+}
+.pinglun .msg{
+	padding:10px 0;font-size: 16px;color:#444;
+}
+.pinglun .huifu{
+	font-size: 14px;color:#666;padding:8px;border-radius: 4px;background:#eee;
+}
+
+.ewmbox{
+    position: relative;font-size: 0;
+}
+.ewmbox .bg{
+    width:100%;
+}
+.ewmbox .weixinpic{
+    position: absolute;width: 43%;top: 3%;right: 2%;
+}

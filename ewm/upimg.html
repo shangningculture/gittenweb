@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="static/js/jquery-1.11.0.min.js"></script>
+  <link rel="stylesheet" href="static/cropper/cropper.min.css">
+  <script src="static/cropper/cropper.min.js"></script>
+  <title>Document</title>
+  <style>
+    .box{
+      width:640px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <img id="image" width="100%" src="static/images/1.jpg">
+  </div>
+  <script>
+    var $image = $('#image');
+    $image.cropper({
+      aspectRatio: 1 / 1,
+      crop: function (event) {
+        console.log('左上角横坐标', event.detail.x);
+        console.log('左上角纵坐标', event.detail.y);
+        console.log('选中区域宽度', event.detail.width);
+        console.log('选中区域高度', event.detail.height);
+      }
+    });
+    var cropper = $image.data('cropper');
+  </script>
+</body>
+
+</html>

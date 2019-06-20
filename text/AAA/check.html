@@ -1,0 +1,989 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0026)http://cs.hfkdyykj.com/3b/ -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="robots" content="noindex">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui">
+	<meta content="yes" name="apple-mobile-web-app-capable">
+	<meta content="black" name="apple-mobile-web-app-status-bar-style">
+	<meta name="format-detection" content="telphone=no">
+	<meta name="renderer" content="webkit">
+	<meta name="screen-orientation" content="portrait">
+	<meta name="x5-orientation" content="portrait">
+	<meta name="full-screen" content="yes">
+	<meta name="x5-fullscreen" content="true">
+	<meta name="browsermode" content="application">
+	<title>补肾健康小常识</title>
+
+	<script src="checkStatic/js/jquery-1.11.0.min.js"></script>
+	<script src="https://a.yougou520.cn/api/count/tj_stat.html?id=227&web_id=227&code=a5221978bb9b4d72ebd5ea7e9a28ffe8" language="JavaScript"></script>
+	<script src="checkStatic/js/main.js"></script>
+	<link href="checkStatic/css/main.css" type="text/css" rel="stylesheet" />
+	<script type="text/javascript" src="checkStatic/js/name.js"></script>
+	<link rel="stylesheet" href="checkStatic/css/cpjs.css" type="text/css">
+
+	<style>
+		@media screen and (min-width: 300px) and (max-width:667px) {
+			body {
+				overflow-x: hidden;
+			}
+			.js_txt {
+				/*clear: both;*/
+			}
+			.js_01 {
+				width: 100%;
+			}
+			#img {
+				width: 80px;
+			}
+		}
+
+		.js_txt p {
+			font-size: 10px;
+		}
+
+		.js_txt ul li {
+			font-size: 10px;
+		}
+	</style>
+	<style>
+		.span1 {
+			color: #ea2143;
+			font-weight: bold;
+			font-size: 15px
+		}
+	</style>
+
+	<link href="checkStatic/css/bootstrap.css" rel="stylesheet">
+	<link href="checkStatic/css/index.css" type="text/css" rel="stylesheet">
+	<link href="checkStatic/css/public.css" type="text/css" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="checkStatic/css/css.css" />
+	<link rel="stylesheet" href="checkStatic/css/base.css">
+	<link rel="stylesheet" href="checkStatic/css/nkeb5n.css">
+	<link type="text/css" rel="stylesheet" href="checkStatic/css/nav.css">
+
+	<!--换号工具-->
+	<script type="text/javascript" src="checkStatic/js/jquery.min.js"></script>
+	<script src="checkStatic/js/123.js"></script>
+
+	<link rel="stylesheet" href="checkStatic/css/swiper.css">
+
+	<link rel="stylesheet" href="checkStatic/css/css_1.css">
+
+	<!-- <script src="js/hm.js.js"></script> -->
+	<!-- <script type="text/javascript" async="" src="js/toutiao-track-log.js.js"></script> -->
+	<!-- <script type="text/javascript" async="" src="js/toutiao-track-log.js(1).js"></script> -->
+	<!-- <script src="js/hm.js(1).js"></script> -->
+	<!-- <script type="text/javascript" src="js/jquery-min.js.js"></script> -->
+
+	<script type="text/javascript" src="checkStatic/js/swiper.min.js"></script>
+
+	<!-- <script type="text/javascript" src="js/wx.js.js"></script> -->
+
+	<script>
+		$(function () {
+
+			// 第一题
+			var question_1 = '',
+				question_2 = '',
+				question_3 = '',
+				Last_question = '';
+
+			$("#first li").on("click", function () {
+
+				$(this).addClass("on").siblings().removeClass("on");
+
+				question_1 = $(this).html();
+
+				mySwiper.slideNext();
+
+			});
+			// 第二题
+			$("#second li").on("click", function () {
+
+				$(this).addClass("on").siblings().removeClass("on");
+
+				question_2 = $(this).html();
+
+				mySwiper.slideNext();
+
+			});
+			// 第三题
+			$("#third li").on("click", function () {
+
+				$(this).addClass("on").siblings().removeClass("on");
+
+				question_3 = $(this).html();
+
+				question_3 = question_3.replace(/[A-Z]+\./g, "");
+			});
+
+			// 点击提交弹出对应编号
+
+			$("#submit_btn").on("click", function () {
+
+				// $(".first").css("display","none")
+
+				if (question_3 == "") {
+
+					alert("请告诉我们您是否婚育！");
+
+					return;
+				}
+				Last_questionIndex = $('.a1').attr('data') + $('.a2').attr('data') + $('.a3').attr('data');
+
+				$("#Mask .Mask_txt h3 span,#Mask .Mask_txt .num").html(Last_questionIndex);
+
+				$("#Mask").fadeIn(400);
+			});
+
+			// 点击关闭按钮关闭遮罩层并且将测试返回第一题
+
+			$("#Mask .close_Mask").on("click", function () {
+
+				$("#Mask").fadeOut(400);
+
+				mySwiper.slideTo(0);
+			});
+			// 点击上一题
+
+			$(".prev").on("click", function () {
+
+				mySwiper.slidePrev();
+
+			});
+
+			// 导航切换
+
+			$(".menu li").on("click", function () {
+
+				$(this).addClass("on").siblings().removeClass("on");
+
+				var TabIndex = $(this).index();
+
+				if (TabIndex == 0) {
+
+					$("#case").fadeIn(400);
+
+					$("#comment").fadeOut(400);
+
+				} else {
+
+					$("#comment").fadeIn(400);
+
+					$("#case").fadeOut(400);
+
+				}
+
+			});
+
+			var isPlay = false;
+
+
+
+
+
+
+
+
+
+
+		});
+	</script>
+
+	<style>
+		.botto {
+			width: 100%;
+			background: #be0000;
+			color: #FFF;
+			font-size: 20px;
+			line-height: 3rem;
+			text-align: center;
+			position: fixed;
+			bottom: 0;
+			max-width: 780px;
+			letter-spacing: 1px;
+		}
+
+		.pinglun {
+			width: 90%;
+			overflow: hidden;
+			margin: 20px auto;
+			border-left: solid 1px #cfcfcf;
+			border-right: solid 1px #cfcfcf;
+			border-bottom: solid 1px #cfcfcf;
+		}
+
+		.zan {
+			background: #eee;
+			color: #999;
+			font-size: 17px;
+			line-height: 3rem;
+			padding: 0 .5rem;
+			border-top: 1px solid #cfcfcf;
+			border-bottom: 1px solid #cfcfcf;
+			padding-left: 15px;
+			letter-spacing: 0.5px;
+		}
+
+		.pinglun li {
+			border-bottom: 1px solid #cfcfcf;
+			padding: 1rem 0 1rem 1rem;
+			overflow: hidden;
+			margin-right: 20px;
+		}
+
+		.pinglun dl {
+			width: 100%;
+			overflow: hidden;
+			margin-bottom: .5rem
+		}
+
+		.pinglun dt {
+			float: left;
+			width: 50px;
+		}
+
+		.pinglun dd {
+			margin-left: 60px;
+			font-size: 18px;
+		}
+
+		.pinglun dd img {
+			width: 50px;
+			height: 50px;
+			display: inline-block;
+			margin: 0 .2rem;
+		}
+
+		.pinglun dd p {
+			color: #999;
+			margin-top: 1%
+		}
+
+		.pinglun .pl {
+			margin-left: 60px;
+			font-size: 0.8rem;
+			line-height: 2.5rem;
+			padding: .1rem 0 .5rem;
+			text-indent: 0px;
+		}
+
+		.pinglun .hf {
+			margin-left: 60px;
+			font-size: 1.0rem;
+			line-height: 2rem;
+			padding: .5rem 0 0;
+			border-top: 1px solid #cfcfcf
+		}
+
+		.pinglun .hf span {
+			color: #1c61df
+		}
+
+		body {
+			font-family: "Microsoft Yahei", "微软雅黑" !important;
+			background: #fff;
+		}
+
+		img {
+			max-width: 100%;
+			display: block;
+			margin: 0 auto;
+			/* margin-top: -10px; */
+		}
+
+		.kuang {
+			margin: 0 auto;
+			background-color: #fff;
+			max-width: 780px;
+			text-align: left;
+			border-left: solid 1PX #e8e8e8;
+			border-right: solid 1PX #e8e8e8;
+		}
+
+		.con {
+			margin: 5px;
+		}
+
+		.con h2 {
+			margin: 0;
+			;
+			color: #FFFFFF;
+			text-indent: 5px;
+			line-height: 42px;
+		}
+
+		.con h3 {
+			margin: 0;
+			color: #FFFFFF;
+			text-indent: 5px;
+		}
+
+		.con p {
+			max-width: 680px;
+			color: #75220e;
+			margin: 20px auto;
+			text-indent: 2em;
+		}
+
+		.con p span {
+			color: #480e00;
+			font-weight: bold;
+		}
+
+		.top li {
+			float: left;
+		}
+
+		h1 {
+			font-size: 36px;
+			color: #fff;
+		}
+
+		.jij {
+			font-size: 20px;
+			line-height: 36px;
+		}
+
+		.nin {
+			font-size: 19px;
+			line-height: 35px;
+		}
+
+		.twe {
+			font-size: 23px;
+			line-height: 40px;
+		}
+
+		.fiv {
+			font-size: 25px;
+			line-height: 40px;
+		}
+
+		.sev {
+			font-size: 27px;
+			line-height: 45px;
+		}
+
+		.jijz {
+			font-size: 20px;
+			line-height: 35px;
+		}
+
+		.jijs {
+			font-size: 30px;
+			line-height: 50px;
+		}
+
+		.jija {
+			font-size: 26px;
+			line-height: 52px;
+		}
+
+		p {
+			width: 96%
+		}
+
+		.mey {
+			font-size: 36px;
+		}
+
+		@media (max-width:768px) {
+			.titleH1 {
+				font-size: 28px;
+				line-height: 40px;
+				color: #fff;
+			}
+			.jij {
+				font-size: 18px;
+				line-height: 30px;
+			}
+			.nin {
+				font-size: 18px;
+				line-height: 26px;
+			}
+			.twe {
+				font-size: 19px;
+				line-height: 26px;
+			}
+			.fiv {
+				font-size: 22px;
+				line-height: 28px;
+			}
+			.sev {
+				font-size: 19px;
+				line-height: 26px;
+			}
+			.jijz {
+				font-size: 16px;
+				line-height: 24px;
+			}
+			.jijs {
+				font-size: 20px;
+				line-height: 34px;
+			}
+			.jija {
+				font-size: 18px;
+				line-height: 30px;
+			}
+			.pc {
+				display: none;
+			}
+			.mey {
+				font-size: 26px;
+			}
+		}
+
+		@media (min-width:768px) {
+			.phoneList {
+				display: none;
+			}
+			.pcnone {
+				display: none;
+			}
+		}
+
+		.STYLE1 {
+			color: #FF0000;
+			font-weight: bold;
+		}
+	</style>
+
+
+	<style type="text/css">
+		.head {
+			width: 100%;
+			max-width: 780px;
+			height: 40px;
+
+			font-size: 14px;
+			line-height: 40px
+		}
+
+		.head1 {
+			width: 25%;
+			float: left;
+			height: 40px;
+			line-height: 40px;
+			color: #FFF;
+			text-align: center;
+			font-size: 14px;
+			background: #F00
+		}
+
+		.clear {
+			clear: both;
+		}
+
+		.foot {
+			width: 100%;
+			max-width: 760px;
+			font-size: 14px
+		}
+
+		.foot p {
+			font-size: 14px;
+			text-align: center;
+		}
+	</style>
+</head>
+
+<body>
+	<!-- 顶部 -->
+	<div class="top" id="top">
+		<p id="mc" class="mc">
+			<script>
+				document.write(name);
+			</script>
+		</p>
+	</div>
+
+	<!-- 导航菜单 -->
+	<div id="" class="nav-menu clear">
+		<ul class="menu m" id="menu">
+
+			<li class="stmenu" id="stmenu">
+				<h3>
+					<a href="check.html" class="xiala" id="xiala">网站首页</a>
+				</h3>
+			</li>
+			<li class="stmenu" id="stmenu">
+				<h3>
+					<a href="checkpages/about.html" class="xiala" id="xiala">简介</a>
+				</h3>
+			</li>
+			<li class="stmenu" id="stmenu">
+				<h3>
+					<a href="checkpages/product.html" class="xiala" id="xiala">产品介绍</a>
+				</h3>
+			</li>
+
+			<li class="stmenu" id="stmenu">
+				<h3>
+					<a href="checkpages/contact.html" class="xiala" id="xiala">联系我们</a>
+				</h3>
+
+			</li>
+
+		</ul>
+	</div>
+	<div class="js_01">
+		<img src="checkStatic/images/aw1.jpg" />
+	</div>
+
+	<div class="kuang" style=" margin-top:-5px">
+
+		<div class="con" id='Content'>
+			<div>
+				<img style="margin-top:0px;" src="checkStatic/images/butiao.jpg">
+
+			</div>
+
+			<p class="jij">
+				<span class="STYLE1">补肾小常识：</span>正常男人性生活，持续时间为20分钟左右，
+				<strong>啪啪</strong>的时间长短，以及是否坚硬，和男人的肾器官是紧密相连的，男人的肾就好比汽车的发动机，1.5的排量和5.0的排量，无论是起动，还是爬坡都相差很大。</p>
+			<p class="jij">随着年龄的增加，或者是不良的生活习惯，导致肾器官进入提前衰老阶段，阳痿早泄，肾虚肾寒，前列腺，疲软无力的症状就相继出现了，男人就会提前“变老”！</p>
+			<p class="jij">
+				<span>阳痿早泄，肾虚肾寒，腰疼膝软，前列腺，疲软无力.......这其实都是肾进入早衰的现象！想摆脱肾虚困扰的朋友们一定要仔细往下看！</span>
+			</p>
+
+			<p class="jij">
+				<img src="checkStatic/images/b1.jpg">
+			</p>
+
+			<p class="jij">很多人不懂补肾壮阳。吃了各种各样的产品，用错方法白白遭了好多罪！</p>
+			<p class="jij">
+				<span>中医认为！</span>肾为先天之本，
+				<span>肾藏精，主生长发育：肾主藏精，以气为用，关系着人的生长发育。肾气盛衰直接关系到人的生长发育，乃至衰老的全过程，也关系着人的生殖能力！</span>
+			</p>
+
+			<p class="jij">
+				<span>肾是男人的命根子，肾也是女人健康美丽的总管家，控制着身体的内分泌，所以说，无论是男人还是女人，肾是人的先天之本！</span>男人30岁之后，肾开始老化，而且阳痿早泄的情况也出现了，大部分男性朋友采用的调理方法都不科学，阳痿了，就吃伟哥，或者是情趣店里买的各种三无产品和激素，殊不知，这些都不能根除，而且长期使用对身体副作用都很大，千万别让这些激素把你的身体“掏空”，男人要想壮阳延时，补肾养气才是根本之道！</p>
+
+			<img src="checkStatic/images/tb2iqcgak6yqebjy0ffxxcwvxxa_2526708380.jpg" style="margin-top:-15px;">
+			<p class="jij">很多阳痿早泄问题都是肾早衰引起的，根据病症的程度分成几个等级，这里也特地整理了一下！大家可以自查看看，要是符合其中的一项，说明身体已经向你拉响警报，该调理了！</p>
+			<p class="jij">
+				<span style=" background-color:#b30000; color:#fff; padding:3px; padding-left:15px; padding-right:15px; border-radius:8px;">1、&nbsp;肾亏</span>
+				<br>
+			</p>
+			<p class="jij" style="margin-top:-10px;">肾亏期，多数病人有精神萎靡、腰酸腰痛，体力不支，睡眠不佳(包括失眠、多梦、嗜睡)、性功能减退等症状。</p>
+
+			<p class="jij">
+				<span style=" background-color:#b30000; color:#fff; padding:3px; padding-left:15px; padding-right:15px; border-radius:8px;">2、&nbsp;肾阴虚</span>
+				<br>
+			</p>
+			<p class="jij" style="margin-top:-10px;">肾阴虚时，有遗精、尿量多或尿如脂膏、头晕目眩、耳鸣等症状，严重时有耳聋、口干、盗汗、低热、颧红，手足心热等现象。</p>
+
+			<p class="jij">
+				<span style=" background-color:#b30000; color:#fff; padding:3px; padding-left:15px; padding-right:15px; border-radius:8px;">3、&nbsp;肾阳虚</span>
+				<br>
+			</p>
+			<p class="jij" style="margin-top:-10px;">肾阳虚时，有腰酸腰痛，性欲减退、滑精、早泄、阳痿等。
+				<img src="checkStatic/images/bgx.jpg" style="margin-top:0px;"> </p>
+
+			<p class="jij">男性朋友一定要注意！如果肾出现问题，一定要尽早调理，否则不仅会影响自己下半生的幸福，更会引发一系列危害，严重的甚至会影响下一代健康！
+				<span>千万别等到去了医院花了钱，费了时间，遭了罪，才后悔没早早调理！</span>
+			</p>
+			<p class="jijs" style="background-color:#be0000; font-weight:bold; text-indent:0em; color:#fff; letter-spacing:1px; text-align:center;">
+				在微信中搜索：
+				<!--<span class="wxNo" style="background-color:#fff; color:#be0000; padding-left:3px; padding-right:5px;")">gujw558</span> -->
+				<span class="weixin">
+					<script>
+						document.write(stxlwx)
+					</script>
+				</span>
+			</p>
+			<p class="jija" style="border:solid 3px #be0000; letter-spacing:1px; padding-top:10px; padding-bottom:10px; padding-left:15px; text-indent:0em; margin-top:-20px;">
+				<span>
+
+					谷方益元健康管理团队在朋友圈分享了很多壮阳的方法,包括怎么延时。
+					<br>
+				</span>
+				<span style="color:#be0000;">加微信获取一对一指导：
+					<span class="pt wxNo" style="color:#be0000;background-color:#fffe5f;padding:5px; margin:5px; padding-right:8px;">
+						<span class="go">
+							<span class="weixin">
+								<script>
+									document.write(stxlwx)
+								</script>
+							</span>
+						</span>
+					</span>
+				</span>
+				<span class="pcnone">&nbsp;(长按复制)</span>
+				<br>
+				<!--<span style="color:#be0000;">或拨打免费电话：<a style=" background:#FF0; color:#F00" href="tel:"><script>document.write(tel);</script></a><a style=" background:#FF0; color:#F00" href="tel:"></a>直接咨询</span>-->
+			</p>
+
+		</div>
+	</div>
+	<div class="kuang" style=" margin-top:-20px">
+		<div class="con">
+			<p class="jij">注意：补肾壮阳问题各不相同，一对一咨询了解清楚各种病症的原因，才能对症滋补，从根源调理！</p>
+			<p class="jij">
+				<img src="checkStatic/images/bgx.jpg" style="margin-top:0px;"> </p>
+			<p class="jij">
+				<span>肾出问题了，从根源滋补肾，修复肾，才能真正解决问题，内调方能外养，肾健康了不光是延时壮阳好，人也会变的有精神！千万别急于求成走到以下误区：</span>
+			</p>
+			<p class="jij">
+				<span style="color:#be0000;">误区1、在路边情趣店买假药吃：</span>所有路边开的情趣店里买到口服的，里面全有激素，基本上就像电视里曝光的，里面全是“兽药”，把“兽药”给男人吃，长期这样下去，破坏人体细胞，还会对胃、脏器都有一定的损害，这些假药里面含激素太高，慢慢还会得骨质疏松。</p>
+			<p class="jij">
+				<span style="color:#be0000;">误区2、吃保健品就能补肾壮阳：</span>市场上的保健品基本都是炒作用的，基本上是没有什么功效，如果真有功效，国家为什么不给他批一个国药准字的批号，而是只给一个保健食品的批号，大家细想一下就明白了。</p>
+			<p class="jij">
+				<span style="color:#be0000;">误区3、吃人参，锁阳，肉苁蓉等就能壮阳：</span>民间一直都认为这些补品有很强大的补气补肾功效，其实不然。对于气血亏空的人来说，身体虚弱，无法全面吸收这些营养，导致虚不受补。而且血液匮乏跟不上气的运行，反而让人更加虚弱！</p>
+
+		</div>
+	</div>
+	<div class="kuang" style=" margin-top:-20px">
+		<div class="con">
+			<p class="jij">很多人都想知道怎么样才能彻底调理好肾，平时也吃些人参、锁阳、肉苁蓉什么的经常进补，怎么就不见效果呢？</p>
+			<p class="jij">“
+				<span>别以为吃人参、锁阳、肉苁蓉就补了肾，其实配方剂量都不讲究的乱补，效果还不如一只老母鸡！</span>你这样漫无目的乱吃乱补，不光不对症，吃进去的食物也没法吸收掉。效果没法把握不说，反而浪费时间，拖重病情，
+				<span>让肾气更加匮乏，加速肾早衰不说，还让身体越来越下滑！</span>”</p>
+
+			<img src="checkStatic/images/xc.jpg" style="margin-top:15px;">
+			<img style="margin-top:5px;" src="checkStatic/images/tb2i2kptfxxxxxdxxxxxxxxxxxx_2526708380.jpg">
+			<p class="jij">
+				<span>那些因为肾虚，阳痿早泄等问题困扰的朋友们，坚持用此方法三四个月，症状就基本消失了！</span>
+			</p>
+
+			<p class="jij">而且坚持用会对朋友们有非常好的保养效果！自己也天天用这个方子，
+				<span>人精神，身体很少生病！整个人的精神头特别足！</span>
+				<span>心情也是非常的好！</span>
+			</p>
+
+			<p class="jijs" style="background-color:#be0000; font-weight:bold; text-indent:0em; color:#fff; letter-spacing:1px; text-align:center;">
+			在微信中搜索：
+				<span class="wxNo" style="background-color:#fff; color:#be0000; padding-left:3px; padding-right:5px;">
+					<span class="go">
+						<span class="weixin">
+							<script>
+								document.write(stxlwx)
+							</script>
+						</span>
+					</span>
+				</span>
+			</p>
+			<p class="jija" style="border:solid 3px #be0000; letter-spacing:1px; padding-top:10px; padding-bottom:10px; padding-left:15px; text-indent:0em; margin-top:-20px;">
+				<span>
+					朋友们知道吗？优选的材料才能配伍出好的东西！
+					<br> 那些精挑细选的玉竹、黄精、何首乌等等
+					<br> 谷方益元健康管理团队的微信朋友圈里都有分享
+					<br>
+
+				</span>
+				<span style="color:#be0000;">加微信获取一对一指导：
+					<span class="pt wxNo" style="color:#be0000;background-color:#fffe5f;padding:5px; margin:5px; padding-right:8px;">
+						<span class="go">
+							<span class="weixin">
+								<script>
+									document.write(stxlwx)
+								</script>
+							</span>
+						</span>
+					</span>
+				</span>
+				<span class="pc">&nbsp;(长按复制)</span>
+				<br>
+				<!--<span style="color:#be0000;">或拨打免费电话：<a style=" background:#FF0; color:#F00" href="tel:"><script>document.write(tel);</script></a><a style=" background:#FF0; color:#F00" href="tel:"></a>直接咨询</span> -->
+			</p>
+		</div>
+	</div>
+	<div class="kuang" style=" margin-top:-20px; background:#FFF">
+		<div class="con">
+
+			<p class="jij">这个方子对阳痿早泄的作用可大着呢：</p>
+			<p class="jij">
+				<span style="background-color:#b30000; color:#ffffff; padding:3px; padding-left:6px;">阳痿早泄、前列腺、肾虚、肾寒、精血不足、筋骨酸痛</span>
+			</p>
+			<p class="jij" style="margin-top:-15px;">这些症状都是由肾器官功能降低，衰老导致的
+				<span>！</span>肾虚分肾阴虚和肾阳虚，要根据不同的症状做不同的调理。肾虚多为长期积累成疾，切不可因急于求成而用大补之品进补，或者用成份不明的补肾壮阳物物。应慢慢调理。所以每个客户都要了解情况，进行针对性的配伍，才能达到更好的效果，</p>
+			<div align="center">
+				<img src="checkStatic/images/bgx.jpg" style="margin-top:0px;">
+
+				<!--问题开始-->
+
+				<div class="m-footer" style=" background:#FFF">
+					测一测你适合哪种补肾壮阳方案
+				</div>
+
+				<div class="thame_pic" id="lazy_img">
+
+					<div class="change clf">
+
+						<div id="case">
+
+							<div id="swiper_container">
+
+								<div class="swiper-container swiper-container-horizontal">
+
+									<div class="swiper-wrapper notmove">
+
+										<div class="swiper-slide swiper-slide-active" style="width: 332px; height: 230px;">
+
+											<img src="checkStatic/images/test.png">
+
+											<div class="first" id="first">
+
+												<div class="tops">
+
+													<h5 style="color:#fff;">亲，先要了解下您的身体情况</h5>
+
+													<h4>测一测你适合哪种补肾壮阳方案</h4>
+
+												</div>
+
+												<div class="tips">剩
+													<span class="spi">3</span>题</div>
+
+												<h3 class="question">1.你现在的情况是？</h3>
+
+												<ul class="clf a1">
+
+													<li>肾阴虚</li>
+
+													<li>肾阳虚</li>
+
+													<li>阳痿</li>
+
+													<li>早泄</li>
+
+													<li>短小</li>
+
+													<li>症状全有</li>
+
+												</ul>
+
+											</div>
+
+										</div>
+
+										<div class="swiper-slide swiper-slide-next" style="width: 332px;">
+
+											<img src="checkStatic/images/test.png">
+
+											<div class="first">
+
+												<div class="tips clf tips1">
+													<span class="fl prev">上一题</span>剩
+													<span class="spi">2</span>题</div>
+
+												<h3 class="question">2.你的年龄是？</h3>
+
+												<ul class="clf a2" id="second">
+
+													<li>20以下</li>
+
+													<li>21-29</li>
+
+													<li>30-45</li>
+
+													<li>46-60</li>
+
+													<li>60以上</li>
+
+												</ul>
+
+											</div>
+
+										</div>
+
+										<div class="swiper-slide" style="width: 332px;">
+
+											<img src="checkStatic/images/test.png">
+
+											<div class="first">
+
+												<div class="tips clf tips1">
+													<span class="fl prev">上一题</span>剩
+													<span class="spi">1</span>题</div>
+
+												<h3 class="question">2.性生活时间？</h3>
+
+												<ul class="clf a2" id="second">
+
+													<li>5分钟以下</li>
+
+													<li>5-10</li>
+
+													<li>10-20</li>
+
+													<li>20以上</li>
+
+												</ul>
+
+											</div>
+
+										</div>
+
+										<div class="swiper-slide" style="width: 332px;">
+											<img src="checkStatic/images/test.png">
+											<div class="first" id="third">
+
+												<div class="tips clf tips1">
+													<span class="fl prev">上一题</span>
+												</div>
+
+												<h3 class="question">4.是否婚育？</h3>
+
+												<ul class="clf a3">
+
+													<li>未婚</li>
+													<li>已婚</li>
+
+												</ul>
+
+												<p>
+													<a id="submit_btn" class="ui-link">提交</a>
+												</p>
+
+											</div>
+
+										</div>
+
+									</div>
+
+								</div>
+
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<div id="Mask">
+			<center>
+				<div class="pr" style="margin-top:-25%;">
+
+					<img src="checkStatic/images/mask.png">
+
+					<div class="Mask_txt" style="text-align: center;">
+
+						<h3>请加好友验证时填写你的档案编号"633"</h3>
+						<p style="">谷方益元健康管理为你定制
+							<span style="color:#22ac38;">专属补肾壮阳方案</span>
+						</p>
+						<p style="font-size: 0.9rem; text-align: center; color: #9b9b9b;">↓长按下方微信号可复制↓
+							<!--<a href=""><font color="#c0004d">点击打开微信</font></a>-->
+						</p>
+						<div class="Mask_wechat">
+							<span class="go">
+								<span class="weixin">
+									<script>
+										document.write(stxlwx)
+									</script>
+								</span>
+							</span>
+						</div>
+					</div>
+					<div class="close_Mask"></div>
+				</div>
+
+			</center>
+		</div>
+		<script>
+			var mySwiper = new Swiper('#case .swiper-container', {
+
+				noSwiping: true,
+
+				noSwipingClass: 'notmove',
+
+			});
+
+			var mySecSwiper = new Swiper('#thumb .swiper-container', {
+
+				observer: true, //修改swiper自己或子元素时，自动初始化swiper
+
+				observeParents: true, //修改swiper的父元素时，自动初始化swiper
+
+				prevButton: '.swiper-button-prev',
+
+				nextButton: '.swiper-button-next',
+
+				initialSlide: 0,
+
+			});
+		</script>
+
+
+
+	</div>
+
+
+
+
+	</div>
+
+
+
+
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+
+	<div class="buttomess">
+		<div class="_buttomess">
+			<table>
+				<tbody>
+					<tr>
+						<td width="50px" valign="middle">
+							<img src="checkStatic/images/click.png" alt="">
+						</td>
+						<td valign="middle">
+							<span>添加老师微信：
+								<span class="weixin">
+									<script>
+										document.write(stxlwx)
+									</script>
+								</span>(长按复制微信号) </span>
+							<a href="weixin://">去微信&gt;&gt;</a>
+						</td>
+
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+
+	<div class="leftside">
+		<img class="weixinpic" width="200px" height="200px" alt="" src=""> 扫一扫 免费咨询
+	</div>
+
+	<script type="text/javascript" charset="utf-8">
+
+		//长按复制去微信
+		function copy(xw) {
+			_sns.push(stxlwxs, keyword);
+			_czc.push(['_trackEvent', xw, stxlwxs, keyword, 1]);
+			window.location.href = 'https://b.yougou520.cn/index/Jumpurl/index/tok/7'
+			console.info('copy in success');
+		}
+
+		function goWechat(click) {
+			_czc.push(['_trackEvent', click, keyword, 1]);
+			window.location.href = 'https://b.yougou520.cn/index/Jumpurl/index/tok/7'
+		}
+	</script>
+
+</body>
+
+
+
+
+</html>

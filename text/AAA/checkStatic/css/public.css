@@ -1,0 +1,46 @@
+﻿body{margin:0;padding: 0;font-family: '微软雅黑';}
+*{margin:0;padding: 0;}
+ul{list-style: none;}
+a{text-decoration: none;outline:none;}
+a:hover{text-decoration: none;}
+img{border:none;}
+/* Swipe 2 required styles */
+.swipe {
+  overflow: hidden;
+  visibility: hidden;
+  position: relative;
+
+  margin: 0 auto;
+}
+.swipe-wrap {
+  overflow: hidden;
+  position: relative;
+}
+.swipe-wrap img{width:100%;padding: 0;margin: 0;}
+.swipe-wrap div {
+  float:left;
+  max-width:100%;
+  position: relative;
+}
+#pager{font-size: 25px;}
+#pager em {margin:0px 5px 5px 5px}
+<!--#pager em .circle{display: inline-block;width:22px;height:22px; background:url(../images/grey.png) no-repeat; font-style: normal;cursor:pointer; }-->
+/*#pager em.on .circle{ width:22px; height:22px; background:url(../images/white1.png) no-repeat; }*/
+#pager em{ color:#fff; display:inline-block; cursor:pointer; font-style:normal}
+#pager em.on{ color:#1f78b4}
+
+
+/* END required styles */
+.blank20{clear:both;height: 20px;width: 100%;}
+
+.img-thoud {
+	display: inline-block;
+	max-width: 100%;
+	height: auto;
+	line-height: 1.42857143;
+	background-color: #fff;
+	border-radius: 4px;
+	-webkit-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out
+}

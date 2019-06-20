@@ -1,0 +1,32 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: '微软雅黑'
+}
+
+html,body{
+    background-color: #000;
+}
+
+.contain{
+    max-width: 640px;
+    margin: 0 auto;
+    position: relative;
+}
+
+img{
+    width: 100%;
+    display: block;
+}
+
+.weixinpic{
+    position: absolute;
+    width: 40%;
+    left: 30%;
+    top: 29%;
+}
+
+.onload{
+    text-align: center;
+    color: #fff;
+}

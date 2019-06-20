@@ -1,0 +1,168 @@
+﻿@charset "utf-8";
+
+
+
+.po_title {
+    color: #444;
+    margin: 0.5em 0;
+}
+
+.ui-content {
+    border-width: 0;
+    overflow: visible;
+    overflow-x: hidden;
+    padding: 15px;
+}
+
+.po_time {
+    color: #999;
+
+    padding-right: 7px;
+}
+
+.p_t {
+    display: inline-block;
+    float: right;
+}
+
+#id_ceshi_show { padding-top: 15px; }
+
+#id_start_ceshi {
+    background-color: #3481AD;
+    color: #EEE;
+    display: block;
+    line-height: 40px;
+    margin: 10px auto;
+    text-align: center;
+    width: 70%
+}
+
+#id_ceshi_show .stip {
+    color: #999;
+    display: block;
+    margin-top: 5px;
+    text-align: center;   
+}
+
+.test_contents { }
+
+.descs { padding-bottom: 8px; }
+
+.items { }
+
+.sels_list { overflow: hidden; }
+
+.sels_list .items {
+    cursor: pointer;
+    display: block;
+    margin: 2px 0px;
+}
+
+.sels_list .hover .i_top, .sels_list .act .i_top { background: #EEE; }
+
+.sels_list .hover .i_bot, .sels_list .act .i_bot { background: #EEE; }
+
+.sels_list .hover .i_mid, .sels_list .act .i_mid { background: #EEE; }
+
+.sels_list .items .i_top, .sels_list .items .i_bot {
+    height: 5px;
+    overflow: hidden;
+}
+
+.sels_list .items .i_mid { padding: 2px 9px 2px 15px; }
+
+.sels_list .items .sels {
+    padding-right: 8px;
+    vertical-align: middle;
+}
+
+#id_pre_link, #id_submit {
+    background: #368ff4;
+    border: 0px;
+    color: #fff;
+    height: 35px;
+    margin: 0px;
+    padding: 0px;
+    width: 120px;
+}
+
+#id_submit {
+    background: #22ac38;
+    margin-left: 5px;
+}
+
+.surveyoperation { padding-top: 10px; }
+
+.result_tools a, #id_comment_submit {
+    background: #3A78B3;
+    
+    border: 1px solid #0C3F76;
+    color: #fff;
+    margin: 0px;
+    padding: 0px;
+    padding: 5px 10px;
+    text-align: center;
+}
+
+.commentbox {
+    height: 50px;
+    width: 100%;
+}
+
+.cbtns { color: #ccc; }
+
+.nopadding dl {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.nop {
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+
+.qcount { color: #22ac38 }
+
+.payArea
+{
+    text-align:center;
+}
+.price_new
+{
+    display: inline-block;
+    font-size: 18px;
+    color: #FF9F00;
+}
+.price_new span
+{
+    font-size:12px;
+}
+
+    .price_new .tag {
+        margin-left: 5px;
+        color: #fff;
+        background: #FF9F00;
+    }
+.price_old {
+    display: inline-block;
+    margin-top: 2px;
+    margin-left: 10px;
+    font-size: 12px;
+    text-decoration: line-through;
+    color: #939393;
+}
+.pricenotify
+{
+    margin-top:10px;
+    margin-bottom:10px;
+}
+.surveyguide img
+{
+    display:block;
+    margin: 10px auto;
+}
+.reportimg img
+{
+    margin: 10px auto;
+    display:block;
+}

@@ -1,0 +1,50 @@
+﻿/* ::::: http://ccxdrl.cn/imagle/index.css ::::: */
+
+html, body, div, span, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, address, big, cite, code, del, em, img, ins, small, strong, var, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, input, textarea, legend { margin: 0px; padding: 0px; }
+ol, ul { list-style: outside none none; }
+:focus { outline: 0px none; }
+img { vertical-align: middle; }
+div, span, i, a, button, input {  }
+body { font-size: 14px; line-height: 1.8; font-family: "MicroSoft YaHei",SimSun; background: rgb(255, 255, 255) none repeat scroll 0% 0%; color: rgb(51, 51, 51); cursor: default; }
+a { text-decoration: none; color: rgb(51, 51, 51); }
+.list li a::after { content: ""; width: 2px; height: 2px; margin-top: -1px; background: rgb(54, 54, 54) none repeat scroll 0% 0%; position: absolute; left: 12px; top: 50%; }
+@media screen and (min-width: 640px) {
+}
+.tiezi-as .ys-tool .up::after { content: ""; width: 0px; height: 12px; margin-top: -6px; border-left: 1px solid rgb(227, 227, 231); position: absolute; right: 0px; top: 50%; }
+.tiezi-bs-titles h2::after { content: ""; width: 0px; height: 0px; border-width: 16px; border-style: solid; border-color: transparent rgb(255, 255, 255) transparent transparent; -moz-border-top-colors: none; -moz-border-right-colors: none; -moz-border-bottom-colors: none; -moz-border-left-colors: none; border-image: none; position: absolute; right: 0px; top: 0px; }
+* { margin: 0px; padding: 0px; }
+ul { list-style-type: none; }
+a { text-decoration: none; color: rgb(0, 153, 227); }
+body { background-color: rgb(255, 255, 255); margin: 0px auto; padding: 0px 1%; width: auto; }
+img { border: 0px none; }
+@media all and (min-width: 480px) {
+}
+div {  }
+/* ::::: http://ccxdrl.cn/imagle/public.css ::::: */
+
+body { margin: 0px; padding: 0px; font-family: "微软雅黑"; }
+* { margin: 0px; padding: 0px; }
+ul { list-style: outside none none; }
+a { text-decoration: none; outline: medium none; }
+a:hover { text-decoration: none; }
+img { border: medium none; }
+.pinglun { width: 100%; overflow: hidden; margin: 3px auto; border-left: 1px solid rgb(207, 207, 207); border-right: 1px solid rgb(207, 207, 207); border-bottom: 1px solid rgb(207, 207, 207); }
+.zan { background: rgb(238, 238, 238) none repeat scroll 0% 0%; color: rgb(153, 153, 153); font-size: 17px; line-height: 1.5rem; padding: 0px 0.5rem 0px 15px; border-top: 1px solid rgb(207, 207, 207); border-bottom: 1px solid rgb(207, 207, 207); letter-spacing: 0.5px; }
+.pinglun li { border-bottom: 1px solid rgb(207, 207, 207); padding: 0.5rem 0px 0.5rem 0.5rem; overflow: hidden; margin-right: 3px; }
+.pinglun dl { width: 100%; overflow: hidden; margin-bottom: 0.5rem; }
+.pinglun dt { float: left; width: 50px; }
+.pinglun dd { margin-left: 60px; font-size: 18px; }
+.pinglun .pl { margin-left: 60px; font-size: 0.8rem; line-height: 1.4rem; padding: 0.1rem 0px 0.5rem; text-indent: 0px; }
+.pinglun .hf { margin-left: 60px; font-size: 1rem; line-height: 1.4rem; padding: 0.5rem 0px 0px; border-top: 1px solid rgb(207, 207, 207); }
+.pinglun .hf span { color: rgb(28, 97, 223); }
+body { text-align: center; font-family: "Microsoft Yahei","微软雅黑" !important; background: rgb(255, 255, 255) none repeat scroll 0% 0%; }
+img { max-width: 100%; display: block; margin: -10px auto 0px; }
+.kuang { margin: 0px auto; background-color: rgb(255, 255, 255); max-width: 640px; text-align: left; border-left: 1px solid rgb(232, 232, 232); border-right: 1px solid rgb(232, 232, 232); }
+.con { margin: 5px; }
+.con p { max-width: 680px; color: rgb(72, 14, 0); margin: 20px auto; text-indent: 2em; }
+.con p span { color: rgb(72, 14, 0); font-weight: bold; }
+.ewmNum1 { display: inline-block; width: 100%; text-align: center; overflow: hidden; }
+.ewmNum2 { display: inline-block; width: 150px; text-align: center; overflow: hidden; line-height: 20px; height: 20px; }
+.ewmNum3 { display: inline-block; width: 180px; text-align: left; overflow: hidden; margin-bottom: -8px; margin-left: -35px; height: 30px; line-height: 30px; }
+.jij { font-size: 20px; line-height: 28px; }
+p { width: 96%; }

@@ -1,0 +1,165 @@
+@charset 'UTF-8';
+*{
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body{max-width: 640px;min-width: 320px;width:100%;margin:0 auto !important;padding: 0 10px !important;}
+.top1{font-size: 16px;line-height: 24px;padding: 6px 10px;color: #333333;border: 2px solid #f96e57;text-align: justify;position: relative;
+-webkit-border-radius: 8px;
+		border-radius: 8px;}
+.top1::after{content: "";display: block;position: absolute;left: 50%;top: 100%;margin: 2px 0 0 -12px;width: 0;height: 0;border-left: 12px solid transparent;border-right: 12px solid transparent;border-top: 10px solid #f96e57;}
+
+.box1{margin-top:22px;}
+.top2{font-size: 16px;line-height: 24px;padding: 6px 10px;color: #333333;text-align: justify;margin: 10px 0;}
+.top2 span{color: #FE0303;}
+.top2 h4{color: #4179e0;}
+.top2 h5{color: #FE0303;}
+.top3{font-size: 18px;line-height: 24px;padding: 6px 28px;color: #333333;text-align: justify;margin: 10px auto;}
+.top3 span{font-size:18px;color: #fe0303;}
+.top3 img{margin: 10px auto;}
+.box2{border: 1px solid #cccccc;padding-bottom: 10px;
+-webkit-box-shadow:0 3px 5px rgba(0,0,0,0.4);
+        box-shadow:0 3px 5px rgba(0,0,0,0.4);;}
+.box2 h4{display: block;font-size: 18px;line-height: 36px;margin-top: 20px;color: #333333;text-align: center;font-weight:bold ;padding-bottom: 10px;}
+.redfontwith{text-align: center;margin: 20px 0;}
+.redfontwith span{font-size: 24px;color: #fe0303;font-weight: bold;}
+
+.redfontwith > i{background: url(2018_01.png); }
+.top4{font-size: 16px;line-height: 24px;padding: 6px 10px;color: #333333;border: 2px solid #f96e57;text-align: justify;
+-webkit-border-radius: 6px;
+		border-radius: 6px;}
+.top4 span{display:block;font-size: 16px;font-weight: bold;color: #FE0303;text-align: center;}
+.top4 h4{font-size: 18px;font-weight: bold;text-align: center;color: #333333;}
+.top4 img{margin: 10px 0;}
+.top4 div{display: inline;color: #ff021a;}
+.sanjiao1{margin: 14px auto 25px auto;width:0;height:0;border-left: 48px solid transparent;border-right: 48px solid transparent;border-bottom: 50px solid #fc022b;}
+.top5{line-height: 24px;padding: 6px 10px;text-align: justify;margin: 10px 0;}
+.top5 span{font-size: 16px;color: #fe031b;font-weight: bold;}
+.top6{text-align: center;margin: 45px auto 0 auto !important;}
+.top6 span{display: inline-block;vertical-align: top; line-height: 40px;height: 40px;padding: 0 17px;font-size: 18px;font-weight: bold;color: #fb0018;background: #fec603;}
+.down{font-size: 22px;color: #FE0303;font-weight: bold;}
+.box3{text-align: center;padding: 10px 20%;}
+.box3 img{text-align: center;display: block;}
+
+html, body, div, ul, li, h1, h2, h3, h4, h5, h6, p, dl, dt, dd, ol, form, input, textarea, th, td, select {
+	margin: 0;
+	padding: 0;
+}
+* {
+	box-sizing: border-box;
+}
+html, body {
+	min-height: 100%;
+}
+body {
+	font-family: "Microsoft YaHei";
+	font-size: 14px;
+	color: #333;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+}
+ul, ol {
+	list-style: none;
+}
+img {
+	border: none;
+	vertical-align: middle;
+	display: block;
+	max-width: 100%;
+}
+a {
+	text-decoration: none;
+	color: #232323;
+}
+table {
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+input, textarea {
+	outline: none;
+	border: none;
+}
+textarea {
+	resize: none;
+	overflow: auto;
+}
+.clearfix {
+	zoom: 1;
+}
+.clearfix:after {
+	content: ".";
+	width: 0;
+	height: 0;
+	visibility: hidden;
+	display: block;
+	clear: both;
+	overflow: hidden;
+}
+.fl {
+	float: left
+}
+.fr {
+	float: right
+}
+.tl {
+	text-align: left;
+}
+.tc {
+	text-align: center
+}
+.tr {
+	text-align: right;
+}
+.ellipse {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.inline {
+	display: inline-block;
+ *display: inline;
+ *zoom: 1;
+}
+header h1 {
+	display: block;
+	font-size: 24px;
+	padding: 15px;
+    letter-spacing: 0.1ch;
+}
+header p {
+	font-size: 18px;
+	color: #acacac;
+	padding-left: 15px;
+}
+#fbt a{
+    font-size: 16px;
+    padding-left: 15px;
+    color: #576b95;
+    letter-spacing: 0.1ch;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#fbt span{
+    padding-left: 6px;
+    font-size: 15px;
+    letter-spacing: 0.1ch;
+    color:rgba(0,0,0,0.4);
+    font-family: Arial, Helvetica, sans-serif;
+}
+#foot span{
+    padding-left: 6px;
+    font-size: 18px;
+    letter-spacing: 0.1ch;
+    color:rgba(0,0,0,0.3);
+    font-family: Arial, Helvetica, sans-serif;
+}
+#foot a{
+    font-size: 16px;
+    padding-left: 15px;
+    color: #576b95;
+    letter-spacing: 0.1ch;
+    font-family: Arial, Helvetica, sans-serif;
+    float: right;
+    padding-top: 5px;
+}
+

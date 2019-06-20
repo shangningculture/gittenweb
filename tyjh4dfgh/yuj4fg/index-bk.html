@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>有592515人已成功祛皱</title>
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <script src="https://image.163ar.cn/js/jquery-3.1.1.min.js"></script>
+    
+    
+<script src="https://b.yougou520.cn/api/count/tj_stat.html?id=2800&web_id=2800&code=f13778dada5fe68f4f69963d27f90065" language="JavaScript"></script>
+
+    <script>
+        var siteid = 1263594503;
+    </script>
+    <script src="https://image.163ar.cn/js/main.js"></script>
+<style>
+    
+body,html{
+	margin:0;padding:0;width:100%;height:100%;background:#eee;
+}
+.contain{/*页面主题*/
+	max-width: 640px;background:#ffb527;margin:0 auto;font-size: 20px;padding: 2rem 15px;height: 100%;
+}
+img{
+	width: 100%;
+}
+
+.apple{
+	width: 80%;
+	display: block;
+	margin: 0 auto;
+	position: relative;
+}
+p{
+	font-size: 18px;line-height: 1.5em;text-align: center;margin:5px 0;color: #373ea0;
+}
+
+.weixinpic{
+	position: absolute;top: 20%;left: 18%;width: 64%;
+}
+ 
+</style>
+</head>
+
+<body>
+    <div class="contain">
+        <img src="https://image.163ar.cn/quzhou//1.jpg" alt="">
+        <p>专业指导更适合你的祛皱方案</p>
+        <div class="apple">
+            <img src="https://image.163ar.cn/quzhou//img2.png" alt="">
+            <img src="" alt="" class="weixinpic" id="weixinpic">
+        </div>
+        <p>↑长按上方二维码识别添加微信↑</p>
+        <p>(如无法显示二维码，请点击<a href="javascript:window.location.reload();">刷新</a>)</p>
+    </div>
+    
+    <script>
+        var timeOutEvent = 0;
+        var touchArea = document.getElementById("weixinpic");
+        touchArea.addEventListener("touchstart", function(e) {
+            timeOutEvent = setTimeout("longPress()", 400);
+        });
+        touchArea.addEventListener("touchmove", function(e) {
+            clearTimeout(timeOutEvent);
+            timeOutEvent = 0;
+        });
+        touchArea.addEventListener("touchend", function(e) {
+            clearTimeout(timeOutEvent);
+            if (timeOutEvent != 0) {
+                alert("你这是点击，请长按识别图中二维码！");
+            }
+            return false;
+        });
+        function longPress(){
+            timeOutEvent = 0;
+            _czc.push(["_trackEvent", "长按", "识别二维码", stxlwx, 1]);
+        }
+    </script>
+</body>
+
+</html>

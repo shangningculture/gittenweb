@@ -1,0 +1,395 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 微软雅黑;
+}
+
+.contain{
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 20px 10px 150px 10px;
+}
+
+.title{
+
+}
+
+h2{
+    font-size: 22px;
+    font-weight: 400;
+    color: #010101;
+    padding-bottom: 15px;
+}
+
+img{
+    width: 100%;
+    display: block;
+}
+
+p{
+    text-align: justify;
+    font-size: 16px;
+    color: rgb(72, 14, 0);
+    line-height: 26px;
+}
+
+.red{
+    color: red;
+}
+
+.bold{
+    font-weight: 600;
+}
+
+.pic-600{
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.pic-384{
+    max-width: 384px;
+    margin: 0 auto;
+}
+
+.wap{
+    margin-top: 15px;
+}
+
+.pic{
+    width: 100%;
+    display: block;
+}
+
+.title-01{
+    padding: 8px;
+    border: 1px dashed red;
+}
+
+.title-02{
+    border-left: 1px solid rgb(55, 74, 174);
+    padding: 8px;
+}
+
+.title-03{
+    border: 1px solid rgb(55, 74, 174);
+    box-shadow: rgb(117, 117, 117) 0px 0px 4px;
+    padding: 8px;
+    margin: 10px;
+    position: relative;
+}
+
+.tl03-01,
+.tl03-02,
+.tl03-03,
+.tl03-04{
+    position: absolute;
+    width: 6px;
+    height: 6px;
+}
+
+.tl03-01{
+    border-top: 2px solid rgb(55, 74, 174);
+    border-left: 2px solid rgb(55, 74, 174);
+    top: -10px;
+    left: -10px;
+}
+
+.tl03-02{
+    border-top: 2px solid rgb(55, 74, 174);
+    border-right: 2px solid rgb(55, 74, 174);
+    top: -10px;
+    right: -10px;
+}
+
+.tl03-03{
+    border-bottom: 2px solid rgb(55, 74, 174);
+    border-left: 2px solid rgb(55, 74, 174);
+    bottom: -10px;
+    left: -10px;
+}
+
+.tl03-04{
+    border-bottom: 2px solid rgb(55, 74, 174);
+    border-right: 2px solid rgb(55, 74, 174);
+    bottom: -10px;
+    right: -10px;
+}
+
+.title-04{
+    line-height: 50px;
+    background-color: red;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.bg-yellow{
+    background-color: rgb(255, 202, 0);
+    color: rgb(224, 17, 17);
+}
+
+.center{
+    text-align: center;
+}
+
+.hengxian{
+    width: 80%;
+    height: 1px;
+    background-color: rgb(203, 27, 69);
+    margin: 0 auto;
+    position: relative;
+    margin-top: 5px;
+    margin-bottom: 35px;
+}
+
+.hengxian span{
+    display: inline-block;
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background-color: rgb(203, 27, 69);
+    border-radius: 50%;
+    top: -3px;
+    left: 50%;
+}
+
+.hengxian p{
+    color: rgb(203, 27, 69);
+    text-align: center;
+}
+
+.title-05{
+    border-left: 2px solid rgb(220, 29, 37);
+    line-height: 40px;
+    background-color: rgb(237, 237, 237);
+    color: rgb(72, 118 0);
+}
+
+.big{
+    font-size: 18px;
+}
+
+.zongse{
+    color: rgb(192, 0, 0);
+}
+
+.title-06{
+    border: 2px solid rgb(253, 46, 110);
+    padding: 8px;
+    border-radius: 6px;
+}
+
+.title-07{
+    display: inline-block;
+    line-height: 40px;
+    background-color: rgb(245, 189, 209);
+    color: rgb(155, 24, 71);
+    font-size: 20px;
+    font-weight: 600;
+    padding: 0px 10px;
+    border-radius: 5px;
+}
+
+.title-08{
+    display: inline-block;
+    color: #FFFFFF;
+    background-color: rgb(253, 46, 110);
+    padding: 6px 8px;
+    border-radius: 5px;
+    box-shadow: rgb(165, 165, 165) 2px 2px 1px;
+    font-weight: 600;
+}
+
+.view-title{
+    text-align: center;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #a40000;
+}
+
+.view-title span{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: #a40000;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    color: #ffffff;
+}
+
+.view-list{
+    padding: 20px 0px;
+    border-bottom: 2px dashed #f1f1f1;
+}
+
+.user-img{
+    width: 50px;
+    float: left;
+
+}
+
+.user-img img{
+    border-radius: 50%;
+}
+
+.view-right{
+    margin-left: 70px;
+    padding-top: 8px;
+}
+
+.fl-right{
+    float: right;
+}
+
+.fl-right img{
+    width: 18px;
+    display: inline-block;
+}
+
+.name{
+    color: #2082e6;
+}
+
+.day{
+    color: #2082e6;
+    font-size: 14px;
+}
+
+.recall{
+    color: #676768;
+    padding-top: 5px;
+}
+
+.recall-txt{
+    background-color: #f1f1f1;
+    padding: 0 5px;
+}
+
+.add-weixin{
+    padding: 8px;
+    border: 3px solid red;
+}
+
+.weixin{
+    color: red;
+    background-color: yellow;
+    font-size: 20px;
+}
+
+.bottom{
+    position: fixed;width:100%;bottom:0px;left:0px;
+}
+.bottom_cont{
+    max-width: 640px;padding:10px;line-height: 22px;text-align: center;margin:0 auto;background:red;font-size: 18px;color:#fff;font-weight: 600;
+}
+
+
+ .button{
+            position: fixed;
+            text-align: center;
+            color: #aaa;
+            top: 40%;
+            left: 50%;
+            margin-left: 340px;
+            background: #fff;
+            border-radius: 0.3rem;
+            padding: 0.24rem 0.24rem 0.16rem;
+            border: 0.05rem solid #217519;
+        }
+        img{
+            display: block;
+        }
+        .button a span{
+            color: #217519!important;
+            font-weight: bold;
+            font-size: 0.55rem;
+            line-height: 20px;
+        }
+        @media screen and (max-width: 870px){
+            .button{
+                left: 100%;
+                margin-left: -80px;
+            }
+        }
+
+
+
+        #layer {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(60,60,60,.9);
+}
+
+.wechat {
+    position: absolute;
+    top: 20%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    max-width: 620px;
+}
+
+.wechat-inner {
+    position: relative;
+    text-align: center;
+}
+
+.wechat img {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.num-1 {
+    position: absolute;
+    z-index: 200;
+    top: 21%;
+    left: 36%;
+    color: yellow;
+    font-size: 20px;
+    background-color: transparent;
+    line-height: 28px;
+    font-weight: 600;
+}
+
+.go-2 {
+    position: absolute;
+    top: 52%;
+    right: 30%;
+    width: 40%;
+    height: 2.5rem;
+
+}
+
+#close {
+    position: absolute;
+    top: 0;
+    right: 2%;
+    width: 40px;
+    height: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

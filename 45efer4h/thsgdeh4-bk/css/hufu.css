@@ -1,0 +1,76 @@
+﻿*{margin:0;font-size: 16px;padding:0;font-family: "微软雅黑";}
+.container{margin:0 auto;width:100%;padding:0;}
+.menu{    width: 23.36px;
+    height: 23.36px;
+    position: absolute;
+    left: 14.08px;
+    top: 16.96px;
+    background: url(../images/top_left.png) no-repeat;
+    background-size: 23.36px;
+    z-index: 5;}
+.head h4{text-align: center;line-height: 30px;}
+.nav{border-top:1px solid #ccc;border-bottom:1px solid #ccc;padding:0px 5px;}
+.shou{border-right:1px solid #ccc;padding:10px 10px;margin-left: -15px;position: relative;top:3px;}
+.hu{margin-left: 10px;position: relative;top:3px;}
+.head h2{font-size: 26px;font-weight: bold;line-height: 35px;text-align: justify;}
+.content{margin-top: 20px;}
+.content p{line-height: 26px;}
+.dao{background: #eee;padding:5px 10px;}
+.dao p{margin:0;text-align: justify;line-height: 26px;}
+.wei{color:#f00;background: #ff0;font-weight: bold;}
+.read{color:#fff;background: #f00;}
+.img-circle{margin-top: 30px;}
+.teacher{line-height: 26px;font-weight: bold;margin-top: 20px;}
+.day {color:#fff;background: #f00;padding:8px;margin-bottom:0;}
+.yellow{background: #ff0;}
+.nine{margin-top: 20px;}
+.hong{font-weight: bold;color:#f00;}
+.cu{font-size: 20px;font-weight: bold;}
+.tuo{font-size: 22px;color:#f00;text-align: center;margin-top: 20px;}
+.error{background: #000;color:#fff;text-align: center;padding:9px 0;font-size: 20px;}
+.red{color:#f00;}
+.section{margin-top:30px;}
+.header{border-bottom:4px solid #f00;width:80%;}
+.zhi{font-size: 20px;color:#f00;}
+.zhen{font-size: 24px;color:#f00;}
+.line{border-top:4px dotted #f00;}
+.zhong{text-align: center;font-weight: bold;font-size: 22px;}
+.center{text-align: center;background: #ff0;}
+.hui{border:3px solid #f00;padding:10px;}
+.no{border:3px solid #f00;padding:10px;}
+.letter{margin-top: 30px;color:#f00;font-size: 24px;text-align: center;font-weight: bold;}
+#toweixin{    display: block;
+    width: 50%;
+    margin: 36px auto;
+    background: #1356e2;
+    color: #fff;
+    border-radius: 12px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    box-shadow: 0 1px 3px 0 #000;}
+.comment h4{text-align: center;font-weight: bold;margin-top: 30px;}
+.ping{border-bottom:1px solid #ccc;overflow: hidden;padding-bottom: 10px;}
+.left{float:left;width:12%;}
+.right{float:left;width:88%;margin-top: 30px;}
+.title{color:#00f;font-size: 14px;}
+.address{color:#aaa;margin-left: 5px;}
+.right p{font-size: 14px;}
+.min{font-size: 14px;}
+.ju{color:#aaa;font-size: 14px;margin-left: 5px;}
+.num{border-right:1px solid #ccc;padding-right:10px;font-size: 14px;color:#aaa;}
+.righ p{text-align: center;}
+a:hover{text-decoration: none;}
+.navbar {min-height: 40px;}
+.navbar-default{padding:5px;background:#f00;color:#fff;text-align: center;margin:auto;}
+.btn{background: #fff000;color:#000;position: relative;top:-5px;}
+.chen{font-size: 16px;color:#fff;position: relative;top:5px;}
+.lett{font-size: 20px;color:#ff0;font-weight: bold;}
+.btn-sm{margin-top: 15px;padding:5px;}
+/*.chang{font-size: 18px;color:#ff0;position: relative;}
+.lao{color:#fff;font-size: 16px;}*/
+@media screen and (max-width: 430px) {
+     .chen{font-size:14px;margin-left: -8px;}
+     .lett{font-size: 18px;}
+}
+

@@ -1,0 +1,120 @@
+body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select{margin:0;padding:0}
+body{font-family:"微软雅黑","Arial Narrow",HELVETICA;background:#ddd;-webkit-text-size-adjust:100%;}
+a{color:#172c45;text-decoration:none}
+a:hover{color:#cd0200;text-decoration:underline}
+em{font-style:normal}
+li{list-style:none}
+img{border:0;vertical-align:middle}
+body{font-size:62.5%;}
+.floatl{float:left}
+.floatr{float:right}
+.hide{display:none}
+.show{display:block}
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+
+.mian{max-width:640px;width:100%;margin:0 auto;box-sizing:border-box;background:#fff;overflow:hidden;}
+.mian h1{width:100%;border-bottom:1px solid #ddd;font-size:18px;line-height:200%;padding:10px 10px;}
+
+.text{font-size:18px;line-height:200%;padding:10px 0px;text-indent:2em;margin-top:5px;}
+
+
+
+.align{text-align:center;}
+.red{background:#cd0000;color:#fff;}
+.m{color:red;}
+
+
+
+
+
+
+
+.xian{text-decoration:underline;font-weight:700}
+.toux img{float:left;width:40px;height:40px;border-radius:50%;padding-right:10px;margin-top:8px;margin-left:5px;}
+.toux h3 span{border:1px solid #1892DA;border-radius:3px;padding:2px 5px;color:#1892DA;margin-right:5px;}
+.toux h3{color:#ddd;font-size:14px;}
+.toux h2{margin-bottom:5px;font-weight:400;}
+
+.bottom{position:fixed;bottom:0px;left:0px;width:100%;background:#fff;border-top:1px solid #ddd;font-size:18px;line-height:260%;text-align:center;padding:10px 0px;}
+.bottom span{background:red;color:#fff;padding:0px 10px}
+
+
+
+
+
+.right{position:fixed;right:5px;bottom:35%;}
+p{font-size:18px;line-height:200%;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#shadowhide{
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    z-index: 200;
+    background-color: rgba(0, 0, 0, 0.72);
+    display: none;
+	width:100%;
+	margin:0 auto;
+}
+.tankuang{width:300px;font-size:18px;line-height:200%;}
+#shadowhide .tip{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 10px;
+}
+#shadowhide .tip span{
+    display: inline-block;
+}
+.dfdjfdff .cont,
+#shadowhide .tankuang{
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+}
+#shadowhide .tankuang{
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    background-color: #fff;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px 0;
+}
+#shadowhide  h3{
+    margin: 4px auto;
+    padding: 5px 0;
+}
+#shadowhide .close{
+    position: absolute;
+    right: 4px;
+    top: 4px;
+    cursor: pointer;
+    width: 24px;
+}
+

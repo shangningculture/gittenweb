@@ -1,0 +1,336 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>跟老师一起减肥</title>
+    <script src="https://image.163ar.cn/wechat/jf01/static/js/jquery-1.8.3.min.js"></script>
+    <script src="https://b.yougou520.cn/api/count/tj_stat.html?id=4350&web_id=4350&code=520c9da3fa9d79f00e74edb046ebfe48" language="JavaScript"></script>
+    <script>
+        var siteid = null;//CNZZ统计ID
+    </script>
+    <script src="https://image.163ar.cn/wechat/jf01/static/js/mains.js"></script>
+
+
+
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-decoration: none;
+        }
+
+        body,
+        div,
+        button,
+        dd,
+        dl,
+        dt,
+        fieldset,
+        form,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        input,
+        legend,
+        li,
+        ol,
+        p,
+        select,
+        table,
+        td,
+        textarea,
+        th,
+        ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-size: 13px;
+            color: #000;
+            font-family: 'Î¢ÈíÑÅºÚ', Arial, Helvetica, sans-serif;
+            background: #f6f6f6;
+            overflow-x: hidden;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5 {
+            font-weight: normal;
+        }
+
+        * {
+            outline: none;
+        }
+
+        ol,
+        ul {
+            list-style: none;
+        }
+
+        em,
+        i {
+            font-style: normal;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        img {
+            vertical-align: top;
+            border: 0px;
+            width: 100%;
+        }
+
+        a {
+            text-decoration: none;
+            border: 0px;
+            color: #000;
+        }
+
+        img.lazy,
+        img.lazy_eff {
+            background: url(static/images/loading.gif) no-repeat 50% 50%;
+        }
+
+        button,
+        input[type=button] {
+            border: 0px none;
+            cursor: pointer;
+        }
+
+        @media screen and (min-width:320px) {
+
+            .main,
+            body,
+            html {
+                font-size: 22px !important;
+            }
+        }
+
+        @media screen and (min-width:360px) {
+
+            .main,
+            body,
+            html {
+                font-size: 22px !important;
+            }
+        }
+
+        @media screen and (min-width:375px) {
+
+            .main,
+            body,
+            html {
+                font-size: 22px !important;
+            }
+        }
+
+        @media screen and (min-width:414px) {
+
+            .main,
+            body,
+            html {
+                font-size: 22px !important;
+            }
+        }
+
+        @media screen and (min-width:600px) {
+
+            .main,
+            body,
+            html {
+                font-size: 25.5px !important;
+            }
+        }
+
+        @media screen and (min-width:640px) {
+
+            .main,
+            body,
+            html {
+                font-size: 27px !important;
+            }
+        }
+
+
+
+        .depart {
+            width: 100%;
+            height: .4rem;
+            background: #f2f2f2;
+        }
+
+        .case_main {
+            padding: 0 1rem 0;
+        }
+
+        .case_main p {
+            color: #000;
+        }
+
+        .qq_Mask {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, .75);
+            z-index: 1000000000;
+            display: none;
+        }
+
+        .qq_Mask img {
+            position: absolute;
+            left: 0;
+            top: 6rem;
+        }
+
+        .qq_Mask .Mask_txt {
+            position: absolute;
+            left: 5rem;
+            top: 10.5rem;
+        }
+
+        .qq_Mask .Mask_txt h3 {
+            font-weight: bold;
+            margin-bottom: .6rem;
+        }
+
+        .qq_Mask .close_Mask {
+            width: 3rem;
+            height: 3rem;
+            position: absolute;
+            right: 0;
+            top: 6rem;
+        }
+
+        .wechat {
+            background: #ffff00;
+            text-align: center;
+            padding: .4rem 0;
+            margin-bottom: 1rem;
+        }
+
+        .wechat span {
+            background: #e60012;
+            color: #000;
+            padding: .1rem .3rem;
+        }
+
+        .Link {
+            color: #66b3ff;
+            text-decoration: underline;
+        }
+
+        .Mask_wechat {
+            background: #ff679a;
+            padding: .5rem 0 .7rem;
+            text-align: center;
+            color: #fff;
+            font-size: 1.9rem;
+            width: 78%;
+            margin: .6rem auto 0;
+            border-radius: .5rem;
+        }
+
+        .case_main .wechat_txt {
+            text-align: center;
+            font-size: 1.2rem;
+            margin-bottom: 1.6rem;
+        }
+
+        .case_main .wechat_txt p {
+            font-size: 1rem !important;
+        }
+
+        .case_main .wechat_txt .wechat_txtnum {
+            color: #fff;
+            background: #8fc31f;
+            border-radius: 2rem;
+            display: inline-block;
+            padding: 0rem .5rem .3rem;
+            margin: .4rem 0;
+        }
+
+        .InfoTitle {
+            text-align: center;
+            background: #22ac38;
+            padding: .3rem 0;
+            margin-bottom: 1.2rem;
+        }
+
+        .InfoTitle h3 {
+            color: #fff;
+        }
+
+        .box_80 {
+            width: 80%;
+            margin: 1rem auto;
+        }
+
+        .case_main .middle_voice {
+            padding: .6rem .3rem;
+            box-sizing: border-box;
+            border: 1px solid #e5e5e5;
+        }
+
+        .case_main .fit_people {
+            margin-bottom: 1rem;
+        }
+
+        .case_main .fit_people p {
+            text-indent: 2em;
+        }
+
+        .case_main .fit_people .fitTitle {
+            text-align: center;
+            color: #8fc31f;
+            font-size: 1.1rem;
+            margin: .8rem 0 .4rem;
+        }
+
+        .case_main .fit_people .fitTitle img {
+            width: 4%;
+            margin-top: .3rem;
+            margin-right: .2rem;
+        }
+
+        .wrapper {
+            width: 92%;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="pr">
+            <div class="Mask_txt">
+                <p style="padding-top:100px;"></p>
+                <!-- <h3 style="font-size:1.9rem; text-align:center; padding-bottom:10px;">加老微信 让你性福</h3>
+                 <h3 style="font-size:1.7rem; text-align:center; padding-bottom:10px;">微信号：&nbsp;<font style="background: #FF9"><script>document.write(myEcode);</script></font></h3>
+     -->
+                <p style="text-align: center; margin-top: .6rem; margin-bottom:1.3rem; font-size: 1.5rem; color: #9b9b9b;">↓长按识别图中二维码↓</p>
+                <div style="text-align:center; margin:0 auto;">
+                    <img src="" alt="" class="weixinpic">
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div style="display:none">
+    </div>
+</body>
+
+</html>

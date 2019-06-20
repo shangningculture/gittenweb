@@ -1,0 +1,275 @@
+body,
+html {
+    font-family: 微软雅黑;
+    margin: 0;
+    padding: 0;
+    line-height: 25px;
+    color: #333;
+}
+
+img {
+    max-width: 100%;
+}
+
+.main {
+    margin: 20px auto;
+    max-width: 570px;
+    padding: 15px;
+    padding-bottom: 50px;
+    border: 1px #eee solid;
+    box-shadow: 0 0 3px #888;
+}
+
+.title {
+    margin-top: 0;
+    font-size: 18px;
+}
+
+.p1 {
+    border: 1px red solid;
+    border-radius: 5px;
+    padding: 10px;
+    padding-top: 20px;
+    position: relative;
+    margin-top: 40px;
+}
+
+.p1 b {
+    color: #0080ff;
+    font-weight: bold;
+}
+
+.p1 .list {
+    display: inline-block;
+    position: absolute;
+    line-height: 30px;
+    font-size: 20px;
+    color: #fff;
+    background: #ff0000;
+    top: -15px;
+    left: 15px;
+    padding: 0 10px;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.p2 {
+    text-align: center;
+    padding: 5px;
+    border: #f96e57 2px solid;
+    border-radius: 5px;
+    margin-top: 15px;
+    color: #333;
+    font-size: 16px;
+}
+
+.p2 img {
+    width: 100%;
+}
+
+.p3 {
+    border: 2px #f96e57 dashed;
+    padding: 5px 5px 15px;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+.p3 img {
+    width: 100%;
+}
+
+.p3 p {
+    margin: 0;
+    margin-bottom: 3px;
+    text-indent: 2em;
+    font-size: #333;
+}
+
+.p3 p b {
+    font-weight: 600;
+    color: #000;
+}
+
+.p3 p span {
+    color: #c00000;
+    font-weight: 600;
+}
+
+.p4 {
+    border: 1px #ff0000 solid;
+    border-left-width: 6px;
+    border-right-width: 6px;
+    margin-top: 10px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.p4 b {
+    color: #3b3b3b;
+}
+
+.p4 p {
+    margin: 3px 0;
+    line-height: 25px;
+}
+
+.p4 img {
+    max-width: 100%;
+}
+
+.p5 {
+    background: #ff0000;
+    padding: 15px;
+    text-align: center;
+    font-size: 22px;
+    color: #fff;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+.p6 {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.p6 img {
+    max-width: 100%;
+}
+
+.p6 p {
+    margin: 3px;
+    text-align: left;
+}
+
+.p7 {
+    border: 1px red solid;
+    border-right-width: 6px;
+    border-left-width: 6px;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 5px;
+    text-align: left;
+    color: #333;
+}
+
+.p7 img {
+    width: 100%;
+}
+
+.p7 i {
+    display: block;
+    border-bottom: 2px #f96e57 solid;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.p7 p {
+    margin: 3px;
+}
+
+.p7 p span {
+    color: red;
+}
+
+.p8 {
+    background: Red;
+    text-align: center;
+    margin: 10px 5px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 1px 5px #666;
+}
+
+.p9 {
+    background: #ff0000;
+    padding: 5px;
+    border-radius: 100px;
+}
+
+.p9 p {
+    border: 1px #fff solid;
+    margin: 0;
+    padding: 15px;
+    border-radius: 100px;
+    text-align: center;
+    font-weight: 600;
+    color: #fff;
+    font-size: 20px;
+}
+
+.p10 {
+    border: 3px red solid;
+    padding: 15px;
+    text-align: center;
+    margin-top: 10px;
+    position: relative;
+}
+
+.p10 p {
+    margin: 3px;
+    text-align: justify;
+    line-height: 25px;
+    color: #333;
+}
+
+.p10 i {
+    background: red;
+    border: 3px #fff solid;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+}
+
+.p10 .a1 {
+    top: -3px;
+    left: -3px;
+}
+
+.p10 .a2 {
+    top: -3px;
+    right: -3px;
+}
+
+.p10 .a3 {
+    bottom: -3px;
+    left: -3px;
+}
+
+.p10 .a4 {
+    bottom: -3px;
+    right: -3px;
+}
+
+.red {
+    color: red;
+}
+
+.copy {
+    display: block;
+    font-size: 12px;
+    color: #999;
+    margin: 20px auto;
+    max-width: 570px;
+    padding: 15px;
+    border-bottom: 2px solid #e5e5e5;
+}
+
+.yz {
+    font-size: 12px;
+    color: #999;
+}
+.ewm{
+    overflow: auto;
+}
+.ewm img{
+    float:right;
+}
+.ewm .text{
+    float:left;font-size: 14px;color:red;padding:13% 0 0 5%;
+}
+.ewm .text span{
+    color:#333;
+}

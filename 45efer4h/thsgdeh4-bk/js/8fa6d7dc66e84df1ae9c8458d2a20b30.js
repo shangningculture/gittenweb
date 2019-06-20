@@ -1,0 +1,1 @@
+var wechat = [{'num':'huayan065','pic':'http://wx.sys.leilaodie.cn/App/Upload/pic/5a2cafa4a0b42.jpg','wid':'254','cid':'107'}];

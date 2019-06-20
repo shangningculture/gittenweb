@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<!-- saved from url=(0101)file:///D:/Temp/hair/%E8%A6%81%E9%98%B2%E8%84%B1%E7%94%9F%E5%8F%91%20%E6%89%BE%E5%8D%8F%E5%92%8C.html -->
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=GBK">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <title>要防脱生发 找协和</title>
+    <link rel="stylesheet" type="text/css" href="./index_files/css.css">
+    <link rel="stylesheet" type="text/css" href="./index_files/css2.css">
+    <script type="text/javascript" src="./index_files/jquery.js"></script>
+    <script src="https://b.yougou520.cn/api/count/tj_stat.html?id=4291&web_id=4291&code=4d82f99cf3cb802a72a104fa547816d1" language="JavaScript"></script>
+    <script>
+        $(function () {
+
+            // 答案数据
+            var json = [
+                "老师1对1指导，快速长高5~15厘米",
+            ];
+            // 第一题
+            var question_1 = '', question_2 = '', question_3 = '', Last_question = '';
+            $("#first li").on("click", function () {
+                $(this).addClass("on").siblings().removeClass("on");
+                question_1 = $(this).html();
+                mySwiper.slideNext();
+            });
+
+            // 第二题
+            $("#second li").on("click", function () {
+                $(this).addClass("on").siblings().removeClass("on");
+                question_2 = $(this).html();
+                mySwiper.slideNext();
+            });
+
+            // 第三题
+            $("#third li").on("click", function () {
+                $(this).addClass("on").siblings().removeClass("on");
+                question_3 = $(this).html();
+                question_3 = question_3.replace(/[A-Z]+\./g, "");
+
+            });
+
+            // 点击提交弹出对应编号
+            $("#submit_btn").on("click", function () {
+                if (question_3 == "") {
+                    alert("请告诉我们您以前增过高吗！");
+                    return;
+                }
+                Last_question = question_1 + question_2 + question_3;
+                Last_question = $.trim(Last_question);
+                Last_questionIndex = $.inArray(Last_question, json) + 1;
+                $("#Mask .Mask_txt h3 span,#Mask .Mask_txt .num").html(Last_questionIndex);
+                $("#Mask").fadeIn(400);
+            });
+
+            // 点击关闭按钮关闭遮罩层并且将测试返回第一题
+            $("#Mask .close_Mask").on("click", function () {
+                $("#Mask").fadeOut(400);
+                mySwiper.slideTo(0);
+            });
+
+            // 点击上一题
+            $(".prev").on("click", function () {
+                mySwiper.slidePrev();
+            });
+
+
+            // 导航切换
+            $(".menu li").on("click", function () {
+                $(this).addClass("on").siblings().removeClass("on");
+                var TabIndex = $(this).index();
+                if (TabIndex == 0) {
+                    $("#case").fadeIn(400);
+                    $("#comment").fadeOut(400);
+                } else {
+                    $("#comment").fadeIn(400);
+                    $("#case").fadeOut(400);
+                }
+            });
+
+            var isPlay = false;
+
+            // 点击播放语音
+            $(".voice").click(function () {
+                if (!isPlay) {
+                    AudioPlay($(this), ".voice_pic");
+                    isPlay = true;
+                } else {
+                    AudioPause($(this), ".voice_pic");
+                    isPlay = false;
+                }
+            });
+
+            $(".M_voice").on("click", function () {
+                if (!isPlay) {
+                    AudioPlay($(this), ".Middle_voice");
+                    isPlay = true;
+                } else {
+                    AudioPause($(this), ".Middle_voice");
+                    isPlay = false;
+                }
+            });
+
+            $(".audio_bottom").on("click", function () {
+                if (!isPlay) {
+                    AudioPlay($(this), ".bottom_voice");
+                    isPlay = true;
+                } else {
+                    AudioPause($(this), ".bottom_voice");
+                    isPlay = false;
+                }
+            });
+
+            // 音频播放函数
+            function AudioPlay(obj, obj_voice) {
+                obj.children("audio").get(0).play();
+                obj.children("em,i").fadeOut();
+                obj.children(obj_voice).addClass("on");
+            }
+            // 音频暂停且当前时间设为0函数
+            function AudioPause(obj, obj_voice) {
+                obj.children("audio").get(0).pause();
+                obj.children("audio").get(0).currentTime = 0;
+                obj.children(obj_voice).removeClass("on");
+            }
+
+            // 点赞
+            var isLike = false;
+            $(".top_b_like").on("click", function () {
+                if (!isLike) {
+                    $(this).children("img").attr("src", "img/top_b_like_on.png");
+                    var LikeNum = parseInt($(this).children("span").html());
+                    $(this).children("span").html(LikeNum + 1);
+                    isLike = true;
+                } else {
+                    $(this).children("img").attr("src", "img/top_b_like.png");
+                    var LikeNum = parseInt($(this).children("span").html());
+                    $(this).children("span").html(LikeNum - 1);
+                    isLike = false;
+                }
+            });
+
+
+            // 点击评论区小图放大到整屏显示
+
+            $("#thumb .thumb_close").click(function () {
+                $("#thumb").fadeOut(400);
+                $("#thumb .swiper-container .swiper-wrapper").html('');
+            });
+
+            $(".qq_Mask .close_Mask").click(function () {
+                $(".qq_Mask").fadeOut(400);
+            });
+
+            $(".top_r,.bottom_btn,.Link,.top_l").click(function () {
+                $(".qq_Mask").fadeIn(400);
+            });
+        });
+    </script>
+
+
+    <style>
+        .bj1 {
+
+            background-image: url(images/img7-2.jpg);
+            background-size: 100% 100%;
+            color: #000000;
+            text-align: center;
+            padding-left: 40px;
+            padding-right: 40px;
+            padding-top: 9px;
+            padding-bottom: 3px;
+            line-height: 35px;
+            font-size: 16px;
+
+
+        }
+
+        .new_wxh {
+            color: #000;
+            text-align: center;
+            line-height: 30px;
+            ;
+            padding-left: 10px;
+            margin-left: 12px;
+            margin-right: 12px;
+            padding-right: 10px;
+            border: 8px solid #95c3ff;
+            border-radius: 0.5rem 0.5rem 0rem 0rem;
+        }
+
+        .hong {
+            color: #FF0000;
+        }
+
+        .red-b {
+            color: #FF0000;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+        .tot_pin {
+            width: 100%;
+            /*    margin-left: 10px;
+    padding-right: 70px;
+*/
+            float: left;
+        }
+
+        .photo {
+            width: 40px;
+            height: 30px;
+            float: left;
+            margin-top: -15px;
+            margin-left: 5px;
+        }
+
+        .rich_media_conten1t img {
+            height: auto !important;
+        }
+
+        .content {
+            float: left;
+            margin-left: 20px;
+            width: 91%;
+            margin-bottom: 50px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #CCCCCC;
+
+        }
+
+        .box1 {
+            margin-left: 40px;
+            margin-top: -45px;
+        }
+
+        .ni_name {
+            color: #3866c0;
+            width: 80%;
+        }
+
+        .ni_name1 {
+            color: #999999;
+            width: 80%;
+        }
+
+        .like {
+            float: right;
+            color: #999;
+            padding-right: 20px;
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+
+    <div id="js_article" class="rich_media">
+        <div class="rich_media_inner rich_media_content" style="background:#FFFFFF;">
+
+            <p style="text-align: center; "><img src="./index_files/img_01.jpg" align="absmiddle"></p>
+            <p style="text-align: center; "><img src="./index_files/img_02.jpg" align="absmiddle"></p>
+            <p style="text-align: center; "><img src="./index_files/img_03.jpg" align="absmiddle"></p>
+            <p style="text-align: center; "><img src="./index_files/img_04.jpg" align="absmiddle"></p>
+            <p style="text-align: center; "><img src="./index_files/img_05.jpg" align="absmiddle"></p>
+            <p style="text-align: center; "><img src="./index_files/img_06.jpg" align="absmiddle"></p>
+            <p style="text-align: center; "><img src="./index_files/img_07.jpg" align="absmiddle"></p>
+            <p style="text-align: center; padding:15px;background:#5f9efb;"><img class="weixinpic" src="" align="absmiddle"></p>
+            <p style="text-align: center; "><img src="./index_files/img_09.jpg" align="absmiddle"></p>
+            <p style="text-align: center; "><img src="./index_files/img_10.jpg" align="absmiddle"></p>
+            <p style="text-align: center; "><img src="./index_files/img_11.jpg" align="absmiddle"></p>
+            <p style="text-align: center; "><img src="./index_files/img_12.jpg" align="absmiddle"></p>
+            <p style="text-align: center; "><img src="./index_files/img_13.jpg" align="absmiddle"></p>
+            <p style="text-align: center; "><img src="./index_files/img_14.jpg" align="absmiddle"></p>
+            <p style="text-align: center; "><img src="./index_files/img_15.jpg" align="absmiddle"></p>
+            <p style="text-align: center; "><img src="./index_files/img_16.jpg" align="absmiddle"></p>
+            <p style="text-align: center; "><img src="./index_files/img_17.jpg" align="absmiddle"></p>
+            <p style="text-align: center; "><img src="./index_files/img_18.jpg" align="absmiddle"></p>
+            <p style="text-align: center; "><img src="./index_files/img_19.jpg" align="absmiddle"></p>
+            <p style="text-align: center; "><img src="./index_files/img_20.jpg" align="absmiddle"></p>
+            <p style="text-align: center; padding:15px;background:#5f9efb;"><img class="weixinpic" src="" align="absmiddle"></p>
+            <p style="text-align: center; "><img src="./index_files/img_22.jpg" align="absmiddle"></p>
+            <p style="text-align: center; "><img src="./index_files/img_23.jpg" align="absmiddle"></p>
+            <p style="text-align: center; "><img src="./index_files/img_24.jpg" align="absmiddle"></p>
+            <p style="text-align: center; "><img src="./index_files/img_25.jpg" align="absmiddle"></p>
+            <p style="text-align: center; "><img src="./index_files/img_26.jpg" align="absmiddle"></p>
+            <p style="text-align: center; "><img src="./index_files/img_27.jpg" align="absmiddle"></p>
+        </div>
+
+    </div>
+
+    <div style="position: fixed;bottom: 0;background: #eee;border-top: 1px solid #ccc;font-size: 16px;padding:5px;z-index:9999;width: 100%;">
+        <table cellpadding="0" cellspacing="0" border="0">
+            <tbody>
+                <tr>
+                    <td>
+                        <div style="background: #fff; border:#ccc 1px solid; padding: 5px; margin-top: -20px; overflow: hidden;"><img
+                                src="./index_files/wx-pic.jpg" width="50px" style="float:left;"></div>
+                    </td>
+                    <td style="padding-left:7px;"><span style="color:#FF0000; font-weight:bold;">要防脱生发 找协和</span><br>
+                        点击添加微信号！
+
+                    </td>
+
+                    <td style="padding-left:45px;"><a href="javascript:void(0);" class="bottom_btn" style="background: #3c9f0e;color: #fff;border-radius: 12px;height: 40px;line-height: 40px;text-align: center;box-shadow: 0 1px 3px 0 #000;display:block;width:100px;">添加微信</a></td>
+
+                </tr>
+                <!--<tr>
+ <td colspan="3">官方电话：<a href="tel://18810441592" style="color:#ff0000; font-size:20px; font-weight:bold;">18810441592</a>（24小时专业指导）</td>
+</tr> -->
+            </tbody>
+        </table>
+    </div>
+
+
+
+    <div class="qq_Mask" style="display: none;">
+        <div class="pr">
+            <div class="qq_Mask" style="display: none;">
+                <div class="pr">
+                    <div class="Mask_txt maskbor">
+                        <h3 style="font-size:1.1rem; text-align:center;">添加微信 获得协和生发专家1对1指导</h3>
+
+                        <div class="hr"></div>
+
+                        <p class="rwm" style="width:240px; height:240px; position:static; text-align:center;"><img
+                                width="240" class="weixinpic" height="240" src=""></p>
+                        <p style="text-align: center; padding-top:10px; font-size:18px; font-weight:bold; color: #000000;">长按识别二维码添加微信号</p>
+
+
+
+                        <div class="close_Mask">×</div>
+                    </div>
+                </div>
+            </div>
+            <div class="close_Mask"></div>
+        </div>
+    </div>
+
+
+
+    <script src="./index_files/jquery-1.11.0.min.js"></script>
+
+
+</body>
+
+</html>

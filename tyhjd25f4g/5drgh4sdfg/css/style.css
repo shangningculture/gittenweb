@@ -1,0 +1,26 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.contain{
+    max-width: 640PX;
+    margin: auto;
+}
+
+img{
+    width: 100%;
+    display: block;
+}
+
+.ewm_box{
+    position: relative;
+}
+
+.weixinpic{
+    position: absolute;
+    width: 51%;
+    top: 24%;
+    left: 2%;
+}

@@ -1,0 +1,65 @@
+html,body,.main{
+  width:100%;height:100%;margin:0;padding:0;
+}
+::-webkit-scrollbar{width:5px;}
+::-webkit-scrollbar-thumb{width:5px;background:#CBCBCB;border-radius: 5px;}
+::-webkit-scrollbar-thumb:hover{background:#2486ff}
+.maxTabView {
+  text-align: center;
+}
+.maxTabView .ui-tab-tab{
+  display: inline-block;margin:0 0;float: none;
+}
+.minmainbox{
+  width:100%;height:calc(100% - 41px);margin:0;
+}
+.minmain{
+  width:100%;height:100%;overflow: hidden;
+  overflow-y: auto;
+}
+.minmain .boxitem{
+  padding:15px;
+  width: 800px;margin:0 auto;
+  max-width: calc(100% - 30px);
+}
+
+.toolsitem{
+  margin-top: 30px;
+}
+.setbox .tips{
+  font-size: 14px;color:#999;
+}
+.setbox{
+  margin-top: 10px;padding:5px;border-radius: 5px;border:1px #cfcfd4;border-style: dashed;
+}
+.toolsitem h2{
+  margin:0;font-family: 楷体;border:0px solid #2486ff;border-left-width: 2px;padding:0px 15px;
+  transition: all 0.3s;cursor: pointer;font-size: 30px;
+}
+.toolsitem h2:hover{
+  border-left-width: 6px;color:#2486ff;
+}
+.toolsitem .valubox{
+  margin: 10px 0;
+}
+.toolsbtnlist{
+  display: flex;
+}
+.toolsbtnlist .toolsbtn{
+  flex: 1; margin:5px;
+}
+
+.codeitem{
+  margin-top: 30px;
+}
+.codeitem h2{
+  margin:0;font-family: 楷体;border:0px solid #2486ff;border-left-width: 2px;padding:0px 15px;
+  transition: all 0.3s;cursor: pointer;font-size: 30px;
+}
+.codeitem h2:hover{
+  border-left-width: 6px;color:#2486ff;
+}
+.codetext{
+  border:1px solid #666;margin:10px 0;overflow: hidden;border-radius: 5px;opacity: 0.8;
+  height: 400px;
+}

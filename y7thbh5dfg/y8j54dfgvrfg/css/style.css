@@ -1,0 +1,47 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.contain{
+    max-width: 600px;
+    padding: 20px;
+    margin: auto;
+    background-color: #ffb527;
+    height: 100%;
+}
+
+img{
+    display: block;
+    width: 100%;
+}
+
+.center{
+    text-align: center;
+}
+
+.title{
+    font-size: 20px;
+    color: #373ea0;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.erweima-box{
+    position: relative;
+    max-width: 350px;
+    margin: auto;
+}
+
+.weixinpic{
+    position: absolute;
+    top: 23%;
+    left: 20%;
+    width: 60%;
+}
+
+p{
+    color: #373ea0;
+    font-weight: bold;
+    line-height: 30px;
+}

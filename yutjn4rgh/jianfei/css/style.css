@@ -1,0 +1,149 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: '微软雅黑';
+}
+
+.contain {
+    box-shadow: 0 0 10px rgba(0, 0, 0, .4);
+    max-width: 640px;
+    padding: 10px;
+    margin: auto;
+    background-color: #f9f9f9;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 30px;
+    text-align: justify;
+    border-bottom: 1px solid #e7e7eb;
+    padding-bottom: 10px;
+}
+
+.red {
+    color: red;
+}
+
+.under_line {
+    text-decoration: underline;
+}
+
+p {
+    text-align: justify;
+    line-height: 24px;
+}
+
+img {
+    display: block;
+    margin: auto;
+    width: 100%;
+}
+
+.max_380 {
+    max-width: 380px;
+}
+
+.max_346 {
+    max-width: 346px;
+}
+
+.max_371 {
+    max-width: 371px;
+}
+
+.intro {
+    text-align: center;
+}
+
+.center {
+    text-align: center;
+}
+
+.font_24 {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+.add_weixin {
+    text-indent: 0px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.add_weixin .weixin {
+    background-color: red;
+    padding: 5px 10px;
+    font-size: 24px;
+    color: #fff;
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+.weixinpic {
+    max-width: 250px;
+    margin-top: 15px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.line {
+    max-width: 400px;
+    height: 1px;
+    background-color: #9a9a9a;
+    margin: 10px auto;
+}
+
+.wap {
+    padding-top: 15px;
+}
+
+.green {
+    color: #369967;
+}
+
+.float_right {
+    float: right;
+}
+
+.list {
+    border-bottom: 1px solid #999;
+    padding: 10px 0px;
+}
+
+.review_content {
+    padding: 0px 10px;
+    color: #a599a5;
+}
+
+.sus_ewm {
+    position: fixed;
+    z-index: 99;
+    width: 180px;
+    top: 5px;
+    left: 50%;
+    margin-left: 335px;
+    border: 1px #ffcd35 solid;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 0 3px #ffcd35;
+    font-size: 16px;
+    background: #fff;
+}
+
+.sus_ewm img {
+    width: 96%;
+}
+
+@media screen and (max-width:960px) {
+    .sus_ewm {
+        display: none;
+    }
+}
+
+.sus_ewm {
+    color: red;
+}

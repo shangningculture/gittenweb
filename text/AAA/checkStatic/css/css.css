@@ -1,0 +1,144 @@
+﻿/**公共样式**/
+body{font-family:"Microsoft YaHei";color:#444;font-size:1.2rem;}
+body,div,img,h2,h3,h4,h5,p,dd,dl,em,form,span{margin:0;padding:0;border:0;}
+ul,li{list-style:none;margin:0;padding:0}
+a{text-decoration:none;}img{vertical-align:bottom;}
+a:hover{filter:alpha(opacity=80);-khtml-opacity: 0.8;opacity:0.8;}
+table,table td,table th{border:1px solid #FFF;border-collapse:collapse;}
+img{border:0px none;}.cl{clear:both;}.m{ margin:0 auto;}
+em,i{font-style:normal;}
+body{margin:0 auto;background:#f3eedb;}
+.juli{height:1rem;width:100%;clear:both;}
+.w94{width:94%;margin:0 auto;}
+
+.mk1{background:url(../images/4.jpg) no-repeat;background-size:100% 100%;}
+.mk1 .mk1_1{width:14%;float:left;text-align:center;}
+.mk1 .mk1_2{width:84%;float:left;text-align:center;}
+.mk1 .mk1_2 li{width:25%;float:left;}
+.mk1 .mk1_2 li a{display:block;margin:0.3rem;padding:3px;color:#444;background:#f3e5c6;border-radius:0.3rem;font-size:0.8rem;}
+
+.mk2{/*background:url(../images/6.png) no-repeat;background-size:100% 100%;*/border:2px #FF2480 solid;padding:1.8rem;text-align:center;}
+.mk2 b{color:#F46082;font-size:1.5rem;}
+.mk2 b em{font-size:1.1rem;color:#444;}
+.mk2 p{text-align:left;text-indent:2em;}
+.mk2_1{/*background:url(../images/6.png) no-repeat;background-size:100% 100%;*/border:2px #FF2480 solid;padding:1.8rem;text-align:center;}
+.mk2_1 b{color:#F46082;font-size:1.5rem;}
+.mk2_1 p{text-align:left;}
+/* 定义mk2_0动画，命名为*/
+@keyframes mk2_0{0%{opacity: 1;}50%{opacity: 1;}50.01%{opacity: 0.3;}100%{opacity: 0;}}
+/* 添加兼容性前缀 */
+@-webkit-keyframes mk2_0{0%{opacity: 1;}50%{opacity: 1;}50.01%{opacity: 0.3;}100%{opacity: 0;}}
+@-moz-keyframes mk2_0{0%{opacity: 1;}50%{opacity: 1;}50.01%{opacity: 0.3;}100%{opacity: 0;}}
+@-ms-keyframes mk2_0{0%{opacity: 1;}50%{opacity: 1;}50.01%{opacity: 0.3;}100%{opacity: 0;}}
+@-o-keyframes mk2_0{0%{opacity: 1;}50%{opacity: 1;}50.01%{opacity: 0.3;}100%{opacity: 0;}}
+.mk2_0{animation: mk2_0 .80s linear infinite;  -webkit-animation: mk2_0 .80s linear infinite;-moz-animation: mk2_0 .80s linear infinite;-ms-animation: mk2_0 .80s linear infinite;-o-animation: mk2_0 .80s linear infinite;}
+
+.mk3{margin-top:2rem;margin-bottom:2rem;}
+.mk4{margin-bottom:2rem;}
+.mk4 li{line-height:1.6rem;border-bottom:1px dashed #c9c9c9;padding-top:1.2rem;padding-bottom:1.2rem;}
+.mk4 li b{color:#F46082;font-size:1.1rem;}
+.mk4 li em{color:#fe0000;}
+.mk4 li span{font-weight:bold;}
+/* 定义mk4_0动画，命名为*/
+@keyframes mk4_0{0%{opacity: 1;}50%{opacity: 1;color:#9e0525;}50.01%{opacity:1;color:#9e4205;}100%{opacity: 1;color:#309e05;}}
+/* 添加兼容性前缀 */
+@-webkit-keyframes mk4_0{0%{opacity: 1;}50%{opacity: 1;color:#9e0525;}50.01%{opacity:1;color:#9e4205;}100%{opacity: 1;color:#309e05;}}
+@-moz-keyframes mk4_0{0%{opacity: 1;}50%{opacity: 1;color:#9e0525;}50.01%{opacity:1;color:#9e4205;}100%{opacity: 1;color:#309e05;}}
+@-ms-keyframes mk4_0{0%{opacity: 1;}50%{opacity: 1;color:#9e0525;}50.01%{opacity:1;color:#9e4205;}100%{opacity: 1;color:#309e05;}}
+@-o-keyframes mk4_0{0%{opacity: 1;}50%{opacity: 1;color:#9e0525;}50.01%{opacity:1;color:#9e4205;}100%{opacity: 1;color:#309e05;}}
+.mk4_0{animation: mk4_0 .80s linear infinite;  -webkit-animation: mk4_0 .80s linear infinite;-moz-animation: mk4_0 .80s linear infinite;-ms-animation: mk4_0 .80s linear infinite;-o-animation: mk4_0 .80s linear infinite;}
+
+.mk5{margin-top:2rem;margin-bottom:2rem;}
+.mk5 p{text-indent:2em;line-height:1.6rem;}
+.mk5 p b{color:#fe0000;}
+
+.mk6{margin-top:2rem;margin-bottom:2rem;}
+.mk6 li{border-bottom:1px dashed #c9c9c9;padding-top:2rem;padding-bottom:1rem;}
+.mk6 li h2{display:block;width:18%;float:left;margin-right:2%;}
+.mk6 li h2 b{display:block;font-size:1rem;background:#F46082;color:#fbf9ee;border-radius:0.3rem;padding:0.8rem;text-align:center;}
+.mk6 li span{display:block;width:80%;float:right;}
+.mk6 li span p{line-height:1.6rem;}.mk6 li span p em{color:#fe0000;}
+
+.mk7{margin-top:2rem;margin-bottom:2rem;}
+.mk7 li{padding-top:1rem;}
+.mk7 li h2{display:block;background:#9e4205;padding:0.8rem;font-size:1.4rem;color:#fbf9ee;}
+.mk7 li span{display:block;padding:1.2rem;border:1px solid #9e4205;}
+.mk7 li span h3{text-align:center;padding:1rem;font-size:1.8rem;color:#fe0000;}
+.mk7 li span a{display:block;text-align:center;width:35%;margin:0 auto;padding:1rem;border-radius:0.5rem;color:#fff;border:1px solid #dc6e03;
+       background: -webkit-linear-gradient(#fe9b00,#e77302); /* Safari 5.1 - 6.0 */
+       background: -o-linear-gradient(#fe9b00,#e77302); /* Opera 11.1 - 12.0 */
+       background: -moz-linear-gradient(#fe9b00,#e77302); /* Firefox 3.6 - 15 */
+       background: linear-gradient(#fe9b00,#e77302); /* 标准的语法（必须放在最后）*/}
+	   
+.mk8{margin-top:2rem;margin-bottom:2rem;}
+.mk8 li{padding-top:1rem;padding-bottom:1rem;line-height:1.4rem;font-size:1rem;}
+.mk8 li h2{display:block;background:#F46082;padding:0.8rem;font-size:1.2rem;color:#fbf9ee;}
+.mk8 li h2 span{background:#fbf9ee;padding-left:0.3rem;padding-right:0.3rem;border-radius:0.5rem;color:#9e4205;margin-right:5px;}	   
+.mk8 li p{padding:1rem;}
+	   
+	   
+/* 定义mk7_0动画，命名为*/
+@keyframes mk7_0{0%{opacity: 1;background:-webkit-linear-gradient(#fe9b00,#e77302);background: -o-linear-gradient(#fe9b00,#e77302); background: -moz-linear-gradient(#fe9b00,#e77302);background: linear-gradient(#fe9b00,#e77302);}50%{opacity: 1;background: -webkit-linear-gradient(#fe9b00,#e77302);background: -o-linear-gradient(#fe9b00,#e77302); background: -moz-linear-gradient(#fe9b00,#e77302);background: linear-gradient(#fe9b00,#e77302);}50.01%{opacity:1;background: -webkit-linear-gradient(#fb1d2d,#ce0211);background: -o-linear-gradient(#fb1d2d,#ce0211); background: -moz-linear-gradient(#fb1d2d,#ce0211);background: linear-gradient(#fb1d2d,#ce0211);}100%{opacity:1;background: -webkit-linear-gradient(#fb1d2d,#ce0211);background: -o-linear-gradient(#fb1d2d,#ce0211); background: -moz-linear-gradient(#fb1d2d,#ce0211);background: linear-gradient(#fb1d2d,#ce0211);}}
+/* 添加兼容性前缀 */
+@-webkit-keyframes mk7_0{0%{opacity: 1;background:-webkit-linear-gradient(#fe9b00,#e77302);background: -o-linear-gradient(#fe9b00,#e77302); background: -moz-linear-gradient(#fe9b00,#e77302);background: linear-gradient(#fe9b00,#e77302);}50%{opacity: 1;background: -webkit-linear-gradient(#fe9b00,#e77302);background: -o-linear-gradient(#fe9b00,#e77302); background: -moz-linear-gradient(#fe9b00,#e77302);background: linear-gradient(#fe9b00,#e77302);}50.01%{opacity:1;background: -webkit-linear-gradient(#fb1d2d,#ce0211);background: -o-linear-gradient(#fb1d2d,#ce0211); background: -moz-linear-gradient(#fb1d2d,#ce0211);background: linear-gradient(#fb1d2d,#ce0211);}100%{opacity:1;background: -webkit-linear-gradient(#fb1d2d,#ce0211);background: -o-linear-gradient(#fb1d2d,#ce0211); background: -moz-linear-gradient(#fb1d2d,#ce0211);background: linear-gradient(#fb1d2d,#ce0211);}}
+@-moz-keyframes mk7_0{0%{opacity: 1;background:-webkit-linear-gradient(#fe9b00,#e77302);background: -o-linear-gradient(#fe9b00,#e77302); background: -moz-linear-gradient(#fe9b00,#e77302);background: linear-gradient(#fe9b00,#e77302);}50%{opacity: 1;background: -webkit-linear-gradient(#fe9b00,#e77302);background: -o-linear-gradient(#fe9b00,#e77302); background: -moz-linear-gradient(#fe9b00,#e77302);background: linear-gradient(#fe9b00,#e77302);}50.01%{opacity:1;background: -webkit-linear-gradient(#fb1d2d,#ce0211);background: -o-linear-gradient(#fb1d2d,#ce0211); background: -moz-linear-gradient(#fb1d2d,#ce0211);background: linear-gradient(#fb1d2d,#ce0211);}100%{opacity:1;background: -webkit-linear-gradient(#fb1d2d,#ce0211);background: -o-linear-gradient(#fb1d2d,#ce0211); background: -moz-linear-gradient(#fb1d2d,#ce0211);background: linear-gradient(#fb1d2d,#ce0211);}}
+@-ms-keyframes mk7_0{0%{opacity: 1;background:-webkit-linear-gradient(#fe9b00,#e77302);background: -o-linear-gradient(#fe9b00,#e77302); background: -moz-linear-gradient(#fe9b00,#e77302);background: linear-gradient(#fe9b00,#e77302);}50%{opacity: 1;background: -webkit-linear-gradient(#fe9b00,#e77302);background: -o-linear-gradient(#fe9b00,#e77302); background: -moz-linear-gradient(#fe9b00,#e77302);background: linear-gradient(#fe9b00,#e77302);}50.01%{opacity:1;background: -webkit-linear-gradient(#fb1d2d,#ce0211);background: -o-linear-gradient(#fb1d2d,#ce0211); background: -moz-linear-gradient(#fb1d2d,#ce0211);background: linear-gradient(#fb1d2d,#ce0211);}100%{opacity:1;background: -webkit-linear-gradient(#fb1d2d,#ce0211);background: -o-linear-gradient(#fb1d2d,#ce0211); background: -moz-linear-gradient(#fb1d2d,#ce0211);background: linear-gradient(#fb1d2d,#ce0211);}}
+@-o-keyframes mk7_0{0%{opacity: 1;background:-webkit-linear-gradient(#fe9b00,#e77302);background: -o-linear-gradient(#fe9b00,#e77302); background: -moz-linear-gradient(#fe9b00,#e77302);background: linear-gradient(#fe9b00,#e77302);}50%{opacity: 1;background: -webkit-linear-gradient(#fe9b00,#e77302);background: -o-linear-gradient(#fe9b00,#e77302); background: -moz-linear-gradient(#fe9b00,#e77302);background: linear-gradient(#fe9b00,#e77302);}50.01%{opacity:1;background: -webkit-linear-gradient(#fb1d2d,#ce0211);background: -o-linear-gradient(#fb1d2d,#ce0211); background: -moz-linear-gradient(#fb1d2d,#ce0211);background: linear-gradient(#fb1d2d,#ce0211);}100%{opacity:1;background: -webkit-linear-gradient(#fb1d2d,#ce0211);background: -o-linear-gradient(#fb1d2d,#ce0211); background: -moz-linear-gradient(#fb1d2d,#ce0211);background: linear-gradient(#fb1d2d,#ce0211);}}     
+.mk7_0{animation: mk7_0 .80s linear infinite;  -webkit-animation: mk7_0 .80s linear infinite;-moz-animation: mk7_0 .80s linear infinite;-ms-animation: mk7_0 .80s linear infinite;-o-animation: mk7_0 .80s linear infinite;}
+	   
+	   
+
+@media only screen and (max-width:640px){
+html{font-size:100%; }}
+@media only screen and (max-width:600px){
+html{font-size:95%; }}
+@media only screen and (max-width:560px){
+html{font-size:90%; }}
+@media only screen and (max-width:520px){
+html{font-size:85%; }}
+@media only screen and (max-width:480px){
+html{font-size:80%; }}
+@media only screen and (max-width:440px){
+html{font-size:75%; }}
+@media only screen and (max-width:400px){
+html{font-size:70%; }}
+@media only screen and (max-width:360px){
+html{font-size:65%; }}
+@media only screen and (max-width:320px){
+html{font-size:60%;}}
+
+
+.buttomess{
+    position: fixed;bottom:0;left:0;height:auto;width:100%;z-index: 999;
+}
+._buttomess{
+    max-width: 620px;margin:0 auto;padding:10px;background:#fff;
+}
+._buttomess span{
+    font-weight: 600;font-size:16px;
+}
+._buttomess span .weixin span{
+    background:yellow;color:red;font-size: 20px;
+}
+._buttomess td{
+    vertical-align: middle;
+}
+._buttomess a{
+    display: inline-block;background:#217519;color:#fff;line-height: 30px;padding:0 10px;border-radius: 5px;
+    text-decoration: none;
+}
+
+.leftside {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    margin-left: 400px;
+    border: 1px #beaf03 solid;
+    width: 200px;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0 0 3px #beaf03;
+    font-weight: 600;
+    background-color: #fff;
+}

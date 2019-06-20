@@ -1,0 +1,93 @@
+﻿.c_red { background:#ff7575;}
+.c_pink { background:#feabab;}
+.c_yellow { background:#fed2ab;}
+.c_green { background:#23e2bc;}
+
+img { width:100%;}
+.proview { position:relative; overflow:hidden; visibility:hidden;}
+.proview li { position:relative; float:left; text-align: center; padding:55px 0;}
+.proview ul li img {  width:62.5%; max-width: 400px; margin: 0 auto;}
+.proview > img { position:absolute; top:48%; left:3.5%; width:4.7%;}
+.proview > img:nth-child(3) { left:auto; right:3.5%;}
+
+.proDetails { border-top:2px solid #dcb288; border-bottom:1px solid #dcb288;}
+.proDetails h2 { padding:0.8em 0em 0.1em 3.5%; font-size:1.3em; line-height:1em;}
+.proDetails h2 span { display:inline-block; width:1em; height:1em; margin-left:0.2em; vertical-align:middle; margin-top:-3px; margin-left:0.2em; border-radius:5px;}
+.det_price { font-size:0.9em; padding-left:3.5%; padding-bottom:1em;padding-top: 1em;color:#777;}
+.det_price span { color:#ff4040; font-size:1.4em; margin-right:0.3em;}
+.proDetails div { font-size:0.8em; padding-left:6em; position:relative;padding-bottom:1em;}
+.proDetails div span { font-size:1.2em;font-family: "微软雅黑";}
+.proDetails .color { padding-left:0.9em;}
+.proDetails .color div { margin-top:2em; border:0px none; padding:0px;}
+.proDetails .color .clf > span { float:left; width:3em; height:3em; position:relative; left:0px; top:0px; border-radius:0.5em; margin-right:1.2em; line-height: 3em}
+.proDetails .color .on { position:relative;}
+.proDetails .color .on:before { content:""; position:absolute; top:-0.3em; bottom:-0.3em; left:-0.3em; right:-0.3em; border:2px solid #ff4c4c; border-radius:.6em;}
+.proDetails .num { border:0px none; background:#fff; padding:1em 0em 1em 4%; font-size:1em;}
+.proDetails .num button{border: none ;width:32%;background: #d90936;border-radius: 4px;color:#fff;padding:0.5em 0;font-size: 1em;font-weight: bold;font-family: '微软雅黑';}
+.proDetails .num div { display:inline-block; padding:0px; border:1px solid #dfdfdf; height:2.5em; vertical-align:middle; width:30%; margin:-3px 1.3em auto 0.5em;line-height: 2.5em;font-size: 0.9em;}
+.proDetails .num span { float:left; width:1em; height:1em; position:static; text-align:center; width:30%; height:100%; background:#fff;}
+.proDetails .num input { float:left; border:0px none; text-align:center; width:40%; height:100%;}
+.proDetails .num span:first-child:before { content:""; float:right; height:100%; width:1px; background:#dfdfdf;}
+.proDetails .num span:nth-child(3):before { content:""; float:left; height:100%; width:1px; background:#dfdfdf;}
+.BuyOrCart{padding-left: 0!important;margin-bottom: 1em;border-bottom:2px solid #e2e2e2;}
+.BuyOrCart button {width: 50%;height: 2.2em;font-family: "微软雅黑";}
+.BuyOrCart .buy-btn{background: #ff9402;color:#fff;font-size: 1.7em;}
+.BuyOrCart .cart-btn{background: #dd2727;color:#fff;font-size: 1.7em;}
+
+.tab { border:1px solid #e4e4e4; border-bottom:0px none; margin-bottom:0.4em;}
+.tab div { float:left; width:50%; text-align:center; font-size:0.85em; line-height:2.1em; border-bottom:1px solid #e4e4e4;}
+.tab .on { border-bottom-color:#fff; position:relative; color:#ff4040;}
+.tab .on:after { content:""; position:absolute; top:-1px; left:0px; width:100%; height:4px; background:#ff4040;}
+.tab div:nth-child(1):before { content:""; float:right; height:2.1em; width:1px; background:#e4e4e4;}
+.tab div img { width:1.1em; vertical-align:middle; margin-top:-3px; margin-right:0.3em;}
+.details_img { display:none;}
+.pro_comment { max-height:20em; overflow-y:scroll; padding:0.5em; display:none;}
+.pro_comment li { padding:0.5em 0; border-bottom:1px solid #efeeeb;}
+.pro_comment li h4 { color:#969696; font-size:1em; line-height:1.5em; font-weight:normal;}
+.pro_comment li p { color:#000; font-size:0.9em;}
+
+.serve li { padding:0.8em 0em; width:25%; float:left; display:block;}
+.serve li a { display:block; text-align:center; border-right:1px #d7d7d7 solid; font-size:0.8em;}
+.serve li:last-child a { border:0px none;}
+
+/* 专题页 */
+.zt .proDetails { border:0px none;}
+.zt .order { margin-bottom:0.9em;}
+.zt .order_pro { padding:0.9em 0em 0.6em 0em;}
+.zt .order_pro img { float:left; width:26.4%; border:1px solid #cccaca; margin-left:4%; margin-right:3%; height: 6.8em;}
+.zt .order_pro div { font-size:0.8em; color:#7a7a7a;}
+.zt .order_pro .order_name { font-size:0.9em;}
+.zt .order_pro .order_name span { display:inline-block; width:1.1em; height:1.1em; vertical-align:middle; border-radius:5px; margin-left:0.35em; margin-right:0.2em;}
+.zt .order_pro .color span { display:inline-block; width:2em; height:2em; border-radius:5px;}
+.zt .order_pro .color .on { box-shadow:0px 0px 0px 3px #ccc inset;}
+.zt .order_pro .pri_over { font-size:0.8em; color:#cec9c9; line-height:1em;}
+.zt .order_pro .pri_now { color:#ff4040;}
+
+.goods_li { font-size:0.85em; height: 26em; overflow-y:auto; z-index: 9999;}
+.goods_li li {  margin:1em 0em;}
+.goods_li li:last-child { border-bottom:0px none;}
+.goods_li .UIradio { padding-left:2.5em;}
+.goods_li li > div { margin-top:0.5em; padding-bottom:0.2em;}
+.pro_name{float: left; padding-left: 1em; width: 90%; text-align: left;}
+.subtotal{ float: left; padding-left: .5em;}
+.goods_li li img { float:left; width:26.5%; margin-left:9.7%; margin-right:2%;}
+.pro_name span { display:inline-block; width:1.1em; height:1.1em; border-radius:5px; vertical-align:middle; margin-left:0.5em;}
+.btn_div a{background: #ff4c4c;border-radius: 5px;color: #fff;display: inline-block; font-size: 0.9em;
+line-height: 1.3em;margin: 0.5em;padding: 0.5em 3em;}
+.ch_color .proDetails{border-top:0; border-bottom:0;}
+.ch_color .proDetails div{border-top: 0; padding-bottom: 0; padding-top: 0;}
+
+/*产品详情页面*/
+.infor h1{font-size: 1.2em;}
+.good_pic h3 { font-size:1.2em; text-align:center; font-weight:bold; line-height:1em; padding-top:0.7em;}
+.good_pic p { width:86%; margin:0px auto; font-size:0.7em; line-height:1.5em; padding:0.7em 0em 0.6em 0em; color:#424242;}
+.good_pic .eq { text-align:center; font-size:0.9em; padding-top:0.25em; padding-bottom:0.5em;}
+.word.mb1_3 { margin-bottom:1.3em;}
+.word { font-size:0.9em; color:#323232; width:93%; margin:0px auto; line-height:1.35em; padding:0.5em 0em;}
+.subtotal .color .clf > span { float:left; width:2.5em; height:2.5em; position:relative; left:0px; bottom:0px; border-radius:0.5em; margin-right:1.2em; line-height: 2.5em}
+.volume {float: left; padding-left: 1em; width: 50%; text-align: left; margin-top: .6em;}
+.volume span{float: left; margin: .2em .5em .1em 0; padding: .2em 1.7em; border-radius: .5em; background: #fff; color: #000;}
+.subtotal .color div { margin-top:.9em; border:0px none; padding:0px;}
+.clf:before, .clf:after {content:"";display:table;}
+.volume .on { position:relative;}
+.volume .on:before { content:""; position:absolute; top:-0.1em; bottom:-0.1em; left:-0.1em; right:-0.1em; border:2px solid #ff4c4c; border-radius:.6em;}

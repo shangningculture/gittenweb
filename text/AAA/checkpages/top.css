@@ -1,0 +1,69 @@
+
+.top{
+    max-width: 640px;
+    margin: auto;
+}
+
+.contain{
+    max-width: 640px;
+    margin: auto;
+}
+
+.top h3{
+    font-size: 16px;
+}
+
+.nav ul {
+    padding: 0px;
+    margin: 0px;
+}
+
+.nav ul li{
+    list-style: none;
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+
+.nav ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav{
+    background-color: #4c4857;
+    border-top: 2px solid #a20e09;
+    border-bottom: 2px solid #a20e09;
+}
+
+.clearfix{
+    clear: both;
+}
+
+.footer{
+    background: #000000;
+    padding: 5px 0px;
+}
+
+.footer p{
+    color: #fff;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    
+}
+
+.beian{
+    text-align: center;
+    padding-top: 25px;
+}
+
+.beian a{
+    text-decoration: none;
+    color: #000000;
+}
+
+.chanpin{
+    display: block;
+    width: 100%;
+}

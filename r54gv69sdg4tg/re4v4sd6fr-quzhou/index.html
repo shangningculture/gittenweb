@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>有592515人已成功祛皱</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/jquery-1.11.0.min.js"></script>
+	<script src="https://b.yougou520.cn/api/count/tj_stat.html?id=2227&web_id=2227&code=fad8c66082a6ebb2e187a636da259798" language="JavaScript"></script>
+	<script src="js/main.js"></script>
+</head>
+
+<body>
+	<div class="contain">
+		<div class="main">
+			<img id="erWeiMa" src="images/1.jpg" alt="">
+			<img id="erWeiMa" src="" alt="" class="weixinpic">
+		</div>
+
+		<script>
+			var timeOutEvent = 0;
+			var touchArea = document.getElementById("erWeiMa");
+			touchArea.addEventListener("touchstart", function (e) {
+				timeOutEvent = setTimeout("longPress()", 400);
+			});
+			touchArea.addEventListener("touchmove", function (e) {
+				clearTimeout(timeOutEvent);
+				timeOutEvent = 0;
+			});
+			touchArea.addEventListener("touchend", function (e) {
+				clearTimeout(timeOutEvent);
+				if (timeOutEvent != 0) {
+					alert("你这是点击，请长按识别图中二维码！");
+				}
+				return false;
+			});
+
+			function longPress() {
+				timeOutEvent = 0;
+				_czc.push(["_trackEvent", "长按", "识别二维码", stxlwx, 1]);
+			}
+		</script>
+
+	</div>
+</body>
+
+</html>

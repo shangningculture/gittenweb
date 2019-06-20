@@ -1,0 +1,285 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+  -ms-text-size-adjust:100%;
+  -webkit-text-size-adjust:100%
+}
+
+body {
+  	width: 100%;
+    font-family: "微软雅黑";
+}
+
+.main {
+    max-width: 750px;
+    margin: 0 auto;
+    border: 1px solid gray;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.main .title {
+    text-align: center;
+    margin: 25px auto;
+    border: 1px solid rgb(178, 0, 0);
+    width: 70%;
+    font-size: 20px;
+    color: rgb(178, 0, 0);
+    font-weight: bold;
+    padding: 5px;
+}
+
+.main .pt {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+.main .neirong {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: justify;
+    text-indent: 2em;
+}
+
+.main .qd {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: rgb(178, 0, 0);
+}
+
+.main .sanbu {
+    padding: 10px 0;
+    border-bottom: 1px dotted gray;
+    border-top: 1px dotted gray;
+    font-size: 15px;
+}
+
+.main .sanbu>p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.main .sanbu>p>span {
+    font-weight: bold;
+    color: red;
+}
+
+.comment {
+    width: 100%;
+    padding: 10px 0;
+    background: #f0f0f0;
+    position: relative;
+    margin: 0 auto 81px;
+    max-width: 740px;
+}
+
+.comment h1 {
+    border-top: 1px dotted #C7C7C7;
+    font-weight: normal;
+    padding-top: 30px;
+    margin-top: 40px;
+}
+
+.comment h5 {
+    text-align: center;
+    font-size: 15px;
+    color: #8c8c8c;
+    position: absolute;
+    top: 33px;
+    right: 50%;
+    margin-right: -80px;
+    width: 140px;
+    background: #f0f0f0;
+    padding: 10px;
+    font-weight: normal;
+}
+
+.comment div {
+    position: relative;
+    margin: 20px 0;
+    padding: 0 15px;
+}
+
+.comment .images {
+    margin-right: 10px;
+    width: 35px;
+    height: 35px;
+    float: left;
+}
+
+.comment p {
+    margin-left: 45px;
+    text-indent: 0em;
+    line-height: 25px;
+    font-size: 16px;
+}
+
+.comment p span {
+    color: #8c8c8c;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.comment p em {
+    font-style: normal;
+    font-size: 14px;
+    color: #8c8c8c;
+    float: right;
+    margin-right: 10px;
+}
+
+.comment p i {
+    font-size: 14px;
+    margin-right: 5px;
+    border: none;
+    color: #607fa6;
+    font-style: normal;
+    background: url(z.html) center center no-repeat;
+}
+
+.comment div o {
+    display: block;
+    font-size: 14px;
+    color: #8c8c8c;
+}
+
+.weixin {
+    color: red;
+    background-color: yellow;
+    font-size: 18px;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.comment .tx {
+    width: 50px;
+    height: 50px;
+}
+
+.footer {
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    bottom: 0;
+}
+
+.footer .foot {
+    max-width: 750px;
+    padding: 0 10px;
+    margin: 0 auto;
+    height: 60px;
+    background: #fff;
+    border: 1px #bbbbbb solid;
+    border-bottom: 0;
+}
+
+.footer .foot span {
+    line-height: 60px;
+    color: red;
+    cursor: pointer;
+}
+
+.footer .foot span:hover {
+    text-decoration: underline;
+}
+
+.footer .foot img {
+    float: left;
+}
+
+.wxbtn {
+    width: 70px;
+    height: 70px;
+    background: url(../img/11111.html);
+    background-size: 100% 100%;
+    position: fixed;
+    top: 20%;
+    right: 1%;
+    display: flex;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 750px) {
+    .wxbtn {
+        top: 90%;
+        right: 1%;
+    }
+}
+
+.wxbtn span {
+    display: inline-block;
+    margin: auto;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 400;
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    transform: translate3d(-50%, -50%, 0px);
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    padding: 10px 0px;
+    display: none;
+    box-shadow: 1px 1px 3px #424242;
+    text-align: center;
+    color: #656565;
+    z-index: 2;
+}
+
+.popup .first span .spance,
+.popup .open span .spance {
+    letter-spacing: 5px;
+}
+
+.popup .close {
+    padding: 0 10px;
+    overflow: hidden;
+    color: #dd2736;
+}
+
+.popup .close span {
+    float: right;
+}
+
+.popup .add {
+    text-align: center;
+    background-color: #e13f94;
+    padding: 8px 0px;
+    margin: 15px 0px;
+}
+
+.popup .add span {
+    line-height: 40px;
+    font-size: 28px;
+    color: red;
+    background: yellow;
+    font-weight: 600;
+}
+
+.popup .open {
+    text-align: center;
+    color: #666;
+}
+
+.popup .liwu {
+    text-align: center;
+    color: #999;
+    padding-bottom: 20px;
+    margin-top: 15px;
+}
+
+.popup .liwu a {
+    font-size: 18px;
+    color: #d5271e;
+    text-decoration: underline;
+}

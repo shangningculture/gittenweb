@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!-- saved from url=(0038)http://jigrc.cn/iwmnjd23b10/tousu.html -->
+<html class="pixel-ratio-1"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+  <title>投诉</title>
+  <link rel="stylesheet" href="./ts_files/weui.min.css">
+  <link rel="stylesheet" href="./ts_files/jquery-weui.min.css">
+<script src="https://a.yougou520.cn/api/count/tj_stat.html?id=434&web_id=434&code=e06fd56adb9b1982e11dafdfa797fef9" language="JavaScript"></script>
+  <!-- body 最后 -->   
+  <script src="./ts_files/jquery.min.js.下载"></script>
+  <script src="./ts_files/jquery-weui.min.js.下载"></script>
+  <script type="text/javascript" defer="defer">
+    $(document).ready(function(){      
+      $("#tspage_2").hide();
+      $("#shpage_3").hide();
+    });
+    function subTSinfo() {
+      $("#tspage_1").hide();
+      $("#tspage_2").show();
+      $("#tstitle").html("你可以：");
+    }
+    function subSHinfo() {
+      $("#tspage_1").hide();
+      $("#tspage_2").hide();
+      $("#tstitle").hide();
+      $("#shpage_3").show();
+    } 
+  </script>
+  <style>
+    #tousu{
+      display: block;
+      text-align: center;
+      position: absolute;
+      width: 100%;
+      bottom: 10px;
+    }
+    #tousu span{
+      color: #1b7cf1;
+      display: block;
+      width: 80px;
+      margin: auto;
+    }
+  </style>
+</head>
+
+<body right-click="">
+  <div class="weui-cells__title" id="tstitle">请选择投诉网页的原因：</div>
+  <div class="weui-cells" id="tspage_1">
+      <a class="weui-cell weui-cell_access" href="javascript: subTSinfo();">
+        <div class="weui-cell__bd"><p>网页包含欺诈信息（如：假红包）</p></div>
+        <div class="weui-cell__ft"></div>
+      </a>
+      <a class="weui-cell weui-cell_access" href="javascript: subTSinfo();">
+        <div class="weui-cell__bd"><p>网页包含色情信息</p></div>
+        <div class="weui-cell__ft"></div>
+      </a>
+      <a class="weui-cell weui-cell_access" href="javascript: subTSinfo();">
+        <div class="weui-cell__bd"><p>网页包含暴力恐怖信息</p></div>
+        <div class="weui-cell__ft"></div>
+      </a>
+      <a class="weui-cell weui-cell_access" href="javascript: subTSinfo();">
+        <div class="weui-cell__bd"><p>网页包含政治敏感信息</p></div>
+        <div class="weui-cell__ft"></div>
+      </a>
+      <a class="weui-cell weui-cell_access" href="javascript: subTSinfo();">
+        <div class="weui-cell__bd"><p>网页在收集个人隐私信息（如：钓鱼链接）</p></div>
+        <div class="weui-cell__ft"></div>
+      </a>
+      <a class="weui-cell weui-cell_access" href="javascript: subTSinfo();">
+        <div class="weui-cell__bd"><p>网页包含诱导分享性质的内容</p></div>
+        <div class="weui-cell__ft"></div>
+      </a>
+      <a class="weui-cell weui-cell_access" href="javascript: subTSinfo();">
+        <div class="weui-cell__bd"><p>网页可能包含谣言信息</p></div>
+        <div class="weui-cell__ft"></div>
+      </a>
+      <a class="weui-cell weui-cell_access" href="javascript: subTSinfo();">
+        <div class="weui-cell__bd"><p>网页包含赌博信息</p></div>
+        <div class="weui-cell__ft"></div>
+      </a>
+  </div>
+  <div class="weui-cells" id="tspage_2" style="display: none;">
+      <a class="weui-cell weui-cell_access" href="javascript: subSHinfo();">
+        <div class="weui-cell__bd"><p>提交给微信团队审核</p></div>
+        <div class="weui-cell__ft"></div>
+      </a>
+  </div>
+  <a id="tousu" href="https://weixin110.qq.com/security/readtemplate?t=w_security_center_website/report_agreement&amp;lang=zh_CN"><span>投诉须知</span></a>
+  <!--操作成功-->
+  <div class="weui-msg" id="shpage_3" style="display: none;">
+    <div class="weui-msg__icon-area"><i class="weui-icon-success weui-icon_msg"></i></div>
+    <div class="weui-msg__text-area">
+      <h2 class="weui-msg__title">投诉已提交</h2>
+      <p class="weui-msg__desc">微信团队会尽快核实，并通过“微信团队”通知你的审核结果。感谢你的支持。</p>
+    </div>
+    <div class="weui-msg__opr-area">
+      <p class="weui-btn-area">
+        <a href="javascript:window.close();" class="weui-btn weui-btn_primary">关闭</a>
+      </p>
+    </div>
+  </div>
+
+
+</body></html>

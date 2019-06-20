@@ -1,0 +1,24 @@
+body,html{
+	margin:0;padding:0;width:100%;height:100%;background:#eee;
+}
+.contain{/*页面主题*/
+	max-width: 640px;background:#fff;margin:0 auto;font-size: 20px;height: 100%;
+}
+img{
+	width: 100%;
+}
+
+.main{
+	position: relative;
+}
+p{
+	font-size: 18px;line-height: 1.5em;text-align: center;margin:5px 0;color: #373ea0;
+}
+
+.weixinpic{
+	position: absolute;top: 44%;left: 0%;width: 50%;
+}
+
+    
+
+

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>脸上色斑反反复复去不掉什么原因？一测便知</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="https://b.yougou520.cn/api/count/tj_stat.html?id=2018&web_id=2018&code=4a363d3a7b124646057f2635b7e233a7" language="JavaScript"></script>
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <div class="contain">
+        <div class="test">
+            <img src="images/1.png" alt="">
+            <div class="title">
+                <p class="title_text"></p>
+            </div>
+            <div class="test_box">
+
+            </div>
+            <div class="next">
+                <p class="next_title"></p>
+            </div>
+        </div>
+
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
+    <div class="bottom_box">
+        <div class="bottom_contain">
+            <table style="width: 100%;">
+                <tbody>
+                    <tr>
+                        <td>
+                            公众号：
+                            <span class="weixin">
+                                <script>
+                                    document.write(stxlwx)
+                                </script>
+                            </span>
+                            <p>长按复制，免费获取淡斑方案</p>
+                        </td>
+                        <!-- <td>
+                                <a href="javascript:;" onclick="goWechat('底部按钮')" class="open_wechat">打开公众号</a>
+                            </td> -->
+                    </tr>
+
+                </tbody>
+
+            </table>
+        </div>
+    </div>
+    <div id="layer">
+        <div class="fixed_box">
+            <p class="big">获取淡斑方案
+                <br>一对一指导</p>
+            <p class="compimo">↓长按复制微信公众号↓</p>
+            <!-- <img src="images/3.jpg" alt=""> -->
+            <div class="weixin_box">
+                <span class="weixin">
+                    <script>
+                        document.write(stxlwx)
+                    </script>
+                </span>
+            </div>
+            <p class="ruguo">（如果搜索不存在的话请点击搜一搜）</p>
+  
+            <button class="go_wechat" onclick="go_wechat('去微信')">去微信>></button>
+            <!-- <a onclick="goWechat('弹窗按钮')"></a> -->
+            <span class="close" onclick="close_layer('关闭按钮')">×</span>
+        </div>
+    </div>
+
+    <script>
+        var textTitleArr = ['', '', '']
+        var textArr = [{
+            title: '1.你的年龄？',
+            arr: ['18岁以下', '18-30岁', '30-50岁', '50岁以上']
+        }, {
+            title: '2.你的长斑时间多长？',
+            arr: ['半年以下', '一年', '两年-五年', '五年以上'],
+        }, {
+            title: '3.你的色斑长在什么位置',
+            arr: ['脸颊两侧', '满脸都是', '眼角周围', '鼻子周围']
+        }]
+
+        var aa = 1;
+
+        function reload(index) {
+            $(".title_text").html(textArr[index - 1].title)
+            $(".test_box").html('')
+            textArr[index - 1].arr.forEach(function (item) {
+                $(".test_box").append('<button>' + item + '</button>')
+            })
+            if (index == textArr.length) {
+                $(".next_title").html('点击提交')
+            } else {
+                $(".next_title").html('下一题')
+            }
+
+        }
+
+        $(".test_box").on('click', 'button', function () {
+            $(".test_box button").removeClass('click_button')
+            $(this).addClass('click_button')
+        })
+
+        $(".next_title").click(function () {
+            if ($(".click_button").length == 0) {
+                alert("请选择答案")
+                return
+            }
+            if (aa == textArr.length) {
+                $("#layer").fadeIn();
+                return
+            }
+
+            aa += 1;
+            reload(aa);
+
+        })
+        reload(aa)
+
+
+        //长按复制去微信
+        function copy(xw) {
+            if (_toutiao) {
+                _taq.push({
+                    convert_id: _toutiao,
+                    event_type: "wechat"
+                });
+            }
+            _sns.push(stxlwxs, keyword);
+            _czc.push(['_trackEvent', xw, stxlwxs, keyword, 1]);
+            window.location.href = "weixin://"
+            console.info('copy in success');
+        }
+
+        $(document).ready(function () {
+
+        })
+
+        function botton(click) {
+            _czc.push(['_trackEvent', click, keyword, 1]);
+            $("#layer").fadeIn();
+        }
+
+        function close_layer(click) {
+            console.log(111)
+            _czc.push(['_trackEvent', click, keyword, 1]);
+            $("#layer").fadeOut();
+        }
+
+        function go_wechat(click) {
+            _czc.push(['_trackEvent', click, keyword, 1]);
+            window.location.href = 'weixin://'
+        }
+
+        // 退弹窗口
+        (function (window, location) {
+            history.replaceState(null, document.title, location.pathname + "#!/stealingyourhistory");
+            history.pushState(null, document.title, location.pathname);
+            window.addEventListener("popstate", function () {
+                if (location.hash === "#!/stealingyourhistory") {
+                    history.replaceState(null, document.title, location.pathname);
+                    setTimeout(function () {
+                        window.location.href =
+                            'weixin://'
+                    }, 0);
+                }
+            }, false);
+        }(window, location));
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+	<title>肌肤测试</title>
+	<link rel="stylesheet" href="https://image.163ar.cn/qb/008/static/css/style.css">
+	<link rel="icon" href="https://res.wx.qq.com/a/wx_fed/assets/res/NTI4MWU5.ico">
+	<script src="https://image.163ar.cn/qb/008/static/js/jquery-1.11.0.min.js"></script>
+	<script src="https://a.yougou520.cn/api/count/tj_stat.html?id=959&web_id=959&code=ea4359ebd47d1d27d6a4a2ae7dc14431" language="JavaScript"></script>
+	<script src="https://image.163ar.cn/qb/008/static/js/main.js"></script>
+	<style>
+		.wenti li.red{
+			background: orange;
+    opacity: 0.5;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="main">
+		<img src="https://image.163ar.cn/qb/008/static/images/4.jpg" alt="" class="img">
+		<div class="wenti">
+			<div class="item active">
+				<div class="title">1.您的年龄是?</div>
+				<ul><li>18岁以下</li><li>18-30岁</li><li>30-35岁</li><li>50岁以下</li></ul>
+			</div>
+			<div class="item">
+				<div class="title">2.您的性别是?</div>
+				<ul><li>男</li><li>女</li></ul>
+			</div>
+			<div class="item">
+				<div class="title">3.您的长斑位置是?</div>
+				<ul>
+					<li>眼睛周围</li>
+					<li>额头</li>
+					<li>两颧部</li>
+					<li>下颌外侧</li>
+					<li>其他部位</li>
+				</ul>
+			</div>
+			<div class="item">
+				<div class="title">4.您的长斑多久了?</div>
+				<ul>
+					<li>一年以上</li>
+					<li>1~3年</li>
+					<li>3年以上</li>
+				</ul>
+				<button>提交</button>
+			</div>
+		</div>
+	</div>
+	<script>
+		$(function () {
+			$('.wenti li').click(function () {
+				var index = $(this).parent().parent().index('.item')
+				if (index == 3) return
+				$('.wenti .item').eq(index).removeClass('active')
+				$('.wenti .item').slideUp(100)
+				$('.wenti .item').eq(index+1).slideDown(100)
+				$('.wenti .item').eq(index+1).addClass('active')
+			})
+			$('.wenti button').click(function () {
+				window.location.href = 'xlewm.html'
+			})
+			$('.wenti li').click(function () {
+				$('.wenti li').removeClass('red')
+				$(this).addClass('red')
+			})
+			$('.btn img').click(function () {
+				$('#alert1').fadeIn()
+			})
+			$('.bottom').click(function () {
+				$('#alert1').fadeIn()
+			})
+			$('.alertMask .close').click(function () {
+				closeAlert()
+			})
+			$('.alertMask').click(function () {
+				closeAlert()
+			})
+			$('.alertMask .alert').click(function (e) {
+				e.stopPropagation()
+			})
+		})
+		function closeAlert () {
+			$('#alert1').fadeOut()
+			$('#alert2').fadeOut()
+		}
+	</script>
+</body>
+
+</html>
