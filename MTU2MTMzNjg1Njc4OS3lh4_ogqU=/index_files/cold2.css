@@ -1,0 +1,42 @@
+@CHARSET "UTF-8";
+html{-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;line-height: 1.6}
+
+body {
+    max-width: 640px;
+	margin: 0 auto;
+	-webkit-touch-callout: none;
+	font-family: -apple-system-font,"Helvetica Neue","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+	line-height: inherit;
+}
+
+a {
+	color: #FFF;
+	text-decoration: none
+}
+
+.img {
+	height: auto!important;
+	width: 100%;
+	vertical-align: middle;
+}
+.divft {
+				padding: 10px;
+				font-size: 20px;
+}
+.divft-r {
+				color: #FF0000;
+				font-weight:bold
+}
+
+div.navone{width:100%;margin: 0 auto;}
+div.navone p{font-size: 16px;color: #404040;}
+div.navone img{max-width:100%;}
+div.tijiao{width:80%;margin:0 auto;}
+div.tijiao p.tijiao{width:100%;height:20px;line-height:20px;font-size:20px;color:#555 ;margin-top:10px;}
+div.tijiao p.tijiao span.tijiao{line-height:20px;color:#f86969;}
+div.tijiaonei{width:calc(100% - 2px);height:50px;border:1px solid #ccc;border-radius:5px;}
+div.tijiaonei input{width:100%;height:50px;line-height:50px;font-size:20px;color:#555;border:0px;padding:20px;background:none;}
+div.tijiaotishi{width:100%;height:50px;line-height:50px;font-size:20px;color:black;}
+div.tijiaoti{width:100%;height:60px;background:#f85959;border-radius:5px;}
+div.tijiaoti input{width:100%;height:60px;border:0px;padding:0px;background:none;text-align:center;line-height:60px;font-size:20px;color:#fff;cursor:pointer;}
+.db{height:100px;}
