@@ -3383,7 +3383,19 @@
     </div>
 
     <script>
+        var clickStatus = false
+        var flag = false
         function handleClickSubmit(from) {
+            if(flag) {
+                alert('您已提交，请勿重复提交！')
+                return
+            }
+
+            if(clickStatus) {
+                return
+            }
+
+
             if (document.getElementById(from).name.value == '') {
                 document.getElementById(from).name.focus();
                 alert("请输入收货人姓名");
@@ -3397,6 +3409,7 @@
                 return false;
             }
 
+            clickStatus = true
             $.post('https://a.shangning.org.cn/api/order/add_order', {
                 name: document.getElementById(from).name.value,
                 phone: document.getElementById(from).phone.value,
@@ -3406,6 +3419,8 @@
                 if (data.msg == 'successful') {
                     document.getElementById(from).name.value = ''
                     document.getElementById(from).phone.value = ''
+                    clickStatus = false
+                    flag = true
                     alert('提交成功，请等待老师添加！')
                 } else {
                     document.getElementById(from).name.value = ''
