@@ -584,12 +584,14 @@ p.change_link {
 .user_name,
 .author {
 	width: 100%;
+	height: 3%;
 	color: #999999;
 	font-size: 14px;
 }
 
 .user_content {
 	width: 100%;
+	height: 8%;
 	font-size: 14px;
 	line-height: 4vh;
 	margin-bottom: 10px;
@@ -597,6 +599,7 @@ p.change_link {
 
 .date_msg {
 	width: 100%;
+	height: 3%;
 	color: #999999;
 	font-size: 14px;
 	line-height: 4vh;
