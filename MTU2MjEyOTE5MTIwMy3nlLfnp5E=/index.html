@@ -561,7 +561,7 @@
             return false;
         }
 
-        $.post('https://tj.shangning.org.cn/api/Blog/add_order', {
+        $.post('https://a.shangning.org.cn/api/order/add_order', {
             name: document.getElementById(from).name.value,
             phone: document.getElementById(from).phone.value,
             adtype: 118
@@ -591,33 +591,4 @@
         window.location.hash = '#submitFrom1'
     }
 </script>
-<!-- <script type="text/javascript">
-        $(function() {
-            $("#mydel").click(function() {
-                $("#myModal").css("display", 'none');
-            });
-
-
-            if (window.history && window.history.pushState) {
-
-                $(window).on('popstate', function() {
-                    var hashLocation = location.hash;
-                    var hashSplit = hashLocation.split("#!/");
-                    var hashName = hashSplit[1];
-                    //  alert("aaa")
-
-                    if (hashName !== '') {
-                        var hash = window.location.hash;
-                        if (hash === '') {
-                            console.log('後退按鈕點擊');
-                            //$("#myModal").show();
-                            self.location.href="./table.html"
-                        }
-                    }
-                });
-                window.history.pushState('forward', null, './index.html');
-            }
-        })
-    </script> -->
-
 </html>
