@@ -1517,8 +1517,13 @@
                 }
                 return prefix
             }
+            var flag = false
             var sendStatus = false
             $('.formtj').click(function () {
+                if(flag) {
+                    alert('您已提交，请勿重复提交！')
+                    return
+                }
                 if (sendStatus) return
                 var name = $('#form .name').val()
                 var phone = $('#form .phone').val()
@@ -1539,6 +1544,7 @@
                     adtype: 119
                 }, (res) => {
                     sendStatus = false
+                    flag = true
                     data = JSON.parse(res)
                     $('#form .name').val('')
                     $('#form .phone').val('')
