@@ -3,7 +3,7 @@ body,html{
 	color: #333;
 }
 #main{/*页面主题*/
-	max-width: 640px;padding:0;margin:0 auto;font-size: 0;min-height: 100vh;background:#fff;
+	max-width: 640px;padding:0;margin:0 auto;font-size: 0;background:#fff;
 	position: relative;
 }
 img.img{
@@ -14,4 +14,5 @@ img.img{
 	top: 51%;
 	left: 25%;
 	width: 52%;
+	height: 28%;
 }
