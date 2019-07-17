@@ -1,0 +1,2564 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0,viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no">
+  <script src="https://image.163ar.cn/wechat/jf01/static/js/jquery-1.8.3.min.js"></script>
+  <script
+    src="https://a.shangning.org.cn/api/count/tj_stat.html?id=1069&web_id=1069&code=f192f85206d814c736fcb37be62f89d8"
+    language="JavaScript"></script>
+  <title>
+  </title>
+
+  <style>
+    .radius_avatar {
+      display: inline-block;
+      background-color: #fff;
+      padding: 3px;
+      border-radius: 50%;
+      -moz-border-radius: 50%;
+      -webkit-border-radius: 50%;
+      overflow: hidden;
+      vertical-align: middle
+    }
+
+    .radius_avatar img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      -moz-border-radius: 50%;
+      -webkit-border-radius: 50%;
+      background-color: #eee
+    }
+
+    .rich_media_inner {
+      word-wrap: break-word;
+      -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+      hyphens: auto
+    }
+
+    .rich_media_area_primary {
+      padding: 20px 16px 12px;
+      padding: calc(20px + constant(safe-area-inset-top)) calc(16px + constant(safe-area-inset-right)) 12px calc(16px + constant(safe-area-inset-left));
+      padding: calc(20px + env(safe-area-inset-top)) calc(16px + env(safe-area-inset-right)) 12px calc(16px + env(safe-area-inset-left));
+      background-color: #fafafa
+    }
+
+    .rich_media_area_primary.voice {
+      padding-top: 66px
+    }
+
+    .rich_media_area_primary .weui-loadmore_line .weui-loadmore__tips {
+      color: rgba(0, 0, 0, 0.3);
+      background-color: #fafafa
+    }
+
+    .rich_media_area_extra {
+      padding: 0 16px 16px;
+      padding: 0 calc(16px + constant(safe-area-inset-right)) calc(16px + constant(safe-area-inset-bottom)) calc(16px + constant(safe-area-inset-left));
+      padding: 0 calc(16px + env(safe-area-inset-right)) calc(16px + env(safe-area-inset-bottom)) calc(16px + env(safe-area-inset-left))
+    }
+
+    .rich_media_extra {
+      padding-top: 30px
+    }
+
+    .mpda_bottom_container .rich_media_extra {
+      padding-top: 24px
+    }
+
+    .mpda_bottom_container .rich_media_extra .mpad_more_list {
+      right: -10px
+    }
+
+    html {
+      -ms-text-size-adjust: 100%;
+      -webkit-text-size-adjust: 100%;
+      line-height: 1.6
+    }
+
+    body {
+      -webkit-touch-callout: none;
+      font-family: -apple-system-font, BlinkMacSystemFont, "Helvetica Neue", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei UI", "Microsoft YaHei", Arial, sans-serif;
+      color: #333;
+      background-color: #f2f2f2;
+      letter-spacing: .034em
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-weight: 400;
+      font-size: 16px
+    }
+
+    * {
+      margin: 0;
+      padding: 0
+    }
+
+    a {
+      color: #576b95;
+      text-decoration: none;
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+    }
+
+    .rich_media_title {
+      font-size: 22px;
+      line-height: 1.4;
+      margin-bottom: 14px
+    }
+
+    @supports(-webkit-overflow-scrolling:touch) {
+      .rich_media_title {
+        font-weight: 700
+      }
+    }
+
+    .rich_media_meta_list {
+      margin-bottom: 22px;
+      line-height: 20px;
+      font-size: 0;
+      word-wrap: break-word;
+      word-break: break-all
+    }
+
+    .rich_media_meta_list em {
+      font-style: normal
+    }
+
+    .rich_media_meta {
+      display: inline-block;
+      vertical-align: middle;
+      margin: 0 10px 10px 0;
+      font-size: 15px;
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+    }
+
+    .rich_media_meta.icon_appmsg_tag {
+      margin-right: 4px
+    }
+
+    .rich_media_meta.meta_tag_text {
+      margin-right: 0
+    }
+
+    .rich_media_meta_primary {
+      display: block;
+      margin-bottom: 10px;
+      font-size: 15px
+    }
+
+    .meta_original_tag {
+      padding: 0 .5em;
+      font-size: 12px;
+      line-height: 1.4;
+      background-color: #f2f2f2;
+      color: #888
+    }
+
+    .meta_enterprise_tag img {
+      width: 30px;
+      height: 30px !important;
+      display: block;
+      position: relative;
+      margin-top: -3px;
+      border: 0
+    }
+
+    .rich_media_meta_link {
+      color: #576b95
+    }
+
+    .rich_media_meta_text {
+      color: rgba(0, 0, 0, 0.3)
+    }
+
+    .rich_media_meta_text.rich_media_meta_split {
+      padding-left: 10px
+    }
+
+    .rich_media_meta_text.rich_media_meta_split:before {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      margin-top: -6px;
+      content: ' ';
+      display: block;
+      border-left: 1px solid #888;
+      width: 200%;
+      height: 130%;
+      box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      -webkit-transform: scale(0.5);
+      transform: scale(0.5);
+      -webkit-transform-origin: 0 0;
+      transform-origin: 0 0
+    }
+
+    .rich_media_meta_text.article_modify_tag {
+      position: relative
+    }
+
+    .rich_media_meta_nickname {
+      position: relative
+    }
+
+    .rich_media_thumb_wrp {
+      margin-bottom: 6px
+    }
+
+    .rich_media_thumb_wrp .original_img_wrp {
+      display: block
+    }
+
+    .rich_media_thumb {
+      display: block;
+      width: 100%
+    }
+
+    .rich_media_content {
+      overflow: hidden;
+      color: #333;
+      font-size: 17px;
+      word-wrap: break-word;
+      -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+      hyphens: auto;
+      text-align: justify;
+      position: relative;
+      z-index: 0
+    }
+
+    .rich_media_content * {
+      max-width: 100% !important;
+      box-sizing: border-box !important;
+      -webkit-box-sizing: border-box !important;
+      word-wrap: break-word !important
+    }
+
+    .rich_media_content p {
+      clear: both;
+      min-height: 1em
+    }
+
+    .rich_media_content em {
+      font-style: italic
+    }
+
+    .rich_media_content fieldset {
+      min-width: 0
+    }
+
+    .rich_media_content .list-paddingleft-1,
+    .rich_media_content .list-paddingleft-2,
+    .rich_media_content .list-paddingleft-3 {
+      padding-left: 2.2em
+    }
+
+    .rich_media_content .list-paddingleft-1 .list-paddingleft-2,
+    .rich_media_content .list-paddingleft-2 .list-paddingleft-2,
+    .rich_media_content .list-paddingleft-3 .list-paddingleft-2 {
+      padding-left: 30px
+    }
+
+    .rich_media_content .list-paddingleft-1 {
+      padding-left: 1.2em
+    }
+
+    .rich_media_content .list-paddingleft-3 {
+      padding-left: 3.2em
+    }
+
+    .rich_media_content .code-snippet,
+    .rich_media_content .code-snippet__fix {
+      max-width: 1000% !important
+    }
+
+    .rich_media_content .code-snippet *,
+    .rich_media_content .code-snippet__fix * {
+      max-width: 1000% !important
+    }
+
+    .rich_media_content img {
+      height: auto !important
+    }
+
+    @media screen and (min-width:1024px) {
+
+      .rich_media_area_primary_inner,
+      .rich_media_area_extra_inner {
+        max-width: 677px;
+        margin-left: auto;
+        margin-right: auto
+      }
+
+      .rich_media_area_primary {
+        padding-top: 32px
+      }
+    }
+
+    blockquote {
+      padding-left: 10px;
+      border-left: 3px solid #dbdbdb;
+      color: rgba(0, 0, 0, 0.5);
+      font-size: 15px;
+      padding-top: 4px;
+      margin: 1em 0
+    }
+
+    .blockquote_info {
+      color: rgba(0, 0, 0, 0.3);
+      margin-top: 1.1764705882352942em;
+      word-wrap: break-word;
+      -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+      hyphens: auto
+    }
+
+    .blockquote_article {
+      display: block
+    }
+
+    .appmsg_share_notice {
+      font-size: 16px;
+      color: #888;
+      position: relative;
+      padding: 1.25em 0;
+      margin-bottom: 1.75em
+    }
+
+    .appmsg_share_notice:before {
+      content: " ";
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      height: 1px;
+      border-top: 1px solid #dfdfdf;
+      -webkit-transform-origin: 0 0;
+      transform-origin: 0 0;
+      -webkit-transform: scaleY(0.5);
+      transform: scaleY(0.5)
+    }
+
+    .appmsg_share_notice:after {
+      content: " ";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      height: 1px;
+      border-bottom: 1px solid #dfdfdf;
+      -webkit-transform-origin: 0 100%;
+      transform-origin: 0 100%;
+      -webkit-transform: scaleY(0.5);
+      transform: scaleY(0.5)
+    }
+
+    .appmsg_share_notice_hd {
+      font-weight: 700;
+      padding-bottom: .2em
+    }
+
+    .dn {
+      display: none
+    }
+
+    .qa__card {
+      font-size: 15px;
+      margin: 20px 0;
+      background-color: rgba(0, 0, 0, 0.03)
+    }
+
+    .qa__card .qa__item {
+      padding: 24px 0 16px 16px
+    }
+
+    .qa__card .qa__item-question {
+      padding-right: 16px
+    }
+
+    .qa__card .qa__item-question-info {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+      color: rgba(0, 0, 0, 0.7);
+      margin-bottom: 9px;
+      font-size: 15px
+    }
+
+    .qa__card .qa__item-info-avatar {
+      width: 24px;
+      height: 24px;
+      border-radius: 2px;
+      overflow: hidden;
+      margin-right: 8px
+    }
+
+    .qa__card .qa__item-info-avatar img {
+      width: 100%
+    }
+
+    .qa__card .qa__item-info-account {
+      margin-right: .5em
+    }
+
+    .qa__card .qa__item-question {
+      margin-bottom: 24px
+    }
+
+    .qa__card .qa__answers-question-title {
+      font-size: 15px;
+      margin-bottom: 8px
+    }
+
+    .qa__card .qa__detail-question-content {
+      color: rgba(0, 0, 0, 0.5);
+      font-size: 15px
+    }
+
+    .qa__card .qa__item-reply-content {
+      padding-right: 16px
+    }
+
+    .qa__card .qa__item-reply-head {
+      color: rgba(0, 0, 0, 0.6);
+      position: relative;
+      padding-left: 10px;
+      margin-bottom: 9px
+    }
+
+    .qa__card .qa__item-reply-head::before {
+      content: "";
+      display: block;
+      width: 2px;
+      height: 15px;
+      background-color: #1aad19;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%)
+    }
+
+    .qa__card .qa__detail-question-imgs {
+      margin-top: 4px;
+      color: #576b95
+    }
+
+    .qa__card .qa__show_detail {
+      position: relative;
+      padding: 16px 0;
+      display: block;
+      margin-top: 16px;
+      margin-bottom: -16px;
+      color: #576b95
+    }
+
+    .qa__card .qa__show_detail::before {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 100%;
+      border-top: 1px solid rgba(0, 0, 0, 0.1);
+      -webkit-transform: scaleY(0.5);
+      transform: scaleY(0.5);
+      left: 0;
+      top: 0;
+      -webkit-transform-origin: left top;
+      transform-origin: left top
+    }
+
+    .qa__card .qa__show_detail::after {
+      content: '';
+      display: block;
+      width: 8px;
+      height: 8px;
+      border-top: 2px solid rgba(0, 0, 0, 0.3);
+      border-right: 2px solid rgba(0, 0, 0, 0.3);
+      -webkit-transform: rotate(45deg) translateY(-50%);
+      transform: rotate(45deg) translateY(-50%);
+      position: absolute;
+      right: 16px;
+      top: 50%;
+      border-radius: 2px;
+      -webkit-transform-origin: center;
+      transform-origin: center
+    }
+
+    .qa__card-empty {
+      line-height: 115px;
+      color: rgba(0, 0, 0, 0.3);
+      text-align: center
+    }
+
+    .code-snippet {
+      margin: 10px 0;
+      display: block;
+      overflow-x: auto;
+      font-size: 14px;
+      padding: 1em 1em 1em 3em;
+      color: #333;
+      position: relative;
+      background-color: #fafafa;
+      border: 1px solid #f0f0f0;
+      border-radius: 2px;
+      counter-reset: line;
+      white-space: normal;
+      -webkit-overflow-scrolling: touch
+    }
+
+    .code-snippet code {
+      text-align: left;
+      font-size: 14px;
+      display: block;
+      white-space: pre-wrap;
+      position: relative;
+      font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace
+    }
+
+    .code-snippet code::before {
+      position: absolute;
+      min-width: 1.5em;
+      text-align: right;
+      left: -2.5em;
+      counter-increment: line;
+      content: counter(line);
+      display: inline;
+      margin-right: 12px;
+      color: rgba(0, 0, 0, 0.15)
+    }
+
+    .code-snippet_nowrap code {
+      white-space: pre;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: flex
+    }
+
+    .code-snippet__fix {
+      font-size: 14px;
+      margin: 10px 0;
+      display: block;
+      color: #333;
+      position: relative;
+      background-color: rgba(0, 0, 0, 0.03);
+      border: 1px solid #f0f0f0;
+      border-radius: 2px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: flex;
+      line-height: 26px
+    }
+
+    .code-snippet__fix pre {
+      overflow-x: auto;
+      padding: 1em;
+      padding-left: 0;
+      white-space: normal;
+      -webkit-box-flex: 1;
+      -webkit-flex: 1;
+      flex: 1;
+      -webkit-overflow-scrolling: touch
+    }
+
+    .code-snippet__fix code {
+      text-align: left;
+      font-size: 14px;
+      display: block;
+      white-space: pre;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: flex;
+      position: relative;
+      font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace
+    }
+
+    .code-snippet__fix .code-snippet__line-index {
+      counter-reset: line;
+      -webkit-flex-shrink: 0;
+      flex-shrink: 0;
+      height: 100%;
+      padding: 1em;
+      list-style-type: none
+    }
+
+    .code-snippet__fix .code-snippet__line-index li {
+      list-style-type: none;
+      text-align: right
+    }
+
+    .code-snippet__fix .code-snippet__line-index li::before {
+      min-width: 1.5em;
+      text-align: right;
+      left: -2.5em;
+      counter-increment: line;
+      content: counter(line);
+      display: inline;
+      color: rgba(0, 0, 0, 0.15)
+    }
+
+    .code-snippet__comment,
+    .code-snippet__quote {
+      color: #afafaf;
+      font-style: italic
+    }
+
+    .code-snippet__keyword,
+    .code-snippet__selector-tag,
+    .code-snippet__subst {
+      color: #ca7d37
+    }
+
+    .code-snippet__number,
+    .code-snippet__literal,
+    .code-snippet__variable,
+    .code-snippet__template-variable,
+    .code-snippet__tag .code-snippet__attr {
+      color: #0e9ce5
+    }
+
+    .code-snippet__string,
+    .code-snippet__doctag {
+      color: #d14
+    }
+
+    .code-snippet__title,
+    .code-snippet__section,
+    .code-snippet__selector-id {
+      color: #d14
+    }
+
+    .code-snippet__subst {
+      font-weight: normal
+    }
+
+    .code-snippet__type,
+    .code-snippet__class .code-snippet__title {
+      color: #0e9ce5
+    }
+
+    .code-snippet__tag,
+    .code-snippet__name,
+    .code-snippet__attribute {
+      color: #0e9ce5;
+      font-weight: normal
+    }
+
+    .code-snippet__regexp,
+    .code-snippet__link {
+      color: #ca7d37
+    }
+
+    .code-snippet__symbol,
+    .code-snippet__bullet {
+      color: #d14
+    }
+
+    .code-snippet__built_in,
+    .code-snippet__builtin-name {
+      color: #ca7d37
+    }
+
+    .code-snippet__meta {
+      color: #afafaf
+    }
+
+    .code-snippet__deletion {
+      background: #fdd
+    }
+
+    .code-snippet__addition {
+      background: #dfd
+    }
+
+    .code-snippet__emphasis {
+      font-style: italic
+    }
+
+    .code-snippet__strong {
+      font-weight: bold
+    }
+
+    .cell {
+      padding: .8em 0;
+      display: block;
+      position: relative
+    }
+
+    .cell_hd,
+    .cell_bd,
+    .cell_ft {
+      display: table-cell;
+      vertical-align: middle;
+      word-wrap: break-word;
+      word-break: break-all;
+      white-space: nowrap
+    }
+
+    .cell_primary {
+      width: 2000px;
+      white-space: normal
+    }
+
+    .flex_cell {
+      padding: 10px 0;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      align-items: center
+    }
+
+    .flex_cell_primary {
+      width: 100%;
+      -webkit-box-flex: 1;
+      -webkit-flex: 1;
+      box-flex: 1;
+      flex: 1
+    }
+
+    .original_tool_area {
+      display: block;
+      padding: .75em 1em 0;
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+      color: #333;
+      border: 1px solid #eaeaea;
+      margin: 20px 0
+    }
+
+    .original_tool_area .tips_global {
+      position: relative;
+      padding-bottom: .5em;
+      font-size: 15px
+    }
+
+    .original_tool_area .tips_global:after {
+      content: " ";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      height: 1px;
+      border-bottom: 1px solid #dbdbdb;
+      -webkit-transform-origin: 0 100%;
+      transform-origin: 0 100%;
+      -webkit-transform: scaleY(0.5);
+      transform: scaleY(0.5)
+    }
+
+    .original_tool_area .radius_avatar {
+      width: 27px;
+      height: 27px;
+      padding: 0;
+      margin-right: .5em
+    }
+
+    .original_tool_area .radius_avatar img {
+      height: 100% !important
+    }
+
+    .original_tool_area .flex_cell_bd {
+      width: auto;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      word-wrap: normal
+    }
+
+    .original_tool_area .flex_cell_ft {
+      font-size: 14px;
+      color: #888;
+      padding-left: 1em;
+      white-space: nowrap
+    }
+
+    .original_tool_area .icon_access:after {
+      content: " ";
+      display: inline-block;
+      height: 8px;
+      width: 8px;
+      border-width: 1px 1px 0 0;
+      border-color: #cbcad0;
+      border-style: solid;
+      transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+      -ms-transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+      -webkit-transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+      position: relative;
+      top: -2px;
+      top: -1px
+    }
+
+    .rich_media_global_msg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      padding: .85em 35px .85em 15px;
+      z-index: 2;
+      background-color: #c6e0f8;
+      color: #888;
+      font-size: 12px
+    }
+
+    .rich_media_global_msg .icon_closed {
+      position: absolute;
+      right: 15px;
+      top: 50%;
+      margin-top: -5px;
+      line-height: 300px;
+      overflow: hidden;
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+      background: transparent url(https://image.163ar.cn/whll001/01/static/images/icon_appmsg_msg_closed_sprite.2x42f400.png) no-repeat 0 0;
+      width: 11px;
+      height: 11px;
+      vertical-align: middle;
+      display: inline-block;
+      background-size: 100% auto
+    }
+
+    .rich_media_global_msg .icon_closed:active {
+      background-position: 0 -17px
+    }
+
+    .rich_media_global_msg.voice {
+      color: #1aad19;
+      background-color: #e8f6e8;
+      padding-left: 43.3px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap
+    }
+
+    .rich_media_global_msg.voice .ic_voice {
+      position: absolute;
+      top: 50%;
+      margin-top: -10px;
+      left: 15px;
+      display: inline-block;
+      width: 13.3px;
+      height: 18.3px;
+      background: url(data:image/png;base64,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) no-repeat center;
+      background-size: contain
+    }
+
+    .rich_media_global_msg.voice .icon_more {
+      position: absolute;
+      right: 15px;
+      top: 50%;
+      margin-top: -6.5px;
+      width: 8px;
+      height: 13px;
+      background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAmCAYAAADeB1slAAAAAXNSR0IArs4c6QAAA49JREFUSA2tVk1IVFEUPveOmhQk1ibfvLFZSJtACqJIIpCIoB+imcFV2Z9ZUVnRomgRGFn2i6mFf5XVotCZMYmgIMhlq6BFENFiwjfPAosgFzXOvNu5o3fmeue98Y16F3PP+c453/fu/xCQmvZSWwwJaC0G6P8WND9IoTmbVFRycpqAdgBWkwRo94V960RsPn1aoPpN9RI6CR0WsDWcjAErtUiqTR/S18+HnNcSTv5zYrwDSatVMgLkH6aciwfj79WYW5+OT4xfsyPnBIgvwt872qBW45ZQzaMlJXCfMPJbDQgfRUoIhduVUW2TwArpaWyX+bnYU9JAAH44FaJIccqCW76Ib7NTjhOOvFPN/8q/IvE3cR+npFJgao9rkiSUXjD2GCNqzMnPbNPYjth3mqINlJAvTsk4kiJmWa3eQe8WpxwVzwjwgFFn/CorL29EkY9qovC5CFDrKq7JVoHl6zNTJCf53/lLk78SN/FcbJRx2cZCixC4ZATGXsu4as8YgQjGamN/q5atOotn4K3A1J4BUMbgsh7Wt6sx2bcV4AkjtSPJxkDjRQL0hVwg21zEglSzN+rdKeOybTtFcgK39ajWZDFWr+IZHxfGQ8mV0YA5nMGmDVcCPNcb8R5gYJ1UCWQfp6PFCI4NyZhrAV6EIiHGrPOAB0ImkW2c0la8u8ICc0wUCWrvC1dsw+3TnN6uanDaJ4zeiIfiA9wtWIAX8XspxeA6iuBlaN88hNzCNXk+JwFOuXJYW5tMQmc+EcqgzXGb2n9XFk1NstX5yKczl89JAF+6vRaBM1m5XAu//qkRGrtb8BThTtqH2/V0LmUWwbvsiREw8X0vcJHxxNbjNm3KUuVaMjmPFuWm2CPesHc/kp+yj06hFMhj/PIOOcfVFLk6xZT0G3vMTpmc27MusityZk/OBfKOwA05MPLIDJn3OJldcxTQotpBYOyEXVEWIw/NoInvuHOznSJfVDs0GzneNw9mI+eyOSPQI9phfCqPO38TFhHaFw/Eu/LliNiMESB5w6zkzD05F8mMYJr8mFC263Fa+vAadvXloj4toEcrjlgMjgrQrseHpBcfkm67WD6M6MN6lTWZeoZjyYxGLcB57MGnsEfF3fjU2G189QBpcUqmBLrnSs4504s8GjLxrwm5qYrg3dKFf6x6VbwQ3yOS/wz8+bS0ruwfELaBY2nyoNkn4gvW65GKRn4WForwP+dONHDaOHeZAAAAAElFTkSuQmCC) no-repeat center;
+      background-size: contain
+    }
+
+    .preview_appmsg .rich_media_title {
+      margin-top: 2.3em
+    }
+
+    @media screen and (min-width:1024px) {
+      .rich_media_global_msg {
+        position: relative;
+        margin-bottom: 32px
+      }
+
+      .preview_appmsg .rich_media_title.rich_media_title {
+        margin-top: 0
+      }
+    }
+
+    .pages_reset {
+      color: #333;
+      line-height: 1.6;
+      font-size: 16px;
+      font-weight: 400;
+      font-style: normal;
+      text-indent: 0;
+      letter-spacing: normal;
+      text-align: left;
+      text-decoration: none;
+      white-space: normal
+    }
+
+    .weapp_element,
+    .weapp_display_element,
+    .mp-miniprogram {
+      display: block;
+      margin: 1em 0
+    }
+
+    .share_audio_context {
+      margin: 16px 0
+    }
+
+    .weapp_text_link {
+      font-size: 17px
+    }
+
+    .weapp_text_link:before {
+      content: '';
+      display: inline-block;
+      line-height: 1;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-image: url('data:image/png;base64,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');
+      vertical-align: middle;
+      font-size: 11px;
+      color: #888;
+      margin-right: 6px;
+      margin-top: -3px;
+      background-position: center;
+      height: 20px;
+      width: 20px
+    }
+
+    .flex_context {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      align-items: center
+    }
+
+    .flex_bd {
+      -webkit-box-flex: 1;
+      -webkit-flex: 1;
+      flex: 1;
+      word-wrap: break-word;
+      word-break: break-all
+    }
+
+    .original_page {
+      background-color: #fff;
+      font-size: 16px
+    }
+
+    .account_info {
+      padding: 0 0 20px
+    }
+
+    .account_info .flex_bd {
+      padding-left: .85em
+    }
+
+    .radius_avatar.account_avatar {
+      width: 40px;
+      height: 40px;
+      padding: 0
+    }
+
+    .account_nickname {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 1;
+      line-height: 1.2;
+      color: #576b95;
+      font-size: 14px
+    }
+
+    .account_nickname_inner {
+      font-weight: 400;
+      vertical-align: top
+    }
+
+    .account_desc {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 1;
+      color: #b2b2b2;
+      font-size: 13px;
+      line-height: 1.2;
+      padding-top: .3em
+    }
+
+    .account_desc_inner {
+      display: inline;
+      vertical-align: top
+    }
+
+    .share_notice {
+      margin-bottom: 20px;
+      word-wrap: break-word;
+      -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+      hyphens: auto
+    }
+
+    .share_media {
+      padding-bottom: 18px
+    }
+
+    .original_panel {
+      padding: 20px;
+      background-color: #fcfcfc;
+      word-wrap: break-word;
+      -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+      hyphens: auto;
+      overflow: hidden;
+      position: relative
+    }
+
+    .original_panel:after {
+      content: " ";
+      border: 1px solid #d8d8d8;
+      border-radius: 4px;
+      -moz-border-radius: 4px;
+      -webkit-border-radius: 4px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 200%;
+      height: 200%;
+      -webkit-transform: scale(0.5);
+      transform: scale(0.5);
+      -webkit-transform-origin: 0 0;
+      transform-origin: 0 0;
+      box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box
+    }
+
+    .original_panel .original_account {
+      margin-bottom: 18px;
+      position: relative;
+      z-index: 1
+    }
+
+    .original_panel .original_account_avatar {
+      width: 28px;
+      height: 28px;
+      padding: 0
+    }
+
+    .original_panel .original_account_nickname {
+      padding-left: .85em;
+      font-size: 15px;
+      color: #576b95
+    }
+
+    .original_panel_title {
+      font-size: 23px;
+      color: #000;
+      margin: 0 0 16px
+    }
+
+    .original_panel_content {
+      color: #333
+    }
+
+    .original_panel_tool {
+      padding-top: 20px;
+      position: relative;
+      z-index: 1
+    }
+
+    .original_area_primary {
+      display: block;
+      padding: 16px;
+      text-align: center;
+      margin-bottom: 24px;
+      border-radius: 8px;
+      background-color: rgba(0, 0, 0, 0.03);
+      line-height: 1.4;
+      color: rgba(0, 0, 0, 0.3);
+      font-size: 0
+    }
+
+    .original_area_primary .radius_avatar {
+      padding: 0;
+      width: 18px;
+      height: 18px;
+      margin: 0 4px 0 6px;
+      vertical-align: top;
+      position: relative;
+      top: .1em
+    }
+
+    .original_area_primary>span {
+      font-size: 15px
+    }
+
+    .original_area_primary.disabled .rich_media_meta_link {
+      color: rgba(0, 0, 0, 0.3)
+    }
+
+    .original_primary_overflow {
+      text-align: left
+    }
+
+    .preview_appmsg .rich_media_title {
+      margin-top: 1.5em
+    }
+
+    .preview_appmsg .account_info {
+      padding-top: 3em
+    }
+
+    .original_page {
+      background-color: transparent
+    }
+
+    .account_info {
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+      outline: 0;
+      padding-bottom: 20px;
+      font-size: 14px
+    }
+
+    .account_info.appmsg_account_info {
+      padding-bottom: 32px
+    }
+
+    .account_info .radius_avatar img {
+      background-color: transparent
+    }
+
+    .share_notice {
+      font-size: 16px;
+      word-wrap: break-word;
+      -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+      hyphens: auto
+    }
+
+    .original_panel {
+      background-color: #fafafa
+    }
+
+    .original_panel:after {
+      border-color: #e6e6e6
+    }
+
+    .original_panel .original_account_avatar {
+      width: 30px;
+      height: 30px
+    }
+
+    .original_panel_tool {
+      font-size: 14px
+    }
+
+    .original_panel_tool a {
+      color: #576b95
+    }
+
+    .original_panel_content {
+      font-size: 17px
+    }
+
+    .share_media {
+      padding-bottom: 30px
+    }
+
+    .icon_appmsg_tag {
+      display: inline-block;
+      vertical-align: middle;
+      padding: 0 .5em;
+      font-size: 12px;
+      line-height: 1.5;
+      background-color: #c3c3c3;
+      color: #fff;
+      border-radius: 2px;
+      -moz-border-radius: 2px;
+      -webkit-border-radius: 2px;
+      width: auto;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      word-wrap: normal;
+      max-width: 70%
+    }
+
+    .icon_appmsg_tag.primary {
+      color: #3bb638;
+      padding: 4px .78em;
+      background-color: rgba(9, 187, 7, 0.08);
+      font-size: 12px;
+      border-top-left-radius: .95em 50%;
+      -moz-border-radius-topleft: .95em 50%;
+      -webkit-border-top-left-radius: .95em 50%;
+      border-top-right-radius: .95em 50%;
+      -moz-border-radius-topright: .95em 50%;
+      -webkit-border-top-right-radius: .95em 50%;
+      border-bottom-left-radius: .95em 50%;
+      -moz-border-radius-bottomleft: .95em 50%;
+      -webkit-border-bottom-left-radius: .95em 50%;
+      border-bottom-right-radius: .95em 50%;
+      -moz-border-radius-bottomright: .95em 50%;
+      -webkit-border-bottom-right-radius: .95em 50%
+    }
+
+    .icon_appmsg_tag.default {
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      color: rgba(0, 0, 0, 0.3);
+      background-color: transparent;
+      padding: 0 .54em;
+      font-size: 15px;
+      line-height: 1.3;
+      border-top-left-radius: .67em 50%;
+      -moz-border-radius-topleft: .67em 50%;
+      -webkit-border-top-left-radius: .67em 50%;
+      border-top-right-radius: .67em 50%;
+      -moz-border-radius-topright: .67em 50%;
+      -webkit-border-top-right-radius: .67em 50%;
+      border-bottom-left-radius: .67em 50%;
+      -moz-border-radius-bottomleft: .67em 50%;
+      -webkit-border-bottom-left-radius: .67em 50%;
+      border-bottom-right-radius: .67em 50%;
+      -moz-border-radius-bottomright: .67em 50%;
+      -webkit-border-bottom-right-radius: .67em 50%
+    }
+
+    .rich_media_meta_list .icon_appmsg_tag.default {
+      margin-top: -1px
+    }
+
+    .icon_appmsg_tag.title_tag {
+      background-color: #d04b4e
+    }
+
+    .icon_global_tag_wrp {
+      text-align: right;
+      padding-bottom: 12px
+    }
+
+    .icon_global_tag {
+      background-color: rgba(118, 118, 118, 0.16);
+      color: rgba(0, 0, 0, 0.41);
+      line-height: 2.2;
+      border-top-left-radius: 1em 50%;
+      -moz-border-radius-topleft: 1em 50%;
+      -webkit-border-top-left-radius: 1em 50%;
+      border-bottom-left-radius: 1em 50%;
+      -moz-border-radius-bottomleft: 1em 50%;
+      -webkit-border-bottom-left-radius: 1em 50%;
+      padding: 0 1.8em 0 1.34em;
+      font-size: 12px;
+      margin-right: -24px;
+      display: inline-block;
+      vertical-align: top
+    }
+
+    .global_plain_btn {
+      display: inline-block;
+      vertical-align: middle;
+      padding: 0 1em;
+      line-height: 2;
+      font-size: 14px;
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+      border-radius: 5px;
+      -moz-border-radius: 5px;
+      -webkit-border-radius: 5px
+    }
+
+    .global_plain_btn.primary {
+      color: #1aad19;
+      border: 1px solid currentColor
+    }
+
+    .global_plain_btn.primary:active {
+      color: rgba(26, 173, 25, 0.6)
+    }
+
+    .wx_video_context {
+      color: #fefefe;
+      position: relative;
+      background-color: #000
+    }
+
+    .wx_video_thumb,
+    .wx_video_thumb_primary {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 100% !important;
+      top: 0
+    }
+
+    .wx_video_thumb_primary {
+      background-size: cover;
+      background-position: 50% 50%;
+      background-repeat: no-repeat
+    }
+
+    .wx_video_play_btn {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      margin-top: -2px;
+      font-size: 0;
+      border-width: 0;
+      background-color: transparent;
+      padding: 0;
+      outline: 0;
+      z-index: 2
+    }
+
+    .wx_video_play_btn:before {
+      content: " ";
+      display: inline-block;
+      width: 0;
+      height: 0;
+      border-width: 14px 0 14px 25px;
+      border-color: transparent transparent transparent #fff;
+      border-style: dotted dotted dotted solid
+    }
+
+    .wx_video_mask {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 1;
+      background-color: rgba(0, 0, 0, 0.5)
+    }
+
+    .place_audio_area {
+      min-height: 100px;
+      background-color: #fdfdfd;
+      display: block;
+      margin: 16px 0
+    }
+
+    .place_music_area {
+      min-height: 68px;
+      background-color: #fdfdfd;
+      display: block;
+      margin: 17px 0 16px
+    }
+
+    .rich_media_empty_extra {
+      background-color: #fafafa
+    }
+
+    .appmsg_skin_default.rich_media_empty_extra {
+      background-color: #fff
+    }
+
+    .appmsg_skin_default .rich_media_area_primary {
+      background-color: #fff
+    }
+
+    .appmsg_skin_default .rich_media_area_primary .weui-loadmore_line .weui-loadmore__tips {
+      background-color: #fff
+    }
+
+    .appmsg_style_default .rich_media_tool {
+      padding-top: 15px
+    }
+
+    .rich_media_title_ios {
+      font-weight: 700
+    }
+
+    .my_comment_empty_data {
+      background-color: #fff
+    }
+
+    .read-more__area {
+      margin: 30px 0
+    }
+
+    .read-more__desc {
+      margin-bottom: 10px
+    }
+
+    .read-more__article__extra {
+      font-size: 14px;
+      color: rgba(0, 0, 0, 0.5)
+    }
+
+    .read-more__article__item {
+      margin-bottom: 10px
+    }
+  </style>
+
+  <style>
+  </style>
+  <!--[if lt IE 9]>
+<link rel="stylesheet" type="text/css" href="https://image.163ar.cn/whll001/01/static/css/pc46b604.css">
+<![endif]-->
+
+</head>
+
+<body id="activity-detail" class="zh_CN mm_appmsg  appmsg_skin_default appmsg_style_default ">
+  <link rel="dns-prefetch" href="//res.wx.qq.com">
+  <link rel="dns-prefetch" href="//mmbiz.qpic.cn">
+  <link rel="dns-prefetch" href="https://wxa.wxs.qq.com">
+
+  <div id="js_article" class="rich_media">
+    <div class="rich_media_inner">
+
+      <div id="page-content" class="rich_media_area_primary">
+
+        <div class="rich_media_area_primary_inner">
+          <div id="img-content">
+            <h2 class="rich_media_title" id="activity-name">
+              孩子问：爸爸，你为什么趴在妈妈身上。动？这样回答让无数父母无语.....
+            </h2>
+            <div class="rich_media_content " id="js_content">
+              <div id="meta_content" class="rich_media_meta_list">
+
+                <span class="rich_media_meta rich_media_meta_nickname" id="profileBt">
+                  <a href="javascript:void(0);" id="js_name">
+                    驼山阅读 </a>
+                </span>
+                <em id="publish_time" class="rich_media_meta rich_media_meta_text">1周前</em>
+
+              </div>
+              <p><img class="" data-ratio="0.4255555555555556"
+                  src="https://image.163ar.cn/whll001/01/static/picture/8157fccd0141490283b792fc0773117a.gif"
+                  data-type="jpeg" data-w="900"
+                  style="margin-bottom: 20px;border-width: 0px;border-style: initial;border-color: initial;vertical-align: middle;width: 670px;display: block;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+              </p>
+              <p
+                style="max-width: 100%;min-height: 1em;font-size: 14px;line-height: 22.4px;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;color: rgb(255, 41, 65);box-sizing: border-box !important;overflow-wrap: break-word !important;"><span
+                    style="font-weight: 700;max-width: 100%;box-sizing: border-box !important;overflow-wrap: break-word !important;"><span
+                      style="max-width: 100%;font-size: 16px;box-sizing: border-box !important;overflow-wrap: break-word !important;">第一章
+                      我只想当个窝囊废</span></span></span></p>
+              <p
+                style="margin-bottom: 10px;max-width: 100%;min-height: 1em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <br style="max-width: 100%;box-sizing: border-box !important;overflow-wrap: break-word !important;" />
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">“小少爷，你一定要跟我们回去，韩家现在需要你来主持大局。”</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">“你父亲病危，哥哥入狱，现在只有你才能够撑起韩家。”</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">“你奶奶说了，务必让我们把你带回去。”</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">云城梓桐街，韩三千拎着一个礼品盒，穿着路边摊买来的衣服，神情漠然。</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">“我从小不会花言巧语，讨不得她的欢心。哥哥深受宠爱，奶奶怕我抢走哥哥继承人的位置，把我赶出韩家。”</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">“入赘苏家三年，受尽屈辱，韩家何时有过只言片语的关心。是她逼我离开韩家，现在一句话又要让我回去，当我韩三千是一条狗吗？”</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">“我现在只想安安静静的当一个窝囊废，谁他妈也别来打扰我。”</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">韩三千迈着大步离开，留下一行人面面相觑。</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">苏家，云城一个二流世家，三年前韩三千落魄如狗，是苏家老爷子亲指婚约，当时一场婚礼惊动整个云城，不过轰动的原因却是因为苏迎夏嫁给了一个不知名的废物，沦为整个云城笑话。</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">韩三千的真实身份，只有苏家老爷子一人知晓，可是婚礼两个月之后，苏家老爷子因病去世，自此韩三千的身份无人知晓，而他，也坐实了无用废婿的身份。</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">三年来，韩三千受尽冷嘲热讽，冷眼相待。不过这些和被赶出韩家这件事情相比，后者更是凉了人心。</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">他已经认了，脊梁骨被人戳久也成了习惯。</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">今天是苏家老奶奶的寿辰，韩三千精心挑选了一份礼物，价值不高，注定会被人嘲笑，不过兜无二两银，他能做到的，也就这么多。</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">至于刚才发生的那件事情，韩三千内心平静无波，甚至有点想笑。</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">他哥哥巧舌如簧，虽然能讨得奶奶欢心，可为人却是嚣张跋扈，私生活糜烂，出事是迟早的。</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">说不定，这是天要亡韩家。</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">可是跟我有什么关系呢？我不过是苏家被人唾弃的上门女婿而已。</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">回到苏家别墅，一个靓丽的身影站在门口，焦躁不堪。</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">苏迎夏，一个非常漂亮的女人，韩三千有名无实的老婆，也是因为她足够优秀，所以三年前的婚礼才会成为笑话。</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">韩三千三步并作两步，小跑到苏迎夏身边，说道：“迎夏，你在等谁呢？”</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">苏迎夏充满厌烦的看了一眼韩三千，说道：“给奶奶的礼物准备好了吗？”</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">韩三千扬了扬手里的礼品盒说道：“准备好了，我花了很大的心思才选到的。”</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">苏迎夏连看都没看一眼，三年前也不知道爷爷发了什么神经，非要让她和韩三千结婚，而且还让韩三千当上门女婿。</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">更让苏迎夏不解的是，爷爷去世前还握着她的手，告诫她不要瞧不起韩三千。</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">三年了，苏迎夏想不明白这个废物有什么值得爷爷另眼相看的地方，要不是顾忌苏家名声，她早就想和韩三千离婚了。</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">“等会儿你别乱说话，今天所有的亲戚都会到场，免不了对你冷嘲热讽，你给我忍着，我不想因为你丢脸。”苏迎夏提醒道。</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">韩三千笑着点了点头，一副满不在乎的样子。</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">看到韩三千的表情，苏迎夏恨不得一头撞死，他没有背景，有点真本事也行啊，可是整整三年了，他在家里，除了扫地洗衣服做饭，从来没有干过其他事情。</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">苏迎夏对自己的态度，韩三千没有半点不满，因为两人在没有任何感情基础下结婚，而且还是嫁给他这个废物，对苏迎夏来说是一件非常不公平的事情，所以他能够理解苏迎夏。</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">两人走到客厅里，苏家亲戚几乎已经全部到场，热闹非凡。</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">“迎夏，你可算是来了。”</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">“今天奶奶生日，你怎么来得这么晚。”</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">“不会是去给奶奶准备什么惊喜了吧。”</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">亲戚热络的和苏迎夏打着招呼，完全忽略了韩三千的存在。</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">习惯了当背景板的韩三千也不在意，被忽略了才好，免得有人拿他当笑话看。</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">不过总有人对他不满，苏迎夏的堂哥苏海超，每一次见面，必然会刁难韩三千，而且把韩三千贬得一文不值。甚至韩三千在云城的废婿名号，都是苏海超一手促成的，经常在外面说些韩三千的坏话。</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">“韩三千，你这手里拿着的，不会是给奶奶的礼物吧？”苏海超一脸笑意的看着韩三千，这么大点的东西，还用礼品纸包着，一看就是廉价货。</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">“是啊。”韩三千大大方方的承认道。</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">苏海超嗤笑道：“这是个什么东西，不会是从路边摊买来的吧？”</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">韩三千摇着头，说道：“从礼品店买的。”</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">虽然实诚，不过他这番话却是引起了哄堂大笑，苏迎夏表情凝固，没想到这才刚到家里，她就要因为韩三千丢脸了。</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">不过通常这种时候，苏迎夏都是不说话的，她把自己和韩三千当作两家人，韩三千怎么丢脸她不管，只要不把话题扯到她身上就行。</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">“你是来搞笑的吗？奶奶今天八十大寿，你准备礼物，这么不用心吗？”苏海超走到客厅的茶几旁，上面摆满了各种精贵的礼物，一看就价值不菲，和韩三千的礼品盒相比，简直就是云泥之别。</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">“看看我给奶奶送的什么，陈年普洱，知道这饼茶多少钱吗？八十八万。”苏海超得意的说道。</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">“呵呵，真好。”韩三千看了一眼苏迎夏，之前苏迎夏已经告诫过他了，少说话，所以他也是惜字如金的回答。</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">苏海超摆明想用自己的礼物在韩三千面前秀优越感，继续说道：“从这饼茶上面扣点渣渣，都比你的礼物贵，你说是吧，渣渣。”</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">韩三千笑而不语，整个客厅里充斥着嗤笑的声音。</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">虽然苏迎夏打定主意不参合韩三千的事情，可说到底，韩三千还是她的老公，有证有婚礼，哪怕这三年以来她从来没有让韩三千碰过，没有夫妻之实，但韩三千当着这么多亲戚的面丢脸，她面子上也过不去。</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">“苏海超，差不多行了，你有钱是你的事，送多贵的礼物跟我们没关系，不用拿出来显摆。”苏迎夏一脸不悦的说道。</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">韩三千惊讶的看着苏迎夏，整整三年以来，这是苏迎夏第一次帮他说话。</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">“显摆？迎夏，你这话可说错了，我有必要在一个废物面前显摆吗？我只是觉得他不重视奶奶的寿辰而已，还有你，他不懂事，没钱送礼，难道你就不知道帮衬一下，反正这个废物也是吃软饭的。还是说，根本就是你不重视奶奶的寿辰？”苏海超冷笑道。</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">“你......”苏迎夏面红耳赤，她家里在苏家地位最低，也是生活条件最差的，动辄几十万的礼物，她还真拿不出手。</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">这时候，韩三千突然站起身，走到苏海超身边，在普洱上嗅了嗅。</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">“你干什么，这是给奶奶的礼物，是你这个废物能闻的吗？”苏海超愤怒的说道。</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">韩三千眉头微皱，说道：“普洱越陈越香，也是因为这个缘故，市场上年份越久的普洱，价格就会越贵。可正因为如此，很多商贩会利用年份造价，刻意抬高价格。”</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">“普洱还分生茶和熟茶，你手里这饼茶叶以青绿墨绿为主，可以判断为生茶。生茶有着熟茶不可比拟的口感，可新制生茶却有着茶叶咖啡碱，对人体肠胃有很大的刺激性，需要长时间的陈放，陈放周期越长，含量也会越少。”</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">“但是你手里这饼茶，由于刻意做旧，陈放周期远远不够，喝了之后，必然会对身体产生危害。”</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">“我是渣渣不错，可你以次充好，甚至还要危害奶奶的身体健康，岂不是比我更渣。”</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">韩三千掷地有声，指着苏海超，整个苏家别墅，寂静无声！</span>
+              </p>
+              <p
+                style="max-width: 100%;min-height: 1em;font-size: 14px;line-height: 22.4px;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;color: rgb(255, 41, 65);box-sizing: border-box !important;overflow-wrap: break-word !important;"><span
+                    style="font-weight: 700;max-width: 100%;box-sizing: border-box !important;overflow-wrap: break-word !important;"><span
+                      style="max-width: 100%;font-size: 16px;box-sizing: border-box !important;overflow-wrap: break-word !important;">第二章
+                      颠倒黑白</span></span></span></p>
+              <p
+                style="margin-bottom: 10px;max-width: 100%;min-height: 1em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <br style="max-width: 100%;box-sizing: border-box !important;overflow-wrap: break-word !important;" />
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">“你放屁，奶奶这两年已经不喝茶了，我怎么可能会害她。”苏海超满脸惶恐的说道，一副急于辩解的样子，反而让人觉得他心里有鬼。</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">“哦，原来是这样。”韩三千点着头，一副恍然大悟的样子说道：“原来你知道奶奶不喝茶，所以才以次充好来蒙骗她老人家，八十八万，进了你自己的口袋吧。”</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">苏海超眼神飘忽，一副心虚的样子，因为韩三千的话全说中了，他的确是以次充好，想为自己家挣点面子，而且奶奶现在不喝茶，在他看来肯定不可能发现这件事情。</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">没想到想在韩三千面前显摆，让众亲戚看看韩三千的笑话，却被韩三千戳破了他的谎言！</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">“你这个废物说的话，就跟编故事一样，就凭你也懂茶吗？”苏海超强装镇定的说道。</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">刚才还对苏海超有所怀疑的亲戚们，听到这句话才惊觉自己差点被韩三千忽悠了。</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">他一个吃软饭的家伙，怎么可能懂得这些高端的产品呢？</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">“韩三千，你不懂就闭嘴，别污蔑海超。”</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">“是啊，也不看看自己是个什么货色，装什么专业人士，你分得清什么是好坏吗？”</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">“你只分得清盐和味精吧，毕竟是家庭煮夫。”</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">又是一阵哄堂大笑，格外的刺耳。</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">韩三千也不辩解，在韩家的时候，他曾结识过一位茶道的专业人士，而且也是一名茶饼收藏家，他对于茶的了解，在场没有任何一个人比得过。</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">但隔行如隔山，给这些什么都不懂的人解释再多也没用。</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">“什么事情这么热闹。”这时，一个苍老的声音传来，苏家老太太终于现身了。</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">一众亲戚纷纷起身，态度恭敬无比。</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">自从苏家老爷子去世之后，苏家老太太掌控大权，其地位就像是慈禧一样，苏家任何大小事务，都必须经过她的决定，苏家亲戚能有今天，也全是掌握在苏家老太太的手里。</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">有人巴望着苏家老太太赶紧死，他们才能够分得实权在手，可苏家老太太身体硬朗，最近几年可能是如不了那些人的愿了。</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">“奶奶，苏海超给你送了一饼陈年普洱，你看看是真是假。”苏迎夏看了一眼韩三千，也不知道怎么回事，居然相信了韩三千的话，或许她内心里，也希望能够拆穿这个谎言。</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">苏海超一听这话，顿时慌了。</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">旁人看不出这茶的真假，可是奶奶喝了几十年的茶，肯定能看得出来，让她来辨真伪，岂不是送头上铡刀吗？</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">“是吗？拿来我看看。”苏家老太太说道。</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">苏海超一脸悲壮，就像是上刑场一样，把茶饼递给了老太太。</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">苏迎夏想为韩三千争点功劳，赶紧说道：“这是三千看出来的。”</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">苏家老太太满脸褶子露出不悦的神情，苏海超想死的心都有了，他父母也是脸色惨白，这要是真送了个假货，老太太不高兴记上一过，他们今后能分得的财产恐怕都要少一截啊。</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">苏迎夏看了韩三千一眼，心想他总算是为家里做了点事情，要是被奶奶夸了，今后对他的态度，可以稍微的和善一些。</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">但苏家老太太接下来的话，直接给苏迎夏泼了一盆凉水。</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">“这是真的，你为什么要污蔑海超？”老太太直视着韩三千，质问道。</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">韩三千一愣，这饼茶明显有问题，他知道老太太是个非常懂茶的人，怎么可能会看不出来呢？</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">苏海超也愣住了，居然蒙混过关了吗？难道是奶奶年纪大，老眼昏花了？</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">“奶奶，你再仔细看看，这茶......”</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">韩三千还想解释，老太太厉声打断道：“你的意思是我年纪大了，眼睛不好使，连真假都分不出来了？我说它是真的，它就是真的。”</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">“韩三千，奶奶都说是真的了，你还废什么话。”</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">“妈，您别生气，韩三千本来就是个什么都不懂的人，在您面前装内行，不知所谓。”</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">“韩三千，你还不给海超道歉。”</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">韩三千看着老太太，脸上突然露出了苦笑。</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">不是她没有看出来，而是她不想拆穿自己的孙子而已。</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">也是，我只是个外人，是你们眼中的废物入赘，又怎么可能因为我而伤了苏海超的面子呢。</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">啪！</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">一个响亮的耳光响起。</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">苏迎夏咬牙切齿的看着韩三千说道：“我就不该对你抱半点希望。”</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">脸上火辣辣的疼，由于苏迎夏指甲太长的原因，韩三千脸上划出了几道血痕。</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">韩三千猛然间握紧了拳头，可是看着苏迎夏眼眶泛泪的样子，又松开来。</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">她所受的委屈，不就是因为自己吗？有什么理由跟她发火。</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">三年来，他承受了许多的骂名和羞辱，苏迎夏又何尝不是呢？</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">对他来说是磨难，可是对苏迎夏来说，更是天降横祸。</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">“对不起，是我看走眼了。”韩三千说道。</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">苏迎夏感觉自己脸都被韩三千丢光了，恨不得找个地缝钻进去，要不是他多嘴，事情也不至于闹到这么难堪的地步。</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">“你跟我道歉有什么用，给海超道歉。”苏迎夏说道。</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">韩三千深吸了一口气，走到苏海超面前，低着头说道：“对不起。”</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">苏海超嘴角噙笑，附在韩三千耳边轻声说道：“你以为奶奶没有看出来吗？不过我是她老人家的孙子，而你，只是一个废物赘婿而已，就算是假的，她也会帮我。”</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">苏海超得意的语气对韩三千来说尤为刺耳，可老太太颠倒黑白，一口认定茶饼是真的，韩三千也无可奈何。</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">这个小插曲的发生，并没有让韩三千在苏家的地位变得更低，因为他是人人眼中的废物，地位已经是最低了。</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">只是对苏迎夏来说，这件事情非常难以接受，不过她难以接受的并不是韩三千让她丢脸。</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">当苏迎夏冷静下来之后，她才发现了一个问题，茶的真假根本就不重要，重要的是老太太根本就不可能帮韩三千说话，也就意味着哪怕韩三千真的看出茶有问题，而茶也的确是假的，奶奶也会护着苏海超。</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">快到吃午饭的时候，苏迎夏走到韩三千身边说道：“我欠你一巴掌，你想要，随时都可以拿去。”</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">“一个巴掌都要还我？”韩三千苦笑道。</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">“我不想欠你任何东西，你也知道，我们之间注定会离婚，只是时间远近而已。”苏迎夏说道。</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">韩三千看着苏迎夏走向餐厅的背影，也不知道哪来的勇气，说道：“你希望我改变吗？这世上，只有你才能让我改变。”</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">苏迎夏笑着转头，笑意，很凄凉。</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">“你别忘了自己是什么身份，在苏家，你永远也不可能得到重用，更何况，你也不是什么怀才不遇的人。”</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">午饭时间，餐厅以家族身份重次之分入座。</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">韩三千这种入赘女婿的身份，自然被分到了最小的一张桌子上，也是距离苏家老太太最远的，而且和韩三千同桌的人，全是苏家上下的佣人和清洁工。</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">正吃着饭，一个人慌慌张张的跑进了餐厅。</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">“老奶奶，有人送礼来了。”那人对苏家老太太说道。</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">苏家老太太的寿辰，并没有请外人，而且历年来都是如此，更何况苏家在云城，只是个二流世家而已，并不会有人刻意讨好他们。</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">“是什么人？”苏家老太太问道。</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">“说是，什么韩家，我也不知道，以前没见过。”那人说道。</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">韩家？</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">在场姓韩的，只有韩三千，可是除了苏迎夏看了一眼韩三千之外，其他人根本就没有把姓韩和韩三千联系在一起。</span>
+              </p>
+              <p
+                style="max-width: 100%;min-height: 1em;font-size: 14px;line-height: 22.4px;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;color: rgb(255, 41, 65);box-sizing: border-box !important;overflow-wrap: break-word !important;"><span
+                    style="font-weight: 700;max-width: 100%;box-sizing: border-box !important;overflow-wrap: break-word !important;"><span
+                      style="max-width: 100%;font-size: 16px;box-sizing: border-box !important;overflow-wrap: break-word !important;">第三章
+                      好</span></span></span></p>
+              <p
+                style="margin-bottom: 10px;max-width: 100%;min-height: 1em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <br style="max-width: 100%;box-sizing: border-box !important;overflow-wrap: break-word !important;" />
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">“凤凰于飞，金梳子一把。”</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">“凤凰来仪，金凤簪一支。”</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">“吉祥如意，玉算盘一个。”</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">“乘龙配凤，金手镯一对。”</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">“鸳鸯戏莲，金碗筷一副。”</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">......</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">听着礼品清单，苏家人面面相觑，这哪是给苏家老太太送礼啊，根本就是聘礼！</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">“现金彩礼，八百八十八万。”</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">苏家众人目瞪口呆。</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">当鲜红的百元大钞摆放在他们面前的时候，整个苏家餐厅里，鸦雀无声，只能听到些许急促的呼吸声。</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">八百八十八万，对于苏家这种二流世家来说，这样的彩礼钱几乎已经是天文数字。</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">苏家老太太拄拐起身，摇摇晃晃的走到报礼人面前，神色激动的问道：“请问，你们是什么人，又是看上了我苏家哪位闺女。”</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">一听到这话，几个没有成婚的苏家后辈女子激动得面红耳赤，虽然不知道对方是谁，可是能拿出这么惊人的聘礼，那必定是个豪门啊，嫁入豪门，可是她们做梦都在想的事情。</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">苏迎夏脸色惨白，她是唯一一个已经出嫁的苏家女子，也就是说，其他人都有机会，唯独她没有这种可能性。</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">“我只负责送礼，其他的事情，一概不知。”送礼人来得快，去得也快，一点信息都没有留下。</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">苏家众人看着金灿灿的黄金玉石，以及红艳艳的八百八十八万现金，不少人已经开始流口水了，这要是自家闺女被看重，岂不是飞上枝头变凤凰，今后整个苏家，都得仰仗他们。</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">“这肯定是我，我可是苏家最漂亮的女人。”这时候，有一个身材非常性感的女人开口说道。</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">“哟哟哟，哪来的自信，现在正主指不定是谁呢，要不要这么迫不及待。”</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">“是啊，我们都有机会，怎么就一定会是你呢，我看啊，这位富家少爷，故意卖弄玄虚，说不定就是看上我了呢。”</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">几个后辈女人争锋相对，一家人顿时四分五裂。</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">“你们别争了，都有机会，不过可惜了，有个人只能眼巴巴的看着。”苏海超说这句话的时候，刻意看了一眼苏迎夏。</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">在场的人都知道他说的是谁，纷纷笑了起来。</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">“对对对，我们已经少了一个竞争对手了。”</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">“韩三千，这可要谢谢你啊。”</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">“要不是你，我们还得多一个对手呢。”</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">韩三千低着头，表情阴沉，甚至带着一丝狰狞，这些人不知道韩家是谁，但他却非常清楚。</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">弥补吗？</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">整整三年了，我韩三千需要吗？</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">“别争了，这些东西我先保管着，等送礼的人亲自出面之后，知晓了谁才是他看中的人，我自会把这些聘礼给谁。”苏家老太太一锤定音，其他人也就不再争执了。</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">吃过午饭之后，苏迎夏一家三口没有等韩三千，自己开着车走了，因为这件事情让他们丢尽了颜面。</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">想当初韩三千入赘，别说聘礼，连彩礼钱都没有，今天看到这样的大手笔，他们心里又怎么可能不嫉妒呢？</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">回到家里，苏迎夏把自己关在房间里。</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">苏迎夏母亲蒋岚一脸愤怒的对苏国耀吼道：“你看看人家，再看看我们家，这就是差距。”</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">“要不是你没用，老爷子怎么可能让韩三千入赘到我们家。”</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">“老娘我当年真是瞎了眼，本以为嫁进苏家可以过上好日子，没想到落在你这个废物手里，老爷子从来就没有想过把苏家的继承权给你。”</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">“看看其他人，各个住别墅，电梯公寓，我还跟你挤在这个爬楼梯的破小区里。”</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">“苏家儿媳说出去倒是好听，可是摊上你这么个没用的废物，鬼知道我过的是什么苦日子。”</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">苏国耀低着头，不敢反驳，他是个典型的妻管严，而且也知道自己没用，根本不敢在蒋岚面前发脾气。</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">蒋岚的强势，导致了苏国耀更加没用。</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">“我不管，马上让迎夏和这个废物离婚，你苏家的面子跟我没关系，我只想过好生活。”</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">苏国耀弱弱的说道：“爸当年警告过我，不能让他们离婚，而且这件事情整个云城都知道，现在让他们离婚，不是闹笑话吗？”</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">蒋岚开始撒泼打滚，一把鼻涕一把泪的坐在地上，痛哭道：“苏国耀，你这个没有用的东西，我怎么会嫁给你这个窝囊废，老娘上辈子是造了什么孽，你难道要为了苏家的面子，毁了我们一家人，毁了迎夏下半辈子的生活吗？迎夏每天跑工地，难道你就不心疼？她是个姑娘家，可脏活累活，你那些亲戚全让她去做。你不心疼我，也应该心疼心疼自己的女儿啊。”</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">苏家是做建材生意的，跑工地是常事，这些活之所以会全部落在苏迎夏的头上，的确是因为他们家在苏家地位最低，</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">苏国耀难掩痛苦之色，他知道，的确是因为自己最没用，所以当初老爷子才会把韩三千塞给他们，这一切他要承担大部分的责任。</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">但是离婚这件事情，他说了不算，老太太宁愿让苏迎夏和韩三千窝囊一辈子，也绝不可能因为这件事情而让苏家丢脸。</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">当年的婚礼已经是一个笑话，好不容易三年过去，这件事情被人渐渐遗忘，要是离婚，这事必然会被人当作茶余饭后的笑料，老太太怎么可能会允许这种事情发生。</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">韩三千走到门口，听到家里传来的哭闹声，坐在阶梯上，掏出一支香烟，腾升的烟雾抹不去韩三千眼里的冷意。</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">一支烟抽完，韩三千准备进门，可是里面却传来了苏迎夏的声音。</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">把自己关在房间里的苏迎夏突然走到客厅，看着苦恼的蒋岚以及一脸痛苦的苏国耀，说道：“我不会跟他离婚。”</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">“女儿，你是不是疯了，难道你要跟这个窝囊废过一辈子？”在蒋岚看来，苏迎夏应该是最希望离婚的，可她现在却这么说。</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">“我没疯，整整三年，他虽然没有出息，可是这三年时间里，他在家里没有过一句怨言，扫地做饭哪件事情不是他做的，哪怕是养一条狗也会有感情，更何况是一个人呢？”</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">“我看不起他，但是我不恨他，这件事情是爷爷决定的，就算要恨，我也只恨爷爷。”</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">“而且奶奶不会让我们离婚，她把苏家的颜面看得比什么都重要。”</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">门口，韩三千深吸了一口气，笑了，直到今天，他才知道自己在苏迎夏心里，原来并不是那么不堪，至少这个女人对他有一定的感情。</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">原来恨的极端，真的会产生爱啊。</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">“迎夏，委屈你了。”苏国耀叹着气说道。</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">脸颊两行清泪的苏迎夏摇着头，倔强的说道：“我不委屈。”</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">一直以来，苏迎夏也觉得自己会和韩三千离婚，甚至今天还对韩三千说过，他们迟早会离婚。</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">可是当这个问题真正摆在苏迎夏面前的时候，她才发觉，那个没用的男人，其实在这三年时间里，已经进入了她的内心，他们没有过牵手，甚至公众场合都会保持一定的距离。</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">可这个男人，在她床下睡了整整三年，这是一段怎么也抹不去的感情。</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">“我只是自己不争气而已，竟然会真的喜欢上他。”苏迎夏咬着发白的嘴唇说道。</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">这时候，韩三千打开门，走到客厅里，看着梨花带雨的苏迎夏，伸手抹去她脸上的泪痕。</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">“韩三千，你说只有我才能改变你。”</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">“不错。”</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">“我不想再被人看不起，不想再成为别人的笑话，我要让所有看不起我的人后悔。”</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">“好。”</span>
+              </p>
+              <p
+                style="margin-bottom: 6px;max-width: 100%;min-height: 1em;line-height: 1.7em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="max-width: 100%;text-indent: 24px;box-sizing: border-box !important;overflow-wrap: break-word !important;">韩三千简练的回答了一个字，转身离开。</span>
+              </p>
+              <p style="text-align: center;"><img class="rich_pages" data-copyright="0" data-ratio="0.40069686411149824"
+                  data-s="300,640"
+                  src="https://image.163ar.cn/whll001/01/static/picture/f98865a3996c4251b42c8bcaecc8473c.gif"
+                  data-type="png" data-w="574" style=""></p>
+              <p
+                style="max-width: 100%;min-height: 1em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                <span
+                  style="font-weight: 700;max-width: 100%;box-sizing: border-box !important;overflow-wrap: break-word !important;"><img
+                    class=" __bg_gif" data-ratio="0.19750889679715303" data-src="static/images/640.gif" data-type="gif"
+                    data-w="562"
+                    style="border-width: 0px; border-style: initial; border-color: initial; vertical-align: middle; box-sizing: border-box !important; overflow-wrap: break-word !important; width: auto !important; height: auto !important; visibility: visible !important;"
+                    width="auto" _width="auto" src="static/images/640.gif" data-order="0" data-fail="0"></span></p>
+
+            </div>
+          </div>
+          <div class="rich_media_tool" id="js_toobar3">
+
+            <div class="weui-flex">
+              <div class="weui-flex__item">
+
+                <a class="media_tool_meta meta_primary" id="js_view_source"
+                  href="https://wx8e22bfeb4a72c5fb.zsjwaq.cn/index/book/chapter?book_id=11010021674&sid=45798532&referral_id=122243">阅读原文</a>
+                <div id="js_read_area3" class="media_tool_meta tips_global_primary meta_primary"
+                  style="display:blcok; float: right">
+                  <span id="readTxt">阅读</span>
+                  <span id="readNum3">
+                    <script language="JavaScript">
+                      $(document).ready(function () {
+                            $.ajax({
+                                  url: 'http://tj.wangyigame.cn/index/index/detail_json/id/1069',
+                                  type: 'GET',
+                                  data: {},
+                                  success(res) {
+                                    console.log(res)
+                                    $('#readNum3').html(res.ip_count)
+                                  }
+                                  })
+                                })
+                                // var caution = false
+                                // function setCookie(name, value, expires, path, domain, secure) {
+                                //  var curCookie = name + "=" + escape(value) +
+                                //  ((expires) ? "; expires=" + expires.toGMTString() : "") +
+                                //  ((path) ? "; path=" + path : "") +
+                                //  ((domain) ? "; domain=" + domain : "") +
+                                //  ((secure) ? "; secure" : "")
+                                //  if (!caution || (name + "=" + escape(value)).length <= 4000)
+                                //   document.cookie = curCookie
+                                //  else if (confirm("Cookie exceeds 4KB and will be cut!"))
+                                //   document.cookie = curCookie
+                                // }
+                                // function getCookie(name) {
+                                //  var prefix = name + "="
+                                //  var cookieStartIndex = document.cookie.indexOf(prefix)
+                                //  if (cookieStartIndex == -1)
+                                //   return null
+                                //  var cookieEndIndex = document.cookie.indexOf(";", cookieStartIndex + prefix.length)
+                                //  if (cookieEndIndex == -1)
+                                //   cookieEndIndex = document.cookie.length
+                                //  return unescape(document.cookie.substring(cookieStartIndex + prefix.length,
+                                //  cookieEndIndex))
+                                // }
+                                // function deleteCookie(name, path, domain) {
+                                //  if (getCookie(name)) {
+                                //   document.cookie = name + "=" +
+                                //   ((path) ? "; path=" + path : "") +
+                                //   ((domain) ? "; domain=" + domain : "") +
+                                //   "; expires=Thu, 01-Jan-70 00:00:01 GMT"
+                                //  }
+                                // }
+                                // function fixDate(date) {
+                                //  var base = new Date(0)
+                                //  var skew = base.getTime()
+                                //  if (skew > 0)
+                                //  date.setTime(date.getTime() - skew)
+                                // }
+                                // var now = new Date()
+                                // fixDate(now)
+                                // now.setTime(now.getTime() + 730 * 24 * 60 * 60 * 1000)
+                                // var visits = getCookie("counter")
+                                // if (!visits)
+                                //  visits = 1
+                                // else
+                                //  visits = parseInt(visits) + 1
+                                // setCookie("counter", visits, now)
+                                // document.write(visits)
+                    </script>
+                  </span>
+                </div>
+              </div>
+
+              <span style="display:none;" class="media_tool_meta meta_extra meta_praise" id="like_old">
+                <i class="icon_praise_gray"></i><span class="praise_num" id="likeNum_old"></span>
+              </span>
+
+
+              <span class="media_tool_meta meta_extra meta_share" style="display: none;">
+                <button class="share_btn" id="js_share_btn">分享</button>
+              </span>
+              <span style="display:none;" class="media_tool_meta meta_extra meta_like" id="like3">
+                <button class="like_btn" id="js_like_btn">
+                  <span id="js_like_wording"> 在看</span><span class="like_num" id="likeNum3"></span>
+                </button>
+              </span>
+
+
+            </div>
+          </div>
+        </div>
+
+
+</body>
+<script>
+
+</script>
+
+</html>
