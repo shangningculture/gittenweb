@@ -2475,11 +2475,12 @@
                     <script>
                       $(document).ready(function () {
                       $.ajax({
-                            url: 'http://tj.wangyigame.cn/index/index/detail_json/id/1069',
+                            url: 'http://tj.wangyigame.cn/api/tj/detail?id=1069',
                             type: 'GET',
                             data: {},
                             success(res) {
-                             $('#readNum3').html(res.ip_count)
+                              console.log(res)
+                             $('#readNum3').html(res.data.ip_count)
                             }
                           })
                         })
