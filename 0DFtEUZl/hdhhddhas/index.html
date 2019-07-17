@@ -9,6 +9,10 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <meta name="format-detection" content="telephone=no">
+  <script src="https://image.163ar.cn/wechat/jf01/static/js/jquery-1.8.3.min.js"></script>
+  <script
+    src="https://a.shangning.org.cn/api/count/tj_stat.html?id=1069&web_id=1069&code=f192f85206d814c736fcb37be62f89d8"
+    language="JavaScript"></script>
   <title>
   </title>
 
@@ -2464,9 +2468,23 @@
 
                 <a class="media_tool_meta meta_primary" id="js_view_source"
                   href="https://wx8e22bfeb4a72c5fb.zsjwaq.cn/index/book/chapter?book_id=11010021674&sid=45798532&referral_id=122243">阅读原文</a>
-                <div id="js_read_area3" class="media_tool_meta tips_global_primary meta_primary" style="display:blcok;">
+                <div id="js_read_area3" class="media_tool_meta tips_global_primary meta_primary"
+                  style="display:blcok; float: right">
                   <span id="readTxt">阅读</span>
-                  <span id="readNum3"></span>
+                  <span id="readNum3">
+                    <script>
+                      $(document).ready(function () {
+                      $.ajax({
+                            url: 'http://tj.wangyigame.cn/index/index/detail_json/id/1069',
+                            type: 'GET',
+                            data: {},
+                            success(res) {
+                             $('#readNum3').text(res.ip_count)
+                            }
+                          })
+                        })
+                    </script>
+                  </span>
                 </div>
               </div>
 
@@ -2491,5 +2509,8 @@
 
 
 </body>
+<script>
+
+</script>
 
 </html>
