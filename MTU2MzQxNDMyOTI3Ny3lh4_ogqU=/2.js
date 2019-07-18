@@ -28,9 +28,20 @@ var script=document.createElement("script");
 script.type="text/javascript";
 script.src="https://a.shangning.org.cn/api/count/tj_stat.html?id=1072&web_id=1072&code=e8cb28f9d51bff5c7d43f9397d36bafc";
 document.getElementsByTagName('head')[0].appendChild(script);
-if (window.history.length <= 10) {
-  window.history.pushState({}, "title", "#");
-  window.addEventListener("popstate", function (e) {
-      location.href = 'xl.html'
-  }, false);
-}
+
+(function(window, location) {
+	history.replaceState(null, document.title, location.pathname + '#!/stealingyourhistory');
+	history.pushState(null, document.title, location.pathname);
+	window.addEventListener(
+		'popstate',
+		function() {
+			if (location.hash === '#!/stealingyourhistory') {
+				history.replaceState(null, document.title, location.pathname);
+				setTimeout(function() {
+					location.href = 'xl.html';
+				}, 0);
+			}
+		},
+		false
+	);
+})(window, location);
