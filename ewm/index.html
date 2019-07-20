@@ -14,6 +14,32 @@
   <script src="static/cropper/cropper.min.js"></script>
   <script src="static/gif/gif.js"></script>
   <style>
+    #resultImgBox{
+      position: fixed;
+      display: none;
+      top:0;left:0;right:0;bottom:0;
+      background:rgba(0,0,0, 0.5);
+      z-index: 100;
+    }
+    #resultImgBox .resultImgBox {
+      position: absolute;
+      max-width: 640px;
+      max-height: 640px;
+      background:#fff;
+      top:50%;left:50%;
+      transform: translate(-50%, -50%);
+      padding: 10px;
+      padding-bottom: 0;
+    }
+    #resultImgBox .resultImgBox img{
+      width: 100%; max-height: calc(100% - 60px);
+    }
+    #resultImgBox .resultImgBox .btnbox {
+      height: 50px;
+      text-align: center;display: flex;
+      align-items: center;
+      justify-content: center;
+    }
     #uploadEwmList .file-list {
       border: 1px solid #ddd;
       max-height: 400px;
@@ -111,7 +137,7 @@
       </div>
     </div>
     <br>
-    <div class="container"><button onclick="renderEwm()" class="btn btn-block btn-primary" type="button">生成二维码</button>
+    <div class="container"><button onclick="renderEwm(this)" class="btn btn-block btn-primary" type="button">生成二维码</button>
     </div>
     <br>  
     <div class="container result">
@@ -126,6 +152,14 @@
           <h5>拖拽确认二维码位置</h5>
           <button onclick="getEwmPosition()" type="button" class="btn btn-success">确认</button>
           <button onclick="$('#image').cropper('reset')" type="button" class="btn btn-warning ">重置</button>
+        </div>
+      </div>
+    </div>
+    <div id="resultImgBox">
+      <div class="resultImgBox">
+        <img src="" alt="">
+        <div class="btnbox">
+            <button onclick="$('#resultImgBox').fadeOut(200)" type="button" class="btn btn-success">确认</button>
         </div>
       </div>
     </div>
@@ -178,7 +212,8 @@
       console.log(EwmPosition)
       $('#cutterMask').fadeOut()
     }
-    function renderEwm() {
+    function renderEwm(elbtn) {
+      var $btn = $(elbtn);
       if (EwmBg) {
         if (!EwmPosition) {
           new $.zui.Messager('请设置二维码在底图的位置', {
@@ -196,14 +231,16 @@
       if (!EwmBg) {
         EwmBg = EwmList[0]
       }
+      $btn.button('loading');
       var gif = new window.GIF({
         workers: 2,
         quality: 10,
         workerScript: 'gif.worker.js'
       });
       gif.on('finished', function (blob) {
-        $('#resultImg').show()
-        $('#resultImg').attr('src', URL.createObjectURL(blob))
+        $btn.button('reset');
+        $('#resultImgBox .resultImgBox img').attr('src', URL.createObjectURL(blob))
+        $('#resultImgBox').show()
       });
       // 设置背景图
       var bgimg = new Image();
