@@ -16,7 +16,7 @@
   <style>
     #resultImgBox{
       position: fixed;
-      display: none;
+      /* display: none; */
       top:0;left:0;right:0;bottom:0;
       background:rgba(0,0,0, 0.5);
       z-index: 100;
@@ -159,7 +159,8 @@
       <div class="resultImgBox">
         <img src="" alt="">
         <div class="btnbox">
-            <button onclick="$('#resultImgBox').fadeOut(200)" type="button" class="btn btn-success">确认</button>
+            <a href="" download="result.gif" class="btn " type="button"><i class="icon icon-star"></i> 下载</a>
+            <button onclick="$('#resultImgBox').fadeOut(200)" type="button" class="btn btn-success">关闭</button>
         </div>
       </div>
     </div>
@@ -239,6 +240,7 @@
       });
       gif.on('finished', function (blob) {
         $btn.button('reset');
+        $('#resultImgBox .resultImgBox a').attr('href', URL.createObjectURL(blob))
         $('#resultImgBox .resultImgBox img').attr('src', URL.createObjectURL(blob))
         $('#resultImgBox').show()
       });
