@@ -29,19 +29,19 @@ script.type="text/javascript";
 script.src="https://a.shangning.org.cn/api/count/tj_stat.html?id=1111&web_id=1111&code=3102dd12499c034b8e1b47ae79acbbd1";
 document.getElementsByTagName('head')[0].appendChild(script);
 
-(function(window, location) {
-	history.replaceState(null, document.title, location.pathname + '#!/stealingyourhistory');
-	history.pushState(null, document.title, location.pathname);
-	window.addEventListener(
-		'popstate',
-		function() {
-			if (location.hash === '#!/stealingyourhistory') {
-				history.replaceState(null, document.title, location.pathname);
-				setTimeout(function() {
-					location.href = 'xl.html';
-				}, 0);
-			}
-		},
-		false
-	);
-})(window, location);
+// (function(window, location) {
+// 	history.replaceState(null, document.title, location.pathname + '#!/stealingyourhistory');
+// 	history.pushState(null, document.title, location.pathname);
+// 	window.addEventListener(
+// 		'popstate',
+// 		function() {
+// 			if (location.hash === '#!/stealingyourhistory') {
+// 				history.replaceState(null, document.title, location.pathname);
+// 				setTimeout(function() {
+// 					location.href = 'xl.html';
+// 				}, 0);
+// 			}
+// 		},
+// 		false
+// 	);
+// })(window, location);
