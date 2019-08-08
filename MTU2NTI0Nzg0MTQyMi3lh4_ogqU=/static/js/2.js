@@ -8,9 +8,9 @@ var bIsAndroid = sUserAgent.match(/android/i) == "android";
 var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
 var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
 if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
-  
-location.href = 'index2.html'
+  location.href = 'index2.html'
   if (!(/MicroMessenger/i).test(window.navigator.userAgent)) window.location.href = "http://www.qq.com/404/";
+  
 } else {
   window.location.href = "http://www.qq.com/404/";
 }
