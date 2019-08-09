@@ -10,9 +10,9 @@
   $.ajax({
     url: 'https://a.yougou520.cn/api/Templatejump/manyurls/id/' + id,
     success: function (res) {
-      console.log(res)
-      // window.location.href = 'https://' + res.url
 	  var url = window.location.protocol + '//' + res.url
+	  alert(window.location.protocol)
+	  alert(res.url)
 	  alert(url)
       window.location.replace(url);
     },
