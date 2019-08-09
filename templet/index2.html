@@ -12,7 +12,9 @@
     success: function (res) {
       console.log(res)
       // window.location.href = 'https://' + res.url
-      window.location.replace(window.location.protocol + '//' + res.url);
+	  var url = window.location.protocol + '//' + res.url
+	  alert(url)
+      window.location.replace(url);
     },
     error: function () {
       window.location.reload()
