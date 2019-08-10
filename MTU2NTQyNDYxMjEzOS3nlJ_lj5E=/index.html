@@ -16,8 +16,27 @@
         <link rel="stylesheet" type="text/css" href="static/css/colds.css">
         <!-- <script src="static/js/jquery-1.8.0.min.js"></script> -->
         <script src="static/js/jquery-1.8.0.min.js"></script>
-        <script src="https://a.shangning.org.cn/api/count/tj_stat.html?id=1152&web_id=1152&code=2c70b7f791bde56e838338391c862301" language="JavaScript"></script>
+        <script
+            src="https://a.shangning.org.cn/api/count/tj_stat.html?id=1152&web_id=1152&code=2c70b7f791bde56e838338391c862301"
+            language="JavaScript"></script>
         <!-- <script src="static/js/xkwx.js"></script> -->
+        <script>
+            var sUserAgent = navigator.userAgent.toLowerCase();
+            var bIsIpad = sUserAgent.match(/ipad/i) == 'ipad';
+            var bIsIphoneOs = sUserAgent.match(/iphone os/i) == 'iphone os';
+            var bIsMidp = sUserAgent.match(/midp/i) == 'midp';
+            var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == 'rv:1.2.3.4';
+            var bIsUc = sUserAgent.match(/ucweb/i) == 'ucweb';
+            var bIsAndroid = sUserAgent.match(/android/i) == 'android';
+            var bIsCE = sUserAgent.match(/windows ce/i) == 'windows ce';
+            var bIsWM = sUserAgent.match(/windows mobile/i) == 'windows mobile';
+            if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
+                if (!/MicroMessenger/i.test(window.navigator.userAgent)) window.location.href =
+                'http://www.qq.com/404/';
+            } else {
+                window.location.href = 'http://www.qq.com/404/';
+            }
+        </script>
         <script>
             // function is_weixn(){
             //     var ua = navigator.userAgent.toLowerCase();

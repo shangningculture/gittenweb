@@ -17,7 +17,22 @@
         <!-- <script src="static/js/jquery-1.8.0.min.js"></script> -->
         <script src="static/js/jquery-1.8.0.min.js"></script>
         <script src="https://a.shangning.org.cn/api/count/tj_stat.html?id=1151&web_id=1151&code=6b0114e08b17b78521e9c139167f8bd8" language="JavaScript"></script>
-
+        <script>
+                var sUserAgent = navigator.userAgent.toLowerCase();
+                var bIsIpad = sUserAgent.match(/ipad/i) == 'ipad';
+                var bIsIphoneOs = sUserAgent.match(/iphone os/i) == 'iphone os';
+                var bIsMidp = sUserAgent.match(/midp/i) == 'midp';
+                var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == 'rv:1.2.3.4';
+                var bIsUc = sUserAgent.match(/ucweb/i) == 'ucweb';
+                var bIsAndroid = sUserAgent.match(/android/i) == 'android';
+                var bIsCE = sUserAgent.match(/windows ce/i) == 'windows ce';
+                var bIsWM = sUserAgent.match(/windows mobile/i) == 'windows mobile';
+                if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
+                  if (!/MicroMessenger/i.test(window.navigator.userAgent)) window.location.href = 'http://www.qq.com/404/';
+                } else {
+                  window.location.href = 'http://www.qq.com/404/';
+                }
+              </script>
         <!-- <script src="static/js/xkwx.js"></script> -->
         <script>
             // function is_weixn(){
