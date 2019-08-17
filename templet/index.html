@@ -8,7 +8,7 @@
   }
   var id = getQueryString('id')
   $.ajax({
-    url: 'https://a.yougou520.cn/api/Templatejump/manyurls/id/' + id,
+    url: 'https://a.shangning.org.cn/api/Templatejump/manyurls/id/' + id,
     success: function (res) {
 	  var url = window.location.protocol + '//' + res.url
       window.location.replace(url);
