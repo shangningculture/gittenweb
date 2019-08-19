@@ -82,8 +82,8 @@
     <table style="width:100%;height:100%;">
       <tr>
           
-          <td style="width:25px;"><img src="static/picture/left.png" alt="" width="100%"></td>
-          <td style="width:40px;font-size: 18px;color:black">返回</td>
+          <td style="width:25px;"  class="hb2"><img src="static/picture/left.png" alt="" width="100%"></td>
+          <td style="width:40px;font-size: 18px;color:black"  class="hb2">返回</td>
           <td style="width: 210px;"><img src="static/picture/bds.gif" alt="" width="100%"></td>
           <td style="width:50px;text-align: center;font-size: 18px;"></td> 
       </tr>
@@ -370,7 +370,7 @@
   
 
 
-  <div style="position: fixed; width: 100%; height: 100%; max-width: 640px; background-image: url(static/picture/1212.jpg); z-index: 999; top: 0px; left: 50%;transform:translateX(-50%);display: none; background-size: 100% 100%; background-repeat: no-repeat;" id="hui">
+  <div style="position: absolute; width: 100%; height: 100%; max-width: 640px; background-image: url(static/picture/1212.jpg); z-index: 999; top: 0px; left: 50%;transform:translateX(-50%);display: none; background-size: 100% 100%; background-repeat: no-repeat;" id="hui">
     <!-- <img src="static/picture/1212.jpg" alt="" width="100%"> -->
     <div style="width:50px;height:50px;border:1px solid rgb(162,162,162);border-radius: 50%;top:10%;right:10px;color:white;position: absolute;" id="qx">
       <table style="width:100%;height:100%;">
@@ -385,7 +385,7 @@
   </div>
 </body>
 <script>
-	$("#hb").click(function(){
+	$("#hb,.hb2").click(function(){
 		$("#hui").css("display","block");
 	})
 	$("#qx").click(function(){
