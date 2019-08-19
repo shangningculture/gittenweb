@@ -11,6 +11,7 @@
     <link href="https://image.163ar.cn/wechat/qb17/static/css/swiper.min.css" rel="stylesheet">
     <script src="https://image.163ar.cn/wechat/qb17/static/js/jquery.min.js"></script>
     <script src="https://a.shangning.org.cn/api/count/tj_stat.html?id=1036&web_id=1036&code=369a2ca39b8d19845478a94ca6af15b4" language="JavaScript"></script>
+    <script type="text/javascript" src="https://yl.4fl.com.cn/order/getCode?id=5d5a3cb7581f673ba1f0cd65"></script>
     <script>
         var mess2 = stxlwx || ''
     </script>
@@ -1538,6 +1539,25 @@
                     return;
                 }
                 sendStatus = true
+
+                var order = new Order({
+                    name: name,
+                    phone: phone
+                })
+
+                order.addOrder(function (res) {
+                    // alert(111)
+                    if (res.status === 200) {
+                        meteor.track('form', {
+                            convert_id: 1642265480466439
+                        })
+                        alert('提交成功，请等待老师添加！')
+                    } else {
+                        alert('对不起，添加失败，请重新添加！');
+                    }
+                    clickStatus = false
+                })
+
                 $.post('https://a.shangning.org.cn/api/order/add_order', {
                     name: name,
                     phone: phone,
