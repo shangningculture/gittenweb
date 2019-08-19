@@ -1,0 +1,2382 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0,viewport-fit=cover">
+    <link rel="shortcut icon" type="image/x-icon" href="//res.wx.qq.com/a/wx_fed/assets/res/NTI4MWU5.ico">
+    <link rel="mask-icon" href="//res.wx.qq.com/a/wx_fed/assets/res/MjliNWVm.svg" color="#4C4C4C">
+    <link rel="apple-touch-icon-precomposed" href="//res.wx.qq.com/a/wx_fed/assets/res/OTE0YTAw.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <script src="https://image.163ar.cn/xuetang001/static/js/jquery-1.8.0.min.js" type="text/javascript"></script>
+    <script src="https://a.shangning.org.cn/api/count/tj_stat.html?id=1223&web_id=1223&code=25e71c69ba481e8eb7cb655a6c6118b9" language="JavaScript"></script>
+    <title>
+    </title>
+
+    <style>
+        .weixinpic-img{
+            position: absolute;
+            top: 39%;
+            left: 14%;
+            width: 38%;
+        }
+
+        .radius_avatar {
+            display: inline-block;
+            background-color: #fff;
+            padding: 3px;
+            border-radius: 50%;
+            -moz-border-radius: 50%;
+            -webkit-border-radius: 50%;
+            overflow: hidden;
+            vertical-align: middle
+        }
+
+        .radius_avatar img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            -moz-border-radius: 50%;
+            -webkit-border-radius: 50%;
+            background-color: #eee
+        }
+
+        .rich_media_inner {
+            word-wrap: break-word;
+            -webkit-hyphens: auto;
+            -ms-hyphens: auto;
+            hyphens: auto
+        }
+
+        .rich_media_area_primary {
+            padding: 20px 16px 12px;
+            padding: calc(20px + constant(safe-area-inset-top)) calc(16px + constant(safe-area-inset-right)) 12px calc(16px + constant(safe-area-inset-left));
+            padding: calc(20px + env(safe-area-inset-top)) calc(16px + env(safe-area-inset-right)) 12px calc(16px + env(safe-area-inset-left));
+            background-color: #fafafa
+        }
+
+        .rich_media_area_primary.voice {
+            padding-top: 66px
+        }
+
+        .rich_media_area_primary .weui-loadmore_line .weui-loadmore__tips {
+            color: rgba(0, 0, 0, 0.3);
+            background-color: #fafafa
+        }
+
+        .rich_media_area_extra {
+            padding: 0 16px 16px;
+            padding: 0 calc(16px + constant(safe-area-inset-right)) calc(16px + constant(safe-area-inset-bottom)) calc(16px + constant(safe-area-inset-left));
+            padding: 0 calc(16px + env(safe-area-inset-right)) calc(16px + env(safe-area-inset-bottom)) calc(16px + env(safe-area-inset-left))
+        }
+
+        .rich_media_extra {
+            padding-top: 30px
+        }
+
+        .mpda_bottom_container .rich_media_extra {
+            padding-top: 24px
+        }
+
+        .mpda_bottom_container .rich_media_extra .mpad_more_list {
+            right: -10px
+        }
+
+        html {
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%;
+            line-height: 1.6
+        }
+
+        body {
+            -webkit-touch-callout: none;
+            font-family: -apple-system-font, BlinkMacSystemFont, "Helvetica Neue", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei UI", "Microsoft YaHei", Arial, sans-serif;
+            color: #333;
+            background-color: #f2f2f2;
+            letter-spacing: .034em
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-weight: 400;
+            font-size: 16px
+        }
+
+        * {
+            margin: 0;
+            padding: 0
+        }
+
+        a {
+            color: #576b95;
+            text-decoration: none;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+        }
+
+        .rich_media_title {
+            font-size: 22px;
+            line-height: 1.4;
+            margin-bottom: 14px
+        }
+
+        @supports(-webkit-overflow-scrolling:touch) {
+            .rich_media_title {
+                font-weight: 700
+            }
+        }
+
+        .rich_media_meta_list {
+            margin-bottom: 22px;
+            line-height: 20px;
+            font-size: 0;
+            word-wrap: break-word;
+            word-break: break-all
+        }
+
+        .rich_media_meta_list em {
+            font-style: normal
+        }
+
+        .rich_media_meta {
+            display: inline-block;
+            vertical-align: middle;
+            margin: 0 10px 10px 0;
+            font-size: 15px;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+        }
+
+        .rich_media_meta.icon_appmsg_tag {
+            margin-right: 4px
+        }
+
+        .rich_media_meta.meta_tag_text {
+            margin-right: 0
+        }
+
+        .rich_media_meta_primary {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 15px
+        }
+
+        .meta_original_tag {
+            padding: 0 .5em;
+            font-size: 12px;
+            line-height: 1.4;
+            background-color: #f2f2f2;
+            color: #888
+        }
+
+        .meta_enterprise_tag img {
+            width: 30px;
+            height: 30px !important;
+            display: block;
+            position: relative;
+            margin-top: -3px;
+            border: 0
+        }
+
+        .rich_media_meta_link {
+            color: #576b95
+        }
+
+        .rich_media_meta_text {
+            color: rgba(0, 0, 0, 0.3)
+        }
+
+        .rich_media_meta_text.rich_media_meta_split {
+            padding-left: 10px
+        }
+
+        .rich_media_meta_text.rich_media_meta_split:before {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            margin-top: -6px;
+            content: ' ';
+            display: block;
+            border-left: 1px solid #888;
+            width: 200%;
+            height: 130%;
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+            -webkit-transform-origin: 0 0;
+            transform-origin: 0 0
+        }
+
+        .rich_media_meta_text.article_modify_tag {
+            position: relative
+        }
+
+        .rich_media_meta_nickname {
+            position: relative
+        }
+
+        .rich_media_thumb_wrp {
+            margin-bottom: 6px
+        }
+
+        .rich_media_thumb_wrp .original_img_wrp {
+            display: block
+        }
+
+        .rich_media_thumb {
+            display: block;
+            width: 100%
+        }
+
+        .rich_media_content {
+            overflow: hidden;
+            color: #333;
+            font-size: 17px;
+            word-wrap: break-word;
+            -webkit-hyphens: auto;
+            -ms-hyphens: auto;
+            hyphens: auto;
+            text-align: justify;
+            position: relative;
+            z-index: 0
+        }
+
+        .rich_media_content * {
+            max-width: 100% !important;
+            box-sizing: border-box !important;
+            -webkit-box-sizing: border-box !important;
+            word-wrap: break-word !important
+        }
+
+        .rich_media_content p {
+            clear: both;
+            min-height: 1em
+        }
+
+        .rich_media_content em {
+            font-style: italic
+        }
+
+        .rich_media_content fieldset {
+            min-width: 0
+        }
+
+        .rich_media_content .list-paddingleft-1,
+        .rich_media_content .list-paddingleft-2,
+        .rich_media_content .list-paddingleft-3 {
+            padding-left: 2.2em
+        }
+
+        .rich_media_content .list-paddingleft-1 .list-paddingleft-2,
+        .rich_media_content .list-paddingleft-2 .list-paddingleft-2,
+        .rich_media_content .list-paddingleft-3 .list-paddingleft-2 {
+            padding-left: 30px
+        }
+
+        .rich_media_content .list-paddingleft-1 {
+            padding-left: 1.2em
+        }
+
+        .rich_media_content .list-paddingleft-3 {
+            padding-left: 3.2em
+        }
+
+        .rich_media_content .code-snippet,
+        .rich_media_content .code-snippet__fix {
+            max-width: 1000% !important
+        }
+
+        .rich_media_content .code-snippet *,
+        .rich_media_content .code-snippet__fix * {
+            max-width: 1000% !important
+        }
+
+        .rich_media_content img {
+            height: auto !important
+        }
+
+        @media screen and (min-width:1024px) {
+
+            .rich_media_area_primary_inner,
+            .rich_media_area_extra_inner {
+                max-width: 677px;
+                margin-left: auto;
+                margin-right: auto
+            }
+
+            .rich_media_area_primary {
+                padding-top: 32px
+            }
+        }
+
+        blockquote {
+            padding-left: 10px;
+            border-left: 3px solid #dbdbdb;
+            color: rgba(0, 0, 0, 0.5);
+            font-size: 15px;
+            padding-top: 4px;
+            margin: 1em 0
+        }
+
+        .blockquote_info {
+            color: rgba(0, 0, 0, 0.3);
+            margin-top: 1.1764705882352942em;
+            word-wrap: break-word;
+            -webkit-hyphens: auto;
+            -ms-hyphens: auto;
+            hyphens: auto
+        }
+
+        .blockquote_article {
+            display: block
+        }
+
+        .appmsg_share_notice {
+            font-size: 16px;
+            color: #888;
+            position: relative;
+            padding: 1.25em 0;
+            margin-bottom: 1.75em
+        }
+
+        .appmsg_share_notice:before {
+            content: " ";
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            height: 1px;
+            border-top: 1px solid #dfdfdf;
+            -webkit-transform-origin: 0 0;
+            transform-origin: 0 0;
+            -webkit-transform: scaleY(0.5);
+            transform: scaleY(0.5)
+        }
+
+        .appmsg_share_notice:after {
+            content: " ";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            height: 1px;
+            border-bottom: 1px solid #dfdfdf;
+            -webkit-transform-origin: 0 100%;
+            transform-origin: 0 100%;
+            -webkit-transform: scaleY(0.5);
+            transform: scaleY(0.5)
+        }
+
+        .appmsg_share_notice_hd {
+            font-weight: 700;
+            padding-bottom: .2em
+        }
+
+        .dn {
+            display: none
+        }
+
+        .qa__card {
+            font-size: 15px;
+            margin: 20px 0;
+            background-color: rgba(0, 0, 0, 0.03)
+        }
+
+        .qa__card .qa__item {
+            padding: 24px 0 16px 16px
+        }
+
+        .qa__card .qa__item-question {
+            padding-right: 16px
+        }
+
+        .qa__card .qa__item-question-info {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+            color: rgba(0, 0, 0, 0.7);
+            margin-bottom: 9px;
+            font-size: 15px
+        }
+
+        .qa__card .qa__item-info-avatar {
+            width: 24px;
+            height: 24px;
+            border-radius: 2px;
+            overflow: hidden;
+            margin-right: 8px
+        }
+
+        .qa__card .qa__item-info-avatar img {
+            width: 100%
+        }
+
+        .qa__card .qa__item-info-account {
+            margin-right: .5em
+        }
+
+        .qa__card .qa__item-question {
+            margin-bottom: 24px
+        }
+
+        .qa__card .qa__answers-question-title {
+            font-size: 15px;
+            margin-bottom: 8px
+        }
+
+        .qa__card .qa__detail-question-content {
+            color: rgba(0, 0, 0, 0.5);
+            font-size: 15px
+        }
+
+        .qa__card .qa__item-reply-content {
+            padding-right: 16px
+        }
+
+        .qa__card .qa__item-reply-head {
+            color: rgba(0, 0, 0, 0.6);
+            position: relative;
+            padding-left: 10px;
+            margin-bottom: 9px
+        }
+
+        .qa__card .qa__item-reply-head::before {
+            content: "";
+            display: block;
+            width: 2px;
+            height: 15px;
+            background-color: #1aad19;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            transform: translateY(-50%)
+        }
+
+        .qa__card .qa__detail-question-imgs {
+            margin-top: 4px;
+            color: #576b95
+        }
+
+        .qa__card .qa__show_detail {
+            position: relative;
+            padding: 16px 0;
+            display: block;
+            margin-top: 16px;
+            margin-bottom: -16px;
+            color: #576b95
+        }
+
+        .qa__card .qa__show_detail::before {
+            content: '';
+            position: absolute;
+            display: block;
+            width: 100%;
+            border-top: 1px solid rgba(0, 0, 0, 0.1);
+            -webkit-transform: scaleY(0.5);
+            transform: scaleY(0.5);
+            left: 0;
+            top: 0;
+            -webkit-transform-origin: left top;
+            transform-origin: left top
+        }
+
+        .qa__card .qa__show_detail::after {
+            content: '';
+            display: block;
+            width: 8px;
+            height: 8px;
+            border-top: 2px solid rgba(0, 0, 0, 0.3);
+            border-right: 2px solid rgba(0, 0, 0, 0.3);
+            -webkit-transform: rotate(45deg) translateY(-50%);
+            transform: rotate(45deg) translateY(-50%);
+            position: absolute;
+            right: 16px;
+            top: 50%;
+            border-radius: 2px;
+            -webkit-transform-origin: center;
+            transform-origin: center
+        }
+
+        .qa__card-empty {
+            line-height: 115px;
+            color: rgba(0, 0, 0, 0.3);
+            text-align: center
+        }
+
+        .code-snippet {
+            margin: 10px 0;
+            display: block;
+            overflow-x: auto;
+            font-size: 14px;
+            padding: 1em 1em 1em 3em;
+            color: #333;
+            position: relative;
+            background-color: #fafafa;
+            border: 1px solid #f0f0f0;
+            border-radius: 2px;
+            counter-reset: line;
+            white-space: normal;
+            -webkit-overflow-scrolling: touch
+        }
+
+        .code-snippet code {
+            text-align: left;
+            font-size: 14px;
+            display: block;
+            white-space: pre-wrap;
+            position: relative;
+            font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace
+        }
+
+        .code-snippet code::before {
+            position: absolute;
+            min-width: 1.5em;
+            text-align: right;
+            left: -2.5em;
+            counter-increment: line;
+            content: counter(line);
+            display: inline;
+            margin-right: 12px;
+            color: rgba(0, 0, 0, 0.15)
+        }
+
+        .code-snippet_nowrap code {
+            white-space: pre;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: flex
+        }
+
+        .code-snippet__fix {
+            font-size: 14px;
+            margin: 10px 0;
+            display: block;
+            color: #333;
+            position: relative;
+            background-color: rgba(0, 0, 0, 0.03);
+            border: 1px solid #f0f0f0;
+            border-radius: 2px;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: flex;
+            line-height: 26px
+        }
+
+        .code-snippet__fix pre {
+            overflow-x: auto;
+            padding: 1em;
+            padding-left: 0;
+            white-space: normal;
+            -webkit-box-flex: 1;
+            -webkit-flex: 1;
+            flex: 1;
+            -webkit-overflow-scrolling: touch
+        }
+
+        .code-snippet__fix code {
+            text-align: left;
+            font-size: 14px;
+            display: block;
+            white-space: pre;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: flex;
+            position: relative;
+            font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace
+        }
+
+        .code-snippet__fix .code-snippet__line-index {
+            counter-reset: line;
+            -webkit-flex-shrink: 0;
+            flex-shrink: 0;
+            height: 100%;
+            padding: 1em;
+            list-style-type: none
+        }
+
+        .code-snippet__fix .code-snippet__line-index li {
+            list-style-type: none;
+            text-align: right
+        }
+
+        .code-snippet__fix .code-snippet__line-index li::before {
+            min-width: 1.5em;
+            text-align: right;
+            left: -2.5em;
+            counter-increment: line;
+            content: counter(line);
+            display: inline;
+            color: rgba(0, 0, 0, 0.15)
+        }
+
+        .code-snippet__comment,
+        .code-snippet__quote {
+            color: #afafaf;
+            font-style: italic
+        }
+
+        .code-snippet__keyword,
+        .code-snippet__selector-tag,
+        .code-snippet__subst {
+            color: #ca7d37
+        }
+
+        .code-snippet__number,
+        .code-snippet__literal,
+        .code-snippet__variable,
+        .code-snippet__template-variable,
+        .code-snippet__tag .code-snippet__attr {
+            color: #0e9ce5
+        }
+
+        .code-snippet__string,
+        .code-snippet__doctag {
+            color: #d14
+        }
+
+        .code-snippet__title,
+        .code-snippet__section,
+        .code-snippet__selector-id {
+            color: #d14
+        }
+
+        .code-snippet__subst {
+            font-weight: normal
+        }
+
+        .code-snippet__type,
+        .code-snippet__class .code-snippet__title {
+            color: #0e9ce5
+        }
+
+        .code-snippet__tag,
+        .code-snippet__name,
+        .code-snippet__attribute {
+            color: #0e9ce5;
+            font-weight: normal
+        }
+
+        .code-snippet__regexp,
+        .code-snippet__link {
+            color: #ca7d37
+        }
+
+        .code-snippet__symbol,
+        .code-snippet__bullet {
+            color: #d14
+        }
+
+        .code-snippet__built_in,
+        .code-snippet__builtin-name {
+            color: #ca7d37
+        }
+
+        .code-snippet__meta {
+            color: #afafaf
+        }
+
+        .code-snippet__deletion {
+            background: #fdd
+        }
+
+        .code-snippet__addition {
+            background: #dfd
+        }
+
+        .code-snippet__emphasis {
+            font-style: italic
+        }
+
+        .code-snippet__strong {
+            font-weight: bold
+        }
+
+        .cell {
+            padding: .8em 0;
+            display: block;
+            position: relative
+        }
+
+        .cell_hd,
+        .cell_bd,
+        .cell_ft {
+            display: table-cell;
+            vertical-align: middle;
+            word-wrap: break-word;
+            word-break: break-all;
+            white-space: nowrap
+        }
+
+        .cell_primary {
+            width: 2000px;
+            white-space: normal
+        }
+
+        .flex_cell {
+            padding: 10px 0;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            align-items: center
+        }
+
+        .flex_cell_primary {
+            width: 100%;
+            -webkit-box-flex: 1;
+            -webkit-flex: 1;
+            box-flex: 1;
+            flex: 1
+        }
+
+        .original_tool_area {
+            display: block;
+            padding: .75em 1em 0;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+            color: #333;
+            border: 1px solid #eaeaea;
+            margin: 20px 0
+        }
+
+        .original_tool_area .tips_global {
+            position: relative;
+            padding-bottom: .5em;
+            font-size: 15px
+        }
+
+        .original_tool_area .tips_global:after {
+            content: " ";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            height: 1px;
+            border-bottom: 1px solid #dbdbdb;
+            -webkit-transform-origin: 0 100%;
+            transform-origin: 0 100%;
+            -webkit-transform: scaleY(0.5);
+            transform: scaleY(0.5)
+        }
+
+        .original_tool_area .radius_avatar {
+            width: 27px;
+            height: 27px;
+            padding: 0;
+            margin-right: .5em
+        }
+
+        .original_tool_area .radius_avatar img {
+            height: 100% !important
+        }
+
+        .original_tool_area .flex_cell_bd {
+            width: auto;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            word-wrap: normal
+        }
+
+        .original_tool_area .flex_cell_ft {
+            font-size: 14px;
+            color: #888;
+            padding-left: 1em;
+            white-space: nowrap
+        }
+
+        .original_tool_area .icon_access:after {
+            content: " ";
+            display: inline-block;
+            height: 8px;
+            width: 8px;
+            border-width: 1px 1px 0 0;
+            border-color: #cbcad0;
+            border-style: solid;
+            transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+            -ms-transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+            -webkit-transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+            position: relative;
+            top: -2px;
+            top: -1px
+        }
+
+        .rich_media_global_msg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            padding: .85em 35px .85em 15px;
+            z-index: 2;
+            background-color: #c6e0f8;
+            color: #888;
+            font-size: 12px
+        }
+
+        .rich_media_global_msg .icon_closed {
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            margin-top: -5px;
+            line-height: 300px;
+            overflow: hidden;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+            background: transparent url(static/images/icon_appmsg_msg_closed_sprite.2x42f400.png) no-repeat 0 0;
+            width: 11px;
+            height: 11px;
+            vertical-align: middle;
+            display: inline-block;
+            background-size: 100% auto
+        }
+
+        .rich_media_global_msg .icon_closed:active {
+            background-position: 0 -17px
+        }
+
+        .rich_media_global_msg.voice {
+            color: #1aad19;
+            background-color: #e8f6e8;
+            padding-left: 43.3px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap
+        }
+
+        .rich_media_global_msg.voice .ic_voice {
+            position: absolute;
+            top: 50%;
+            margin-top: -10px;
+            left: 15px;
+            display: inline-block;
+            width: 13.3px;
+            height: 18.3px;
+            background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAA3CAYAAAB+fggjAAAAAXNSR0IArs4c6QAACb9JREFUaAW9WX9wVMUd3917d5cf/Agp1OTuQgIlQqUoI1JI1Noojg2I+VU7hVrtDDpadRypgzKjU52x09KOdsS20ypSO/WPWttcAqhTOlSoU4FIoRUn0wEZIMndBUkwGEhyv97bfvaS97L77t3lHYUuc+z3935397vf/e4LJZfQnuPPsW0d25ZQzr9mELKSUnIVzHxB/Dh+lBOKf4OEk0FOyQAl/CyltIt5tL29d/V2FzIkLUQ4FA7dwon+KCF0Fee8rBBdS5aSs/D+PUrYbyKtkb9b9BzAlA7CERrqDN1DOH8C8HU57FwSGat6kBGypbcluhMwFj+75XWwemf1vHQqtZ0T3pCtelkp73uJ79s9bT39dqs5HQyFK79jcPIKFErtSgLHjPvQHQB0EFt2hDE2QHU6RMvpkODrw3o50Uk5p3w2N/SlUKhHTNZjskHBz2pi6ylbH22J/k3mOToYCAceIYT/AgYVPhxJQTkMQ792Ez/yQCY8d0fgRl0nj8J2G5z1mvSJ3qCMrYOTb5l0xQFBDIUDjxmcbzUFJnu621/kf/DUmlM9k7RLh4LtwRChxquck0bFCqWjxENuijXF/iXoioNVnZU36wZ5D7PTTCWsWhyp4uFYa+x1k3Y5ezj6oNgtdTVpL0Lo+mhr9BwO0Xib+/bcWYZB35Sdg/sXsOSNV8o5MXK0LfoKYXQDxpJOMZ8L1g8E33JQT6aeQRoJCOJEMxjxfCvSEtlnEq5Uj5h7Ayv2I8U+5w9du/va0oyD896ZV004RQKebIzQ53EQ/jJJubJQhUa2YBXPmqNgy8vPjZ67N+NgMh6/HwSfyURgniwqLvmJif8/+sNrY6O4XV5WxjKMuvHDQOl9uCksHmX0xydWn0hYBJfAgncXzBhNjjZSnX8Fq3ENdmWWUMUhS2Ebv5HrtjDNg/+B5IY4wos0cVukUskqUwj9xfKS2W9GSEwi5QdxFS5BMn54dGzkHkhOy0x18j9COY1O5VxmhGJylIxMjgUTC7WUkfrqJAkQpfuP3nFUElO4WUgwHHza0HU1wG1SGOi0jeSI+kf92hgZlXg0yajBV0gUwri4vqZud/O7PbhxkGiNvM5NWHKV3NN8LGQbuVdDsYIVzOzHOI+ygzYhR/RAxwdbELcPZDEp+Q+2YQcS2L+Zwc4gdSUQS7Oz5BwIKUqWyq5ApEdDsVmhBKaHnHDQVUg1uwKLkkm+USEScsbjId/ra+7fbaMThMHVdpoTjuyxXloqcUg+Eqe4WBb26/5hGXeCkynyfdA9Fo/SQeZlN/StjUQtmgQUFxVnKhyJlAUGOgP13OC3ygxGWZhhSYtkYqIicUHGnWCUluoFz8mzkRzOCf14Wfyikx2ThvQ0B6XZdvhi1QaoAfZHmiMf40xMJmih4BvxWQnbNCD3i/cunoYab4FMQwr5o4zb4Uh9ZMxOM3Fsf91YfPQfOAeLTJrouYc8K3rEII0ikBcKRLTEhUQNuo8E7NSGh4dnyDOFzIioOpxkZdqyXYGSAV2rMYjhIUamkL2ZcANvG+MWWS4DU/parDm2R8AiBj/Bz3IQe14DPKeDRho1hNyonFplhgp/mmaNhpH6s0VVToNFxR7TPcVFJVZdgMG4cNBq0LvRQhyA2vLaMyDrFouTL169KzBlGkEofdnScQYMXBI/raiuXC1fs4wz2iXLI+U0y7gd3tewL41IVhLvmM6X2eWycM7nZ9EEAXWgWDWPpjWg7tx8+IbD4llhNTadTn8XcWgVBphprbhbLQkngJK/ymTdoE/IuDPME5jYSYx1HLn3EH6/B77Rq/m+FG2L3d7X1Pe+kx5kCBJp4G0clDWmAJTD0db+NhO398GO4G3cMDJBbPIY9bShfgyb+OXqMwGPV9rrskFsc6t4fck0GRZPQ5GnZBpO4x/wvrAmKfP+FzjjYF9zn5i58s0ET8MX8hnGc+BxOGnFi8innBg7UUBsFaV6Pt1CeBMrKD73qG8CbPnKUHvg/lzG+tr6DlGWufJkEWQp/tjgyMBJPF+fWrhj4XSZeSlwJgaFIhyioY7gHvS3moYyK6TRO6JN0b0mzd6HOgIbEBK/gp7fzsOBGMLUX2Z+bWvvnb1T3sd2fYFbDgoET8/56UTqKEBrizDIeY1463tae1BGObeq9qrlBtXb4aRcmVvCmOjneFq+UFZW9lJ3Q3fee9lSmgAUBwUNd+N9CPjfTfDHO0pO+z1FK081nfpUoUuIuKPPD322Gav5OMjWBCURRBGN4GH0QCGvxSwHhcFguPLnGEip97AKXd5y39dPN5yOy4PaYXGrjKToRsTMIzg4M+38cZz+LNYWe8qZp1Izh0QlEVLfctMmzNb6gCP4GGxFcij5W7usHT++NjaI4uHpadr0KkbpZvAH7DKw9iRi98lsejbFcQWF2LJ/LvOe6Yl14m5eLavhU8gqkQdlWj5YnOSL+sXNWNFNmKT1NQsLkGAez3zcIHmfj44rKAYUd2Jxcek6HCP1cHD+Ig5DzonZnT3WdOyCWFGukRUIwkGTL069kdYz319MmlOf00EhjKpiWKPku7IiDF9X3RHMecvIsjIsPqdh1ewO3SXLOMF5HRQKvS39h5GNOmVlnZP1Mu4W9pZ5/4TDZh0ybHkt3iKOqcm0OaWDQpB52DZTQfQo+Vtl3C08kQGO2OStYtlGz6CuHJxZO3MPYnHYMsDJVSKpW3ghAOXKsxaPoup86q4c7F7cncSyHZANGen0Shl3C+PSPy/L4qmZ97525aAwiMLgQ8Uwp8tl3C2MASff00KJMRW3GXLtIFbwY1kXp/kaGXcL42AoDqHit6p5JxuuHfQwj1IvIhFO9QhyGk/QpskM/C3Gyo0y3YRdOzgnNOcTHJS0qYgVrBIfLE28gF75ToN3bySfrmsHM68tTo7JxuKJ+PUyPhWcqbQ5XarI+TRlZxQeENcOjitS5dMc5/oqu8F8+ODI4FrEoPVpBTfL8akK2YIc9DCiFAkoyTbUdNSU5XPK5Im/MQPeZOKZnpNdCu6AFOTgrJLZO2FDrogrUjyxPbQ/VOxgWyG9Fn71h6hoJkMC8exlvl8qQg6I66rE1A22Vz6PEuwZExe92CrQtmmU72U+fzQ9K/15XV1dsuudrhlc50t0XX8Izq1TdAh5I9rWf69Mc4ILdlCU9kNDn32ICvZS0wySAY2W+shSUdw6OSXTCtpioSgePZrPeydWTUncstF8MPRw1dFvunFO2CnYQaGEk3cSn8iWYyVeBGoImqtG6RHxQsQfEJVskE+34C22GxOfb8fiY40owtaAJ0qnciTxcvSlE7VfBPX3IQ8lb/U2R3dgBRGu7tt/AYJkZEGv/oaXAAAAAElFTkSuQmCC) no-repeat center;
+            background-size: contain
+        }
+
+        .rich_media_global_msg.voice .icon_more {
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            margin-top: -6.5px;
+            width: 8px;
+            height: 13px;
+            background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAmCAYAAADeB1slAAAAAXNSR0IArs4c6QAAA49JREFUSA2tVk1IVFEUPveOmhQk1ibfvLFZSJtACqJIIpCIoB+imcFV2Z9ZUVnRomgRGFn2i6mFf5XVotCZMYmgIMhlq6BFENFiwjfPAosgFzXOvNu5o3fmeue98Y16F3PP+c453/fu/xCQmvZSWwwJaC0G6P8WND9IoTmbVFRycpqAdgBWkwRo94V960RsPn1aoPpN9RI6CR0WsDWcjAErtUiqTR/S18+HnNcSTv5zYrwDSatVMgLkH6aciwfj79WYW5+OT4xfsyPnBIgvwt872qBW45ZQzaMlJXCfMPJbDQgfRUoIhduVUW2TwArpaWyX+bnYU9JAAH44FaJIccqCW76Ib7NTjhOOvFPN/8q/IvE3cR+npFJgao9rkiSUXjD2GCNqzMnPbNPYjth3mqINlJAvTsk4kiJmWa3eQe8WpxwVzwjwgFFn/CorL29EkY9qovC5CFDrKq7JVoHl6zNTJCf53/lLk78SN/FcbJRx2cZCixC4ZATGXsu4as8YgQjGamN/q5atOotn4K3A1J4BUMbgsh7Wt6sx2bcV4AkjtSPJxkDjRQL0hVwg21zEglSzN+rdKeOybTtFcgK39ajWZDFWr+IZHxfGQ8mV0YA5nMGmDVcCPNcb8R5gYJ1UCWQfp6PFCI4NyZhrAV6EIiHGrPOAB0ImkW2c0la8u8ICc0wUCWrvC1dsw+3TnN6uanDaJ4zeiIfiA9wtWIAX8XspxeA6iuBlaN88hNzCNXk+JwFOuXJYW5tMQmc+EcqgzXGb2n9XFk1NstX5yKczl89JAF+6vRaBM1m5XAu//qkRGrtb8BThTtqH2/V0LmUWwbvsiREw8X0vcJHxxNbjNm3KUuVaMjmPFuWm2CPesHc/kp+yj06hFMhj/PIOOcfVFLk6xZT0G3vMTpmc27MusityZk/OBfKOwA05MPLIDJn3OJldcxTQotpBYOyEXVEWIw/NoInvuHOznSJfVDs0GzneNw9mI+eyOSPQI9phfCqPO38TFhHaFw/Eu/LliNiMESB5w6zkzD05F8mMYJr8mFC263Fa+vAadvXloj4toEcrjlgMjgrQrseHpBcfkm67WD6M6MN6lTWZeoZjyYxGLcB57MGnsEfF3fjU2G189QBpcUqmBLrnSs4504s8GjLxrwm5qYrg3dKFf6x6VbwQ3yOS/wz8+bS0ruwfELaBY2nyoNkn4gvW65GKRn4WForwP+dONHDaOHeZAAAAAElFTkSuQmCC) no-repeat center;
+            background-size: contain
+        }
+
+        .preview_appmsg .rich_media_title {
+            margin-top: 2.3em
+        }
+
+        @media screen and (min-width:1024px) {
+            .rich_media_global_msg {
+                position: relative;
+                margin-bottom: 32px
+            }
+
+            .preview_appmsg .rich_media_title.rich_media_title {
+                margin-top: 0
+            }
+        }
+
+        .pages_reset {
+            color: #333;
+            line-height: 1.6;
+            font-size: 16px;
+            font-weight: 400;
+            font-style: normal;
+            text-indent: 0;
+            letter-spacing: normal;
+            text-align: left;
+            text-decoration: none;
+            white-space: normal
+        }
+
+        .weapp_element,
+        .weapp_display_element,
+        .mp-miniprogram {
+            display: block;
+            margin: 1em 0
+        }
+
+        .share_audio_context {
+            margin: 16px 0
+        }
+
+        .weapp_text_link {
+            font-size: 17px
+        }
+
+        .weapp_text_link:before {
+            content: '';
+            display: inline-block;
+            line-height: 1;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAAXNSR0IArs4c6QAAB4RJREFUWAm1WUuMFGUQnn7szL5mdvbh7GwgEQUlS1weiagxxpigiUZeJgY1cMMDcDCGG8GLCWZvxHjh4BWUeDEsejBBEzWYKBBEiHAABBfCMOwsuzvszrvb+v6Zb7amt1ce0Up6qv6q+qq+/rv778dYkUeUqamp5dFodJPv++ts205blpX2PG8I5cTOiLol44zYZ8vl8vFkMnnlUVpZDwPK5/MpIbWrVqttFlLD0jwiBEHIaNbCGKJjQvai+I9Xq9VD8Xg8y9z76QcimM1mu3t6ej4UYh84jtOFxhBNJGxskhp5xIielZ37bHp6+tNUKnWPOYvp+xKcm5t7S4gclKIpFNGzsmjRkBnUOwNbZjQrtfZ2dnZ+vVgd+O1/CVqlUukjIXZYCqZADBuEJIllc4xh61zmaB9s7LDkHkYPwJgX1KEEx8fHO2TmjkjyPgLQmERIAjHajGnyjDGPOfQ3xvvQCz3ZS+sw5hYAsodbWBhNw4SNGCMBnR/MYS60jskhPyaHe7u4W5otmEGZ8v0gx2YsyDE0bc4Wx8glOe2Dn2No2hqPnuiNXC0tM9i4IA5LcksjNm0BNs417aMNAsRom3HoMD8wsu3QF06TIJaSRCJxXrDmamUBrVEYRejDmDY0JEgsLE4f8mkTj6tb1tsRLkEukiBY56Q4rizThI2okaNtjFlUx+Cr1vzIyTMz7uW/ik4mV7Yd24oMDrR5q1Z01Nav6a5yVsLwcvRS4CI1D5ge+MEdQhbgC1yECSQhjMNsYCGMQ2dzFeuLYxOxibuVBec3cpekY7XtWwZK8a75sMajj2yzcsd5BnccM4PCeg/JoQjJwAY4TFgUMeRjXK54kS/H6uR6e1xvw4vJyuNLYh5yrt8s2d//MtV2M1Nyvvo2F9u5LVUSJEJNPPtKrS7XdXdL6GOzG+LYqIJNUiShYyRDjRw2OXnmnntnsmInE663e3u6uHZVZy2ZsH1sa4Y7ant2DBURu3aj6Jz9c9YBVuNRhz6pvwlju1gsPikzaG78CKIxNgh1sAj91MhFztXrRQf2C+vi1Y721tMC/vZYPQb78rWCE8Tr/uCEJyZbrprNAAST4QOAIGj6qBnDGPjZgmeS0gNRc1jD8D1xx+y978/XJh4awl54nHOl8Do6STKoDarxg5gmxpj2yTEwbtZhDvSlKwUzy+lU1NPxFvz8EcSzpnnYXDCD3AtqFtOFGNM+kMBYx+DzPD/y86m8e+7SnBON2v7qlR01ncP6Gg9uriSlGSSAYyTDhl/7bmTK9tXxkj3ydFetL4lTqT5jyIdgTB/0qT9m3R9/zbvT+Yottfw3XuktJxP1Q61rh/QfcuUcHBKmzcIwdCILQE/crVpHj9+JZe7U17hSyau89lJPxYDVD3KJm5qpWWMnJqMIY+nZvKGv/NQT7ebwcicI5RhYiHBLYx30WQxObWNMyQm5Q0cy7ULK6up0/PUj3dWXn48bckEMGrGZkPJ3bhssunLmLR2qXzyIacxitvT2XZm9jABWMEmD6QPJYzILILdyeWf13Y39ZTSEMAeaQpuxZUujHn26fhCPmI6Dmy0OvIE1AyyqfYWiH7n6d9GJxWz/7df7FpBjLjQETag1Me1HPKxXwJfByXeLRViUYGiI3F/NSYr1raPdNoXh594S75nVT1Z/mUz6kAfhGJp2EI887gRy5Bw0M/g7ndQI0gZISJkpyU6WbTm7m8RYELnFkh+ZnK4/qCTiWF4XXtk6X5NkLjX7iz4rh9keAxBODaKNWKrf9Qd627yC3Cm++2m6DbHWYpHI2Im7UfFZqf6oN9DrmAsPWIquH8QjR8dRG2O88JszW56kTwvRYSayOYtD37xdsT8/ejtWq/nWsqXttdXDHdW+RNTHY9Vv5/IuTgPHtfxd7w0V04/V1ziND5IiCeTofsyTw3tRnqyfNY9b8qg1JkktXwo0EKAlg23eO2/2l7/5YaoNTyPYNIFEt6xxr/aVQQ75QTxJkEBYnDFocEKOqYQHVnn+uiCBLji1IBnCBiVZ+U6fv+dmshV7cqpq9fY4/tBg1HtudXe1zeyuRs9fHMRrEvQBQT9smb1Z+YphHljr3cWJF2gB7NOENAhAjrWGP9iIPuZhDOFYa/hD8KOxWOyAweAHEnxpqnvrvyyofbQZg4boZsEcjrUO4mX2Wl6a6jdhQeAtSoJ70YDNoIMFwmJoqImF5Wgf8jHGRhx0Y9vLNzrkNQligPdRuZpHgyDEKIixMPMQow82/dC04YdgzFwdg0+2Uf1OjPzmOYhBQ6xCoYCX9626WDOo9pqNqHUO7IfBy0XxYJ8+UHdiYuJ9AHQT2GGiycHmmLNDkmFY+JCPXrlcbqcMW28/iCNpEcHnt/3SwHzhQiEIG5JAGDYsN8yHGjil5Ir9BKVDa4U5ta/xveagNDCfRBhDQ5JczEaujhHb0FlclMFzLpDTepEEgxijAL6VSCNcPLPw6aa0oSEgTZsx+GFjwyIsenRmZmbkfuQMDj8PKrjjyCHZIw02im7eGokHAQhnFjZ8GAux/+8jOhoFhX9DCIG1EsPfD9jMC5j4/rO/If4BCiyOk7IAfLMAAAAASUVORK5CYII=');
+            vertical-align: middle;
+            font-size: 11px;
+            color: #888;
+            margin-right: 6px;
+            margin-top: -3px;
+            background-position: center;
+            height: 20px;
+            width: 20px
+        }
+
+        .flex_context {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            align-items: center
+        }
+
+        .flex_bd {
+            -webkit-box-flex: 1;
+            -webkit-flex: 1;
+            flex: 1;
+            word-wrap: break-word;
+            word-break: break-all
+        }
+
+        .original_page {
+            background-color: #fff;
+            font-size: 16px
+        }
+
+        .account_info {
+            padding: 0 0 20px
+        }
+
+        .account_info .flex_bd {
+            padding-left: .85em
+        }
+
+        .radius_avatar.account_avatar {
+            width: 28px;
+            height: 28px;
+            padding: 0
+        }
+
+        .account_nickname {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 1;
+            line-height: 1.2;
+            color: #576b95;
+            font-size: 14px
+        }
+
+        .account_nickname_inner {
+            font-weight: 400;
+            vertical-align: top
+        }
+
+        .account_desc {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 1;
+            color: #b2b2b2;
+            font-size: 13px;
+            line-height: 1.2;
+            padding-top: .3em
+        }
+
+        .account_desc_inner {
+            display: inline;
+            vertical-align: top
+        }
+
+        .share_notice {
+            margin-bottom: 16px;
+            word-wrap: break-word;
+            -webkit-hyphens: auto;
+            -ms-hyphens: auto;
+            hyphens: auto
+        }
+
+        .share_media {
+            padding-bottom: 18px
+        }
+
+        .original_panel {
+            padding: 20px;
+            background-color: #fcfcfc;
+            word-wrap: break-word;
+            -webkit-hyphens: auto;
+            -ms-hyphens: auto;
+            hyphens: auto;
+            overflow: hidden;
+            position: relative
+        }
+
+        .original_panel .original_account {
+            margin-bottom: 18px;
+            position: relative;
+            z-index: 1
+        }
+
+        .original_panel .original_account_avatar {
+            width: 28px;
+            height: 28px;
+            padding: 0
+        }
+
+        .original_panel .original_account_nickname {
+            padding-left: .85em;
+            font-size: 15px;
+            color: rgba(0, 0, 0, 0.5)
+        }
+
+        .original_panel_title {
+            font-size: 23px;
+            color: #000;
+            margin: 0 0 16px
+        }
+
+        .original_panel_content {
+            color: #333
+        }
+
+        .original_panel_tool {
+            padding-top: 20px;
+            position: relative;
+            z-index: 1
+        }
+
+        .original_area_primary {
+            display: block;
+            padding: 16px;
+            text-align: center;
+            margin-bottom: 24px;
+            border-radius: 8px;
+            background-color: rgba(0, 0, 0, 0.03);
+            line-height: 1.4;
+            color: rgba(0, 0, 0, 0.3);
+            font-size: 0
+        }
+
+        .original_area_primary .radius_avatar {
+            padding: 0;
+            width: 18px;
+            height: 18px;
+            margin: 0 4px 0 6px;
+            vertical-align: top;
+            position: relative;
+            top: .1em
+        }
+
+        .original_area_primary>span {
+            font-size: 15px
+        }
+
+        .original_area_primary.disabled .rich_media_meta_link {
+            color: rgba(0, 0, 0, 0.3)
+        }
+
+        .original_primary_overflow {
+            text-align: left
+        }
+
+        .preview_appmsg .rich_media_title {
+            margin-top: 1.5em
+        }
+
+        .preview_appmsg .account_info {
+            padding-top: 3em
+        }
+
+        .original_page {
+            background-color: transparent
+        }
+
+        .account_info {
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+            outline: 0;
+            padding-bottom: 16px;
+            font-size: 16px
+        }
+
+        .account_info.appmsg_account_info {
+            padding-bottom: 32px
+        }
+
+        .account_info .radius_avatar img {
+            background-color: transparent
+        }
+
+        .share_notice {
+            font-size: 17px;
+            word-wrap: break-word;
+            -webkit-hyphens: auto;
+            -ms-hyphens: auto;
+            hyphens: auto
+        }
+
+        .original_panel {
+            background-color: rgba(0, 0, 0, 0.03)
+        }
+
+        .original_panel:after {
+            border-color: #e6e6e6
+        }
+
+        .original_panel .original_account_avatar {
+            width: 30px;
+            height: 30px
+        }
+
+        .original_panel_tool {
+            font-size: 14px
+        }
+
+        .original_panel_tool a {
+            color: #576b95
+        }
+
+        .original_panel_content {
+            opacity: .90;
+            font-size: 14px;
+            line-height: 22px;
+            color: #000
+        }
+
+        .share_media {
+            padding-bottom: 30px
+        }
+
+        .icon_appmsg_tag {
+            display: inline-block;
+            vertical-align: middle;
+            padding: 0 .5em;
+            font-size: 12px;
+            line-height: 1.5;
+            background-color: #c3c3c3;
+            color: #fff;
+            border-radius: 2px;
+            -moz-border-radius: 2px;
+            -webkit-border-radius: 2px;
+            width: auto;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            word-wrap: normal;
+            max-width: 70%
+        }
+
+        .icon_appmsg_tag.primary {
+            color: #3bb638;
+            padding: 4px .78em;
+            background-color: rgba(9, 187, 7, 0.08);
+            font-size: 12px;
+            border-top-left-radius: .95em 50%;
+            -moz-border-radius-topleft: .95em 50%;
+            -webkit-border-top-left-radius: .95em 50%;
+            border-top-right-radius: .95em 50%;
+            -moz-border-radius-topright: .95em 50%;
+            -webkit-border-top-right-radius: .95em 50%;
+            border-bottom-left-radius: .95em 50%;
+            -moz-border-radius-bottomleft: .95em 50%;
+            -webkit-border-bottom-left-radius: .95em 50%;
+            border-bottom-right-radius: .95em 50%;
+            -moz-border-radius-bottomright: .95em 50%;
+            -webkit-border-bottom-right-radius: .95em 50%
+        }
+
+        .icon_appmsg_tag.default {
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            color: rgba(0, 0, 0, 0.3);
+            background-color: transparent;
+            padding: 0 .54em;
+            font-size: 15px;
+            line-height: 1.3;
+            border-top-left-radius: .67em 50%;
+            -moz-border-radius-topleft: .67em 50%;
+            -webkit-border-top-left-radius: .67em 50%;
+            border-top-right-radius: .67em 50%;
+            -moz-border-radius-topright: .67em 50%;
+            -webkit-border-top-right-radius: .67em 50%;
+            border-bottom-left-radius: .67em 50%;
+            -moz-border-radius-bottomleft: .67em 50%;
+            -webkit-border-bottom-left-radius: .67em 50%;
+            border-bottom-right-radius: .67em 50%;
+            -moz-border-radius-bottomright: .67em 50%;
+            -webkit-border-bottom-right-radius: .67em 50%
+        }
+
+        .rich_media_meta_list .icon_appmsg_tag.default {
+            margin-top: -1px
+        }
+
+        .icon_appmsg_tag.title_tag {
+            background-color: #d04b4e
+        }
+
+        .icon_global_tag_wrp {
+            text-align: right;
+            padding-bottom: 12px
+        }
+
+        .icon_global_tag {
+            background-color: rgba(118, 118, 118, 0.16);
+            color: rgba(0, 0, 0, 0.41);
+            line-height: 2.2;
+            border-top-left-radius: 1em 50%;
+            -moz-border-radius-topleft: 1em 50%;
+            -webkit-border-top-left-radius: 1em 50%;
+            border-bottom-left-radius: 1em 50%;
+            -moz-border-radius-bottomleft: 1em 50%;
+            -webkit-border-bottom-left-radius: 1em 50%;
+            padding: 0 1.8em 0 1.34em;
+            font-size: 12px;
+            margin-right: -24px;
+            display: inline-block;
+            vertical-align: top
+        }
+
+        .global_plain_btn {
+            display: inline-block;
+            vertical-align: middle;
+            padding: 0 1em;
+            line-height: 2;
+            font-size: 14px;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+            border-radius: 5px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px
+        }
+
+        .global_plain_btn.primary {
+            color: #1aad19;
+            border: 1px solid currentColor
+        }
+
+        .global_plain_btn.primary:active {
+            color: rgba(26, 173, 25, 0.6)
+        }
+
+        .wx_video_context {
+            color: #fefefe;
+            position: relative;
+            background-color: #000
+        }
+
+        .wx_video_thumb,
+        .wx_video_thumb_primary {
+            position: absolute;
+            left: 0;
+            width: 100%;
+            height: 100% !important;
+            top: 0
+        }
+
+        .wx_video_thumb_primary {
+            background-size: cover;
+            background-position: 50% 50%;
+            background-repeat: no-repeat
+        }
+
+        .wx_video_play_btn {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            margin-top: -2px;
+            font-size: 0;
+            border-width: 0;
+            background-color: transparent;
+            padding: 0;
+            outline: 0;
+            z-index: 2
+        }
+
+        .wx_video_play_btn:before {
+            content: " ";
+            display: inline-block;
+            width: 0;
+            height: 0;
+            border-width: 14px 0 14px 25px;
+            border-color: transparent transparent transparent #fff;
+            border-style: dotted dotted dotted solid
+        }
+
+        .wx_video_mask {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 1;
+            background-color: rgba(0, 0, 0, 0.5)
+        }
+
+        .place_audio_area {
+            min-height: 100px;
+            background-color: #fdfdfd;
+            display: block;
+            margin: 16px 0
+        }
+
+        .place_music_area {
+            min-height: 68px;
+            background-color: #fdfdfd;
+            display: block;
+            margin: 17px 0 16px
+        }
+
+        .rich_media_empty_extra {
+            background-color: #fafafa
+        }
+
+        .appmsg_skin_default.rich_media_empty_extra {
+            background-color: #fff
+        }
+
+        .appmsg_skin_default .rich_media_area_primary {
+            background-color: #fff
+        }
+
+        .appmsg_skin_default .rich_media_area_primary .weui-loadmore_line .weui-loadmore__tips {
+            background-color: #fff
+        }
+
+        .appmsg_style_default .rich_media_tool {
+            padding-top: 15px
+        }
+
+        .rich_media_title_ios {
+            font-weight: 700
+        }
+
+        .my_comment_empty_data {
+            background-color: #fff
+        }
+
+        .read-more__area {
+            margin: 30px 0
+        }
+
+        .read-more__desc {
+            margin-bottom: 10px
+        }
+
+        .read-more__article__extra {
+            font-size: 14px;
+            color: rgba(0, 0, 0, 0.5)
+        }
+
+        .read-more__article__item {
+            margin-bottom: 10px
+        }
+
+        .original_panel_tips {
+            font-size: 12px;
+            color: #fff;
+            line-height: 34px;
+            font-weight: normal;
+            vertical-align: 2px;
+            padding: 2px 4px;
+            border-radius: 2px;
+            background-color: rgba(0, 0, 0, 0.2)
+        }
+    </style>
+    <link rel="stylesheet" href="static/css/middle476532.css">
+    <style>
+    </style>
+    <style type="text/css">
+        .original_panel {
+            border-radius: 8px;
+        }
+    </style>
+    <!--[if lt IE 9]>
+<link rel="stylesheet" type="text/css" href="static/css/pc473e11.css">
+<![endif]-->
+
+</head>
+
+<body id="activity-detail" class="zh_CN mm_appmsg  appmsg_skin_default appmsg_style_default ">
+    <link rel="dns-prefetch" href="//res.wx.qq.com">
+    <link rel="dns-prefetch" href="//mmbiz.qpic.cn">
+
+
+    <div id="js_article" class="rich_media preview_appmsg">
+
+        <div id="js_top_ad_area" class="top_banner"></div>
+
+        <div class="rich_media_inner">
+
+
+            <div id="page-content" class="rich_media_area_primary">
+                <div class="rich_media_area_primary_inner">
+
+                    <div id="img-content">
+                        <h2 class="rich_media_title" id="activity-name">
+                            宋美龄40岁患癌却活到106岁！探索她的长寿秘密，竟然跟它有关……
+                        </h2>
+
+                        <div class="rich_media_content " id="js_content">
+                            <section class="xmteditor" style="display:none;" data-tools="新媒体管家"
+                                data-label="powered by xmt.cn"></section>
+                            <section powered-by="xiumi.us"
+                                style="max-width: 100%;box-sizing: border-box;font-family: -apple-system-font, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;white-space: normal;background-color: rgb(255, 255, 255);font-size: 15px;letter-spacing: 2px;text-align: center;word-wrap: break-word !important;overflow-wrap: break-word !important;">
+                                <section
+                                    style="max-width: 100%;box-sizing: border-box;word-wrap: break-word !important;overflow-wrap: break-word !important;">
+                                    <section
+                                        style="padding-right: 10px;padding-left: 10px;max-width: 100%;box-sizing: border-box;text-align: justify;font-size: 14px;line-height: 2;word-wrap: break-word !important;overflow-wrap: break-word !important;">
+                                        <section
+                                            style="margin-bottom: 10px;max-width: 100%;box-sizing: border-box;font-size: 16px;letter-spacing: 0.582857px;text-align: center;word-wrap: break-word !important;overflow-wrap: break-word !important;">
+                                            <section
+                                                style="padding: 10px;max-width: 100%;box-sizing: border-box;display: inline-block;width: 608px;border-width: 1px;border-style: solid;border-color: rgb(0, 0, 0);border-radius: 10px;word-wrap: break-word !important;overflow-wrap: break-word !important;">
+                                                <section class="" powered-by="xiumi.us"
+                                                    style="max-width: 100%;box-sizing: border-box;word-wrap: break-word !important;overflow-wrap: break-word !important;">
+                                                    <section
+                                                        style="max-width: 100%;box-sizing: border-box;word-wrap: break-word !important;overflow-wrap: break-word !important;">
+                                                        <section
+                                                            style="padding-right: 15px;padding-left: 15px;max-width: 100%;box-sizing: border-box;font-size: 15px;line-height: 1.7;word-wrap: break-word !important;overflow-wrap: break-word !important;">
+                                                            <p
+                                                                style="max-width: 100%;box-sizing: border-box;min-height: 1em;font-family: Optima-Regular, PingFangTC-light;line-height: 1.75em;word-wrap: break-word !important;overflow-wrap: break-word !important;">
+                                                                <span
+                                                                    style="max-width: 100%;font-size: 20px;box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;"><strong
+                                                                        style="max-width: 100%;box-sizing: border-box;color: rgb(255, 255, 255);letter-spacing: 0.544px;background-color: rgb(180, 38, 30);word-wrap: break-word !important;overflow-wrap: break-word !important;">头条新闻</strong><strong
+                                                                        style="max-width: 100%;box-sizing: border-box;color: rgb(255, 255, 255);letter-spacing: 0.544px;background-color: rgb(180, 38, 30);word-wrap: break-word !important;overflow-wrap: break-word !important;"></strong></span>
+                                                            </p>
+                                                            <p
+                                                                style="max-width: 100%;box-sizing: border-box;min-height: 1em;font-family: Optima-Regular, PingFangTC-light;line-height: 1.75em;word-wrap: break-word !important;overflow-wrap: break-word !important;">
+                                                                <span
+                                                                    style="max-width: 100%;font-size: 20px;box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;"><strong
+                                                                        style="max-width: 100%;box-sizing: border-box;color: rgb(255, 255, 255);letter-spacing: 0.544px;background-color: rgb(180, 38, 30);word-wrap: break-word !important;overflow-wrap: break-word !important;"><span
+                                                                            style="color: rgb(0, 0, 0);white-space: pre-wrap;background-color: rgb(255, 255, 255);font-size: 20px;max-width: 100%;font-family: -apple-system-font, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;letter-spacing: 2px;text-indent: 28px;box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;">容颜不老、活到106岁的民国第一夫人宋美龄，却在40岁的时候就被确诊患有早期乳腺癌，这在医疗条件极度不发达的民国时代简直就是个奇迹。</span></strong><strong
+                                                                        style="max-width: 100%;box-sizing: border-box;color: rgb(255, 255, 255);letter-spacing: 0.544px;background-color: rgb(180, 38, 30);word-wrap: break-word !important;overflow-wrap: break-word !important;"><span
+                                                                            style="color: rgb(0, 0, 0);white-space: pre-wrap;background-color: rgb(255, 255, 255);font-size: 20px;max-width: 100%;font-family: -apple-system-font, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;letter-spacing: 2px;text-indent: 28px;box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;"></span></strong></span>
+                                                            </p>
+                                                        </section>
+                                                    </section>
+                                                </section>
+                                            </section>
+                                        </section>
+                                    </section>
+                                </section>
+                            </section>
+                            <section
+                                style="padding-right: 10px;padding-bottom: 10px;padding-left: 10px;max-width: 100%;box-sizing: border-box;font-family: -apple-system-font, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;white-space: normal;background-color: rgb(255, 255, 255);font-size: 15px;letter-spacing: 2px;text-align: center;display: inline-block;width: 650.422px;vertical-align: top;border-color: rgb(202, 198, 198);border-width: 1px;border-radius: 0px;border-style: dashed;word-wrap: break-word !important;overflow-wrap: break-word !important;">
+                                <section powered-by="xiumi.us"
+                                    style="max-width: 100%;box-sizing: border-box;word-wrap: break-word !important;overflow-wrap: break-word !important;">
+                                    <section
+                                        style="margin-top: 0.5em;margin-bottom: 0.5em;padding-right: 0.5em;padding-left: 0.5em;max-width: 100%;box-sizing: border-box;word-wrap: break-word !important;overflow-wrap: break-word !important;">
+                                        <section
+                                            style="max-width: 100%;box-sizing: border-box;width: 613.422px;box-shadow: rgb(51, 51, 51) 3.53553px 3.53553px 8px;display: inline-block;line-height: 0;border-color: white;word-wrap: break-word !important;overflow-wrap: break-word !important;height: auto !important;">
+                                            <img class="" data-ratio="0.6125"
+                                                src="static/picture/04b018d64980439c918a928afb5abe4f.gif"
+                                                data-type="jpeg" data-w="640"
+                                                style="box-sizing: border-box;vertical-align: middle;word-wrap: break-word !important;overflow-wrap: break-word !important;visibility: visible !important;width: 640px !important;">
+                                        </section>
+                                    </section>
+                                </section>
+                                <section powered-by="xiumi.us"
+                                    style="max-width: 100%;box-sizing: border-box;word-wrap: break-word !important;overflow-wrap: break-word !important;">
+                                    <section
+                                        style="max-width: 100%;box-sizing: border-box;word-wrap: break-word !important;overflow-wrap: break-word !important;">
+                                        <section powered-by="xiumi.us"
+                                            style="max-width: 100%;box-sizing: border-box;word-wrap: break-word !important;overflow-wrap: break-word !important;">
+                                            <section
+                                                style="max-width: 100%;box-sizing: border-box;word-wrap: break-word !important;overflow-wrap: break-word !important;">
+                                                <section
+                                                    style="padding-right: 10px;padding-left: 10px;max-width: 100%;box-sizing: border-box;text-align: justify;font-size: 14px;line-height: 2;word-wrap: break-word !important;overflow-wrap: break-word !important;">
+                                                    <p
+                                                        style="max-width: 100%;box-sizing: border-box;min-height: 1em;text-indent: 2em;word-wrap: break-word !important;overflow-wrap: break-word !important;">
+                                                        <span
+                                                            style="max-width: 100%;font-size: 20px;box-sizing: border-box !important;word-wrap: break-word !important;">有人认为，宋美龄一定有什么养生秘诀，才让她成为了跨越三个世纪的传奇女性。那么宋美龄活到百岁的秘诀到底是什么？</span>
+                                                    </p>
+                                                    <p
+                                                        style="max-width: 100%;box-sizing: border-box;min-height: 1em;text-indent: 2em;word-wrap: break-word !important;overflow-wrap: break-word !important;">
+                                                        <span
+                                                            style="max-width: 100%;font-size: 20px;box-sizing: border-box !important;word-wrap: break-word !important;">宋美龄，她的父亲宋嘉树患胃癌，母亲倪桂珍、大姐宋霭龄和弟弟宋子良都因为癌症去世，二姐宋庆龄患肝癌和白血病。生于高癌家庭的她，在40岁时被确诊为乳腺癌早期，可命运的魔爪并没有抓得住她，靠着她乐观的心态与独特的养生方法，她成功活到了106岁，摆脱了家族的噩运。</span>
+                                                    </p>
+                                                    <section
+                                                        style="margin-top: 0.5em;margin-bottom: 0.5em;padding-right: 0.5em;padding-left: 0.5em;max-width: 100%;box-sizing: border-box;word-wrap: break-word !important;overflow-wrap: break-word !important;">
+                                                        <section
+                                                            style="max-width: 100%;box-sizing: border-box;width: 594.422px;box-shadow: rgb(51, 51, 51) 3.53553px 3.53553px 8px;display: inline-block;line-height: 0;border-color: white;word-wrap: break-word !important;overflow-wrap: break-word !important;height: auto !important;">
+                                                            <img class="" data-ratio="0.6125"
+                                                                src="static/picture/ebbaa0cc8150470c8637f4e11ebbf7c9.gif"
+                                                                data-type="jpeg" data-w="640"
+                                                                style="box-sizing: border-box;vertical-align: middle;word-wrap: break-word !important;overflow-wrap: break-word !important;visibility: visible !important;width: 640px !important;">
+                                                        </section>
+                                                    </section>
+                                                    <p
+                                                        style="max-width: 100%;box-sizing: border-box;min-height: 1em;text-indent: 2em;word-wrap: break-word !important;overflow-wrap: break-word !important;">
+                                                        <span
+                                                            style="max-width: 100%;font-size: 20px;box-sizing: border-box !important;word-wrap: break-word !important;">虽然乳腺癌术后生存率很高，但像宋美龄这样比常人更长寿的确实很少，关键还在于她的生活饮食习惯。</span>
+                                                    </p>
+                                                    <p
+                                                        style="max-width: 100%;box-sizing: border-box;min-height: 1em;text-indent: 2em;word-wrap: break-word !important;overflow-wrap: break-word !important;">
+                                                        <span
+                                                            style="max-width: 100%;font-size: 20px;box-sizing: border-box !important;word-wrap: break-word !important;"><strong
+                                                                style="max-width: 100%;box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;">宋美龄的日记也有记载她患癌后的食谱，其中的奥秘就在于：</strong><strong
+                                                                style="max-width: 100%;box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;"></strong><strong
+                                                                style="max-width: 100%;box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;">早晚餐中的一杯骆驼奶</strong>。当时骆驼奶特别稀缺，但根据日记记载，产自新疆伊犁的驼奶每天都会空运到南京，以保证宋美龄每天都有足够的驼奶喝。</span>
+                                                    </p>
+                                                    <section
+                                                        style="margin-top: 0.5em;margin-bottom: 0.5em;padding-right: 0.5em;padding-left: 0.5em;max-width: 100%;box-sizing: border-box;word-wrap: break-word !important;overflow-wrap: break-word !important;">
+                                                        <section
+                                                            style="max-width: 100%;box-sizing: border-box;width: 594.422px;box-shadow: rgb(51, 51, 51) 3.53553px 3.53553px 8px;display: inline-block;line-height: 0;border-color: white;word-wrap: break-word !important;overflow-wrap: break-word !important;height: auto !important;">
+                                                            <img class="" data-ratio="0.6125"
+                                                                src="static/picture/110e2826535e47a19d1737db1f12c807.gif"
+                                                                data-type="jpeg" data-w="640"
+                                                                style="box-sizing: border-box;vertical-align: middle;word-wrap: break-word !important;overflow-wrap: break-word !important;visibility: visible !important;width: 640px !important;">
+                                                        </section>
+                                                    </section>
+                                                    <p
+                                                        style="max-width: 100%;box-sizing: border-box;min-height: 1em;text-indent: 2em;word-wrap: break-word !important;overflow-wrap: break-word !important;">
+                                                        <span
+                                                            style="max-width: 100%;font-size: 20px;box-sizing: border-box !important;word-wrap: break-word !important;">朱长泰是一直跟随宋美龄的一位侍卫。他说，<strong
+                                                                style="max-width: 100%;box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;">&nbsp;“老夫人很注重饮食，少食多餐，但每天两杯骆驼奶必不可少”</strong>。</span>
+                                                    </p>
+                                                    <p
+                                                        style="max-width: 100%;box-sizing: border-box;min-height: 1em;text-indent: 2em;word-wrap: break-word !important;overflow-wrap: break-word !important;">
+                                                        <span
+                                                            style="max-width: 100%;font-size: 20px;box-sizing: border-box !important;word-wrap: break-word !important;">民国时期的新疆医疗条件更不比宋美龄所在的中原地区，但长寿依然是此地人们的普遍特征。全因此地的骆驼奶，让宋美龄，还有村民们，都如愿成为了长命百岁的老人。</span>
+                                                    </p>
+                                                    <p
+                                                        style="max-width: 100%;min-height: 1em;box-sizing: border-box !important;word-wrap: break-word !important;">
+                                                        <br /></p>
+                                                </section>
+                                            </section>
+                                        </section>
+                                    </section>
+                                </section>
+                            </section>
+                            <section
+                                style="max-width: 100%;box-sizing: border-box;font-family: -apple-system-font, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;letter-spacing: 0.544px;white-space: normal;background-color: rgb(255, 255, 255);word-wrap: break-word !important;">
+                                <section
+                                    style="margin-top: 11px;margin-bottom: 10px;max-width: 100%;box-sizing: border-box;text-align: center;word-wrap: break-word !important;">
+                                    <section
+                                        style="padding-right: 10px;padding-bottom: 10px;padding-left: 10px;max-width: 100%;box-sizing: border-box;display: inline-block;width: 650.422px;vertical-align: top;border-color: rgb(158, 158, 158);border-width: 1px;border-radius: 0px;border-style: dashed;word-wrap: break-word !important;">
+                                        <section
+                                            style="max-width: 100%;box-sizing: border-box;word-wrap: break-word !important;">
+                                            <section
+                                                style="margin-top: 0.5em;margin-bottom: 0.5em;padding-right: 0.5em;padding-left: 0.5em;max-width: 100%;box-sizing: border-box;word-wrap: break-word !important;">
+                                                <section
+                                                    style="max-width: 100%;box-sizing: border-box;width: 613.422px;box-shadow: rgb(102, 102, 102) 3.53553px 3.53553px 8px;display: inline-block;line-height: 0;border-color: white;word-wrap: break-word !important;height: auto !important;">
+                                                    <img class="" data-ratio="0.6666666666666666"
+                                                        src="static/picture/ad222f7b3cf643ee8072f5478b646a4f.gif"
+                                                        data-type="jpeg" data-w="640"
+                                                        style="box-sizing: border-box;vertical-align: middle;word-wrap: break-word !important;visibility: visible !important;width: 640px !important;">
+                                                </section>
+                                            </section>
+                                        </section>
+                                        <section
+                                            style="max-width: 100%;box-sizing: border-box;word-wrap: break-word !important;">
+                                            <section
+                                                style="max-width: 100%;box-sizing: border-box;word-wrap: break-word !important;">
+                                                <section
+                                                    style="padding-right: 10px;padding-left: 10px;max-width: 100%;box-sizing: border-box;text-align: justify;font-size: 14px;color: rgb(202, 57, 79);line-height: 2;word-wrap: break-word !important;">
+                                                    <p
+                                                        style="max-width: 100%;box-sizing: border-box;min-height: 1em;text-indent: 2em;word-wrap: break-word !important;">
+                                                        <span
+                                                            style="max-width: 100%;font-size: 20px;box-sizing: border-box !important;word-wrap: break-word !important;">2018年6月25日，世界上最长寿的人阿丽米罕·色依提在新疆喀什的家中迎来132岁生日。出生于1886年6月25日（光绪12年）的阿丽米罕·色依提，是新疆疏勒县库木西力克乡拍昆吾伊拉村人，现已成为中国第一寿星，也被认为是世界上最长寿的人！</span>
+                                                    </p>
+                                                </section>
+                                            </section>
+                                        </section>
+                                    </section>
+                                </section>
+                            </section>
+                            <section
+                                style="max-width: 100%;box-sizing: border-box;font-family: -apple-system-font, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;letter-spacing: 0.544px;white-space: normal;background-color: rgb(255, 255, 255);word-wrap: break-word !important;">
+                                <section
+                                    style="max-width: 100%;box-sizing: border-box;word-wrap: break-word !important;">
+                                    <section
+                                        style="max-width: 100%;box-sizing: border-box;font-size: 14px;word-wrap: break-word !important;">
+                                        <p
+                                            style="max-width: 100%;box-sizing: border-box;min-height: 1em;text-indent: 2em;word-wrap: break-word !important;">
+                                            <span
+                                                style="max-width: 100%;font-size: 20px;box-sizing: border-box !important;word-wrap: break-word !important;"><strong
+                                                    style="max-width: 100%;box-sizing: border-box;text-indent: 2em;word-wrap: break-word !important;">同是普通百姓，为何她能从古代长寿至今？</strong><strong
+                                                    style="max-width: 100%;box-sizing: border-box;text-indent: 2em;word-wrap: break-word !important;">近日，一篇学者的深入探访为我们揭晓了答案……</strong></span>
+                                        </p>
+                                    </section>
+                                </section>
+                            </section>
+                            <section
+                                style="max-width: 100%;box-sizing: border-box;font-family: -apple-system-font, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;letter-spacing: 0.544px;white-space: normal;background-color: rgb(255, 255, 255);word-wrap: break-word !important;">
+                                <section
+                                    style="margin-top: 0.5em;margin-bottom: 0.5em;max-width: 100%;box-sizing: border-box;word-wrap: break-word !important;">
+                                    <section
+                                        style="max-width: 100%;box-sizing: border-box;background-color: rgb(249, 110, 87);height: 4px;word-wrap: break-word !important;">
+                                    </section>
+                                </section>
+                            </section>
+                            <section
+                                style="max-width: 100%;box-sizing: border-box;font-family: -apple-system-font, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;letter-spacing: 0.544px;white-space: normal;background-color: rgb(255, 255, 255);word-wrap: break-word !important;">
+                                <section
+                                    style="max-width: 100%;box-sizing: border-box;word-wrap: break-word !important;">
+                                    <section
+                                        style="max-width: 100%;box-sizing: border-box;display: inline-block;vertical-align: top;word-wrap: break-word !important;">
+                                        <section
+                                            style="margin-bottom: 4px;padding-right: 5px;padding-left: 5px;max-width: 100%;box-sizing: border-box;background-color: rgb(177, 4, 4);color: rgb(247, 247, 247);word-wrap: break-word !important;">
+                                            <p
+                                                style="max-width: 100%;box-sizing: border-box;min-height: 1em;word-wrap: break-word !important;">
+                                                <span
+                                                    style="max-width: 100%;font-size: 20px;box-sizing: border-box !important;word-wrap: break-word !important;"><strong
+                                                        style="max-width: 100%;box-sizing: border-box;word-wrap: break-word !important;">学者深度调研：</strong><strong
+                                                        style="max-width: 100%;box-sizing: border-box;word-wrap: break-word !important;"></strong></span>
+                                            </p>
+                                        </section>
+                                        <section
+                                            style="max-width: 100%;box-sizing: border-box;border-top: 2px dotted rgb(202, 198, 198);width: 143px;word-wrap: break-word !important;">
+                                        </section>
+                                    </section>
+                                </section>
+                            </section>
+                            <section
+                                style="max-width: 100%;box-sizing: border-box;font-family: -apple-system-font, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;letter-spacing: 0.544px;white-space: normal;background-color: rgb(255, 255, 255);word-wrap: break-word !important;">
+                                <section
+                                    style="max-width: 100%;box-sizing: border-box;word-wrap: break-word !important;">
+                                    <section
+                                        style="padding-top: 2px;padding-bottom: 2px;max-width: 100%;box-sizing: border-box;text-align: right;font-size: 16px;color: rgb(177, 4, 4);letter-spacing: 0px;line-height: 1.8;word-wrap: break-word !important;">
+                                        <p
+                                            style="max-width: 100%;box-sizing: border-box;min-height: 1em;text-align: center;word-wrap: break-word !important;">
+                                            <span
+                                                style="max-width: 100%;font-size: 20px;box-sizing: border-box !important;word-wrap: break-word !important;"><strong
+                                                    style="max-width: 100%;box-sizing: border-box;word-wrap: break-word !important;">132岁人瑞的长寿之谜！</strong><strong
+                                                    style="max-width: 100%;box-sizing: border-box;word-wrap: break-word !important;"></strong></span>
+                                        </p>
+                                    </section>
+                                </section>
+                            </section>
+                            <section
+                                style="max-width: 100%;box-sizing: border-box;font-family: -apple-system-font, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;letter-spacing: 0.544px;white-space: normal;background-color: rgb(255, 255, 255);word-wrap: break-word !important;">
+                                <section
+                                    style="margin-top: 10px;margin-bottom: 10px;max-width: 100%;box-sizing: border-box;text-align: center;word-wrap: break-word !important;">
+                                    <section
+                                        style="max-width: 100%;box-sizing: border-box;vertical-align: middle;display: inline-block;line-height: 0;width: 394.188px;word-wrap: break-word !important;">
+                                        <img class="" data-ratio="0.6666666666666666"
+                                            src="static/picture/c2559b570e6e4116afd994bc135ea1d2.gif" data-type="jpeg"
+                                            data-w="640"
+                                            style="box-sizing: border-box;vertical-align: middle;word-wrap: break-word !important;visibility: visible !important;width: 394.188px !important;"
+                                            width="100%"></section>
+                                </section>
+                            </section>
+                            <section
+                                style="max-width: 100%;box-sizing: border-box;font-family: -apple-system-font, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;letter-spacing: 0.544px;white-space: normal;background-color: rgb(255, 255, 255);word-wrap: break-word !important;">
+                                <section
+                                    style="max-width: 100%;box-sizing: border-box;word-wrap: break-word !important;">
+                                    <section
+                                        style="max-width: 100%;box-sizing: border-box;word-wrap: break-word !important;">
+                                        <p
+                                            style="margin-bottom: 10px;max-width: 100%;box-sizing: border-box;min-height: 1em;text-align: center;text-indent: 0em;word-wrap: break-word !important;">
+                                            <span
+                                                style="max-width: 100%;font-size: 20px;box-sizing: border-box !important;word-wrap: break-word !important;"><strong
+                                                    style="max-width: 100%;box-sizing: border-box;word-wrap: break-word !important;">我是一名生物学研究者。</strong><strong
+                                                    style="max-width: 100%;box-sizing: border-box;word-wrap: break-word !important;"></strong></span>
+                                        </p>
+                                        <p
+                                            style="max-width: 100%;box-sizing: border-box;min-height: 1em;text-indent: 2em;word-wrap: break-word !important;">
+                                            <span
+                                                style="max-width: 100%;font-size: 20px;box-sizing: border-box !important;word-wrap: break-word !important;">在生命寿命和免疫领域研究多年，为研究课题我经常对长寿老人进行探访考察。</span>
+                                        </p>
+                                    </section>
+                                </section>
+                            </section>
+                            <section
+                                style="max-width: 100%;box-sizing: border-box;font-family: -apple-system-font, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;letter-spacing: 0.544px;white-space: normal;background-color: rgb(255, 255, 255);word-wrap: break-word !important;">
+                                <section
+                                    style="margin-top: 0.5em;margin-bottom: 0.5em;padding-right: 0.5em;padding-left: 0.5em;max-width: 100%;box-sizing: border-box;text-align: center;word-wrap: break-word !important;">
+                                    <section
+                                        style="max-width: 100%;box-sizing: border-box;width: 642px;border-width: 4px;border-style: solid;border-color: white;box-shadow: rgb(102, 102, 102) 2.82843px 2.82843px 7px;display: inline-block;line-height: 0;word-wrap: break-word !important;height: auto !important;">
+                                        <img class="" data-ratio="0.6666666666666666"
+                                            src="static/picture/c94675f636a44aa3aea73cff8e01084a.gif" data-type="jpeg"
+                                            data-w="627"
+                                            style="box-sizing: border-box;vertical-align: middle;word-wrap: break-word !important;visibility: visible !important;width: 627px !important;">
+                                    </section>
+                                </section>
+                            </section>
+                            <section
+                                style="max-width: 100%;box-sizing: border-box;font-family: -apple-system-font, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;letter-spacing: 0.544px;white-space: normal;background-color: rgb(255, 255, 255);word-wrap: break-word !important;">
+                                <section
+                                    style="max-width: 100%;box-sizing: border-box;word-wrap: break-word !important;">
+                                    <section
+                                        style="max-width: 100%;box-sizing: border-box;word-wrap: break-word !important;">
+                                        <p
+                                            style="max-width: 100%;box-sizing: border-box;min-height: 1em;text-indent: 2em;word-wrap: break-word !important;">
+                                            <span
+                                                style="max-width: 100%;font-size: 20px;box-sizing: border-box !important;word-wrap: break-word !important;">2013年的7月19日下午4点多，我来到新疆，那时的阿丽米罕就已是全国最长寿的人。</span>
+                                        </p>
+                                    </section>
+                                </section>
+                            </section>
+                            <p
+                                style="max-width: 100%;min-height: 1em;font-family: -apple-system-font, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;letter-spacing: 0.544px;white-space: normal;background-color: rgb(255, 255, 255);box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;">
+                                <img class="" data-ratio="0.6666666666666666"
+                                    src="static/picture/c5242489b31b40e0a0965599a8b5937f.gif" data-type="jpeg"
+                                    data-w="606"
+                                    style="font-style: inherit;font-variant: inherit;font-weight: inherit;font-stretch: inherit;font-size: inherit;line-height: inherit;font-family: inherit;border-width: 0px;border-style: initial;border-color: initial;vertical-align: middle;box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;visibility: visible !important;width: 670.5px !important;">
+                            </p>
+                            <p
+                                style="margin-right: auto;margin-left: auto;padding-top: 0.2em;max-width: 100%;min-height: 1em;font-style: inherit;font-variant: inherit;font-weight: inherit;white-space: normal;background-color: rgb(255, 255, 255);font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, Heiti, 黑体, Arial, Helvetica, STHeiTi, sans-serif;border-width: 0px;border-style: initial;border-color: initial;font-stretch: inherit;line-height: 2;vertical-align: baseline;width: 643.672px;letter-spacing: 0.1em;text-indent: 2em;box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;">
+                                <span style="font-size: 20px;">那时的医生曾评价：</span><span
+                                    style="font-size: 20px;">“老人的身体非常健康，从不生病，此外老人的视力、听力都非常好！</span><span
+                                    style="font-size: 20px;">”</span></p>
+                            <p
+                                style="max-width: 100%;min-height: 1em;font-family: -apple-system-font, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;letter-spacing: 0.544px;white-space: normal;background-color: rgb(255, 255, 255);box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;">
+                                <img class="" data-ratio="0.6666666666666666"
+                                    src="static/picture/f0cf3b202852463bae456b4580a484fb.gif" data-type="jpeg"
+                                    data-w="1313"
+                                    style="font-style: inherit;font-variant: inherit;font-weight: inherit;font-stretch: inherit;font-size: inherit;line-height: inherit;font-family: inherit;border-width: 0px;border-style: initial;border-color: initial;vertical-align: middle;box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;visibility: visible !important;width: 670.5px !important;">
+                            </p>
+                            <p
+                                style="margin-right: auto;margin-left: auto;padding-top: 0.2em;max-width: 100%;min-height: 1em;font-style: inherit;font-variant: inherit;font-weight: inherit;white-space: normal;background-color: rgb(255, 255, 255);font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, Heiti, 黑体, Arial, Helvetica, STHeiTi, sans-serif;border-width: 0px;border-style: initial;border-color: initial;font-stretch: inherit;line-height: 2;vertical-align: baseline;width: 643.672px;letter-spacing: 0.1em;text-indent: 2em;box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;">
+                                <span style="font-size: 20px;">而新疆，并不只有阿丽米罕一个长寿老人，更是著名的“长寿之乡”。</span><span
+                                    style="font-size: 20px;">当年的十大寿星中有一半都来自新疆！</span><span
+                                    style="font-size: 20px;">当地有首歌词是这样写的：</span><span
+                                    style="font-size: 20px;">70岁的老汉健步如飞，80岁的老妈烹羊烤馕，90岁的夫妻成双成对……”。</span><span
+                                    style="font-size: 20px;">在新疆有这样的真实场景：</span><span
+                                    style="font-size: 20px;">120岁的婆婆坐在门前，等100岁的儿媳妇从娘家回来，80岁的孙女一面穿针引线,一面自豪地说：</span><span
+                                    style="font-size: 20px;">“我还年轻……”。</span></p>
+                            <p
+                                style="max-width: 100%;min-height: 1em;font-family: -apple-system-font, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;letter-spacing: 0.544px;white-space: normal;background-color: rgb(255, 255, 255);box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;">
+                                <img class="" data-ratio="0.6666666666666666"
+                                    src="static/picture/c51c7a18aa884753b84a00cf58f1ac1c.gif" data-type="jpeg"
+                                    data-w="450"
+                                    style="font-style: inherit;font-variant: inherit;font-weight: inherit;font-stretch: inherit;font-size: inherit;line-height: inherit;font-family: inherit;border-width: 0px;border-style: initial;border-color: initial;vertical-align: middle;box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;visibility: visible !important;width: 670.5px !important;">
+                            </p>
+                            <p
+                                style="margin-right: auto;margin-left: auto;padding-top: 0.2em;max-width: 100%;min-height: 1em;font-style: inherit;font-variant: inherit;font-weight: inherit;white-space: normal;background-color: rgb(255, 255, 255);font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, Heiti, 黑体, Arial, Helvetica, STHeiTi, sans-serif;border-width: 0px;border-style: initial;border-color: initial;font-stretch: inherit;line-height: 2;vertical-align: baseline;width: 622.547px;letter-spacing: 0.1em;text-indent: 2em;box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;">
+                                <span style="font-size: 20px;">新疆，既没有中原的青山绿水也不如一线城市医疗设施齐全。</span><span
+                                    style="font-size: 20px;">可就是这样干燥的土地却有这么多百岁老人！</span><span
+                                    style="font-size: 20px;">它究竟有什么魔力呢？</span><span
+                                    style="font-size: 20px;">怀着这个疑问，我对此进行了多方调研。</span><span
+                                    style="font-size: 20px;">调研结果发现，这些百岁老人除了饮食上较为自然外，与其他地区的老人别无二致。</span><span
+                                    style="font-size: 20px;">唯一的不同，就是他们都几十年的在喝一种本地特有的饮品——骆驼奶！</span><span
+                                    style="font-size: 20px;">”</span></p>
+                            <p
+                                style="max-width: 100%;min-height: 1em;font-family: -apple-system-font, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;letter-spacing: 0.544px;white-space: normal;background-color: rgb(255, 255, 255);box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;">
+                                <img class="" data-ratio="0.6666666666666666"
+                                    src="static/picture/45a5c71f830c4353b6590be312aed296.gif" data-type="jpeg"
+                                    data-w="1040"
+                                    style="font-style: inherit;font-variant: inherit;font-weight: inherit;font-stretch: inherit;font-size: inherit;line-height: inherit;font-family: inherit;border-width: 0px;border-style: initial;border-color: initial;vertical-align: middle;box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;visibility: visible !important;width: 670.5px !important;">
+                            </p>
+                            <p
+                                style="margin-right: auto;margin-left: auto;padding-top: 0.2em;max-width: 100%;min-height: 1em;font-style: inherit;font-variant: inherit;white-space: normal;background-color: rgb(255, 255, 255);font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, Heiti, 黑体, Arial, Helvetica, STHeiTi, sans-serif;border-width: 0px;border-style: initial;border-color: initial;font-weight: bold;font-stretch: inherit;line-height: 2;vertical-align: baseline;width: 643.672px;letter-spacing: 0.1em;text-indent: 2em;box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;">
+                                <span style="font-size: 20px;">这个发现让我惊奇，于是我决定留在这里，对驼奶与长寿的关系进行更深入的研究。</span></p>
+                            <p
+                                style="margin-right: auto;margin-left: auto;padding-top: 0.2em;max-width: 100%;min-height: 1em;font-style: inherit;font-variant: inherit;white-space: normal;background-color: rgb(255, 255, 255);font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, Heiti, 黑体, Arial, Helvetica, STHeiTi, sans-serif;border-width: 0px;border-style: initial;border-color: initial;font-weight: bold;font-stretch: inherit;line-height: 2;vertical-align: baseline;width: 643.672px;letter-spacing: 0.1em;text-indent: 2em;box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;">
+                                <span style="font-size: 20px;">这一留，就是五年多。</span></p>
+                            <p
+                                style="max-width: 100%;min-height: 1em;font-family: -apple-system-font, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;letter-spacing: 0.544px;white-space: normal;text-align: center;box-sizing: border-box !important;word-wrap: break-word !important;position: relative;">
+                                <img class="rich_pages  __bg_gif" data-copyright="0" data-cropselx1="1"
+                                    data-cropselx2="447" data-cropsely1="0" data-cropsely2="594"
+                                    data-ratio="1.3348314606741574"
+                                    src="static/picture/3cf1767fdc424bd2b02d63cea5610d97.gif" data-type="jpeg"
+                                    data-w="445"
+                                    style="box-sizing: border-box !important;overflow-wrap: break-word !important;width: 100%;visibility: visible !important;height: 595px;">
+                                <img src="" class="weixinpic weixinpic-img" />
+
+                            </p>
+                            <p
+                                style="margin-right: 1px;margin-left: 1px;max-width: 100%;min-height: 1em;font-style: inherit;font-variant: inherit;font-weight: inherit;white-space: normal;background-color: rgb(255, 255, 255);font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, Heiti, 黑体, Arial, Helvetica, STHeiTi, sans-serif;border-width: 0px;border-style: initial;border-color: initial;font-stretch: inherit;font-size: 14px;line-height: 2;vertical-align: baseline;text-align: center;width: 670.5px;letter-spacing: 0.1em;box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;">
+                                <span
+                                    style="padding: 10px;max-width: 100%;font-style: inherit;font-variant: inherit;font-weight: inherit;font-stretch: inherit;line-height: inherit;font-family: inherit;border-width: 0px;border-style: initial;border-color: initial;vertical-align: baseline;background-color: rgb(175, 57, 16);border-radius: 5px;color: white;font-size: 20px;box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;">手机微信扫一扫，加微信咨询</span><br
+                                    style="max-width: 100%;box-sizing: border-box !important;word-wrap: break-word !important;" />
+                            </p>
+                            <p
+                                style="max-width: 100%;min-height: 1em;font-family: -apple-system-font, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;letter-spacing: 0.544px;white-space: normal;box-sizing: border-box !important;word-wrap: break-word !important;">
+                                <br
+                                    style="max-width: 100%;box-sizing: border-box !important;word-wrap: break-word !important;" />
+                            </p>
+                            <p
+                                style="margin-right: auto;margin-left: auto;padding-top: 0.2em;padding-bottom: 0.2em;max-width: 100%;min-height: 1em;font-style: inherit;font-variant: inherit;white-space: normal;background-color: rgb(255, 255, 255);font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, Heiti, 黑体, Arial, Helvetica, STHeiTi, sans-serif;border-width: 0px;border-style: initial;border-color: initial;font-weight: bold;font-stretch: inherit;font-size: 19px;line-height: 2;vertical-align: baseline;text-align: center;width: 643.672px;letter-spacing: 0.1em;color: rgb(175, 57, 16);box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;">
+                                <span style="font-size: 20px;">亲身经历！</span><span
+                                    style="font-size: 20px;">饮用驼乳五年改变我全家的体质！</span></p>
+                            <p
+                                style="margin-right: auto;margin-left: auto;padding-top: 0.2em;max-width: 100%;min-height: 1em;font-style: inherit;font-variant: inherit;font-weight: inherit;white-space: normal;background-color: rgb(255, 255, 255);font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, Heiti, 黑体, Arial, Helvetica, STHeiTi, sans-serif;border-width: 0px;border-style: initial;border-color: initial;font-stretch: inherit;font-size: 14px;line-height: 2;vertical-align: baseline;width: 622.547px;letter-spacing: 0.1em;text-indent: 2em;box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;">
+                                <span style="font-size: 20px;">这个发现让我惊奇，于是我决定留在这里，对驼奶与长寿的关系进行更深入的研究。</span></p>
+                            <p
+                                style="margin-right: auto;margin-left: auto;padding-top: 0.2em;max-width: 100%;min-height: 1em;font-style: inherit;font-variant: inherit;font-weight: inherit;white-space: normal;background-color: rgb(255, 255, 255);font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, Heiti, 黑体, Arial, Helvetica, STHeiTi, sans-serif;border-width: 0px;border-style: initial;border-color: initial;font-stretch: inherit;font-size: 14px;line-height: 2;vertical-align: baseline;width: 622.547px;letter-spacing: 0.1em;text-indent: 2em;box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;">
+                                <span
+                                    style="font-size: 20px;">调研工作，需要常年的东奔西跑，让我的肠胃非常脆弱，经常腹痛，可在来到新疆，开始日常饮用驼奶后，不到一周，我的腹痛就再没犯过。</span><span
+                                    style="font-size: 20px;">神奇的改变让我坚信，驼奶一定不简单，于是我开始定期向家中邮寄驼奶粉，让全家人一起体验。</span></p>
+                            <p
+                                style="max-width: 100%;min-height: 1em;font-family: -apple-system-font, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;letter-spacing: 0.544px;white-space: normal;background-color: rgb(255, 255, 255);box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;">
+                                <img class="" data-ratio="0.6666666666666666"
+                                    src="static/picture/e3c4f7dda4d445e483536114dbede16e.gif" data-type="jpeg"
+                                    data-w="3024"
+                                    style="font-style: inherit;font-variant: inherit;font-weight: inherit;font-stretch: inherit;font-size: inherit;line-height: inherit;font-family: inherit;border-width: 0px;border-style: initial;border-color: initial;vertical-align: middle;box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;visibility: visible !important;width: 648.5px !important;">
+                            </p>
+                            <p
+                                style="margin-right: auto;margin-left: auto;padding-top: 0.2em;max-width: 100%;min-height: 1em;font-style: inherit;font-variant: inherit;white-space: normal;background-color: rgb(255, 255, 255);font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, Heiti, 黑体, Arial, Helvetica, STHeiTi, sans-serif;border-width: 0px;border-style: initial;border-color: initial;font-weight: bold;font-stretch: inherit;font-size: 14px;line-height: 2;vertical-align: baseline;text-align: center;width: 622.547px;letter-spacing: 0.1em;box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;">
+                                <span style="font-size: 20px;">即将寄往家中的驼奶粉</span></p>
+                            <p
+                                style="margin-right: auto;margin-left: auto;padding-top: 0.2em;max-width: 100%;min-height: 1em;font-style: inherit;font-variant: inherit;font-weight: inherit;white-space: normal;background-color: rgb(255, 255, 255);font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, Heiti, 黑体, Arial, Helvetica, STHeiTi, sans-serif;border-width: 0px;border-style: initial;border-color: initial;font-stretch: inherit;font-size: 14px;line-height: 2;vertical-align: baseline;width: 622.547px;letter-spacing: 0.1em;text-indent: 2em;box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;">
+                                <span style="font-size: 20px;">事实证明，我做了一个非常正确的决定！</span><span
+                                    style="font-size: 20px;">一向身体虚弱极爱感冒的妻子，如今在驼奶的作用下身体好多了。</span><span
+                                    style="font-size: 20px;">而最喜欢驼奶粉的还要数我儿子，他第一次喝就爱上了，他说“这比咱家以前喝的牛奶香多了，还不腻人！</span><span
+                                    style="font-size: 20px;">”每天半斤，从来没闹过肚子，五年前他身高只有一米72，可如今25岁的他身高已经一米八五，足足拔高了13公分！</span>
+                            </p>
+                            <p
+                                style="max-width: 100%;min-height: 1em;font-family: -apple-system-font, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;letter-spacing: 0.544px;white-space: normal;background-color: rgb(255, 255, 255);box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;">
+                                <img class="" data-ratio="0.6666666666666666"
+                                    src="static/picture/c4b0dbeea1d24cdeb77a70a71feb3258.gif" data-type="jpeg"
+                                    data-w="735"
+                                    style="font-style: inherit;font-variant: inherit;font-weight: inherit;font-stretch: inherit;font-size: inherit;line-height: inherit;font-family: inherit;border-width: 0px;border-style: initial;border-color: initial;vertical-align: middle;box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;visibility: visible !important;width: 648.5px !important;">
+                            </p>
+                            <p
+                                style="margin-right: auto;margin-left: auto;padding-top: 0.2em;max-width: 100%;min-height: 1em;font-style: inherit;font-variant: inherit;font-weight: inherit;white-space: normal;background-color: rgb(255, 255, 255);font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, Heiti, 黑体, Arial, Helvetica, STHeiTi, sans-serif;border-width: 0px;border-style: initial;border-color: initial;font-stretch: inherit;font-size: 14px;line-height: 2;vertical-align: baseline;width: 622.547px;letter-spacing: 0.1em;text-indent: 2em;box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;">
+                                <span style="font-size: 20px;">而最大的受益者，还要数我的母亲。</span><span
+                                    style="font-size: 20px;">她今年六十七，不但有高血压，高血脂，高血糖。</span><span
+                                    style="font-size: 20px;">2011年还因为突发性心梗进了抢救室，可由于血糖太高手术风险极大！</span><span
+                                    style="font-size: 20px;">但老人此时已命悬一线，绝望的我只好抱着赌一把心态在手术协议上签了字……</span></p>
+                            <p
+                                style="margin-right: auto;margin-left: auto;padding-top: 0.2em;max-width: 100%;min-height: 1em;font-style: inherit;font-variant: inherit;font-weight: inherit;white-space: normal;background-color: rgb(255, 255, 255);font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, Heiti, 黑体, Arial, Helvetica, STHeiTi, sans-serif;border-width: 0px;border-style: initial;border-color: initial;font-stretch: inherit;font-size: 14px;line-height: 2;vertical-align: baseline;width: 622.547px;letter-spacing: 0.1em;text-indent: 2em;box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;">
+                                <span
+                                    style="font-size: 20px;">万幸的是，虽然手术成功率只有不到30%，但在做了四个支架后我母亲终究保住了性命，只是出院后连门都出不了，只能请专人照顾。</span><span
+                                    style="font-size: 20px;">必须长期依赖进口药物，我和妻子也不得不努力工作以维持医药费用。</span></p>
+                            <p
+                                style="margin-right: auto;margin-left: auto;padding-top: 0.2em;max-width: 100%;min-height: 1em;font-style: inherit;font-variant: inherit;font-weight: inherit;white-space: normal;background-color: rgb(255, 255, 255);font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, Heiti, 黑体, Arial, Helvetica, STHeiTi, sans-serif;border-width: 0px;border-style: initial;border-color: initial;font-stretch: inherit;font-size: 14px;line-height: 2;vertical-align: baseline;width: 622.547px;letter-spacing: 0.1em;text-indent: 2em;box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;">
+                                <span style="font-size: 20px;">可就是身体最糟糕的母亲，却给我了最大的惊喜！</span><span
+                                    style="font-size: 20px;">2012年4月，我正在新疆疏勒的研究所工作，突然有人找到我说有一位老太太在门口等我！</span><span
+                                    style="font-size: 20px;">我走出研究所一看，这不是我年迈的老母亲吗？</span><span
+                                    style="font-size: 20px;">！</span><span
+                                    style="font-size: 20px;">老人家居然自己坐火车跑过来了！</span><span
+                                    style="font-size: 20px;">这让我在惊喜的同时又有点后怕，这么大岁数这么远的路，万一出了什么意外可怎么办？</span><span
+                                    style="font-size: 20px;">！</span><span
+                                    style="font-size: 20px;">可看到母亲拎着大包小包的样子，哪有半点当初生活不能自理的痕迹？</span><span
+                                    style="font-size: 20px;">一进屋又是做饭，又是收拾屋子，快70的人了，操持家务比我媳妇还勤快！</span><span
+                                    style="font-size: 20px;">我知道驼奶对母亲有好处，却没想到好处这么巨大！</span><span
+                                    style="font-size: 20px;">为了保险，我不顾母亲的埋怨，硬是拉着她去医院做了个检查，结果发现，血压、血脂、血糖、都比一年之前平稳太多！</span><span
+                                    style="font-size: 20px;">骨钙含量，免疫系统也大有改善！</span></p>
+                            <p
+                                style="max-width: 100%;min-height: 1em;font-family: -apple-system-font, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;letter-spacing: 0.544px;white-space: normal;background-color: rgb(255, 255, 255);box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;">
+                                <img class="" data-ratio="0.6666666666666666"
+                                    src="static/picture/14925f1da5594d9fbf89a657c97c6185.gif" data-type="png"
+                                    data-w="335"
+                                    style="font-style: inherit;font-variant: inherit;font-weight: inherit;font-stretch: inherit;font-size: inherit;line-height: inherit;font-family: inherit;border-width: 0px;border-style: initial;border-color: initial;vertical-align: middle;box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;visibility: visible !important;width: 648.5px !important;">
+                            </p>
+                            <p
+                                style="margin-right: auto;margin-left: auto;padding-top: 0.2em;max-width: 100%;min-height: 1em;font-style: inherit;font-variant: inherit;font-weight: inherit;white-space: normal;background-color: rgb(255, 255, 255);font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, Heiti, 黑体, Arial, Helvetica, STHeiTi, sans-serif;border-width: 0px;border-style: initial;border-color: initial;font-stretch: inherit;font-size: 14px;line-height: 2;vertical-align: baseline;width: 622.547px;letter-spacing: 0.1em;text-indent: 2em;box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;">
+                                <span style="font-size: 20px;">可即便如此，我还是在电话中埋怨妻子，不该让老人家一个人跑这么远！</span><span
+                                    style="font-size: 20px;">而妻子却说“咱妈喝驼奶粉半年多就把保姆辞退了，偏头疼，眩晕症也不爱犯了。</span><span
+                                    style="font-size: 20px;">腿脚都比以前利索了。</span><span
+                                    style="font-size: 20px;">”母亲也在一旁插话“是真的，我现在身体跟换了个人似的，咱们小区那些邻居，都羡慕我呢！</span><span
+                                    style="font-size: 20px;">”</span></p>
+                            <p
+                                style="max-width: 100%;min-height: 1em;font-family: -apple-system-font, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;letter-spacing: 0.544px;white-space: normal;box-sizing: border-box !important;word-wrap: break-word !important;">
+                                <br
+                                    style="max-width: 100%;box-sizing: border-box !important;word-wrap: break-word !important;" />
+                            </p>
+                            <p
+                                style="max-width: 100%;min-height: 1em;font-family: -apple-system-font, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;letter-spacing: 0.544px;white-space: normal;text-align: center;box-sizing: border-box !important;word-wrap: break-word !important;position: relative;">
+                                <img class="rich_pages  __bg_gif" data-copyright="0" data-cropselx1="1"
+                                    data-cropselx2="447" data-cropsely1="0" data-cropsely2="594"
+                                    data-ratio="1.3348314606741574"
+                                    src="static/picture/3cf1767fdc424bd2b02d63cea5610d97.gif" data-type="jpeg"
+                                    data-w="445"
+                                    style="box-sizing: border-box !important;overflow-wrap: break-word !important;width:100%;visibility: visible !important;height: 595px;">
+                                    <img src="" class="weixinpic weixinpic-img" />
+                            </p>
+                            <p
+                                style="margin-right: 1px;margin-left: 1px;max-width: 100%;min-height: 1em;font-style: inherit;font-variant: inherit;font-weight: inherit;white-space: normal;background-color: rgb(255, 255, 255);font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, Heiti, 黑体, Arial, Helvetica, STHeiTi, sans-serif;border-width: 0px;border-style: initial;border-color: initial;font-stretch: inherit;font-size: 14px;line-height: 2;vertical-align: baseline;text-align: center;width: 670.5px;letter-spacing: 0.1em;box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;">
+                                <span
+                                    style="padding: 10px;max-width: 100%;font-style: inherit;font-variant: inherit;font-weight: inherit;font-stretch: inherit;line-height: inherit;font-family: inherit;border-width: 0px;border-style: initial;border-color: initial;vertical-align: baseline;background-color: rgb(175, 57, 16);border-radius: 5px;color: white;font-size: 20px;box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;">手机微信扫一扫，加微信咨询</span><br
+                                    style="max-width: 100%;box-sizing: border-box !important;word-wrap: break-word !important;" />
+                            </p>
+                            <p
+                                style="max-width: 100%;min-height: 1em;font-family: -apple-system-font, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;letter-spacing: 0.544px;white-space: normal;box-sizing: border-box !important;word-wrap: break-word !important;">
+                                <br
+                                    style="max-width: 100%;box-sizing: border-box !important;word-wrap: break-word !important;" />
+                            </p>
+                            <p
+                                style="margin-right: auto;margin-left: auto;padding-top: 0.2em;padding-bottom: 0.2em;max-width: 100%;min-height: 1em;font-style: inherit;font-variant: inherit;white-space: normal;background-color: rgb(255, 255, 255);font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, Heiti, 黑体, Arial, Helvetica, STHeiTi, sans-serif;border-width: 0px;border-style: initial;border-color: initial;font-weight: bold;font-stretch: inherit;line-height: 2;vertical-align: baseline;text-align: center;width: 643.672px;letter-spacing: 0.1em;color: rgb(175, 57, 16);box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;">
+                                <span style="font-size: 20px;">极致环境下的生命奇迹</span></p>
+                            <p
+                                style="margin-right: auto;margin-left: auto;padding-top: 0.2em;padding-bottom: 0.2em;max-width: 100%;min-height: 1em;font-style: inherit;font-variant: inherit;white-space: normal;background-color: rgb(255, 255, 255);font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, Heiti, 黑体, Arial, Helvetica, STHeiTi, sans-serif;border-width: 0px;border-style: initial;border-color: initial;font-weight: bold;font-stretch: inherit;line-height: 2;vertical-align: baseline;text-align: center;width: 643.672px;letter-spacing: 0.1em;color: rgb(175, 57, 16);box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;">
+                                <span style="font-size: 20px;">——“沙漠之舟”骆驼</span></p>
+                            <p
+                                style="max-width: 100%;min-height: 1em;font-family: -apple-system-font, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;letter-spacing: 0.544px;white-space: normal;background-color: rgb(255, 255, 255);box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;">
+                                <img class="" data-ratio="0.6666666666666666"
+                                    src="static/picture/79345769cc8e42799e32b28768d7cb6e.gif" data-type="jpeg"
+                                    data-w="1014"
+                                    style="font-style: inherit;font-variant: inherit;font-weight: inherit;font-stretch: inherit;font-size: inherit;line-height: inherit;font-family: inherit;border-width: 0px;border-style: initial;border-color: initial;vertical-align: middle;box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;visibility: visible !important;width: 670.5px !important;">
+                            </p>
+                            <p
+                                style="margin-right: auto;margin-left: auto;padding-top: 0.2em;max-width: 100%;min-height: 1em;font-style: inherit;font-variant: inherit;font-weight: inherit;white-space: normal;background-color: rgb(255, 255, 255);font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, Heiti, 黑体, Arial, Helvetica, STHeiTi, sans-serif;border-width: 0px;border-style: initial;border-color: initial;font-stretch: inherit;font-size: 14px;line-height: 2;vertical-align: baseline;width: 643.672px;letter-spacing: 0.1em;text-indent: 2em;box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;">
+                                <span style="font-size: 20px;">骆驼，生存在大多数生命都无法生存的沙漠环境中。</span><span
+                                    style="font-size: 20px;">就是这样的极端环境它却能不吃不喝存活79天！</span><span
+                                    style="font-size: 20px;">哺乳期7天不喝水而奶量不变！</span><span
+                                    style="font-size: 20px;">失水达到体重30%~40%却毫无生命危险！</span><span
+                                    style="font-size: 20px;">在昼夜温差多达几十度的环境繁衍了几十万年！</span><span
+                                    style="font-size: 20px;">人类服之即死的断肠草，对它来说只是零食配菜！</span><span
+                                    style="font-size: 20px;">即使是比其他反刍动物高两倍的血糖水平，也丝毫没有“糖尿病”的危险！</span><span
+                                    style="font-size: 20px;">骆驼，是生命的奇迹！</span></p>
+                            <p
+                                style="margin-right: auto;margin-left: auto;padding-top: 0.2em;padding-bottom: 0.2em;max-width: 100%;min-height: 1em;font-style: inherit;font-variant: inherit;white-space: normal;background-color: rgb(255, 255, 255);font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, Heiti, 黑体, Arial, Helvetica, STHeiTi, sans-serif;border-width: 0px;border-style: initial;border-color: initial;font-weight: bold;font-stretch: inherit;line-height: 2;vertical-align: baseline;text-align: center;width: 643.672px;letter-spacing: 0.1em;color: rgb(175, 57, 16);box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;">
+                                <span style="font-size: 20px;">头顶烈日 脚踏黄沙</span></p>
+                            <p
+                                style="margin-right: auto;margin-left: auto;padding-top: 0.2em;padding-bottom: 0.2em;max-width: 100%;min-height: 1em;font-style: inherit;font-variant: inherit;white-space: normal;background-color: rgb(255, 255, 255);font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, Heiti, 黑体, Arial, Helvetica, STHeiTi, sans-serif;border-width: 0px;border-style: initial;border-color: initial;font-weight: bold;font-stretch: inherit;line-height: 2;vertical-align: baseline;text-align: center;width: 643.672px;letter-spacing: 0.1em;color: rgb(175, 57, 16);box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;">
+                                <span style="font-size: 20px;">它在净土之上孕育“王牌驼骆驼奶”</span></p>
+                            <p
+                                style="margin-right: auto;margin-left: auto;padding-top: 0.2em;max-width: 100%;min-height: 1em;font-style: inherit;font-variant: inherit;font-weight: inherit;white-space: normal;background-color: rgb(255, 255, 255);font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, Heiti, 黑体, Arial, Helvetica, STHeiTi, sans-serif;border-width: 0px;border-style: initial;border-color: initial;font-stretch: inherit;font-size: 14px;line-height: 2;vertical-align: baseline;width: 643.672px;letter-spacing: 0.1em;text-indent: 2em;box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;">
+                                <span
+                                    style="font-size: 20px;">高原的融雪带来无比纯净的水源，终年烈日让细菌在紫外线下难以生存，大漠狂风让有害气体无法侵入！</span><span
+                                    style="font-size: 20px;">骆驼就这样喝着雪山融水，吃着沙拐枣、驼绒藤等珍惜草药，才能孕育珍贵的“王牌驼骆驼奶”——驼奶！</span></p>
+                            <p
+                                style="max-width: 100%;min-height: 1em;font-family: -apple-system-font, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;letter-spacing: 0.544px;white-space: normal;background-color: rgb(255, 255, 255);box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;">
+                                <img class="" data-ratio="0.6666666666666666"
+                                    src="static/picture/eded3c09822444a68115aafe9c058277.gif" data-type="jpeg"
+                                    data-w="500"
+                                    style="font-style: inherit;font-variant: inherit;font-weight: inherit;font-stretch: inherit;font-size: inherit;line-height: inherit;font-family: inherit;border-width: 0px;border-style: initial;border-color: initial;vertical-align: middle;box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;visibility: visible !important;width: 670.5px !important;">
+                            </p>
+                            <p
+                                style="margin-right: auto;margin-left: auto;padding-top: 0.2em;max-width: 100%;min-height: 1em;font-style: inherit;font-variant: inherit;font-weight: inherit;white-space: normal;background-color: rgb(255, 255, 255);font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, Heiti, 黑体, Arial, Helvetica, STHeiTi, sans-serif;border-width: 0px;border-style: initial;border-color: initial;font-stretch: inherit;font-size: 14px;line-height: 2;vertical-align: baseline;width: 643.672px;letter-spacing: 0.1em;text-indent: 2em;box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;">
+                                <span style="font-size: 20px;">作为产奶生物，骆驼的寿命比牛、羊等其他动物高几十年！</span><span
+                                    style="font-size: 20px;">唯一不及牛、羊的就是产奶量较少，只有不到其十分之一。</span><span
+                                    style="font-size: 20px;">只有在喂养幼崽时，人们才有机会获得富含“长寿因子”的驼奶，这在盛产骆驼的新疆地区也极其珍贵！</span><span
+                                    style="font-size: 20px;">当地人更是拿它当药物使用。</span><span
+                                    style="font-size: 20px;">一般的小毛病，几乎都不用看大夫，喝上一碗驼奶就能恢复健康！</span><span
+                                    style="font-size: 20px;">小孩子感冒只要喝两碗驼奶很快就能生龙活虎！</span></p>
+                            <p
+                                style="margin-right: auto;margin-left: auto;padding-top: 0.2em;padding-bottom: 0.2em;max-width: 100%;min-height: 1em;font-style: inherit;font-variant: inherit;white-space: normal;background-color: rgb(255, 255, 255);font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, Heiti, 黑体, Arial, Helvetica, STHeiTi, sans-serif;border-width: 0px;border-style: initial;border-color: initial;font-weight: bold;font-stretch: inherit;line-height: 2;vertical-align: baseline;text-align: center;width: 643.672px;letter-spacing: 0.1em;color: rgb(175, 57, 16);box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;">
+                                <span style="font-size: 20px;">“王牌驼骆驼奶”古来已有</span></p>
+                            <p
+                                style="margin-right: auto;margin-left: auto;padding-top: 0.2em;padding-bottom: 0.2em;max-width: 100%;min-height: 1em;font-style: inherit;font-variant: inherit;white-space: normal;background-color: rgb(255, 255, 255);font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, Heiti, 黑体, Arial, Helvetica, STHeiTi, sans-serif;border-width: 0px;border-style: initial;border-color: initial;font-weight: bold;font-stretch: inherit;line-height: 2;vertical-align: baseline;text-align: center;width: 643.672px;letter-spacing: 0.1em;color: rgb(175, 57, 16);box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;">
+                                <span style="font-size: 20px;">400年前“药典圣经”这样记载</span></p>
+                            <p
+                                style="max-width: 100%;min-height: 1em;font-family: -apple-system-font, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;letter-spacing: 0.544px;white-space: normal;background-color: rgb(255, 255, 255);box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;">
+                                <img class="" data-ratio="0.6666666666666666"
+                                    src="static/picture/592bf2192c0945609d70864608d7d081.gif" data-type="jpeg"
+                                    data-w="501"
+                                    style="font-style: inherit;font-variant: inherit;font-weight: inherit;font-stretch: inherit;font-size: inherit;line-height: inherit;font-family: inherit;border-width: 0px;border-style: initial;border-color: initial;vertical-align: middle;box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;visibility: visible !important;width: 670.5px !important;">
+                            </p>
+                            <p
+                                style="margin-right: auto;margin-left: auto;padding-top: 0.2em;max-width: 100%;min-height: 1em;font-style: inherit;font-variant: inherit;font-weight: inherit;white-space: normal;background-color: rgb(255, 255, 255);font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, Heiti, 黑体, Arial, Helvetica, STHeiTi, sans-serif;border-width: 0px;border-style: initial;border-color: initial;font-stretch: inherit;font-size: 14px;line-height: 2;vertical-align: baseline;width: 624.469px;letter-spacing: 0.1em;text-indent: 2em;box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;">
+                                <span
+                                    style="font-size: 20px;">为了更全面的了解驼奶的秘密，我还翻阅了很多古籍，发现驼奶的神奇并非时至今日才被发现，早在400年前的明朝，驼奶的秘密就引起了医家的关注。</span>
+                            </p>
+                            <p
+                                style="margin-right: auto;margin-left: auto;padding-top: 0.2em;max-width: 100%;min-height: 1em;font-style: inherit;font-variant: inherit;font-weight: inherit;white-space: normal;background-color: rgb(255, 255, 255);font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, Heiti, 黑体, Arial, Helvetica, STHeiTi, sans-serif;border-width: 0px;border-style: initial;border-color: initial;font-stretch: inherit;font-size: 14px;line-height: 2;vertical-align: baseline;width: 624.469px;letter-spacing: 0.1em;text-indent: 2em;box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;">
+                                <span style="font-size: 20px;">《本草纲目》记载：</span><span
+                                    style="font-size: 20px;">“骆乳，冷，无毒，补中益气，壮筋骨，令人不饥”。</span></p>
+                            <p
+                                style="margin-right: auto;margin-left: auto;padding-top: 0.2em;max-width: 100%;min-height: 1em;font-style: inherit;font-variant: inherit;font-weight: inherit;white-space: normal;background-color: rgb(255, 255, 255);font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, Heiti, 黑体, Arial, Helvetica, STHeiTi, sans-serif;border-width: 0px;border-style: initial;border-color: initial;font-stretch: inherit;font-size: 14px;line-height: 2;vertical-align: baseline;width: 624.469px;letter-spacing: 0.1em;text-indent: 2em;box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;">
+                                <span style="font-size: 20px;">《维吾尔常用药材》记载：</span><span
+                                    style="font-size: 20px;">“骆乳，性味甘醇、无黏胶感、属微辛，大补益气，补五脏七损，强壮筋骨，填精髓，耐饥饿，止消渴”。</span></p>
+                            <p
+                                style="margin-right: auto;margin-left: auto;padding-top: 0.2em;max-width: 100%;min-height: 1em;font-style: inherit;font-variant: inherit;font-weight: inherit;white-space: normal;background-color: rgb(255, 255, 255);font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, Heiti, 黑体, Arial, Helvetica, STHeiTi, sans-serif;border-width: 0px;border-style: initial;border-color: initial;font-stretch: inherit;font-size: 14px;line-height: 2;vertical-align: baseline;width: 624.469px;letter-spacing: 0.1em;text-indent: 2em;box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;">
+                                <span style="font-size: 20px;">《中医哈萨克医药志》记载：</span><span
+                                    style="font-size: 20px;">“骆乳有滋补、安神、养阴、解毒作用。</span><span
+                                    style="font-size: 20px;">可恢复百病之后虚弱身体。</span><span style="font-size: 20px;">”</span>
+                            </p>
+                            <p
+                                style="margin-right: auto;margin-left: auto;padding-top: 0.2em;max-width: 100%;min-height: 1em;font-style: inherit;font-variant: inherit;white-space: normal;background-color: rgb(255, 255, 255);font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, Heiti, 黑体, Arial, Helvetica, STHeiTi, sans-serif;border-width: 0px;border-style: initial;border-color: initial;font-weight: bold;font-stretch: inherit;font-size: 15px;line-height: 2;vertical-align: baseline;width: 643.672px;letter-spacing: 0.1em;text-indent: 2em;box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;">
+                                <span style="font-size: 20px;">驼奶的种种好处虽然令人惊喜，但作为学术研究工作者我还是更愿意相信实实在在的科学。</span><span
+                                    style="font-size: 20px;">为此，针推驼奶的作用，我带领我的学术小组联合北京生物研究中心与2014-2015年期间在做了大量对比实验。</span>
+                            </p>
+                            <p
+                                style="margin-right: auto;margin-left: auto;padding-top: 0.2em;padding-bottom: 0.2em;max-width: 100%;min-height: 1em;font-style: inherit;font-variant: inherit;font-weight: inherit;white-space: normal;background-color: rgb(255, 255, 255);font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, Heiti, 黑体, Arial, Helvetica, STHeiTi, sans-serif;border-width: 0px;border-style: initial;border-color: initial;font-stretch: inherit;line-height: 2;vertical-align: baseline;text-align: center;width: 643.672px;letter-spacing: 0.1em;box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;">
+                                <span
+                                    style="padding: 10px;max-width: 100%;font-family: inherit;border-width: 0px;border-style: initial;border-color: initial;font-style: inherit;font-variant: inherit;font-weight: bold;font-stretch: inherit;line-height: inherit;vertical-align: baseline;display: inline-block;color: rgb(247, 247, 247);background-color: rgb(177, 4, 4);font-size: 20px;box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;">实验证明：驼奶药用价值堪比一线用药</span>
+                            </p>
+                            <p
+                                style="margin-right: auto;margin-left: auto;padding-top: 0.2em;padding-bottom: 0.2em;max-width: 100%;min-height: 1em;font-style: inherit;font-variant: inherit;white-space: normal;background-color: rgb(255, 255, 255);font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, Heiti, 黑体, Arial, Helvetica, STHeiTi, sans-serif;border-width: 0px;border-style: initial;border-color: initial;font-weight: bold;font-stretch: inherit;line-height: 2;vertical-align: baseline;text-align: center;width: 643.672px;letter-spacing: 0.1em;color: rgb(175, 57, 16);box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;">
+                                <span style="font-size: 20px;">血糖实验</span></p>
+                            <p
+                                style="margin-right: auto;margin-left: auto;padding-top: 0.2em;max-width: 100%;min-height: 1em;font-style: inherit;font-variant: inherit;font-weight: inherit;white-space: normal;background-color: rgb(255, 255, 255);font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, Heiti, 黑体, Arial, Helvetica, STHeiTi, sans-serif;border-width: 0px;border-style: initial;border-color: initial;font-stretch: inherit;font-size: 14px;line-height: 2;vertical-align: baseline;width: 643.672px;letter-spacing: 0.1em;text-indent: 2em;box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;">
+                                <span style="font-size: 20px;">小鼠切除胰腺后，常规喂养20天内悉数死亡，而用驼奶喂养90天后仍有近六成生存！</span></p>
+                            <p
+                                style="max-width: 100%;min-height: 1em;font-family: -apple-system-font, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;letter-spacing: 0.544px;white-space: normal;background-color: rgb(255, 255, 255);box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;">
+                                <img class="" data-ratio="0.6666666666666666"
+                                    src="static/picture/6de7aeec69ff481ca8fea7070ccaf3b4.gif" data-type="jpeg"
+                                    data-w="849"
+                                    style="font-style: inherit;font-variant: inherit;font-weight: inherit;font-stretch: inherit;font-size: inherit;line-height: inherit;font-family: inherit;border-width: 0px;border-style: initial;border-color: initial;vertical-align: middle;box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;visibility: visible !important;width: 670.5px !important;">
+                            </p>
+                            <p
+                                style="margin-right: auto;margin-left: auto;padding-top: 0.2em;max-width: 100%;min-height: 1em;font-style: inherit;font-variant: inherit;white-space: normal;background-color: rgb(255, 255, 255);font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, Heiti, 黑体, Arial, Helvetica, STHeiTi, sans-serif;border-width: 0px;border-style: initial;border-color: initial;font-weight: bold;font-stretch: inherit;font-size: 15px;line-height: 2;vertical-align: baseline;width: 643.672px;letter-spacing: 0.1em;text-indent: 2em;box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;">
+                                <span style="font-size: 20px;">惊人的实验结果深深的震撼了我，这让我更加好奇驼奶当中究竟蕴含着多少神奇秘密！</span><span
+                                    style="font-size: 20px;">为此，我在权威的检测机构对驼奶的成分进行了全面检测。</span></p>
+                            <p
+                                style="max-width: 100%;min-height: 1em;font-family: -apple-system-font, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;letter-spacing: 0.544px;white-space: normal;background-color: rgb(255, 255, 255);box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;">
+                                <img class="" data-ratio="0.6666666666666666"
+                                    src="static/picture/07eae439240845c69a4b67fc793d2000.gif" data-type="png"
+                                    data-w="9374"
+                                    style="font-style: inherit;font-variant: inherit;font-weight: inherit;font-stretch: inherit;font-size: inherit;line-height: inherit;font-family: inherit;border-width: 0px;border-style: initial;border-color: initial;vertical-align: middle;box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;visibility: visible !important;width: 670.5px !important;"><img
+                                    class="" data-ratio="0.6666666666666666"
+                                    src="static/picture/116320a0f1b347c4b8df48f9e57a458b.gif" data-type="jpeg"
+                                    data-w="685"
+                                    style="font-style: inherit;font-variant: inherit;font-weight: inherit;font-stretch: inherit;font-size: inherit;line-height: inherit;font-family: inherit;border-width: 0px;border-style: initial;border-color: initial;vertical-align: middle;box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;visibility: visible !important;width: 670.5px !important;"><img
+                                    class="" data-ratio="0.6666666666666666"
+                                    src="static/picture/5a6ddbbd1f6640ddb4adf5f71f22687e.gif" data-type="jpeg"
+                                    data-w="672"
+                                    style="font-style: inherit;font-variant: inherit;font-weight: inherit;font-stretch: inherit;font-size: inherit;line-height: inherit;font-family: inherit;border-width: 0px;border-style: initial;border-color: initial;vertical-align: middle;box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;visibility: visible !important;width: 670.5px !important;">
+                            </p>
+                            <p
+                                style="margin-right: auto;margin-left: auto;padding-top: 0.2em;max-width: 100%;min-height: 1em;font-style: inherit;font-variant: inherit;white-space: normal;background-color: rgb(255, 255, 255);font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, Heiti, 黑体, Arial, Helvetica, STHeiTi, sans-serif;border-width: 0px;border-style: initial;border-color: initial;font-weight: bold;font-stretch: inherit;font-size: 15px;line-height: 2;vertical-align: baseline;width: 643.672px;letter-spacing: 0.1em;box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;">
+                                <span style="font-size: 20px;">作为驼奶的受益者，我们一家人是幸运的，但它具备的神奇效果远可以帮助更多的人！</span></p>
+                            <p
+                                style="margin-right: auto;margin-left: auto;padding-top: 0.2em;padding-bottom: 0.2em;max-width: 100%;min-height: 1em;font-style: inherit;font-variant: inherit;white-space: normal;background-color: rgb(255, 255, 255);font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, Heiti, 黑体, Arial, Helvetica, STHeiTi, sans-serif;border-width: 0px;border-style: initial;border-color: initial;font-weight: bold;font-stretch: inherit;line-height: 2;vertical-align: baseline;text-align: center;width: 643.672px;letter-spacing: 0.1em;color: rgb(175, 57, 16);box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;">
+                                <span style="font-size: 20px;">央视各大频道争相报道</span></p>
+                            <p
+                                style="margin-right: auto;margin-left: auto;padding-top: 0.2em;padding-bottom: 0.2em;max-width: 100%;min-height: 1em;font-style: inherit;font-variant: inherit;white-space: normal;background-color: rgb(255, 255, 255);font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, Heiti, 黑体, Arial, Helvetica, STHeiTi, sans-serif;border-width: 0px;border-style: initial;border-color: initial;font-weight: bold;font-stretch: inherit;line-height: 2;vertical-align: baseline;text-align: center;width: 643.672px;letter-spacing: 0.1em;color: rgb(175, 57, 16);box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;">
+                                <span style="font-size: 20px;">来自大漠的神奇驼奶</span></p>
+                            <p
+                                style="max-width: 100%;min-height: 1em;font-family: -apple-system-font, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;letter-spacing: 0.544px;white-space: normal;background-color: rgb(255, 255, 255);box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;">
+                                <img class="" data-ratio="0.6666666666666666"
+                                    src="static/picture/3cf210e596484194a93511dbc30f5385.gif" data-type="jpeg"
+                                    data-w="1010"
+                                    style="font-style: inherit;font-variant: inherit;font-weight: inherit;font-stretch: inherit;font-size: inherit;line-height: inherit;font-family: inherit;border-width: 0px;border-style: initial;border-color: initial;vertical-align: middle;box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;visibility: visible !important;width: 670.5px !important;">
+                            </p>
+                            <p
+                                style="margin-right: auto;margin-left: auto;padding-top: 0.2em;max-width: 100%;min-height: 1em;font-style: inherit;font-variant: inherit;font-weight: inherit;white-space: normal;background-color: rgb(255, 255, 255);font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, Heiti, 黑体, Arial, Helvetica, STHeiTi, sans-serif;border-width: 0px;border-style: initial;border-color: initial;font-stretch: inherit;line-height: 2;vertical-align: baseline;width: 643.672px;letter-spacing: 0.1em;box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;">
+                                <span
+                                    style="padding: 2px 3px;max-width: 100%;font-style: inherit;font-variant: inherit;font-weight: inherit;font-stretch: inherit;line-height: inherit;font-family: inherit;border-width: 0px;border-style: initial;border-color: initial;vertical-align: baseline;color: white;background: rgb(175, 57, 16);font-size: 20px;box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;">央视《每日农经》：</span><span
+                                    style="font-size: 20px;">“驼奶富含脑黄金，成分非常接近人奶，是母乳的优质替代品！</span><span
+                                    style="font-size: 20px;">”</span></p>
+                            <p
+                                style="margin-right: auto;margin-left: auto;padding-top: 0.2em;max-width: 100%;min-height: 1em;font-style: inherit;font-variant: inherit;font-weight: inherit;white-space: normal;background-color: rgb(255, 255, 255);font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, Heiti, 黑体, Arial, Helvetica, STHeiTi, sans-serif;border-width: 0px;border-style: initial;border-color: initial;font-stretch: inherit;line-height: 2;vertical-align: baseline;width: 643.672px;letter-spacing: 0.1em;box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;">
+                                <span
+                                    style="padding: 2px 3px;max-width: 100%;font-style: inherit;font-variant: inherit;font-weight: inherit;font-stretch: inherit;line-height: inherit;font-family: inherit;border-width: 0px;border-style: initial;border-color: initial;vertical-align: baseline;color: white;background: rgb(175, 57, 16);font-size: 20px;box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;">央视《科技苑》：</span><span
+                                    style="font-size: 20px;">“驼奶发酵以后制成的曲哇特，是治疗肺结核、慢性支气管炎的良药！</span><span
+                                    style="font-size: 20px;">”</span></p>
+                            <p
+                                style="margin-right: auto;margin-left: auto;padding-top: 0.2em;max-width: 100%;min-height: 1em;font-style: inherit;font-variant: inherit;font-weight: inherit;white-space: normal;background-color: rgb(255, 255, 255);font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, Heiti, 黑体, Arial, Helvetica, STHeiTi, sans-serif;border-width: 0px;border-style: initial;border-color: initial;font-stretch: inherit;line-height: 2;vertical-align: baseline;width: 643.672px;letter-spacing: 0.1em;box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;">
+                                <span
+                                    style="padding: 2px 3px;max-width: 100%;font-style: inherit;font-variant: inherit;font-weight: inherit;font-stretch: inherit;line-height: inherit;font-family: inherit;border-width: 0px;border-style: initial;border-color: initial;vertical-align: baseline;color: white;background: rgb(175, 57, 16);font-size: 20px;box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;">央视《寰宇视野》：</span><span
+                                    style="font-size: 20px;">“驼奶中富含类胰岛素蛋白，有治疗糖尿病，降低糖尿病患者胰岛素剂量的功能”</span></p>
+                            <p
+                                style="margin-right: auto;margin-left: auto;padding-top: 0.2em;padding-bottom: 0.2em;max-width: 100%;min-height: 1em;font-style: inherit;font-variant: inherit;white-space: normal;background-color: rgb(255, 255, 255);font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, Heiti, 黑体, Arial, Helvetica, STHeiTi, sans-serif;border-width: 0px;border-style: initial;border-color: initial;font-weight: bold;font-stretch: inherit;line-height: 2;vertical-align: baseline;text-align: center;width: 643.672px;letter-spacing: 0.1em;color: rgb(175, 57, 16);box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;">
+                                <span style="font-size: 20px;">联合国也为驼奶震撼发声！</span></p>
+                            <p
+                                style="max-width: 100%;min-height: 1em;font-family: -apple-system-font, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;letter-spacing: 0.544px;white-space: normal;background-color: rgb(255, 255, 255);box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;">
+                                <img class="" data-ratio="0.6666666666666666"
+                                    src="static/picture/91e7694e4a004ced8c2ddbfa641ed560.gif" data-type="jpeg"
+                                    data-w="1191"
+                                    style="font-style: inherit;font-variant: inherit;font-weight: inherit;font-stretch: inherit;font-size: inherit;line-height: inherit;font-family: inherit;border-width: 0px;border-style: initial;border-color: initial;vertical-align: middle;box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;visibility: visible !important;width: 670.5px !important;"><span
+                                    style="max-width: 100%;font-family: inherit;border-width: 0px;border-style: initial;border-color: initial;font-style: inherit;font-variant: inherit;font-weight: bold;font-stretch: inherit;line-height: inherit;vertical-align: baseline;color: rgb(175, 57, 16);font-size: 20px;box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;">联合国官方发表文章称：</span><span
+                                    style="max-width: 100%;font-family: inherit;border-width: 0px;border-style: initial;border-color: initial;font-style: inherit;font-variant: inherit;font-weight: bold;font-stretch: inherit;line-height: inherit;vertical-align: baseline;font-size: 20px;box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;">牛乳是“最接近完善的食品”，而骆驼乳不仅比牛乳营养更多、更好，还具备巨大的医疗和养生价值！</span><img
+                                    class="" data-ratio="0.6666666666666666"
+                                    src="static/picture/d90fd3063f5b48f99f90d814aaa5f381.gif" data-type="jpeg"
+                                    data-w="3247"
+                                    style="font-style: inherit;font-variant: inherit;font-weight: inherit;font-stretch: inherit;font-size: inherit;line-height: inherit;font-family: inherit;border-width: 0px;border-style: initial;border-color: initial;vertical-align: middle;box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;visibility: visible !important;width: 670.5px !important;"><img
+                                    class="" data-ratio="0.6666666666666666"
+                                    src="static/picture/b12625a6dbe64127ace337d7c7e41a6b.gif" data-type="jpeg"
+                                    data-w="653"
+                                    style="font-style: inherit;font-variant: inherit;font-weight: inherit;font-stretch: inherit;font-size: inherit;line-height: inherit;font-family: inherit;border-width: 0px;border-style: initial;border-color: initial;vertical-align: middle;box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;visibility: visible !important;width: 670.5px !important;"><img
+                                    class="" data-ratio="0.6666666666666666"
+                                    src="static/picture/32e148b2a6724ee1937deec30a31ea9a.gif" data-type="jpeg"
+                                    data-w="790"
+                                    style="font-style: inherit;font-variant: inherit;font-weight: inherit;font-stretch: inherit;font-size: inherit;line-height: inherit;font-family: inherit;border-width: 0px;border-style: initial;border-color: initial;vertical-align: middle;box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;visibility: visible !important;width: 670.5px !important;">
+                            </p>
+                            <p
+                                style="margin-right: auto;margin-left: auto;padding-top: 0.2em;max-width: 100%;min-height: 1em;font-style: inherit;font-variant: inherit;white-space: normal;background-color: rgb(255, 255, 255);font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, Heiti, 黑体, Arial, Helvetica, STHeiTi, sans-serif;border-width: 0px;border-style: initial;border-color: initial;font-weight: bold;font-stretch: inherit;font-size: 15px;line-height: 2;vertical-align: baseline;width: 643.672px;letter-spacing: 0.1em;box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;">
+                                <span style="font-size: 20px;">多年的辛苦终于没有白费，越来越多的人享受到了驼奶带来的好处，对此，我既欣慰，也担心！</span><span
+                                    style="font-size: 20px;">驼奶虽然作用神奇，但产量不足一直是个大问题！</span><span
+                                    style="font-size: 20px;">随着越来越多国家对驼奶的重视，大量的驼乳被外企抢购一空，驼乳资源已经有供不应求的趋势。</span><span
+                                    style="font-size: 20px;">而对驼乳需求量最大的，恰恰是拥有15亿人口的中国！</span></p>
+                            <p
+                                style="max-width: 100%;min-height: 1em;font-family: -apple-system-font, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;letter-spacing: 0.544px;white-space: normal;background-color: rgb(255, 255, 255);box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;">
+                                <img class="" data-ratio="0.6666666666666666"
+                                    src="static/picture/8aaff90ab5ed41cc843cc24f45b3fe5f.gif" data-type="jpeg"
+                                    data-w="837"
+                                    style="font-style: inherit;font-variant: inherit;font-weight: inherit;font-stretch: inherit;font-size: inherit;line-height: inherit;font-family: inherit;border-width: 0px;border-style: initial;border-color: initial;vertical-align: middle;box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;visibility: visible !important;width: 670.5px !important;">
+                            </p>
+                            <p
+                                style="margin-right: auto;margin-left: auto;padding-top: 0.2em;max-width: 100%;min-height: 1em;font-style: inherit;font-variant: inherit;white-space: normal;background-color: rgb(255, 255, 255);font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, Heiti, 黑体, Arial, Helvetica, STHeiTi, sans-serif;border-width: 0px;border-style: initial;border-color: initial;font-weight: bold;font-stretch: inherit;font-size: 15px;line-height: 2;vertical-align: baseline;width: 643.672px;letter-spacing: 0.1em;box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;">
+                                <span style="font-size: 20px;">面对这一现状，中国驼奶领域并没有坐以待毙。</span><span
+                                    style="font-size: 20px;">王牌驼奶为了保障我国同胞能够享受到珍惜的驼乳资源，更为了保障我国同胞能够享受到珍惜的驼乳资源，不仅吸引了以口碑卓著、获奖无数、具有国家突出贡献的国家一级演员高明担任王牌驼品牌形象大使！</span>
+                            </p>
+                            <p
+                                style="max-width: 100%;min-height: 1em;font-family: -apple-system-font, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;letter-spacing: 0.544px;white-space: normal;background-color: rgb(255, 255, 255);box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;">
+                                <img class="" data-ratio="0.6666666666666666"
+                                    src="static/picture/5ace43a62e27409ab0949c06d6494e1b.gif" data-type="jpeg"
+                                    data-w="1618"
+                                    style="font-style: inherit;font-variant: inherit;font-weight: inherit;font-stretch: inherit;font-size: inherit;line-height: inherit;font-family: inherit;border-width: 0px;border-style: initial;border-color: initial;vertical-align: middle;box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;visibility: visible !important;width: 670.5px !important;">
+                            </p>
+                            <p
+                                style="margin-right: auto;margin-left: auto;padding-top: 0.2em;max-width: 100%;min-height: 1em;font-style: inherit;font-variant: inherit;white-space: normal;background-color: rgb(255, 255, 255);font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, Heiti, 黑体, Arial, Helvetica, STHeiTi, sans-serif;border-width: 0px;border-style: initial;border-color: initial;font-weight: bold;font-stretch: inherit;font-size: 15px;line-height: 2;vertical-align: baseline;width: 643.672px;letter-spacing: 0.1em;box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;">
+                                <span
+                                    style="font-size: 20px;">在国际上积极响应联合国关于驼奶全球普及议案和国家“一带一路”发展战略下，一批一带一路重点项目企业在全球四十多个贫困国家和地区开展援助帮扶项目。</span><span
+                                    style="font-size: 20px;">并在中国设立中国国民限援办公室，执行——中国公民“同年庆典，限时援助”计划！</span></p>
+                            <p
+                                style="max-width: 100%;min-height: 1em;font-family: -apple-system-font, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;letter-spacing: 0.544px;white-space: normal;background-color: rgb(255, 255, 255);box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;">
+                                <img class="" data-ratio="0.6666666666666666"
+                                    src="static/picture/179e553494d64bc8b8a46afc164f9759.gif" data-type="jpeg"
+                                    data-w="531"
+                                    style="font-style: inherit;font-variant: inherit;font-weight: inherit;font-stretch: inherit;font-size: inherit;line-height: inherit;font-family: inherit;border-width: 0px;border-style: initial;border-color: initial;vertical-align: middle;box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;visibility: visible !important;width: 670.5px !important;"><img
+                                    class="" data-ratio="0.6666666666666666"
+                                    src="static/picture/d5079452f996418c9d87ac60c42f7b19.gif" data-type="jpeg"
+                                    data-w="750"
+                                    style="font-style: inherit;font-variant: inherit;font-weight: inherit;font-stretch: inherit;font-size: inherit;line-height: inherit;font-family: inherit;border-width: 0px;border-style: initial;border-color: initial;vertical-align: middle;box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;visibility: visible !important;width: 670.5px !important;">
+                            </p>
+                            <p
+                                style="margin-right: auto;margin-left: auto;padding-top: 0.2em;max-width: 100%;min-height: 1em;font-style: inherit;font-variant: inherit;font-weight: inherit;white-space: normal;background-color: rgb(255, 255, 255);font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, Heiti, 黑体, Arial, Helvetica, STHeiTi, sans-serif;border-width: 0px;border-style: initial;border-color: initial;font-stretch: inherit;font-size: 15px;line-height: 2;vertical-align: baseline;width: 643.672px;letter-spacing: 0.1em;box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;">
+                                <span style="font-size: 20px;">面对这一现状，中国驼奶领域并没有坐以待毙。</span><span
+                                    style="font-size: 20px;">他们为了保障我国同胞能够享受到珍惜的驼乳资源，在响应联合国关于驼奶全球普及议案和国家“一带一路”发展战略下，一批一带一路重点项目企业在全球四十多个贫困国家和地区开展援助帮扶项目。</span><span
+                                    style="font-size: 20px;">并在中国设立中国国民限援办公室，执行——中国公民“周年庆典，限时援助”计划！</span></p>
+                            <p
+                                style="max-width: 100%;min-height: 1em;font-family: -apple-system-font, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;letter-spacing: 0.544px;white-space: normal;background-color: rgb(255, 255, 255);box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;">
+                                <img class="" data-ratio="0.6666666666666666"
+                                    src="static/picture/42d4fcdd50664844a5287896e8b37b35.gif" data-type="jpeg"
+                                    data-w="2061"
+                                    style="font-style: inherit;font-variant: inherit;font-weight: inherit;font-stretch: inherit;font-size: inherit;line-height: inherit;font-family: inherit;border-width: 0px;border-style: initial;border-color: initial;vertical-align: middle;box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;visibility: visible !important;width: 670.5px !important;"><img
+                                    class="" data-ratio="0.6666666666666666"
+                                    src="static/picture/24807f57e8db4b5f8e44e30156f1b385.gif" data-type="jpeg"
+                                    data-w="750"
+                                    style="font-style: inherit;font-variant: inherit;font-weight: inherit;font-stretch: inherit;font-size: inherit;line-height: inherit;font-family: inherit;border-width: 0px;border-style: initial;border-color: initial;vertical-align: middle;box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;visibility: visible !important;width: 670.5px !important;"><img
+                                    class="" data-ratio="0.6666666666666666"
+                                    src="static/picture/178ad6a07ac142b7ab0d92a0ecb27a76.gif" data-type="jpeg"
+                                    data-w="1618"
+                                    style="font-style: inherit;font-variant: inherit;font-weight: inherit;font-stretch: inherit;font-size: inherit;line-height: inherit;font-family: inherit;border-width: 0px;border-style: initial;border-color: initial;vertical-align: middle;box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;visibility: visible !important;width: 670.5px !important;">
+                            </p>
+                            <p
+                                style="margin-right: auto;margin-left: auto;padding-top: 0.2em;padding-bottom: 0.2em;max-width: 100%;min-height: 1em;font-style: inherit;font-variant: inherit;white-space: normal;background-color: rgb(255, 255, 255);font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, Heiti, 黑体, Arial, Helvetica, STHeiTi, sans-serif;border-width: 0px;border-style: initial;border-color: initial;font-weight: bold;font-stretch: inherit;font-size: 19px;line-height: 2;vertical-align: baseline;text-align: center;width: 643.672px;letter-spacing: 0.1em;color: rgb(175, 57, 16);box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;">
+                                <span style="font-size: 20px;">王牌驼骆驼奶，好奶源，好产地，好工艺，值得拥有！</span></p>
+                            <p class=""
+                                style="margin-top: 10px;margin-right: auto;margin-left: auto;padding-top: 0.2em;padding-bottom: 0.2em;max-width: 100%;min-height: 1em;font-style: inherit;font-variant: inherit;font-weight: inherit;white-space: normal;background-color: rgb(255, 255, 255);font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, Heiti, 黑体, Arial, Helvetica, STHeiTi, sans-serif;border-width: 0px;border-style: initial;border-color: initial;font-stretch: inherit;line-height: 2;vertical-align: baseline;width: 643.672px;letter-spacing: 0.1em;box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;">
+                                <span style="font-size: 20px;">写在最后：</span></p>
+                            <p class=""
+                                style="margin-top: 10px;margin-right: auto;margin-left: auto;padding-top: 0.2em;padding-bottom: 0.2em;max-width: 100%;min-height: 1em;font-style: inherit;font-variant: inherit;font-weight: inherit;white-space: normal;background-color: rgb(255, 255, 255);font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, Heiti, 黑体, Arial, Helvetica, STHeiTi, sans-serif;border-width: 0px;border-style: initial;border-color: initial;font-stretch: inherit;line-height: 2;vertical-align: baseline;width: 643.672px;letter-spacing: 0.1em;box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;">
+                                <span
+                                    style="font-size: 20px;">作为一个学术工作者，这五年的经历让我感受很深，中国有上亿的亚健康、慢性病患者，被病痛折磨的不在少数。</span><span
+                                    style="font-size: 20px;">太多人不得不以药续命，却依然无法控制病情恶化。</span><span
+                                    style="font-size: 20px;">据悉，全国死亡人群当中，98%死于慢性病，六成以上的瘫痪、残疾源于慢性病……在疾病面前，哪还有尊严可言？</span>
+                            </p>
+                            <p class=""
+                                style="margin-top: 10px;margin-right: auto;margin-left: auto;padding-top: 0.2em;padding-bottom: 0.2em;max-width: 100%;min-height: 1em;font-style: inherit;font-variant: inherit;font-weight: inherit;white-space: normal;background-color: rgb(255, 255, 255);font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, Heiti, 黑体, Arial, Helvetica, STHeiTi, sans-serif;border-width: 0px;border-style: initial;border-color: initial;font-stretch: inherit;line-height: 2;vertical-align: baseline;width: 643.672px;letter-spacing: 0.1em;box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;">
+                                <span style="font-size: 20px;">谁家还没有个病人啊……</span></p>
+                            <p class=""
+                                style="margin-top: 10px;margin-right: auto;margin-left: auto;padding-top: 0.2em;padding-bottom: 0.2em;max-width: 100%;min-height: 1em;font-style: inherit;font-variant: inherit;font-weight: inherit;white-space: normal;background-color: rgb(255, 255, 255);font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, Heiti, 黑体, Arial, Helvetica, STHeiTi, sans-serif;border-width: 0px;border-style: initial;border-color: initial;font-stretch: inherit;line-height: 2;vertical-align: baseline;width: 643.672px;letter-spacing: 0.1em;box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;">
+                                <span
+                                    style="font-size: 20px;">值得欣慰的是，通过这次战略援助，让我们看到了希望，一个从400多年前就有记载的“王牌驼骆驼奶”——驼奶，终于被研发成功，得以批量生产。</span><span
+                                    style="font-size: 20px;">直至今日，已有很多像我一样通过驼奶改变了命运的家庭。</span></p>
+                            <p class=""
+                                style="margin-top: 10px;margin-right: auto;margin-left: auto;padding-top: 0.2em;padding-bottom: 0.2em;max-width: 100%;min-height: 1em;font-style: inherit;font-variant: inherit;font-weight: inherit;white-space: normal;background-color: rgb(255, 255, 255);font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, Heiti, 黑体, Arial, Helvetica, STHeiTi, sans-serif;border-width: 0px;border-style: initial;border-color: initial;font-stretch: inherit;line-height: 2;vertical-align: baseline;width: 643.672px;letter-spacing: 0.1em;box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;">
+                                <span style="font-size: 20px;">希望这篇报道，能够让大家重拾生活和健康的希望，也让这样的好消息，传递出去，让更多同胞受益！</span></p>
+                            <p class=""
+                                style="margin-top: 10px;margin-right: auto;margin-left: auto;padding-top: 0.2em;padding-bottom: 0.2em;max-width: 100%;min-height: 1em;font-style: inherit;font-variant: inherit;font-weight: inherit;white-space: normal;background-color: rgb(255, 255, 255);font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, Heiti, 黑体, Arial, Helvetica, STHeiTi, sans-serif;border-width: 0px;border-style: initial;border-color: initial;font-stretch: inherit;line-height: 2;vertical-align: baseline;width: 643.672px;letter-spacing: 0.1em;box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;">
+                                <span style="font-size: 20px;">此致</span></p>
+                            <p class=""
+                                style="margin-top: 10px;margin-right: auto;margin-left: auto;padding-top: 0.2em;padding-bottom: 0.2em;max-width: 100%;min-height: 1em;font-style: inherit;font-variant: inherit;font-weight: inherit;white-space: normal;background-color: rgb(255, 255, 255);font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, Heiti, 黑体, Arial, Helvetica, STHeiTi, sans-serif;border-width: 0px;border-style: initial;border-color: initial;font-stretch: inherit;line-height: 2;vertical-align: baseline;text-align: right;width: 643.672px;letter-spacing: 0.1em;box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;">
+                                <span style="font-size: 20px;">敬礼</span></p>
+                            <p class=""
+                                style="margin-top: 10px;margin-right: auto;margin-left: auto;padding-top: 0.2em;padding-bottom: 0.2em;max-width: 100%;min-height: 1em;font-style: inherit;font-variant: inherit;font-weight: inherit;white-space: normal;background-color: rgb(255, 255, 255);font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, Heiti, 黑体, Arial, Helvetica, STHeiTi, sans-serif;border-width: 0px;border-style: initial;border-color: initial;font-stretch: inherit;line-height: 2;vertical-align: baseline;text-align: right;width: 643.672px;letter-spacing: 0.1em;box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;">
+                                <span style="font-size: 20px;">学者：</span><span style="font-size: 20px;">李辉</span></p>
+                            <p class=""
+                                style="margin-top: 10px;margin-right: auto;margin-left: auto;padding-top: 0.2em;padding-bottom: 0.2em;max-width: 100%;min-height: 1em;font-style: inherit;font-variant: inherit;font-weight: inherit;white-space: normal;background-color: rgb(255, 255, 255);font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, Heiti, 黑体, Arial, Helvetica, STHeiTi, sans-serif;border-width: 0px;border-style: initial;border-color: initial;font-stretch: inherit;line-height: 2;vertical-align: baseline;text-align: right;width: 643.672px;letter-spacing: 0.1em;box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;">
+                                <span style="font-size: 20px;">2019年5月23日</span></p>
+                            <p
+                                style="max-width: 100%;min-height: 1em;font-family: -apple-system-font, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;letter-spacing: 0.544px;white-space: normal;background-color: rgb(255, 255, 255);box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;">
+                                <img class="" data-ratio="0.6666666666666666"
+                                    src="static/picture/76a61f72eaa0401787c18f02d147ca68.gif" data-type="jpeg"
+                                    data-w="391"
+                                    style="font-style: inherit;font-variant: inherit;font-weight: inherit;font-stretch: inherit;font-size: inherit;line-height: inherit;font-family: inherit;border-width: 0px;border-style: initial;border-color: initial;vertical-align: middle;box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;visibility: visible !important;width: 670.5px !important;">
+                            </p>
+                            <p
+                                style="max-width: 100%;min-height: 1em;font-family: -apple-system-font, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;letter-spacing: 0.544px;white-space: normal;text-align: center;box-sizing: border-box !important;word-wrap: break-word !important;position: relative;">
+                                <img class="rich_pages  __bg_gif" data-copyright="0" data-cropselx1="1"
+                                    data-cropselx2="447" data-cropsely1="0" data-cropsely2="594"
+                                    data-ratio="1.3348314606741574"
+                                    src="static/picture/3cf1767fdc424bd2b02d63cea5610d97.gif" data-type="jpeg"
+                                    data-w="445"
+                                    style="box-sizing: border-box !important;overflow-wrap: break-word !important;width: 100%;visibility: visible !important;height: 595px;">
+                                    <img src="" class="weixinpic weixinpic-img" />
+                            </p>
+                            <p><br /></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    
+    <div class="bottom_btn" onclick="showLayer()">
+            <div class="bottom_box">
+              <img class="wechat_img" src="https://image.163ar.cn/wzjianfei/index_files/wechat.svg" alt="">
+              点击查询驼奶！
+            </div>
+          </div>
+          <div class="alert_box">
+            <div class="fixed_box">
+              <p style="margin-bottom: 0;" class="fixed_title">了解真正的驼奶！</p><br />
+                <p class="fixed_open">打开微信扫一扫下方二维码</p>
+                <img src="" class="weixinpic fix_weixinpic" alt="">
+            </div>
+          </div>
+          <div class="close_alert" onclick="closeLayer()"></div>
+          
+          <script>
+            function showLayer() {
+              $(".alert_box").fadeIn();
+              $(".close_alert").show();
+            }
+            function closeLayer() {
+              $(".alert_box").fadeOut();
+              $(".close_alert").hide();
+            }
+          </script>
+          <style>
+            .close_alert {
+              position: fixed;
+              left: 0px;
+              right: 0px;
+              top: 0px;
+              bottom: 0px;
+              z-index: 2;
+              display: none;
+            }
+          
+            .fixed_open {
+              padding: 3px 10px;
+              display: inline-block;
+              border-radius: 25px;
+              background-color: #CC376D;
+              color: white;
+              font-size: 16px;
+              font-weight: bold;
+              margin: 10px 0;
+              box-shadow: -2px 3px 38px -7px rgba(0, 0, 0, 0.44);
+              -webkit-box-shadow: -2px 3px 38px -7px rgba(0, 0, 0, 0.44);
+              animation: twinkling 4s infinite ease-in-out;
+              -webkit-animation: twinkling 4s infinite ease-in-out;
+            }
+          
+            .fix_weixinpic {
+              display: block;
+              width: 60%;
+              margin: auto;
+            }
+          
+            .fixed_add {
+              font-weight: bold;
+            }
+          
+            .fixed_add>.weixin {
+              color: red;
+              font-weight: bold;
+            }
+          
+            @-webkit-keyframes twinkling {
+              0% {
+                opacity: 0.3;
+              }
+          
+              25% {
+                opacity: 1;
+              }
+          
+              50% {
+                opacity: 0.3;
+              }
+          
+              75% {
+                opacity: 1;
+              }
+          
+              100% {
+                opacity: 0.3;
+              }
+            }
+          
+            @keyframes twinkling {
+              0% {
+                opacity: 0.3;
+              }
+          
+              25% {
+                opacity: 1;
+              }
+          
+              50% {
+                opacity: 0.3;
+              }
+          
+              75% {
+                opacity: 1;
+              }
+          
+              100% {
+                opacity: 0.3;
+              }
+            }
+          
+            .fixed_title {
+              font-size: 16px;
+              font-weight: bold;
+              border-bottom: #F00 dotted 3px;
+              display: inline-block;
+            }
+          
+            .alert_box {
+              /*width: 100%;*/
+              min-width: 320px;
+              position: fixed;
+              transform: translate(-50%, -50%);
+              -ms-transform: translate(-50%, -50%);
+              -moz-transform: translate(-50%, -50%);
+              -webkit-transform: translate(-50%, -50%);
+              -o-transform: translate(-50%, -50%);
+              top: 50%;
+              left: 50%;
+              z-index: 3;
+              display: none;
+            }
+          
+            .fixed_box {
+              width: 100%;
+              text-align: center;
+              padding: 10px 0px;
+              background-image: linear-gradient(180deg, #D1F386 0%, #FFC1C1 100%);
+              border-radius: 5px;
+            }
+          
+            .bottom_btn {
+              position: fixed;
+              width: 100%;
+              bottom: 0px;
+              left: 0px;
+            }
+          
+            .bottom_box {
+              margin: auto;
+              max-width: 640px;
+              background-image: linear-gradient(37deg, #FF8181 0%, #F97718 100%);
+              display: flex;
+              height: 60px;
+              align-items: center;
+              justify-content: center;
+              font-size: 18px;
+              color: #fff;
+              font-weight: bold;
+            }
+          
+            .wechat_img {
+              width: 40px;
+            }
+          </style>
+
+
+
+
+</body>
+
+</html>
