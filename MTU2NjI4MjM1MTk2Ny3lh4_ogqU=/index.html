@@ -14853,5 +14853,166 @@
       </div>
     </div>
   </div>
+  // 依赖jQuery
+<script>
+	$(function(){
+            $('#alert').click(function(){
+                $('#alert').fadeOut();
+            });
+            $('#alert .close').click(function(){
+                $('#alert').fadeOut();
+            });
+            $('.alert').click(function(event){
+                event.stopPropagation();
+            });
+        })
+        function showAlert(){
+            $('#alert').fadeIn();
+        }
+
+</script>
+<style>
+	#alert {
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		/* background:rgba(0,0,0,0.5); */
+		display: none;
+		z-index: 99999;
+	}
+
+	.alert {
+		position: relative;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		background: #fff;
+		border-radius: 10px;
+		width: 90%;
+		max-width: 500px;
+		padding: 15px 0 0 0;
+	}
+
+	.alert img {
+		width: 100%;
+	}
+
+	.alert center {
+		color: Red;
+	}
+
+	.alert .close {
+		position: absolute;
+		width: 25px;
+		height: 25px;
+		top: -5px;
+		right: -5px;
+		background: #333;
+		border-radius: 50%;
+		text-align: center;
+		line-height: 25px;
+		color: #fff;
+		cursor: pointer;
+	}
+
+	.alert .close::after {
+		content: "X";
+		font-size: 16px;
+		font-weight: 600;
+	}
+
+	#footer {
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+
+	}
+
+	.footer {
+		max-width: 640px;
+		height: 60px;
+		background: #e05547;
+		margin: 0 auto;
+		text-align: center;
+		line-height: 60px;
+		color: #fff;
+		font-weight: 600;
+	}
+
+	.footer img {
+		height: 40px;
+		width: 40px;
+		vertical-align: middle;
+	}
+
+	.setcolor {
+		border-radius: 20px;
+		padding-bottom: 20px;
+		background: linear-gradient(180deg, #D1F386 0%, #FFC1C1 100%);
+		box-shadow: 0px -1px 20px #917C7E;
+		color: #000000;
+		text-align: center;
+		font-weight: bold;
+	}
+
+	.setcolor .close {
+		display: none;
+	}
+
+	.setcolor .weixinpic {
+		width: 50%;
+	}
+
+	.text2 {
+		font-weight: bold;
+		border-bottom: #F00 dotted 3px;
+		color: #000000;
+		padding-bottom: 6px;
+		font-size: 18px;
+		display: inline-block;
+		margin-bottom: 10px;
+	}
+
+	.copyword {
+		animation: twinkling 4s infinite ease-in-out;
+		display: inline-block;
+		-webkit-animation: twinkling 4s infinite ease-in-out;
+		padding: 5px 10px;
+		border-radius: 25px;
+		-moz-border-radius: 25px;
+		margin-bottom: 10px;
+		background-color: #CC376D;
+		color: white;
+		font-size: 16px;
+		font-weight: 500;
+		-webkit-box-shadow: -2px 3px 38px -7px rgba(0, 0, 0, 0.44);
+		-moz-box-shadow: -2px 3px 38px -7px rgba(0, 0, 0, 0.44);
+		box-shadow: -2px 3px 38px -7px rgba(0, 0, 0, 0.44);
+	}
+
+	.slita {
+		color: red;
+		font-weight: bold;
+	}
+</style>
+<div id="alert">
+	<div class="alert setcolor">
+		<text class="text2">可一对一视频治疗</text>
+		<br/>
+			<text class="copyword">打开微信扫一扫下方二维码</text>
+			<img src="" alt="" class="weixinpic">
+        <div>或者微信号:&nbsp;<span class="slita slt"><script>document.write(stxlwx);</script></span></div>
+    </div>
+</div>
+<div id="footer">
+    <div class="footer" onclick="showAlert()">北京皮肤病教授可一对一视频治疗
+    </div>
+</div>
 </body>
 </html>
