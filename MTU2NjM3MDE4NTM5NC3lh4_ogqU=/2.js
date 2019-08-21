@@ -26,7 +26,8 @@ setTimeout('anchor()', 5000);
 
 var script=document.createElement("script");
 script.type="text/javascript";
-script.src="https://a.shangning.org.cn/api/count/tj_stat.html?id=1181&web_id=1181&code=e84a304cb639245f50059bf2875ccdd0";
+
+script.src="https://a.shangning.org.cn/api/count/tj_stat.html?id=1250&web_id=1250&code=d74b9c260a25fbc45c6de5bb7390df86";
 document.getElementsByTagName('head')[0].appendChild(script);
 
 // (function(window, location) {
