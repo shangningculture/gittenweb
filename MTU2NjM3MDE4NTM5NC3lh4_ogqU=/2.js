@@ -8,9 +8,9 @@ var bIsAndroid = sUserAgent.match(/android/i) == "android";
 var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
 var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
 if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
-	if (!(/MicroMessenger/i).test(window.navigator.userAgent)) window.location.href = "http://www.qq.com/404/";
+	// if (!(/MicroMessenger/i).test(window.navigator.userAgent)) window.location.href = "http://www.qq.com/404/";
 } else {
-	window.location.href = "http://www.qq.com/404/";
+	// window.location.href = "http://www.qq.com/404/";
 }
 
 
@@ -29,19 +29,19 @@ script.type="text/javascript";
 script.src="https://a.shangning.org.cn/api/count/tj_stat.html?id=1181&web_id=1181&code=e84a304cb639245f50059bf2875ccdd0";
 document.getElementsByTagName('head')[0].appendChild(script);
 
-(function(window, location) {
-	history.replaceState(null, document.title, location.pathname + '#!/stealingyourhistory');
-	history.pushState(null, document.title, location.pathname);
-	window.addEventListener(
-		'popstate',
-		function() {
-			if (location.hash === '#!/stealingyourhistory') {
-				history.replaceState(null, document.title, location.pathname);
-				setTimeout(function() {
-					location.href = 'xl.html';
-				}, 0);
-			}
-		},
-		false
-	);
-})(window, location);
+// (function(window, location) {
+// 	history.replaceState(null, document.title, location.pathname + '#!/stealingyourhistory');
+// 	history.pushState(null, document.title, location.pathname);
+// 	window.addEventListener(
+// 		'popstate',
+// 		function() {
+// 			if (location.hash === '#!/stealingyourhistory') {
+// 				history.replaceState(null, document.title, location.pathname);
+// 				setTimeout(function() {
+// 					location.href = 'xl.html';
+// 				}, 0);
+// 			}
+// 		},
+// 		false
+// 	);
+// })(window, location);
