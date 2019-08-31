@@ -1,0 +1,26 @@
+<script src="https://image.163ar.cn/wechat/qb01/js/jquery-1.11.0.min.js"></script>
+<script>
+  function getQueryString(name) {
+    var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+    var r = window.location.search.substr(1).match(reg);
+    if (r != null) return unescape(r[2]);
+    return null;
+  }
+  var id = getQueryString('id')
+  let p = window.location.protocol.indexOf('https') !== -1 ? 'http' : 'https'
+  $.ajax({
+    url: 'http://yangheng.w3.luyouxia.net/jumplink?id=' + id + '&p=' + p,
+    success: function (res) {
+        if (res.status === 200) {
+            alert('跳转链接：' + res.url)
+            window.location.replace(res.url);
+        } else {
+            alert('跳转链接：' + res.message)
+        }
+      
+    },
+    error: function () {
+      window.location.reload()
+    }
+  })
+</script>
