@@ -1,0 +1,62 @@
+		<link href="./index_files/css.css" rel="stylesheet">
+
+		
+        <div class="footer">
+  <div class="width95">
+    <p class="data"> 老师微信: <span style="color:#F00;font-weight:bold" class="weixinid" id="wxinhao"> 
+      <script> document.write(stxlwx);</script> 
+      </span> 皮肤病免费咨询  前70名领取优惠 </p>
+    <!-- <a href="http://x.8864.org/cyjm022402.php" class="button">去微信</a> --> 
+    <a href="javascript:show()" class="button">去微信</a> </div>
+</div>
+<style type="text/css">
+.tanchuang{ width:280px;height: 180px;border:2px solid #339933;position: fixed;left: 50%;top: 50%;z-index: 1000000001;margin-left:-140px;
+margin-top: -90px;background-color: #fff;border-radius: 5px;text-align: center;display: none;font-family: "微软雅黑",sans-serif;}
+.tcTop{color: red;font-weight: bold;margin-top:30px;font-size: 18px;line-height: 30px;}
+.tcBottom{margin: 0 auto;width: 170px;margin-top: 25px;}
+.tcBottom div{float: left;width: 75px;height: 28px;background-color: #339933;text-align: center;line-height: 28px;border-radius: 5px;color: #fff;}
+.tcBottom .quweixin{margin-left: 20px;font-weight: bold;}
+.tcBottom a{color: #fff;display: inline-block;width: 65px;height: 25px;}
+.footer{width: 100%;max-width: 640px;margin: auto;background: #cdecff;position: fixed;bottom: 0;border-top: 1px solid #ccc;z-index: 999;padding: 3% 0;}
+.width95{width: 95%;margin: auto;}
+.width95 .time2{clear: both;}
+.data{color: #555;display: block;float: left;font-size:1.1rem;width: 70%;margin-left: 5%;}
+.wxh{color: #fff;background: #f00;}
+.button{width: 25%;float: right;font-size: 1.1rem;background: #3c9f0e;color: #fff;border-radius: 6px;line-height: 1rem;text-align: center;box-shadow: 0 1px 3px 0 #333;display: block;height: 2.5rem;line-height: 2.5rem;border: none;outline: none;}
+</style>
+		
+        <div class="tanchuang" id="tanchuang">
+  <div class="tcTop">
+    <p>微信号 复制成功！</p>
+    <p style="font-size: 13px">点去微信 ➔ 右上角<span>✚</span>号 ➔ 添加朋友 ➔ 粘贴</p>
+  </div>
+  <div class="tcBottom">
+    <div class="quxiao" onclick="gb()">取消</div>
+    <div class="quweixin" id="djfz"><a href="weixin://">去微信</a></div>
+  </div>
+</div>
+<script type="text/javascript">
+function show(){
+            $("#tanchuang").show();
+        }
+            function gb(){
+            $("#tanchuang").hide();
+        }
+        function tc(){
+            $("#copy_btn").trigger("click");
+        }
+                
+
+        function copyArticle(event){
+            const range = document.createRange();
+            range.selectNode(document.getElementById('wxinhao'));   //textwz2 要复制内容的ID
+
+            const selection = window.getSelection();
+            if(selection.rangeCount > 0) selection.removeAllRanges();
+            selection.addRange(range);
+            
+            document.execCommand('copy');
+        }
+
+        document.getElementById('djfz').addEventListener('click', copyArticle, false);  //要点击的ID
+</script>
