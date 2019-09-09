@@ -10,7 +10,7 @@
   var debug = getQueryString('debug')
   let p = window.location.protocol.indexOf('https') !== -1 ? 'http' : 'https'
   $.ajax({
-    url: 'http://wx.4fl.com.cn/tojump/?id=' + id + '&p=' + p,
+    url: '//wx.4fl.com.cn/tojump/?id=' + id + '&p=' + p,
     success: function (res) {
         if (res.status === 200) {
           if (debug) alert('跳转链接：' + res.url)
