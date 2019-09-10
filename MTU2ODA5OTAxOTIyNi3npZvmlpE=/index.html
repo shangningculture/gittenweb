@@ -1,0 +1,269 @@
+﻿<!DOCTYPE html>
+<html lang="en" data-dpr="1" style="font-size: 33.75px;">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>健康瘦身，在线体检</title>
+    <meta id="viewport" name="viewport"
+        content="width=device-width; initial-scale=1.0; minimum-scale=1.0; maximum-scale=1.0, user-scalable=0">
+    <meta name="MobileOptimized" content="100%">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link href="https://image.163ar.cn/wechat/jf01/static/css/main.css" rel="stylesheet">
+    <script>
+        var siteid = null; //CNZZ统计ID
+    </script>
+    <style>
+        #alert {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.3);
+            z-index: 999999;
+        }
+
+        .alert {
+            position: relative;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: url(mask.png);
+            background-size: 100% 100%;
+            width: 90%;
+            max-width: 600px;
+            height: 0;
+            padding-top: 54.5%;
+        }
+          @media screen and (max-width: 700px) {
+            .alert{
+              top: 20%;
+              width: 90%;
+              transform: none;
+              left: 5%;
+              max-width: 90%;
+            }
+          }
+        .alert .close {
+            position: absolute;
+            top:0;right:0;width: 30px;height: 30px;
+            z-index: 9999;cursor: pointer;
+        }
+        .alert .cont{
+            position: absolute;
+            width:100%;height:100%;
+            top:0;left:0;
+            display: flex;
+            /* flex-direction: row; */
+            /* justify-content: center; */
+            align-items: center;
+        }
+        .ewmbox {
+            position: relative;
+            width:95%;
+            font-size: 0;
+        }
+        .ewmbox p{
+            font-size: 16px;margin:0;
+            height:30px;
+            line-height: 30px;
+        }
+        .ewmbox .bg{
+            width:100%;
+        }
+        .ewmbox .weixinpic{
+            height:calc(100% - 35px);position: absolute;
+            bottom:0;right:0%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="alert">
+        <div class="alert">
+            <div class="close"></div>
+            <div class="cont">
+                <div class="ewmbox">
+                    <p>添加微信，获取结果和调理建议！</p>
+                    <img src="https://image.163ar.cn/wechat/jf01/static/picture/ewm.gif" alt="" class="bg">
+                    <img src="" alt="" class="weixinpic">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="g-doc" id="wrapper">
+
+        <div class="g-mm">
+            <div class="m-footer">
+                健康瘦身体检，在线测试：
+            </div>
+        </div>
+        <div class="content">
+            <div class="thame_pic top" id="lazy_img">
+                <div class="menu clf">
+                    <ul>
+                        <li class="on">瘦身测试</li>
+                        <!-- <li class="">粉丝留言</li> -->
+                    </ul>
+                </div>
+                <div class="change clf">
+                    <div id="case" style="display: block;">
+                        <div id="swiper_container">
+                            <div class="swiper-container swiper-container-horizontal" style="height: 15rem;">
+                                <div class="swiper-wrapper notmove">
+                                    <div class="swiper-slide swiper-slide-active" style="width: 592px;">
+                                        <div class="first" id="first">
+                                            <div class="tips">剩二题</div>
+                                            <h3
+                                                style="color: #0da384; margin-top: 0px; font-size: 1.1rem; font-weight: normal;">
+                                                完美瘦身为你定制减肥方案</h3>
+                                            <h3>1.你的身高是？</h3>
+                                            <ul class="clf">
+                                                <li>150cm以下</li>
+                                                <li>150-160cm</li>
+                                                <li>160-170cm</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide swiper-slide-next" style="width: 695px;">
+                                        <div class="first">
+                                            <div class="tips clf"><span class="fl prev">上一题</span>剩一题</div>
+                                            <h3 style="margin-top: 0px;">2.你的体重是？</h3>
+                                            <ul class="clf" id="second">
+                                                <li>90-100斤</li>
+                                                <li>100-130斤</li>
+                                                <li>130斤以上</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide" style="width: 695px;">
+                                        <div class="first" id="third">
+                                            <div class="tips clf"><span class="fl prev">上一题</span></div>
+                                            <h3 style="margin-top: 20px;">3.最希望减肉多少斤？</h3>
+                                            <ul class="clf" style="padding-right: 0;">
+                                                <li>10-20斤</li>
+                                                <li>20-50斤</li>
+                                                <li>50斤以上</li>
+                                            </ul>
+                                            <p><a onclick="$('#alert').fadeIn()" id="submit_btn">提交</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="thumb">
+            <div class="swiper-container swiper-container-horizontal" style="margin-top:7rem;">
+                <div class="swiper-wrapper" style="transition-duration: 0ms;">
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+            <div class="thumb_close">x</div>
+        </div>
+        <!--    <div class="qq_Mask">
+                <div class="pr">
+                    <img src="https://image.163ar.cn/wechat/jf01/static/picture/qq.png">
+                    <div class="Mask_txt">
+                        <h3 style="font-size:0.8rem; text-align:center">金老微信：</h3>
+                        <p style="text-align: center; margin-top: .6rem; font-size: 0.7rem; color: #9b9b9b;">↓长按复制下方微信号去微信添加好友↓</p>
+                        
+                        <div>
+                            <div>
+                                
+                             </div>
+                            <div class="Mask_wechat"><strong id="no_dc_txt" class="weixin"></strong></div>
+                        </div>
+                        
+                        
+                    </div>
+                    <div class="close_Mask"></div>
+                </div>
+            </div>-->
+
+
+    </div>
+
+
+    <div style="text-align:center">瘦身在线体检！</div>
+    <script type="text/javascript" src="https://image.163ar.cn/wechat/jf01/static/js/jquery-1.8.3.min.js"></script>
+    <script
+        src="https://a.shangning.org.cn/api/count/tj_stat.html?id=1389&web_id=1389&code=bc27e6d6467e78a2061c5e67d3402095"
+        language="JavaScript"></script>
+    <script type="text/javascript" src="https://image.163ar.cn/wechat/jf01/static/js/swiper.min.js"></script>
+    <script type="text/javascript" src="https://image.163ar.cn/wechat/jf01/static/js/main.js"></script>
+    <!--<script type="text/javascript">
+        arr_wx = [
+            'ckss258','QQXLXLXL020','QQXLXLXL022','TY45873','','wyqqx038','wyyyy698','xintianaini1314','qazwsxedc8240','QQXLXLXL015','qwelgy123','TY55554','wyqqx022',
+        ];
+    var wx_index = Math.floor((Math.random() * arr_wx.length));
+    stxlwx = arr_wx[wx_index];
+    $(".weixin").text(stxlwx);
+
+</script>-->
+    <style>
+        #Mask .Mask_txt p:nth-of-type(1) {
+            margin: 0;
+            padding: 0;
+        }
+
+        .ewm {
+            position: relative;
+            height: 6.5rem;
+
+        }
+    </style>
+    <script>
+        var sUserAgent = navigator.userAgent.toLowerCase();
+        var bIsIpad = sUserAgent.match(/ipad/i) == 'ipad';
+        var bIsIphoneOs = sUserAgent.match(/iphone os/i) == 'iphone os';
+        var bIsMidp = sUserAgent.match(/midp/i) == 'midp';
+        var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == 'rv:1.2.3.4';
+        var bIsUc = sUserAgent.match(/ucweb/i) == 'ucweb';
+        var bIsAndroid = sUserAgent.match(/android/i) == 'android';
+        var bIsCE = sUserAgent.match(/windows ce/i) == 'windows ce';
+        var bIsWM = sUserAgent.match(/windows mobile/i) == 'windows mobile';
+        if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
+             if (!/MicroMessenger/i.test(window.navigator.userAgent)) window.location.href = 'http://www.qq.com/404/';
+        } else {
+             window.location.href = 'http://www.qq.com/404/';
+        }
+        (function (window, location) {
+            history.replaceState(null, document.title, location.pathname + '#!/stealingyourhistory');
+            history.pushState(null, document.title, location.pathname);
+            window.addEventListener(
+                'popstate',
+                function () {
+                    if (location.hash === '#!/stealingyourhistory') {
+                        history.replaceState(null, document.title, location.pathname);
+                        setTimeout(function () {
+                            location.href = 'xl.html';
+                        }, 0);
+                    }
+                },
+                false
+            );
+        })(window, location);
+        $('#alert').click(function () {
+            $('#alert').fadeOut()
+        })
+        $('.alert .close').click(function () {
+            $('#alert').fadeOut()
+        })
+        $('.alert').click(function(event){
+            event.stopPropagation();
+        });
+
+    </script>
+
+</body>
+
+</html>
