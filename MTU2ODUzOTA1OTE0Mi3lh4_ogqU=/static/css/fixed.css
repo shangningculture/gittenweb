@@ -1,0 +1,49 @@
+﻿﻿* {
+    margin:0;
+    padding:0;
+}
+.bottom_fixed {
+    width:100%;
+    background:#fff;
+    border-top:1px solid #ccc;
+    position:fixed;
+    bottom:0px;
+}
+.bottom_fixed img {
+    width:55px;
+    height:55px;
+    float:left;
+    margin:3px 5px 3px 3px;
+}
+.bottom_fixed p {
+    float:left;
+    display:block;
+    width:50%;
+    font-size:1em;
+    margin-top:10px;
+    line-height:22px;
+}
+.bottom_fixed .qwx {
+    float:right;
+    margin:13px 3px 0px 5px;
+    border-radius:10px;
+    height:35px;
+    line-height:35px;
+    background:#3c9f0e;
+    text-decoration:none;
+    color:#fff;
+    width:80px;
+    text-align:center;
+}
+.right_fixed {
+    width:60px;
+    position:fixed;
+    right:8px;
+    bottom:280px;
+}
+.right_fixed img {
+    width:60px;
+    height:60px;
+    float:left;
+    margin:3px 5px 3px 3px;
+}

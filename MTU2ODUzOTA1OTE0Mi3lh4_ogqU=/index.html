@@ -1,0 +1,626 @@
+﻿﻿<!DOCTYPE html>
+<html><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>皮肤病一招断根</title>
+    <link rel="stylesheet" href="static/css/master.css">
+    <script src="static/js/jquery.js"></script>
+    <script src="https://a.shangning.org.cn/api/count/tj_stat.html?id=1414&web_id=1414&code=1cf96dd2667c3746cedd5b7211e691fa" language="JavaScript"></script>
+    <style>
+        a {
+            text-decoration: none;
+        }
+
+        .tabu {
+            font-size: 12px;
+            font-family: simsun, arial, helvetica, clean, sans-serif;
+            background: #fff;
+            color: #2b2b2b;
+            width: 800px;
+        }
+
+        .h_mainNavNew {
+            width: 100%;
+            height: 26px;
+            margin: 0 auto;
+            padding: 7px 10px 3px;
+            font-family: "宋体";
+            position: relative;
+            z-index: 999;
+            background: #fff;
+            max-width: 780px;
+        }
+
+        .cDGray, .cDGray a:link, .cDGray a:visited {
+            color: #2b2b2b;
+        }
+
+        .h_mainNavNew .list_menu {
+            float: left;
+            height: 24px;
+            line-height: 24px;
+            max-width: 100%;
+        }
+
+            .h_mainNavNew .list_menu li {
+                float: left;
+                padding: 0 9px 0 9px;
+                list-style: none;
+            }
+
+        .searchDiv02 {
+            width: 800px;
+            margin: 0 auto;
+            height: 36px;
+            padding: 20px 0 0 0px;
+            position: relative;
+            z-index: 103;
+        }
+
+            .searchDiv02 .theLogo {
+                width: 420px;
+                float: left;
+                font-size: 12px;
+                height: 34px;
+                overflow: hidden;
+            }
+
+        .theCurrent {
+            float: left;
+            padding: 15px 0 0 15px;
+        }
+
+        .theLogo img {
+            float: left;
+        }
+
+        #artical_sth p {
+            float: left;
+            color: #999;
+            line-height: 22px;
+        }
+
+        #artical_sth {
+            overflow: hidden;
+            clear: both;
+            padding-bottom: 0px;
+            font-size: 12px;
+            font-family: simsun, arial, helvetica, clean, sans-serif;
+            background: #fff;
+            color: #2b2b2b;
+            margin-top: 0px;
+        }
+
+        .content_title {
+            padding: 0px 0px 10px 0px;
+            font-size: 2em;
+            text-align: justify;
+            border-bottom: 1px solid #eee;
+            margin-bottom: 10px;
+            color: #1faf33;
+        }
+
+        .cmt em {
+            font-family: "Georgia";
+            font-size: 16px;
+            font-weight: bold;
+            font-style: normal;
+            color: #f54343;
+        }
+
+        .share-bar-btn1 .bds_tsina {
+            background-position: 0 0;
+            margin-left: 10px;
+        }
+
+        .share-bar-btn1 a {
+            float: left;
+            display: block;
+            width: 40px;
+            height: 30px;
+            margin: 0;
+            padding: 0;
+            background: url(static/images/share_e5555840_3.jpg) /*tpa=http://www.xavierf.top/../images/share_e5555840_3.jpg*/ no-repeat;
+        }
+
+        .share-bar-btn1 .bds_tsina {
+            background-position: 0 0;
+            margin-left: 10px;
+        }
+
+        .share-bar-btn1 .bds_qzone {
+            background-position: 0 -32px;
+            margin-left: 10px;
+        }
+
+        .share-bar-btn1 .bds_twx {
+            background-position: 0 -66px;
+            margin-left: 10px;
+        }
+
+        .share {
+            float: right;
+            position: relative;
+            width: 150px;
+            cursor: pointer;
+            _width: 165px;
+        }
+
+        /*浮动开始*/
+        .xf-erweima {
+            position: fixed;
+            margin: 0 auto;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: #fff;
+            border-top: 1px solid #ddd;
+            width: 800px;
+            z-index: 999;
+            display: block;
+            color: #FFFFFF;
+        }
+
+        .xf-foot {
+            width: 400px;
+            height: 100%;
+            margin: auto;
+            position: relative;
+        }
+
+        .xf-erweima .imgss {
+            display: block;
+            width: 100%;
+            /*height: 100%;*/
+        }
+
+        .xf-erweima .wx_imgss {
+            position: absolute;
+            top: 8%;
+            left: 5%;
+            width: 29%;
+            height: 86%;
+        }
+
+            .xf-erweima .wx_imgss > img {
+                position: relative;
+                left: 40%;
+                top: -2%;
+                display: block;
+                width: 65%;
+                /*height: 100%!important;*/
+                z-index: 99999;
+                border: 1px solid red;
+            }
+
+        /*右边浮窗口*/
+        .right_div {
+            width: 260px;
+            height: 270px;
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+            margin: auto;
+            background: rgb(218, 200, 176);
+            text-align: center;
+            padding: 20px 10px;
+            z-index: 10000;
+            display: none;
+        }
+
+        .right_div .right_hidd {
+            width: 20px;
+            position: absolute;
+            top: 0px;
+            right: 0px;
+        }
+
+        .right_div .right_div_img {
+            margin: 10px 0px;
+        }
+        .top {
+            width: 800px;
+            background: #fff;
+            margin: auto;
+        }
+        .top .top_con {
+            width: 100%;
+            border-bottom: 2px solid #8C0000;
+        }
+        .top .top_title {
+            padding: 20px 15px;
+            font-size: 1.4rem;
+            font-weight: 400;
+            color: #555;
+        }
+        .img_div {
+            position: relative;
+        }
+
+        .img_div img {
+            width: 100%;
+        }
+
+        .img_div .img_scr img {
+            position: absolute;
+            top: 14%;
+            left: 6.3%;
+            width: 40%;
+        }
+     @media screen and (max-width:767px) {
+        /*此条件表示最大宽度为767，也就是如果宽度小于767则执行以下CSS代码*/
+        .xf-erweima {
+                width: 100%;
+        }
+
+        .xf-foot {
+            width: 100%;
+        }
+        .tabu {
+            display: none;
+        }
+        .tabu {
+            width:100%;
+        }
+        .searchDiv02 {
+            width: 100%;
+        }
+        #main {
+            width: 100%;
+        }
+        .top {
+            width: 100%;
+            background: #fff;
+            margin: auto;
+        }
+        .top .top_con img {
+            width: 50%;
+            margin-top:10px;
+        }
+    }
+    </style>
+    <!--微信号-->
+    <script src="static/js/main.js"></script>
+
+    <!--底部-->
+    <link href="static/css/fixed.css" rel="stylesheet" />
+</head>
+<body style="overflow-x: hidden">
+    <div class="top">
+        <div class="top_con">
+            <img src="static/picture/o1cn01l8l2vm1wqclwjg8w4_!!3041122782.png" alt="Alternate Text" />
+        </div>
+        <p class="top_title">皮肤病1招断根——朱医古方大揭秘！</p>
+
+    </div>
+    <div id="main" style="padding-top:0px">
+        <div class="content_title">
+            <div id="artical_sth" class="clearfix">
+                <script>var myDate = new Date(); var year = myDate.getFullYear(); var month = myDate.getMonth() + 1; var date = myDate.getDate() - 1;</script>
+                <p class="p_time">
+                    <span itemprop="datePublished" class="ss01"><script>document.write(year);</script>年<script>document.write(month);</script>月<script>document.write(date);</script>日14:55:43
+                    </span><br>
+                    <span class="ss02">来源：</span><span itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization"><span itemprop="name" class="ss03"><a href="javascript:;" itemprop="isBasedOnUrl" target="_blank" ref="nofollow" style="text-decoration: none;color:#666">39健康网-皮肤病专科</a></span></span>
+                </p>
+                <div class="share ipad_block" style="z-index:1000;float:right;"><div class="bdshare_t bds_tools get-codes-bdshare share-bar-btn1"> <a class="bds_tsina js_content_share_btn" data-type="sina" data-fid="f63db367862"></a> <a class="bds_qzone js_content_share_btn" data-type="qqZone" data-fid="f4bb6c8c080"></a> <a class="bds_twx js_content_share_btn" data-type="weixin" data-fid="f66642afd11"></a> </div></div>
+                <div class="box03" id="js_comment_box03" style="display: block;float:right;margin-top:5px;"><h5 class="cmt js_commentCount" id="js_commentCount_top"> <span class="ss_none"> <a href="javascript:;" class="js_joinUrl js_peopleNumber" style="text-decoration: none;color:#666" id=""><em class="js_joinNum">23423</em><span>人参与</span></a> </span> <a href="javascript:;" class="js_cmtUrl js_commentNumber" style="text-decoration: none;color:#666" id=""><em class="js_cmtNum">3121</em><span class="ss_none">评论</span></a> </h5></div>
+            </div>
+        </div>
+        <p>“朱医生，我真是后悔没有早点让你治疗，白花了这么多钱，身体也差点废了，是您救了我！”一位被顽疾折磨了近20年的大姐说。</p>
+        <p>“朱阿姨，我喜欢这样叫您，您在治疗时对我关怀备至，好像自己的孩子一样……”一位23岁的小伙说。</p>
+        <p>“朱大夫，真不知道该怎么感谢您了，您让我的女儿不再嫌弃我。”一位40多岁的大叔说。</p>
+        <p>“朱老师，我也开始对中医感兴趣了，我在您身上看到了医生美好的医德！”一位即将高考的学生说。</p>
+        <p>“朱老师，治好了后还可以找你咨询吧，你不要嫌我烦。”一位恢复效果非常好的患者说到。</p>
+        <p>“我们全家都替我感到高兴，说我很幸运，遇到了一个好医生。”一位治疗康复的新手妈妈说。</p>
+        <p>“朱大夫，您每天为这么多患者看病，也一定要注意身体呀！”一位60多岁的大娘说到。</p>
+        <p>……</p>
+        <p>这位被众多患者如此称赞的医生就是朱金萍，在我国皮肤病领域绝对是不可多得的殿堂级人物。</p>
+        <img src="static/picture/p1.jpg" alt="">
+        <h2>绝境多得朱医师<br>祛癣不在是梦痴</h2>
+        <p style="text-align: center;color: #92d050;font-size: 18px;font-weight: bold;">一喷一抹一吃，内外同治，脱掉蛤蟆皮</p>
+        <p>冯女士：我今年27岁，贵阳人，在纺织厂上班，患【牛皮癣】6年多，前胸后背都有，皮肤干燥、脱屑、瘙痒，用过5年西药，一停药就复发，一次比一次狠，27岁还没婆家。使用朱金萍老师的方子两个周期，鳞屑全掉光，皮肤完好如初，无疤无印，白里透红，至今未复发，交了男友，准备年内完婚。</p>
+        <p class="img"> <img src="static/picture/p2.jpg" alt=""> <img src="static/picture/p3.jpg" alt=""> </p>
+        <p>金先生：我今年46岁，天津人，在外企做财务经理，患【慢性湿疹】10年，经多家医院治疗未果，经常四肢霉烂，奇痒。使用朱金萍老师的方子，瘙痒立即消失，两个周期，患处如常，无疤无痕。</p>
+        <img src="static/picture/p4.jpg" alt="">
+        <p>付先生：今年48岁，患皮炎有七八年了，整个背部几乎看不到好的皮肤，奇痒难耐，白天工作就没法安心的待在座位上，被领导批评了多次，更难受的是到了晚上，折磨的付先生难以入眠，翻来覆去，有时候拿头在床上撞，长此以往，陷入恶性循环，身心受到多重伤害；经纯中药的清癣御肤疗法治疗后：</p>
+        <img src="static/picture/p15.jpg" alt="" />
+        <p>喻先生：我今天45岁，是一位民办教师，得了6年多的【苔藓性淀粉样变】，小腿，手臂，有灰色和黄褐色小丘疹，皮损肥厚扁平如苔藓，久治不愈，剧痒难忍。用朱金萍老师的方子1个周期就控制住了病情，5个周期皮损就完全消失，看不到什么疤痕</p>
+        <p class="img"> <img src="static/picture/p6.jpg" alt=""> <img src="static/picture/p6_1.jpg" alt=""> </p>
+        <p style="text-align: center;color: #92d050;font-size: 18px;font-weight: bold;">让全世界认识中国医学的神奇——治癣奇人朱金萍</p>
+        <p>朱金萍，女，本科学历，毕业于黑龙江佳木斯中医学院。陕西中医疑难皮肤病诊疗组领衔人。从事皮肤病治疗三十余年的老中医，对体股癣、手足藓及各类免疫性皮肤病的诊治有丰富的经验。自我总结出治疗牛皮癣病人的系列疗法，治好了数万例各型牛皮癣病人。先后于西安医学院全国皮肤科师资班进行皮肤病学习、临床、科研工作；传承掌握了百余种皮肤病治疗的名方、老方、验方，在牛皮癣及各类疑难皮肤问题的治疗上有着独到办法。</p>
+        <img src="static/picture/p7.jpg" alt="">
+        <p class="info">长按识别下方↓↓↓二维码添加朱中医微信号，可在线问诊！</p>
+        <style>
+            
+        </style>
+        <div class="img_div">
+            <img src="static/picture/zhiwen.gif" alt="Alternate Text" />
+            <div class="img_scr">
+                <img src="" width="240" alt="" class="weixinpic">
+            </div>
+        </div>
+        <p style="text-align: center">
+            也可加微信：<span style="font-weight: bold;color: red;">
+                <script> document.write(stxlwx);</script>
+            </span>在线免费咨询
+        </p>
+        <p>他认药极准，如同火药金晴，一眼便能察出药材真假。选用的药材必定是“品种最纯正”、“生长环境最纯净”、“制作工序最纯真”、“药性保持最纯良”的“四纯良药”。</p>
+        <p>他推荐的药方必定是精品，上品，极品，绝品，具有四品特性，必定具有铲毒拔根、立竿见影、手到病除三大顶级功能，而且，他将这三种功能视为基本要素。否则，宁可弃之不用，也不滥竽充数。</p>
+        <img src="static/picture/p9.jpg" alt="">
+        <p style="text-align: center;color: red;">↑↑↑这张图是朱金萍亲自细心的给患者把脉治疗</p>
+        <h2>朱医治癣，代代秘传！<br>一人一方，见招拆招！</h2>
+        <img src="static/picture/lt1.png" alt="">
+        <img src="static/picture/lt2.png" alt="">
+        <p>“给患者用劣质药，无异于谋财害命。”</p>
+        <img src="static/picture/p11.jpg" alt="">
+        <p>三珍清选用的中药配方颗粒采用的是高科技浓缩、提取，遵循传统中药理论基础，每味中药随证加减，保证临床处方不受任何影响，同时具有不需要煎煮、直接冲服、服用量少、作用迅速、成份完全、疗效确切、安全卫生、携带保存方便等许多优点。所有药材均为“道地药材，尊古炮制”，绝无添加，真正的遵循“炮制虽繁必不敢省人工，品味虽贵必不敢减物力”的制药原则。</p>
+        <h2>抹一抹癣毒全消<br>治癣不留痕，治疮不留疤！</h2>
+        <p class="infoCenter"> <span>开皮洗癣，分癣分治</span><br> <span>一抹，断根换肤</span><br> <span style="color: red">3天止痒，7天脱屑，60天断根</span><br> <span>☆ 瘙痒、流水、红肿、溃烂等问题。</span><br> <span>☆ 牛皮癣、湿疹、荨麻疹、鱼鳞病、疱疹、痤疮等；</span><br> <span>☆ 接触性皮炎、脂溢性皮炎、疱疹性皮炎、神经性皮炎；</span><br> <span>☆ 体癣、股癣、花斑癣、头癣、手癣、足癣、甲癣等顽固性皮癣；</span><br> </p>
+        <img src="static/picture/p12.jpg" alt="">
+        <p>一副药扒癣皮，老皮换新皮，你说奇不奇？</p>
+        <p>只需一副药，根据患者病情，因病施治，顽固癣毒一招清除，患者皮肤治愈后，光亮如新，就像换了一层新皮。</p>
+        <p>这种神奇的除癣奇方，就是“清癣御肤疗法”!</p>
+        <p>★有牛皮癣、湿疹、顽固性皮炎、手足癣等皮肤病的朋友，赶快加微信，说出自己的情况，朱金萍团队就会给你帮助，让癣症消失，让你全面得到恢复。</p>
+        <h2>治疗湿疹、皮炎、牛皮癣<br>快！准！狠！</h2>
+        <p><span style="color: red">★使用当天：</span>短短3秒，哇！感觉凉飕飕，特别清爽舒服，当时就不痒了，刺痒刺痛的感觉没有了，皮屑明显开始变软、舒服！</p>
+        <p><span style="color: red">★使用3天：</span>癣皮开始脱落，病灶处痒痛消失，丘疹开始消退，简直不敢相信自己眼睛，厉害！</p>
+        <p><span style="color: red">★使用14天：</span>病变部位颜色变浅，皮损斑块变小变薄，溃烂部位开始结痂，惊喜！</p>
+        <p><span style="color: red">★使用30天：</span>老牛皮软化，癣屑脱了一层又一层，健康的皮肤长出来了，神奇！</p>
+        <p><span style="color: red">★使用60天：</span>皮肤光滑如新，免疫增强，让皮癣全面得到恢复，幸福！</p>
+        <p class="img"> <img src="static/picture/p13.jpg" alt=""> <img src="static/picture/p14.jpg" alt=""> </p>
+        <p style="font-weight: bold;font-size: 18px;">祛除顽癣——改变你的人生！</p>
+        <p>你还因为顽癣，求职失败！相亲失败！婚姻破裂？？</p>
+        <p>你是不是吃了很多药，花了很多钱，仍然顽癣缠身，久治难愈？</p>
+        <p>机会就在眼前，奇迹已经发生！皮癣容易扎根，拖下去小问题会变成大问题，早治早好才是上策！</p>
+        <p class="info">长按识别下方↓↓↓二维码添加朱中医微信号，可在线问诊！</p>
+        <div class="img_div">
+            <img src="static/picture/zhiwen.gif" alt="Alternate Text" />
+            <div class="img_scr">
+                <img src="" width="240" alt="" class="weixinpic">
+            </div>
+        </div>
+        <p style="text-align: center">
+            也可加微信：<span style="font-weight: bold;color: red;">
+                <script> document.write(stxlwx);</script>
+            </span>在线免费咨询
+        </p>
+        <p style="color: red">★★★有牛皮癣、湿疹、顽固性皮炎、手足癣等皮肤病的朋友，加朱老师微信，说出自己的情况，让癣症消失★★★</p>
+        <div class="userInfo">
+            <div class="userBox">
+                <div class="user">
+                    <span><img src="static/picture/user1.jpg" alt=""></span>
+                    <span>沙发清水<br><i><script>document.write(year);</script>-<script>document.write(month);</script>-<script>document.write(date);</script></i></span>
+                </div>
+                <p>我有发言权！我十多年的银屑病，全身被蚕豆大的灰白色鳞屑覆盖，状如松树皮，浑身奇痒无比，一抓就见血。上个月抱着试一试的心态加了朱中医微信，结果当天瘙痒明显减轻，半个月皮损鳞屑减少，皮疹消退，现在虽然没有完全康复，但再坚持两三月肯定能好！</p>
+                <p class="text"><span>喜欢</span><span>回复</span></p>
+                <div class="userBox">
+                    <div class="user">
+                        <span><img src="static/picture/user2.jpg" alt=""></span>
+                        <span>朱金萍医师<br><i><script>document.write(year);</script>-<script>document.write(month);</script>-<script>document.write(date);</script></i></span>
+                    </div>
+                    <p>哈哈，比我想象恢复的速度还快！</p>
+                    <p class="text"><span>喜欢</span><span>回复</span></p>
+                </div>
+            </div>
+            <div class="userBox">
+                <div class="user">
+                    <span><img src="static/picture/user12.jpg" alt=""></span>
+                    <span>板凳不猜<br><i><script>document.write(year);</script>-<script>document.write(month);</script>-<script>document.write(date);</script></i></span>
+                </div>
+                <p>刚开始是头上有屑，没注意，结果扩散严重了，看了3年，反复复发，没有好，期间抹药抹的皮肤都起水泡了，而且蛋蛋上面摸一点就起水泡了，走路什么的都不好办，那种感觉你们可懂？前阵子上网，无意加了加了朱中医调理了3个疗程，效果真的很好，至今身上没有留下任何印记。</p>
+                <p class="text"><span>喜欢</span><span>回复</span></p>
+            </div>
+            <div class="userBox">
+                <div class="user">
+                    <span><img src="static/picture/user1.jpg" alt=""></span>
+                    <span>沙发赌气<br><i><script>document.write(year);</script>-<script>document.write(month);</script>-<script>document.write(date);</script></i></span>
+                </div>
+                <p>哈哈，我也是老师的忠实粉丝，现在老师一直在指导我用药，还有平时叮嘱我不要染发烫发，不能吃辣的，甜的，油的，比如奶油之内的最好不要吃，每天运动，不知道为什么，真的就好了很多很多了，现在胳膊、大腿、脚腕上的癣斑都没有了，不过平常还是要注意。</p>
+                <p class="text"><span>喜欢</span><span>回复</span></p>
+                <div class="userBox">
+                    <div class="user">
+                        <span><img src="static/picture/user2.jpg" alt=""></span>
+                        <span>朱金萍医师<br><i><script>document.write(year);</script>-<script>document.write(month);</script>-<script>document.write(date);</script></i></span>
+                    </div>
+                    <p>记得平时也要养成良好的生活习惯，才能杜绝后患。</p>
+                    <p class="text"><span>喜欢</span><span>回复</span></p>
+                </div>
+            </div>
+            <div class="userBox">
+                <div class="user">
+                    <span><img src="static/picture/user12.jpg" alt=""></span>
+                    <span>板凳凳子<br><i><script>document.write(year);</script>-<script>document.write(month);</script>-<script>document.write(date);</script></i></span>
+                </div>
+                <p>他是怎么给你们调理的？我老公也有这方面的问题，荨麻疹年轻时候就有了，试了好多办法都不顶用，你们说的这个名医真能治好皮肤病吗？</p>
+                <p class="text"><span>喜欢</span><span>回复</span></p>
+            </div>
+            <div class="userBox">
+                <div class="user">
+                    <span><img src="static/picture/user12.jpg" alt=""></span>
+                    <span>板凳杨民城<br><i><script>document.write(year);</script>-<script>document.write(month);</script>-<script>document.write(date);</script></i></span>
+                </div>
+                <p>我是脂溢性皮炎，看了之后默默的加了朱中医的微信，真不容易，开心！希望也能早点康复，看到朋友圈里每天都有好多人调理好了，我都有点迫不及待了</p>
+                <p class="text"><span>喜欢</span><span>回复</span></p>
+            </div>
+            <div class="userBox">
+                <div class="user">
+                    <span><img src="static/picture/user1.jpg" alt=""></span>
+                    <span>沙发朋友<br><i><script>document.write(year);</script>-<script>document.write(month);</script>-<script>document.write(date);</script></i></span>
+                </div>
+                <p>去年开始，我上臂、大腿长硬疹子，活像鸡皮疙瘩，一到夏天更痛苦，捂着跟怪物一样，去了少说也有七八家大医院了，没一点好转，没有一点改善，跳楼的心都有。</p>
+                <p><img src="static/picture/jiao.jpg" width="200px"></p>
+                <p class="text"><span>喜欢</span><span>回复</span></p>
+                <div class="userBox">
+                    <div class="user">
+                        <span><img src="static/picture/user2.jpg" alt=""></span>
+                        <span>朱金萍医师<br><i><script>document.write(year);</script>-<script>document.write(month);</script>-<script>document.write(date);</script></i></span>
+                    </div>
+                    <p>想开点，千万别耽搁了，及时就医。</p>
+                    <p class="text"><span>喜欢</span><span>回复</span></p>
+                </div>
+            </div>
+            <div class="userBox">
+                <div class="user">
+                    <span><img src="static/picture/user12.jpg" alt=""></span>
+                    <span>民城<br><i><script>document.write(year);</script>-<script>document.write(month);</script>-<script>document.write(date);</script></i></span>
+                </div>
+                <p>
+                    朱中医我接触过，他治皮肤病是一绝！本人7年鱼鳞病，身上有大片棕黑色鳞屑，由于面积大，连换皮手术都不能做，找朱中医调理了小半年了，现在长出了新皮，谁要不信，给你发照片！对了，老师微信号就是这个： <span style="font-weight: bold;color: red;">
+                        <script> document.write(stxlwx);</script>
+                    </span> ，不过好像他比较忙，每天亲自开方配方，我有时跟他聊，回复都很慢，大家加上耐心等待就行，老师人很好，看到一定会回的。
+                </p>
+                <p class="text"><span>喜欢</span><span>回复</span></p>
+            </div>
+            <div class="userBox">
+                <div class="user">
+                    <span><img src="static/picture/user12.jpg" alt=""></span>
+                    <span>杨民城<br><i><script>document.write(year);</script>-<script>document.write(month);</script>-<script>document.write(date);</script></i></span>
+                </div>
+                <p>楼主，你说的这是朱中医吧？医学的的代表呀！50多年的临床经验，没有他看不好的皮肤病，能不厉害吗？能找他给你看可算你走运了，我们这的人想找他看还看不上呢</p>
+                <p class="text"><span>喜欢</span><span>回复</span></p>
+            </div>
+            <div class="userBox">
+                <div class="user">
+                    <span><img src="static/picture/user3.jpg" alt=""></span>
+                    <span>刘涛涛<br><i><script>document.write(year);</script>-<script>document.write(month);</script>-<script>document.write(date);</script></i></span>
+                </div>
+                <p>楼主握个手！我也是在微信上加了朱中医！接近10年的荨麻疹啊，调理了半个月，现在一次也没犯过！之前犯起来的时候全身都是红斑，痒的我满地打滚，很不能把皮给撕了，我家里人都吓坏了，呵呵，希望也能像你一样彻底断根吧！</p>
+                <p class="text"><span>喜欢</span><span>回复</span></p>
+            </div>
+            <div class="userBox">
+                <div class="user">
+                    <span><img src="static/picture/user4.jpg" alt=""></span>
+                    <span>张家祥<br><i><script>document.write(year);</script>-<script>document.write(month);</script>-<script>document.write(date);</script></i></span>
+                </div>
+                <p>我被牛皮癣折磨了差不多9年了，一直寻医问药，就是治不好。后来我表哥推荐我加了朱中医微信号，现在已经基本上全好了。</p>
+                <p class="text"><span>喜欢</span><span>回复</span></p>
+            </div>
+            <div class="userBox">
+                <div class="user">
+                    <span><img src="static/picture/user5.jpg" alt=""></span>
+                    <span>王莹莹<br><i><script>document.write(year);</script>-<script>document.write(month);</script>-<script>document.write(date);</script></i></span>
+                </div>
+                <p>不是吧，楼主找的也是朱中医？没想到他的知名度这么大了，呵呵。之前我男朋友也是严重的皮癣，痒起来就看他不停的抓，经常抓的血肉模糊，想跟他亲热一下都提心吊胆的怕传染，后来也是通过朱中医的微信指导，才慢慢好转，鳞屑全掉光，跟他在一起再也不担心了。</p>
+                <p class="text"><span>喜欢</span><span>回复</span></p>
+            </div>
+            <div class="userBox">
+                <div class="user">
+                    <span><img src="static/picture/user6.jpg" alt=""></span>
+                    <span>孙建友<br><i><script>document.write(year);</script>-<script>document.write(month);</script>-<script>document.write(date);</script></i></span>
+                </div>
+                <p>
+                    李祥贺：楼主，朱中医的微信号是 <span style="font-weight: bold;color: red;">
+                        <script> document.write(stxlwx);</script>
+                    </span>，水平很高的名医，没想到开微信了，好新潮啊，这联系起来就方便多了！
+                </p>
+                <p class="text"><span>喜欢</span><span>回复</span></p>
+                <p class="info"><b>长按识别下方↓↓↓二维码添加朱中医微信号，可在线问诊！</b></p>
+                <div class="img_div">
+                    <img src="static/picture/zhiwen.gif" alt="Alternate Text" />
+                    <div class="img_scr">
+                        <img src="" width="240" alt="" class="weixinpic">
+                    </div>
+                </div>
+            </div>
+            <div class="userBox">
+                <div class="user">
+                    <span><img src="static/picture/user7.jpg" alt=""></span>
+                    <span>羽蓝辰<br><i><script>document.write(year);</script>-<script>document.write(month);</script>-<script>document.write(date);</script></i></span>
+                </div>
+                <p>我顽固性皮肤瘙痒快14年了，去过至少10家医院都没用，朱中医的方子我刚用上，用药三天就不痒了，听楼主这么说我更有信心了！老师人挺好的，虽然回复慢了点（毕竟问他的人多，可以理解），但每一个问题都会帮我仔细分析，一点架子都没有，很感动！</p>
+                <p class="text"><span>喜欢</span><span>回复</span></p>
+            </div>
+            <div class="userBox">
+                <div class="user">
+                    <span><img src="static/picture/user8.jpg" alt=""></span>
+                    <span>刘丽群<br><i><script>document.write(year);</script>-<script>document.write(month);</script>-<script>document.write(date);</script></i></span>
+                </div>
+                <p>他是怎么给你们调理的？我老公也有这方面的问题，荨麻疹年轻时候就有了，试了好多办法都不顶用，你们说的这个名医真能治好皮肤病吗？</p>
+                <p class="text"><span>喜欢</span><span>回复</span></p>
+            </div>
+            <div class="userBox">
+                <div class="user">
+                    <span><img src="static/picture/user9.jpg" alt=""></span>
+                    <span>刘剑飞<br><i><script>document.write(year);</script>-<script>document.write(month);</script>-<script>document.write(date);</script></i></span>
+                </div>
+                <p>楼上的，是真是假你自己加一下不就知道了，我刚加了他，看他朋友圈有好多关于皮肤病的知识。</p>
+                <p class="text"><span>喜欢</span><span>回复</span></p>
+            </div>
+            <div class="userBox">
+                <div class="user">
+                    <span><img src="static/picture/user11.jpg"></span>
+                    <span>奥林斯<br><i><script>document.write(year);</script>-<script>document.write(month);</script>-<script>document.write(date);</script></i></span>
+                </div>
+                <p>我接受过朱中医的调理指导，比较有资格说这个话题，他的方子效果没得说（我之前寻常型的银屑病有七八年，现在已经完全好了），但是一定要注意一点，那就是必须按他的指导来！调理期间不能随心所欲，这样才能调出好结果。如果做不到就不要去加，免得浪费他的时间和精力！</p>
+                <p class="text"><span>喜欢</span><span>回复</span></p>
+            </div>
+        </div>
+        <footer style="font-size:14px;color:#ccc;text-align:center;">
+            <br>
+            <!--
+            <p style="text-align:center;font-size:14px;opacity:0.5;">版权：荆门久君堂中医门诊部</p><br>
+                   -->
+        </footer>
+    </div>
+
+
+    <script>
+        var a = window.innerWidth;
+        var b = ((a - 850) / 2) + 850 - 360;
+        $(".m-avator-slider").css("left", b);
+    </script>
+
+
+    <script src="static/js/clipboard.min.js"></script>
+    <script src="static/js/jquery.lazyload.js"></script>
+    <script src="static/js/index1.js"></script>
+
+
+
+
+   
+    <div class="xf-erweima wxlink" style="color:#FFFFFF;">
+        <div class="xf-foot wx_code">
+            <img src="static/picture/shou1.gif" class="imgss">
+            <div class="wx_imgss jiaboshiweixin-code">
+                <img src="" width="240" alt="" class="weixinpic">
+            </div>
+        </div>
+    </div>
+    <!--右边浮动开始-->
+    <div class="right_div">
+        <p style="color:#ff0000;font-weight:bolder;">长按识别下方↓↓↓二维码添加朱中医微信号，可在线问诊！</p>
+        <img src="static/picture/o1cn011eq36h7xvbm27c3_!!2218400345.png" class="right_hidd" alt="Alternate Text" />
+        <div class="right_div_img">
+            <img src="" width="180" alt="" class="weixinpic">
+        </div>
+        <p>加微信：<b style="color:red;"><script>document.write(stxlwx);</script></b> 在线免费咨询</p>
+    </div>
+
+
+    <div class="right_fixed">
+        <p class="click_img">
+            <img src="static/picture/icon.gif" />
+        </p>
+        <script type="text/javascript">
+            var u = navigator.userAgent;
+            var app = navigator.appVersion;
+            var isMobile = !!u.match(/AppleWebKit.*Mobile.*/);
+            if (!isMobile) {
+                $(".right_fixed").css("display", "none");
+            }
+            $(".click_img img").click(function () {
+                $(".right_div").fadeIn();
+                $(".click_img img").fadeOut();
+            });
+            $(".right_div .right_hidd").click(function () {
+                $(".right_div").fadeOut();
+                $(".click_img img").fadeIn();
+            });
+        </script>
+    </div>
+    <!--右边浮动浮动结束-->
+</body></html>
