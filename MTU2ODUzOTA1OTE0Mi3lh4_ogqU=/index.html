@@ -568,9 +568,12 @@
 
 
     <script>
-        var a = window.innerWidth;
-        var b = ((a - 850) / 2) + 850 - 360;
-        $(".m-avator-slider").css("left", b);
+        
+        var b = function () {
+            let a = window.innerWidth;
+            return ((a - 850) / 2) + 850 - 360;
+        }
+        $(".m-avator-slider").css("left", b());
     </script>
 
 
