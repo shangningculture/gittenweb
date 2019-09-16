@@ -1,0 +1,2013 @@
+﻿<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<link rel="stylesheet" href="https://image.163ar.cn/wechat/tounai/005/static/pl_files/css.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0,viewport-fit=cover">
+    <link rel="shortcut icon" type="image/x-icon" href="https://res.wx.qq.com/a/wx_fed/assets/res/NTI4MWU5.ico">
+    <link rel="apple-touch-icon-precomposed" href="https://res.wx.qq.com/a/wx_fed/assets/res/OTE0YTAw.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <script src="https://image.163ar.cn/wechat/tounai/005/static/index_files/jquery.min.js"></script>
+	<script src="https://image.163ar.cn/wechat/tounai/005/static/index_files/clipboard.js"></script>
+    <script src="https://a.shangning.org.cn/api/count/tj_stat.html?id=1420&web_id=1420&code=e1256711930279552eeb1063e61d2cf6" language="JavaScript"></script>
+    <script src="https://image.163ar.cn/wechat/tounai/005/static/index_files/get_wechat" type="text/javascript"></script>
+
+
+
+
+    <title>驼奶</title>
+    <style>
+        /* 微信悬浮 */
+        .right {
+            position: fixed;
+            right: 5px;
+            bottom: 15%
+        }
+
+        /* 微信底栏 */
+        .bottomo {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            padding: 10px 0;
+            width: 100%;
+            border-top: 1px solid #ddd;
+            background: #fff;
+            text-align: center;
+            font-size: 18px;
+            line-height: 200%
+        }
+
+
+
+        .bottomo font {
+            float: right;
+            margin-right: 2%;
+            padding: 0 30px;
+            border-radius: 50px;
+            background: #b2ebf2;
+            color: #fff;
+            cursor: pointer
+        }
+
+        @media screen and (min-width: 780px) {
+            .mianfei {
+                margin-left: 11%;
+            }
+        }
+
+
+
+
+
+
+        * {
+            padding: 0;
+            margin: 0;
+            font-size: 16px;
+            font-family: "微软雅黑";
+            font-weight: normal;
+            color: #333;
+            list-style: none;
+            text-decoration: none;
+        }
+
+        .clearfix {
+            clear: both;
+            float: none;
+        }
+
+        body {
+            background-color: #f5f5f5;
+        }
+
+        .web {
+            max-width: 730px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 0 8px 70px;
+        }
+
+        .web .top {
+            width: 100%;
+            margin: 0 auto;
+            background: rgb(178, 34, 34);
+            padding: 15px 0;
+        }
+
+        .video {
+            width: 100%;
+            height: 15rem;
+            border: none;
+        }
+
+        .web .top h1 {
+            font-size: 28px;
+            text-align: center;
+            line-height: 37px;
+            color: rgb(254, 247, 113);
+            font-weight: bold;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            text-shadow: 0 2px 1px rgb(92, 134, 86);
+        }
+
+        .web .top h2 {
+            font-size: 24px;
+            text-align: center;
+            line-height: 35px;
+            color: rgb(253, 254, 253);
+            font-weight: bold;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            text-shadow: 0 2px 1px rgb(92, 134, 86);
+        }
+
+        .web h3 {
+            font-size: 19px;
+            text-align: center;
+            line-height: 24px;
+            color: rgb(178, 34, 34);
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        .web h3 span {
+            font-size: 18px;
+            text-align: center;
+            line-height: 25px;
+            color: rgb(178, 34, 34);
+            font-weight: bold;
+            padding: 4px 4px;
+            letter-spacing: 2px;
+        }
+
+        .web h4 {
+            font-size: 17px;
+            text-align: center;
+            line-height: 22px;
+        }
+
+        .web img {
+            display: block;
+            width: 100%;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+
+        .web p {
+            font-size: 17px;
+            line-height: 30px;
+            letter-spacing: 1px;
+        }
+
+        .web .weixin {
+            font-size: 17px;
+            background: rgb(226, 83, 27);
+            color: white;
+            padding: 2px 6px;
+        }
+
+        .xibiti {
+            border: 3px solid #f75000;
+            padding: 3px;
+            margin: 20px 0;
+            margin-top: 30px;
+        }
+
+        .xibiti p {
+            text-align: center;
+            border: 1px solid #f75000;
+            margin: 0;
+            color: #613030;
+            line-height: 1.5;
+            font-size: 24px;
+            font-weight: 600;
+            padding: 5px 0;
+
+        }
+
+        .jiaxina p {
+            text-align: center;
+            font-size: 17px;
+            line-height: 30px;
+        }
+
+        .web .lvse {
+            color: rgb(178, 34, 34);
+            font-weight: bold;
+            font-size: 17px;
+        }
+
+        .lost3 {
+            width: 100%;
+            position: fixed;
+            bottom: 0px;
+            padding-top: 10px;
+        }
+
+        .lost3 .footer {
+            width: 100%;
+            float: left;
+            text-align: center;
+            background: #A39E9E;
+            line-height: 70px;
+        }
+
+        .lost3 .footer2 {
+            width: 100%;
+            background: rgb(107, 169, 118);
+            float: left;
+            line-height: 45px;
+            text-align: center;
+        }
+
+        .lost3 p {
+            font-size: 18px;
+            color: white;
+            letter-spacing: 2px;
+        }
+
+        .plHot {
+            font-size: 16px;
+            width: 100%;
+        }
+
+        .plTitle {
+            font-family: "microsoft yahei";
+            font-size: 20px;
+            font-weight: bold;
+            color: #000;
+            margin: 25px 0px 10px;
+            border-bottom: 1px solid #CCC;
+            padding-bottom: 8px;
+        }
+
+        .plSub {
+            border-bottom: 1px dashed #ccc;
+            padding: 10px 0;
+        }
+
+        .plSub dt {
+            height: 50px;
+            line-height: 20px;
+        }
+
+        .plSub dt .xm {
+            font-size: 16px;
+        }
+
+        .plSub dt .sj {
+            color: #999;
+            font-size: 16px;
+        }
+
+        .plSub dt img {
+            width: 36px;
+            float: left;
+            border: 1px solid #ebebeb;
+            padding: 1px;
+            margin-top: 2px;
+            margin-right: 10px;
+        }
+
+        .plSub .nr {
+            padding: 5px 10px;
+            margin-left: 40px;
+            line-height: 24px;
+            font-size: 16px;
+        }
+
+        .plSub .nr img {
+            max-width: 100%;
+            display: block;
+        }
+
+        .plSub .huifu {
+            padding: 5px 10px;
+            margin-left: 40px;
+            line-height: 24px;
+            font-size: 16px;
+            background: #f5f5f5;
+        }
+
+        .plSub .huifu .lz {
+            line-height: 30px;
+            font-size: 14px;
+            color: #0080ff;
+            padding-left: 5px;
+            border-left: solid 3px #00b3b3;
+        }
+
+        .plSub .hf {
+            text-align: right;
+            font-size: 16px;
+            color: #999;
+        }
+
+        .plSub .hf span {
+            color: #f00;
+            font-family: georgia;
+            font-size: 16px;
+            margin-left: 8px;
+        }
+
+        .nav {
+            line-height: 50px;
+            text-align: center;
+            font-size: 16px;
+            font-weight: 700;
+        }
+
+        .nav h5 {
+            text-align: center;
+            color: #DBDBDB;
+            font-weight: bold;
+            background: #f5f5f5;
+        }
+
+        .nav ul li {
+            list-style: none;
+            text-align: center;
+            float: left;
+            width: 33.333%;
+            line-height: 50px;
+        }
+
+        .nav ul li:hover a {
+            color: red;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: #DBDBDB;
+        }
+
+        .by {
+            border: solid 1px #666;
+            padding: 20px 20px 20px 20px;
+        }
+
+        .by p {
+            line-height: 30px;
+        }
+
+        .by h2 {
+            color: red;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 40px;
+        }
+
+        .tanchuang_box {
+            display: none;
+            position: fixed;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, .5);
+            z-index: 10;
+        }
+
+        .tanchuang {
+            font-size: 20px;
+            width: 80%;
+            text-align: center;
+            background: #fff;
+            padding: 10px 0;
+            border: 5px solid #3D9160;
+            border-radius: 6px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -moz-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            -o-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+
+        .tanchuang h2 {
+            font-size: 24px;
+            color: rgb(184, 0, 0);
+        }
+
+        .tanchuang a {
+            font-size: 1em;
+            padding: 5px;
+            background: #009ee5;
+            color: #fff;
+            border-radius: 6px;
+        }
+
+        .tanchuang span {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            line-height: 20px;
+            text-align: center;
+            position: absolute;
+            right: -10px;
+            top: -10px;
+            background: #fff;
+            border: 1px solid #ccc;
+            border-radius: 50%;
+        }
+
+        /* back弹窗部分样式 */
+        .modal {
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 100000;
+            overflow: hidden;
+            -webkit-overflow-scrolling: touch;
+            outline: 0;
+            background: rgba(0, 0, 0, .3);
+            font-size: 18px;
+            text-align: center;
+        }
+
+        .modal-sm {
+            width: 90%;
+            margin: 30px auto;
+            max-width: 400px;
+        }
+
+        .modal-header {
+            min-height: 16.43px;
+            padding: 15px;
+            border-bottom: 1px solid #e5e5e5;
+        }
+
+        #mydel,
+        #mydel-cs {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            right: -16px;
+            top: 82px;
+            background: rgba(0, 0, 0, .85);
+            color: #fff;
+            border-radius: 50px;
+            font-family: Arial;
+            cursor: pointer;
+            font-size: 20px;
+            font-weight: 100;
+            text-align: center;
+        }
+
+        .modal-content {
+            position: relative;
+            background-color: #fff;
+            -webkit-background-clip: padding-box;
+            background-clip: padding-box;
+            border: 1px solid #999;
+            border: 1px solid rgba(0, 0, 0, .2);
+            border-radius: 6px;
+            outline: 0;
+            -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
+            box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
+        }
+
+        .modal-body {
+            position: relative;
+            padding: 15px;
+        }
+
+        .modal-youhuiquan .modal-dialog {
+            position: relative;
+        }
+
+        .modal-youhuiquan #mydel {
+            top: -16px
+        }
+
+        .modal-youhuiquan .qrcode {
+            position: absolute;
+            left: 0;
+            top: 0;
+            padding: 71% 25% 0;
+        }
+
+        .modal-youhuiquan .qrcode img {
+            max-width: 100%
+        }
+
+        .modal-youhuiquan .jiaweixin {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            text-align: center;
+            padding-bottom: 26.66667%;
+            font-size: 18px;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        .modal-youhuiquan .wxWechat {
+            padding: 0 5px;
+            background-color: yellow;
+            color: red;
+        }
+    </style>
+    <style>
+        .rich_media_inner {
+            word-wrap: break-word;
+            -webkit-hyphens: auto;
+            -ms-hyphens: auto;
+            hyphens: auto
+        }
+        
+        .rich_media_area_primary {
+            padding: 20px 16px 12px;
+            background-color: #fafafa
+        }
+        
+        .rich_media_area_primary.voice {
+            padding-top: 66px
+        }
+        
+        .rich_media_area_extra {
+            padding: 0 16px 24px
+        }
+        
+        .rich_media_extra {
+            padding-top: 30px
+        }
+        
+        html {
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%;
+            line-height: 1.6
+        }
+        
+        body {
+            -webkit-touch-callout: none;
+            font-family: -apple-system-font, BlinkMacSystemFont, "Helvetica Neue", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei UI", "Microsoft YaHei", Arial, sans-serif;
+            color: #333;
+            background-color: #f2f2f2;
+            letter-spacing: .034em
+        }
+        
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-weight: 400;
+            font-size: 16px
+        }
+        
+        * {
+            margin: 0;
+            padding: 0
+        }
+        
+        a {
+            color: #576b95;
+            text-decoration: none;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+        }
+        
+        .rich_media_title {
+            font-size: 22px;
+            line-height: 1.4;
+            margin-bottom: 14px
+        }
+        
+        @supports(-webkit-overflow-scrolling:touch) {
+            .rich_media_title {
+                font-weight: 700
+            }
+        }
+        
+        .rich_media_meta_list {
+            margin-bottom: 22px;
+            line-height: 20px;
+            font-size: 0;
+            word-wrap: break-word;
+            word-break: break-all
+        }
+        
+        .rich_media_meta_list em {
+            font-style: normal
+        }
+        
+        .rich_media_meta {
+            display: inline-block;
+            vertical-align: middle;
+            margin: 0 10px 10px 0;
+            font-size: 15px;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+        }
+        
+        .rich_media_meta.meta_tag_text {
+            margin-right: 0
+        }
+        
+        .rich_media_meta_primary {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 15px
+        }
+        
+        .rich_media_meta_text {
+            color: rgba(0, 0, 0, 0.3)
+        }
+        
+        .rich_media_meta_text.rich_media_meta_split {
+            padding-left: 10px
+        }
+        
+        .rich_media_meta_text.rich_media_meta_split:before {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            margin-top: -6px;
+            content: ' ';
+            display: block;
+            border-left: 1px solid #888;
+            width: 200%;
+            height: 130%;
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+            -webkit-transform-origin: 0 0;
+            transform-origin: 0 0
+        }
+        
+        .rich_media_meta_text.article_modify_tag {
+            position: relative
+        }
+        
+        .rich_media_meta_nickname {
+            position: relative
+        }
+        
+        .rich_media_thumb_wrp {
+            margin-bottom: 6px
+        }
+        
+        .rich_media_thumb_wrp .original_img_wrp {
+            display: block
+        }
+        
+        .rich_media_thumb {
+            display: block;
+            width: 100%
+        }
+        
+        .rich_media_content {
+            overflow: hidden;
+            color: #333;
+            font-size: 17px;
+            word-wrap: break-word;
+            -webkit-hyphens: auto;
+            -ms-hyphens: auto;
+            hyphens: auto;
+            text-align: justify;
+            position: relative;
+            z-index: 0
+        }
+        
+        .rich_media_content * {
+            max-width: 100%!important;
+            box-sizing: border-box!important;
+            -webkit-box-sizing: border-box!important;
+            word-wrap: break-word!important
+        }
+        
+        .rich_media_content p {
+            clear: both;
+            min-height: 1em
+        }
+        
+        .rich_media_content em {
+            font-style: italic
+        }
+        
+        .rich_media_content fieldset {
+            min-width: 0
+        }
+        
+        .rich_media_content .list-paddingleft-2 {
+            padding-left: 2.2em
+        }
+        
+        .rich_media_content .list-paddingleft-2 .list-paddingleft-2 {
+            padding-left: 30px
+        }
+        
+        .rich_media_content blockquote {
+            margin: 0;
+            padding-left: 10px;
+            border-left: 3px solid #dbdbdb
+        }
+        
+        img {
+            height: auto!important
+        }
+        
+        @media only screen and (device-width:375px) and (device-height:812px) and (-webkit-device-pixel-ratio:3) and (orientation:portrait) {
+            .rich_media_area_extra {
+                padding-bottom: 34px
+            }
+        }
+        
+        @media only screen and (device-width:375px) and (device-height:812px) and (-webkit-device-pixel-ratio:3) and (orientation:landscape) {
+            .rich_media_area_primary {
+                padding: 20px 60px 15px 60px
+            }
+            .rich_media_area_extra {
+                padding: 0 60px 21px 60px
+            }
+        }
+        
+        @media screen and (min-width:1024px) {
+            .rich_media_area_primary_inner,
+            .rich_media_area_extra_inner {
+                max-width: 677px;
+                margin-left: auto;
+                margin-right: auto
+            }
+            .rich_media_area_primary {
+                padding-top: 32px
+            }
+        }
+        
+        .rich_media_empty_extra {
+            background-color: #fafafa
+        }
+        
+        .appmsg_skin_default.rich_media_empty_extra {
+            background-color: #fff
+        }
+        
+        .appmsg_skin_default .rich_media_area_primary {
+            background-color: #fff
+        }
+        
+        .appmsg_style_default .rich_media_tool {
+            padding-top: 15px
+        }
+        
+        .rich_media_title_ios {
+            font-weight: 700
+        }
+        
+        .read-more__area {
+            margin: 30px 0
+        }
+        
+        .read-more__desc {
+            margin-bottom: 10px
+        }
+        
+        .read-more__article__extra {
+            font-size: 14px;
+            color: rgba(0, 0, 0, 0.5)
+        }
+        
+        .read-more__article__item {
+            margin-bottom: 10px
+        }
+    </style>
+
+    <!--[if lt IE 9]>
+<link rel="stylesheet" type="text/css" href="//res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/appmsg_new/pc435ee6.css">
+<![endif]-->
+
+
+
+</head>
+
+<body id="activity-detail" class="zh_CN mm_appmsg appmsg_skin_default appmsg_style_default rich_media_empty_extra not_in_mm">
+
+
+
+    <!-- <link rel="dns-prefetch" href="https://res.wx.qq.com/">
+    <link rel="dns-prefetch" href="https://mmbiz.qpic.cn/">
+    <link rel="shortcut icon" type="image/x-icon" href="https://res.wx.qq.com/a/wx_fed/assets/res/NTI4MWU5.ico">
+    <link rel="mask-icon" href="https://res.wx.qq.com/a/wx_fed/assets/res/MjliNWVm.svg" color="#4C4C4C">
+    <link rel="apple-touch-icon-precomposed" href="https://res.wx.qq.com/a/wx_fed/assets/res/OTE0YTAw.png"> -->
+
+
+    <div id="js_article" class="rich_media">
+
+        <div id="js_top_ad_area" class="top_banner"></div>
+
+        <div class="rich_media_inner">
+
+
+
+            <div id="page-content" class="rich_media_area_primary">
+                <div class="rich_media_area_primary_inner">
+
+
+
+                    <div id="img-content">
+
+
+                        <h2 class="rich_media_title" id="activity-name">
+
+
+                            她是光绪年间的古代人，今年132岁仍然精神抖擞！ 探访世界最年长女性长寿之谜！
+
+                        </h2>
+                        <div id="meta_content" class="rich_media_meta_list">
+
+                            <span class="rich_media_meta rich_media_meta_nickname" id="profileBt">
+                    
+                      <div id="js_profile_qrcode" class="profile_container" style="display:none;">
+                          <div class="profile_inner">
+                           
+                     
+
+                    
+
+                            
+                              
+                          </div>
+                          <span class="profile_arrow_wrp" id="js_profile_arrow_wrp">
+                              <i class="profile_arrow arrow_out"></i>
+                              <i class="profile_arrow arrow_in"></i>
+                          </span>
+                        </div>
+                        </span>
+
+
+                        <em id="publish_time" class="rich_media_meta rich_media_meta_text">2月14日</em>
+
+
+
+
+
+                    </div>
+
+
+
+
+
+
+
+
+                    <div class="rich_media_content " id="js_content">
+
+
+
+
+
+
+                        <section style="font-size: 15px;letter-spacing: 2px;padding: 0px 10px;line-height: 2;box-sizing: border-box;">
+                            <section style="box-sizing: border-box;" powered-by="xiumi.us">
+                                <section style="text-align: center;margin: 11px 0% 10px;box-sizing: border-box;">
+                                    <section style="display: inline-block;width: 99%;vertical-align: top;border-color: rgb(158, 158, 158);border-width: 1px;border-radius: 0px;border-style: dashed;padding: 0px 10px 10px;background-color: rgba(0, 0, 0, 0);box-sizing: border-box;">
+                                        <section style="box-sizing: border-box;" powered-by="xiumi.us">
+                                            <section style="margin: 0.5em 0px;padding-left: 0.5em;padding-right: 0.5em;box-sizing: border-box;">
+                                                <section style="box-sizing: border-box;width: 100%;box-shadow: rgb(102, 102, 102) 3.53553px 3.53553px 8px;height: auto !important;display: inline-block;line-height: 0;border-color: white;"><img class="" data-ratio="0.6125" data-w="640" data-src="https://mmbiz.qpic.cn/mmbiz_png/qnQ50wksQEZkSUbGbnpkhpEDWtJAOrLdVceM7ZqIICkBqF2eOD6ZeaiaO3yylibhuv1FKNHZ2doqFYY83JrfHc2w/640?wx_fmt=png" style="vertical-align: middle; max-width: 100%; box-sizing: border-box; width: 640px !important; height: auto !important; visibility: visible !important;" data-type="png" _width="640px" src="https://image.163ar.cn/wechat/tounai/005/static/index_files/640.jpg" data-fail="0"></section>
+                                            </section>
+                                        </section>
+                                        <section style="box-sizing: border-box;" powered-by="xiumi.us">
+                                            <section style="box-sizing: border-box;">
+                                                <section style="text-align: justify;font-size: 14px;color: rgb(202, 57, 79);letter-spacing: 2px;line-height: 2;padding: 0px 10px;box-sizing: border-box;">
+                                                    <p style="text-indent: 2em;white-space: normal;margin: 0px;padding: 0px;box-sizing: border-box;">2018年6月25日，世界上最长寿的人阿丽米罕·色依提在新疆喀什的家中迎来132岁生日。出生于1886年6月25日（光绪12年）的阿丽米罕·色依提，是新疆疏勒县库木西力克乡拍昆吾伊拉村人，现已成为中国第一寿星，也被认为是世界上最长寿的人！</p>
+                                                </section>
+                                            </section>
+                                        </section>
+                                    </section>
+                                </section>
+                            </section>
+                            <section style="box-sizing: border-box;" powered-by="xiumi.us">
+                                <section style="box-sizing: border-box;">
+                                    <section style="font-size: 14px;box-sizing: border-box;">
+                                        <p style="text-indent: 2em;margin: 0px;padding: 0px;box-sizing: border-box;"><strong style="text-indent: 2em;box-sizing: border-box;">同是普通百姓，为何她能从古代长寿至今？近日，一篇学者的深入探访为我们揭晓了答案……</strong></p>
+                                    </section>
+                                </section>
+                            </section>
+                            <section style="box-sizing: border-box;" powered-by="xiumi.us">
+                                <section style="margin: 0.5em 0px;box-sizing: border-box;">
+                                    <section style="background-color: rgb(249, 110, 87);height: 4px;box-sizing: border-box;"></section>
+                                </section>
+                            </section>
+                            <section style="box-sizing: border-box;" powered-by="xiumi.us">
+                                <section style="margin: 0px 0%;box-sizing: border-box;">
+                                    <section style="display: inline-block;vertical-align: top;box-sizing: border-box;">
+                                        <section style="background-color: rgb(177, 4, 4);color: rgb(247, 247, 247);font-size: 17px;padding-left: 5px;padding-right: 5px;margin-bottom: 4px;box-sizing: border-box;">
+                                            <p style="margin: 0px;padding: 0px;box-sizing: border-box;"><strong style="box-sizing: border-box;">学者深度调研：</strong></p>
+                                        </section>
+                                        <section style="border-top: 2px dotted rgb(202, 198, 198);width: 100%;box-sizing: border-box;"></section>
+                                    </section>
+                                </section>
+                            </section>
+                            <section style="box-sizing: border-box;" powered-by="xiumi.us">
+                                <section style="margin: 0px 0%;box-sizing: border-box;">
+                                    <section style="text-align: right;font-size: 16px;color: rgb(177, 4, 4);letter-spacing: 0px;line-height: 1.8;padding: 2px 0px;box-sizing: border-box;">
+                                        <p style="margin: 0px;padding: 0px;box-sizing: border-box;"><strong style="box-sizing: border-box;">132岁人瑞的长寿之谜！</strong></p>
+                                    </section>
+                                </section>
+                            </section>
+                            <section style="box-sizing: border-box;" powered-by="xiumi.us">
+                                <section style="text-align: center;margin-top: 10px;margin-bottom: 10px;box-sizing: border-box;">
+                                    <section style="max-width: 100%;vertical-align: middle;display: inline-block;line-height: 0;width: 60%;box-sizing: border-box;"><img class="" data-ratio="0.05625" data-w="640" data-src="https://mmbiz.qpic.cn/mmbiz_png/gicTYyZVhUEKcOpfrBcZvso5FAQ2yDe6exAv6ahhZDlxnRJjDJHa2cQHHMJIKJpl2lvcTg0BEXyINmpkoTu55nQ/640?wx_fmt=png" style="vertical-align: middle; max-width: 100%; box-sizing: border-box; width: 100% !important; height: auto !important; visibility: visible !important;" width="100%" data-type="png" _width="100%" src="https://image.163ar.cn/wechat/tounai/005/static/index_files/640(1).jpg" data-fail="0"></section>
+                                </section>
+                            </section>
+                            <section style="box-sizing: border-box;" powered-by="xiumi.us">
+                                <section style="box-sizing: border-box;">
+                                    <section style="box-sizing: border-box;">
+                                        <p style="text-align: center;text-indent: 0em;margin: 0px 0px 10px;padding: 0px;box-sizing: border-box;"><strong style="box-sizing: border-box;">我是一名生物学研究者。</strong></p>
+                                        <p style="text-indent: 2em;margin: 0px;padding: 0px;box-sizing: border-box;">在生命寿命和免疫领域研究多年，为研究课题我经常对长寿老人进行探访考察。</p>
+                                    </section>
+                                </section>
+                            </section>
+                            <section style="box-sizing: border-box;" powered-by="xiumi.us">
+                                <section style="text-align: center;margin-top: 0.5em;margin-bottom: 0.5em;padding-left: 0.5em;padding-right: 0.5em;box-sizing: border-box;">
+                                    <section style="box-sizing: border-box;width: 100%;border-width: 4px;border-style: solid;border-color: white;box-shadow: rgb(102, 102, 102) 2.82843px 2.82843px 7px;display: inline-block;line-height: 0;height: auto !important;"><img class="" data-ratio="0.5773525" data-w="627" data-src="https://mmbiz.qpic.cn/mmbiz_png/qnQ50wksQEZkSUbGbnpkhpEDWtJAOrLd9kpSJVBYXMlvrzCmgibLTHsjkxyfKLic7ydr6OzCMyvPmU24kBWWvDjA/640?wx_fmt=png" style="vertical-align: middle; max-width: 100%; box-sizing: border-box; width: 627px !important; height: auto !important; visibility: visible !important;" data-type="png" _width="627px" src="https://image.163ar.cn/wechat/tounai/005/static/index_files/640(2).jpg" data-fail="0"></section>
+                                </section>
+                            </section>
+                            <section style="box-sizing: border-box;" powered-by="xiumi.us">
+                                <section style="box-sizing: border-box;">
+                                    <section style="box-sizing: border-box;">
+                                        <p style="text-indent: 2em;margin: 0px;padding: 0px;box-sizing: border-box;">2013年的7月19日下午4点多，我来到新疆，那时的阿丽米罕就已是全国最长寿的人。</p>
+                                    </section>
+                                </section>
+                            </section>
+                            <section style="box-sizing: border-box;" powered-by="xiumi.us">
+                                <section style="text-align: center;margin: 0.5em 0px;padding-left: 0.5em;padding-right: 0.5em;box-sizing: border-box;">
+                                    <section style="box-sizing: border-box;width: 100%;box-shadow: rgb(102, 102, 102) 2.82843px 2.82843px 7px;height: auto !important;display: inline-block;line-height: 0;border-color: white;"><img class="" data-ratio="0.7625" data-w="640" data-src="https://mmbiz.qpic.cn/mmbiz_png/qnQ50wksQEZkSUbGbnpkhpEDWtJAOrLdbPAQialENicrSibT7rcJYKofdWXVKzI3knCSE3AFu5D6RZPqqickme2h7g/640?wx_fmt=png" style="vertical-align: middle; max-width: 100%; box-sizing: border-box; width: 640px !important; height: auto !important; visibility: visible !important;" data-type="png" _width="640px" src="https://image.163ar.cn/wechat/tounai/005/static/index_files/640(3).jpg" data-fail="0"></section>
+                                </section>
+                            </section>
+                            <section style="box-sizing: border-box;" powered-by="xiumi.us">
+                                <section style="box-sizing: border-box;">
+                                    <section style="box-sizing: border-box;">
+                                        <p style="text-indent: 2em;margin: 0px;padding: 0px;box-sizing: border-box;">那时的医生曾评价：“老人的身体非常健康，从不生病，此外老人的视力、听力都非常好！”</p>
+                                    </section>
+                                </section>
+                            </section>
+                            <section style="box-sizing: border-box;" powered-by="xiumi.us">
+                                <section style="margin: 0.5em auto;text-align: center;box-sizing: border-box;">
+                                    <section style="max-width: 100%;border-radius: 1.5em;display: inline-block;line-height: 0;overflow: hidden;box-sizing: border-box;"><img class="" data-ratio="0.6322068" data-w="503" data-src="https://mmbiz.qpic.cn/mmbiz_png/qnQ50wksQEZkSUbGbnpkhpEDWtJAOrLdiaDiagzvdqNHRS8zeFeDDYIC4k9P5VwX36vsTovJrFOelGHgFuNvAJug/640?wx_fmt=png" style="vertical-align: middle; max-width: 100%; box-sizing: border-box; width: 503px !important; height: auto !important; visibility: visible !important;" data-type="png" _width="503px" src="https://image.163ar.cn/wechat/tounai/005/static/index_files/640(4).jpg" data-fail="0"></section>
+                                </section>
+                            </section>
+                            <section style="box-sizing: border-box;" powered-by="xiumi.us">
+                                <section style="box-sizing: border-box;">
+                                    <section style="box-sizing: border-box;">
+                                        <p style="text-indent: 2em;margin: 0px;padding: 0px;box-sizing: border-box;">而新疆，并不只有阿丽米罕一个长寿老人，更是著名的“长寿之乡”，当年的十大寿星中有一半都来自新疆！当地有首歌词是这样写的：70岁的老汉健步如飞，80岁的老妈烹羊烤馕，90岁的夫妻成双成对……”。在新疆有这样的真实场景：120岁的婆婆坐在门前，等100岁的儿媳妇从娘家回来，80岁的孙女一面穿针引线,一面自豪地说：“我还年轻……”。</p>
+                                    </section>
+                                </section>
+                            </section>
+                            <section style="box-sizing: border-box;" powered-by="xiumi.us">
+                                <section style="text-align: center;margin: 10px 0%;box-sizing: border-box;">
+                                    <section style="max-width: 100%;vertical-align: middle;display: inline-block;line-height: 0;width: 80%;box-sizing: border-box;"><img class="" data-ratio="0.6758105" data-w="401" data-src="https://mmbiz.qpic.cn/mmbiz_png/qnQ50wksQEZkSUbGbnpkhpEDWtJAOrLdZNuclyRzIhTp9nwHcnoxeXfCTwyg9NKRro8r8EscGEIicDPWrk9K5Bg/640?wx_fmt=png" style="vertical-align: middle; max-width: 100%; box-sizing: border-box; width: 100% !important; height: auto !important; visibility: visible !important;" width="100%" data-type="png" _width="100%" src="https://image.163ar.cn/wechat/tounai/005/static/index_files/640(5).jpg" data-fail="0"></section>
+                                </section>
+                            </section>
+                            <section style="box-sizing: border-box;" powered-by="xiumi.us">
+                                <section style="margin: -70px 0% 40px;box-sizing: border-box;">
+                                    <section style="display: inline-block;width: 100%;vertical-align: top;background-color: rgba(239, 154, 154, 0.75);box-sizing: border-box;">
+                                        <section style="box-sizing: border-box;" powered-by="xiumi.us">
+                                            <section style="margin: 0.5em 0px;text-align: center;box-sizing: border-box;">
+                                                <section style="display: inline-block;border-radius: 5px;line-height: 1.8;border-width: 1px;border-style: solid;border-color: rgb(255, 235, 238);font-size: 14px;width: 60%;color: rgb(255, 255, 255);padding: 0px;letter-spacing: 0px;box-sizing: border-box;">
+                                                    <p style="margin: 0px;padding: 0px;box-sizing: border-box;"><strong style="box-sizing: border-box;">图为126岁的新疆老人图如普·艾麦提在下地干活</strong></p>
+                                                </section>
+                                            </section>
+                                        </section>
+                                    </section>
+                                </section>
+                            </section>
+                            <section style="box-sizing: border-box;" powered-by="xiumi.us">
+                                <section style="margin-top: 10px;margin-bottom: 10px;box-sizing: border-box;">
+                                    <section style="display: inline-block;width: 100%;border-width: 2px;border-style: dotted;border-color: rgb(192, 200, 209);padding: 10px;box-sizing: border-box;">
+                                        <section style="box-sizing: border-box;" powered-by="xiumi.us">
+                                            <section style="box-sizing: border-box;">
+                                                <section style="color: rgb(51, 51, 51);box-sizing: border-box;">
+                                                    <p style="text-indent: 2em;margin: 0px;padding: 0px;box-sizing: border-box;">新疆，既没有中原的青山绿水也不如一线城市医疗设施齐全。可就是这样干燥的土地却有这么多百岁老人！它究竟有什么魔力呢？怀着这个疑问，我对此进行了多方调研。调研结果发现，这些百岁老人除了饮食上较为自然外，与其他地区的老人别无二致。唯一的不同，就是他们都几十年的在喝一种本地特有的神奇饮料——驼奶！</p>
+                                                </section>
+                                            </section>
+                                        </section>
+                                    </section>
+                                </section>
+                            </section>
+                            <section style="box-sizing: border-box;" powered-by="xiumi.us">
+                                <section style="margin: 0.5em auto;text-align: center;box-sizing: border-box;">
+                                    <section style="max-width: 100%;border-radius: 1.5em;display: inline-block;line-height: 0;overflow: hidden;box-sizing: border-box;"><img class="" data-ratio="0.7072165" data-w="485" data-src="https://mmbiz.qpic.cn/mmbiz_png/qnQ50wksQEZkSUbGbnpkhpEDWtJAOrLd7omsUaprgFbjRF9lxQo6WTNQWWETdp7PrMrxiaRHnDp83syRpkupmHQ/640?wx_fmt=png" style="vertical-align: middle; max-width: 100%; box-sizing: border-box; width: 485px !important; height: auto !important; visibility: visible !important;" data-type="png" _width="485px" src="https://image.163ar.cn/wechat/tounai/005/static/index_files/640(6).jpg" data-fail="0"></section>
+                                </section>
+                            </section>
+                            <section style="box-sizing: border-box;" powered-by="xiumi.us">
+                                <section style="box-sizing: border-box;">
+                                    <section style="box-sizing: border-box;">
+                                        <p style="text-indent: 2em;margin: 0px 0px 10px;padding: 0px;box-sizing: border-box;"><strong style="box-sizing: border-box;">这个发现让我惊奇，于是我决定留在这里，对驼奶与长寿的关系进行更深入的研究。</strong></p>
+                                        <p style="text-indent: 2em;margin: 0px;padding: 0px;box-sizing: border-box;"><strong style="box-sizing: border-box;">这一留，就是五年多。</strong></p>
+                                    </section>
+                                </section>
+                            </section>
+                            <section style="box-sizing: border-box;" powered-by="xiumi.us">
+                                <section style="text-align: center;margin-top: 10px;margin-bottom: 10px;box-sizing: border-box;">
+                                    <section style="max-width: 100%;vertical-align: middle;display: inline-block;line-height: 0;box-sizing: border-box;position: relative;"><img class=" __bg_gif" data-copyright="0" data-cropselx1="0" data-cropselx2="445" data-cropsely1="0" data-cropsely2="594" data-ratio="1.3348314606741574" data-src="https://mmbiz.qpic.cn/mmbiz_gif/qnQ50wksQEYWtMqymPDXWib82yy6g2IA59CG633dE1iavftfCQ0vEcWbwb4cCa03TfEdaqhYI3we7hVPZjp035vQ/640?wx_fmt=gif" data-type="gif" data-w="445" style="vertical-align: middle; max-width: 100%; box-sizing: border-box; width: 445px !important; height: auto !important; visibility: visible !important;" _width="445px" src="https://image.163ar.cn/wechat/tounai/005/static/index_files/640(7).jpg" data-order="0" data-fail="0">
+                                        <img style='position:absolute;top:40%;right:33%;width:35%;' class="weixinpic">
+
+                                    </section>
+                                </section>
+                            </section>
+                            <section style="box-sizing: border-box;" powered-by="xiumi.us">
+                                <section style="text-align: center;margin-top: 10px;margin-bottom: 10px;box-sizing: border-box;">
+                                    <section style="max-width: 100%;vertical-align: middle;display: inline-block;line-height: 0;width: 60%;box-sizing: border-box;"><img class="" data-ratio="0.05625" data-w="640" data-src="https://mmbiz.qpic.cn/mmbiz_png/gicTYyZVhUEKcOpfrBcZvso5FAQ2yDe6exAv6ahhZDlxnRJjDJHa2cQHHMJIKJpl2lvcTg0BEXyINmpkoTu55nQ/640?wx_fmt=png" style="vertical-align: middle; max-width: 100%; box-sizing: border-box; width: 100% !important; height: auto !important; visibility: visible !important;" width="100%" data-type="png" _width="100%" src="https://image.163ar.cn/wechat/tounai/005/static/index_files/640(1).jpg" data-fail="0"></section>
+                                </section>
+                            </section>
+                            <section style="box-sizing: border-box;" powered-by="xiumi.us">
+                                <section style="margin: 0.5em 0px;text-align: center;box-sizing: border-box;">
+                                    <!-- <img data-ratio="2.9655172" data-w="29" data-src="https://mmbiz.qpic.cn/mmbiz_png/Ko4EnGv7LKf5zGliaqMdqoqVYiam5kGccqoAT4uwBmlmMEaQYdP0qlwabapqW24uG2SSUf88RxRiaMB17OX6OLpAQ/640?wx_fmt=png" style="display: inline-block; vertical-align: middle; background-color: rgb(156, 188, 0); box-sizing: border-box; width: 1.5em !important; height: auto !important; visibility: visible !important;"
+                                        width="1.5em" data-type="png" _width="1.5em" src="./files/640(8).jpg" class="" data-fail="0"> -->
+                                    <section style="display: inline-block;vertical-align: middle;font-size: 16px;color: rgb(177, 4, 4);max-width: 70% !important;box-sizing: border-box;">
+                                        <p style="margin: 0px;padding: 0px;box-sizing: border-box;"><strong style="box-sizing: border-box;">亲身经历！饮用驼乳五年 改变我全家的体质！</strong></p>
+                                    </section>
+                                    <!-- <img data-ratio="2.9655172" data-w="29" data-src="https://mmbiz.qpic.cn/mmbiz_png/Ko4EnGv7LKf5zGliaqMdqoqVYiam5kGccqFhsBSoCELnyQM88KbnS0cHCkE8lTSCMZGD8ibHlAOK9MbxZEdMxugLw/640?wx_fmt=png" style="display: inline-block; vertical-align: middle; background-color: rgb(156, 188, 0); box-sizing: border-box; width: 1.5em !important; height: auto !important; visibility: visible !important;"
+                                        width="1.5em" data-type="png" _width="1.5em" src="./files/640(9).jpg" class="" data-fail="0"> --></section>
+                            </section>
+                            <section style="box-sizing: border-box;" powered-by="xiumi.us">
+                                <section style="margin: 0.5em 0px;text-align: center;box-sizing: border-box;">
+                                    <section style="box-sizing: border-box;">
+                                        <section style="width: 20px;height: 20px;float: left;border-top: 2px solid rgb(249, 110, 87);border-left: 2px solid rgb(249, 110, 87);box-sizing: border-box;"></section>
+                                        <section style="width: 20px;height: 20px;float: right;border-top: 2px solid rgb(249, 110, 87);border-right: 2px solid rgb(249, 110, 87);box-sizing: border-box;"></section>
+                                        <section style="clear: both;box-sizing: border-box;"></section>
+                                        <section style="margin: -20px 0px;box-sizing: border-box;">
+                                            <section style="border-width: 2px;border-style: dotted;border-color: rgb(233, 233, 233);padding: 10px 20px;box-sizing: border-box;">
+                                                <section style="box-sizing: border-box;" powered-by="xiumi.us">
+                                                    <section style="box-sizing: border-box;">
+                                                        <section style="display: inline-block;width: 100%;vertical-align: top;box-sizing: border-box;">
+                                                            <section style="box-sizing: border-box;" powered-by="xiumi.us">
+                                                                <section style="box-sizing: border-box;">
+                                                                    <section style="text-align: left;font-size: 14px;box-sizing: border-box;">
+                                                                        <p style="text-indent: 2em;margin: 0px 0px 10px;clear: none;padding: 0px;box-sizing: border-box;">五年的抛家舍业，让我的研究有了长足的进展，但纸面上的研究终究比不上亲身体验来的直观。</p>
+                                                                        <p style="text-indent: 2em;clear: none;margin: 0px;padding: 0px;box-sizing: border-box;">调研工作，需要常年的东奔西跑，让我的肠胃非常脆弱，经常腹痛，可在来到新疆，开始日常饮用驼奶后，不到一周，我的<strong style="box-sizing: border-box;">腹痛就再没犯过</strong>。神奇的改变让我坚信，驼奶一定不简单，于是我开始定期向家中邮寄驼奶粉，让全家人一起体验。</p>
+                                                                    </section>
+                                                                </section>
+                                                            </section>
+                                                        </section>
+                                                    </section>
+                                                </section>
+                                                <section style="box-sizing: border-box;" powered-by="xiumi.us">
+                                                    <section style="box-sizing: border-box;">
+                                                        <section style="display: inline-block;width: 100%;vertical-align: top;box-sizing: border-box;">
+                                                            <section style="box-sizing: border-box;" powered-by="xiumi.us">
+                                                                <section style="box-sizing: border-box;">
+                                                                    <section style="max-width: 100%;vertical-align: middle;display: inline-block;line-height: 0;box-sizing: border-box;"><img class="" data-ratio="0.6953125" data-w="640" data-src="https://mmbiz.qpic.cn/mmbiz_png/qnQ50wksQEZkSUbGbnpkhpEDWtJAOrLdcJm7IkEJLFPCdCzvLSJ01P0QenMUAh8W1fCW0bOra3MnkwsfVu81DA/640?wx_fmt=png" style="vertical-align: middle; max-width: 100%; box-sizing: border-box; width: 640px !important; height: auto !important; visibility: visible !important;" data-type="png" _width="640px" src="https://image.163ar.cn/wechat/tounai/005/static/index_files/640(10).jpg" data-fail="0"></section>
+                                                                </section>
+                                                            </section>
+                                                        </section>
+                                                    </section>
+                                                </section>
+                                                <section style="box-sizing: border-box;" powered-by="xiumi.us">
+                                                    <section style="box-sizing: border-box;">
+                                                        <section style="display: inline-block;width: 100%;vertical-align: top;box-sizing: border-box;">
+                                                            <section style="box-sizing: border-box;" powered-by="xiumi.us">
+                                                                <section style="box-sizing: border-box;">
+                                                                    <section style="text-align: left;font-size: 14px;box-sizing: border-box;">
+                                                                        <p style="text-align: center;margin: 0px 0px 10px;text-indent: 2em;clear: none;padding: 0px;box-sizing: border-box;"><span style="color: rgb(0, 0, 0);box-sizing: border-box;"><strong style="box-sizing: border-box;"><span style="font-size: 12px;box-sizing: border-box;">即将寄往家中的驼奶粉</span></strong>
+                                                                            </span>
+                                                                        </p>
+                                                                        <p style="margin: 0px 0px 10px;text-indent: 2em;clear: none;padding: 0px;box-sizing: border-box;">事实证明，我做了一个非常正确的决定！一向身体虚弱极爱感冒的妻子，如今在驼奶的作用下<strong style="box-sizing: border-box;">再没生过病</strong>。而最喜欢驼奶粉的还要数我儿子，他第一次喝就爱上了，他说“<strong style="box-sizing: border-box;">这比咱家以前喝的牛奶香多了，还不腻人！</strong>”每天半斤，
+                                                                            <strong style="box-sizing: border-box;">从来没闹过肚子</strong>，五年前他身高只有一米72，可如今25岁的他身高已经一米八五，足足<strong style="box-sizing: border-box;">拔高了13公分</strong>！</p>
+                                                                    </section>
+                                                                </section>
+                                                            </section>
+                                                            <section style="box-sizing: border-box;" powered-by="xiumi.us">
+                                                                <section style="box-sizing: border-box;">
+                                                                    <section style="display: inline-block;width: 100%;vertical-align: top;padding: 10px;box-sizing: border-box;">
+                                                                        <section style="box-sizing: border-box;" powered-by="xiumi.us">
+                                                                            <section style="margin: 10px 0% 0px;box-sizing: border-box;">
+                                                                                <section style="max-width: 100%;vertical-align: middle;display: inline-block;line-height: 0;box-sizing: border-box;"><img class="" data-ratio="0.584" data-w="625" data-src="https://mmbiz.qpic.cn/mmbiz_png/qnQ50wksQEZkSUbGbnpkhpEDWtJAOrLd3ZLqSGWCMq5EWZfFibUDHF9NE66M6MBeGLBtVmVXC4XkMlpuiazyrkrg/640?wx_fmt=png" style="vertical-align: middle; max-width: 100%; box-sizing: border-box; width: 625px !important; height: auto !important; visibility: visible !important;" data-type="png" _width="625px" src="https://image.163ar.cn/wechat/tounai/005/static/index_files/640(11).jpg" data-fail="0"></section>
+                                                                            </section>
+                                                                        </section>
+                                                                        <section style="box-sizing: border-box;" powered-by="xiumi.us">
+                                                                            <section style="margin: -80px 0% 10px;text-align: left;box-sizing: border-box;">
+                                                                                <section style="display: inline-block;width: 100%;vertical-align: top;padding: 0px;box-sizing: border-box;">
+                                                                                    <section style="box-sizing: border-box;" powered-by="xiumi.us">
+                                                                                        <section style="box-sizing: border-box;">
+                                                                                            <section style="display: inline-block;width: 100%;vertical-align: top;padding: 10px 10px 10px 20px;box-sizing: border-box;">
+                                                                                                <section style="box-sizing: border-box;" powered-by="xiumi.us">
+                                                                                                    <section style="margin: 5px 0%;box-sizing: border-box;">
+                                                                                                        <section style="text-align: center;font-size: 16px;color: rgb(255, 255, 255);box-sizing: border-box;">
+                                                                                                            <p style="text-align: left;margin: 0px 0px 10px;clear: none;padding: 0px;box-sizing: border-box;"><span style="text-shadow: rgba(255, 0, 0, 0) 1.87939px 0.68404px 2px;background-color: rgba(0, 0, 0, 0.62);box-sizing: border-box;"><strong style="box-sizing: border-box;">从几近瘫痪到行动如常</strong></span></p>
+                                                                                                            <p style="text-align: right;clear: none;margin: 0px;padding: 0px;box-sizing: border-box;"><span style="text-shadow: rgba(255, 0, 0, 0) 1.87939px 0.68404px 2px;background-color: rgba(0, 0, 0, 0.62);box-sizing: border-box;"><strong style="box-sizing: border-box;">——只用了一年！</strong></span></p>
+                                                                                                        </section>
+                                                                                                    </section>
+                                                                                                </section>
+                                                                                            </section>
+                                                                                        </section>
+                                                                                    </section>
+                                                                                    <section style="box-sizing: border-box;" powered-by="xiumi.us">
+                                                                                        <section style="margin: 0px 0%;box-sizing: border-box;">
+                                                                                            <section style="width: 100%;height: 5px;box-sizing: border-box;"></section>
+                                                                                        </section>
+                                                                                    </section>
+                                                                                </section>
+                                                                            </section>
+                                                                        </section>
+                                                                    </section>
+                                                                </section>
+                                                            </section>
+                                                            <section style="box-sizing: border-box;" powered-by="xiumi.us">
+                                                                <section style="box-sizing: border-box;">
+                                                                    <section style="text-align: left;font-size: 14px;box-sizing: border-box;">
+                                                                        <p style="text-indent: 2em;margin: 0px 0px 10px;clear: none;padding: 0px;box-sizing: border-box;">而最大的受益者，还要数我的母亲。她今年六十七，不但有高血压，高血脂，还得了糖尿病。2011年还因为突发性心梗进了抢救室，可由于血糖太高手术风险极大！但老人此时已命悬一线，绝望的我只好抱着赌一把心态在手术协议上签了字……</p>
+                                                                        <p style="text-indent: 2em;margin: 0px 0px 10px;clear: none;padding: 0px;box-sizing: border-box;">万幸的是，虽然手术成功率只有不到30%，但在做了四个支架后我母亲终究保住了性命，只是出院后连门都出不了，只能请专人照顾。必须长期依赖进口药物，我和妻子也不得不努力工作以维持医药费用。</p>
+                                                                        <p style="text-indent: 2em;clear: none;margin: 0px;padding: 0px;box-sizing: border-box;">可就是身体最糟糕的母亲，却给我了最大的惊喜！2014年2月，我正在新疆疏勒的研究所工作，突然有人找到我说有一位老太太在门口等我！我走出研究所一看，这不是我年迈的老母亲吗？！老人家居然自己坐火车跑过来了！这让我在惊喜的同时又有点后怕，这么大岁数这么远的路，万一出了什么意外可怎么办？！可看到母亲拎着大包小包的样子，哪有半点当初生活不能自理的痕迹？一进屋又是做饭，又是收拾屋子，快70的人了，操持家务比我媳妇还勤快！我知道驼奶对母亲有好处，却没想到好处这么巨大！为了保险，我不顾母亲的埋怨，硬是拉着她去医院做了个检查，结果发现，血压、血脂、血糖、都比一年之前平稳太多！骨钙含量，免疫系统也大有改善！</p>
+                                                                    </section>
+                                                                </section>
+                                                            </section>
+                                                            <section style="box-sizing: border-box;" powered-by="xiumi.us">
+                                                                <section style="margin-top: 10px;margin-bottom: 10px;box-sizing: border-box;">
+                                                                    <section style="max-width: 100%;vertical-align: middle;display: inline-block;line-height: 0;box-sizing: border-box;"><img class="" data-ratio="0.6671875" data-w="640" data-src="https://mmbiz.qpic.cn/mmbiz_png/qnQ50wksQEZkSUbGbnpkhpEDWtJAOrLdxSpbAJlOVTCG1o4kSpuVmQlklSjO5fFumOhZuCuWIDndCnjhZIafZA/640?wx_fmt=png" style="vertical-align: middle; max-width: 100%; box-sizing: border-box; width: 640px !important; height: auto !important; visibility: visible !important;" data-type="png" _width="640px" src="https://image.163ar.cn/wechat/tounai/005/static/index_files/640(12).jpg" data-fail="0"></section>
+                                                                </section>
+                                                            </section>
+                                                            <section style="box-sizing: border-box;" powered-by="xiumi.us">
+                                                                <section style="box-sizing: border-box;">
+                                                                    <section style="text-align: left;font-size: 14px;box-sizing: border-box;">
+                                                                        <p style="text-indent: 2em;clear: none;margin: 0px;padding: 0px;box-sizing: border-box;">可即便如此，我还是在电话中埋怨妻子，不该让老人家一个人跑这么远！而妻子却说“咱妈喝驼奶粉半年多就把保姆辞退了，偏头疼，眩晕症也不爱犯了。腿脚都比以前利索了。”母亲也在一旁插话“是真的，我现在身体跟换了个人似的，咱们小区那些邻居，都羡慕我呢！”</p>
+                                                                    </section>
+                                                                </section>
+                                                            </section>
+                                                        </section>
+                                                    </section>
+                                                </section>
+                                            </section>
+                                        </section>
+                                        <section style="width: 20px;height: 20px;float: left;border-bottom: 2px solid rgb(249, 110, 87);border-left: 2px solid rgb(249, 110, 87);box-sizing: border-box;"></section>
+                                        <section style="width: 20px;height: 20px;float: right;border-bottom: 2px solid rgb(249, 110, 87);border-right: 2px solid rgb(249, 110, 87);box-sizing: border-box;"></section>
+                                        <section style="clear: both;box-sizing: border-box;"></section>
+                                    </section>
+                                </section>
+                            </section>
+                            <section style="box-sizing: border-box;" powered-by="xiumi.us">
+                                <section style="text-align: center;margin-top: 10px;margin-bottom: 10px;box-sizing: border-box;">
+                                    <section style="max-width: 100%;vertical-align: middle;display: inline-block;line-height: 0;box-sizing: border-box;position: relative;"><img class=" __bg_gif" data-copyright="0" data-cropselx1="0" data-cropselx2="445" data-cropsely1="0" data-cropsely2="594" data-ratio="1.3348314606741574" data-src="https://mmbiz.qpic.cn/mmbiz_gif/qnQ50wksQEYWtMqymPDXWib82yy6g2IA59CG633dE1iavftfCQ0vEcWbwb4cCa03TfEdaqhYI3we7hVPZjp035vQ/640?wx_fmt=gif" data-type="gif" data-w="445" style="vertical-align: middle; max-width: 100%; box-sizing: border-box; width: 445px !important; height: auto !important; visibility: visible !important;" _width="445px" src="https://image.163ar.cn/wechat/tounai/005/static/index_files/640(7).jpg" data-order="1" data-fail="0">
+                                        <img style='position:absolute;top:40%;right:33%;width:35%;' class="weixinpic">
+                                    </section>
+                                </section>
+                            </section>
+                            <section style="box-sizing: border-box;" powered-by="xiumi.us">
+                                <section style="text-align: center;margin-top: 10px;margin-bottom: 10px;box-sizing: border-box;">
+                                    <section style="max-width: 100%;vertical-align: middle;display: inline-block;line-height: 0;width: 60%;box-sizing: border-box;"><img class="" data-ratio="0.05625" data-w="640" data-src="https://mmbiz.qpic.cn/mmbiz_png/gicTYyZVhUEKcOpfrBcZvso5FAQ2yDe6exAv6ahhZDlxnRJjDJHa2cQHHMJIKJpl2lvcTg0BEXyINmpkoTu55nQ/640?wx_fmt=png" style="vertical-align: middle; max-width: 100%; box-sizing: border-box; width: 100% !important; height: auto !important; visibility: visible !important;" width="100%" data-type="png" _width="100%" src="https://image.163ar.cn/wechat/tounai/005/static/index_files/640(1).jpg" data-fail="0"></section>
+                                </section>
+                            </section>
+                            <section style="box-sizing: border-box;" powered-by="xiumi.us">
+                                <section style="margin: 7px 0% 0px;text-align: center;box-sizing: border-box;">
+                                    <!-- <img data-ratio="2.9655172" data-w="29" data-src="https://mmbiz.qpic.cn/mmbiz_png/Ko4EnGv7LKf5zGliaqMdqoqVYiam5kGccqoAT4uwBmlmMEaQYdP0qlwabapqW24uG2SSUf88RxRiaMB17OX6OLpAQ/640?wx_fmt=png" style="display: inline-block; vertical-align: middle; background-color: rgb(156, 188, 0); box-sizing: border-box; width: 1.5em !important; height: auto !important; visibility: visible !important;"
+                                        width="1.5em" data-type="png" _width="1.5em" src="./files/640(8).jpg" class="" data-fail="0"> -->
+                                    <section style="display: inline-block;vertical-align: middle;text-align: left;font-size: 16px;color: rgb(177, 4, 4);max-width: 70% !important;box-sizing: border-box;">
+                                        <p style="margin: 0px 0px 10px;padding: 0px;box-sizing: border-box;"><strong style="box-sizing: border-box;">极致环境下的生命奇迹</strong></p>
+                                        <p style="text-align: right;margin: 0px;padding: 0px;box-sizing: border-box;"><strong style="box-sizing: border-box;">——“沙漠之舟”骆驼</strong></p>
+                                    </section>
+                                    <!-- <img data-ratio="2.9655172" data-w="29" data-src="https://mmbiz.qpic.cn/mmbiz_png/Ko4EnGv7LKf5zGliaqMdqoqVYiam5kGccqFhsBSoCELnyQM88KbnS0cHCkE8lTSCMZGD8ibHlAOK9MbxZEdMxugLw/640?wx_fmt=png" style="display: inline-block; vertical-align: middle; background-color: rgb(156, 188, 0); box-sizing: border-box; width: 1.5em !important; height: auto !important; visibility: visible !important;"
+                                        width="1.5em" data-type="png" _width="1.5em" src="./files/640(9).jpg" class="" data-fail="0"> --></section>
+                            </section>
+                            <section style="box-sizing: border-box;" powered-by="xiumi.us">
+                                <section style="text-align: center;margin: 20px 0% 10px;box-sizing: border-box;">
+                                    <section style="max-width: 100%;vertical-align: middle;display: inline-block;line-height: 0;box-sizing: border-box;"><img class="" data-ratio="0.6392252" data-w="413" data-src="https://mmbiz.qpic.cn/mmbiz_png/qnQ50wksQEZkSUbGbnpkhpEDWtJAOrLdicOg2wHymbDSGT54NsicwnOOdsoIMTS3rugticyVWHW1n1Sq7dmPNQNDg/640?wx_fmt=png" style="vertical-align: middle; max-width: 100%; box-sizing: border-box; width: 413px !important; height: auto !important; visibility: visible !important;" data-type="png" _width="413px" src="https://image.163ar.cn/wechat/tounai/005/static/index_files/640(13).jpg" data-fail="0"></section>
+                                </section>
+                            </section>
+                            <section style="box-sizing: border-box;" powered-by="xiumi.us">
+                                <section style="margin: 10px 0%;box-sizing: border-box;">
+                                    <section style="text-align: justify;line-height: 2;letter-spacing: 3px;padding: 0px 18px;box-sizing: border-box;">
+                                        <p style="text-indent: 2em;white-space: normal;margin: 0px;padding: 0px;box-sizing: border-box;">骆驼，生存在大多数生命都无法生存的沙漠环境中。就是这样的极端环境它却能不吃不喝存活79天！哺乳期7天不喝水而奶量不变！失水达到体重30%~40%却毫无生命危险！在昼夜温差多达几十度的环境繁衍了几十万年！人类服之即死的断肠草，对它来说只是零食配菜！即使是比其他反刍动物高两倍的血糖水平，也丝毫没有“糖尿病”的危险！骆驼，是生命的奇迹！</p>
+                                    </section>
+                                </section>
+                            </section>
+                            <section style="box-sizing: border-box;" powered-by="xiumi.us">
+                                <section style="margin: 0.5em 0px;text-align: center;box-sizing: border-box;">
+                                    <!-- <img data-ratio="2.9655172" data-w="29" data-src="https://mmbiz.qpic.cn/mmbiz_png/Ko4EnGv7LKf5zGliaqMdqoqVYiam5kGccqoAT4uwBmlmMEaQYdP0qlwabapqW24uG2SSUf88RxRiaMB17OX6OLpAQ/640?wx_fmt=png" style="display: inline-block; vertical-align: middle; background-color: rgb(156, 188, 0); box-sizing: border-box; width: 1.5em !important; height: auto !important; visibility: visible !important;"
+                                        width="1.5em" data-type="png" _width="1.5em" src="./files/640(8).jpg" class="" data-fail="0"> -->
+                                    <section style="display: inline-block;vertical-align: middle;font-size: 16px;color: rgb(177, 4, 4);max-width: 70% !important;box-sizing: border-box;">
+                                        <p style="margin: 0px 0px 10px;padding: 0px;box-sizing: border-box;"><strong style="box-sizing: border-box;">头顶烈日 脚踏黄沙&nbsp;</strong></p>
+                                        <p style="margin: 0px;padding: 0px;box-sizing: border-box;"><strong style="box-sizing: border-box;">它在净土之上孕育“驼奶”</strong></p>
+                                    </section>
+                                    <!-- <img data-ratio="2.9655172" data-w="29" data-src="https://mmbiz.qpic.cn/mmbiz_png/Ko4EnGv7LKf5zGliaqMdqoqVYiam5kGccqFhsBSoCELnyQM88KbnS0cHCkE8lTSCMZGD8ibHlAOK9MbxZEdMxugLw/640?wx_fmt=png" style="display: inline-block; vertical-align: middle; background-color: rgb(156, 188, 0); box-sizing: border-box; width: 1.5em !important; height: auto !important; visibility: visible !important;"
+                                        width="1.5em" data-type="png" _width="1.5em" src="./files/640(9).jpg" class="" data-fail="0"> --></section>
+                            </section>
+                            <section style="box-sizing: border-box;" powered-by="xiumi.us">
+                                <section style="margin: 10px 0%;box-sizing: border-box;">
+                                    <section style="text-align: justify;line-height: 2;letter-spacing: 3px;padding: 0px 18px;box-sizing: border-box;">
+                                        <p style="text-indent: 2em;white-space: normal;margin: 0px;padding: 0px;box-sizing: border-box;">高原的融雪带来无比纯净的水源，终年烈日让细菌在紫外线下难以生存，大漠狂风让有害气体无法侵入！骆驼就这样喝着雪山融水，吃着沙拐枣、驼绒藤等珍惜草药，才能孕育珍贵的——驼奶！</p>
+                                    </section>
+                                </section>
+                            </section>
+                            <section style="box-sizing: border-box;" powered-by="xiumi.us">
+                                <section style="text-align: center;margin-top: 10px;margin-bottom: 10px;box-sizing: border-box;">
+                                    <section style="max-width: 100%;vertical-align: middle;display: inline-block;line-height: 0;box-sizing: border-box;"><img class="" data-ratio="0.6765625" data-w="640" data-src="https://mmbiz.qpic.cn/mmbiz_png/qnQ50wksQEZkSUbGbnpkhpEDWtJAOrLdbOKJ26SIaw9wTDAMoxmHTzGiaQgjD62O41nKan5wDibNV57ZGiaMibLIaA/640?wx_fmt=png" style="vertical-align: middle; max-width: 100%; box-sizing: border-box; width: 640px !important; height: auto !important; visibility: visible !important;" data-type="png" _width="640px" src="https://image.163ar.cn/wechat/tounai/005/static/index_files/640(14).jpg" data-fail="0"></section>
+                                </section>
+                            </section>
+                            <section style="box-sizing: border-box;" powered-by="xiumi.us">
+                                <section style="margin: 10px 0%;box-sizing: border-box;">
+                                    <section style="text-align: justify;line-height: 2;letter-spacing: 3px;padding: 0px 18px;box-sizing: border-box;">
+                                        <p style="text-indent: 2em;white-space: normal;margin: 0px;padding: 0px;box-sizing: border-box;">作为产奶生物，骆驼的寿命比牛、羊等其他动物高几十年！唯一不及牛、羊的就是产奶量较少，只有不到其十分之一。只有在喂养幼崽时，人们才有机会获得富含“长寿因子”的驼奶，这在盛产骆驼的新疆地区也极其珍贵！当地人更是拿它当药物使用。一般的小毛病，几乎都不用看大夫，喝上一碗驼奶就能恢复健康！小孩子感冒只要喝两碗驼奶很快就能生龙活虎！</p>
+                                    </section>
+                                </section>
+                            </section>
+                            <section style="box-sizing: border-box;" powered-by="xiumi.us">
+                                <section style="margin: 0.5em 0px;text-align: center;box-sizing: border-box;">
+                                    <!-- <img data-ratio="2.9655172" data-w="29" data-src="https://mmbiz.qpic.cn/mmbiz_png/Ko4EnGv7LKf5zGliaqMdqoqVYiam5kGccqoAT4uwBmlmMEaQYdP0qlwabapqW24uG2SSUf88RxRiaMB17OX6OLpAQ/640?wx_fmt=png" style="display: inline-block; vertical-align: middle; background-color: rgb(156, 188, 0); box-sizing: border-box; width: 1.5em !important; height: auto !important; visibility: visible !important;"
+                                        width="1.5em" data-type="png" _width="1.5em" src="./files/640(8).jpg" class="" data-fail="0"> -->
+                                    <section style="display: inline-block;vertical-align: middle;font-size: 18px;color: rgb(177, 4, 4);max-width: 70% !important;box-sizing: border-box;">
+                                        <p style="margin: 0px 0px 10px;padding: 0px;box-sizing: border-box;"><strong style="box-sizing: border-box;"><span style="font-size: 16px;box-sizing: border-box;">驼奶被称为“大漠白金”古来已有</span></strong></p>
+                                        <p style="margin: 0px;padding: 0px;box-sizing: border-box;"><strong style="box-sizing: border-box;"><span style="font-size: 16px;box-sizing: border-box;">400年前“药典圣经”这样记载</span></strong></p>
+                                    </section>
+                                    <!-- <img data-ratio="2.9655172" data-w="29" data-src="https://mmbiz.qpic.cn/mmbiz_png/Ko4EnGv7LKf5zGliaqMdqoqVYiam5kGccqFhsBSoCELnyQM88KbnS0cHCkE8lTSCMZGD8ibHlAOK9MbxZEdMxugLw/640?wx_fmt=png" style="display: inline-block; vertical-align: middle; background-color: rgb(156, 188, 0); box-sizing: border-box; width: 1.5em !important; height: auto !important; visibility: visible !important;"
+                                        width="1.5em" data-type="png" _width="1.5em" src="./files/640(9).jpg" class="" data-fail="0"> --></section>
+                            </section>
+                            <section style="box-sizing: border-box;" powered-by="xiumi.us">
+                                <section style="margin: 0.5em auto;text-align: center;box-sizing: border-box;">
+                                    <section style="max-width: 100%;border-radius: 1.5em;display: inline-block;line-height: 0;overflow: hidden;box-sizing: border-box;"><img class="" data-ratio="0.6055777" data-w="502" data-src="https://mmbiz.qpic.cn/mmbiz_png/qnQ50wksQEZkSUbGbnpkhpEDWtJAOrLddJicKpT7JBu39WMRUSVgE63QGqVsN6ea0aVRMhD5notBRjcCDWx9vMA/640?wx_fmt=png" style="vertical-align: middle; max-width: 100%; box-sizing: border-box; width: 502px !important; height: auto !important; visibility: visible !important;" data-type="png" _width="502px" src="https://image.163ar.cn/wechat/tounai/005/static/index_files/640(15).jpg" data-fail="0"></section>
+                                </section>
+                            </section>
+                            <section style="box-sizing: border-box;" powered-by="xiumi.us">
+                                <section style="margin: 10px 0% 0px;box-sizing: border-box;">
+                                    <section style="display: inline-block;min-width: 10%;max-width: 100%;vertical-align: top;background-color: rgb(255, 224, 178);border-top: 0px none rgb(62, 62, 62);border-top-left-radius: 90px;border-right: 0px none rgb(62, 62, 62);border-top-right-radius: 20px;padding: 3px 20px;box-sizing: border-box;">
+                                        <section style="box-sizing: border-box;" powered-by="xiumi.us">
+                                            <section style="box-sizing: border-box;">
+                                                <section style="color: rgb(152, 78, 3);box-sizing: border-box;">
+                                                    <p style="text-indent: 2em;margin: 0px 0px 10px;padding: 0px;box-sizing: border-box;">为了更全面的了解驼奶的秘密，我还翻阅了很多古籍，发现驼奶的神奇并非时至今日才被发现，早在400年前的明朝，驼奶的秘密就引起了医家的关注。</p>
+                                                    <p style="text-indent: 2em;margin: 0px 0px 10px;padding: 0px;box-sizing: border-box;">《本草纲目》记载：“骆乳，冷，无毒，补中益气，壮筋骨，令人不饥”。</p>
+                                                    <p style="text-indent: 2em;margin: 0px 0px 10px;padding: 0px;box-sizing: border-box;">《维吾尔常用药材》记载：“骆乳，性味甘醇、无黏胶感、属微辛，<strong style="box-sizing: border-box;">大补益气，补五脏七损，强壮筋骨，填精髓，耐饥饿，止消渴</strong>”。</p>
+                                                    <p style="text-indent: 2em;margin: 0px;padding: 0px;box-sizing: border-box;">《中医哈萨克医药志》记载：“骆乳有滋补、安神、养阴、解毒作用。<strong style="box-sizing: border-box;">可恢复百病之后虚弱身体。</strong>”</p>
+                                                </section>
+                                            </section>
+                                        </section>
+                                    </section>
+                                </section>
+                            </section>
+                            <section style="box-sizing: border-box;" powered-by="xiumi.us">
+                                <section style="text-align: center;margin-top: 10px;margin-bottom: 10px;box-sizing: border-box;">
+                                    <section style="max-width: 100%;vertical-align: middle;display: inline-block;line-height: 0;width: 60%;box-sizing: border-box;"><img class="" data-ratio="0.05625" data-w="640" data-src="https://mmbiz.qpic.cn/mmbiz_png/gicTYyZVhUEKcOpfrBcZvso5FAQ2yDe6exAv6ahhZDlxnRJjDJHa2cQHHMJIKJpl2lvcTg0BEXyINmpkoTu55nQ/640?wx_fmt=png" style="vertical-align: middle; max-width: 100%; box-sizing: border-box; width: 100% !important; height: auto !important; visibility: visible !important;" width="100%" data-type="png" _width="100%" src="https://image.163ar.cn/wechat/tounai/005/static/index_files/640(1).jpg" data-fail="0"></section>
+                                </section>
+                            </section>
+                            <section style="box-sizing: border-box;" powered-by="xiumi.us">
+                                <section style="box-sizing: border-box;">
+                                    <section style="box-sizing: border-box;">
+                                        <p style="text-indent: 2em;margin: 0px;padding: 0px;box-sizing: border-box;"><strong style="box-sizing: border-box;">驼奶的种种好处虽然令人惊喜，但作为学术研究工作者我还是更愿意相信实实在在的科学。为此，针推驼奶的作用，我带领我的学术小组联合北京生物研究中心与2014-2015年期间在做了大量对比实验。</strong></p>
+                                    </section>
+                                </section>
+                            </section>
+                            <section style="box-sizing: border-box;" powered-by="xiumi.us">
+                                <section style="box-sizing: border-box;">
+                                    <section style="text-align: center;font-size: 18px;color: rgb(160, 6, 6);box-sizing: border-box;">
+                                        <p style="margin: 0px;padding: 0px;box-sizing: border-box;"><br style="box-sizing: border-box;"></p>
+                                    </section>
+                                </section>
+                            </section>
+                            <section style="box-sizing: border-box;" powered-by="xiumi.us">
+                                <section style="margin: 0.5em 0px;box-sizing: border-box;">
+                                    <section style="height: 2px;margin-top: 1em;background-color: rgb(249, 110, 87);box-sizing: border-box;"></section>
+                                    <section style="text-align: center;vertical-align: top;margin-top: -1em;box-sizing: border-box;">
+                                        <section style="display: inline-block;padding: 0px 10px;background-color: rgb(255, 255, 255);box-sizing: border-box;">
+                                            <p style="margin: 0px;padding: 0px;box-sizing: border-box;"><br style="box-sizing: border-box;"></p>
+                                        </section>
+                                    </section>
+                                    <section style="margin: 0.5em 0px;box-sizing: border-box;">
+                                        <section style="box-sizing: border-box;" powered-by="xiumi.us">
+                                            <section style="box-sizing: border-box;">
+                                                <section style="text-align: center;font-size: 18px;box-sizing: border-box;">
+                                                    <p style="margin: 0px;padding: 0px;box-sizing: border-box;"><strong style="box-sizing: border-box;">实验证明：驼奶药用价值堪比一线用药！</strong></p>
+                                                </section>
+                                            </section>
+                                        </section>
+                                    </section>
+                                    <section style="height: 2px;margin-top: 1.5em;background-color: rgb(249, 110, 87);box-sizing: border-box;"></section>
+                                    <section style="text-align: center;vertical-align: top;margin-top: -1em;box-sizing: border-box;">
+                                        <section style="display: inline-block;padding: 0px 10px;background-color: rgb(255, 255, 255);box-sizing: border-box;">
+                                            <p style="margin: 0px;padding: 0px;box-sizing: border-box;"><br style="box-sizing: border-box;"></p>
+                                        </section>
+                                    </section>
+                                </section>
+                            </section>
+                            <section style="box-sizing: border-box;" powered-by="xiumi.us">
+                                <section style="text-align: center;margin: 30px 0% 10px;box-sizing: border-box;">
+                                    <section style="display: inline-block;width: 94%;vertical-align: top;border-style: solid solid none;border-width: 1px;border-radius: 0px;border-color: rgb(62, 62, 62);box-sizing: border-box;">
+                                        <section style="box-sizing: border-box;" powered-by="xiumi.us">
+                                            <section style="margin: -20px 0% 0px;box-sizing: border-box;">
+                                                <section style="display: inline-block;border-width: 2px;border-style: solid;border-color: rgba(255, 255, 255, 0);padding: 0.1em 0.3em;background-color: rgb(255, 255, 255);color: rgb(160, 6, 6);box-sizing: border-box;">
+                                                    <p style="margin: 0px;padding: 0px;box-sizing: border-box;"><strong style="box-sizing: border-box;">降血糖实验</strong></p>
+                                                </section>
+                                            </section>
+                                        </section>
+                                        <section style="box-sizing: border-box;" powered-by="xiumi.us">
+                                            <section style="margin: 0px 0%;box-sizing: border-box;">
+                                                <section style="font-size: 13px;color: rgb(0, 0, 26);box-sizing: border-box;">
+                                                    <p style="margin: 0px;padding: 0px;box-sizing: border-box;">小鼠切除胰腺后，常规喂养20天内悉数死亡，而用驼奶喂养90天后仍有近六成生存！</p>
+                                                </section>
+                                            </section>
+                                        </section>
+                                        <section style="box-sizing: border-box;" powered-by="xiumi.us">
+                                            <section style="margin: 10px 0% 0px;box-sizing: border-box;">
+                                                <section style="display: inline-block;vertical-align: bottom;width: 50%;box-sizing: border-box;">
+                                                    <section style="box-sizing: border-box;" powered-by="xiumi.us">
+                                                        <section style="margin: 0px 0% 10px;transform: translate3d(-12px, 0px, 0px);-webkit-transform: translate3d(-12px, 0px, 0px);-moz-transform: translate3d(-12px, 0px, 0px);-o-transform: translate3d(-12px, 0px, 0px);box-sizing: border-box;">
+                                                            <section style="max-width: 100%;vertical-align: middle;display: inline-block;line-height: 0;border-style: solid;border-width: 1px;border-radius: 0px;border-color: rgb(62, 62, 62);box-sizing: border-box;"><img class="" data-ratio="0.5625" data-w="640" data-src="https://mmbiz.qpic.cn/mmbiz_png/qnQ50wksQEZkSUbGbnpkhpEDWtJAOrLdXgib8sOibHTbn9BSib9ByDoarJMstWB6h5IPXHzo8XntoN3Mx52NrxDBg/640?wx_fmt=png" style="vertical-align: middle; max-width: 100%; box-sizing: border-box; width: 640px !important; height: auto !important; visibility: visible !important;" data-type="png" _width="640px" src="https://image.163ar.cn/wechat/tounai/005/static/index_files/640(16).jpg" data-fail="0"></section>
+                                                        </section>
+                                                    </section>
+                                                    <section style="box-sizing: border-box;" powered-by="xiumi.us">
+                                                        <section style="margin: 0px 0%;box-sizing: border-box;">
+                                                            <section style="text-align: justify;font-size: 11px;padding: 0px 10px;color: rgb(105, 143, 187);box-sizing: border-box;">
+                                                                <p style="margin: 0px 0px 10px;white-space: normal;padding: 0px;box-sizing: border-box;">切除胰岛后死亡小鼠器官已被高血糖腐蚀</p>
+                                                                <p style="white-space: normal;margin: 0px;padding: 0px;box-sizing: border-box;"><br style="box-sizing: border-box;"></p>
+                                                            </section>
+                                                        </section>
+                                                    </section>
+                                                </section>
+                                                <section style="display: inline-block;vertical-align: bottom;width: 50%;box-sizing: border-box;">
+                                                    <section style="box-sizing: border-box;" powered-by="xiumi.us">
+                                                        <section style="box-sizing: border-box;">
+                                                            <section style="display: inline-block;width: 100%;vertical-align: top;box-sizing: border-box;">
+                                                                <section style="box-sizing: border-box;" powered-by="xiumi.us">
+                                                                    <section style="margin: 0px 0%;box-sizing: border-box;">
+                                                                        <section style="text-align: justify;font-size: 11px;padding: 0px 10px;color: rgb(105, 143, 187);box-sizing: border-box;">
+                                                                            <p style="white-space: normal;margin: 0px;padding: 0px;box-sizing: border-box;">驼奶喂养小鼠正常存活</p>
+                                                                        </section>
+                                                                    </section>
+                                                                </section>
+                                                            </section>
+                                                        </section>
+                                                    </section>
+                                                    <section style="box-sizing: border-box;" powered-by="xiumi.us">
+                                                        <section style="margin: 0px 0%;transform: translate3d(12px, 0px, 0px);-webkit-transform: translate3d(12px, 0px, 0px);-moz-transform: translate3d(12px, 0px, 0px);-o-transform: translate3d(12px, 0px, 0px);box-sizing: border-box;">
+                                                            <section style="max-width: 100%;vertical-align: middle;display: inline-block;line-height: 0;border-style: solid;border-width: 1px;border-radius: 0px;border-color: rgb(62, 62, 62);box-sizing: border-box;"><img class="" data-ratio="0.7469388" data-w="490" data-src="https://mmbiz.qpic.cn/mmbiz_png/qnQ50wksQEZkSUbGbnpkhpEDWtJAOrLdrkG4Lrric5IXSIcv4o1T3D6rOMgtJCN377ZC7MeA4m52icl9LPGQkXMA/640?wx_fmt=png" style="vertical-align: middle; max-width: 100%; box-sizing: border-box; width: 490px !important; height: auto !important; visibility: visible !important;" data-type="png" _width="490px" src="https://image.163ar.cn/wechat/tounai/005/static/index_files/640(17).jpg" data-fail="0"></section>
+                                                        </section>
+                                                    </section>
+                                                </section>
+                                            </section>
+                                        </section>
+                                    </section>
+                                </section>
+                            </section>
+                            <section style="box-sizing: border-box;" powered-by="xiumi.us">
+                                <section style="text-align: center;margin-top: 10px;margin-bottom: 10px;box-sizing: border-box;">
+                                    <section style="max-width: 100%;vertical-align: middle;display: inline-block;line-height: 0;width: 60%;box-sizing: border-box;"><img class="" data-ratio="0.05625" data-w="640" data-src="https://mmbiz.qpic.cn/mmbiz_png/gicTYyZVhUEKcOpfrBcZvso5FAQ2yDe6exAv6ahhZDlxnRJjDJHa2cQHHMJIKJpl2lvcTg0BEXyINmpkoTu55nQ/640?wx_fmt=png" style="vertical-align: middle; max-width: 100%; box-sizing: border-box; width: 100% !important; height: auto !important; visibility: visible !important;" width="100%" data-type="png" _width="100%" src="https://image.163ar.cn/wechat/tounai/005/static/index_files/640(1).jpg" data-fail="0"></section>
+                                </section>
+                            </section>
+                            <section style="box-sizing: border-box;" powered-by="xiumi.us">
+                                <section style="box-sizing: border-box;">
+                                    <section style="box-sizing: border-box;">
+                                        <p style="text-indent: 2em;margin: 0px;padding: 0px;box-sizing: border-box;"><strong style="box-sizing: border-box;">惊人的实验结果深深的震撼了我，这让我更加好奇驼奶当中究竟蕴含着多少神奇秘密！为此，我在权威的检测机构对驼奶的成分进行了全面检测。</strong></p>
+                                    </section>
+                                </section>
+                            </section>
+                            <section style="box-sizing: border-box;" powered-by="xiumi.us">
+                                <section style="margin-top: 10px;margin-bottom: 10px;text-align: center;box-sizing: border-box;">
+                                    <section style="width: 100%;text-align: left;background-color: rgb(61, 60, 69);box-sizing: border-box;">
+                                        <section style="display: inline-block;vertical-align: top;float: left;margin-top: -0.68em;transform: rotate(0deg);-webkit-transform: rotate(0deg);-moz-transform: rotate(0deg);-o-transform: rotate(0deg);box-sizing: border-box;">
+                                            <section style="display: inline-block;vertical-align: top;border-right: 0.4em solid rgb(147, 54, 29);border-bottom: 0.4em solid rgb(147, 54, 29);max-width: 5% !important;border-top: 0.4em solid transparent !important;border-left: 0.4em solid transparent !important;box-sizing: border-box;"></section>
+                                            <section style="display: inline-block;vertical-align: top;border-radius: 0px 0px 5px 5px;background-color: rgb(255, 30, 41);padding: 2px 5px;font-size: 18px;line-height: 1.2em;color: rgb(255, 255, 255);text-align: center;max-width: 90% !important;box-sizing: border-box;">
+                                                <p style="margin: 0px 0px 10px;padding: 0px;box-sizing: border-box;">权威</p>
+                                                <p style="margin: 0px;padding: 0px;box-sizing: border-box;">检测</p>
+                                            </section>
+                                            <section style="display: inline-block;vertical-align: top;border-bottom: 0.4em solid rgb(147, 54, 29);border-left: 0.4em solid rgb(147, 54, 29);max-width: 5% !important;border-right: 0.4em solid transparent !important;border-top: 0.4em solid transparent !important;box-sizing: border-box;"></section>
+                                        </section>
+                                        <section style="display: inline-block;vertical-align: top;padding: 5px;line-height: 1.2em;color: rgb(255, 255, 255);text-align: center;box-sizing: border-box;">
+                                            <p style="clear: none;margin: 0px;padding: 0px;box-sizing: border-box;">驼乳辅助治疗和病后恢复效果惊人！</p>
+                                        </section>
+                                    </section>
+                                </section>
+                            </section>
+                            <section style="box-sizing: border-box;" powered-by="xiumi.us">
+                                <section style="box-sizing: border-box;">
+                                    <section style="box-sizing: border-box;">
+                                        <p style="text-indent: 2em;margin: 0px 0px 10px;padding: 0px;box-sizing: border-box;">骆驼乳不仅富含人体必需的多种氨基酸和维生素,而且含量远超其他奶类产品！与此同时，它还含有其他奶类所没有的溶菌酶、乳铁蛋白和免疫球蛋白等！这些物质不但能杀菌、抑菌,调节免疫力,还在机体抗病机制方面发挥着极为重要的作用！</p>
+                                        <p style="text-indent: 2em;margin: 0px;padding: 0px;box-sizing: border-box;">而更令人惊喜的是，骆驼乳中含有类胰岛素蛋白，不仅能够减轻糖尿病病情。还在常规治疗效果不理想的疾病的辅助治疗中有着神奇的效果。即使是接受过放化疗和手术的病人，也能迅速恢复体力！</p>
+                                    </section>
+                                </section>
+                            </section>
+                            <section style="box-sizing: border-box;" powered-by="xiumi.us">
+                                <section style="text-align: center;margin-top: 10px;margin-bottom: 10px;box-sizing: border-box;">
+                                    <section style="max-width: 100%;vertical-align: middle;display: inline-block;line-height: 0;box-sizing: border-box;"><img class="" data-ratio="1.0234375" data-w="640" data-src="https://mmbiz.qpic.cn/mmbiz_jpg/qnQ50wksQEZkSUbGbnpkhpEDWtJAOrLdCJAuJyUSgbVDZzaaZXISqiapZ1ptwuuabltU90NYhvtrTHTb85DxvKg/640?wx_fmt=jpeg" style="vertical-align: middle; max-width: 100%; box-sizing: border-box; width: 640px !important; height: auto !important; visibility: visible !important;" data-type="jpeg" _width="640px" src="https://image.163ar.cn/wechat/tounai/005/static/index_files/640(18).jpg" data-fail="0"></section>
+                                </section>
+                            </section>
+                            <section style="box-sizing: border-box;" powered-by="xiumi.us">
+                                <section style="box-sizing: border-box;">
+                                    <section style="text-align: center;font-size: 12px;color: rgb(160, 6, 6);box-sizing: border-box;">
+                                        <p style="margin: 0px;padding: 0px;box-sizing: border-box;"><strong style="box-sizing: border-box;">（驼乳研究论文）</strong></p>
+                                    </section>
+                                </section>
+                            </section>
+                            <section style="box-sizing: border-box;" powered-by="xiumi.us">
+                                <section style="text-align: center;margin-top: 10px;margin-bottom: 10px;box-sizing: border-box;">
+                                    <section style="max-width: 100%;vertical-align: middle;display: inline-block;line-height: 0;width: 60%;box-sizing: border-box;"><img class="" data-ratio="0.05625" data-w="640" data-src="https://mmbiz.qpic.cn/mmbiz_png/gicTYyZVhUEKcOpfrBcZvso5FAQ2yDe6exAv6ahhZDlxnRJjDJHa2cQHHMJIKJpl2lvcTg0BEXyINmpkoTu55nQ/640?wx_fmt=png" style="vertical-align: middle; max-width: 100%; box-sizing: border-box; width: 100% !important; height: auto !important; visibility: visible !important;" width="100%" data-type="png" _width="100%" src="https://image.163ar.cn/wechat/tounai/005/static/index_files/640(1).jpg" data-fail="0"></section>
+                                </section>
+                            </section>
+                            <section style="box-sizing: border-box;" powered-by="xiumi.us">
+                                <section style="text-align: center;margin-top: 10px;margin-bottom: 10px;box-sizing: border-box;">
+                                    <section style="max-width: 100%;vertical-align: middle;display: inline-block;line-height: 0;box-sizing: border-box;position: relative;"><img class=" __bg_gif" data-copyright="0" data-cropselx1="0" data-cropselx2="445" data-cropsely1="0" data-cropsely2="594" data-ratio="1.3348314606741574" data-src="https://mmbiz.qpic.cn/mmbiz_gif/qnQ50wksQEYWtMqymPDXWib82yy6g2IA59CG633dE1iavftfCQ0vEcWbwb4cCa03TfEdaqhYI3we7hVPZjp035vQ/640?wx_fmt=gif" data-type="gif" data-w="445" style="vertical-align: middle; max-width: 100%; box-sizing: border-box; width: 445px !important; height: auto !important; visibility: visible !important;" _width="445px" src="https://image.163ar.cn/wechat/tounai/005/static/index_files/640(7).jpg" data-order="2" data-fail="0">
+                                        <img style='position:absolute;top:40%;right:33%;width:35%;' class="weixinpic">
+                                    </section>
+                                </section>
+                            </section>
+                            <section style="box-sizing: border-box;" powered-by="xiumi.us">
+                                <section style="text-align: center;margin-top: 10px;margin-bottom: 10px;box-sizing: border-box;">
+                                    <section style="max-width: 100%;vertical-align: middle;display: inline-block;line-height: 0;width: 60%;box-sizing: border-box;"><img class="" data-ratio="0.05625" data-w="640" data-src="https://mmbiz.qpic.cn/mmbiz_png/gicTYyZVhUEKcOpfrBcZvso5FAQ2yDe6exAv6ahhZDlxnRJjDJHa2cQHHMJIKJpl2lvcTg0BEXyINmpkoTu55nQ/640?wx_fmt=png" style="vertical-align: middle; max-width: 100%; box-sizing: border-box; width: 100% !important; height: auto !important; visibility: visible !important;" width="100%" data-type="png" _width="100%" src="https://image.163ar.cn/wechat/tounai/005/static/index_files/640(1).jpg" data-fail="0"></section>
+                                </section>
+                            </section>
+                            <section style="box-sizing: border-box;" powered-by="xiumi.us">
+                                <section style="box-sizing: border-box;">
+                                    <section style="box-sizing: border-box;">
+                                        <p style="text-indent: 2em;margin: 0px;padding: 0px;box-sizing: border-box;"><strong style="box-sizing: border-box;">作为驼奶的受益者，我们一家人是幸运的，但它具备的神奇效果远可以帮助更多的人！随着对驼奶研究的不断加深，驼奶终于受到了国家的重视！</strong></p>
+                                    </section>
+                                </section>
+                            </section>
+                            <section style="box-sizing: border-box;" powered-by="xiumi.us">
+                                <section style="box-sizing: border-box;">
+                                    <section style="text-align: center;font-size: 18px;color: rgb(160, 6, 6);box-sizing: border-box;">
+                                        <p style="margin: 0px 0px 10px;padding: 0px;box-sizing: border-box;"><span style="text-shadow: rgb(160, 160, 160) 1.53209px 1.28558px 2px;box-sizing: border-box;"><strong style="box-sizing: border-box;">央视各大频道争相报道</strong></span></p>
+                                        <p style="margin: 0px;padding: 0px;box-sizing: border-box;"><span style="text-shadow: rgb(160, 160, 160) 1.53209px 1.28558px 2px;box-sizing: border-box;"><strong style="box-sizing: border-box;">——来自大漠的神奇驼奶</strong></span></p>
+                                    </section>
+                                </section>
+                            </section>
+                            <section style="box-sizing: border-box;" powered-by="xiumi.us">
+                                <section style="text-align: center;margin-top: 10px;margin-bottom: 10px;box-sizing: border-box;">
+                                    <section style="max-width: 100%;vertical-align: middle;display: inline-block;line-height: 0;box-sizing: border-box;"><img class="" data-ratio="0.609375" data-w="640" data-src="https://mmbiz.qpic.cn/mmbiz_jpg/qnQ50wksQEY3BsrVM6z6OgYydI4C2JEAB4RMIoAraxpItm7qWjeyyoK99pD2SJBEa8mE2aE49GwAJtHicwzNmDQ/640?wx_fmt=jpeg" style="vertical-align: middle; max-width: 100%; box-sizing: border-box; width: 640px !important; height: auto !important; visibility: visible !important;" data-type="jpeg" _width="640px" src="https://image.163ar.cn/wechat/tounai/005/static/index_files/640(19).jpg" data-fail="0"></section>
+                                </section>
+                            </section>
+                            <section style="box-sizing: border-box;" powered-by="xiumi.us">
+                                <section style="box-sizing: border-box;">
+                                    <section style="font-size: 14px;box-sizing: border-box;">
+                                        <p style="margin: 0px 0px 10px;padding: 0px;box-sizing: border-box;"><span style="color: rgb(160, 6, 6);box-sizing: border-box;"><strong style="box-sizing: border-box;">央视《每日农经》</strong></span><strong style="box-sizing: border-box;">：“驼奶富含脑黄金，成分非常接近人奶，是母乳的优质替代品！”</strong></p>
+                                        <p style="margin: 0px 0px 10px;padding: 0px;box-sizing: border-box;"><span style="color: rgb(160, 6, 6);box-sizing: border-box;"><strong style="box-sizing: border-box;">央视《科技苑》</strong></span><strong style="box-sizing: border-box;">：“驼奶发酵以后制成的曲哇特，是治疗肺结核、慢性支气管炎的良药！”</strong></p>
+                                        <p style="margin: 0px 0px 10px;padding: 0px;box-sizing: border-box;"><span style="color: rgb(160, 6, 6);box-sizing: border-box;"><strong style="box-sizing: border-box;">央视《农广天地》</strong></span><strong style="box-sizing: border-box;">：“驼乳中富含的重链抗体能把药物靶向带入癌细胞中，直接消灭癌细胞”</strong></p>
+                                        <p style="margin: 0px 0px 10px;padding: 0px;box-sizing: border-box;"><span style="color: rgb(160, 6, 6);box-sizing: border-box;"><strong style="box-sizing: border-box;">央视《寰宇视野》</strong></span><strong style="box-sizing: border-box;">：“驼奶中富含类胰岛素蛋白，有治疗糖尿病，降低糖尿病患者胰岛素剂量的功能”</strong></p>
+                                        <p style="margin: 0px;padding: 0px;box-sizing: border-box;"><strong style="box-sizing: border-box;"><br style="box-sizing: border-box;"></strong></p>
+                                    </section>
+                                </section>
+                            </section>
+                            <section style="box-sizing: border-box;" powered-by="xiumi.us">
+                                <section style="box-sizing: border-box;">
+                                    <section style="text-align: center;font-size: 18px;color: rgb(160, 6, 6);box-sizing: border-box;">
+                                        <p style="margin: 0px;padding: 0px;box-sizing: border-box;"><span style="text-shadow: rgb(160, 160, 160) 1.53209px 1.28558px 2px;box-sizing: border-box;"><strong style="box-sizing: border-box;">联合国也为驼奶震撼发声！</strong></span></p>
+                                    </section>
+                                </section>
+                            </section>
+                            <section style="box-sizing: border-box;" powered-by="xiumi.us">
+                                <section style="text-align: center;margin-top: 10px;margin-bottom: 10px;box-sizing: border-box;">
+                                    <section style="max-width: 100%;vertical-align: middle;display: inline-block;line-height: 0;box-sizing: border-box;"><img class="" data-ratio="0.6890244" data-w="328" data-src="https://mmbiz.qpic.cn/mmbiz_png/qnQ50wksQEZkSUbGbnpkhpEDWtJAOrLdCf4aLLh4Dj4clGQzibvamBLxRlqMev8tdPdHlWyia7DLFAtpjXnhz6bQ/640?wx_fmt=png" style="vertical-align: middle; max-width: 100%; box-sizing: border-box; width: 328px !important; height: auto !important; visibility: visible !important;" data-type="png" _width="328px" src="https://image.163ar.cn/wechat/tounai/005/static/index_files/640(20).jpg" data-fail="0"></section>
+                                </section>
+                            </section>
+                            <section style="box-sizing: border-box;" powered-by="xiumi.us">
+                                <section style="box-sizing: border-box;">
+                                    <section style="font-size: 14px;box-sizing: border-box;">
+                                        <p style="margin: 0px;padding: 0px;box-sizing: border-box;"><span style="color: rgb(160, 6, 6);box-sizing: border-box;"><strong style="box-sizing: border-box;">联合国官方发表文章</strong></span><span style="color: rgb(160, 6, 6);box-sizing: border-box;"><strong style="box-sizing: border-box;">称</strong></span>
+                                            <strong style="box-sizing: border-box;">：牛乳是“最接近完善的食品”，而骆驼乳不仅比牛乳营养更多、更好，还具备巨大的医疗和养生价值！</strong>
+                                        </p>
+                                    </section>
+                                </section>
+                            </section>
+                            <section style="box-sizing: border-box;" powered-by="xiumi.us">
+                                <section style="text-align: center;margin-top: 10px;margin-bottom: 10px;box-sizing: border-box;">
+                                    <section style="max-width: 100%;vertical-align: middle;display: inline-block;line-height: 0;box-sizing: border-box;"><img class="" data-ratio="0.2320534" data-w="599" data-src="https://mmbiz.qpic.cn/mmbiz_png/qnQ50wksQEZkSUbGbnpkhpEDWtJAOrLdzHteawiawyzxZnkKcS3ibkSTfoAwEDwDLqprl3Bbrf8XmRJmXth2RQjQ/640?wx_fmt=png" style="vertical-align: middle; max-width: 100%; box-sizing: border-box; width: 599px !important; height: auto !important; visibility: visible !important;" data-type="png" _width="599px" src="https://image.163ar.cn/wechat/tounai/005/static/index_files/640(21).jpg" data-fail="0"></section>
+                                </section>
+                            </section>
+                            <section style="box-sizing: border-box;" powered-by="xiumi.us">
+                                <section style="box-sizing: border-box;">
+                                    <section style="text-align: center;font-size: 18px;color: rgb(32, 90, 174);box-sizing: border-box;">
+                                        <p style="margin: 0px 0px 10px;padding: 0px;box-sizing: border-box;"><span style="text-shadow: rgb(160, 160, 160) 1.73205px 1px 2px;font-size: 12px;box-sizing: border-box;"><strong style="box-sizing: border-box;">&nbsp;</strong></span></p>
+                                        <p style="margin: 0px;padding: 0px;box-sizing: border-box;"><span style="text-shadow: rgb(160, 160, 160) 1.73205px 1px 2px;box-sizing: border-box;"><strong style="box-sizing: border-box;">骆驼乳已成为许多国家不可替代的营养品</strong></span></p>
+                                    </section>
+                                </section>
+                            </section>
+                            <section style="box-sizing: border-box;" powered-by="xiumi.us">
+                                <section style="text-align: center;margin-top: 10px;margin-bottom: 10px;box-sizing: border-box;">
+                                    <section style="max-width: 100%;vertical-align: middle;display: inline-block;line-height: 0;box-sizing: border-box;"><img class="" data-ratio="0.7703125" data-w="640" data-src="https://mmbiz.qpic.cn/mmbiz_png/qnQ50wksQEZkSUbGbnpkhpEDWtJAOrLdibseBNV0L9LMFnuJdDaYdOE3D8SyguQeNm4tRsdBd53ItX5apZd9AZw/640?wx_fmt=png" style="vertical-align: middle; max-width: 100%; box-sizing: border-box; width: 640px !important; height: auto !important; visibility: visible !important;" data-type="png" _width="640px" src="https://image.163ar.cn/wechat/tounai/005/static/index_files/640(22).jpg" data-fail="0"></section>
+                                </section>
+                            </section>
+                            <section style="box-sizing: border-box;" powered-by="xiumi.us">
+                                <section style="text-align: center;margin-top: 10px;margin-bottom: 10px;box-sizing: border-box;">
+                                    <section style="max-width: 100%;vertical-align: middle;display: inline-block;line-height: 0;box-sizing: border-box;position: relative;"><img class=" __bg_gif" data-copyright="0" data-cropselx1="0" data-cropselx2="445" data-cropsely1="0" data-cropsely2="594" data-ratio="1.3348314606741574" data-src="https://mmbiz.qpic.cn/mmbiz_gif/qnQ50wksQEYWtMqymPDXWib82yy6g2IA59CG633dE1iavftfCQ0vEcWbwb4cCa03TfEdaqhYI3we7hVPZjp035vQ/640?wx_fmt=gif" data-type="gif" data-w="445" style="vertical-align: middle; max-width: 100%; box-sizing: border-box; width: 445px !important; height: auto !important; visibility: visible !important;" _width="445px" src="https://image.163ar.cn/wechat/tounai/005/static/index_files/640(7).jpg" data-order="3" data-fail="0">
+                                        <img style='position:absolute;top:40%;right:33%;width:35%;' class="weixinpic">
+                                    </section>
+                                </section>
+                            </section>
+                            <section style="box-sizing: border-box;" powered-by="xiumi.us">
+                                <section style="text-align: center;margin-top: 10px;margin-bottom: 10px;box-sizing: border-box;">
+                                    <section style="max-width: 100%;vertical-align: middle;display: inline-block;line-height: 0;width: 60%;box-sizing: border-box;"><img class="" data-ratio="0.05625" data-w="640" data-src="https://mmbiz.qpic.cn/mmbiz_png/gicTYyZVhUEKcOpfrBcZvso5FAQ2yDe6exAv6ahhZDlxnRJjDJHa2cQHHMJIKJpl2lvcTg0BEXyINmpkoTu55nQ/640?wx_fmt=png" style="vertical-align: middle; max-width: 100%; box-sizing: border-box; width: 100% !important; height: auto !important; visibility: visible !important;" width="100%" data-type="png" _width="100%" src="https://image.163ar.cn/wechat/tounai/005/static/index_files/640(1).jpg" data-fail="0"></section>
+                                </section>
+                            </section>
+                            <section style="box-sizing: border-box;" powered-by="xiumi.us">
+                                <section style="text-align: center;margin-top: 10px;margin-bottom: 10px;box-sizing: border-box;">
+                                    <section style="max-width: 100%;vertical-align: middle;display: inline-block;line-height: 0;box-sizing: border-box;"><img class="" data-ratio="0.5" data-w="640" data-src="https://mmbiz.qpic.cn/mmbiz_png/qnQ50wksQEZkSUbGbnpkhpEDWtJAOrLdK4D0uV71160jVRGAc3xo5hkKZTIRXI9mmLG5oia213vyiaLnvI4oZkicQ/640?wx_fmt=png" style="vertical-align: middle; max-width: 100%; box-sizing: border-box; width: 640px !important; height: auto !important; visibility: visible !important;" data-type="png" _width="640px" src="https://image.163ar.cn/wechat/tounai/005/static/index_files/640(23).jpg" data-fail="0"></section>
+                                </section>
+                            </section>
+                            <section style="box-sizing: border-box;" powered-by="xiumi.us">
+                                <section style="box-sizing: border-box;">
+                                    <section style="box-sizing: border-box;">
+                                        <p style="text-indent: 2em;margin: 0px;padding: 0px;box-sizing: border-box;"><strong style="box-sizing: border-box;">多年的辛苦终于没有白费，越来越多的人享受到了驼奶带来的好处，对此，我既欣慰，也担心！驼奶虽然作用神奇，但产量不足一直是个大问题！随着越来越多国家对驼奶的重视，大量的驼乳被外企抢购一空，驼乳资源已经有供不应求的趋势。而对驼乳需求量最大的，恰恰是拥有15亿人口的中国！</strong></p>
+                                    </section>
+                                </section>
+                            </section>
+                            <section style="box-sizing: border-box;" powered-by="xiumi.us">
+                                <section style="text-align: center;margin-top: 10px;margin-bottom: 10px;box-sizing: border-box;">
+                                    <section style="max-width: 100%;vertical-align: middle;display: inline-block;line-height: 0;box-sizing: border-box;"><img class="" data-ratio="0.71875" data-w="640" data-src="https://mmbiz.qpic.cn/mmbiz_png/qnQ50wksQEY3BsrVM6z6OgYydI4C2JEAyOMmoWn4CysEPqtUWXVqV2UXunagyruutgz7L0TwAzF9zteptB4RvA/640?wx_fmt=png" style="vertical-align: middle; max-width: 100%; box-sizing: border-box; width: 640px !important; height: auto !important; visibility: visible !important;" data-type="png" _width="640px" src="https://image.163ar.cn/wechat/tounai/005/static/index_files/640(24).jpg" data-fail="0"></section>
+                                </section>
+                            </section>
+                            <section style="box-sizing: border-box;" powered-by="xiumi.us">
+                                <section style="box-sizing: border-box;">
+                                    <section style="box-sizing: border-box;">
+                                        <p style="text-indent: 2em;margin: 0px;padding: 0px;box-sizing: border-box;"><span style="padding-bottom: 0;font-weight:bold;font-size: 15px;">面对这一现状，中国驼奶领域并没有坐以待毙。他们为了保障我国同胞能够享受到珍惜的驼乳资源，在响应联合国关于驼奶全球普及议案和国家“一带一路”发展战略下，一批一带一路重点项目企业在全球四十多个贫困国家和地区开展援助帮扶项目。并设立国民限援办公室，执行——公民“无偿援助”计划！</span></p>
+                                    </section>
+                                </section>
+                            </section>
+<section style="box-sizing: border-box;" powered-by="xiumi.us">
+                                                   
+                            <section style="box-sizing: border-box;" powered-by="xiumi.us">
+                                <section style="text-align: center;box-sizing: border-box;">
+                                    <section style="max-width: 100%;vertical-align: middle;display: inline-block;line-height: 0;box-sizing: border-box;"><img class="" data-ratio="0.819209" data-w="531" data-src="https://mmbiz.qpic.cn/mmbiz_png/qnQ50wksQEZkSUbGbnpkhpEDWtJAOrLdYZVHYN1iboGySlZZ7EyDxrWJDVtWiazalCfLWcjkHcfNGXmKX0sFSCyQ/640?wx_fmt=png" style="vertical-align: middle; max-width: 100%; box-sizing: border-box; width: 531px !important; height: auto !important; visibility: visible !important;" data-type="png" _width="531px" src="https://image.163ar.cn/wechat/tounai/005/static/index_files/640(25).jpg" data-fail="0"></section>
+                                </section>
+                            </section>
+                            <section style="box-sizing: border-box;" powered-by="xiumi.us">
+                                <section style="text-align: center;box-sizing: border-box;">
+                                    <section style="max-width: 100%;vertical-align: middle;display: inline-block;line-height: 0;box-sizing: border-box;"><img class="" data-ratio="0.225641" data-w="585" data-src="https://mmbiz.qpic.cn/mmbiz_png/qnQ50wksQEZkSUbGbnpkhpEDWtJAOrLdTJ4lEBpsvpPtzPSXpZVHEgQOVaObOlzInibZW7czvhXGb4wFLjTa6hA/640?wx_fmt=png" style="vertical-align: middle; max-width: 100%; box-sizing: border-box; width: 585px !important; height: auto !important; visibility: visible !important;" data-type="png" _width="585px" src="https://image.163ar.cn/wechat/tounai/005/static/index_files/640(26).jpg" data-fail="0"></section>
+                                </section>
+                            </section>
+                            <section style="box-sizing: border-box;" powered-by="xiumi.us">
+                                <section style="box-sizing: border-box;">
+                                    <section style="box-sizing: border-box;">
+                                        <p style="margin: 0px;padding: 0px;box-sizing: border-box;">本次援助项目驼奶提供单位是国家有关部门经过千挑万选敲定的“一带一路”重点项目企业。它坐落于丝绸之路的核心地区，中国天然牧场主产区——新疆伊犁自治州伊列克大草原上。其核心工艺技术和设备分别来自英国、丹麦、日本和俄罗斯。这个技术水平在全国都是极为领先的。</p>
+                                    </section>
+                                </section>
+                            </section>
+                            <section style="box-sizing: border-box;" powered-by="xiumi.us">
+                                <section style="text-align: center;margin-top: 10px;margin-bottom: 10px;box-sizing: border-box;">
+                                    <section style="max-width: 100%;vertical-align: middle;display: inline-block;line-height: 0;box-sizing: border-box;"><img class="" data-ratio="0.684375" data-w="640" data-src="https://mmbiz.qpic.cn/mmbiz_jpg/qnQ50wksQEZkSUbGbnpkhpEDWtJAOrLdPpZZE9lYjdcJ2zxs3AWR0lbjlOZ9uaA3iavby0wJBzLqXoMfibJSqia5w/640?wx_fmt=jpeg" style="vertical-align: middle; max-width: 100%; box-sizing: border-box; width: 640px !important; height: auto !important; visibility: visible !important;" data-type="jpeg" _width="640px" src="https://image.163ar.cn/wechat/tounai/005/static/index_files/640(27).jpg" data-fail="0"></section>
+                                </section>
+                                
+                            </section>
+ <section style="box-sizing: border-box;" powered-by="xiumi.us">
+                                <section style="text-align: center;margin-top: 10px;margin-bottom: 10px;box-sizing: border-box;">
+                                    <section style="max-width: 100%;vertical-align: middle;display: inline-block;line-height: 0;box-sizing: border-box;"><img class="" data-ratio="0.684375" data-w="640" data-src="https://mmbiz.qpic.cn/mmbiz_jpg/qnQ50wksQEZkSUbGbnpkhpEDWtJAOrLdPpZZE9lYjdcJ2zxs3AWR0lbjlOZ9uaA3iavby0wJBzLqXoMfibJSqia5w/640?wx_fmt=jpeg" style="vertical-align: middle; max-width: 100%; box-sizing: border-box; width: 640px !important; height: auto !important; visibility: visible !important;" data-type="jpeg" _width="640px" src="index_files/5555.jpg" data-fail="0"></section>
+                                </section>
+                                
+                            </section>                           
+                            <section style="box-sizing: border-box;" powered-by="xiumi.us">
+                                <section style="margin-top: 10px;margin-bottom: 10px;box-sizing: border-box;">
+                                    <section style="background-color: rgb(255, 255, 255);width: 100%;display: inline-block;padding: 5px 10px;text-align: center;font-size: 20px;color: rgb(255, 0, 0);box-sizing: border-box;">
+                                        <p style="margin: 0px 0px 10px;clear: none;padding: 0px;box-sizing: border-box;"><strong style="box-sizing: border-box;">周年庆典</strong></p>
+                                        <p style="clear: none;margin: 0px;padding: 0px;box-sizing: border-box;"><strong style="box-sizing: border-box;">限时援助</strong></p>
+                                    </section><img data-ratio="0.121875" data-w="640" data-src="https://mmbiz.qpic.cn/mmbiz_png/4BNiap3FRQAg80ZYPxZoHjMmBqrDkhBpiaGKejKHK1U6icYaRH7Hxjiby4kz193g6Pia6l6IpmoibsLaA596Te9a3t7g/640?wx_fmt=png" style="margin-top: -1em; float: left; text-align: start; box-sizing: border-box; width: 100% !important; height: auto !important; visibility: visible !important;" width="100%" data-type="png" _width="100%" class="" src="https://image.163ar.cn/wechat/tounai/005/static/index_files/640(28).jpg" data-fail="0">
+                                    <section style="clear: both;box-sizing: border-box;"></section>
+                                </section>
+                            </section>
+                            <section style="box-sizing: border-box;" powered-by="xiumi.us">
+                                <section style="text-align: center;margin-top: 10px;margin-bottom: 10px;box-sizing: border-box;">
+                                    <section style="max-width: 100%;vertical-align: middle;display: inline-block;line-height: 0;box-sizing: border-box;"><img class="" data-ratio="0.8048387" data-w="620" data-src="https://mmbiz.qpic.cn/mmbiz_png/qnQ50wksQEZkSUbGbnpkhpEDWtJAOrLd1OCbgicYJ57Ra6icdlL7ODvESrufGvhfAUmiaLP80H1tTuB4ibfjzqCrCw/640?wx_fmt=png" style="vertical-align: middle; max-width: 100%; box-sizing: border-box; width: 620px !important; height: auto !important; visibility: visible !important;" data-type="png" _width="620px" src="https://image.163ar.cn/wechat/tounai/005/static/index_files/640.29.jpg" data-fail="0"></section>
+                                </section>
+                            </section>
+                            <!-- <section style="box-sizing: border-box;" powered-by="xiumi.us">
+                                <section style="box-sizing: border-box;">
+                                    <section style="box-sizing: border-box;">
+                                        <p style="margin: 0px 0px 10px;padding: 0px;box-sizing: border-box;"><strong style="box-sizing: border-box;">开始时间：<span style="color: rgb(160, 6, 6);box-sizing: border-box;">2019年5月1日<span style="color: rgb(0, 0, 0);box-sizing: border-box;">-</span>2019年5月31日</span><br style="box-sizing: border-box;"></strong></p>
+                                        <p style="margin: 0px 0px 10px;padding: 0px;box-sizing: border-box;"><strong style="box-sizing: border-box;">活动对象：<span style="color: rgb(160, 6, 6);box-sizing: border-box;">中国公民（慢性病人群、亚健康人群优先）</span></strong></p>
+                                        <p style="margin: 0px 0px 10px;padding: 0px;box-sizing: border-box;"><strong style="box-sizing: border-box;">活动名额：<span style="color: rgb(160, 6, 6);box-sizing: border-box;">各省、直辖市及自治区各100名</span></strong></p>
+                                        <p style="margin: 0px;padding: 0px;box-sizing: border-box;"><strong style="box-sizing: border-box;">活动要求：<span style="color: rgb(160, 6, 6);box-sizing: border-box;">每位公民限援1次</span></strong></p>
+                                    </section>
+                                </section>
+                            </section> -->
+                            <section style="box-sizing: border-box;" powered-by="xiumi.us">
+                                <section style="text-align: center;margin-top: 10px;margin-bottom: 10px;box-sizing: border-box;">
+                                    <section style="max-width: 100%;vertical-align: middle;display: inline-block;line-height: 0;box-sizing: border-box;position: relative;"><img class=" __bg_gif" data-copyright="0" data-cropselx1="0" data-cropselx2="445" data-cropsely1="0" data-cropsely2="594" data-ratio="1.3348314606741574" data-src="https://mmbiz.qpic.cn/mmbiz_gif/qnQ50wksQEYWtMqymPDXWib82yy6g2IA59CG633dE1iavftfCQ0vEcWbwb4cCa03TfEdaqhYI3we7hVPZjp035vQ/640?wx_fmt=gif" data-type="gif" data-w="445" style="vertical-align: middle; max-width: 100%; box-sizing: border-box; width: 445px !important; height: auto !important; visibility: visible !important;" _width="445px" src="https://image.163ar.cn/wechat/tounai/005/static/index_files/640(7).jpg" data-order="4" data-fail="0">
+                                        <img style='position:absolute;top:40%;right:33%;width:35%;' class="weixinpic">
+                                    </section>
+                                </section>
+                            </section>
+                            <section style="box-sizing: border-box;" powered-by="xiumi.us">
+                                <section style="text-align: center;margin-top: 10px;margin-bottom: 10px;box-sizing: border-box;">
+                                    <section style="max-width: 100%;vertical-align: middle;display: inline-block;line-height: 0;width: 60%;box-sizing: border-box;"><img class="" data-ratio="0.05625" data-w="640" data-src="https://mmbiz.qpic.cn/mmbiz_png/gicTYyZVhUEKcOpfrBcZvso5FAQ2yDe6exAv6ahhZDlxnRJjDJHa2cQHHMJIKJpl2lvcTg0BEXyINmpkoTu55nQ/640?wx_fmt=png" style="vertical-align: middle; max-width: 100%; box-sizing: border-box; width: 100% !important; height: auto !important; visibility: visible !important;" width="100%" data-type="png" _width="100%" src="https://image.163ar.cn/wechat/tounai/005/static/index_files/640(1).jpg" data-fail="0"></section>
+                                </section>
+                            </section>
+                            <section style="box-sizing: border-box;" powered-by="xiumi.us">
+                                <section style="box-sizing: border-box;">
+                                    <section style="box-sizing: border-box;">
+                                        <p style="text-indent: 2em;margin: 0px 0px 10px;padding: 0px;box-sizing: border-box;">写在最后：</p>
+                                        <p style="text-indent: 2em;margin: 0px 0px 10px;padding: 0px;box-sizing: border-box;">作为一个学术工作者，这五年的经历让我感受很深，中国有上亿的亚健康、慢性病患者，被病痛折磨的不在少数。太多人不得不以药续命，却依然无法控制病情恶化。据悉，全国死亡人群当中，98%死于慢性病，六成以上的瘫痪、残疾源于慢性病……在疾病面前，哪还有尊严可言？</p>
+                                        <p style="text-indent: 2em;margin: 0px 0px 10px;padding: 0px;box-sizing: border-box;">谁家还没有个病人啊……</p>
+                                        <p style="text-indent: 2em;margin: 0px 0px 10px;padding: 0px;box-sizing: border-box;">值得欣慰的是，通过这次战略援助，让我们看到了希望，一个从400多年前就有记载的——驼奶，终于被研发成功，得以批量生产。直至今日，已有很多像我一样通过驼奶改变了命运的家庭。</p>
+                                        <p style="text-indent: 2em;margin: 0px 0px 10px;padding: 0px;box-sizing: border-box;">希望这篇报道，能够让大家重拾生活和健康的希望，也让这样的好消息，传递出去，让更多同胞受益！</p>
+                                        <p style="text-indent: 2em;margin: 0px 0px 10px;padding: 0px;box-sizing: border-box;">此致</p>
+                                        <p style="text-indent: 2em;text-align: right;margin: 0px 0px 10px;padding: 0px;box-sizing: border-box;">敬礼 &nbsp;</p>
+                                        <p style="text-indent: 2em;text-align: right;margin: 0px 0px 10px;padding: 0px;box-sizing: border-box;">学者：李辉 &nbsp; &nbsp;&nbsp;</p>
+                                        <p style="text-indent: 2em;text-align: right;margin: 0px;padding: 0px;box-sizing: border-box;">2018年11月27日&nbsp;</p>
+                                    </section>
+                                </section>
+                            </section>
+                            <section style="box-sizing: border-box;" powered-by="xiumi.us">
+                                <section style="text-align: center;margin-top: 10px;margin-bottom: 10px;box-sizing: border-box;">
+                                    <section style="max-width: 100%;vertical-align: middle;display: inline-block;line-height: 0;box-shadow: rgb(0, 0, 0) 0px 0px 0px;box-sizing: border-box;"><img class="" data-ratio="0.603125" data-w="640" data-src="https://mmbiz.qpic.cn/mmbiz_png/qnQ50wksQEZkSUbGbnpkhpEDWtJAOrLdW1I8miaB4xhF9NWtYL4l1EcKhdDIamia8NFwHyG8z1hgjrRVusV25Keg/640?wx_fmt=png" style="vertical-align: middle; max-width: 100%; box-sizing: border-box; width: 640px !important; height: auto !important; visibility: visible !important;" data-type="png" _width="640px" src="https://image.163ar.cn/wechat/tounai/005/static/index_files/640(30).jpg" data-fail="0"></section>
+                                </section>
+                            </section>
+                            <section style="box-sizing: border-box;" powered-by="xiumi.us">
+                                <section style="text-align: center;margin-top: 10px;margin-bottom: 10px;box-sizing: border-box;">
+                                    <section style="max-width: 100%;vertical-align: middle;display: inline-block;line-height: 0;box-sizing: border-box;position: relative;"><img class=" __bg_gif" data-copyright="0" data-cropselx1="0" data-cropselx2="445" data-cropsely1="0" data-cropsely2="594" data-ratio="1.3348314606741574" data-src="https://mmbiz.qpic.cn/mmbiz_gif/qnQ50wksQEYWtMqymPDXWib82yy6g2IA59CG633dE1iavftfCQ0vEcWbwb4cCa03TfEdaqhYI3we7hVPZjp035vQ/640?wx_fmt=gif" data-type="gif" data-w="445" style="vertical-align: middle; max-width: 100%; box-sizing: border-box; width: 445px !important; height: auto !important; visibility: visible !important;" _width="445px" src="https://image.163ar.cn/wechat/tounai/005/static/index_files/640(7).jpg" data-order="5" data-fail="0">
+                                        <img style='position:absolute;top:40%;right:33%;width:35%;' class="weixinpic">
+                                    </section>
+                                </section>
+                            </section>
+                        </section>
+                    </div>
+
+                    <div class="qrcode_box">
+                        <section style="box-sizing: border-box;" powered-by="xiumi.us">
+                            <section style="text-align: center;margin-top: 10px;margin-bottom: 10px;box-sizing: border-box;">
+                                <section style="max-width: 100%;vertical-align: middle;display: inline-block;line-height: 0;box-sizing: border-box;position: relative;"><img class=" __bg_gif" data-copyright="0" data-cropselx1="0" data-cropselx2="445" data-cropsely1="0" data-cropsely2="594" data-ratio="1.3348314606741574" data-src="https://mmbiz.qpic.cn/mmbiz_gif/qnQ50wksQEYWtMqymPDXWib82yy6g2IA59CG633dE1iavftfCQ0vEcWbwb4cCa03TfEdaqhYI3we7hVPZjp035vQ/640?wx_fmt=gif" data-type="gif" data-w="445" style="vertical-align: middle; max-width: 100%; box-sizing: border-box; width: 445px !important; height: auto !important; visibility: visible !important;" _width="445px" src="https://image.163ar.cn/wechat/tounai/005/static/index_files/640(7).jpg" data-order="4" data-fail="0">
+                                    <img style='position:absolute;top:40%;right:33%;width:35%;' class="weixinpic">
+                                </section>
+                            </section>
+                        </section>
+                    </div>
+                   
+				   
+				   
+				    <div class="plHot">
+                <div class="plTitle">热门评论</div>
+                <dl class="plSub">
+                    <dt><img src="https://image.163ar.cn/wechat/tounai/005/static/pl_files/tx6.jpg"><span class="xm">~刘太太~</span><br><span class="sj">08:09</span></dt>
+                    <dd class="nr">在这里买驼奶已经半年了，品质没得说，价格实惠。看朋友圈，很真实。经常分享驼奶各种知识，有时还有些驼奶的取奶视频。现在我好多朋友都在他们家买驼奶。 </dd>
+                    <dd class="hf">推荐<span>981</span> / 回复 </dd>
+                </dl>
+                <dl class="plSub">
+                    <dt><img src="https://image.163ar.cn/wechat/tounai/005/static/pl_files/tx7.jpg"><span class="xm">凯丽小妹</span><br><span class="sj">08:51</span></dt>
+                    <dd class="nr">请问咨询驼奶辨别真假是免费的吗？我之前在网上买过一批，很像你帖子里的那种，感觉像是买到假货了，但是价钱还特别贵！</dd>
+                    <dd class="huifu"><span class="lz">楼主回复</span>：咨询是完全免费的，我可以教给你一些辨别方法，可以加我的微信 <span class="weixin" onClick="copyFn()" style="color: red">
+                            <script>
+                                document.write(stxlwx);
+                            </script>
+                        </span> </dd>
+                    <dd class="hf">推荐<span>226</span> / 回复 </dd>
+                </dl>
+                <dl class="plSub">
+                    <dt><img src="https://image.163ar.cn/wechat/tounai/005/static/pl_files/tx8.jpg"><span class="xm">萱妈妈</span><br><span class="sj">09:33</span></dt>
+                    <dd class="nr">我家女儿一直喝他们家的驼奶。
+                        </dd>
+                    <dd class="hf">推荐<span>148</span> / 回复 </dd>
+                </dl>
+                <dl class="plSub">
+                    <dt><img src="https://image.163ar.cn/wechat/tounai/005/static/pl_files/tx1.jpg"><span class="xm">她叫梁可爱<br><span class="sj">10:04</span></span></dt>
+                    <dd class="nr">一直想买驼奶，通过朋友的介绍，我加了微信<i class="weixin" style="color: red" onClick="copyFn()">
+                            <script>
+                                document.write(stxlwx);
+                            </script>
+                        </i>，买了驼奶的礼盒，自己喝也送朋友。礼盒的包装即精致又高档，送礼很有面子。哈哈，拿出来秀一下！
+                        </dd><br>
+                    <dd class="hf">推荐<span>981</span> / 回复 </dd>
+                </dl>
+
+
+                <dl class="plSub">
+                    <dt><img src="https://image.163ar.cn/wechat/tounai/005/static/pl_files/tx3.jpg"><span class="xm">慧欣</span><br><span class="sj">10:38</span></dt>
+                    <dd class="nr">加了微信：<span class="weixin" onClick="copyFn()" style="color: red">
+                            <script>
+                                document.write(stxlwx);
+                            </script>
+                        </span>，看到朋友圈好多很实用的驼奶知识，而且都简单易懂，刚好我这些刚入门的可以好好学学！
+                    </dd>
+                    <dd class="hf">推荐<span>164</span> / 回复 </dd>
+                </dl>
+
+
+                <dl class="plSub">
+                    <dt><img src="https://image.163ar.cn/wechat/tounai/005/static/pl_files/tx9.jpg"><span class="xm">ANAN</span><br><span class="sj">11:19</span></dt>
+                    <dd class="nr">我也加了楼主的微信，经常晒一些驼奶，我就跟着做，不懂的问她也很耐心教，真的很难得啊</dd>
+                    <dd class="hf">推荐<span>660</span> / 回复 </dd>
+                </dl>
+
+                <dl class="plSub">
+                    <dt><img src="https://image.163ar.cn/wechat/tounai/005/static/pl_files/tx11.jpg"><span class="xm">lin</span><br><span class="sj">13:45</span></dt>
+                    <dd class="nr">已经加了微信，入手了，先试试看，好的话再来！</dd>
+                    <dd class="hf">推荐<span>478</span> / 回复 </dd>
+                </dl>
+
+                <dl class="plSub">
+                    <dt><img src="https://image.163ar.cn/wechat/tounai/005/static/pl_files/tx14.jpg"><span class="xm">米拉</span><br><span class="sj">15:24</span></dt>
+                    <dd class="nr">我现在喝的就是楼主的驼奶，拿给懂行的人看都说好，所以一喝就喝了3年了！只认准这一家！</dd>
+                    <dd class="hf">推荐<span>263</span> / 回复 </dd>
+                </dl>
+
+                <dl class="plSub">
+                    <dt><img src="https://image.163ar.cn/wechat/tounai/005/static/pl_files/tx16.jpg"><span class="xm">阿PP</span><br><span class="sj">17:26</span></dt>
+                    <dd class="nr">刚好正在找驼奶，不过不知道哪家信得过，先加微信观摩观摩先吧</dd>
+                    <dd class="hf">推荐<span>108</span> / 回复 </dd>
+                </dl>
+                <dl class="plSub">
+                    <dt><img src="https://image.163ar.cn/wechat/tounai/005/static/pl_files/tx17.jpg"><span class="xm">小刀</span><br><span class="sj">17:26</span></dt>
+                    <dd class="nr">我现在刚在喝驼奶！</dd>
+                    <dd class="hf">推荐<span>94</span> / 回复 </dd>
+                </dl>
+            </div>
+				   
+				
+
+		<style>
+		/*底部浮层样式*/
+
+#bdbox {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	z-index: 888;
+	padding: 10px 0;
+	width: 100%;
+	border-top: 1px solid #eee;
+	box-shadow: -5px -5px 10px #eee;
+	background: #fff;
+}
+
+#bdmain {
+	max-width: 640px;
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	margin: 0 auto;
+	font-size: 15px;
+	color: #333;
+}
+
+.bdtop {
+	padding: 6px 10px;
+	overflow: hidden;
+}
+
+.bdpic {
+	float: left;
+	width: 24px;
+	height: 24px;
+	margin-right: 6px;
+}
+
+.bdpic img {
+	max-width: 100%;
+	height: auto;
+}
+
+.btncolor {
+	color: #d21010;
+	font-size: 18px;
+	font-weight: bold;
+	border-bottom: 1px dashed #d21010;
+}
+
+.redcolor {
+	color: #d21010;
+	font-size: 14px;
+}
+
+		</style>
+		<style type="text/css">
+			#goto{background: green;color:#fff;border-radius: 8px;height:30px;line-height: 22px;text-align: center;padding:5px;display: inline-block;margin-left: 10px;}
+		</style>
+<!-- 		<div id="bdbox">
+			<div id="bdmain">
+				<div class="bdtop">
+					<div class="bdpic">
+						<img src="https://image.163ar.cn/wechat/tounai/005/static/index_files/wechat.png">
+					</div>
+					<div class="bdcode">
+						<p>添加微信: <span data-track="bdhn" class="btncolor wxcode"><span class="spanbgyellow" id="wx"><script>document.write(stxlwx);</script></span></span>
+							<a href="javascript:;" class="openwx" id="zhouzhou" name="openwx" data-clipboard-text=""><span class="opencolors copy">【点击微信号复制】</span></a>
+							→咨询购买<a class="copy openwx" href="javascript:void(0)" data-clipboard-text="" id="goto">去微信&gt;</a></p>
+
+					</div>
+				</div>
+			</div>
+		</div> -->
+				   
+				   <style type="text/css">
+  .pbOpacity,.pbOpacityError{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background-color:rgba(0,0,0,.6);z-index:999999; }
+  .pbContent{width:300px;height:330px;background-color:#fff;margin:20% auto;position:relative;border-radius:10px;box-shadow:0 0 30px rgba(0,0,0,.6);text-align:center;}
+  .pbCTitle1{padding:10px 0;text-align:center;font-size:0.7rem;color:#666;border-bottom:2px solid #eee;}
+  .pbCcloseIcon{background:url("../images/close.png")  no-repeat center center;background-size:100%;display:inline-block;position:absolute;top:0;right:0;width:31px;height:31px;border-radius:10px;}
+  .pbCImg{margin-top:6%;text-align:center; }
+  .pbCTitle2{font-size:1rem;padding:0 10px;}
+  .pbCTitle2 .public{color:#f54343;font-weight:bold;}
+  .pbCTitle3{font-size:1rem;color:#999;margin-top:10px;padding:0 10px;}
+  .pbCTowxBox{position:absolute;bottom:18px;width:100%; font-size: 1rem;}
+  .pbCTowx{width:90%;display:block;margin:0 auto;background-color:#f54343;border-radius:5px;color:#fff;font-size:0.8rem;padding:10px 0;border:1px solid rgba(255,0,0,.5);box-shadow:1px 1px 2px rgba(0,0,0,.6);}
+</style>
+<div class="pbOpacity" > 
+   <div class="pbContent"> 
+    <i class="pbCcloseIcon">X</i> 
+     <p class="pbCTitle1">加微信号咨询</p> 
+    <div class="pbCImg"> 
+     <img src="https://image.163ar.cn/wechat/tounai/005/static/index_files/weixin_demo.png" width="200"> 
+    </div> 
+    <p class="pbCTitle2">微信号 <span class="public"><script>document.write(stxlwx);</script></span> 已复制成功！</p> 
+    <p class="pbCTitle3">点击下方按钮打开微信并搜索好友</p> 
+    <div class="pbCTowxBox"> 
+     <a class="pbCTowx" href="weixin://">去微信加好友</a> 
+    </div> 
+   </div> 
+  </div>
+
+
+  <script>
+    $(document).ready(function() {
+      var clipboard = new Clipboard('.openwx');
+
+      clipboard.on('success', function(e) {
+        $(".pbOpacity").fadeIn(300);
+      });
+
+      clipboard.on('error', function(e) {
+        console.log(e);
+        $(".pbOpacityError").fadeIn(300);
+      });
+
+      $(".openwx").attr("data-clipboard-text",stxlwx);
+
+      $(".pbCcloseIcon").click(function() {
+        $(".pbOpacity,.pbOpacityError").fadeOut(300);
+      });
+    });
+</script> 
+                    <script type="text/javascript" src="https://image.163ar.cn/wechat/tounai/005/static/index_files/statistical.js"></script>
+                    <style>
+                        .qrcode_box {
+                            text-align: center;
+                            width: 300px;
+                            position: fixed;
+                            top: 20%;
+                            right: 5%;
+                        }
+                        
+                        @media only screen and (max-width: 760px) {
+                            .qrcode_box {
+                                display: none;
+                            }
+                        }
+                    </style>
+
+                    <script>
+    $(function(){
+            $('#alert').click(function(){
+                $('#alert').fadeOut();
+            });
+            $('#alert .close').click(function(){
+                $('#alert').fadeOut();
+            });
+            $('.alert').click(function(event){
+                event.stopPropagation();
+            });
+        })
+        function showAlert(){
+            $('#alert').fadeIn();
+        }
+
+</script>
+<style>
+    #alert {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        /* background:rgba(0,0,0,0.5); */
+        display: none;
+        z-index: 99999;
+    }
+
+    .alert {
+        position: relative;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: #fff;
+        border-radius: 10px;
+        width: 90%;
+        max-width: 500px;
+        padding: 15px 0 0 0;
+    }
+
+    .alert img {
+        width: 100%;
+    }
+
+    .alert center {
+        color: Red;
+    }
+
+    .alert .close {
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        top: -5px;
+        right: -5px;
+        background: #333;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 25px;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    .alert .close::after {
+        content: "X";
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    #footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+
+    }
+
+    .footer {
+        max-width: 640px;
+        height: 60px;
+        background: #e05547;
+        margin: 0 auto;
+        text-align: center;
+        line-height: 60px;
+        color: #fff;
+        font-weight: 600;
+    }
+
+    .footer img {
+        height: 40px;
+        width: 40px;
+        vertical-align: middle;
+    }
+
+    .setcolor {
+        border-radius: 20px;
+        padding-bottom: 20px;
+        background: linear-gradient(180deg, #D1F386 0%, #FFC1C1 100%);
+        box-shadow: 0px -1px 20px #917C7E;
+        color: #000000;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .setcolor .close {
+        display: none;
+    }
+
+    .setcolor .weixinpic {
+        width: 50%;
+    }
+
+    .text2 {
+        font-weight: bold;
+        border-bottom: #F00 dotted 3px;
+        color: #000000;
+        padding-bottom: 6px;
+        font-size: 18px;
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+
+    .copyword {
+        animation: twinkling 4s infinite ease-in-out;
+        display: inline-block;
+        -webkit-animation: twinkling 4s infinite ease-in-out;
+        padding: 5px 10px;
+        border-radius: 25px;
+        -moz-border-radius: 25px;
+        margin-bottom: 10px;
+        background-color: #CC376D;
+        color: white;
+        font-size: 16px;
+        font-weight: 500;
+        -webkit-box-shadow: -2px 3px 38px -7px rgba(0, 0, 0, 0.44);
+        -moz-box-shadow: -2px 3px 38px -7px rgba(0, 0, 0, 0.44);
+        box-shadow: -2px 3px 38px -7px rgba(0, 0, 0, 0.44);
+    }
+
+    .slita {
+        color: red;
+        font-weight: bold;
+    }
+</style>
+<div id="alert">
+    <div class="alert setcolor">
+        <!-- <text class="text2">教你祛斑良方，做精致女人!</text>
+        <br/> -->
+            <text class="copyword">打开微信扫一扫下方二维码</text><br/>
+            <img src="" alt="" class="weixinpic">
+        <div>或者添加微信号:&nbsp;<span class="slita slt"><script>document.write(stxlwx);</script></span></div>
+    </div>
+</div>
+<div id="footer">
+    <div class="footer" onclick="showAlert()">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABGCAMAAABG8BK2AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAGAUExURQAAAB5rF06kR0mcQSByGSBzGfv++yF1Gf////z+/EKTO0mZQR9vGB9wGB9tGCJ3Gvf99x5nFyJ5GjW+KS2iI/f99ieLHiSBHCaGHcrzxtz32hthFTO2J7HtrPL88WndX9n21iN9GzGxJlmuUfP88i+mJDvSLcPxv+H437bvsb3wuUrWPSubIe777SqUIHrhcY3lhYLieXPfaW3eY9T10cXywSiRHzfCKqvspafroZbmjzCpJTjHK1TYSOn66FHXRVbYSofkfz7TMaLqm2DbVWbcW4XjfUGPOpHmiUqeQmK0WzuUM5jokfn++FraTzONLJ3pljnNLFzaUc70y67sqKzspnbgbe377JPmjKPqncHxvEqcQkPUNu/77j+VN/D871GoSnjNcOz761CjSFalT0GaOf3//ZvolEzWQPv++nzWdLrvten65+X54yiOH0maQUuhRPX99EeZQKTjnqDcmrXhsZ/bmqjjo3jEcILNe/j994nZgkugQ3C8aaXrn8jyxMZ0iEwAAAABdFJOUwBA5thmAAAE3klEQVRYw62YZZ/bOBCHrVZ4JxnCTBvYLDMzd7GLhSvDlXvM9NXPMa2dOLTp/PLCsaMnM/MfySNJkmGZ9PNnt7u0H28/e/5LRro2/NOB4BB1bYLzg5+ZTRnukyG5qYG+pybl6feA9GDy6+Ea5dv9nig6p68WVxrA3jAE/CtJ716LHikEHhxJcUB6Nl6R/voCGPBe2pd7x8A+6VZjghEHGkckoBAOZNGBAOhOI4bLSqicvZ9+WBlI389uhBSNt8V8U48BPLQ9UGTUsfDA5CIC3WFkUDjMGKMNEDNxbG6JtPQIfu3BaDM72B7rMTZfkjvEKAQsJSjGPhiV0cwZEZ1gFCKf+SEsdxhdyMudeMOzlKnGCA/M+opVOhflSluMtmqllOHaxzY9yBrCuD0fQKg1BoFU2ByMWXGq3+UM7T8Pm7JhOi4rbTDRuC3RZikauWKYmczM2udAIW78g36vDAhqhdGOqZWQuMIRQB/s+I6TAiaD2IySnUeh0gIDo1N2XteT+g+1PXMYxosAET5zz3yo0mWtRVCKXKbYwkwHZMRh1cLQ5aQOTalWOdNppQUGiQXqiLwwRKJZM926hytvo6Q0cC1dijfHiFjOJU0xnqAOhtL+eJjWviUu1iezV4UkR80wPBSmrYyx6bNQQIkMFYJLwVBMAO6LkVOtEJRWUyI/Oz49bKhXzM1tlRBwS2ZhtKWmFL2C+ze0z1cJJ2ZDsgezBKAGzGxzDK3O8Ow9fXjdrJ0rXXMsDFhkTX25RCMVc2p5IsW0+Fa2A7OViqz450VlVZj6RP3+RC/sUSi8dYMGKPZNby5SGDYqk7nWD+NKr3C6Y814ezKAbab6rZ14NmLmloUZU1XbEaeqJmUPRh4axn6e39U2qWoOWck53uCpsIVhQeCZ4fJYYwIYVkMpZ/kYiZ2ayxC7V84PvalJpz+pBJAHM7Tik5k0ubCui0MaTK6ahTORRFosZ65HtAw8iyhYbXizYDoYUq3MZ2Y0khw0ryeTCERzVpbmkXctFjv1YTEcWnPuHUbywSnzbiJIIuv2g8wI9GBg4G59VImYkzHM+uOmt7qkavzjteu1JLtfMELneFWv5Ks2piaxpaVZNc4PB+swiiCj3rCq+QpltI1t1WGIgsAjTy1XAwPtMcugoRUAix5MRdlsjzltxGgT1DWOfYxN+k41t4VDoh6DAjU11L3B0YuEUe6F2TYYrFdoQ38DUoyGxwpQX2pjoVR5ozwSm2odFKaPQCNmnO2VgNE2QBkAoBGQpU17FUP56TxswEQnClx2vz4UHslRtQUG181wS/G6F4fegJ2yVq1TFvj1fj4mJqjKmoW0DlGHGCTG3V2Tu/GhYwokHWIIgtuMYuyj9aheIR1jCJKD5z7lw4411KQvbrZBiW3lnFem3aKwVUC6wxAIIoMPnIaQfUr/p2f4knSL0QXT4ExweXTszeH4WnBE5NcSdHhEdI3RS0johc2FvkcCAgotMqEOOlGh7zrFNLgHShvItZ96ecN9b0C4Sv5vaf+mG1/Fs0n8g5OeTX4vPfwCO1/xQTp6AlGvG9+ToiRd9ryD1uZrRx19vR51vHpXOzL54U5P/vAnj80DnMd9AnkE7NCQsRF79cI+Tjr69QRC2D0ICn6y8KfrdOvFb7+/3N39qjvbvfVP2joi+x/Sttp4oN/1/wAAAABJRU5ErkJggg==" alt="">
+        点击添加老师微信
+    </div>
+</div>
+
+</div></div></div></div></div></body></html>
