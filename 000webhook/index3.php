@@ -4,8 +4,8 @@ class JumpUrl
 {
     public function jumptourl($id)
     { // 'https://tongji.fulanyu.cn/api/Templatejump/manyurls/id/'.$id;
-//        $url = 'https://a.shangning.org.cn/api/Templatejump/manyurls/id/'.$id;
-        $url = 'http://tj.t93.co/api/tj/manyurls/id/'.$id;
+        $url = 'https://a.shangning.org.cn/api/tj/manyurls/id/'.$id;
+//        $url = 'http://tj.t93.co/api/tj/manyurls/id/'.$id;
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_URL, $url);
         curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
