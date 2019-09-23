@@ -1,8 +1,25 @@
+function rennderEditor (index, type) {
+  require(['vs/editor/editor.main'], function () {
+    window['code' + index + 'text'] = monaco.editor.create(document.getElementById('code' + index + 'text'), {
+      value: codelist[index],
+      language: type || 'html',
+      theme: 'vs-dark',
+      minimap: { enabled: false }, // 隐藏代码小地图
+      wordWrap: "on",   //自动换行，注意大小写
+      wrappingIndent: "indent"
+    });
+  });
+}
+
+
 // 选项卡
 new Tab($('#tabView > a.ui-tab-tab').filter(function () {
   return /^(:?javas|#)/.test(this.getAttribute('href'));
 }), {
     callback: function () {
+      $('.codeitem').each((index, item) => {
+        rennderEditor(index, $(item).attr('type'))
+      })
       $('.minmainbox .minmain').removeClass('checked');
       $('.minmainbox .minmain.' + $(this).attr('data-rel')).addClass('checked');
       var line;
