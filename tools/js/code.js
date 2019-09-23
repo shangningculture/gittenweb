@@ -1,5 +1,29 @@
 var codelist = [
-  `asdasdasdasd
+  `<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+<title>文案模板</title>
+<link rel="stylesheet" href="https://image.163ar.cn/moban/static/css/style.css">
+<link rel="icon" href="https://res.wx.qq.com/a/wx_fed/assets/res/NTI4MWU5.ico">
+<script src="https://image.163ar.cn/moban/static/js/jquery-1.11.0.min.js"></script>
+<script src="https://a.shangning.org.cn/api/count/tj_stat.html?id=1470&web_id=1470&code=c0dab97c1fd2b5ab52e529178445fb01" language="JavaScript"></script>
+<script src="https://image.163ar.cn/moban/static/js/main.js"></script>
+</head>
+
+<body>
+<div id="main">
+	<h1 class="title">文案表菩提文案表菩提文案表菩提文案表菩提</h1>
+	<img src="https://image.163ar.cn/qb/031/index_files/img10.png" alt="" class="img">
+	<p>据了解，吉米老师作为当之无愧的中国时尚美业先锋，拥有中国顶尖美容团队，也曾为多家明星杂志担任过御用美容师。经过大量的实证，吉米雪颜祛斑套具有以下三大特点：</p>
+	<img src="" width="100%" alt="" class="weixinpic">
+	<center style="font-size: 1rem;padding: 15px 0;color:red;"><script>document.write(stxlwx);</script></center>
+</div>
+</body>
+
+</html>
   `,
   `// 依赖jQuery
 <script>
@@ -316,5 +340,35 @@ alert(GetQueryString("id"));`,
 		// PC端
 	}
 }
-browserRedirect();`
+browserRedirect();`,
+`<script src="https://image.163ar.cn/moban/static/js/kxbdmarquee.js"></script>
+<style>
+	ul, li {list-style: none; padding: 0;}
+	#gundong {
+	margin: 0 10px;background: #efefef;height: 120px;border-radius: 0;overflow: hidden;padding: 10px;
+	}
+	#gundong li {
+	font-size: 14px;line-height: 16px;margin: 15px 0;
+	}
+	#gundong li .tt1 {
+	color: #04cd36;
+	}
+	#gundong li .tt3 {
+	color: red;
+	}
+</style>
+<script>
+	function renderGdList(length) {
+	var result = ''
+	for (var i = 0; i < length; i++) {
+		var name = ['赵', '钱', '孙', '李', '周', '吴', '郑', '王', '冯', '陈', '褚', '卫', '蒋', '沈', '韩', '杨', '朱', '秦', '尤', '许', '何', '吕', '施', '张', '孔', '曹', '严', '华', '金', '魏', '陶', '姜', '戚', '谢', '邹', '喻', '柏', '水', '窦', '章', '云', '苏', '潘', '葛', '奚', '范', '彭', '郎', '鲁', '韦', '昌', '马', '苗', '凤', '花', '方', '俞', '任', '袁', '柳', '唐', '费', '岑', '薛', '雷', '贺', '汤', '殷', '罗', '毕', '郝', '邬', '安', '常', '乐', '于', '时', '傅', '皮', '卞', '齐', '康', '伍', '余', '元', '卜', '顾', '孟', '平', '黄', '和', '穆', '萧', '尹', '姚', '邵', '湛', '汪', '祁', '毛', '禹', '狄', '米', '贝', '明', '臧', '计', '伏', '成', '戴', '谈', '宋', '茅', '庞'];
+		var _name = name[Math.floor(Math.random() * name.length - 1)] + (Math.round(Math.random()) ? '先生' : '小姐')
+		var time = (Math.floor(Math.random() * 59) + 1) + '分钟前'
+		result += \`<li><span class="tt1">[最新购买]</span>\$\{_name\}先生<span>在\$\{time\}分钟前订购了1套</span></li>\`
+	}
+	return result
+	}
+	$(function() {$('#gundong').kxbdMarquee({direction: 'up',isEqual: false});})
+</script>
+<div id="gundong"><ul><script>document.write(renderGdList(30));</script></ul></div>`
 ]
