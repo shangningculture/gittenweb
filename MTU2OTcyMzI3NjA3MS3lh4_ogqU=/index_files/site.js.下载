@@ -1,0 +1,59 @@
+﻿/*need some params
+1. __statImgUrl
+2. __pvuuid
+3. __adkey1
+4. __resPrefix
+
+*/
+var __x = document.getElementById("hb-img");
+var __count = 1; //上报计数。
+function __hb(){
+	if(__count>5){return;}
+	__x.innerHTML = '<img alt="o" src="'+__statImgUrl+'?u='+__pvuuid+'&k='+__adkey1+'&_t='+new Date().getTime()+'&count='+__count+'">';
+	__count ++;
+}
+__hb(); //first visit
+setInterval("__hb();",30000);
+
+function __clickBackTo(){
+	if(__hasPopup==1){  //先弹出
+		setTimeout(function () {$('#xxxxxxModal').css('display', 'block');}, 0);
+	}else{  //直接返回
+		__finalBack();
+	}
+}
+
+function __finalBack(){
+	var xmlhttp = window.XMLHttpRequest?new XMLHttpRequest():new ActiveXObject("Microsoft.XMLHTTP");
+	xmlhttp.open("POST",__statImgUrl,false);
+	xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+	xmlhttp.send('k='+__adkey1+'&a=1&u='+__pvuuid);
+	
+	if(__forceTo!=""){
+		window.location.href= __forceTo;
+		return;
+	}
+
+	if(__banReturnAd==0){
+		window.location.href= __statImgUrl+'?xxxxx=1&k='+__adkey1+(__isfirst?'':'&second=1');
+		return;
+	}
+}
+
+if(__banReturnAd==0){
+	setTimeout(function(){
+		var loc = window.location.href;
+		history.pushState(null, null, loc);
+		window.onpopstate = function(){
+				__clickBackTo();
+				return false;
+			};
+	}, 1000);
+}
+
+jQuery(function ($) {
+    $('#xxxxxxmydel').click(function (event) {
+        $('#xxxxxxModal').css('display', 'none');
+        __finalBack();
+    });
+});

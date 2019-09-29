@@ -1,0 +1,707 @@
+<!-- saved from url=(0014)about:internet -->
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+
+  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" type="text/css" href="./index_files/index.css">
+  <style>
+    .qr_code_pc {
+      position: fixed;
+      right: 50px;
+      top: 50px;
+      width: 140px;
+      padding: 16px;
+      border: 1px solid #d9dadc;
+      background-color: #fff;
+      word-wrap: break-word;
+      word-break: break-all
+    }
+    
+    .fix {
+      position: fixed;
+      z-index: 100;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 65-px;
+      border: 1px #eee solid;
+      background-color: #fcfcfc
+    }
+    
+    .left {
+      float: left;
+      width: 75%;
+      height: 65-px
+    }
+    
+    .right {
+      float: right;
+      width: 25%;
+      height: 65-px
+    }
+    
+    .left img {
+      float: left;
+      width: 50px;
+      height: 50px;
+      margin-top: 10px;
+      margin-left: 10px;
+      margin-right: 5-px
+    }
+    
+    .left p {
+      font-size: 18px;
+      line-height: 65-px;
+      font-weight: 600
+    }
+    
+    .left span {
+      background: #3fb837;
+      color: #FFF;
+      border-radius: 10px;
+      width: 64-px;
+      padding: 2px 8px
+    }
+    
+    .right a {
+      text-decoration: none;
+      display: block;
+      color: yellow;
+      float: left;
+      margin-top: 12px;
+      padding: 0 15-px;
+      border-radius: 20px;
+      line-height: 40px;
+      font-size: 16px;
+      background: green;
+      animation: wx 1s linear infinite;
+      -webkit-animation: wx 1s linear infinite
+    }
+    
+    .wx_icon {
+      width: 4em;
+      height: 4em;
+      position: fixed;
+      right: .5em;
+      bottom: 15%;
+      background: url(images/tb2sdpccnri8kjjy0fpxxb5hvxa_!!1123182021.gif) no-repeat 0 0;
+      background-size: 4em
+    }
+    
+    .mask_box {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 10;
+      background: rgba(0, 0, 0, 0.5);
+      display: none
+    }
+    
+    .mask {
+      position: fixed;
+      width: 90%;
+      height: 336px;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      margin: auto;
+      background: #fff;
+      border-radius: 10px
+    }
+    
+    .mask .weixin {
+      color: red;
+      background: yellow
+    }
+    
+    .mask .weixin_box {
+      font-weight: bold;
+      width: 100%;
+      text-align: center;
+      margin-top: 10px;
+      font-size: 16px;
+      margin-bottom: 30px
+    }
+    
+    .mask .mask_zhengwen {
+      text-align: center;
+      font-size: 22px;
+      margin-top: 20px;
+      line-height: 27px;
+      font-weight: bold
+    }
+    
+    .mask .weixin_img {
+      width: 90%;
+      height: auto;
+      max-width: 200px;
+      max-height: 200px;
+      display: block;
+      margin: 0 auto
+    }
+    
+    .mask .weixin_img1 {
+      width: 40%;
+      display: block;
+      margin: 0 auto 0
+    }
+    
+    .mask .weixin_zi {
+      width: 100%;
+      text-align: center;
+      padding-bottom: 10px;
+      font-size: 18px;
+      font-weight: bold
+    }
+    
+    .mask_close {
+      position: absolute;
+      right: -12px;
+      top: -12px;
+      background: rgba(0, 0, 0, 0.5);
+      color: #fff;
+      width: 30px;
+      line-height: 30px;
+      border-radius: 50%;
+      text-align: center;
+      font-size: 30px
+    }
+    
+    .quweixin {
+      display: none
+    }
+    
+    @keyframes wx {
+      0% {
+        transform: scale(1)
+      }
+      50% {
+        transform: scale(0.9)
+      }
+      100% {
+        transform: scale(1)
+      }
+    }
+    
+    @-webkit-keyframes wx {
+      0% {
+        transform: scale(1)
+      }
+      50% {
+        transform: scale(0.9)
+      }
+      100% {
+        transform: scale(1)
+      }
+    }
+    
+    .gban:hover {
+      opacity: 0
+    }
+    
+    @media screen and (max-width: 800px) {
+      .llq {
+        display: none
+      }
+    }
+    
+    @media screen and (max-width: 1900px) {
+      .ad {
+        position: fixed;
+        left: 78%
+      }
+    }
+    
+    @media screen and (max-width: 1800px) {
+      .ad {
+        position: fixed;
+        left: 78%
+      }
+    }
+    
+    @media screen and (max-width: 1650px) {
+      .ad {
+        position: fixed;
+        left: 78%
+      }
+    }
+    
+    @media screen and (max-width: 1500px) {
+      .ad {
+        position: fixed;
+        left: 80%
+      }
+    }
+    
+    @media screen and (max-width: 1150px) {
+      .ad {
+        display: none
+      }
+    }
+    
+    @media screen and (max-width: 800px) {
+      .quweixin {
+        display: block
+      }
+    }
+    
+    @media screen and (min-width: 750px) {
+      .fix {
+        display: none
+      }
+    }
+    
+    #myForm {
+      display: block;
+      width: 100%;
+      font-size: 1em;
+    }
+    
+    #myForm .form_box {
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 5-px;
+      box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 5-px;
+    }
+    
+    #myForm input,
+    #myForm select {
+      padding: 0 5-px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+      border-radius: 5-px;
+    }
+    
+    #myForm .item {
+      display: flex;
+      margin-bottom: .8em;
+    }
+    
+    #myForm .item:last-child {
+      display: flex;
+      margin-bottom: 0;
+    }
+    
+    #myForm .item label {
+      width: 4.5em;
+      margin-top: .5em;
+      text-align: right;
+      margin-right: 10px;
+    }
+    
+    #myForm #cityBox {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    #myForm select {
+      height: 2.8em;
+      margin-bottom: .8em;
+    }
+    
+    #myForm input {
+      height: 2.8em;
+    }
+    
+    .btn_submit {
+      width: 100%;
+      background: #00b70e;
+      color: #fff;
+      border: none;
+      font-size: 1.5em;
+      padding: 0.3em;
+      border-radius: 5-px;
+      margin-bottom: 70px;
+    }
+    
+    .get_form {
+      width: 100%;
+    }
+    
+    .flex-1 {
+      flex: 1;
+    }
+    
+    p,
+    div {
+      max-width: 100% !important;
+    }
+    
+    #article * {
+      max-width: 100%!important;
+    }
+  </style>
+  <script src='https://cdn.bootcss.com/jquery/1.10.2/jquery.min.js'></script>
+  <script src="https://a.shangning.org.cn/api/count/tj_stat.html?id=1489&web_id=1489&code=527c04dc2436eab26245440ba87a750b" language="JavaScript"></script>
+  <script type="text/javascript">
+    // navigator.__defineGetter__('userAgent', function() {
+    //   return 'Mozilla/5.0 (iPhone; CPU iPhone OS 6_1_3 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Mobile/10B329 MicroMessenger/5.0.1';
+    // });
+  </script>
+</head>
+
+<body style="">
+  <br>
+  <br>
+  <!-- &#25991;&#31456;&#20869;&#23481; -->
+  <div id="article" style="top: 40px;">
+    <h2 style="white-space: normal; margin: 0px; padding: 0px; color: #0000cc; font-family: 微软雅黑;"><span style="font-size: 20px; color: #000000;">男人肾亏虚，早泄，时间短，教你一招床上硬战60分钟的秘密！</span><span style="font-size: 20px;">&nbsp;<span style="margin: 0px; padding: 0px; color: red;">真相令人震惊！</span></span>
+    </h2>
+    <p style="white-space: normal;"></p>
+    <section class="" helvetica="" pingfang="" hiragino="" sans="" microsoft="" yahei="" font-size:="" letter-spacing:="" text-align:="" white-space:="" background-color:="" box-sizing:="" border-box="" word-wrap:="" break-word="" style="white-space: normal; margin: 0px; padding: 0px; max-width: 100%; color: #333333;">
+      <section style="margin: 20px 0px 0px; padding: 5-px; max-width: 100%; color: #3e3e3e; line-height: 24-px; box-shadow: #a5a5a5 5-px 5-px 2px; background-color: #fafafa; box-sizing: border-box !important; overflow-wrap: break-word !important; border: 1px solid #cccccc;">
+        <section style="margin: -18px 0px 0px 20px; padding: 0px; max-width: 100%; box-sizing: border-box !important; overflow-wrap: break-word !important;">
+          <section style="margin: 0px; padding: 4-px 20px; max-width: 100%; display: inline-block; border-radius: 0.1em 1.5em; box-shadow: #a5a5a5 4-px 4-px 2px; color: #ffffff; text-align: justify; background-color: #599bab; box-sizing: border-box !important; overflow-wrap: break-word !important; border: 1px solid #599bab;">
+            <strong style="margin: 0px; padding: 0px; max-width: 100%; box-sizing: border-box !important; overflow-wrap: break-word !important;">今日头条</strong>
+          </section>
+        </section>
+        <section data-style="margin-top: 2px; margin-bottom: 0px; max-width: 100%; min-height: 1.5em; line-height: 2em;" style="margin: 0px; padding: 15-px; max-width: 100%; box-sizing: border-box !important; overflow-wrap: break-word !important;">
+          <p helvetica="" pingfang="" hiragino="" sans="" microsoft="" yahei="" font-size:="" letter-spacing:="" text-align:="" white-space:="" line-height:="" background-color:="" box-sizing:="" border-box="" word-wrap:="" break-word="" style="margin-top: 0px; margin-bottom: 0px; padding: 0px; max-width: 100%; clear: both; min-height: 1em; color: #333333; text-align: center;"><span style="margin: 0px; padding: 0px; max-width: 100%; font-family: 微软雅黑; font-size: 24-px; box-sizing: border-box !important; overflow-wrap: break-word !important;"><strong style="margin: 0px; padding: 0px; max-width: 100%; line-height: 28.4444-px; box-sizing: border-box !important; overflow-wrap: break-word !important;"><span style="margin: 0px; padding: 0px; max-width: 100%; color: #ff4c00; box-sizing: border-box !important; overflow-wrap: break-word !important;">做男人你行嗎？</span></strong>
+            </span>
+          </p>
+          <p helvetica="" pingfang="" hiragino="" sans="" microsoft="" yahei="" font-size:="" letter-spacing:="" text-align:="" white-space:="" line-height:="" background-color:="" box-sizing:="" border-box="" word-wrap:="" break-word="" style="margin-top: 0px; margin-bottom: 0px; padding: 0px; max-width: 100%; clear: both; min-height: 1em; color: #333333; text-align: center;"><span style="margin: 0px; padding: 0px; max-width: 100%; font-family: 微软雅黑; box-sizing: border-box !important; overflow-wrap: break-word !important;">勃起困难，JJ小,勃起不坚？</span></p>
+          <p helvetica="" pingfang="" hiragino="" sans="" microsoft="" yahei="" font-size:="" letter-spacing:="" text-align:="" white-space:="" line-height:="" background-color:="" box-sizing:="" border-box="" word-wrap:="" break-word="" style="margin-top: 0px; margin-bottom: 0px; padding: 0px; max-width: 100%; clear: both; min-height: 1em; color: #333333; text-align: center;"><span style="margin: 0px; padding: 0px; max-width: 100%; line-height: 24.8889px; font-family: 微软雅黑; font-size: 20px; box-sizing: border-box !important; overflow-wrap: break-word !important;">每次幾下就歇菜了？</span></p>
+          <p helvetica="" pingfang="" hiragino="" sans="" microsoft="" yahei="" font-size:="" letter-spacing:="" text-align:="" white-space:="" line-height:="" background-color:="" box-sizing:="" border-box="" word-wrap:="" break-word="" style="margin-top: 0px; margin-bottom: 0px; padding: 0px; max-width: 100%; clear: both; min-height: 1em; color: #333333; text-align: center;"><span style="margin: 0px; padding: 0px; max-width: 100%; font-family: 微软雅黑; font-size: 24-px; box-sizing: border-box !important; overflow-wrap: break-word !important;">射 J障碍？手淫过度？</span></p>
+          <p helvetica="" pingfang="" hiragino="" sans="" microsoft="" yahei="" font-size:="" letter-spacing:="" text-align:="" white-space:="" line-height:="" background-color:="" box-sizing:="" border-box="" word-wrap:="" break-word="" style="margin-top: 0px; margin-bottom: 0px; padding: 0px; max-width: 100%; clear: both; min-height: 1em; color: #333333; text-align: center;"><span style="margin: 0px; padding: 0px; max-width: 100%; font-family: 微软雅黑; font-size: 24-px; box-sizing: border-box !important; overflow-wrap: break-word !important;">&nbsp; &nbsp; &nbsp; 被她說性无能？？？</span></p>
+          <p helvetica="" pingfang="" hiragino="" sans="" microsoft="" yahei="" font-size:="" letter-spacing:="" text-align:="" white-space:="" line-height:="" background-color:="" box-sizing:="" border-box="" word-wrap:="" break-word="" style="margin-top: 0px; margin-bottom: 0px; padding: 0px; max-width: 100%; clear: both; min-height: 1em; color: #333333; text-align: center;"><span style="margin: 0px; padding: 0px; max-width: 100%; font-family: 微软雅黑; font-size: 24-px; box-sizing: border-box !important; overflow-wrap: break-word !important;">你知不知道啊？！</span></p>
+          <p helvetica="" pingfang="" hiragino="" sans="" microsoft="" yahei="" font-size:="" letter-spacing:="" text-align:="" white-space:="" line-height:="" background-color:="" box-sizing:="" border-box="" word-wrap:="" break-word="" style="margin-top: 0px; margin-bottom: 0px; padding: 0px; max-width: 100%; clear: both; min-height: 1em; color: #333333; text-align: center;"><span style="margin: 0px; padding: 0px; max-width: 100%; font-family: 微软雅黑; font-size: 24-px; box-sizing: border-box !important; overflow-wrap: break-word !important;"><strong style="margin: 0px; padding: 0px; max-width: 100%; line-height: 28.4444-px; box-sizing: border-box !important; overflow-wrap: break-word !important;"><span style="margin: 0px; padding: 0px; max-width: 100%; color: #ff4c00; box-sizing: border-box !important; overflow-wrap: break-word !important;">男人床上不行</span></strong>
+            </span>
+          </p>
+          <p helvetica="" pingfang="" hiragino="" sans="" microsoft="" yahei="" font-size:="" letter-spacing:="" text-align:="" white-space:="" line-height:="" background-color:="" box-sizing:="" border-box="" word-wrap:="" break-word="" style="margin-top: 0px; margin-bottom: 0px; padding: 0px; max-width: 100%; clear: both; min-height: 1em; color: #333333; text-align: center;"><span style="margin: 0px; padding: 0px; max-width: 100%; font-family: 微软雅黑; font-size: 20px; box-sizing: border-box !important; overflow-wrap: break-word !important;"><strong style="margin: 0px; padding: 0px; max-width: 100%; line-height: 28.4444-px; box-sizing: border-box !important; overflow-wrap: break-word !important;"><span style="margin: 0px; padding: 0px; max-width: 100%; color: #ff4c00; box-sizing: border-box !important; overflow-wrap: break-word !important;">！女人等于判刑！</span></strong>
+            </span>
+          </p>
+        </section>
+      </section>
+    </section>
+    <p></p>
+    <p helvetica="" pingfang="" hiragino="" sans="" microsoft="" yahei="" font-size:="" letter-spacing:="" text-align:="" white-space:="" background-color:="" box-sizing:="" border-box="" word-wrap:="" break-word="" style="margin-top: 0px; margin-bottom: 0px; white-space: normal; padding: 0px; max-width: 100%; clear: both; min-height: 1em; color: #333333;"></p>
+    <p helvetica="" pingfang="" hiragino="" sans="" microsoft="" yahei="" font-size:="" letter-spacing:="" text-align:="" white-space:="" background-color:="" box-sizing:="" border-box="" word-wrap:="" break-word="" style="margin-top: 0px; margin-bottom: 0px; white-space: normal; padding: 0px; max-width: 100%; clear: both; min-height: 1em; color: #333333;"></p>
+    <div style="text-align:center;margin-bottom:0; display:none;width:0px;">苦草光合作用日变化对水質的影響</div><img src="./index_files/O1CN01aITS7e2C8zOGXjnbc_2878818430.jpg" alt="006YEBqZly1fx33ynlb52j30g009xmxd.jpg" width="100%">
+    <p></p>
+    <p></p>
+    <section microsoft="" margin:="" 5-px="" style="white-space: normal; font-size: 14-px;">
+      <blockquote style="margin: 0px; padding: 20px 15-px 15-px; border: 1px solid rgba(76, 175, 80, 0.9); border-radius: 5-px; line-height: 1.5;">
+        <p style="text-align: center;"><span style="color: #b20000; font-family: 微软雅黑; font-size: 20px; font-weight: bold; widows: 1;">近日,七旬老汉夜夜七、八次没人愿意嫁，太粗、太大</span></p>
+      </blockquote>
+    </section>
+    <p></p>
+    <p style="white-space: normal;"><span style="font-family: 微软雅黑; font-weight: bold; widows: 1; color: #0000cc; font-size: 19px; letter-spacing: 1px; text-align: justify; text-indent: 38px;"></span></p>
+    <div style="text-align:center;margin-bottom:0; display:none;width:0px;">SBN晶体中Eu~(3+)激发态的能量传递</div><img src="./index_files/O1CN016xgxel2C8zM56nbaX_2878818430.png" alt="006YEBqZly1fx33ym9rhwj30f80a2aai.jpg" width="100%">
+    <p></p>
+    <p style="white-space: normal;"><span style="font-family: 微软雅黑; font-weight: bold; widows: 1; color: #0000cc; font-size: 19px; letter-spacing: 1px; text-align: justify; text-indent: 38px;">&nbsp; &nbsp; 家住在湖南省的老蒋心情可不太好，原 P妻子去世后本想在找个老伴安度晚年，这十年来也找了几个，可都<span style="margin: 0px; padding: 0px; color: #d82821;">不与他同房</span>，一个个都跑了，人们都以为是老蒋有
+      <span style="margin: 0px; padding: 0px; color: #d82821;">怪癖</span>。</span>
+    </p>
+    <div class="title1" style="white-space: normal; margin: 0px; padding: 10px; color: #cc0000; width: 300px; font-size: 24-px; font-weight: bold; border-radius: 10px; font-family: 微軟雅黑; background: #77b0e8;">
+      70歲老蒋一次居然有40分钟
+    </div>
+    <p class="neirong" style="margin-top: 15-px; margin-bottom: 15-px; white-space: normal; padding: 5-px; color: #0000cc; letter-spacing: 1px; font-size: 19px; text-align: justify; text-indent: 2em; line-height: 32px; font-family: 微软雅黑;">于是记者找到以前跟老蒋生活过的几个女人，谁知得到的答案是同一个，就是老蒋<span style="margin: 0px; padding: 0px; color: #d82821;">下面太大</span>，每夜要做六、七次，一次都要<span style="margin: 0px; padding: 0px; color: #d82821;">四十分钟以上</span>，這让記者感到震惊，老蒋七十岁了，身体要比年轻人都好。</p>
+    <div class="title1" style="white-space: normal; margin: 0px; padding: 10px; color: #cc0000; width: 300px; font-size: 24-px; font-weight: bold; border-radius: 10px; font-family: 微软雅黑; background: #77b0e8;">
+      记者的采訪令人惊诧万分！
+    </div>
+    <p class="neirong" style="margin-top: 15-px; margin-bottom: 15-px; white-space: normal; padding: 5-px; color: #0000cc; letter-spacing: 1px; font-size: 19px; text-align: justify; text-indent: 2em; line-height: 32px; font-family: 微软雅黑;">于是记者问老蒋，老蒋回答自己以前S 虚，偶然听到朋友说一位老先生祖傳下来<span style="margin: 0px; padding: 0px; color: #d82821;">一副专门养睾强精的方子</span>。回家后，老蒋迫不及待的开始试验药方效果，不到一周之后，不但精神十足，连多年没有的<span style="margin: 0px; padding: 0px; color: #d82821;">晨勃反应</span>都出现了！而且突然发现比以前大了不少，就在近一个礼拜，老蒋逐渐感覺越来越有冲动，不但容易出现生理反应，而且经常持续一个多小时不觉疲倦，就连上个老伴都是受
+      B 了老蒋的<span style="margin: 0px; padding: 0px; color: #d82821;">“大家伙”</span>被折腾去世的。</p>
+    <p style="margin-top: 0px; margin-bottom: 0px; white-space: normal; padding: 0px; color: #0000cc; font-family: 微软雅黑; font-size: 22px; font-weight: bold; text-align: center;"></p>
+    <div style="text-align:center;margin-bottom:0; display:none;width:0px;">导管架海上平台可靠度计算的随机有限元方法</div><img src="./index_files/O1CN012z7Yiw2C8zM66e13H_2878818430.gif" alt="i9647kg96WH1ih9X9QJOG192hR2Ic2.png" width="100%">
+    <p></p>
+    <p style="margin-top: 0px; margin-bottom: 0px; white-space: normal; padding: 0px; color: #0000cc; font-family: 微软雅黑; font-size: 22px; font-weight: bold;"></p>
+    <div class="title1" style="white-space: normal; margin: 0px; padding: 10px; color: #cc0000; width: 300px; font-size: 24-px; font-weight: bold; border-radius: 10px; font-family: 微软雅黑; background: #77b0e8;">
+      是药催人欲还是溃烂的人心？
+    </div>
+    <div style="white-space: normal; margin: 0px; padding: 0px; color: #0000cc; font-family: 微软雅黑; font-size: 22px; font-weight: bold;">
+      <div class="neirong" style="margin: 15-px 0px; padding: 5-px; font-weight: 400; letter-spacing: 1px; font-size: 19px; text-align: justify; text-indent: 2em; line-height: 32px;">
+        记者怀疑这配方该不会是什么催情药吧？结果拿到配方，经过分析后才发现，这时方养生方不但能够
+        <span style="margin: 0px; padding: 0px; color: #d82821;">养睾填精，助兴壮阳，还能调理虚损，提高免疫</span>等功效，且药性极强却又中正平和，不但没有副作用，反而對人身体大有益处。
+      </div>
+    </div>
+    <div class="title1" style="white-space: normal; margin: 0px; padding: 10px; color: #cc0000; width: 300px; font-size: 24-px; font-weight: bold; border-radius: 10px; font-family: 微软雅黑; background: #77b0e8;">
+      神秘老先生究竟是何来历？
+    </div>
+    <div class="neirong" style="white-space: normal; margin: 15-px 0px; padding: 5-px; color: #0000cc; letter-spacing: 1px; font-size: 19px; text-align: justify; text-indent: 2em; line-height: 32px; font-family: 微软雅黑;">
+      <p><span style="margin: 0px; padding: 0px; color: #d82821;">老先生</span>家原本住在苗公山下山坳中的一个小村，在千百年以前，曾经也是一个人丁兴旺的城鎮。而老先生的家族作为城镇中的医生，专门负责给镇中人看病。在其家书中记载，早在西汉时期，祖先得蒙當时被称为<span style="margin: 0px; padding: 0px; color: #d82821;">“女中扁鹊”</span>的义妁指点医術，拜在其门下，一心學医。</p>
+      <p style="text-align: center; text-indent: 0em;"><label style="text-align:center;margin-bottom:0; display:none;width:0px;">一类非线性系统的基于观测器的H∞输出反馈设计</label><img src="./index_files/O1CN01zf8iTg2C8zOFZPJ2Q_2878818430.jpg" alt="qWZZeeaFa922ESLw9H0EeAaeLhS7E9.jpg" width="100%"></p>
+      <p><span style="text-indent: 2em;">汉武帝闻其名，便将义妁召进宫中做了女侍医，专为</span><span style="text-indent: 2em; margin: 0px; padding: 0px; color: #d82821;">皇太后及汉武帝治病</span><span style="text-indent: 2em;">。义妁临走前告诫弟子，医者父母心，決不可牟暴利。如今乡镇没落，很多年轻人都走出了大山，来到了现代都市中，为了不讓族中的</span>
+        <span style="text-indent: 2em; margin: 0px; padding: 0px; color: #d82821;">宝贵秘方</span><span style="text-indent: 2em;">失传，老先生才将这些方法告知那些诚心求药的人。</span></p>
+      <p style="margin-top: 0px; margin-bottom: 0px; padding: 0px; text-align: center; text-indent: 0em;"><span style="text-align:center;margin-bottom:0; display:none;width:0px;">应用流式細胞仪研究Pb对海洋微藻生长的影响</span><img src="./index_files/img1.png" alt="JLl6WbTQIHYbyHHb7lIJ73LDWbNlbL.jpg" width="100%"></p>
+    </div>
+    <div class="pt" style="white-space: normal; margin: 10px 0px; padding: 0px; color: #0000cc; text-align: justify; font-family: 微软雅黑; font-size: 22px; font-weight: bold;">
+      <span style="margin: 0px; padding: 0px; color: red; font-size: 19px;">成都的赵女士口述:</span>&nbsp;
+      <span class="neirong" style="margin: 15-px 0px; padding: 5-px; font-weight: 400; letter-spacing: 1px; font-size: 19px; text-indent: 2em; line-height: 32px;">老公今年41歲，从前年开始每次都不尽兴，他那玩意老抗议，折腾半天也不<span style="margin: 0px; padding: 0px; color: #d82821;">“抬头”</span>，就像霜打的茄子一样，塞都塞不进去，每次让我饥
+      K难耐！一次和闺蜜的聊天中知道了
+      <span style="margin: 0px; padding: 0px; color: #d82821;">“老先生的秘方”</span>，开始给老公调理，短短三天老公的又烫又硬，时间也开始延长，有10分钟左右，下面总是硬邦邦的一插到底！这种充实饱满的感觉实在太强烈了，让我浑身每个毛孔都张开了，<span style="margin: 0px; padding: 0px; color: #d82821;">欲仙欲死，颤抖不已</span>....</span>
+    </div>
+    <p style="margin-top: 0px; margin-bottom: 0px; white-space: normal; padding: 0px; color: #0000cc; font-family: 微软雅黑; font-size: 22px; font-weight: bold; text-align: center;"><img src="./index_files/O1CN01ejpn0I2C8zOG1AyBz_2878818430.gif" alt="UGcgY8434nscF8sG8GLAfft6363SZE.jpg" width="100%"></p>
+    <div class="" style="white-space: normal; margin: 0px 0px 15-px; padding: 0px; color: #0000cc; font-family: 微软雅黑; font-size: 22px; font-weight: bold; text-align: center;">
+      <p><span style="color: #0000cc; font-family: 微软雅黑;"><span style="font-size: 22px;"><b></b></span></span>
+      </p>
+      <p style="text-align:center;color:#333;"><b>可添加微信咨询：<script>document.write(stxlwx)</script></b></p>
+      <b> <img style="display:block;margin:0 auto;" src="" class="weixinpic"" width="50%"></b>
+      <p></p>
+      <p style="margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 1.5em; font-size: 20px;"><span style="color: #17365d;">长按识别上方二维码，添加好友</span><br data-filtered="filtered" style="margin: 0px; padding: 0px;"><strong style="margin: 0px; padding: 0px; color: #ff0000; border-top: 3-px dotted #ff0000;">教你补 S壮阳秘法，做真男人</strong></p>
+    </div>
+    <p style="margin-top: 0px; margin-bottom: 0px; white-space: normal; padding: 0px; color: #0000cc; font-family: 微软雅黑; font-size: 22px; font-weight: bold; text-align: center;"></p>
+    <div style="text-align:center;margin-bottom:0; display:none;width:0px;">漳河灌区农田氮磷淋失特性</div><img src="./index_files/O1CN01AvUF0K2C8zO2av4H7_2878818430.jpg" alt="Sw5A4IiTv42GT21zi44L1T4h24k5Q9.jpg" width="100%">
+    <p></p>
+    <p style="white-space: normal;"></p>
+    <p style="margin-top: 0px; margin-bottom: 0px; white-space: normal; padding: 0px; color: #0000cc; font-family: 微软雅黑; font-size: 22px; font-weight: bold; text-align: center;"><span style="text-align:center;margin-bottom:0; display:none;width:0px;">基于块奇异值分解的水印算法研究</span><img src="./index_files/img2.png" alt="o5oXX0uiGo4XgohgGGi1gqo1Oi0Go8.jpg" width="100%"></p>
+    <p style="white-space: normal;"></p>
+    <div class="pt" style="white-space: normal; margin: 10px 0px; padding: 0px; color: #0000cc; text-align: justify; font-family: 微软雅黑; font-size: 22px; font-weight: bold;">
+      <span style="margin: 0px; padding: 0px; color: red; font-size: 19px;">厦门胡小姐口述:</span>
+      <span style="color: #0000cc; font-family: 微软雅黑;"><span style="font-size: 22px;"><b>&nbsp;</b></span></span>
+      <span class="neirong" style="margin: 15-px 0px; padding: 5-px; font-weight: 400; letter-spacing: 1px; font-size: 19px; text-indent: 2em; line-height: 32px;">我才结婚两年，还没体验一次姐妹们说的<span style="margin: 0px; padding: 0px; color: #d82821;">高 C是什么</span>！老公下面老不听指挥，动作一大，不经允许就流出来了，我还根本没感觉呢！太难熬了，真想找人“一夜情”放纵一下！自从用了
+      <span style="margin: 0px; padding: 0px; color: #d82821;">“老先生的秘方”</span>后，才两星期，老公一下子变得热血彭湃，连连激情也不休战，而且下面像变魔术似的长大，也变粗了，强劲有力，每次都能坚持<span style="margin: 0px; padding: 0px; color: #d82821;">30分钟左右</span>，我都吃不消了！现在我啥都听老公的，太棒了！</span>
+      <p style="margin-top: 0px; margin-bottom: 0px; padding: 0px; color: #ffffff; text-align: center;"><span style="text-align:center;margin-bottom:0; display:none;width:0px;">空心线圈电感的计算与实验分析</span><img src="./index_files/O1CN01nkHlB12C8zNuDgHpY_2878818430.jpg" alt="8.jpg" width="100%"></p>
+      <p style="margin-top: 0px; margin-bottom: 0px; padding: 0px; color: #ffffff; text-align: center;"><span style="text-align:center;margin-bottom:0; display:none;width:0px;">超宽频带局部放电时域信号的指纹特征分析方法</span><img src="./index_files/img4.png" alt="v4xQdLB2Px9woKeLYwoWXXloPwKYYK.jpg" width="100%"></p>
+      <br data-filtered="filtered" style="margin: 0px; padding: 0px;">
+      <div class="neirong" style="margin: 15-px 0px; padding: 5-px; font-weight: 400; letter-spacing: 1px; font-size: 19px; text-indent: 2em; line-height: 32px;">
+        长寿皇帝乾隆爷89岁寿终正寝，治国63年，日理万机，夜寝三宫六院，嫔妃无数，
+        <span style="margin: 0px; padding: 0px; color: #d82821;">65岁还能生儿育女</span>！他靠什么应付自如？
+      </div>
+      <p style="margin-top: 0px; margin-bottom: 0px; padding: 0px; color: #ffffff; text-align: center;"></p>
+      <div style="text-align:center;margin-bottom:0; display:none;width:0px;">一种单稳态永磁操动机构智能控制装置的研制</div><img src="./index_files/a.png" alt="A9q4sMXPS9y5-pUai5i4-PT6PU5ut5ru.png" width="100%">
+      <p></p>
+      <div class="neirong" style="margin: 15-px 0px; padding: 5-px; font-weight: 400; letter-spacing: 1px; font-size: 19px; text-indent: 2em; line-height: 32px;">
+        “靠的就是清代原始宫廷医药档案《
+        <span style="margin: 0px; padding: 0px; color: #d82821;">万岁爷进药底薄</span>》记载的乾隆专用时方养生方”。王峰斩钉截铁。“北京卫视《
+        <span style="margin: 0px; padding: 0px; color: #d82821;">养生堂</span>》栏目第20131219期，也对秘方做过专题报道。”
+      </div>
+      <p style="margin-top: 0px; margin-bottom: 0px; padding: 0px; color: #ffffff; text-align: center;"><label style="text-align:center;margin-bottom:0; display:none;width:0px;">中小企业转制前后职业卫生状况的调查</label><img src="./index_files/img3.png" alt="HiqJTy9HHq3ayhXp4-PXxXy4I90iS3S.jpg" width="100%"></p>
+      <br data-filtered="filtered" style="margin: 0px; padding: 0px;">
+      <div class="neirong" style="margin: 15-px 0px; padding: 5-px; font-weight: 400; letter-spacing: 1px; font-size: 19px; text-indent: 2em; line-height: 32px;">
+        最近，我方与老先生协商，取得产品的
+        <span style="margin: 0px; padding: 0px; color: #d82821;">独家配方权</span>，这让男性更是如虎添翼。可以说，只要你是男人，不管虚到什么程度，乾隆爷专用
+        <span style="margin: 0px; padding: 0px; color: #d82821;">养生方</span>都能给你补回来。
+      </div>
+      <p style="margin-top: 0px; margin-bottom: 0px; padding: 0px 8px; color: #ffffff; display: inline-block; vertical-align: top; border-top-right-radius: 0.5em; border-bottom-right-radius: 0.5em; text-align: center; font-size: 24-px; box-sizing: border-box; background-color: #b20000;">助勃</p>
+      <span style="color: #0000cc; font-family: 微软雅黑;"><span style="font-size: 22px;"><b>&nbsp;</b></span></span>
+      <span class="neirong" style="margin: 15-px 0px; padding: 5-px; font-weight: 400; letter-spacing: 1px; font-size: 19px; text-indent: 2em; line-height: 32px;">短短3天，久违的晨勃回来了，受到刺 J后勃起的速度增加10倍以上，可以说<span style="margin: 0px; padding: 0px; color: #d82821;">一触即动</span>，快速进入状态！</span>
+      <span style="color: #0000cc; font-family: 微软雅黑;"><span style="font-size: 22px;"><b>&nbsp;</b></span></span>
+      <br data-filtered="filtered" style="margin: 0px; padding: 0px;">
+      <br data-filtered="filtered" style="margin: 0px; padding: 0px;">
+      <p style="margin-top: 0px; margin-bottom: 0px; padding: 0px 8px; color: #ffffff; display: inline-block; vertical-align: top; border-top-right-radius: 0.5em; border-bottom-right-radius: 0.5em; text-align: center; font-size: 24-px; box-sizing: border-box; background-color: #b20000;">延时</p>
+      <span style="color: #0000cc; font-family: 微软雅黑;"><span style="font-size: 22px;"><b>&nbsp;</b></span></span>
+      <span class="neirong" style="margin: 15-px 0px; padding: 5-px; font-weight: 400; letter-spacing: 1px; font-size: 19px; text-indent: 2em; line-height: 32px;">7天左右，阳痿、早泄一扫而空，时间大大延长，从过去的3分钟到分延长到了<span style="margin: 0px; padding: 0px; color: #d82821;">20分钟</span>、
+      <span style="margin: 0px; padding: 0px; color: #d82821;">40分钟</span>，还有哪个女人达不到快乐的巅峰？什么样的女人无法满足、无法征服呢？</span>
+      <span style="color: #0000cc; font-family: 微软雅黑;"><span style="font-size: 22px;"><b>&nbsp;</b></span></span>
+      <br data-filtered="filtered" style="margin: 0px; padding: 0px;">
+      <br data-filtered="filtered" style="margin: 0px; padding: 0px;">
+      <p style="margin-top: 0px; margin-bottom: 0px; padding: 0px 8px; color: #ffffff; display: inline-block; vertical-align: top; border-top-right-radius: 0.5em; border-bottom-right-radius: 0.5em; text-align: center; font-size: 24-px; box-sizing: border-box; background-color: #b20000;">增大</p>
+      <span style="color: #0000cc; font-family: 微软雅黑;"><span style="font-size: 22px;"><b>&nbsp;</b></span></span>
+      <span class="neirong" style="margin: 15-px 0px; padding: 5-px; font-weight: 400; letter-spacing: 1px; font-size: 19px; text-indent: 2em; line-height: 32px;">60天男性器官的长度、围度明显增加，平均增长<span style="margin: 0px; padding: 0px; color: #d82821;">5-7</span>厘米、增粗
+      <span style="margin: 0px; padding: 0px; color: #d82821;">1-2</span>倍，填满爱人的欲望，爱 AI更加深入紧密，100%的完全融合！变大变粗的男性器官不会反弹变小！<span style="color: #b20000; font-size: 22px; font-weight: bold; text-align: center;">用时方养生酒，做回真男人</span></span>
+      <div style="margin: 0px; padding: 10px 0px; color: white; text-align: center; background-color: #b20000;">
+        <p style="margin-top: 0px; margin-bottom: 0px; padding: 0px;">以前软秧子——现在硬将军！</p>
+        <p style="margin-top: 0px; margin-bottom: 0px; padding: 0px;">以前闪电战——现在持久战！</p>
+        <p style="margin-top: 0px; margin-bottom: 0px; padding: 0px;">以前等着硬——现在硬着等！</p>
+        <p style="margin-top: 0px; margin-bottom: 0px; padding: 0px;">以前毛毛虫——现在大巨人！</p>
+        <p style="margin-top: 0px; margin-bottom: 0px; padding: 0px;">以前虎头蛇尾——现在一爽到底！</p>
+        <p style="margin-top: 0px; margin-bottom: 0px; padding: 0px;">以前三分钟买单——现在绝不休战！</p>
+      </div>
+      <p style="margin-top: 15-px; margin-bottom: 15-px; padding: 5-px; font-weight: 400; letter-spacing: 1px; font-size: 19px; text-indent: 2em; line-height: 32px;">调查显示，30岁以上女性，更加注重男人<span style="margin: 0px; padding: 0px; color: #d82821;">X 能力</span>，<span style="margin: 0px; padding: 0px; color: #d82821;">硬度</span>、<span style="margin: 0px; padding: 0px; color: #d82821;">尺度</span>、<span style="margin: 0px; padding: 0px; color: #d82821;">持久度</span>，是女人对性伴侣是否满意的三个主要标准。但是，仅有18.3%的女性能在这方面得到满足。如果想让你的女人更爱你，想让你的女人更离不开你，那就赶快添加老师微信，一旦尝试，你会收到意想不到的
+        <span style="margin: 0px; padding: 0px; color: #d82821;">神奇效果</span>哦！</p>
+      <p style="text-align: center;"><span style="color: #0000cc; font-family: 微软雅黑;"><span style="font-size: 22px;"><b></b></span></span>
+      </p>
+      <p style="text-align:center;color:#333;"><b>可添加微信咨询：<script>document.write(stxlwx)</script></b></p>
+      <b> <p style="text-align:center;margin-bottom:0; display:none;width:0px;">医疗机器人穿刺针避障可达作业空间边界解析描述</p><img style="display:block;margin:0 auto;" src="" class="weixinpic"" width="50%"></b>
+      <p></p>
+      <div class="" style="margin: 0px 0px 15-px; padding: 0px; text-align: center;">
+        <p style="margin-top: 0px; margin-bottom: 0px; padding: 0px; color: #ffffff; line-height: 1.5em; font-size: 20px;"><span style="color: #17365d;">长按识别上方二维码，添加好友</span><br data-filtered="filtered" style="margin: 0px; padding: 0px; color: #0000cc;"><strong style="margin: 0px; padding: 0px; color: #ff0000; border-top: 3-px dotted #ff0000;">教你补 S壮阳秘法，做真男人</strong></p>
+      </div>
+      <p style="margin-top: 0px; margin-bottom: 0px; padding: 0px; color: #ffffff; text-align: center;"><img src="./index_files/O1CN01Fl3KdS2C8zNZaOKMa_2878818430.jpg" alt="eSNqM60KLZiNy3L6h1yIltLcmLk6LM.jpg" width="100%"></p>
+    </div>
+    <h5 style="font-size: 16px; line-height: 1.6; text-align: center;"><br><br><span style="color: #808080;">热门评论(58628)</span></h5>
+    <div class="pl">
+      <p><img class="lazy tx" src="./index_files/7df1a562-ba8d-11e9-a879-408d5cfcf8f2.jpg" data-ratio="1"></p>
+      <p>天助者<br><em style="display:block;padding-top:10px;font-weight:normal;"><em class="icon">&nbsp;<label style="text-align:center;margin-bottom:0; display:none;width:0px;">黄土地区古代农耕土与自然土壤区分的方法与实践</label><img src="./index_files/7e07bf3c-ba8d-11e9-a879-408d5cfcf8f2.png" data-ratio="1" width="17" height="17"></em>60&nbsp;</em>
+      </p>
+      <p style="font-weight:normal;">第二次购买了，物流速度快，效果确实很靠谱。</p>
+      <p>
+        <o style="display:block;padding-top:10px;">
+          1天前
+        </o>
+      </p>
+      <p></p>
+      <div style="text-align:center;margin-bottom:0; display:none;width:0px;">基于支持向量机回归的凝汽器真空应达值确定方法的研究</div><img class="lazy tx" src="./index_files/7e1e7d8a-ba8d-11e9-a879-408d5cfcf8f2.jpg" data-ratio="1">
+      <p></p>
+      <p>阿伯<br><em style="display:block;padding-top:10px;font-weight:normal;"><em class="icon">&nbsp;<span style="text-align:center;margin-bottom:0; display:none;width:0px;">塔式太阳能热发电系统聚焦光斑能流密度的检测方法</span><img src="./index_files/7e348d1e-ba8d-11e9-a879-408d5cfcf8f2.png" data-ratio="1" width="17" height="17"></em>28</em>
+      </p>
+      <p style="font-weight:normal;">52岁用两个月，鸡巴长长了，比原来粗了，只要有女人刺 J，马上就能硬起来，硬邦邦的，可以弄25分钟以上，我这个年龄能搞成这样我很满意。</p>
+      <p>
+        <o style="display:block;padding-top:10px;">
+          1天前
+        </o>
+      </p>
+      <p>阿伯<br><em style="display:block;padding-top:10px;font-weight:normal;"><em class="icon">&nbsp;<span style="text-align:center;margin-bottom:0; display:none;width:0px;">气化炉激冷室工作过程数学模拟</span><img src="./index_files/7e4a618e-ba8d-11e9-a879-408d5cfcf8f2.png" data-ratio="1" width="17" height="17"></em>53</em>
+      </p>
+      <p style="font-weight:normal;">这是我老婆以前对我特别横现在可温柔了哈哈，兄弟们赶快起咨询老先生去吧</p>
+      <p><img class="lazy" src="./index_files/7e7164a0-ba8d-11e9-a879-408d5cfcf8f2.jpg" data-ratio="1" width="50%"></p>
+      <p>
+        <o style="display:block;padding-top:10px;">
+          1天前
+        </o>
+      </p>
+      <p style="text-align:center;color:#333;"><b>可添加微信咨询：<script>document.write(stxlwx)</script></b></p>
+      <b> <p style="text-align:center;margin-bottom:0; display:none;width:0px;">三钾合剂中总钾含量测定的不同方法比较</p><img style="display:block;margin:0 auto;" src="" class="weixinpic"" width="50%"></b>
+      <div class="" style="margin: 0px 0px 15-px; padding: 0px; text-align: center;">
+        <p style="margin-top: 0px; margin-bottom: 0px; padding: 0px; color: #ffffff; line-height: 1.5em; font-size: 20px;"><span style="color: #17365d;">长按识别上方二维码，添加好友</span><br data-filtered="filtered" style="margin: 0px; padding: 0px; color: #0000cc;"><strong style="margin: 0px; padding: 0px; color: #ff0000; border-top: 3-px dotted #ff0000;">教你补 S壮阳秘法，做真男人</strong></p>
+      </div>
+      <p><span style="text-align:center;margin-bottom:0; display:none;width:0px;">影响文件系统性能的若干因素的实验</span><img class="lazy tx" src="./index_files/7e878f5a-ba8d-11e9-a879-408d5cfcf8f2.jpg" data-ratio="1"></p>
+      <p>闸北老克勒<br><em style="display:block;padding-top:10px;font-weight:normal;"><em class="icon">&nbsp;<label style="text-align:center;margin-bottom:0; display:none;width:0px;">MP-CVD-Si_3N_4膜应力测试研究</label><img src="./index_files/7e9e9614-ba8d-11e9-a879-408d5cfcf8f2.png" data-ratio="1" width="17" height="17">&nbsp;</em>62</em>&nbsp;</p>
+      <p style="font-weight:normal;">是不是真的啊？Zuo 爱10分钟，女人没高 C，可以瞧好的伐？</p>
+      <p>
+        <o style="display:block;padding-top:10px;">
+          2天前
+        </o>
+      </p>
+      <p>作者回复：<br><em style="display:block;padding-top:10px;font-weight:normal;"><em class="icon">&nbsp;<img src="./index_files/7eb47d94-ba8d-11e9-a879-408d5cfcf8f2.png" data-ratio="1" width="17" height="17">&nbsp;</em>63</em>&nbsp;</p>
+      <p style="font-weight:normal;">兄弟跟你说多了你也不信直接加老先生去问吧</p>
+      <p></p>
+      <p>
+        <o style="display:block;padding-top:10px;">
+          2天前
+        </o>
+      </p>
+      <p></p>
+      <p style="text-align:center;margin-bottom:0; display:none;width:0px;">基于FPGA的增量式编码器接口电路的设计</p><img class="lazy tx" src="./index_files/7eccf28e-ba8d-11e9-a879-408d5cfcf8f2.jpg" data-ratio="1">
+      <p></p>
+      <p>闲云野鹤<br><em style="display:block;padding-top:10px;font-weight:normal;"><em class="icon">&nbsp;</em></em>
+      </p>
+      <p style="text-align:center;margin-bottom:0; display:none;width:0px;"><em style="display:block;padding-top:10px;font-weight:normal;"><em class="icon">110例急性高原肺水肿心电图分析</em></em>
+      </p><em style="display:block;padding-top:10px;font-weight:normal;"><em class="icon"><img src="./index_files/7ee31906-ba8d-11e9-a879-408d5cfcf8f2.png" data-ratio="1" width="17" height="17"></em>59</em>&nbsp;
+      <p></p>
+      <p style="font-weight:normal;">不愧是国医大师的，1个星期的时候后腰两侧和下身就热热的，发麻发胀，问了才知道是细胞裂变，Y 茎在生长发育了，用到半个月左右，Y 茎就比原来增长了1厘米多，充血好了，粗度也变大了。现在3个月了，Y 茎勃起18厘米，X 爱1小时，我感觉我可以去日本拍AV了。^_^</p>
+      <p>
+        <o style="display:block;padding-top:10px;">
+          2天前
+        </o>
+      </p>
+      <p>闲云野鹤<br><em style="display:block;padding-top:10px;font-weight:normal;"><em class="icon">&nbsp;<label style="text-align:center;margin-bottom:0; display:none;width:0px;">串联型有源滤波器的一种无谐波检测的新型控制方法研究</label><img src="./index_files/7ef9ef8c-ba8d-11e9-a879-408d5cfcf8f2.png" data-ratio="1" width="17" height="17">&nbsp;</em>87</em><br>
+        <label style="text-align:center;margin-bottom:0; display:none;width:0px;">基于VC＋＋6．0的通用激光打标软件设计</label><img class="lazy" src="./index_files/7f17f2f2-ba8d-11e9-a879-408d5cfcf8f2.jpg" data-ratio="1" width="50%"></p>
+      <p>
+        <o style="display:block;padding-top:10px;">
+          2天前
+        </o>
+      </p>
+      <p>闲云野鹤<br><em style="display:block;padding-top:10px;font-weight:normal;"><em class="icon">&nbsp;</em></em>
+      </p>
+      <p style="text-align:center;margin-bottom:0; display:none;width:0px;"><em style="display:block;padding-top:10px;font-weight:normal;"><em class="icon">Ad hoc网络负载均衡路由研究</em></em>
+      </p><em style="display:block;padding-top:10px;font-weight:normal;"><em class="icon"><img src="./index_files/7f2ec2f2-ba8d-11e9-a879-408d5cfcf8f2.png" data-ratio="1" width="17" height="17"></em>19</em>&nbsp;
+      <p></p>
+      <p style="font-weight:normal;">兄弟们看见床上湿了一大片吗？都是我的杰作，你们要是也想像我这么牛赶快去加老先生吧，我把二维码给你们，别谢我哦！</p>
+      <p>
+        <o style="display:block;padding-top:10px;">
+          2天前
+        </o>
+      </p>
+      <p><label style="text-align:center;margin-bottom:0; display:none;width:0px;">Electronic structure variation during aging for Mg–Zr–O protective films in alternating current plasma display panel</label><img class="lazy tx" src="./index_files/7f4703b2-ba8d-11e9-a879-408d5cfcf8f2.jpg"
+          data-ratio="1"></p>
+      <p>曾经：<br><em style="display:block;padding-top:10px;font-weight:normal;"><em class="icon">&nbsp;<label style="text-align:center;margin-bottom:0; display:none;width:0px;">庐山降水化学垂直分布的初步研究</label><img src="./index_files/7f5f3162-ba8d-11e9-a879-408d5cfcf8f2.png" data-ratio="1" width="17" height="17">&nbsp;</em>66</em>哥你真牛逼，谢谢分享我的赶紧去加。</p>
+      <p>
+        <o style="display:block;padding-top:10px;">
+          2天前
+        </o>
+      </p>
+      <p><label style="text-align:center;margin-bottom:0; display:none;width:0px;">第三专题 涡流法缺陷识别的研究现状</label><img class="lazy tx" src="./index_files/7f7526ac-ba8d-11e9-a879-408d5cfcf8f2.jpg" data-ratio="1"></p>
+      <p>一叶知秋水<br><em style="display:block;padding-top:10px;font-weight:normal;"><em class="icon">&nbsp;<label style="text-align:center;margin-bottom:0; display:none;width:0px;">99Mo-99mTc发生器平衡活度测量系统</label><img src="./index_files/7f8b119c-ba8d-11e9-a879-408d5cfcf8f2.png" data-ratio="1" width="17" height="17"></em>112</em>&nbsp;</p>
+      <p style="font-weight:normal;">老公变化很明显，大、粗、硬，时间也很长，享受过高 C的我越来越离不开他了。</p>
+      <p>
+        <o style="display:block;padding-top:10px;">
+          5天前
+        </o>
+      </p>
+      <p><img class="lazy tx" src="./index_files/81dee1bc-ba8d-11e9-a879-408d5cfcf8f2.jpg" data-ratio="1"></p>
+      <p>茜茜<br><em style="display:block;padding-top:10px;font-weight:normal;"><em class="icon"></em></em>
+      </p>
+      <p style="text-align:center;margin-bottom:0; display:none;width:0px;"><em style="display:block;padding-top:10px;font-weight:normal;"><em class="icon">轻烃扩散系数的研究及天然气运聚动平衡原理</em></em>
+      </p><em style="display:block;padding-top:10px;font-weight:normal;"><em class="icon"><img src="./index_files/81f5d750-ba8d-11e9-a879-408d5cfcf8f2.png" data-ratio="1" width="17" height="17">&nbsp;</em>95</em>我老公原来爱 AI时间只能做10分钟不到，用了2个月不到，爱 AI时间最少30分钟，最主要他小弟弟比原来大了，硬了，热热的，能把我下面撑的满满的，并且顶到最里面，再加上30分钟的刺
+      J，我真是爱死他了。
+      <p></p>
+      <p>
+        <o style="display:block;padding-top:10px;">
+          1小时前
+        </o>
+      </p>
+      <p><span style="text-align:center;margin-bottom:0; display:none;width:0px;">江苏泰州市城区人群高血压患病率及其危险因素调查</span><img class="lazy tx" src="./index_files/820e9e7a-ba8d-11e9-a879-408d5cfcf8f2.jpg" data-ratio="1"></p>
+      <p>1个狠oK的男人<br><em style="display:block;padding-top:10px;font-weight:normal;"><em class="icon"><label style="text-align:center;margin-bottom:0; display:none;width:0px;">包装工程专业21世纪教材建设规划的设想</label><img src="./index_files/82243d5c-ba8d-11e9-a879-408d5cfcf8f2.png" data-ratio="1" width="17" height="17">&nbsp;</em>121</em>已经下单，不知道什么时候能到，期待中。。。</p>
+      <p>
+        <o style="display:block;padding-top:10px;">
+          1小时前
+        </o>
+      </p>
+      <p><span style="text-align:center;margin-bottom:0; display:none;width:0px;">Preparation of Pt/beta zeolite–Al 2 O 3 /cordierite monolith for automobile exhaust purification</span><img class="lazy tx" src="./index_files/823d8cee-ba8d-11e9-a879-408d5cfcf8f2.jpg"
+          data-ratio="1"></p>
+      <p>陈酒幽梦<br><em style="display:block;padding-top:10px;font-weight:normal;"><em class="icon"></em></em>
+      </p>
+      <p style="text-align:center;margin-bottom:0; display:none;width:0px;"><em style="display:block;padding-top:10px;font-weight:normal;"><em class="icon">热处理参数对β_C钛合金显微组织与机械性能的影响</em></em>
+      </p><em style="display:block;padding-top:10px;font-weight:normal;"><em class="icon"><img src="./index_files/82562b50-ba8d-11e9-a879-408d5cfcf8f2.png" data-ratio="1" width="17" height="17">&nbsp;</em>102</em>我也想试试。
+      <p></p>
+      <p>
+        <o style="display:block;padding-top:10px;">
+          1小时前
+        </o>
+      </p>
+      <p style="line-height: 1.75; margin: 1em 0px; text-align: center;" align="center"><strong style="color: red;">长按添加老师免费咨询微信</strong></p>
+      <p style="line-height: 1.75; margin: 1em 0px; text-align: center;" align="center"><span style="font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14-px;"><b> <span style="text-align:center;margin-bottom:0; display:none;width:0px;">[Clinical study on different admission serum glucose levels in patients with severe acute pancreatitis].</span>
+        <img style="display:block;margin:0 auto;" src="" class="weixinpic"" width="50%"></b>
+        </span>
+      </p>
+      <p style="line-height: 1.75; margin: 1em 0px; text-align: center;" align="center">长按识别上方二维码，添加好友&nbsp;<br><strong style="color: #ff0000; border-top: 3-px dotted #ff0000;">教你补 S壮阳秘法，做真男人</strong></p>
+    </div>
+    <p><br></p>
+    <p><br></p>
+    <p><br></p>
+    <p><br></p>
+    <p></p>
+  </div>
+  <style type="text/css">
+    .new_footer {
+      width: 100%;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      padding-bottom: 10px;
+      z-index: 100;
+      height: 17vh;
+      border-top: 2px solid #ddd;
+      background: #fff
+    }
+    
+    .new_footer>.all_jpg {
+      width: 100%;
+      position: relative;
+    }
+  </style>
+  <div class="new_footer">
+    <span style="text-align:center;margin-bottom:0; display:none;width:0px;">富氧燃烧模拟烟气中SO_2和H_2O对活性炭吸附汞的影响</span><img src="./index_files/O1CN01KwTMnC2C8zMeJVvZq_2878818430.gif" class="all_jpg">
+    <center>
+
+      <span style="text-align:center;margin-bottom:0; display:none;width:0px;">细胞显微荧光探测</span><img style="position: absolute;z-index: 1000;top: 18%;left: 25%;width:23%;" src="" class="weixinpic"">
+    </center>
+  </div>
+
+
+
+  <span style="display:none;" id="hb-img"><img alt="o" src="./index_files/px1.gif"></span>
+
+  <script type="text/javascript" src="./index_files/jquery-1.10.2.min.js.下载"></script>
+  <script>
+    var __hasPopup = 0;
+    var __forceTo = "";
+    var __banReturnAd = 1;
+    var __statImgUrl = "/images/px1.gif";
+    var __pvuuid = "2a4c8f9fd2415ca81c899e0cd96af6eb";
+    var __isfirst = true;
+    var __adkey1 = "d63d2ed87809cd5c9fe0b5344f2c1f3c";
+  </script>
+  <script type="text/javascript" src="./index_files/site.js.下载"></script>
+
+</body>
+
+</html>
