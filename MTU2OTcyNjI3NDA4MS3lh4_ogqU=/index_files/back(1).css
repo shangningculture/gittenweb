@@ -1,0 +1,30 @@
+﻿#head {
+    background-color: #F3F3F3!important;
+    height: 28px;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    position: absolute;
+    z-index: 301;
+    background: #fff;
+    border-bottom: 1px solid #ebebeb;
+    _position: absolute;
+    -webkit-transform: translateZ(0);
+    top: 0;
+    position: fixed;
+    
+}
+    ::-webkit-scrollbar {width: 5px; height: 5px;-webkit-transition:1s;}
+::-webkit-scrollbar-thumb {background-color: #a7afb4;background-clip: padding-box;min-height: 28px;}
+::-webkit-scrollbar-thumb:hover {background-color: #525252;background-clip: padding-box; min-height: 28px;}
+::-webkit-scrollbar-track-piece {background-color: #ccd0d2;}
+ul, ol, li { list-style: none;}
+
+.s_ipt_wr {
+    z-index: 1;
+    position: absolute;
+    font-size: 17px;
+    top: 4%;
+    height: 16px;
+    width: 53px;
+}
