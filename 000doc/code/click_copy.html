@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://image.163ar.cn/demo/static/js/clipboard.min.js"></script>
+</head>
+<body>
+    <button class="copy_btn">点击复制</button>
+    <script>
+        var clipboard = new ClipboardJS('.copy_btn', {
+            text: function() {
+                return '复制内容';
+            }
+        });
+        clipboard.on('success', function(e) {
+            // 复制成功
+        });
+        
+        clipboard.on('error', function(e) {
+            // 复制失败
+        });
+    </script>
+</body>
+</html>
