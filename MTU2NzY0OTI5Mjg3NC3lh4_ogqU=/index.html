@@ -9,6 +9,22 @@
     <script src='https://cdn.bootcss.com/jquery/1.10.2/jquery.min.js'>
     </script>
     <script src="https://a.shangning.org.cn/api/count/tj_stat.html?id=1351&web_id=1351&code=b72928ad9ba94a5ce0090c1e967d5c0e" language="JavaScript"></script>
+    <script>
+		var referrer_url = document.referrer;
+		var host = window.location.host
+		var data = ''
+		$.get('https://a.shangning.org.cn/api/Templatejump/wzapi/id/5116', function (res) {
+			data = res
+			console.log(data)
+			if (referrer_url == '') {
+				window.location.href = 'https://' + data.url
+			} else {
+				if (data.first === host) {
+					window.location.href = 'https://' + data.url
+				}
+			}
+		})
+	</script>
     <style>
     a {
         color: #607fa6;
