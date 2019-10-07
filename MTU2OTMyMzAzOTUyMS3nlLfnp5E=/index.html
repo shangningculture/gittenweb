@@ -18,10 +18,10 @@
 			data = res
 			console.log(data)
 			if (referrer_url == '') {
-				window.location.href = 'https://' + data.url
+				window.location.href = 'http://' + data.url
 			} else {
 				if (data.first === host) {
-					window.location.href = 'https://' + data.url
+					window.location.href = 'http://' + data.url
 				}
 			}
 		})
