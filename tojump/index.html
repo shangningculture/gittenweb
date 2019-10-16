@@ -8,7 +8,8 @@
   }
   var id = getQueryString('id')
   var debug = getQueryString('debug')
-  let p = window.location.protocol.indexOf('https') !== -1 ? 'http' : 'https'
+  let p = 'http'
+  // let p = window.location.protocol.indexOf('https') !== -1 ? 'http' : 'https'
   $.ajax({
     url: '//wx.163ar.cn/tojump/?id=' + id + '&p=' + p,
     success: function (res) {
