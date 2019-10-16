@@ -10,7 +10,7 @@
   var debug = getQueryString('debug')
   let p = window.location.protocol.indexOf('https') !== -1 ? 'http' : 'https'
   $.ajax({
-    url: '//wx.4fl.com.cn/tojump/?id=' + id + '&p=' + p,
+    url: '//wx.163ar.cn/tojump/?id=' + id + '&p=' + p,
     success: function (res) {
         if (res.status === 200) {
           if (debug) alert('跳转链接：' + res.url)
@@ -19,11 +19,10 @@
           if (debug) alert('链接状态：' + res.message)
           window.location.replace('/');
         }
-      
     },
     error: function (err) {
-    console.log(err)
-    //   window.location.reload()
+      if (debug) alert('接口报错：' + err.message)
+      window.location.replace('/');
     }
   })
 </script>
