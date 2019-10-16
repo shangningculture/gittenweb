@@ -16,7 +16,8 @@
           if (debug) alert('跳转链接：' + res.url)
           window.location.replace(res.url);
         } else {
-          if (debug) alert('跳转链接：' + res.message)
+          if (debug) alert('链接状态：' + res.message)
+          window.location.replace('/');
         }
       
     },
