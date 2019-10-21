@@ -212,9 +212,9 @@
             <!-- 二维码弹窗 -->
         <div class="QRCode_div2" id="QRCode_div2" style="width: 100%; height: 100%; position: fixed; z-index: 4000; display: none;">
             <div style="width: 100%;height: 100%;background-color: #000;opacity: 0.6;"></div>
-            <div style="box-sizing: border-box;width: 320px;padding: 10px 20px;border-radius: 15px;font-size: 13px;text-align: center;background-color: #FFF;position: absolute;top: calc(50% - 191px);left: calc(50% - 160px);line-height: 22px;background-image: url(static/images/qrcode_backgrand.jpg);background-size: 100%;">
+            <div style="box-sizing: border-box;width: 320px;padding: 10px 20px;border-radius: 15px;font-size: 13px;text-align: center;background-color: #FFF;position: absolute;top: calc(50% - 191px);left: calc(50% - 160px);line-height: 22px;background-image: url(https://image.163ar.cn/wechat/man15/static/images/qrcode_backgrand.jpg);background-size: 100%;">
                 <div style="position:relative;display:block;width:135px;height:auto;margin:15px auto;margin-top:142px;margin-bottom:83px;">
-                    <img id="foucsImg" src="https://image.163ar.cn/wechat/man15/static/picture/img_pro_1571234833.jpeg" style="display:block;width:100%;box-shadow:0 0 2px 0 #CCC;">
+                    <img id="foucsImg" class="weixinpic" src="" style="display:block;width:100%;box-shadow:0 0 2px 0 #CCC;">
                 </div>
                 <img src="https://image.163ar.cn/wechat/man15/static/picture/close.png" id="close-btn" alt="" style="position: absolute;width: 30px;height: 30px;top: -15px;right: -15px;">
             </div>
@@ -261,8 +261,8 @@
                 <!-- 如果有配置公众号列表时 -->
                                     <!-- 在微信上打开 -->
                     
-                        <div style="padding: 0 0.2rem">
-                            <a href="/" class="gobtn">
+                        <div style="padding: 0 0.2rem" onclick="$('#QRCode_div2').show()">
+                            <a class="gobtn">
                                 <b>点击阅读无删减版</b>
                             </a>
                         </div>
