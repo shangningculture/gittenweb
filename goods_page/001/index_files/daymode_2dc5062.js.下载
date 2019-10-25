@@ -1,0 +1,2 @@
++function(){function e(){var e=navigator.userAgent.match(/RevealType\/Dialog/i);return e||i(t)}var n=0,t="dialog",a=function(e){return function(n){var t,a=new RegExp("("+e+")(\\=)(\\w+)","g");t=window.location.href.match(a);var i=t&&t[0]?t[0].split("="):[];return!(!i[0]||i[0]!==e||!i[1]||i[1]!=n)}},i=a("revealType"),o=a("dayMode");+function(t,a){e()&&o(n)&&(document.getElementsByTagName(t)[0].className=a)}("html","ui-night-mode")}();
+//# sourceMappingURL=//tosv.byted.org/obj/ad-tetris-uploadpsd/landing_sourcemaps/78bcab4//daymode_c65fed4.js.map
