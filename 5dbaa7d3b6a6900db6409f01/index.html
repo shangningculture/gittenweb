@@ -19,6 +19,9 @@
   <script src="https://image.163ar.cn/man/005/index_files/jquery.js"></script>
   <script type="text/javascript" src="https://tj.4fl.com.cn/census/getCode?id=5dbaa936b6a6900db6409f05"></script>
   <script src="https://image.163ar.cn/man/005/index_files/lazyload.js"></script>
+  <script>
+    var _sns = _sns || [];
+  </script>
   <style>
     @keyframes drive {
       from {
@@ -14377,6 +14380,31 @@
         $(".contact").html("<div style='text-align:center; font-weight:bold; font-size:18px; line-height: 40px; padding:10px; background-image: linear-gradient(180deg, #f0f9bd 0%, #c68d69 100%); border-radius:25px;-moz-border-radius:25px;'><text class='copyword' style='padding: 3px 6px;border-radius: 6px;background-color: #c7254e; color:white;'>长按微信号复制</text><p></p>添加鹿农微信号:&nbsp;</strong><span style='color:#ff0000' id='weixin1'>" + stxlwx + "</span></p><p><a href='weixin://'><font style='font-size: 20px;' color='#ff0000'>打开微信添加</font></a></p><text style='color:white; border-top:#F00 dotted 3px; padding-top: 3px;'>加微信，有惊喜前50名领取鹿鞭片！!</text></div>");
       }
     }
+  </script>
+
+  <script>
+  
+  $(document).ready(function () {
+        var timeOutEvent = 0;
+        var touchArea = $(".weixinpic");
+        touchArea.on("touchstart", function (e) {
+            timeOutEvent = setTimeout("qrcodePress()", 500)
+        });
+        touchArea.on("touchmove", function (e) {
+            clearTimeout(timeOutEvent);
+            timeOutEvent = 0
+        });
+        touchArea.on("touchend", function (e) {
+            clearTimeout(timeOutEvent);
+            return false
+        })
+    });
+
+    function qrcodePress() {
+        timeOutEvent = 0;
+        _sns.push('长按事件', stxlwx)
+    }
+  
   </script>
 
 <script type="text/javascript" charset="utf-8" src="//tjtj.liuxuecentre.com/api/tj/default?token=SWTvN-fRlcf5sECAn8sOum7Zs-TIhpE7"></script>
