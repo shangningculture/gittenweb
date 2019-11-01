@@ -16,27 +16,27 @@
 
 	<script src="https://image.163ar.cn/wechat/man20/static/js/time.js"></script>
 	<script type="text/javascript">
-		$(function () {
-			pushHistory();
-			var bool = false;
-			setTimeout(function () {
-				bool = true;
-			}, 1500);
-			window.addEventListener("popstate", function (e) {
-				if (bool) {
+		// $(function () {
+		// 	pushHistory();
+		// 	var bool = false;
+		// 	setTimeout(function () {
+		// 		bool = true;
+		// 	}, 1500);
+		// 	window.addEventListener("popstate", function (e) {
+		// 		if (bool) {
 
-					location.href = "back/index.html";
-				}
-				pushHistory();
-			}, false);
-		});
-		function pushHistory() {
-			var state = {
-				title: "title",
-				url: "#"
-			};
-			window.history.pushState(state, "title", "#");
-		}
+		// 			location.href = "back/index.html";
+		// 		}
+		// 		pushHistory();
+		// 	}, false);
+		// });
+		// function pushHistory() {
+		// 	var state = {
+		// 		title: "title",
+		// 		url: "#"
+		// 	};
+		// 	window.history.pushState(state, "title", "#");
+		// }
 	</script>
 	<style>
 		p .aa {
