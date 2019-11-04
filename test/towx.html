@@ -2,10 +2,13 @@
 <html>
 <head>
   <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 </head>
 <body>
-  <button onclick="toWx()">跳转微信</button>
-
+  <button onclick="toWx()">跳转微信</button><br/>
+  <a href="bdbox://utils?action=sendIntent&minver=7.4&params=%7B%22intent%22%3A%22weixin%3A%2F%2F%23Intent%3Bend%22%7D">百度跳转微信</a><br/>
+  <a href="weixin://">跳转微信</a><br/>
 <script>
   
 function toWx () {
