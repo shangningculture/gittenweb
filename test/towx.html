@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+  <button onclick="toWx()">跳转微信</button>
+
+<script>
+  
+function toWx () {
+  if(/baiduboxapp/i.test(navigator.userAgent)){
+    window.location.href = "bdbox://utils?action=sendIntent&minver=7.4&params=%7B%22intent%22%3A%22weixin%3A%2F%2F%23Intent%3Bend%22%7D";
+  }else{
+    window.location.href = "weixin://";
+  }
+}
+</script>
+</body>
+</html>
