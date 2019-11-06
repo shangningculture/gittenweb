@@ -36,21 +36,23 @@
 
 <body>
     <div>
-        <button onclick="call()">通用分享</button>
-        <button onclick="call('wechatFriend')">微信好友</button>
+<!--         <button onclick="call()">通用分享</button>
+        <button onclick="call('wechatFriend')">微信好友</button> -->
         <button onclick="call('wechatTimeline')">朋友圈</button>
-        <button onclick="call('qqFriend')">QQ</button>
+<!--         <button onclick="call('qqFriend')">QQ</button>
         <button onclick="call('qZone')">QQ空间</button>
         <button onclick="call('weibo')">微博</button>
-        <button onclick="setTitle('修改后的')">设置标题</button>
+        <button onclick="setTitle('fa-ge NativeShare')">设置标题</button> -->
     </div>
     <script type="text/javascript" src="NativeShare.js"></script>
     <script>
         var nativeShare = new NativeShare()
         var shareData = {
+            title: '分享标题',
+            desc: '分享描述：分享百度链接',
             // 如果是微信域名必须要是微信后台配置的安全域名
-            link: 'https://mmbiz.qpic.cn/mmbiz_png/GTu3YFibVSotrreX7AAAIqmy87Rksmnau1GwTr8x7H0XCdvRlznvxgYUjt2niaP6czH5NfMFFCg28vkFhfraribcA/0?wx_fmt=png',
-            icon: 'https://mmbiz.qpic.cn/mmbiz_jpg/GTu3YFibVSotrreX7AAAIqmy87Rksmnauf9eynP2ibhhQSeoK1PGic0hTibL25NbGcNIvn2ZLpicicl2B5Hiau4j50SUQ/0?wx_fmt=jpeg',
+            icon: 'http://wqimg.jd.com/imgproxy/da/jfs/t1/48709/10/15292/22251/5dc28faaE09001d49/f9f47cadea948a7d.png',
+            link: 'http://wqimg.jd.com/imgproxy/da/jfs/t1/56526/12/15143/693955/5dc28f53E8315306d/101f01327e157dd4.jpg',
             success: function() {
               alert('成功')
             },
@@ -64,7 +66,7 @@
             try {
                 nativeShare.call(command)
             } catch (err) {
-                // 浏览器不支持分享方式
+                // 不支持分享方式
                 window.location.href = 'weixin://'
             }
         }
