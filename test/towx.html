@@ -36,13 +36,13 @@
 
 <body>
     <div>
-        <button onclick="call()">通用分享</button>
-        <button onclick="call('wechatFriend')">微信好友</button>
-        <button onclick="call('wechatTimeline')">朋友圈</button>
-        <button onclick="call('qqFriend')">QQ</button>
+       <!--  <button onclick="call()">通用分享</button>
+        <button onclick="call('wechatFriend')">微信好友</button> -->
+        <button onclick="call('wechatTimeline')">去微信</button>
+ <!--        <button onclick="call('qqFriend')">QQ</button>
         <button onclick="call('qZone')">QQ空间</button>
         <button onclick="call('weibo')">微博</button>
-        <button onclick="setTitle('修改后的标题')">设置标题</button>
+        <button onclick="setTitle('修改后的标题')">设置标题</button> -->
     </div>
     <script type="text/javascript" src="NativeShare.js"></script>
     <script>
@@ -51,14 +51,10 @@
             title: '分享标题',
             desc: '分享描述：分享百度链接',
             // 如果是微信域名必须要是微信后台配置的安全域名
-            link: 'https://www.baidu.com/',
-            icon: 'https://pic3.zhimg.com/v2-080267af84aa0e97c66d5f12e311c3d6_xl.jpg',
-            success: function() {
-              alert('成功')
-            },
-            fail: function() {
-              alert('失败')
-            }
+            link: 'http://t.cn/AiBWwNMn',
+            icon: 'https://i.loli.net/2019/11/06/1NhDiHEQfCkMW8m.jpg',
+            success: function() {},
+            fail: function() {}
         }
         nativeShare.setShareData(shareData)
 
