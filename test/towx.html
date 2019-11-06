@@ -9,15 +9,17 @@
   <button onclick="toWx()">跳转微信</button><br/>
   <a href="bdbox://utils?action=sendIntent&minver=7.4&params=%7B%22intent%22%3A%22weixin%3A%2F%2F%23Intent%3Bend%22%7D">百度跳转微信</a><br/>
   <a href="weixin://">跳转微信</a><br/>
+  <hr/><a href="bdbox://utils?minver=7.4&params=%7B%22intent%22%3A%22weixin%3A%2F%2F%23Intent%3Bend%22%7D">测试1</a><br/>
+  <hr/><a href="bdbox://utils?&params=%7B%22intent%22%3A%22weixin%3A%2F%2F%23Intent%3Bend%22%7D">测试2</a><br/>
+  <hr/><a href="bdbox://utils?action=sendIntent&minver=7.4&params=%7b%22intent%22%3a%22weixin%3a%2f%2f%22%7d">测试3</a><br/>
 <script>
-  
-function toWx () {
-  if(/baiduboxapp/i.test(navigator.userAgent)){
-    window.location.href = "bdbox://utils?action=sendIntent&minver=7.4&params=%7B%22intent%22%3A%22weixin%3A%2F%2F%23Intent%3Bend%22%7D";
-  }else{
-    window.location.href = "weixin://";
+  function toWx () {
+    if(/baiduboxapp/i.test(navigator.userAgent)){
+      window.location.href = "bdbox://utils?action=sendIntent&minver=7.4&params=%7B%22intent%22%3A%22weixin%3A%2F%2F%23Intent%3Bend%22%7D";
+    }else{
+      window.location.href = "weixin://";
+    }
   }
-}
 </script>
 </body>
 </html>
