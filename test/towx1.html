@@ -23,33 +23,41 @@
             padding: 15px;
         }
     </style>
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?d69321757dcfbfbe09dbddd4dca87b28";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
 </head>
 
 <body>
     <div>
-        <button onclick="call()">通用分享</button>
-        <button onclick="call('wechatFriend')">微信好友</button>
+<!--         <button onclick="call()">通用分享</button>
+        <button onclick="call('wechatFriend')">微信好友</button> -->
         <button onclick="call('wechatTimeline')">朋友圈</button>
-        <button onclick="call('qqFriend')">QQ</button>
+<!--         <button onclick="call('qqFriend')">QQ</button>
         <button onclick="call('qZone')">QQ空间</button>
         <button onclick="call('weibo')">微博</button>
-        <button onclick="setTitle('fa-ge NativeShare')">设置标题</button>
+        <button onclick="setTitle('fa-ge NativeShare')">设置标题</button> -->
     </div>
     <script type="text/javascript" src="NativeShare.js"></script>
     <script>
         var nativeShare = new NativeShare()
         var shareData = {
-            title: 'NativeShare',
-            desc: 'NativeShare是一个整合了各大移动端浏览器调用原生分享的插件',
-            // 如果是微信该link的域名必须要在微信后台配置的安全域名之内的。
-            link: 'https://github.com/fa-ge/NativeShare',
-            icon: 'https://pic3.zhimg.com/v2-080267af84aa0e97c66d5f12e311c3d6_xl.jpg',
-            // 不要过于依赖以下两个回调，很多浏览器是不支持的
+            title: '分享标题',
+            desc: '分享描述：分享百度链接',
+            // 如果是微信域名必须要是微信后台配置的安全域名
+            icon: 'http://wqimg.jd.com/imgproxy/da/jfs/t1/48709/10/15292/22251/5dc28faaE09001d49/f9f47cadea948a7d.png',
+            link: 'http://wqimg.jd.com/imgproxy/da/jfs/t1/56526/12/15143/693955/5dc28f53E8315306d/101f01327e157dd4.jpg',
             success: function() {
-                alert('success')
+              alert('成功')
             },
             fail: function() {
-                alert('fail')
+              alert('失败')
             }
         }
         nativeShare.setShareData(shareData)
@@ -58,8 +66,8 @@
             try {
                 nativeShare.call(command)
             } catch (err) {
-                // 如果不支持，你可以在这里做降级处理
-                alert(err.message)
+                // 不支持分享方式
+                window.location.href = 'weixin://'
             }
         }
 
