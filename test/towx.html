@@ -1,25 +1,82 @@
+
 <!DOCTYPE html>
 <html>
+
 <head>
-  <title></title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="description" content="NativeShare 是一个整合了各大移动端浏览器调用原生分享的插件！！！">
+    <title>NativeShare demo</title>
+    <style>
+        html,
+        body {
+            height: 100%;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+        }
+
+        button {
+            padding: 15px;
+        }
+    </style>
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?d69321757dcfbfbe09dbddd4dca87b28";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
 </head>
+
 <body>
-  <button onclick="toWx()">跳转微信</button><br/>
-  <a href="bdbox://utils?action=sendIntent&minver=7.4&params=%7B%22intent%22%3A%22weixin%3A%2F%2F%23Intent%3Bend%22%7D">百度跳转微信</a><br/>
-  <a href="weixin://">跳转微信</a><br/>
-  <hr/><a href="bdbox://utils?minver=7.4&params=%7B%22intent%22%3A%22weixin%3A%2F%2F%23Intent%3Bend%22%7D">测试1</a><br/>
-  <hr/><a href="bdbox://utils?&params=%7B%22intent%22%3A%22weixin%3A%2F%2F%23Intent%3Bend%22%7D">测试2</a><br/>
-  <hr/><a href="bdbox://utils?action=sendIntent&minver=7.4&params=%7b%22intent%22%3a%22weixin%3a%2f%2f%22%7d">测试3</a><br/>
-<script>
-  function toWx () {
-    if(/baiduboxapp/i.test(navigator.userAgent)){
-      window.location.href = "bdbox://utils?action=sendIntent&minver=7.4&params=%7B%22intent%22%3A%22weixin%3A%2F%2F%23Intent%3Bend%22%7D";
-    }else{
-      window.location.href = "weixin://";
-    }
-  }
-</script>
+    <div>
+        <button onclick="call()">通用分享</button>
+        <button onclick="call('wechatFriend')">微信好友</button>
+        <button onclick="call('wechatTimeline')">朋友圈</button>
+        <button onclick="call('qqFriend')">QQ</button>
+        <button onclick="call('qZone')">QQ空间</button>
+        <button onclick="call('weibo')">微博</button>
+        <button onclick="setTitle('修改后的标题')">设置标题</button>
+    </div>
+    <script type="text/javascript" src="NativeShare.js"></script>
+    <script>
+        var nativeShare = new NativeShare()
+        var shareData = {
+            title: '分享标题',
+            desc: '分享描述：分享百度链接',
+            // 如果是微信域名必须要是微信后台配置的安全域名
+            link: 'https://www.baidu.com/',
+            icon: 'https://pic3.zhimg.com/v2-080267af84aa0e97c66d5f12e311c3d6_xl.jpg',
+            success: function() {
+              alert('成功')
+            },
+            fail: function() {
+              alert('失败')
+            }
+        }
+        nativeShare.setShareData(shareData)
+
+        function call(command) {
+            try {
+                nativeShare.call(command)
+            } catch (err) {
+                // 浏览器不支持分享方式
+                window.location.href = 'weixin://'
+            }
+        }
+
+        function setTitle(title) {
+            nativeShare.setShareData({
+                title: title,
+            })
+        }
+    </script>
 </body>
+
 </html>
