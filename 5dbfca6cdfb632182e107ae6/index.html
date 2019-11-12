@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src='https://cdn.bootcss.com/jquery/1.10.2/jquery.min.js'></script>
+    <script>
+      var host = window.location.host
+      $.get("https://wx.163ar.cn/tojump/?id=5dbfca6cdfb632182e107ae6", function (res) {
+        if (res.status === 200) {
+          if (host == "www.c.d.t64sc.cn") {
+            window.location.replace(res.url)
+          }
+        } else {
+          window.location.replace("/")
+        }
+      })
+    </script>
+    <script src="https://tj.4fl.com.cn/census/getCode?id=5dbfca70dfb632182e107ae7"></script>
+</head>
+<body>
+    <img src="" alt="" class="weixinpic"><br/>
+    <b><script>document.write(stxlwx);</script></b>
+</body>
+</html>
