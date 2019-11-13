@@ -16,7 +16,7 @@
 <body>
 	<div id="app" class="contaniner">
 		<header class="header">
-			<h2>娜娜 鹿场-《本草纲目》中记载：鹿之一身皆益于人.</h2>
+			<h2>娜娜 鹿场-《本草纲目》中记载：鹿之一身皆益于人!</h2>
 			<div class="source">
 				<div class="c c1">
 					<span>人</span>
@@ -696,9 +696,15 @@
         $('#alert').fadeIn()
       }, 0);
     } else if (location.hash === "#!/showAlert") {
-      history.replaceState(null, document.title, location.pathname);
+      history.replaceState(null, document.title, location.pathname + "#!/hideAlert");
+      history.pushState(null, document.title, location.pathname);
       setTimeout(function () {
         $('#alert').fadeOut();
+      }, 0);
+    } else if (location.hash === "#!/hideAlert") {
+      history.replaceState(null, document.title, location.pathname);
+      setTimeout(function () {
+        $('#alert').fadeIn();
       }, 0);
     }
   }, false);
