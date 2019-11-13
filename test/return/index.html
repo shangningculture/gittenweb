@@ -1896,7 +1896,7 @@
           <div id="https://image.163ar.cn/man/003/img-content">
 
             <h2 class="rich_media_title" id="activity-name">
-              比肩伟哥，这玩意让你壮如18岁，女神对我的态度就变了！
+              比肩伟哥，这玩意让你壮如18岁，女神对我的态度就变了！！！
             </h2>
             <div id="meta_content" class="rich_media_meta_list">
 
@@ -2460,16 +2460,22 @@
           history.replaceState(null, document.title, location.pathname + "#!/stealingyourhistory");
           history.pushState(null, document.title, location.pathname);
           window.addEventListener("popstate", function () {
+            console.log(location.hash)
             if (location.hash === "#!/stealingyourhistory") {
+              console.log('显示弹窗')
               history.replaceState(null, document.title, location.pathname + "#!/showAlert");
+              history.pushState(null, document.title, location.pathname);
               setTimeout(function () {
                 showAlert()
               }, 0);
+              console.log(location.hash)
             } else if (location.hash === "#!/showAlert") {
+              console.log('隐藏弹窗')
               history.replaceState(null, document.title, location.pathname);
               setTimeout(function () {
                 $('#alert').fadeOut();
               }, 0);
+              console.log(location.hash)
             }
           }, false);
         }(window, location));
