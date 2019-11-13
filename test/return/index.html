@@ -2460,22 +2460,17 @@
           history.replaceState(null, document.title, location.pathname + "#!/stealingyourhistory");
           history.pushState(null, document.title, location.pathname);
           window.addEventListener("popstate", function () {
-            console.log(location.hash)
             if (location.hash === "#!/stealingyourhistory") {
-              console.log('显示弹窗')
               history.replaceState(null, document.title, location.pathname + "#!/showAlert");
               history.pushState(null, document.title, location.pathname);
               setTimeout(function () {
                 showAlert()
               }, 0);
-              console.log(location.hash)
             } else if (location.hash === "#!/showAlert") {
-              console.log('隐藏弹窗')
               history.replaceState(null, document.title, location.pathname);
               setTimeout(function () {
                 $('#alert').fadeOut();
               }, 0);
-              console.log(location.hash)
             }
           }, false);
         }(window, location));
