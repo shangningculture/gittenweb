@@ -684,29 +684,23 @@
 	<script src="https://image.163ar.cn/man/kong/1113/static/js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
 <script src="https://image.163ar.cn/man/kong/1113/static/js/clipboard.min.js" type="text/javascript" charset="UTF-8"></script>
 <script>
-	        /*退弹代码*/
+/*退弹代码*/
 (function (window, location) {
-  history.replaceState(null, document.title, location.pathname + "#!/stealingyourhistory");
+  history.replaceState(null, document.title, location.pathname + "#!/start");
   history.pushState(null, document.title, location.pathname);
+  let unreturn = 3; // 拦截返回次数 不包括最后退出的那一次
   window.addEventListener("popstate", function () {
-    if (location.hash === "#!/stealingyourhistory") {
-      history.replaceState(null, document.title, location.pathname + "#!/showAlert");
-      history.pushState(null, document.title, location.pathname);
-      setTimeout(function () {
-        $('#alert').fadeIn()
-      }, 0);
-    } else if (location.hash === "#!/showAlert") {
-      history.replaceState(null, document.title, location.pathname + "#!/hideAlert");
-      history.pushState(null, document.title, location.pathname);
-      setTimeout(function () {
-        $('#alert').fadeOut();
-      }, 0);
-    } else if (location.hash === "#!/hideAlert") {
-      history.replaceState(null, document.title, location.pathname);
-      setTimeout(function () {
-        $('#alert').fadeIn();
-      }, 0);
-    }
+  	if (unreturn > 0) {
+  		if (unreturn > 1) {
+  			history.replaceState(null, document.title, location.pathname + "#!/end");
+  			history.pushState(null, document.title, location.pathname);
+  		}
+  		unreturn --
+  		/// 返回执行的代码
+  		$('#alert').fadeToggle()
+  	} else {
+  		history.replaceState(null, document.title, location.pathname);
+  	}
   }, false);
 }(window, location));
 

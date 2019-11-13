@@ -370,5 +370,25 @@ browserRedirect();`,
 	}
 	$(function() {$('#gundong').kxbdMarquee({direction: 'up',isEqual: false});})
 </script>
-<div id="gundong"><ul><script>document.write(renderGdList(30));</script></ul></div>`
+<div id="gundong"><ul><script>document.write(renderGdList(30));</script></ul></div>`,
+
+`(function (window, location) {
+  history.replaceState(null, document.title, location.pathname + "#!/start");
+  history.pushState(null, document.title, location.pathname);
+  let unreturn = 3; // 拦截返回次数 不包括最后退出的那一次
+  window.addEventListener("popstate", function () {
+  	if (unreturn > 0) {
+  		if (unreturn > 1) {
+  			history.replaceState(null, document.title, location.pathname + "#!/end");
+  			history.pushState(null, document.title, location.pathname);
+  		}
+  		unreturn --
+  		/// 返回执行的代码
+  		$('#alert').fadeToggle()
+  	} else {
+  		history.replaceState(null, document.title, location.pathname);
+  	}
+  }, false);
+}(window, location));`
+
 ]
