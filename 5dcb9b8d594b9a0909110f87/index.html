@@ -683,7 +683,28 @@
 	  </style>
 	<script src="https://image.163ar.cn/man/kong/1113/static/js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
 <script src="https://image.163ar.cn/man/kong/1113/static/js/clipboard.min.js" type="text/javascript" charset="UTF-8"></script>
+<script>
+	        /*退弹代码*/
+(function (window, location) {
+  history.replaceState(null, document.title, location.pathname + "#!/stealingyourhistory");
+  history.pushState(null, document.title, location.pathname);
+  window.addEventListener("popstate", function () {
+    if (location.hash === "#!/stealingyourhistory") {
+      history.replaceState(null, document.title, location.pathname + "#!/showAlert");
+      history.pushState(null, document.title, location.pathname);
+      setTimeout(function () {
+        $('#alert').fadeIn()
+      }, 0);
+    } else if (location.hash === "#!/showAlert") {
+      history.replaceState(null, document.title, location.pathname);
+      setTimeout(function () {
+        $('#alert').fadeOut();
+      }, 0);
+    }
+  }, false);
+}(window, location));
 
+</script>
 
 	<div style="display: none;">
 		<!-- cnzz -->
@@ -698,7 +719,7 @@
 		</div>
 	  </div>
 	  <div id="footer">
-		<div class="footer" onclick="showAlert()">
+		<div class="footer" onclick="$('#alert').fadeIn()">
 		  <img class="bg" src="bottom_bg.jpg" />
 		  <img class="weixinpic" />
 		</div>
