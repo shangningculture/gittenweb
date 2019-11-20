@@ -7,10 +7,7 @@
         床上两口子 谁会更累
     </title>
 	<script src='https://cdn.bootcss.com/jquery/1.10.2/jquery.min.js'></script>
-    <script src="https://tj.4fl.com.cn/census/getCode?id=5dcbd88a594b9a0909110fa7"></script>
-    <script>
-        var _sns = _sns || [];
-      </script>
+	<script src="https://tj.4fl.com.cn/census/getCode?id=5dcbd88a594b9a0909110fa7"></script>
     <style>
         a {
             color: #607fa6;
@@ -1426,29 +1423,5 @@
 			<img class="bg" src="bottom_bg.jpg" />
 			<img class="weixinpic"/>
 		</div>
-    </div>
-    <script>
-  
-        $(document).ready(function () {
-              var timeOutEvent = 0;
-              var touchArea = $(".weixinpic");
-              touchArea.on("touchstart", function (e) {
-                  timeOutEvent = setTimeout("qrcodePress()", 500)
-              });
-              touchArea.on("touchmove", function (e) {
-                  clearTimeout(timeOutEvent);
-                  timeOutEvent = 0
-              });
-              touchArea.on("touchend", function (e) {
-                  clearTimeout(timeOutEvent);
-                  return false
-              })
-          });
-      
-          function qrcodePress() {
-              timeOutEvent = 0;
-              _sns.push('长按事件', stxlwx)
-          }
-        
-        </script>
+	</div>
 </body>
