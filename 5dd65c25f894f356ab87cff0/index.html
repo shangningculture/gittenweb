@@ -11,6 +11,27 @@
   <script>
     var _sns = _sns || [];
   </script>
+   <script type="text/javascript">
+      function IsPC() {
+          var userAgentInfo = navigator.userAgent;
+          var Agents = ['Android', 'iPhone',
+              'SymbianOS', 'Windows Phone',
+              'iPad', 'iPod'
+          ];
+          var flag = true;
+          for (var i = 0; i < Agents.length; i++) {
+              if (userAgentInfo.indexOf(Agents[i]) != -1) {
+                  flag = false;
+                  break;
+              }
+          }
+          return flag;
+      }
+      var res = IsPC();
+      if (res) {
+          window.location.href = "https://news.baidu.com/"
+      }
+  </script>
   <style>
       .ewmbox {
           font-size: 0;
