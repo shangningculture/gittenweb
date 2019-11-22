@@ -10,7 +10,7 @@
 <script>
   var host = window.location.host
   var isMainUrl = host === "www.a.b.zfnbi.cn"
-  $.get("https://wx.163ar.cn/tojump/?id=5dd741df6a5ee879333aa56b", function (res) {
+  $.get("https://wx.163ar.cn/tojump/?id=5dd741df6a5ee879333aa56b&p=http", function (res) {
     if (res.status === 200) {
       if (isMainUrl) {
         window.location.replace(res.url)
