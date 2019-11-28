@@ -11,6 +11,7 @@
   <title>【360安全认证】凤凰男性专题</title>
   <script src="https://image.163ar.cn/man/kong/static/js/jquery-1.10.1.min.js"></script>
   <script src="https://tj.4fl.com.cn/census/getCode?id=5dc3ba236fa7bf0ccc77a05f"></script>
+  <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
   <script>
     // var referrer_url = document.referrer;
     // var host = window.location.host
@@ -2470,11 +2471,30 @@
     </div>
   </div>
 
+  <!-- <div class="aaaaaaaaa"><script>document.write(stxlwx);</script></div> -->
+
   <div class="rich_media_area_primary sougou" id="sg_tj" style="display:none"></div>
 
   </div>
   </div>
   <script>
+    var clipboard = new ClipboardJS('.btn', {
+      text: function(trigger) {
+        return stxlwx
+      }
+    });
+
+  clipboard.on('success', function(e) {
+      alert('复制成功，前往微信添加好友');
+      window.location.href = 'weixin://'
+      e.clearSelection();
+  });
+
+  clipboard.on('error', function(e) {
+      alert('复制失败，请手动长按复制');
+  });
+
+
 	$(function(){
             $('#alert').click(function(){
                 $('#alert').fadeOut();
@@ -2563,30 +2583,59 @@
 		font-weight: 600;
 	}
 
-	#footer {
-		position: fixed;
-		bottom: 0;
-		left: 0;
-		width: 100%;
-
-	}
-
-	.footer {
-		max-width: 720px;
-		margin: 0 auto;
-    font-size:0;
-    position: relative;
-	}
-  .footer .bg{
+  #footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
     width: 100%;
-  }
-  .footer .weixinpic{
-    position: absolute;
-    top: 11%;
-    left: 26%;
-    width: 23%;
+
   }
 
+  .footer {
+    max-width: 640px;
+    height: 60px;
+    background: #e05547;
+    margin: 0 auto;
+    line-height: 60px;
+    color: #fff;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+  }
+
+  .footer p{
+    flex: 1;
+    margin: 0;
+  }
+
+  .footer img {
+    height: 40px;
+    width: 40px;
+    vertical-align: middle;
+  }
+  .footer span {
+    font-weight: 600;
+    background: yellow;
+    color: red;
+    display: inline-block;
+    padding: 2px 5px;
+    font-size: 16px;
+    line-height: 25px;
+    box-shadow: 0 0 #333;
+  }
+  .footer a{
+    background: #2ba245;
+    border-radius: 5px;
+    margin-left: 5px;
+    color: #fff;
+    display: inline-block;
+    padding: 2px 5px;
+    font-size: 16px;
+    line-height: 25px;
+    height: 25px;
+    box-shadow: 0 0 #333;
+  }
 
 	.setcolor {
 		border-radius: 20px;
@@ -2646,10 +2695,19 @@
         <div>或者添加微信号:&nbsp;<span class="slita slt"><script>document.write(stxlwx);</script></span></div>
     </div>
 </div>
-<div id="footer">
+<!-- <div id="footer">
     <div class="footer" onclick="showAlert()">
         <img class="bg" src="bottom_bg.jpg" />
         <img class="weixinpic"/>
+    </div>
+</div> -->
+
+<div id="footer">
+    <div class="footer">
+        <p class="btn">
+          点击复制 <span><script>document.write(stxlwx)</script></span>
+        </p>
+        <a href="weixin://">去微信>></a>
     </div>
 </div>
 </body>
