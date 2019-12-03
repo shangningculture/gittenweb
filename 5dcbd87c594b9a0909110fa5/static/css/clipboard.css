@@ -1,0 +1,12 @@
+﻿*{ margin: 0; padding: 0; box-sizing: border-box;}
+.clipboards{ position: fixed; top: 0; left: 0; display: none; z-index: 10001; width: 100%; height: 100%; overflow: hidden; background-color: rgba(0,0,0,.4);}
+.openwx{ text-decoration: none;}
+.clipboards-main{position: relative; top: 30%; width: 80%; height: auto; padding: 10px; margin: 0 auto; border-radius: 4px; background-color: #fff;}
+.clpclosed{position: absolute; top: 5px; right: 5px; height: 20px; line-height: 18px; font-size: 16px; text-align: center; width: 20px; border: 1px solid #888; border-radius: 50%;}
+.clpbox,.clpbox2{ padding: 15px 20px; text-align: center;line-height: 24px;}
+.clpinfo{ font-size: 18px; color: #ca0e00;}
+.clpinfo2{font-size: 14px; color: #555; margin-top: 10px;}
+.clpwx{ display: inline-block; background-color: #ca0e00; padding: 6px 10px; border-radius: 4px; color: #fff; font-size: 18px; }
+.opencolors{ color: #d21010;}
+.zaaxwxh{cursor: pointer;}
+.wangwang{cursor: pointer;}

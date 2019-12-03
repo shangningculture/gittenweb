@@ -1,0 +1,124 @@
+﻿		.weixin {
+			border: 1px solid #ccc;
+			padding: 6px 6px 14px;
+			border-radius: 6px;
+			margin: 8px 0;
+		}
+		
+		.wxstyle {
+			border-radius: 4px;
+			padding: 3px 6px;
+		}
+		
+		.topimg {
+			font-size: 16px;
+			border-bottom: 1px solid #a10000;
+			padding-bottom: 20px;
+			margin: 10px 0;
+			overflow: hidden;
+		}
+		
+		.topimg img {
+			width: 60px;
+			height: 60px;
+			border-radius: 50%;
+			vertical-align: middle;
+		}
+		
+		.topimg span {
+			padding-left: 6px;
+		}
+		
+		.topimg button {
+			margin-top: 8px;
+			display: none;
+			background-color: #2a90d7;
+			color: #fff;
+			float: right;
+			padding: 4px 14px;
+			font-size: 24px;
+			border-radius: 4px;
+			border: 0;
+		}
+		
+		.fixed-right {
+			position: fixed;
+			bottom: 50px;
+			right: 10px;
+			width: 240px;
+			height: auto;
+			background-color: #fff;
+			padding: 10px;
+		}
+		
+		.fixght {
+			text-align: center;
+			font-size: 14px;
+		}
+		
+		.erma-ai {
+			border: 1px solid #dedede;
+			padding: 4px;
+			margin: 4px 0;
+		}
+		
+		.erma-ai img {
+			width: 100%;
+			height: auto;
+		}
+		
+		.redbgs {
+			background: #c91010;
+			color: #ffff00;
+			padding: 2px 6px;
+			border-radius: 4px;
+		}
+		
+		@media only screen and (min-width: 320px) and (max-width: 640px) {
+			.fixed-bottom {
+				display: block;
+			}
+			.fixed-right {
+				display: none;
+			}
+		}
+		
+.pinglun {
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	margin: 10px 0;
+	border: 2px solid #8bdf4d;
+	padding: 20px 10px;
+}
+
+.two-p {
+	padding-bottom: 1.875rem;
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+
+.two-gray {
+	background: #f8f8f8;
+	padding: 4px 6px;
+	border-radius: 4px;
+	font-size: 14px
+}
+
+.user {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+}
+
+.two-right {
+	width: 100%;
+	padding-left: 65px;
+	margin-top: -60px;
+}
+
+.username {
+	font-weight: bold;
+	padding-bottom: 6px;
+}

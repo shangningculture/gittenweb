@@ -1,0 +1,177 @@
+﻿* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	vertical-align: bottom;
+}
+
+html {
+	font-size: 62.5%;
+	/*10 ÷ 16 × 100% = 62.5%*/
+}
+
+body {
+	background-color: #fafafa;
+	font-family: "微软雅黑", Arial, Helvetica, sans-serif;
+}
+
+#content {
+	width: 100%;
+	max-width: 750px;
+	height: auto;
+	background-color: #fff;
+	margin: 0 auto;
+}
+
+#box {
+	margin: 0px 10px 10px 10px;
+	overflow: hidden;
+}
+
+.headbox {
+	height: auto;
+	overflow: hidden;
+	border-bottom: 1px solid #dbdbdb;
+	font: bold 22px/30px Microsoft YaHei, simsun, Verdana, Geneva, sans-serif;
+	padding: 14px 0;
+}
+
+.headnick {
+	height: 20px;
+	overflow: hidden;
+	font: 14px/20px Microsoft YaHei, simsun, Verdana, Geneva, sans-serif;
+	margin-top: 12px;
+	color: #607fa6;
+}
+
+.headnick span {
+	color: #666;
+	margin-left: 14px;
+}
+
+.main {
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	margin-top: 15px;
+	color: #333;
+	line-height: 36px;
+	font-size: 1.6rem;
+}
+
+.txt-center {
+	text-align: center;
+	margin: 15px 0;
+}
+
+.reds {
+	color: rgb(241, 67, 67);
+	font-weight: bold;
+}
+
+.imgs-style {
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	text-align: center;
+	font-size: 13px;
+	color: #999;
+	margin: 10px 0;
+}
+
+.maxw {
+	width: 100%;
+	height: auto;
+}
+
+.videos {
+	width: 100%;
+	height: 480px;
+	text-align: center;
+	overflow: hidden;
+}
+
+.orange {
+	font-weight: bold;
+	color: rgb(255, 129, 36);
+}
+
+.maxs {
+	width: 49%;
+	height: auto;
+	display: inline-block;
+}
+
+.kkmain {
+	margin: 20px 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 15px;
+}
+
+.kkmain-t {
+	background: #ffffff;
+	border: 1px solid #81b8d5;
+	border-radius: 10px;
+}
+
+.kkmain-main {
+	padding: 15px 25px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 5px -5px -5px 5px;
+	border: 1px dashed #81b8d5;
+	border-radius: 10px;
+	padding-bottom: 29px;
+}
+
+.wxs {
+	background: #f9d505;
+	color: #874f55;
+	font-size: 24px;
+	border-radius: 4px;
+	padding: 3px 4px;
+	margin-left: 3px;
+	font-weight: bold;
+}
+
+#toast_content {
+	border-radius: 32px;
+	background: #999;
+	opacity: 0.9;
+	padding: 8px 16px;
+	font-size: 16px;
+}
+
+.btom {
+	display: none;
+}
+
+.ban{
+	font-size: 13px;
+	color: #666;
+	margin-bottom: 80px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 640px) {
+	.videos {
+		width: 100%;
+		height: 240px;
+		text-align: center;
+		overflow: hidden;
+	}
+	.btom {
+		display: block;
+	}
+}

@@ -1,0 +1,166 @@
+﻿/*右侧二维码样式*/
+
+.aima {
+	position: fixed;
+	bottom: 30px;
+	right: 20px;
+	width: 240px;
+	background: #fff;
+	padding: 20px;
+	z-index: 10;
+	font-size: 15px;
+}
+
+.aima-border {
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	border: 1px solid #ccc;
+}
+
+.aima-main {
+	margin: 10px;
+	font-weight: bold;
+}
+
+.amzx {
+	display: inline-block;
+	padding: 0 4px;
+	border-radius: 6px;
+	background: #c7254e;
+	color: #fff;
+}
+
+.ermat {
+	border: 1px solid #515151;
+	padding: 5px;
+	margin: 6px 0;
+}
+
+.ermat img {
+	width: 100%;
+	height: auto;
+}
+
+
+/*底部浮层样式*/
+
+#bdbox {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	z-index: 888;
+	padding: 10px 0;
+	width: 100%;
+	border-top: 1px solid #eee;
+	box-shadow: -5px -5px 10px #eee;
+	background: #fff;
+	display: none;
+}
+
+#bdmain {
+	max-width: 640px;
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	margin: 0 auto;
+	font-size: 15px;
+	color: #333;
+}
+
+.bdtop {
+	padding: 6px 10px;
+	overflow: hidden;
+}
+
+.bdpic {
+	float: left;
+	width: 24px;
+	height: 24px;
+	margin-right: 6px;
+}
+
+.bdpic img {
+	max-width: 100%;
+	height: auto;
+}
+
+.btncolor {
+	color: #d21010;
+	font-size: 18px;
+	font-weight: bold;
+	border-bottom: 1px dashed #d21010;
+}
+
+.redcolor {
+	color: #d21010;
+	font-size: 14px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 640px) {
+	.aima {
+		display: none;
+	}
+	#bdbox {
+		display: block;
+	}
+}
+
+
+/*二维码展示样式*/
+.wxshow-w {
+	margin: 10px 0;
+}
+
+.wxshow-wt {
+	padding-left: 8px;
+	padding-top: 8px;
+}
+
+.wxshow-wt2 {
+	padding-bottom: 5px;
+	max-width: 100%;
+	box-sizing: border-box;
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(192, 200, 209);
+	word-wrap: break-word !important;
+}
+
+.wxshow-wt3 {
+	margin-top: -8px;
+	margin-right: 5px;
+	margin-left: -5px;
+	padding: 10px;
+	max-width: 100%;
+	box-sizing: border-box;
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(192, 200, 209);
+	background-color: rgb(254, 255, 255);
+	word-wrap: break-word !important;
+}
+
+.wxshow-main {
+	text-align: center;
+	font-size: 14px;
+}
+
+.red {
+	color: rgb(204, 0, 0);
+	font-weight: bold;
+}
+
+.imgs-w {
+	height: auto;
+	width: 100%;
+	overflow: hidden;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.imgs-w img {
+	max-width: 100%;
+	height: auto;
+}
+
