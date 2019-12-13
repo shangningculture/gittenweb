@@ -1,0 +1,37 @@
+﻿body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6,  form, input, button, textarea, p, th, td {
+	margin: 0;
+	padding: 0
+}
+ * {
+    margin: 0;
+    padding: 0
+}
+.fix{
+	clear:both
+}
+a{
+	text-decoration:none;
+}
+ol, ul li{
+	list-style: none
+}
+ em, i {
+	font-style: normal
+}
+a {
+	color:#333;
+	text-decoration: none
+}
+/*复位*/
+body{
+	overflow-x:hidden; 
+	font-family: 微软雅黑, sans-serif;
+	text-align: justify;
+}
+.tu{
+	max-width: 800px;
+	margin:10px auto;
+}
+.tu img{
+	width: 100%;
+}
