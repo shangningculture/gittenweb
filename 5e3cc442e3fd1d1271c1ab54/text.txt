@@ -1,0 +1,7 @@
+使用链接：http://www.a.b.zntlblm.cn/tojump/?id=5e3cc442e3fd1d1271c1ab54
+查看链接：https://admin.4fl.com.cn/share/census?id=5e3cc476e3fd1d1271c1ab5a
+
+
+
+<script src='https://cdn.bootcss.com/jquery/1.10.2/jquery.min.js'></script>
+<script src="https://tj.4fl.com.cn/census/getCode?id=5e3cc476e3fd1d1271c1ab5a"></script>
