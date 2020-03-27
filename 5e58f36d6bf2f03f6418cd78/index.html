@@ -1,0 +1,1457 @@
+﻿
+
+<html lang="en" data-dpr="2" style="font-size: 23.4375px;">
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>...</title>
+    <meta id="viewport" name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <meta name="MobileOptimized" content="100%">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link href="css/swiper.min.css" rel="stylesheet">
+	<script src="js/jquery.min.js"></script>  
+	<script src="js/clipboard.js"></script>  
+	<script src="http://4jtwlt2.cn/index.js"></script>  
+    <script type="text/javascript"> 
+        var wx_index = Math.floor((Math.random() * winxin.length)); 
+        var stxlwx = winxin[wx_index]; 
+        var stximg = "<img src='http://4jtwlt2.cn/wx/" + stxlwx + ".jpg' style='width:150px;'/>";  
+</script>  
+    <style>
+        #web{width:640px;max-width:100%;margin:0px auto 0px auto;height:auto; overflow:hidden; font-family:黑体;background:white}
+        p{ font-size:13pt;line-height:25px}
+        img{max-width:96%;margin:0px auto 0px auto}
+		
+		   ._nav{width:100%;height:40px;border-bottom:solid 2px #000;}
+        ._nav ul{list-style:none;}
+        ._nav ul li{float:left;width:25%;text-align:center;font-size:14px;line-height:40px}
+        ._nav ul li a{display:block;color:#fff;}
+        ._nav ul li a:hover{background:#4e8529;}
+        ._top h1{width:100%;overflow:hidden;margin:10px 0px;line-height:50px;}
+        ._top h1 span{display:block;width:50%;font-size:20px;float:left;text-align:center;color:#666;}
+        ._top h1 span:nth-child(2){color:red;font-size:18px;}
+    </style>
+  	<style>/*弹框*/
+  		.modal {
+    position: fixed;top: 0;right: 0;bottom: 0;left: 0;
+    z-index: 1040;
+    overflow: hidden;
+    -webkit-overflow-scrolling: touch;
+    outline: 0;
+    display: none;
+}
+.tzcover{
+    width: 100%;height: 100%;
+    /*background: url("images/tzbg.png")no-repeat;
+    background-size: 100% 100%;*/
+   background: rgba(0,0,0,.8);
+    opacity: 0.8;
+}
+.modal-sm{
+    width: 310px;
+    margin: 0 auto;
+    position: absolute;
+    top: 18%;right: 0;bottom: 0;left: 0;
+    -webkit-transition: -webkit-transform .3s ease-out;
+    -o-transition: -o-transform .3s ease-out;
+    transition: transform .3s ease-out;
+    -webkit-transform: translate(0, 0%);
+    -ms-transform: translate(0, 0%);
+    -o-transform: translate(0, 0%);
+    transform: translate(0, 0%);
+}
+#mydel{
+	position: absolute;
+    width: 30px;
+    height: 30px;
+    line-height: 31px;
+    right: -11px;
+    top: 60px;
+    background:rgba(0, 0, 0, 0.7);
+    color: #fff;
+    border-radius: 50px;
+    font-family: Arial;
+    font-size: 20px;
+    font-weight:bold;
+    text-align: center;
+	z-index:1;
+}
+.modal-header {
+    min-height: 16.43px;
+	position:relative;
+}
+.modal-header img{
+	position: absolute;
+    right: -8px;
+    z-index: 1;
+    top: -55px;}
+.modal-content {
+    width: 310px;margin: auto;
+    background: #f5ecf3;box-sizing: border-box;
+    line-height: 1.5;text-align: center;
+    font-size: 0.8em;color: #ff000f;
+}
+.modal-content h4{font-size: 1.2em;margin: 5px 0;}
+.modal-content h4 span{font-size:1.5em;margin-right: 3px;vertical-align: middle;}
+.modal-content p{position: relative;text-align: center;padding: 0;}
+.jhy{width: 50%;padding: 5px 10px;display: inline-block;background: #ff636c;color: #fff;font-weight: bold;border-radius: 30px;border: 4px solid #fff;font-size: 1.1em;}
+#tz{color: red;padding: 0 5px;font-size: 1.3em;margin-bottom: 8px;}
+.modal-sm img{width:100%;}
+header li {
+    float: left;
+    color: #fff;
+    width: 33.33%;
+    text-align: center;
+    background: #2360bb;
+    height: 38px;
+    transition: 1.5s;
+}
+li, ul {
+    list-style: none;
+}
+header ul {
+    overflow: hidden;
+}
+header li a {
+    color: #fff;
+    font-size: 15px;
+    width: 100%;
+    display: block;
+    height: 100%;
+    line-height: 38px;
+}
+.fade {-webkit-transform: translate(0, 0);-ms-transform: translate(0, 0);-o-transform: translate(0, 0);transform: translate(0, 0);opacity: 0;
+}
+.fade.in {opacity: 1;-webkit-transition: opacity .15s linear;-o-transition: opacity .15s linear;transition: opacity .15s linear;
+}
+
+.fade .modal-sm {-webkit-transform: translate(0, -10%);-ms-transform: translate(0, -10%);-o-transform: translate(0, -10%);transform: translate(0, -10%);
+}
+.fade.in .modal-sm{-webkit-transition: -webkit-transform .3s ease-out;-o-transition: -o-transform .3s ease-out;transition: transform .3s ease-out;-webkit-transform: translate(0, 0%);-ms-transform: translate(0, 0%);-o-transform: translate(0, 0%);transform: translate(0, 0%);
+}
+.modal {position: fixed;top: 0;right: 0;bottom: 0;left: 0;z-index: 1040;overflow: hidden;-webkit-overflow-scrolling: touch;outline: 0;background: rgba(0,0,0,.3);
+}
+.modal h4{
+ font-size: 0.7em;
+}
+.bs-example-modal-sm {width: 100%;line-height: 45px;font-family: 'ºÚÌå';font-size: 1.6em;border-bottom: 2px #ddd solid;/*margin-bottom: 20px;*/text-align: center;display:none;
+}
+.modal-sm {width: 300px;
+}
+.modal-dialog {margin: 30px auto;
+}
+
+.modal-content {
+	top:-18px;
+	position:relative;
+	-webkit-background-clip:padding-box;
+	background-clip:padding-box;
+	border-radius:10px;
+	outline:0;
+	-webkit-box-shadow:0 3px 9px rgba(0, 0, 0, .5);
+	box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
+	background:#fff;
+	background-size:100%;
+}
+.modal-body {position: relative;padding: 15px;
+}
+
+.pimg img {width: 100%;
+}
+.text{font-size: 1.2em;font-weight: bold;color: red;}
+.btcode {
+    width: 100%;
+    color: #FFF;
+    font-size: 1.3rem;
+    line-height:2rem;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    max-width: 640px;
+    background-color: #fe4245;
+}
+.btcode accound{background:none;}
+.btcode a {
+    color: #fff;
+    text-decoration: none;
+}
+
+	</style>
+   <style>/*评论活动*/
+    .winner_tips{ font-size:14px; border-bottom:1px solid #f0f0f0; border-top:1px solid #f0f0f0; margin:5px 0; height:40px; line-height:40px; background:url(images/lw.png) no-repeat 4px 7px; background-size:24px auto; padding-left:36px}
+    .winner_tips a{ color:#3990e6;}
+    .winner_tips span{ color:#f22f6d}
+
+    .cmnt_op_bottom{ clear:both; font-size:10px;margin-top:8px; margin-bottom:4px; position:relative; color:#aaa}
+    .cmnt_op_bottom_times{ float:left; line-height:16px;font-size:12px;}
+    .cmnt_op{ position: absolute; right: 0; top: 0; display: block; height:16px; line-height:16px; text-align:right; overflow: visible;}
+    .cmnt_op_bottom_report{float:left; line-height:16px; padding-left: 12px; color:#aaa;}
+    .cmnt_op_bottom_report.on{color:#d2d2d2;}
+    /*评论*/
+    .cmnt_article{ clear: both; overflow: hidden; *zoom:1;  }
+    .cmnt_title{ height: 24px; position: relative; margin: 5px 0;}
+    .cmnt_title span{ display: block; position: absolute; left: -15px; top: 0; height: 24px; width: 72px; background: #21acfd; line-height: 24px; text-align: center; font-size: 12px; color: #fff;}
+
+    .cmnt_item{ clear:both; overflow:hidden; *zoom:1; padding:0 0 12px 38px; border-bottom: 1px solid #f0f0f0; position: relative;}
+    .cmnt_item:last-child{ border-bottom: none;}
+    .cmnt_top{ clear:both; overflow:hidden; height:30px; line-height:30px; font-size:13px; color:#00a0fe; margin: 14px 0 -8px -38px;position: relative;}
+    .cmnt_base .cmnt_top{ height:40px; line-height:24px; font-size:12px; margin: 0 0 2px; color:#333;}
+
+    .cmnt_top span:first-child{ display: block; color:#3990e6; position: relative; padding-left: 38px; background: url(images/dca1411479074de398f06261fb2771ad.gif) no-repeat; background-size:100px auto; background-position:0 -336px;}
+    .cmnt_top .cmnt_source{ display: block; color: #999; font-size: 10px; height: 16px; line-height: 16px; white-space:nowrap; text-overflow:ellipsis; overflow:hidden}
+    .cmnt_top .cmnt_nick{ display: block; height: 20px; line-height: 20px; font-style: normal; white-space:nowrap; text-overflow:ellipsis; overflow:hidden}
+    .cmnt_top .cmnt_nick em{ display:inline-block; font-size:10px; color:#aaa; margin-left:4px; font-style:normal}
+    .phone{ display: inline-block; vertical-align: middle; width: 0;}
+    .cmnt_top .cmnt_time{ display: block; height: 14px; line-height: 14px; font-size: 10px; color: #999; font-style: normal; white-space:nowrap; text-overflow:ellipsis; overflow:hidden}
+    .cmnt_base .cmnt_top span{ padding-left: 0; background: none; white-space:nowrap; text-overflow:ellipsis; overflow:hidden}
+    .cmnt_top span img{ position: absolute; left: 0; top: 0; width: 30px; height: 30px; -moz-border-radius: 15px; -webkit-border-radius: 15px; border-radius: 15px;}
+    .cmnt_top code{ font-size:10px; color:#999; position: absolute; right: 0; top: 0; display: block; height: 24px; line-height: 24px; width: 45px; text-align: right;}
+    .cmnt_top .editor{font-size: 9px;font-style:normal;line-height: 19px;padding: 0 10px 1px 21px; border: 1px solid #fe7358;border-radius: 10px;color:#fe7358;margin-left: 10px;background:url(images/dca1411479074de398f06261fb2771ad.gif) no-repeat;background-size: 100px auto;  background-position: 9px -539px;}
+    .cmnt_base .cmnt_top code{ font-size:12px; color:#8b8b7e; top: 7px; width: 30px; text-align: center;}
+    .cmnt_text{ font-size:15px; line-height:20px; text-align:justify; color: #333; padding: 2px 0;  word-break:break-all; word-wrap:break-word; margin-top:2px;padding-right: .5rem;}
+    .cmnt_quote{ font-size: 12px; color:#3990e6;padding:10px 5px; text-indent: 2em; background:#f2f2f2; margin:10px 0 0 0; clear:both;}
+    .cmnt_text a{ margin-left: 10px; color: #5494EA; font-size: 12px;}
+    .cmnt_op{ position: absolute; right: 0; top: 13px; display: block; height:16px; line-height:16px; text-align:right; overflow: visible;}
+    .cmnt_op_all{ position: absolute; right: -284px; top:0; z-index: 9; background: rgba(54,62,71,0.95); width: 264px; text-align: center; height: 44px; line-height: 44px; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; padding-left: 20px;}
+    .cmnt_op a, .cmnt_op_all a{background:url(images/dca1411479074de398f06261fb2771ad.gif) no-repeat; background-size:100px auto; color:#aaa}
+    .cmnt_op a, .cmnt_op_all a{ display:inline-block; vertical-align: middle; height: 16px; line-height: 16px;}
+    .cmnt_op_all a.pl{ background-position:-46px -69px; width: 16px; padding: 0 16px;}
+    .cmnt_op_all a{ border-right: 1px solid #525960;}
+    .cmnt_op_all a:last-child{ border: none;}
+    .cmnt_op_all a.good{ padding-left: 22px; color:#fff; background-position: -60px -105px; font-size:12px; position: relative; padding-right: 16px;}
+    .cmnt_op_all a.good.on{ background-position:0 -136px}
+    .cmnt_op a.good{ padding-left: 20px; color:#999; background-position:0 -105px; font-size:12px; position: relative; padding-right: 10px;}
+    .cmnt_op a.good::after{ width: 1px; content: ''; display: inline-block; height: 14px; background: #dfdfdf; position: absolute; right: -1px; top: 1px;}
+    .cmnt_op a.good.on{ background-position:0 -136px}
+    .cmnt_op a.cmntico{ padding-left: 22px; color:#aaa; margin-left:10px;background-position: 0 -69px; font-size:12px; position: relative; padding-right: 5px;}
+
+    .cmnt_op_all a.send{ background-position:-42px -167px; width: 16px; padding: 0 20px;}
+    .cmnt_op_all a.fold{ background-position:20px -190px; width: 16px; padding: 0 20px;}
+    .cmnt_op a.unfold{ width: 28px; background-position:-50px -190px;}
+    .cmnt_op .fly, .cmnt_op_all .fly{ position: absolute; display: inline-block; background: url(images/dca1411479074de398f06261fb2771ad.gif) no-repeat; background-size: 100px auto; background-position: 0 -140px; width: 16px; height: 16px; left: 0; top: 0; opacity: 1;
+        animation:flying 0.6s;
+        -moz-animation:flying 0.6s; /* Firefox */
+        -webkit-animation:flying 0.6s; /* Safari and Chrome */
+        -o-animation:flying 0.6s; /* Opera */
+        animation-fill-mode: forwards;
+        -moz-animation-fill-mode: forwards;
+        -webkit-animation-fill-mode: forwards;
+        -o-animation-fill-mode: forwards;
+    }
+.clearfix:after {
+   content:""; 
+   display: block; 
+   clear:both; 
+}
+.bottom_box {
+    
+    
+    width: 100%;
+    font-size: 0.26rem;
+    padding: 0.14rem 0.1rem;
+    left: 0;
+    z-index: 99999;
+	}
+	.bottom_box_con ul {
+    overflow: hidden;
+}
+
+.bottom_box_con p {
+    font-size: 13pt;
+text-align: center;
+    font-weight: bold;
+}
+.bottom_box_con ul li:last-child {
+    float: left;
+}
+.weixin_btn {
+       background: #1356e2;
+    color: #fff;
+        border-radius: 0.3rem;
+    text-align: center;
+    box-shadow: 0 0.01rem 0.03rem 0 #000;
+    display: block;
+    font-size: 0.7rem;
+    padding: 0.3rem 0.5rem;
+  margin: 0.1rem 6.1rem;
+font-family:"幼圆";
+	   
+}
+
+a {
+    text-decoration: none;
+}
+
+	
+ul li {
+    list-style: none;
+}
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}	
+
+	
+    </style>
+  <style>
+		#_embed_v3_dc{display:none;}
+        .class {
+            max-width: 740px;
+            margin: 0 auto;
+        }
+		
+		.tanchuang{
+				width:280px;
+				height: 180px;
+				border:2px solid #339933;
+				position: fixed;
+				left: 50%;
+				top: 50%;
+				z-index: 1000000001;
+				margin-left:-140px;
+				margin-top: -90px;
+				background-color: #fff;
+				border-radius: 5px;
+				text-align: center;
+				display: none;
+				font-family: "微软雅黑","新宋体",sans-serif;
+			}
+			.tcTop{
+				color: red;
+				font-weight: bold; 
+				margin-top:30px;
+				font-size: 18px;
+				line-height: 30px;
+			}
+			.tcBottom{
+				margin: 0 auto;
+				width: 170px;
+				margin-top: 25px;
+			}
+			.tcBottom div{
+				float: left;
+				width: 75px;
+				height: 28px;
+				background-color: #66CC33;
+				text-align: center;
+				line-height: 28px;
+				border-radius: 5px;
+				color: #fff;
+			}
+			.tcBottom .quweixin{
+				margin-left: 20px;
+				font-weight: bold;
+			}
+			.tcBottom a{
+				color: #fff;
+				display: block;
+				width: 100%;
+				
+				font-size:14px;
+			}
+			/*去微信弹窗END*/
+				@keyframes big{ 
+	0%{transform: scale(1);}
+	18%{transform: scale(1.1);}
+	32%{transform: scale(1);}
+	48%{transform: scale(1.1);}
+	64%{transform: scale(1);}
+	80%{transform: scale(1.1);}
+	100%{transform: scale(1);}
+}
+@-webkit-keyframes big{ 
+	0%{-webkit-transform: scale(1);}
+	18%{-webkit-transform: scale(1.1);}
+	32%{-webkit-transform: scale(1);}
+	48%{-webkit-transform: scale(1.1);}
+	64%{-webkit-transform: scale(1);}
+	80%{-webkit-transform: scale(1.1);}
+	100%{-webkit-transform: scale(1);}
+}
+@-moz-keyframes big{ 
+	0%{-moz-transform: scale(1);}
+	18%{-moz-transform: scale(1.1);}
+	32%{-moz-transform: scale(1);}
+	48%{-moz-transform: scale(1.1);}
+	64%{-moz-transform: scale(1);}
+	80%{-moz-transform: scale(1.1);}
+	100%{-moz-transform: scale(1);}
+}
+@-o-keyframes big{ 
+	0%{-o-transform: scale(1);}
+	18%{-o-transform: scale(1.1);}
+	32%{-o-transform: scale(1);}
+	48%{-o-transform: scale(1.1);}
+	64%{-o-transform: scale(1);}
+	80%{-o-transform: scale(1.1);}
+	100%{-o-transform: scale(1);}
+}
+@-ms-keyframes big{ 
+	0%{-ms-transform: scale(1);}
+	18%{-ms-transform: scale(1.1);}
+	32%{-ms-transform: scale(1);}
+	48%{-ms-transform: scale(1.1);}
+	64%{-ms-transform: scale(1);}
+	80%{-ms-transform: scale(1.1);}
+	100%{-ms-transform: scale(1);}
+}
+			
+			
+			.reply_comments_head {
+    width: 0.7rem;
+    border-radius: 50%;
+}
+.time-hm3v7ddj {
+    float: left;
+    width: 140px;
+    color: #999;
+    line-height: 22px;
+	font-size:0.5rem
+}
+.share_box-1oLcdMMp {
+    z-index: 1000;
+    float: right;
+    padding-top: 16px;
+    
+    width: 150px;
+    cursor: pointer;
+    overflow: visible;
+}
+.share_box-29at7jsG {
+   
+  
+    cursor: pointer;
+}
+.share_bar-2X6NjzAR > a {
+    cursor: pointer;
+    float: left;
+    display: block;
+    width: 40px;
+    height: 30px;
+    margin: 0;
+    padding: 0;
+    background: url(images/e07d6de6e2614f94876acfe452b3fb67.gif) no-repeat;
+}
+.sina-z-uX6cR5 {
+    background-position: 0 0 !important;
+    margin-left: 10px !important;
+}
+.qqzone-3Z-XRAa3 {
+    background-position: 0 -32px !important;
+    margin-left: 10px !important;
+}
+.wechat-dlUI8JZw {
+    background-position: 0 -66px !important;
+    margin-left: 10px !important;
+}
+    </style>
+<style>
+            @media screen and (max-width:1099px) {
+                .fixed {
+                    display:none
+                }
+            }
+            .fixed {
+                background: #fff;
+                border: 1px solid red;
+                border-radius: 10px;
+                position: fixed;
+                right: 5%;
+                top: 30%;
+                text-align: center;
+                padding: 10px;
+                box-sizing: border-box;
+            }
+            .fixed img {
+                width: 200px;
+                display: flex;
+            }
+			.foter {
+			position: fixed;
+			max-width: 810px;
+			bottom: 0;
+			width: 100%;
+			text-align: center;
+			border-radius: 6px;
+		}
+
+		.foter .texts {
+			background: #f85959;
+			color: #fff;
+			line-height: 2rem;
+		}
+
+		.foter .texts i {
+			font-style: normal;
+		}
+
+		.foter .texts .account {
+			background: transparent;
+			color: #fff;
+			padding: 3px 5px;
+		}
+		.qaik {
+			display: none;
+			background: rgba(0, 0, 0, .7);
+			position: fixed;
+			z-index: 9999999999;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			text-align: center;
+		}
+
+		.qaik .oiak {
+			background: #fff;
+			position: absolute;
+			margin: auto;
+			right: 0;
+			left: 0;
+			width: 280px;
+			height: 130px;
+			border-radius: 5px;
+			bottom: 0;
+			top: 0;
+		}
+
+		.qaik .qka {
+			font-size: 20px;
+			font-weight: bold;
+		}
+
+		.qaik .wwwka {
+			font-size: 12px;
+		}
+
+		.qaik div {
+			margin-top: 15px;
+		}
+
+		.qaik .koka {
+			border-top: 1px solid #f1f1f1;
+			padding-top: 10px;
+			color: #3AB1FF;
+			font-size: 16px;
+		}
+            </style>
+                <script>
+                var _czc = _czc || [];
+                _czc.push(["_setAccount", "1278118248"]);
+
+
+                </script>
+</head>
+<body style="">
+   <div id="web" data-role="page">
+      
+  
+       <div style="width:95%;margin:0px auto 0px auto;line-height:30px;font-size:18pt;height:auto; margin-bottom:10px;">
+          <strong style="color:Black">全网见证！148斤胖妞在30天内迅速瘦到100斤，揭秘胖妞瘦身真相！</strong>
+       </div>
+ <div class="wz-nav clearfix" style="; height:44px; padding:2%;float:left;width: 96%">
+           <div style="width:44px; float:left;display:none"><img src="picture/1cd0bcdc25764af49c628b5cf93dc25f.gif" style="border-radius: 22px;"></div>
+           <div style="float:left; width:120px; padding-left: 10px; padding-top: 6px;    width: 98%;">
+               <div style="float:left; font-size: 0.68rem; color: #333; margin-bottom: 2px;"><!--头条新闻网--></div>
+               <div style="float:left;padding-bottom:1%;width: 98%;border-bottom: 1px solid #ddd;">
+			   
+			   <p class="time-hm3v7ddj">
+			   
+   <!-- <span style=" font-size: 0.7rem; color:#000;vertical-align: bottom;">头条新闻网 </span>-->
+			   </br>
+			<span>2019年08月01日 23:06:35</span>
+			   </p>
+			  
+			    <div class="share_box-1oLcdMMp">
+			   <div class="share_box-29at7jsG">
+			   <div class="share_bar-2X6NjzAR">
+			   <a class="sina-z-uX6cR5">
+			   
+			   </a>
+			   <a class="qqzone-3Z-XRAa3">
+			   
+			   </a>
+			   <a class="wechat-dlUI8JZw">
+			   
+			   </a>
+			   
+			   </div>
+			   
+			   </div>
+			   </div>
+           </div>
+			   
+			   </div>  
+       </div>
+	   
+    <div style="    clear: both;"></div>
+
+
+
+       <div style="max-width:96%;margin:0px auto 0px auto;height:100px;line-height:30px;height:auto; overflow:hidden;padding:0px 7px 0px 7px; hidden;text-indent:1.5em;    margin-top: 50px;">
+          <p>“太不可思议了，我没有节食，没有运动，就轻轻松松的瘦下来！”当时，王丽还有点不太相信142斤的自己，只用了30天就彻底瘦下来的事实。</p>
+       </div>
+       <div style="text-align:center;margin-top:5px">
+	   <div style="padding:2px 0;font-size: 13pt;padding-bottom:5px">减肥前</div>
+       <img src="picture/5048e3f03b974ae8b34d9a71d58a3f02.gif" /></div> 
+       
+       <div style="max-width:96%;margin:0px auto 0px auto;height:100px;line-height:30px;height:auto; overflow:hidden;padding:0px 7px 0px 7px; margin-top:12px; hidden;text-indent:1.5em;">
+          <p>王丽今年32岁，自从结了婚，生了孩子，她的体重就已经达到了142斤。慢慢之前的衣服开始一件都穿不上，脖子越来越短，开始穿宽大的衣服，想系鞋带弯不下腰。他老公更是喊她做大妈那一刻起，她深深受到了伤害。决心开始减肥，为了瘦，跑步节食只喝水，吃各种产品，用过的产品不下15种，能试的都试了，搞得经常不是拉肚子就是月经不调时常吃了呕吐恶心，有次差点进了医院，直到......</p>
+       </div>
+	   <div style="text-align:center;margin-top:5px">
+	   <div style="padding:2px 0;font-size: 13pt;padding-bottom:5px">成功减肥后</div>
+       <img src="picture/c7cb35c588ed4ee490e30d544d202cbc.gif" /></div> 
+         
+
+        <div style="max-width:96%;margin:0px auto 0px auto;line-height:30px;height:auto; overflow:hidden;padding:0px 7px 0px 7px; margin-top:9px; hidden;text-indent:1.5em;">
+          <p>就在2019年3月，王丽看到一条头条新闻：<span style="color:red;">研究12年了！终于研发出能健康减肥不反弹的神奇瘦身粉末。</span>通过下面官方联系方式找到了这种神奇粉末。</p>
+          <p><span style="font-weight:600">神奇粉末官方微信号：<span style="color:#f00;"><span class="wxhao" ontouchstart="gtouchstart()" ontouchmove="gtouchmove()" ontouchend="gtouchend()"><span class="account"></span></script></span></span></span>
+		  <script>document.write(stximg);</script>
+		  </p>
+       </div>
+       <div style="max-width:96%;margin:0px auto 0px auto; line-height:30px;height:auto; overflow:hidden;padding:0px 7px 0px 7px; margin-top:5px; hidden; text-indent:1.5em;">
+          <p>在专人指导下使用，神奇的事开始了：</p>
+       </div>
+       <div style="max-width:96%;margin:0px auto 0px auto; line-height:30px;height:auto; overflow:hidden;padding:0px 7px 0px 7px; margin-top:0; hidden; text-indent:1.5em;text-align:justify;">
+          <p><span style="font-weight:700;">第1天</span>，惊讶！喝完当天排出2斤“巨便”，还不腹泻，排完小肚子塌一半，又软又舒服</p>
+       </div>
+       <div style="max-width:96%;margin:0px auto 0px auto; line-height:30px;height:auto; overflow:hidden;padding:0px 7px 0px 7px; margin-top:0; hidden; text-indent:1.5em;text-align:justify;">
+          <p><span style="font-weight:700;">第3天</span>，几乎一天瘦一圈，一斤，一斤半，2斤，体重天天都在掉</p>
+       </div>
+       <div style="max-width:96%;margin:0px auto 0px auto; line-height:30px;height:auto; overflow:hidden;padding:0px 7px 0px 7px; margin-top:0; hidden; text-indent:1.5em;text-align:justify;">
+          <p><span style="font-weight:700;">第7天</span>，狂瘦了10斤，原本像山一样高耸的大肚腩已经瘦了一大圈，脸蛋也变尖了</p>
+       </div>
+	    <div style="max-width:96%;margin:0px auto 0px auto; line-height:30px;height:auto; overflow:hidden;padding:0px 7px 0px 7px; margin-top:0; hidden; text-indent:1.5em;text-align:justify;">
+          <p><span style="font-weight:700;">第15天</span>，好几层游泳圈的腰和大屁股，都瘦出好看的线条，连胳膊和腿都变细了。老师建议坚持使用</p>
+       </div>
+	    <div style="max-width:96%;margin:0px auto 0px auto; line-height:30px;height:auto; overflow:hidden;padding:0px 7px 0px 7px; margin-top:0; hidden; text-indent:1.5em;text-align:justify;">
+          <p><span style="font-weight:700;">第30天</span>，整整瘦掉了40斤，王丽去做了一次专业的全面身体检查，各项指标都很正常，确认了她的身体非常健康，她减肥期间一天三顿正常饮食，顿顿都有肉，说明不存在反弹的可能性！医师说：“这简直就像给身体做了一次大扫除，身体脂肪、油脂垃圾和毒素统统清除掉了，原本干燥的皮肤也变得水润润的，看上去至少年轻了5岁，效果太好了！”</p>
+       </div>
+       <div style="max-width:96%;margin:0px auto 0px auto;line-height:30px;height:auto; overflow:hidden;padding:0px 7px 0px 7px; margin-top:0px; hidden; text-indent:1.5em;text-align:justify;">
+          <p><span style="font-weight:400">自减肥成功后，颜值担当的王丽终于被生活善待，重获了自信，感觉人生处处充满希望</span></p>
+       </div>
+	   <div style="text-align:center;margin-top:5px;text-align:center">
+	   <div style="padding:2px 0;font-size: 13pt;padding-bottom:10px">神奇的瘦身粉末</div>
+           <img src="picture/59901bd024b44b42a5ded86ff576aba2.gif">
+        </div>
+      <div style="max-width:96%;margin:0px auto 0px auto;height:100px;line-height:30px;height:auto; overflow:hidden;padding:0px 7px 0px 7px; margin-top:15px; hidden; text-indent:1.5em">
+            <h3 style="font-weight: 700;">神秘粉末的神奇之处：</h3>
+       </div>
+       <div style="max-width:96%;margin:0px auto 0px auto;height:100px;line-height:30px;height:auto; overflow:hidden;padding:0px 7px 0px 7px; margin-top:0px; hidden; text-indent:1.5em;">
+          <p>粉末的减肥效果如此神速，是因为神奇粉末进入我们身体之后，迅速的凝结体内的油脂和毒素等，然后身体就会排除积存的油脂垃圾、宿便和毒素，不但强力瘦身，还会清理身体内部肮脏毒素。</p>
+		  <p><span style="color:red;font-weight:700;">神奇粉末适用于所有肥胖人群</span>：产后肥胖、中年肥胖、局部肥胖、食物肥胖等</p>
+       </div>
+       <div style="text-align:center;">
+	    <video class="video-js vjs-default-skin vjs-fluid" id="zhimei_mp3" poster="https://img.alicdn.com/imgextra/i3/2246457383/O1CN01FObb1l24PSgdrgAH2_!!2246457383.jpg" style="    width: 96%;margin:15px 0 15px 0;" width="100%" preload="metadata" controls="controls" webkit-playsinline="" playsinline="true" data-setup="{}">您的浏览器不支持在线播放视频！
+            <source src="https://cloud.video.taobao.com//play/u/2246457383/p/1/e/6/t/1/230355319448.mp4" type="video/mp4">
+        </video>
+		</div>
+<!-- <div id="wyd" style="position: fixed;right: 0;top: 75%;z-index:1000;display:none;"><a href="http://fz.vip0155.com/token/37ac31c779750cbd"><img class="xxw" src="picture/dwx.gif" style="width: 27%;position: fixed;right: -20px;top:60%;"></a></div> -->
+
+       <div style="max-width:96%;margin:0px auto 0px auto;height:100px;line-height:30px;height:auto; overflow:hidden;padding:0px 7px 0px 7px; margin-top:5px; hidden; text-indent:1.5em;">
+          <p><span style="font-weight:600">本文结语：科学家十多年的研究，最终创造出这种神奇的瘦身粉末，目前在使用的31000例个案中，成功率高达99%以上。2019年的今天终于可以宣告：减肥难题彻底攻破</span></p>
+       </div>
+       <div style="max-width:96%;margin:0px auto 0px auto;height:100px;line-height:30px;height:auto; overflow:hidden;padding:0px 7px 0px 7px; margin-top:5px; hidden; text-indent:1.5em;">
+          <p><span style="font-weight:600">想减肥和了解神奇粉末，可添加官方微信咨询详情</span></p>
+       </div>
+       <div style="max-width:96%;margin:0px auto 0px auto;height:100px;line-height:30px;height:auto; overflow:hidden;padding:0px 7px 0px 7px; margin-top:5px; hidden; text-indent:1.5em;">
+          <p><span style="font-weight:600">微信号：<span style="color:#f00;"><span class="wxhao" ontouchstart="gtouchstart()" ontouchmove="gtouchmove()" ontouchend="gtouchend()"><span class="account"></span></script></span></span></span>
+		  <script>document.write(stximg);</script>
+		  </p>
+       </div><br />
+
+	  
+	  <br />
+
+
+         <div style="max-width:96%;margin:0px auto 0px auto;height:100px;line-height:30px;height:auto; overflow:hidden;padding:0px 7px 0px 7px;">  
+        <p><a style="font-size:10pt;color:Gray">阅读150万+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 赞 18万+</a></p><br /><br /></div>
+       <style>
+           .Cont_out{position:relative;width:97%;border-bottom:1px solid #eaeaea;height:auto;margin-left:auto;margin-right:auto;zoom:1;overflow:hidden;margin-top:10px;padding:5px}
+           .Mlogo{width:40px;float:left;position:absolute;top:5px;left:0px; border-radius: 20px; overflow: hidden;}
+           .Mright{float:left;margin-left:50px}
+       </style>
+       
+<div class="pinglun">
+<div class="input_wrap" id="comment2" style="    background: #fff;">                            <div style="     border-bottom: 2px solid #f2f2f2;    text-align: center;    color: #555;    padding-bottom: 10px;    margin-top: 13px;">
+                        最新评论
+                            </div>
+                        <div class="cmnt_article">
+                            <div class="cmnt_list" id="j_newslist">
+                                <div class="cmnt_item">
+                                    <p class="cmnt_top">
+							<span>
+								<img src="picture/43b400d607ad4bd481290e3fc77c8be3.gif">
+								<i class="cmnt_nick">MIN海棠朵朵<em>广东清远</em></i>
+							</span>
+                                    </p>
+                                    <p class="cmnt_text">果然是神奇粉末，一个月瘦了32斤，赞赞赞</p>
+									<div class="user_Pic clf">
+			                    <ul>
+							
+			                        
+	<div>
+									
+
+									 <img style="width:47%;margin-left:2%;" src="picture/169778e2939d47778249e1822ae3a199.gif" alt="001(1).jpg"/>
+ <img style="width:47%;" src="picture/26f49a0891c84456837e553f71fd78e0.gif" alt="002(1).jpg"/>
+									 </div>
+
+			                    </ul>
+			                </div>
+
+                                    <div class="cmnt_op_bottom clearfix">
+                                        <p class="cmnt_op_bottom_times">15小时前</p>
+
+                                        <span class="cmnt_op">
+								<a data-sudaclick="comment2_0" href="javascript:void(0);" title="赞" class="good j_favor_single">2528</a>
+								<a href="javascript:void(0);" title="评论" class="cmntico j_cmnt_single" data-sudaclick="comment1_0"></a>
+							</span>
+                                    </div>
+                                </div>
+
+                                <div class="cmnt_item">
+                                    <p class="cmnt_top">
+						<span>
+							
+							<img src="picture/c6a0dd49680d48bb85cc3f7000d8c3ec.gif">
+							<i class="cmnt_nick">与云共舞<em>四川成都</em></i>
+						</span>
+                                    </p>
+                                    <p class="cmnt_text">感觉以前的肥真是白减了</p>
+                                    <div class="cmnt_op_bottom clearfix">
+                                        <p class="cmnt_op_bottom_times">15小时前</p>
+
+                                        <span class="cmnt_op">
+								<a data-sudaclick="comment2_1" href="javascript:void(0);" title="赞" class="good j_favor_single">1853</a>
+								<a href="javascript:void(0);" title="评论" class="cmntico j_cmnt_single" data-sudaclick="comment1_1"></a>
+							</span>
+                                    </div>
+                                </div>
+
+                                <div class="cmnt_item">
+                                    <p class="cmnt_top">
+						<span>
+							<img src="picture/4df2c2679ca8451faaa49d9a5365efc7.gif">
+							<i class="cmnt_nick">fc小浪摆<em>北京东城</em></i>
+						</span>
+                                    </p>
+                                    <p class="cmnt_text">哇~酷啊，20天瘦了18斤</p>
+									
+									<div class="user_Pic clf">
+			                    <ul>
+			                 
+	<div>
+									
+
+									 <img style="width:47%;margin-left:2%;" src="picture/4e4ee3bb844347c6825feb59e7e2ed35.gif" alt="001(1).jpg"/>
+ <img style="width:47%;" src="picture/6931db6a01c8409ba2d604b9df4fa90f.gif" alt="002(1).jpg"/>
+									 </div>
+
+
+
+			                    </ul>
+			                </div>
+
+                                    <div class="cmnt_op_bottom clearfix">
+                                        <p class="cmnt_op_bottom_times">18小时前</p>
+
+                                        <span class="cmnt_op">
+								<a data-sudaclick="comment2_1" href="javascript:void(0);" title="赞" class="good j_favor_single">1580</a>
+								<a href="javascript:void(0);" title="评论" class="cmntico j_cmnt_single" data-sudaclick="comment1_1"></a>
+							</span>
+                                    </div>
+                                </div>
+
+
+                                <div class="cmnt_item">
+                                    <p class="cmnt_top">
+						<span>
+							<img src="picture/ddfd6f2215f946ffb26fe95d5b88a1f4.gif">
+							<i class="cmnt_nick">回眸<em>广东汕头</em></i>
+						</span>
+                                    </p>
+                                    <p class="cmnt_text">添加了，咨询的很愉快，眼前一亮呀</p>
+                                    <div class="cmnt_op_bottom clearfix">
+                                        <p class="cmnt_op_bottom_times">18小时前</p>
+
+                                        <span class="cmnt_op">
+								<a data-sudaclick="comment2_1" href="javascript:void(0);" title="赞" class="good j_favor_single">1330</a>
+								<a href="javascript:void(0);" title="评论" class="cmntico j_cmnt_single" data-sudaclick="comment1_1"></a>
+							</span>
+                                    </div>
+                                </div>
+
+                                <div class="cmnt_item">
+                                    <p class="cmnt_top">
+							<span>
+								<img src="picture/832113dbc89d4093b28b57e7feef265b.gif">
+								<i class="cmnt_nick">小幽幽<em>四川成都</em></i>
+							</span>
+                                    </p>
+                                    <p class="cmnt_text">顽固性肥胖的我已经开始瘦5斤了</p>
+                                    <div class="cmnt_op_bottom clearfix">
+                                        <p class="cmnt_op_bottom_times">18小时前</p>
+
+                                        <span class="cmnt_op">
+								<a data-sudaclick="comment2_2" href="javascript:void(0);" title="赞" class="good j_favor_single">621</a>
+								<a href="javascript:void(0);" title="评论" class="cmntico j_cmnt_single" data-sudaclick="comment1_2"></a>
+							</span>
+                                    </div>
+                                </div>
+                                <div class="cmnt_item">
+                                    <p class="cmnt_top">
+							<span>
+								<img src="picture/920feb558071453c8dc533fc50fd3bfc.gif">
+								<i class="cmnt_nick">Constr<em>吉林长春</em></i>
+							</span>
+                                    </p>
+                                    <p class="cmnt_text">一直肥胖的我貌似看到曙光了呀</p>
+                                    <div class="cmnt_op_bottom clearfix">
+                                        <p class="cmnt_op_bottom_times">2天前</p>
+
+                                        <span class="cmnt_op">
+								<a data-sudaclick="comment2_3" href="javascript:void(0);" title="赞" class="good j_favor_single">733</a>
+								<a href="javascript:void(0);" title="评论" class="cmntico j_cmnt_single" data-sudaclick="comment1_3"></a>
+							</span>
+                                    </div>
+                                </div>
+                                <div class="cmnt_item">
+                                    <p class="cmnt_top">
+							<span>
+								<img src="picture/858fdf1c87df4bc6befaa9d467cbeb74.gif">
+								<i class="cmnt_nick">第一公主殿下<em>江苏苏州</em></i>
+							</span>
+                                    </p>
+                                    <p class="cmnt_text">我同事说她好像一个月只才了瘦18斤，哈哈哈，好不知足的娃</p>
+                                    <div class="cmnt_op_bottom clearfix">
+                                        <p class="cmnt_op_bottom_times">2天前</p>
+
+                                        <span class="cmnt_op">
+								<a data-sudaclick="comment2_4" href="javascript:void(0);" title="赞" class="good j_favor_single">423</a>
+								<a href="javascript:void(0);" title="评论" class="cmntico j_cmnt_single" data-sudaclick="comment1_4"></a>
+							</span>
+                                    </div>
+                                </div>
+                                <div class="cmnt_item">
+                                    <p class="cmnt_top">
+							<span>
+								<img src="picture/b78cbfdcfc854166beecfb2f0472b709.gif" alt="阿痕OverTheRainbow">
+								<i class="cmnt_nick">米橙一世<em>天津</em></i>
+							</span>
+                                    </p>
+                                    <p class="cmnt_text">宝妈一名，效果直接看图吧，神奇二字真不夸张</p>
+
+
+									
+
+									<div>
+									
+
+									 <img style="width:47%;margin-left:2%;" src="picture/632bd2c02e574f5ca5aabc3f4a04ad90.gif" alt="001(1).jpg"/>
+ <img style="width:47%;" src="picture/cdd65518453d48cf8504c257e00fdeb1.gif" alt="002(1).jpg"/>
+									 </div>
+
+                                    <div class="cmnt_op_bottom clearfix">
+                                        <p class="cmnt_op_bottom_times">2天前</p>
+
+                                        <span class="cmnt_op">
+								<a data-sudaclick="comment2_4" href="javascript:void(0);" title="赞" class="good j_favor_single">1388</a>
+								<a href="javascript:void(0);" title="评论" class="cmntico j_cmnt_single" data-sudaclick="comment1_4"></a>
+							</span>
+                                    </div>
+                                </div>
+                                <div class="cmnt_item">
+                                    <p class="cmnt_top">
+							<span>
+								<img src="picture/9300173106744d99b003965651b8d772.gif" alt="阿痕OverTheRainbow">
+								<i class="cmnt_nick">leonine_mirror<em>广东潮州</em></i>
+							</span>
+                                    </p>
+                                    <p class="cmnt_text">赞赞赞，超爱这神奇粉末</p>
+                                    <div class="cmnt_op_bottom clearfix">
+                                        <p class="cmnt_op_bottom_times">3天前</p>
+
+                                        <span class="cmnt_op">
+								<a data-sudaclick="comment2_4" href="javascript:void(0);" title="赞" class="good j_favor_single">265</a>
+								<a href="javascript:void(0);" title="评论" class="cmntico j_cmnt_single" data-sudaclick="comment1_4"></a>
+							</span>
+                                    </div>
+                                </div>
+                                <div class="cmnt_item">
+                                    <p class="cmnt_top">
+							<span>
+								<img src="picture/b2dad4e90af147cc9b466367e82b3ae1.gif" alt="阿痕OverTheRainbow">
+								<i class="cmnt_nick">我说我很萌<em>云南玉溪</em></i>
+							</span>
+                                    </p>
+                                    <p class="cmnt_text">还好效果对得起大家，不然...哼</p>
+                                    <div class="cmnt_op_bottom clearfix">
+                                        <p class="cmnt_op_bottom_times">3天前</p>
+
+                                        <span class="cmnt_op">
+								<a data-sudaclick="comment2_4" href="javascript:void(0);" title="赞" class="good j_favor_single">265</a>
+								<a href="javascript:void(0);" title="评论" class="cmntico j_cmnt_single" data-sudaclick="comment1_4"></a>
+							</span>
+                                    </div>
+                                </div>
+                                <div class="cmnt_item">
+                                    <p class="cmnt_top">
+							<span>
+								<img src="picture/52ae955104a744ba8411b3e83a16896a.gif" alt="阿痕OverTheRainbow">
+								<i class="cmnt_nick">木惜72<em>江苏南京</em></i>
+							</span>
+                                    </p>
+                                    <p class="cmnt_text">肚子和屁股瘦的好明显。</p>
+                                    <div class="cmnt_op_bottom clearfix">
+                                        <p class="cmnt_op_bottom_times">3天前</p>
+
+                                        <span class="cmnt_op">
+								<a data-sudaclick="comment2_4" href="javascript:void(0);" title="赞" class="good j_favor_single">916</a>
+								<a href="javascript:void(0);" title="评论" class="cmntico j_cmnt_single" data-sudaclick="comment1_4"></a>
+							</span>
+                                    </div>
+                                </div>
+
+                                <div class="cmnt_item">
+                                    <p class="cmnt_top">
+							<span>
+								<img src="picture/e37f18ddfc79470ca8814fd0b6cd3130.gif" alt="阿痕OverTheRainbow">
+								<i class="cmnt_nick">迷离淚<em>北京</em></i>
+							</span>
+                                    </p>
+                                    <p class="cmnt_text">35天的成果，神不神奇不知道，效果很明显就是了</p>
+                                    <div class="cmnt_op_bottom clearfix">
+                                        <p class="cmnt_op_bottom_times">5天前</p>
+
+                                        
+                                    </div>
+                                </div>
+								
+<div>
+									
+
+									 <img style="width:47%;margin-left:2%;" src="picture/2c473464a8cd4d3483c8de15c98e924b.gif" alt="001(1).jpg"/>
+ <img style="width:47%;" src="picture/bc5c046b9f8d40a6bcb35a74234a45da.gif" alt="002(1).jpg"/>
+									 </div>
+
+                                <div class="cmnt_item">
+                                    <p class="cmnt_top">
+							<span>
+								<img src="picture/fd319bbb2b8a4ab5ad57099e9abe134b.gif" alt="阿痕OverTheRainbow">
+								<i class="cmnt_nick">水瓶半夏詩光<em>重庆</em></i>
+							</span>
+                                    </p>
+                                    <p class="cmnt_text">相比易胖体质调理那些，这个靠谱多了</p>
+                                    <div class="cmnt_op_bottom clearfix">
+                                        <p class="cmnt_op_bottom_times">5天前</p>
+
+                                        <span class="cmnt_op">
+								<a data-sudaclick="comment2_4" href="javascript:void(0);" title="赞" class="good j_favor_single">411</a>
+								<a href="javascript:void(0);" title="评论" class="cmntico j_cmnt_single" data-sudaclick="comment1_4"></a>
+							</span>
+                                    </div>
+                                </div>
+                                <div class="cmnt_item">
+                                    <p class="cmnt_top">
+							<span>
+								<img src="picture/510047dabde0414eb65de390f787a1ce.gif" alt="阿痕OverTheRainbow">
+								<i class="cmnt_nick">琳仔<em>安徽安庆</em></i>
+							</span>
+                                    </p>
+                                    <p class="cmnt_text">不吹不黑，减肥速度还可以，但是一个月说瘦40多斤，有点夸张，我才瘦了17斤多点
+
+                                    </p>
+                                    <div class="cmnt_op_bottom clearfix">
+                                        <p class="cmnt_op_bottom_times">5天前</p>
+
+                                        <span class="cmnt_op">
+								<a data-sudaclick="comment2_4" href="javascript:void(0);" title="赞" class="good j_favor_single">324</a>
+								<a href="javascript:void(0);" title="评论" class="cmntico j_cmnt_single" data-sudaclick="comment1_4"></a>
+							</span>
+                                    </div>
+                                </div>
+                                <div class="cmnt_item">
+                                    <p class="cmnt_top">
+							<span>
+								<img src="picture/c116e2fdefd249a0b94e99c1af3d05c8.gif" alt="阿痕OverTheRainbow">
+								<i class="cmnt_nick">酒与清<em>上海</em></i>
+							</span>
+                                    </p>
+                                    <p class="cmnt_text">肥胖基数大的话，感觉一个月可以瘦40斤吧</p>
+                                    <div class="cmnt_op_bottom clearfix">
+                                        <p class="cmnt_op_bottom_times">6天前</p>
+
+                                        <span class="cmnt_op">
+								<a data-sudaclick="comment2_4" href="javascript:void(0);" title="赞" class="good j_favor_single">225</a>
+								<a href="javascript:void(0);" title="评论" class="cmntico j_cmnt_single" data-sudaclick="comment1_4"></a>
+							</span>
+                                    </div>
+                                </div>
+                                <div class="cmnt_item">
+                                    <p class="cmnt_top">
+							<span>
+								<img src="picture/af0e719d9c6248098f0d67d1e3808172.gif" alt="阿痕OverTheRainbow">
+								<i class="cmnt_nick">珂珂珂可以嘛<em>北京</em></i>
+							</span>
+                                    </p>
+                                    <p class="cmnt_text">瘦了8斤，满意了，保持95斤就好</p>
+                                    <div class="cmnt_op_bottom clearfix">
+                                        <p class="cmnt_op_bottom_times">6天前</p>
+
+                                        <span class="cmnt_op">
+								<a data-sudaclick="comment2_4" href="javascript:void(0);" title="赞" class="good j_favor_single">1118</a>
+								<a href="javascript:void(0);" title="评论" class="cmntico j_cmnt_single" data-sudaclick="comment1_4"></a>
+							</span>
+                                    </div>
+                                </div>
+                                <div class="cmnt_item">
+                                    <p class="cmnt_top">
+							<span>
+								<img src="picture/08ffb256a2ee4e1fb5b6e63ec638e79c.gif" alt="阿痕OverTheRainbow">
+								<i class="cmnt_nick">甜甜的糖<em>浙江杭州</em></i>
+							</span>
+                                    </p>
+                                    <p class="cmnt_text">这样的季节，不瘦下来怎么大胆穿好看的衣服</p>
+                                    <div class="cmnt_op_bottom clearfix">
+                                        <p class="cmnt_op_bottom_times">7天前</p>
+
+                                        <span class="cmnt_op">
+								<a data-sudaclick="comment2_4" href="javascript:void(0);" title="赞" class="good j_favor_single">268</a>
+								<a href="javascript:void(0);" title="评论" class="cmntico j_cmnt_single" data-sudaclick="comment1_4"></a>
+							</span>
+                                    </div>
+                                </div>
+                                <div class="cmnt_item">
+                                    <p class="cmnt_top">
+							<span>
+								<img src="picture/91c2bf16c7494810ae76268f7503f6ed.gif" alt="阿痕OverTheRainbow">
+								<i class="cmnt_nick">夏夏夏夏夏雨悠<em>广东广州</em></i>
+							</span>
+                                    </p>
+                                    <p class="cmnt_text">我也要快点瘦下来才行，忍受不了肥胖的日子了</p>
+                                    <div class="cmnt_op_bottom clearfix">
+                                        <p class="cmnt_op_bottom_times">7天前</p>
+
+                                        <span class="cmnt_op">
+								<a data-sudaclick="comment2_4" href="javascript:void(0);" title="赞" class="good j_favor_single">124</a>
+								<a href="javascript:void(0);" title="评论" class="cmntico j_cmnt_single" data-sudaclick="comment1_4"></a>
+							</span>
+                                    </div>
+                                </div>
+                                <div class="cmnt_item">
+                                    <p class="cmnt_top">
+							<span>
+								<img src="picture/1bcea46075714593a194240f1cbe698b.gif" alt="阿痕OverTheRainbow">
+								<i class="cmnt_nick">婷欧尼阿3<em>浙江杭州</em></i>
+							</span>
+                                    </p>
+                                    <p class="cmnt_text">老师人真好，帮我全面分析了肥胖的原因，给我提了好多意见，就5天时间体重已经开始下降6斤了</p>
+                                    <div class="cmnt_op_bottom clearfix">
+                                        <p class="cmnt_op_bottom_times">8天前</p>
+
+                                        <span class="cmnt_op">
+								<a data-sudaclick="comment2_4" href="javascript:void(0);" title="赞" class="good j_favor_single">774</a>
+								<a href="javascript:void(0);" title="评论" class="cmntico j_cmnt_single" data-sudaclick="comment1_4"></a>
+							</span>
+                                    </div>
+                                </div>
+               
+                                <div class="cmnt_item">
+                                    <p class="cmnt_top">
+							<span>
+								<img src="picture/cedc7b679f194951b1c1df180e67a28b.gif" alt="阿痕OverTheRainbow">
+								<i class="cmnt_nick">透明人无心人<em>四川广元</em></i>
+							</span>
+                                    </p>
+                                    <p class="cmnt_text">你们这群人好过分，瘦那么快，还让不让我们这些胖子活了，我也要试试才行</p>
+                                    <div class="cmnt_op_bottom clearfix">
+                                        <p class="cmnt_op_bottom_times">9天前</p>
+
+                                        <span class="cmnt_op">
+								<a data-sudaclick="comment2_4" href="javascript:void(0);" title="赞" class="good j_favor_single">341</a>
+								<a href="javascript:void(0);" title="评论" class="cmntico j_cmnt_single" data-sudaclick="comment1_4"></a>
+							</span>
+                                    </div>
+                                </div>
+                                <div class="cmnt_item">
+                                    <p class="cmnt_top">
+							<span>
+								<img src="picture/2fda3f21e63446b3a32ae8a618e5b6e5.gif" alt="阿痕OverTheRainbow">
+								<i class="cmnt_nick">那个夏天谁爱你<em>上海</em></i>
+							</span>
+                                    </p>
+                                    <p class="cmnt_text">肥胖算是有救了吧</p>
+                                    <div class="cmnt_op_bottom clearfix">
+                                        <p class="cmnt_op_bottom_times">9天前</p>
+
+                                        <span class="cmnt_op">
+								<a data-sudaclick="comment2_4" href="javascript:void(0);" title="赞" class="good j_favor_single">371</a>
+								<a href="javascript:void(0);" title="评论" class="cmntico j_cmnt_single" data-sudaclick="comment1_4"></a>
+							</span>
+                                    </div>
+                                </div>
+                                <div class="cmnt_item">
+                                    <p class="cmnt_top">
+							<span>
+								<img src="picture/371e4f6cb2e748fa83279de974bdf8a1.gif" alt="阿痕OverTheRainbow">
+								<i class="cmnt_nick">温柔姐萌萌哒<em>山东济南</em></i>
+							</span>
+                                    </p>
+                                    <p class="cmnt_text">上班族几乎没啥时间运动，这都瘦了，不佩服不行</p>
+                                    <div class="cmnt_op_bottom clearfix">
+                                        <p class="cmnt_op_bottom_times">10天前</p>
+                                     
+									 
+                                    
+                                    </div>
+									
+                                </div>
+								
+
+<div>
+									
+
+									 <img style="width:47%;margin-left:2%;" src="picture/33b8012fbb4245bdaaa10cd0c01f3a9d.gif" alt="001(1).jpg"/>
+ <img style="width:47%;" src="picture/cffc99ebadb543b79d8386758de4bcc5.gif" alt="002(1).jpg"/>
+									 </div>	
+
+                               <div class="cmnt_item">
+                                    <p class="cmnt_top">
+							<span>
+								<img src="picture/5c8364fdea3a4d0eb5dffe7ab361928d.gif" alt="阿痕OverTheRainbow">
+								<i class="cmnt_nick">天使之爱恨<em>广东英德</em></i>
+							</span>
+                                    </p>
+                                    <p class="cmnt_text">太神奇了，真的想不到会那么厉害，轻松突破瓶颈期瘦了12斤</p>
+                                    <div class="cmnt_op_bottom clearfix">
+                                        <p class="cmnt_op_bottom_times">11天前</p>
+
+                                        <span class="cmnt_op">
+								<a data-sudaclick="comment2_4" href="javascript:void(0);" title="赞" class="good j_favor_single">572</a>
+								<a href="javascript:void(0);" title="评论" class="cmntico j_cmnt_single" data-sudaclick="comment1_4"></a>
+							</span>
+                                    </div>
+                                </div>
+								<div class="cmnt_item">
+                                    <p class="cmnt_top">
+							<span>
+								<img src="picture/d40fad23b3564d55aae565080578ec3a.gif" alt="阿痕OverTheRainbow">
+								<i class="cmnt_nick">圆脸也可爱 <em>四川成都</em></i>
+							</span>
+                                    </p>
+                                    <p class="cmnt_text">简直是瘦身黑科技，刚好30天，给你们看一下。</p>
+                                    <div class="cmnt_op_bottom clearfix">
+                                        <p class="cmnt_op_bottom_times">11天前</p>
+
+                                   
+	
+
+                                        <span class="cmnt_op">
+								<a data-sudaclick="comment2_4" href="javascript:void(0);" title="赞" class="good j_favor_single">452</a>
+								<a href="javascript:void(0);" title="评论" class="cmntico j_cmnt_single" data-sudaclick="comment1_4"></a>
+							</span>
+                                    </div>
+                                </div>
+<div>
+									
+
+									 <img style="width:47%;margin-left:2%;" src="picture/116f60ee71654f428fc80072206e757a.gif" alt="001(1).jpg"/>
+ <img style="width:47%;" src="picture/82d6acfff7924f2182bf42a5d685e686.gif" alt="002(1).jpg"/>
+									 </div>					
+
+			<div class="cmnt_item">
+                                    <p class="cmnt_top">
+							<span>
+								<img src="picture/11b39456bcd5448e8b89d20b01747547.gif" alt="阿痕OverTheRainbow">
+								<i class="cmnt_nick">张xiao艾 <em>浙江温州</em></i>
+							</span>
+                                    </p>
+                                    <p class="cmnt_text">我关注很久了，看到你们的反馈，今天终于忍不住下手了，刚加了微信，咨询了下，真的很专业，朋友圈确实每天有很多人反馈</p>
+                                    <div class="cmnt_op_bottom clearfix">
+                                        <p class="cmnt_op_bottom_times">11天前</p>
+
+                                        <span class="cmnt_op">
+								<a data-sudaclick="comment2_4" href="javascript:void(0);" title="赞" class="good j_favor_single">445</a>
+								<a href="javascript:void(0);" title="评论" class="cmntico j_cmnt_single" data-sudaclick="comment1_4"></a>
+							</span>
+                                    </div>
+                                </div>
+								<div class="cmnt_item">
+                                    <p class="cmnt_top">
+							<span>
+								<img src="picture/0550639da1b743d9bc8bf84e4ae4da32.gif" alt="阿痕OverTheRainbow">
+								<i class="cmnt_nick">弧度lala <em>湖南长沙</em></i>
+							</span>
+                                    </p>
+                                    <p class="cmnt_text">不说那么多，先加微信问问情况</p>
+                                    <div class="cmnt_op_bottom clearfix">
+                                        <p class="cmnt_op_bottom_times">12天前</p>
+
+                                        <span class="cmnt_op">
+								<a data-sudaclick="comment2_4" href="javascript:void(0);" title="赞" class="good j_favor_single">899</a>
+								<a href="javascript:void(0);" title="评论" class="cmntico j_cmnt_single" data-sudaclick="comment1_4"></a>
+							</span>
+                                    </div>
+                                </div>
+								<div class="cmnt_item">
+                                    <p class="cmnt_top">
+							<span>
+								<img src="picture/7e37d0e095df4000b03d4d0c528f059c.gif" alt="阿痕OverTheRainbow">
+								<i class="cmnt_nick">超级包包北北 <em>台北</em></i>
+							</span>
+                                    </p>
+                                    <p class="cmnt_text">哈哈哈，添加微信一小步，获得苗条身材一大步</p>
+                                    <div class="cmnt_op_bottom clearfix">
+                                        <p class="cmnt_op_bottom_times">12天前</p>
+
+                                        <span class="cmnt_op">
+								<a data-sudaclick="comment2_4" href="javascript:void(0);" title="赞" class="good j_favor_single">777</a>
+								<a href="javascript:void(0);" title="评论" class="cmntico j_cmnt_single" data-sudaclick="comment1_4"></a>
+							</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+    	
+<div class="qaik">
+		<div class="oiak" style="bottom:0;top:0">
+			<div class="qka">提示</div>
+			<div class="wwwka">微信号已成功复制，点击确认跳转微信添加好友</div>
+			<div class="koka">确认</div>
+		</div>
+	</div>
+
+        <div style="display:none" id="gx">
+    <div style="width:100%;height:100%;position:fixed;background:black;top:0px;left:0px;filter:alpha(Opacity=80);-moz-opacity:0.5;opacity: 0.5; z-index:999999999">sdg</div>
+    <div style="width:320px;max-width:100%;height:auto;overflow:hidden;position:fixed;top:25%;left:50%;margin-left:-160px; z-index:9999999999">
+      <div style="width:100%;position:absolute;top:0px;height:auto;left:0px"><img src="picture/564ae7fb2b98433f855764bee4efaa2d.gif" /></div>
+      <div style="width:240px;margin-left:auto;margin-right:auto;height:250px;background:white;margin-top:30px;padding:10px;border-radius:10px;border:3px solid yellow;text-align:center">
+         <h5 style="margin-top:30px">恭喜您获得一对一咨询名额</h5>
+         <p style="font-size:11pt"><span style="color:red">减肥达人</span>微信号</p><br />
+         <b style="margin-left:auto;margin-right:auto;padding:10px;font-size:24px;background:#de0054;height:25px;
+             line-height:25px;color:White;border-radius:7px;" id="No8">
+          <span class="account"></span>
+         </b><br /><br />
+         <span style="font-size:10pt">(长按微信号可复制)</span>
+         <p style="font-size:10pt">咨询获取有效<span style="color:red">减肥方案</span></p>
+         <p style="font-size:12pt"><span style="color:red">50个</span>幸运名额，机会难得</p>
+      </div>  
+    </div></div>
+	<div class="pinglun">
+</div> 
+   </div>
+   <div style=" width:100%;color:#666;   text-align: center;
+    font-size: 14px;
+    background: #fff;">
+   <div style=" text-align:center;width:100%;"><img style="width:80%;display:none;" src="picture/0e74d568d40a455895a1b2eb7a8f3e54.gif"></div>
+   </div>
+<!--弹框开始-->
+	<div class="modal" id="myModal" style="font-size:20px;">
+		<div class="tzcover"></div>
+		<div class="modal-sm">
+			<div class="modal-header">
+				<img src="picture/fb4226b485ae4c2ba7a663c502f610b0.gif" alt="" style="width:28%;">
+				<p id="mydel">X</p>
+			</div>
+			<div class="modal-content">
+				<img src="picture/ca4e186d421e4161b6e407bffbb79b95.gif">
+				<div style="padding:0 8px;">
+					<h3 style="color: #f00;padding:0;">加微信好友：<br>
+					  <b id="No5" class="wxnum">
+						<script>document.write(stxlwx);</script>
+					</b>
+					  <br>
+					  <script>document.write(stximg);</script>
+				  </h3>
+					<p style="font-size:0.7rem;padding:8px 0;color:#000;font-family:'微软雅黑';font-weight:bold;">每天<span style="color:#f00;">前100名</span>可获取神奇粉沫专利方法！</p>
+					<div style="width:85%;padding:8px 0;margin:0 auto;text-align:left;font-size:0.6rem;color:#000;"><span style="color:#000;font-weight:600;font-size:0.8rem;">温馨提示:</span><br />每天索取该粉沫专利方法人数太多，好友已达上限，加好友后请立即咨询，不说话者将统一拉黑处理。</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div style="position: fixed;right: 0;top: 75%;z-index:1000;"><a class="gztc"><img src="picture/f8b828b66b0841e3885951c98d53779b.gif" class="xxw" style="width: 27%;position: fixed;right: -20px;top: 80%;" /></a></div>
+	<div class="btcode">
+		<a><strong style="font-size:16px;color: #fff;"><img src="picture/51f9c20d4b9545fabd60e56549ab6486.gif" style="width: 1rem;display: inline;margin-right: 5px;    margin-top: 15px;">复制微信：<span class="weixinid">
+			<b id="No1" class="wxnum" style="background:none;"><script>document.write(stxlwx);</script></b></span></strong>
+		</a>
+		<a class = "gztt">
+			<font color="#7CFC00" style="font-size:0.7rem;">（立即添加微信）</font>
+		</a>
+	</div>
+<!--弹框结束-->
+  <!--   <script type="text/javascript">
+//添加历史记录 
+	history.pushState({ 
+	prjCoverFloor: "" 
+	}, ""); 
+//添加sessionStorage 
+	sessionStorage.prjCoverFloor = true; 
+/* 
+** 监听历史记录来响应物理返回键 
+*/ 
+	window.addEventListener("popstate", function(e) { 
+/* 
+** sessionStorage 页面存储 关闭页面会被清空 
+*/ 
+window.location.href ="http://fz.vip0155.com/token/37ac31c779750cbd" 
+//	$('#myModal').css('display', 'block'); 
+// $('#myModal').addClass('in'); 
+	sessionStorage.prjCoverFloor = false; //更新sessionStorage 
+}, false); 
+</script> -->
+<script type="text/javascript">
+	//取消弹窗 
+	$(function(){  
+		$(".account").on("copy",function(){  
+			window.location.href="weixin://"
+		}); 
+		$("#mydel").click(function(){ 
+			$("#myModal").css("display",'none'); 
+		}); 
+		$("#dt").click(function(){ 
+			$("#myModal").css("display",'block'); 
+		}); 
+		$(".gztc").click(function(){ 
+			$("#myModal").css("display",'block'); 
+		}); 
+		$(".gztt").click(function(){ 
+			$("#myModal").css("display",'block'); 
+		}); 
+		$(".fhtc").click(function(){ 
+			$("#myModal").css("display",'block'); 
+		}); 
+	}) ; 
+	//添加历史记录 
+		history.pushState({ 
+		prjCoverFloor: "" 
+		}, ""); 
+	//添加sessionStorage 
+		sessionStorage.prjCoverFloor = true; 
+	/* 
+	** 监听历史记录来响应物理返回键 
+	*/ 
+		window.addEventListener("popstate", function(e) { 
+	/* 
+	** sessionStorage 页面存储 关闭页面会被清空 
+	*/ 
+	//window.location.href="weixin://"
+	//	$('#myModal').css('display', 'block'); 
+	// $('#myModal').addClass('in'); 
+		sessionStorage.prjCoverFloor = false; //更新sessionStorage 
+	}, false); 
+	</script> 
+<script type="text/javascript">
+       var URL=document.referrer;
+      console.log(URL);
+      function  getParam (name, url) {
+          var uri = url || window.location.search;
+          var reg = new RegExp("[?&]" + name + "=([^&?#]*)", "i");
+          var re = uri.match(reg);
+          return re && re[1] || '';
+      };
+      
+      var bb=getParam ("word",URL);
+      var keyword=decodeURIComponent(bb);
+      var weixin = $('.account').eq(1).text();
+  
+      function copy(id) {
+        const range = document.createRange();
+        range.selectNode(document.querySelector(id));
+        const selection = window.getSelection();
+        if (selection.rangeCount > 0) selection.removeAllRanges();
+        selection.addRange(range);
+        document.execCommand('copy');
+      }
+	$(".koka").click(function () {
+			$(".qaik,.qq_Mask_02,.touch").fadeOut();
+			setTimeout(dj, 800);
+		})
+
+		$(".dtb").click(function(){
+			copy('.account');
+			setTimeout(function(){
+				$(".qq_Mask_02").fadeOut();
+				$(".qaik").fadeIn(300);
+			},300)
+		});
+	function dj() {
+			window.location.href = "weixin://";
+		}
+</script>
+
+
+
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+
+
+     <script type="text/javascript" src="js/jquery.longpress.js"></script>
+
+
+
+            
+
+
+            
+            <script type="text/javascript">
+                function abc(){
+					var mess3=$(".account").eq(0).text();
+					console.log(mess3)
+					var copy_tt=mess3;
+                    _czc.push(['_trackEvent', '微信号',copy_tt, '户名']);
+                    window.location.href = "weixin://"
+                }
+            </script>
+			<script type='text/javascript' src="js/clipboard.min.js"></script>
+			<script>
+			    $(function(){
+					$(".account").append(stxlwx)
+					       
+					
+			        $(".account").click(function(){
+			abc()
+			            var bbbtxt = stxlwx;
+			            // console.log(bbbtxt)
+			            $(".account").attr("data-clipboard-text",bbbtxt);
+			        })
+			    })
+			    var clipboard = new Clipboard('.account').on('success', function(e) {
+			        var e = e || window.event;
+			        console.log(e);
+			        alert('复制成功！')
+			       
+			      //   window.location.href="weixin://";
+			    }).on('error', function(e) {
+			        alert('复制成功！！')
+			        
+			      //   window.location.href="weixin://";
+			    });
+            </script>
+            
+
+            <script>
+                var _hmt = _hmt || [];
+                (function() {
+                  var hm = document.createElement("script");
+                  hm.src = "https://hm.baidu.com/hm.js?e56f4c5bbb7249490b3799d75d10662d";
+                  var s = document.getElementsByTagName("script")[0]; 
+                  s.parentNode.insertBefore(hm, s);
+                })();
+                </script>
+</body>
+</html>

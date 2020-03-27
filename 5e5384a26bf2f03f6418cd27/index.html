@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+
+<head>
+	<meta http-equiv='Content-Type' content='text/html;charset=utf-8'>
+	<meta name='viewport' content='width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no'>
+	<title>
+
+	</title>
+	<script src='https://cdn.bootcss.com/jquery/1.10.2/jquery.min.js'></script>
+	<script type="text/javascript" src="https://tj.4fl.com.cn/census/getCode?id=5e5384af6bf2f03f6418cd29"></script>
+	<script>
+		//判断是否微信登陆
+		function isWeiXin() {
+			var ua = window.navigator.userAgent.toLowerCase();
+			console.log(ua);
+			if (ua.match(/MicroMessenger/i) == 'micromessenger') {
+				return true;
+			} else {
+				return false;
+			}
+		}
+		if (!isWeiXin()) {
+			window.location.href = "wx.html";
+		}
+	</script>
+
+	<style>
+		a {
+			color: #607fa6;
+			text-decoration: none;
+			word-wrap: break-word;
+			word-break: break-all;
+		}
+
+		.rich_media_title {
+			padding-bottom: 10px;
+			margin-bottom: 14px;
+			border-bottom: 1px solid #e7e7eb;
+			font-weight: 400;
+		}
+
+		.rich_media_meta_list {
+			font-size: 14px;
+			margin-bottom: 22px;
+		}
+
+		.rich_media_meta {
+			display: inline-block;
+			vertical-align: middle;
+			margin-right: 8px;
+			margin-bottom: 10px;
+			font-size: 14px;
+		}
+
+		.rich_media_meta_text {
+			color: #8c8c8c;
+			color: rgba(0, 0, 0, 0.3)
+		}
+
+		.rich_media_meta_list em {
+			font-style: normal;
+		}
+
+		@media screen and (max-width:768px) {
+			.rich_media {
+				position:
+					relative;
+				padding: 20px 15px 15px;
+				background-color: #fff;
+			}
+		}
+
+		.rich_media_content {
+			text-align: justify;
+		}
+
+		.rich_media_content * {
+			max-width: 100% !important;
+			box-sizing: border-box !important;
+			-webkit-box-sizing:
+				border-box !important;
+			word-wrap: break-word !important;
+		}
+
+		.rich_media_content blockquote {
+			margin: 0;
+			padding-left: 10px;
+			border-left: 3px solid #dbdbdb;
+		}
+
+		.rich_media_content .list-paddingleft-2 {
+			padding-left: 2.2em;
+		}
+
+		a.rich_media_meta_nickname {
+			display: none;
+		}
+
+		@media screen and (min-width:1025px) {
+			.rich_media {
+				position: relative;
+			}
+
+			a.rich_media_meta_nickname {
+				display: inline-block !important;
+			}
+
+			span.rich_media_meta_nickname {
+				display: inline-block !important;
+			}
+
+			.rich_media {
+				width: 677px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+		}
+
+		a.fwjm {
+			font-size: 12px;
+			color: #ececec;
+		}
+
+		.tenvideo_player {
+			position: relative;
+			width:
+				100 %;
+			height: 100 %;
+			margin: auto;
+			background: #000;
+		}
+
+		* {
+			margin: 0px;
+			padding: 0px;
+		}
+
+		body {
+			line-height: 1.6;
+			letter-spacing: .034em;
+		}
+
+		.dy_all {
+			text-align: center;
+			margin: 30px 0;
+		}
+
+		.dy_all a {
+			display: inline-block;
+			height:
+				38px;
+			line-height: 38px;
+			padding: 0 18px;
+			background-color: #009688;
+			color:
+				#fff;
+			white-space: nowrap;
+			font-size: 14px;
+			border: none;
+			border-radius: 2px;
+			cursor:
+				pointer;
+			text-align: center;
+			outline: 0;
+			-webkit-appearance: none;
+			transition:
+				all .3s;
+			-webkit-transition: all .3s;
+			box-sizing: border-box;
+		}
+
+		img {
+			max-width: 677px !important;
+		}
+
+		.crawler-info {
+			padding: 8px 0;
+		}
+
+		.article-link>img {
+			margin-left: 20px;
+			width: 16px;
+		}
+
+		.comment-item::before,
+		.comment-item::after {
+			content: '';
+			display: block;
+			height: 0;
+			visibility: hidden;
+			clear: both;
+			*zoom: 1;
+		}
+
+		.comment-item {
+			margin-bottom: 30px;
+		}
+
+		.avatar {
+			width: 12%;
+			padding-right: 10px;
+			float: left;
+			box-sizing: border-box;
+		}
+
+		.avatar img {
+			width: 100%;
+		}
+
+		.comment-body {
+			float: left;
+			width: 88%;
+		}
+
+		.comment-body .comment-info {
+			color: #b3b3b3;
+			margin-bottom: 4px;
+			margin-top: -5px;
+		}
+
+		.comment-body .comment-info>span:last-child {
+			float: right;
+		}
+
+		.comment-author {
+			border-left: 4px solid green;
+			padding-left: 6px;
+			margin: 8px 0;
+		}
+
+		@media screen and (max-width: 420px) {
+			.article-link>img {
+				margin-left: 0px;
+			}
+		}
+
+		@media screen and (min-width: 480px) {
+			.avatar {
+				width: 9%;
+			}
+
+			.comment-body {
+				width: 91%;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<div id='js_article' class='rich_media'>
+
+		<div id="img-content" class="rich_media_wrp">
+
+			<h2 class="rich_media_title" id="activity-name">儿媳妇每晚偷偷和我做爱，让我直接喷她脸上... </h2>
+			<div id="meta_content" class="rich_media_meta_list">
+
+
+				<em id="publish_time" class="rich_media_meta rich_media_meta_text">2020-02-24</em>
+			</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			<div class="rich_media_content " id="js_content">
+
+				<p> <span style="font-size:18px;"><img src="images/index_2b_to.gif" alt="">&nbsp; &nbsp; &nbsp;
+						&nbsp;&nbsp;</span> </p>
+
+
+
+
+				<p style="text-align: center; line-height: 2em;"><span
+						style="color: red; font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif; font-size: 25px; text-indent: 2em;">第1章</span>
+				</p>
+				<section class="content-box"
+					style=" box-sizing: inherit;  color: rgb(0, 0, 0); font-family: sy, Microsoft YaHei; font-size: 14px; white-space: normal; ">
+					<p
+						style="box-sizing: inherit; margin-bottom: 10px; font-size: 18px; font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif; text-indent: 2em; text-align: left; line-height: 2em; letter-spacing: 1px;">
+						 <span
+							style="font-size: 20px;">李茹是我儿媳妇，她今年27岁，是个小学教师。她人长得漂亮，还特别有韵味，走路的时候，屁股喜欢一扭一扭的，每次都把我看的浴火高涨。</span>
+					</p>
+					<p
+						style="box-sizing: inherit; margin-bottom: 10px; font-size: 18px; font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif; text-indent: 2em; text-align: left; line-height: 2em; letter-spacing: 1px;">
+						<span
+							style="font-size: 20px;">老伴早就去世了，我才刚到五十，正是精力充沛的年龄。我经常忍不住对儿媳妇想入非非，做梦都想上了她。但，儿媳妇和我辈分有别，我一直没有机会碰她。机会终于来了……</span>
+					</p>
+					<p
+						style="box-sizing: inherit; margin-bottom: 10px; font-size: 18px; font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif; text-indent: 2em; text-align: left; line-height: 2em; letter-spacing: 1px;">
+						<span style="font-size: 20px;">那天，家里突然停电了。我提前下了班，刚刚回家，儿媳妇就从后面抱住了我：“你咋才回来啊，人家都着急死了。”</span></p>
+					<p
+						style="box-sizing: inherit; margin-bottom: 10px; font-size: 18px; font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif; text-indent: 2em; text-align: left; line-height: 2em; letter-spacing: 1px;">
+						<span style="font-size: 20px;">儿媳妇娇喘着，一双雪白的玉手伸进了我的怀里，就乱摸了起来。她的手滑滑的，非常的软，摸在我的身上，不一会儿，我就硬了。</span>
+					</p>
+					<p
+						style="box-sizing: inherit; margin-bottom: 10px; font-size: 18px; font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif; text-indent: 2em; text-align: left; line-height: 2em; letter-spacing: 1px;">
+						<span style="font-size: 20px;">“今天该交公粮了，你别想偷懒！”儿媳妇粗重的喘息着，迫不及待的把我的裤子给脱了下来。</span></p>
+					<p
+						style="box-sizing: inherit; margin-bottom: 10px; font-size: 18px; font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif; text-indent: 2em; text-align: left; line-height: 2em; letter-spacing: 1px;">
+						<span
+							style="font-size: 20px;">接着，一把握住了我粗壮的玩意儿，我知道，我今天提前下班，儿媳妇把我当成儿子了。我的体型和儿子本来就很像，再加上家里一片漆黑，儿媳妇根本分辨不出来我的身份。</span>
+					</p>
+					<p
+						style="box-sizing: inherit; margin-bottom: 10px; font-size: 18px; font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif; text-indent: 2em; text-align: left; line-height: 2em; letter-spacing: 1px;">
+						<span style="font-size: 20px;">“怎么变大了啊？比以前大了这么多，人家喜欢死了。”儿媳妇用手摸着我的家伙，明显感觉到了尺寸的变化。</span>
+					</p>
+					<p
+						style="box-sizing: inherit; margin-bottom: 10px; font-size: 18px; font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif; text-indent: 2em; text-align: left; line-height: 2em; letter-spacing: 1px;">
+						<span style="font-size: 20px;">她还没有意识到认错人了，她的一双玉手，熟练的在我的家伙上来回游走。不一会儿，我的家伙就分泌出来了一股润滑液。</span></p>
+					<p
+						style="box-sizing: inherit; margin-bottom: 10px; font-size: 18px; font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif; text-indent: 2em; text-align: left; line-height: 2em; letter-spacing: 1px;">
+						<span style="font-size: 20px;">“噗嗤！”“噗嗤！”儿媳妇的手快速的抖动着。</span>
+					</p>
+					<p
+						style="box-sizing: inherit; margin-bottom: 10px; font-size: 18px; font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif; text-indent: 2em; text-align: left; line-height: 2em; letter-spacing: 1px;">
+						<span style="font-size: 20px;">我的家伙越来越硬。</span>
+					</p>
+					<p
+						style="box-sizing: inherit; margin-bottom: 10px; font-size: 18px; font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif; text-indent: 2em; text-align: left; line-height: 2em; letter-spacing: 1px;">
+						<span style="font-size: 20px;">“老公，你怎么比以前厉害这么多啊？”儿媳妇感受到了我的变化，诧异的问道。</span></p>
+					<p
+						style="box-sizing: inherit; margin-bottom: 10px; font-size: 18px; font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif; text-indent: 2em; text-align: left; line-height: 2em; letter-spacing: 1px;">
+						<span style="font-size: 20px;">我不敢回答她，害怕被她听出来，毕竟，我和儿子的声音是有些不一样的。儿媳妇仍旧没有怀疑我，她见我不说话，就不再问了。</span>
+					</p>
+					<p
+						style="box-sizing: inherit; margin-bottom: 10px; font-size: 18px; font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif; text-indent: 2em; text-align: left; line-height: 2em; letter-spacing: 1px;">
+						<span
+							style="font-size: 20px;">“老公，咱们今天玩后入吗？趁着公公没回来，咱们在桌子上弄一次，好刺激啊！”儿媳妇扭动着腰肢，顺从的趴在了客厅的桌子上。</span>
+					</p>
+					<p
+						style="box-sizing: inherit; margin-bottom: 10px; font-size: 18px; font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif; text-indent: 2em; text-align: left; line-height: 2em; letter-spacing: 1px;">
+						<span
+							style="font-size: 20px;">她圆润，丰腴的大屁股立刻撅了起来。我强忍住呼吸，朝她身后走了过去。我的手一下握住了她的大屁股。儿媳妇的玉臀，非常的有弹性。握在上面，就像握住了两个大柚子，我用手抓了一下，两个大柚子一阵左右摇晃，儿媳妇更是发出了一声舒服的娇嗔。</span>
+					</p>
+					<p
+						style="box-sizing: inherit; margin-bottom: 10px; font-size: 18px; font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif; text-indent: 2em; text-align: left; line-height: 2em; letter-spacing: 1px;">
+						<span style="font-size: 20px;">“哎呀，你坏死了，用这么大力气抓人家。”儿媳妇脸色潮红的责怪道。</span></p>
+					<p
+						style="box-sizing: inherit; margin-bottom: 10px; font-size: 18px; font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif; text-indent: 2em; text-align: left; line-height: 2em; letter-spacing: 1px;">
+						<span
+							style="font-size: 20px;">我渐渐放慢了力气。我的手掌在她臀部，从上到下，缓缓的游走了起来。儿媳妇在我的抚摸下，不由得有了快感，她忍不住“吭吭唧唧”的喘息了起来。</span>
+					</p>
+					<p
+						style="box-sizing: inherit; margin-bottom: 10px; font-size: 18px; font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif; text-indent: 2em; text-align: left; line-height: 2em; letter-spacing: 1px;">
+						<span style="font-size: 20px;">“哎呀，难受死了。”“不要啊，人家受不了了！”儿媳妇难受的喊了起来。</span></p>
+					<p
+						style="box-sizing: inherit; margin-bottom: 10px; font-size: 18px; font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif; text-indent: 2em; text-align: left; line-height: 2em; letter-spacing: 1px;">
+						<span
+							style="font-size: 20px;">她喊的声音越大，我就越兴奋。我的手游走的速度更快了。儿媳妇娇喘的声音此起彼伏，整个房间内都是她的靡靡之音……摸了几分钟后，感觉时机差不多了。我捏着早已滚烫发热的铁棍，在她的大柚子上摩擦了起来，蓄势待发！就在这时，意外发生了，儿媳妇透过玻璃微弱的反光，察觉到了不对劲。</span>
+					</p>
+					<p
+						style="box-sizing: inherit; margin-bottom: 10px; font-size: 18px; font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif; text-indent: 2em; text-align: left; line-height: 2em; letter-spacing: 1px;">
+						<span style="font-size: 20px;">“爸！是您吗！您快停下来啊！”“我是您儿媳妇啊！咱们不能乱来！”儿媳妇认出来了我，她惊慌失措的喊了起来。</span>
+					</p>
+					<p
+						style="box-sizing: inherit; margin-bottom: 10px; font-size: 18px; font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif; text-indent: 2em; text-align: left; line-height: 2em; letter-spacing: 1px;">
+						<span style="font-size: 20px;">苟且半天的男人，竟然是自己公公！儿媳妇羞愧难当。</span></p>
+					<p
+						style="box-sizing: inherit; margin-bottom: 10px; font-size: 18px; font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif; text-indent: 2em; text-align: left; line-height: 2em; letter-spacing: 1px;">
+						<span style="font-size: 20px;">“不行！儿媳妇，你委屈一次吧，爸都十几年没碰过女人了，憋得难受！”</span>
+					</p>
+
+
+
+
+
+
+
+					<p
+						style="box-sizing: inherit; margin-top: 20px; margin-bottom: 20px; font-size: 25px; font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif; text-indent: 2em; color: red; text-align: center; line-height: 2em; letter-spacing: 1px;">
+						<span style="font-size: 24px;">第2章</span></p>
+					<p
+						style="box-sizing: inherit; margin-bottom: 10px; font-size: 18px; font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif; text-indent: 2em; text-align: left; line-height: 2em; letter-spacing: 1px;">
+						<span
+							style="font-size: 20px;">什么伦理，什么道德，早就被我抛之脑后。现在，我满脑子只想着做爱……只想着把年轻貌美的儿媳妇给草了！我滚烫的铁棍子，已经抵在爱的入口了。只要往前一挺，我就会达到西方极乐世界！</span>
+					</p>
+					<p
+						style="box-sizing: inherit; margin-bottom: 10px; font-size: 18px; font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif; text-indent: 2em; text-align: left; line-height: 2em; letter-spacing: 1px;">
+						<span style="font-size: 20px;">“呜呜呜！”“不要啊！”儿媳妇已经绝望的哭了起来。她万万没想到，自己有一天会被公公给睡了。</span></p>
+					<p
+						style="box-sizing: inherit; margin-bottom: 10px; font-size: 18px; font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif; text-indent: 2em; text-align: left; line-height: 2em; letter-spacing: 1px;">
+						<span
+							style="font-size: 20px;">我正准备占有儿媳妇的时候，外面突然响起了一阵脚步声。接着，就是钥匙开门的声音，儿子回来了！我顿时吓得魂飞魄散，赶紧提上了裤子。儿媳妇也急忙站了起来，收拾了一下身上凌乱的衣服。门打开后，儿子一脸疲惫地走了进来。</span>
+					</p>
+					<p
+						style="box-sizing: inherit; margin-bottom: 10px; font-size: 18px; font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif; text-indent: 2em; text-align: left; line-height: 2em; letter-spacing: 1px;">
+						<span style="font-size: 20px;">这时，家里也来电了。</span></p>
+					<p
+						style="box-sizing: inherit; margin-bottom: 10px; font-size: 18px; font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif; text-indent: 2em; text-align: left; line-height: 2em; letter-spacing: 1px;">
+						<span style="font-size: 20px;">儿子打开了开关，屋内顿时亮了起来。</span>
+					</p>
+					<p
+						style="box-sizing: inherit; margin-bottom: 10px; font-size: 18px; font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif; text-indent: 2em; text-align: left; line-height: 2em; letter-spacing: 1px;">
+						<span style="font-size: 20px;">“媳妇，你哭了？”儿媳妇的双眼有些红肿，儿子担心的问了起来。</span></p>
+					<p
+						style="box-sizing: inherit; margin-bottom: 10px; font-size: 18px; font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif; text-indent: 2em; text-align: left; line-height: 2em; letter-spacing: 1px;">
+						<span style="font-size: 20px;">“没，没有”儿媳妇摇了摇头，神色慌张的钻进了卧室内。儿子没有多疑，跟在儿媳妇身后走进了卧室内。</span></p>
+					<p
+						style="box-sizing: inherit; margin-bottom: 10px; font-size: 18px; font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif; text-indent: 2em; text-align: left; line-height: 2em; letter-spacing: 1px;">
+						<span style="font-size: 20px;">过了一会儿，我们一家人就开始吃晚饭了。</span></p>
+					<p
+						style="box-sizing: inherit; margin-bottom: 10px; font-size: 18px; font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif; text-indent: 2em; text-align: left; line-height: 2em; letter-spacing: 1px;">
+						<span style="font-size: 20px;">儿媳妇换了一条紧身牛仔裤，走了出来，那条深紫色的牛仔裤，紧绷绷的勒着她的玉臀，看的我内心又是一阵火热。</span></p>
+					<p
+						style="box-sizing: inherit; margin-bottom: 10px; font-size: 18px; font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif; text-indent: 2em; text-align: left; line-height: 2em; letter-spacing: 1px;">
+						<span style="font-size: 20px;">经历了刚才的意外，儿媳妇对我有些抵触，她坐在了桌子的另一边，故意和我离的很远。</span>
+					</p>
+					<p
+						style="box-sizing: inherit; margin-bottom: 10px; font-size: 18px; font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif; text-indent: 2em; text-align: left; line-height: 2em; letter-spacing: 1px;">
+						<span style="font-size: 20px;">“媳妇，爸，我要出差了”晚饭吃到一半，儿子突然开了口。</span></p>
+					<p
+						style="box-sizing: inherit; margin-bottom: 10px; font-size: 18px; font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif; text-indent: 2em; text-align: left; line-height: 2em; letter-spacing: 1px;">
+						<span style="font-size: 20px;">“什么时候回来啊？”我表面上波澜不惊，心里乐开了花，儿子走了，家里岂不只剩下我和儿媳妇两个人了。</span></p>
+					<p
+						style="box-sizing: inherit; margin-bottom: 10px; font-size: 18px; font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif; text-indent: 2em; text-align: left; line-height: 2em; letter-spacing: 1px;">
+						<span style="font-size: 20px;">“要一个月以后了”儿子回答道。“能不去吗？”儿媳妇明显有些紧张。</span></p>
+					<p
+						style="box-sizing: inherit; margin-bottom: 10px; font-size: 18px; font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif; text-indent: 2em; text-align: left; line-height: 2em; letter-spacing: 1px;">
+						<span
+							style="font-size: 20px;">“不行啊，你也知道，老板很器重我，这次的出差，任务非常的艰巨，我一定要认真完成任务”，儿子的事业正处于关键的上升期，他对这次的出差非常重视。</span>
+					</p>
+					<p
+						style="box-sizing: inherit; margin-bottom: 10px; font-size: 18px; font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif; text-indent: 2em; text-align: left; line-height: 2em; letter-spacing: 1px;">
+						<span style="font-size: 20px;">“不吃了！”儿媳妇的脸色明显有些不对劲，她一转身，扭着紧绷绷的臀部，朝卧室走去。</span></p>
+					<p
+						style="box-sizing: inherit; margin-bottom: 10px; font-size: 18px; font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif; text-indent: 2em; text-align: left; line-height: 2em; letter-spacing: 1px;">
+						<span style="font-size: 20px;">“我也不吃了”我匆匆扒拉了几口饭，也回了卧室。</span></p>
+					<p
+						style="box-sizing: inherit; margin-bottom: 10px; font-size: 18px; font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif; text-indent: 2em; text-align: left; line-height: 2em; letter-spacing: 1px;">
+						<span style="font-size: 20px;">儿子一脸的茫然，“都怎么回事？难道今天的饭菜不合胃口吗？”儿子一阵喃喃自语。</span>
+					</p>
+					<p
+						style="box-sizing: inherit; margin-bottom: 10px; font-size: 18px; font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif; text-indent: 2em; text-align: left; line-height: 2em; letter-spacing: 1px;">
+						<span
+							style="font-size: 20px;">躺在了床上后，我怎么也睡不着，我依旧满脑子都是儿媳妇那珠圆玉润的蜜臀，她的臀部，像是注满了水的气球，用手一摸，吹弹可破。</span>
+					</p>
+					<p
+						style="box-sizing: inherit; margin-bottom: 10px; font-size: 18px; font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif; text-indent: 2em; text-align: left; line-height: 2em; letter-spacing: 1px;">
+						<span
+							style="font-size: 20px;">到半夜，我做了一个春梦，梦见儿媳妇用她那丰满的蜜臀，骑在了我的身上，不停的摇曳……第二天早上醒来后，我发现被窝里湿了一大片，我突然感觉有些心酸。</span>
+					</p>
+					<p
+						style="box-sizing: inherit; margin-bottom: 10px; font-size: 18px; font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif; text-indent: 2em; text-align: left; line-height: 2em; letter-spacing: 1px;">
+						<span
+							style="font-size: 20px;">我操劳了大半生，给儿子成家立业，可如今，竟然连根女人毛都碰不到，只能靠着半夜做春梦，来发泄生理需求，我觉得自己活得很卑微。</span>
+					</p>
+					<p
+						style="box-sizing: inherit; margin-bottom: 10px; font-size: 18px; font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif; text-indent: 2em; text-align: left; line-height: 2em; letter-spacing: 1px;">
+						<span
+							style="font-size: 20px;">起床后，儿子已经出差走了，家里只剩下了我和儿媳妇两个人，儿媳妇明显在故意抵触我，她连早饭都没有吃，就去上班了，故意减少和我在一起相处的时间，我很失望。</span>
+					</p>
+					<p
+						style="box-sizing: inherit; margin-bottom: 10px; font-size: 18px; font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif; text-indent: 2em; text-align: left; line-height: 2em; letter-spacing: 1px;">
+						<span
+							style="font-size: 20px;">后面的几天都是如此，儿媳妇一直躲着我，偶尔见面，我和她打招呼，她都爱理不理的，儿媳妇这样对我，让我很难受，但，我对儿媳妇那丰满，圆润的蜜臀，越来越渴望了。</span>
+					</p>
+					<p
+						style="box-sizing: inherit; margin-bottom: 10px; font-size: 18px; font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif; text-indent: 2em; text-align: left; line-height: 2em; letter-spacing: 1px;">
+						<span
+							style="font-size: 20px;">这几天，不知道是不是天气太热的原因，儿媳妇学人穿起了热裤，短短的热裤，只能到大腿根，儿媳妇两条笔直修长的美腿完美的露了出来，每次看见她，我的眼睛都忍不住一阵放光，但，儿媳妇还是故意躲着我，我没有机会接触她。</span>
+					</p>
+					<p
+						style="box-sizing: inherit; margin-bottom: 10px; font-size: 18px; font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif; text-indent: 2em; text-align: left; line-height: 2em; letter-spacing: 1px;">
+						<span style="font-size: 20px;">老天爷还是眷顾我的，几天后，小学校长突然打来电话，儿媳妇低血糖昏迷了，让我去接她回家，我知道我的机会来了！</span></p>
+
+
+					<p style="text-align: center; line-height: 2em;"><span
+							style="color: red; font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif; font-size: 25px; text-indent: 2em;">第3章</span>
+					</p>
+
+
+					<p
+						style="box-sizing: inherit; margin-bottom: 10px; font-size: 18px; font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif; text-indent: 2em; text-align: left; line-height: 2em; letter-spacing: 1px;">
+						<span
+							style="font-size: 20px;">接到电话后，我就马不停蹄的赶到了学校，办公室的沙发上，儿媳妇已经昏迷不醒，她那两条美玉一样的大长腿，笔直的横在了扶手上，引人垂涎，我看着她的大长腿，忍不住吞了一口口水。</span>
+					</p>
+					<p
+						style="box-sizing: inherit; margin-bottom: 10px; font-size: 18px; font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif; text-indent: 2em; text-align: left; line-height: 2em; letter-spacing: 1px;">
+						<span
+							style="font-size: 20px;">和校长寒暄了几句，我就背着儿媳妇回家，在回家的路上，我的手一直在儿媳妇的蜜臀上，不停的乱摸，儿媳妇的蜜臀充满了弹性，用手捏一下，蜜臀不停的乱颤，我的心脏也跟着不停的狂跳，儿媳妇虽然低血糖昏迷了，但，不等于完全失去意识，儿媳妇还是有一些意识的，她感觉出来了，我在占她的便宜，但，她在昏迷之中，根本说不出话来，只能任由我在她的玉体上乱摸，我的手在她的蜜臀上不停的上下游走。</span>
+					</p>
+					<p
+						style="box-sizing: inherit; margin-bottom: 10px; font-size: 18px; font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif; text-indent: 2em; text-align: left; line-height: 2em; letter-spacing: 1px;">
+						<span
+							style="font-size: 20px;">摸了一会儿后，我的胆子越来越大，一咬牙，把手伸进了她的两条玉腿之间，在她玉腿的内侧抚摸了起来，她玉腿上的肌肤，光滑，细腻，摸在上面比摸婴儿的脸蛋还要柔软，我暗暗赞叹，儿媳妇真是人间极品，身上的每一个部位都长得这么好，我摸的欲仙欲死，儿媳妇心里却在不停的骂娘，被公公一直揩油，她快要气死了，她很想反抗，可是身体又动弹不了，只能趴在我的后背上，不停的翻白眼。</span>
+					</p>
+					<p
+						style="box-sizing: inherit; margin-bottom: 10px; font-size: 18px; font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif; text-indent: 2em; text-align: left; line-height: 2em; letter-spacing: 1px;">
+						<span
+							style="font-size: 20px;">从学校到家，步行只有十五分钟的路程，这十五分钟，对儿媳妇而言，每一秒都如同度日如年，可十五分钟还是很快就过去了，我背着儿媳妇回了家，儿媳妇以为回了家，我就能放过她了，可是，她错了，更猛烈的暴风雨还在等着她呢。</span>
+					</p>
+					<p
+						style="box-sizing: inherit; margin-bottom: 10px; font-size: 18px; font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif; text-indent: 2em; text-align: left; line-height: 2em; letter-spacing: 1px;">
+						<span
+							style="font-size: 20px;">我把她放在了客厅的沙发上，接着，我把她的高跟鞋给脱了下来，儿媳妇白皙，肌肤如牛奶般的玉脚顿时露了出来，我把她的一双玉脚给抱在了怀里。</span>
+					</p>
+					<p
+						style="box-sizing: inherit; margin-bottom: 10px; font-size: 18px; font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif; text-indent: 2em; text-align: left; line-height: 2em; letter-spacing: 1px;">
+						<span
+							style="font-size: 20px;">“儿媳妇，你低血糖，按摩脚能帮你快速恢复血糖”我的手在她的玉脚上面不停的来回揉搓，她玉脚上的肌肤和大腿上的肌肤一样的细腻，握在手上，滑滑的，软软的，我抱着她的玉脚，一阵阵的心猿意马。</span>
+					</p>
+					<p
+						style="box-sizing: inherit; margin-bottom: 10px; font-size: 18px; font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif; text-indent: 2em; text-align: left; line-height: 2em; letter-spacing: 1px;">
+						<span
+							style="font-size: 20px;">儿媳妇已经睁开了眼睛，她愤怒的看着我，她在用眼神威胁我，让我放开她，可她越是这样，我就越兴奋，我就喜欢儿媳妇的这对玉脚，她的这双小脚丫，我能抱在怀里玩一年。</span>
+					</p>
+					<p
+						style="box-sizing: inherit; margin-bottom: 10px; font-size: 18px; font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif; text-indent: 2em; text-align: left; line-height: 2em; letter-spacing: 1px;">
+						<span
+							style="font-size: 20px;">“儿媳妇，爸给你好好按按，你的身子弱，按按促进血液循环”我的手顺着她的玉脚，往上摸，不一会儿，就摸在了她的小腿上，儿媳妇的小腿曲线优美，没有一丝的赘肉，摸在上面完全是一种享受，正摸着摸着，儿媳妇突然恢复了知觉，她抬起玉脚，一脚踢在了我的脸上，我“噗通”一声倒在了地上。</span>
+					</p>
+
+
+					<p
+						style="box-sizing: inherit; margin-bottom: 10px; font-size: 18px; font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif; text-indent: 2em; text-align: left; line-height: 2em; letter-spacing: 1px;">
+						<span
+							style="font-size: 20px;">“不要脸！”被我摸了这么大半天，儿媳妇气的满脸通红，把我踢倒后，她生气的走进了卧室内，我看着她的背影，一阵不舍，我还没摸够呢，怎么就走了呢！儿媳妇回到了卧室，把她屋里的门给紧紧关上了，我知道，占有儿媳妇的计划，再次失败了。</span>
+					</p>
+
+
+					<p
+						style="box-sizing: inherit; margin-bottom: 10px; font-size: 18px; font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif; text-indent: 2em; text-align: left; line-height: 2em; letter-spacing: 1px;">
+						<span
+							style="font-size: 20px;">我心灰意冷的回了房间，我躺在了床上，仍旧对儿媳妇的那对玉脚流连忘返，我把给儿媳妇按摩过的手指放在鼻孔下嗅了一下，闻到了一股淡淡香气，这是儿媳妇玉脚的味道。</span>
+					</p>
+
+					<p
+						style="box-sizing: inherit; margin-bottom: 10px; font-size: 18px; font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif; text-indent: 2em; text-align: left; line-height: 2em; letter-spacing: 1px;">
+						<span
+							style="font-size: 20px;">经历了这件事之后，儿媳妇对我愈加防备了，儿媳妇连穿衣服都变得保守了起来，她再也不敢穿热裤了，每天都穿起来了牛仔裤，把自己包裹的严严实实的，可她不知道，她穿牛仔裤的样子同样迷人，那深紫色的牛仔裤，勒的紧绷绷的，她走路的时候，丰满，圆润的玉臀一直不停的左摇右晃，就像是在对男人招手，草我吧，使劲的草我吧！</span>
+					</p>
+					<p
+						style="box-sizing: inherit; margin-bottom: 10px; line-height: 1.7em; font-size: 18px; font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif; text-indent: 2em;">
+						<br /></p>
+					<p
+						style="box-sizing: inherit; margin-bottom: 10px; line-height: 1.7em; font-size: 18px; font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif; text-indent: 2em;">
+						    </p>
+					<p
+						style="box-sizing: inherit; margin-bottom: 10px; line-height: 1.7em; font-size: 18px; font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif; text-indent: 2em;">
+						<span style="font-size: 20px;"><span
+								style="border: 0px; outline: 0px; font-variant-numeric: inherit; font-stretch: inherit; line-height: inherit; font-family: 黑体; vertical-align: baseline; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); color: rgb(255, 0, 0);">未完待续……</span><br
+								style="border: 0px; outline: 0px; font-variant-numeric: inherit; font-stretch: inherit; font-size: 20px; line-height: inherit; font-family: 微软雅黑; vertical-align: baseline; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); color: rgb(255, 0, 0); white-space: normal;" /><span
+								style="border: 0px; outline: 0px; font-variant-numeric: inherit; font-stretch: inherit; line-height: inherit; font-family: 黑体; vertical-align: baseline; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); color: red;">微信篇幅有限，后续内容和情节更加精彩</span><br
+								style="border: 0px; outline: 0px; font-variant-numeric: inherit; font-stretch: inherit; font-size: 20px; line-height: inherit; font-family: 微软雅黑; vertical-align: baseline; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); color: rgb(255, 0, 0); white-space: normal;" /><span
+								style="border: 0px; outline: 0px; font-variant-numeric: inherit; font-stretch: inherit; line-height: inherit; font-family: 黑体; vertical-align: baseline; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); color: rgb(255, 0, 0);">长按下方【二维码】继续阅读哦~~</span> </span><span
+							style="font-size: 24px;"> </span>   </p>
+
+					<p><img src="" class="weixinpic" style="width: 100%;display: block;" alt=""></p>
+				</section>
+				<p><br /></p>
+				<p><br /></p>
+			</div>
+
+
+
+
+
+
+
+			<div id="js_sponsor_ad_area"></div>
+
+
+
+
+
+		</div>
+
+
+		<section
+			style="padding:10px;border-width:initial;border-style:none;background-image:none;background-attachment:initial;background-size:initial;background-origin:initial;background-clip:initial;background-position:initial;background-repeat:initial;">
+			<section class="color">
+				
+				<p></p>
+				<div class="liuyan" style="margin-top:40px;">
+					<div class="title-text">
+						<span style="font-size:18px;">精选留言</span>
+					</div>
+					<div style="margin-top:18px;display: flex;">
+						<div style="float:left;">
+							<img
+								src="images/O1CN01Ni8AH71HLsQRiwHYQ_874380742.jpg" style="width:40px;">
+						</div>
+						<div style="float:right;">
+							<span style="margin-left:8px;color:#8C8C8C;">赵天</span>
+							<span class="icon_praise_gray"
+								style="margin-right:40px;font-size:12px;float:right;color:#8C8C8C;"><span
+									style="width:100px;display:inline-block;">14558</span></span>
+							<div style="padding:8px;">
+								看了，好刺 J，后续太精彩了！
+							</div>
+							<span style="padding:10px;font-size:12px;color:#8C8C8C;">17小时前</span>
+						</div>
+					</div>
+					<div style="clear:both;">
+					</div>
+					<div style="margin-top:18px;display: flex;">
+						<div style="float:left;">
+							<img
+								src="images/O1CN01AqR9IO1HLsQV4tCfv_874380742.jpg" style="width:40px;">
+						</div>
+						<div style="float:right;">
+							<span style="margin-left:8px;color:#8C8C8C;">我是猛男</span>
+							<span class="icon_praise_gray"
+								style="margin-right:40px;font-size:12px;float:right;color:#8C8C8C;"><span
+									style="width:100px;display:inline-block;">10352</span></span>
+							<div style="padding:8px;">
+								受 不 了，我刚刚也看了，要去找妹子下火了...
+							</div>
+							<span style="padding:10px;font-size:12px;color:#8C8C8C;">15小时前</span>
+						</div>
+					</div>
+					<div style="clear:both;">
+					</div>
+					<div style="margin-top:18px;display: flex;">
+						<div style="float:left;">
+							<img
+								src="images/O1CN012T4IWh1HLsQPxCjaI_874380742.png" style="width:40px;">
+						</div>
+						<div style="float:right;">
+							<span style="margin-left:8px;color:#8C8C8C;">来呀，快活呀</span>
+							<span class="icon_praise_gray"
+								style="margin-right:40px;font-size:12px;float:right;color:#8C8C8C;"><span
+									style="width:100px;display:inline-block;">9988</span></span>
+							<div style="padding:8px;">
+								精彩，精彩，作者这是真实经历吧，我去看了感觉写的很好啊
+							</div>
+							<span style="padding:10px;font-size:12px;color:#8C8C8C;">14小时前</span>
+						</div>
+					</div>
+					<div style="clear:both;">
+					</div>
+					<div style="margin-top:18px;display: flex;">
+						<div style="float:left;">
+							<img src="images/O1CN01MNiyAA1HLsQUc30Yc_874380742.jpg" style="width:40px;">
+						</div>
+						<div style="float:right;">
+							<span style="margin-left:8px;color:#8C8C8C;">就这么feel倍爽</span>
+							<span class="icon_praise_gray"
+								style="margin-right:40px;font-size:12px;float:right;color:#8C8C8C;"><span
+									style="width:100px;display:inline-block;">7666</span></span>
+							<div style="padding:8px;">
+								一个字，看完保证爽，已经试过了！
+							</div>
+							<span style="padding:10px;font-size:12px;color:#8C8C8C;">4小时前</span>
+						</div>
+					</div>
+				</div>
+				<p> <br> </p>
+			</section>
+			<p> <br> </p>
+			<p> <br> </p>
+		</section>
+	</div>
+
+</body>
