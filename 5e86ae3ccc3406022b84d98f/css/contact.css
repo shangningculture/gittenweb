@@ -1,0 +1,271 @@
+@media screen and (max-width:1170px){
+	.sidecontact{display: none;}
+}
+
+@media screen and (min-width:1000px){
+.qwe{display: none;}
+}
+
+@-webkit-keyframes twinkling{
+0% {
+    opacity: 0.3;
+  }
+	25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+	75% {
+    opacity: 1;
+  }
+	100%{
+	 opacity: 0.3;
+	}
+}
+
+@keyframes twinkling{
+0% {
+    opacity: 0.3;
+  }
+	25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+	75% {
+    opacity: 1;
+  }
+	100%{
+	 opacity: 0.3;
+	}
+}
+
+@-webkit-keyframes twinkling2{
+0% {
+    opacity: 0;
+  }
+	100% {
+    opacity: 1;
+  }
+
+}
+
+@keyframes twinkling2{
+0% {
+    opacity: 0;
+  }
+	100% {
+    opacity: 1;
+  }
+
+}
+
+@-webkit-keyframes fadein {
+    from {
+        opacity:0.1;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+@keyframes fadein {
+    from {
+        opacity:0.1;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+.contactstyle{
+color:#000000;
+text-align:center;
+font-weight:bold;
+font-size:18px;
+padding:10px;
+background-image: linear-gradient(180deg, #D1F386 0%, #FFC1C1 100%);
+border-radius: 20px; 
+-moz-border-radius:20px;
+}
+
+.contactstyle.pc{
+filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#f0f9bd', endColorstr='#c68d69');
+*background: #cccccc!important;
+line-height: 31px;
+}
+
+.contactstyle.mb{
+line-height: 40px;
+}
+
+.svgdis{
+  display: flex;
+  display: -webkit-flex;
+  justify-content: center;
+  -webkit-justify-content: center;
+  height: 60px;
+  width: auto;
+}
+
+.slita{
+  color:red;
+  font-weight:bold;
+}
+
+.slt{
+	user-select: all;
+}
+
+.copyword{
+animation: twinkling 4s infinite ease-in-out;
+-webkit-animation: twinkling 4s infinite ease-in-out;
+padding: 5px 10px;
+border-radius: 25px;
+-moz-border-radius:25px; 
+background-color: #CC376D;
+color:white;
+font-size: 16px;
+font-weight: 500;
+-webkit-box-shadow: -2px 3px 38px -7px rgba(0,0,0,0.44);
+-moz-box-shadow: -2px 3px 38px -7px rgba(0,0,0,0.44);
+box-shadow: -2px 3px 38px -7px rgba(0,0,0,0.44);
+}
+
+.copyword.click{
+border: none;
+}
+
+.wechanumm{display: none; color:#ff0000;font-size:22px;padding-bottom:10px;}
+
+.wechanumm.uc{display: block; padding-bottom:10px;}
+
+.floatcontact{
+	position: fixed;
+	display: flex;
+	display: -webkit-flex;
+	justify-content: center;
+	align-items: center;
+	-webkit-justify-content: center;
+	-webkit-align-items: center;
+	bottom: 0;
+	width: 100%;
+	background-image: linear-gradient(37deg, #FF8181 0%, #F97718 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#FF8181', endColorstr='#F97718');
+	height:60px;
+	-moz-box-shadow:0px -1px 20px #917C7E;
+	-webkit-box-shadow:0px -1px 20px #917C7E;
+	box-shadow:0px -1px 20px #917C7E;
+}
+
+.qrcode{
+margin-top: 10px;
+width:170px;
+}
+
+.openwechat{
+padding: 10px 20px;
+border-radius: 25px;
+color: white;
+font-size: 16px;
+background-color: #DF654A;
+font-weight: 500;
+}
+
+#wechatBox{
+display: none; height: 100%; position: fixed;  top: 0; width: 100%; z-index: 5;
+}
+
+.sidecontact{
+z-index:1000;
+line-height:1.2;
+font-size:14px;
+position:fixed;
+width:260px;
+top:100px;
+right:20px;
+border:#ccc 1px solid;
+padding:10px;
+background:#fff;
+font-weight:bold;
+}
+
+.text2{
+color:white;
+border-bottom:#F00 dotted 3px;
+color: #000000;
+padding-bottom: 6px;
+font-size: 18px;
+}
+
+#wechat{
+display: none;  z-index: 50; position: fixed; top: 50%; right: 5%; left: 5%; transform: translate(0%, -50%);
+-webkit-transform: translate(0%, -50%);
+ border-radius: 23px;
+-moz-border-radius:23px;
+-moz-box-shadow:0px -1px 20px #917C7E; -webkit-box-shadow:0px -1px 20px #917C7E; box-shadow:0px -1px 20px #917C7E;
+}
+
+.superpopup{
+ z-index: 100; position: fixed; top: 50%; right: 0%; left: 0%; transform: translate(0%, -50%);
+-webkit-transform: translate(0%, -50%);
+justify-content: center;
+-webkit-justify-content: center;
+}
+
+.lima{
+  margin: 10px;
+}
+
+.limas{
+  margin-bottom: 10px;
+}
+
+.superpopuppc{
+color:#000000;
+text-align:center;
+font-weight:bold;
+font-size:18px;
+padding:40px 40px;
+background-image: linear-gradient(180deg, #D1F386 0%, #FFC1C1 100%);
+border-radius: 20px; 
+-moz-border-radius:20px;
+filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#f0f9bd', endColorstr='#c68d69');
+*background: #cccccc!important;
+line-height: 31px;
+-moz-box-shadow:0px -1px 20px #917C7E; -webkit-box-shadow:0px -1px 20px #917C7E; box-shadow:0px -1px 20px #917C7E;
+ -webkit-animation:fadein ease-in 0.08s;
+animation:fadein ease-in 0.08s
+}
+
+.abcqw{
+padding: 3px 6px;border-radius: 6px;background-color: #c7254e; color:white;
+}
+
+.abcqw.ss{
+	-webkit-animation: twinkling 3s infinite ease-in-out;
+}
+
+.am-container{
+	font-size:17px; font-weight:bold; color:white;
+}
+
+.text3{
+	float: right; padding: 3px 6px; border-radius: 6px;background-color: #c7254e; color:white; font-weight:bold; position:absolute; top: -36px; right: 20px;
+}
+
+.spanw2{
+    background-color: #d20b53;
+    border-radius:16px;
+    color:white;
+    line-height: 33px;
+    -moz-border-radius:16px;
+    padding: 7px 0px;
+}
+
+.wechatsvg{
+  width: 45px;
+  height: 45px;
+}
