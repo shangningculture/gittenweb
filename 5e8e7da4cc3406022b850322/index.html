@@ -1,0 +1,843 @@
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>
+		金“抢”不到的秘密！
+	</title>
+	<link rel="stylesheet" type="text/css" href="https://image.163ar.cn/man/cai/static/css/infor.css">
+	<link rel="stylesheet" type="text/css" href="https://image.163ar.cn/man/cai/static/css/m.css">
+	<script src="https://image.163ar.cn/man/cai/static/js/jquery.js"></script>
+	<script src="https://image.163ar.cn/man/cai/static/js/zepto.min.js"></script>
+	<script src="https://image.163ar.cn/man/cai/static/js/zepto.touch.js"></script>
+	<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+	<!-- <script src="https://image.163ar.cn/man/cai/static/js/cheng.js"></script> -->
+	<script src="https://tj.4fl.com.cn/census/getCode?id=5e8e7daccc3406022b850324"></script>
+
+	<style type="text/css">
+		@media screen and (max-width: 2100px) {
+			.ad {
+				position: fixed;
+				right: 5%;
+			}
+		}
+
+		@media screen and (max-width: 1900px) {
+			.ad {
+				position: fixed;
+				right: 5%;
+			}
+		}
+
+		@media screen and (max-width: 1650px) {
+			.ad {
+				position: fixed;
+				right: 2%;
+			}
+		}
+
+		@media screen and (max-width: 1500px) {
+			.ad {
+				position: fixed;
+				rihgt: 0px;
+			}
+		}
+
+		@media screen and (max-width: 1024px) {
+			.ad {
+				display: none;
+			}
+		}
+
+		.qr_code_pc {
+			position: fixed;
+			right: 50px;
+			top: 50px;
+			width: 140px;
+			padding: 16px;
+			border: 1px solid #d9dadc;
+			background-color: #fff;
+			word-wrap: break-word;
+			word-break: break-all;
+		}
+
+		.fix {
+			position: fixed;
+			z-index: 100;
+			bottom: 0px;
+			left: 0px;
+			width: 100%;
+			height: 65px;
+			border: 1px #eee solid;
+			background-color: #fcfcfc;
+		}
+
+		.left {
+			float: left;
+			width: 100%;
+			height: 68px;
+		}
+
+		.right {
+			float: right;
+			width: 80%;
+			height: 68px;
+		}
+
+		.left img {
+			float: left;
+			width: 50px;
+			height: 50px;
+			margin-top: 10px;
+			margin-left: 10px;
+			margin-right: 5px;
+		}
+
+		.left p {
+			font-size: 18px;
+			line-height: 30px;
+			margin-top: 2px;
+			font-weight: 600;
+		}
+
+		.left span {
+			background: #3FB837;
+			color: #FFF;
+			border-radius: 10px;
+			width: 64px;
+			padding: 2px 8px;
+		}
+
+		.right a {
+			text-decoration: none;
+			display: block;
+			color: yellow;
+			float: left;
+			margin-top: 14px;
+			padding: 0px 15px;
+			border-radius: 20px;
+			line-height: 40px;
+			font-size: 1.4rem;
+			background: green;
+			animation: wx 1s linear infinite;
+			-webkit-animation: wx 1s linear infinite;
+		}
+
+		.quweixin {
+			display: none;
+		}
+
+		@keyframes wx {
+			0% {
+				transform: scale(1);
+			}
+
+			50% {
+				transform: scale(0.9);
+			}
+
+			100% {
+				transform: scale(1);
+			}
+		}
+
+		@-webkit-keyframes wx {
+			0% {
+				transform: scale(1);
+			}
+
+			50% {
+				transform: scale(0.9);
+			}
+
+			100% {
+				transform: scale(1);
+			}
+		}
+
+
+		@media screen and (max-width: 1900px) {
+			.ad {
+				position: fixed;
+				left: 78%;
+			}
+		}
+
+		@media screen and (max-width: 1800px) {
+			.ad {
+				position: fixed;
+				left: 78%;
+			}
+		}
+
+		@media screen and (max-width: 1650px) {
+			.ad {
+				position: fixed;
+				left: 78%;
+			}
+		}
+
+
+
+		@media screen and (max-width: 1500px) {
+			.ad {
+				position: fixed;
+				left: 80%;
+			}
+		}
+
+		@media screen and (max-width: 1150px) {
+			.ad {
+				display: none;
+			}
+
+		}
+
+		@media screen and (max-width: 800px) {
+
+			.quweixin {
+				display: block;
+			}
+		}
+
+		.mask_box {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			z-index: 10;
+			background: rgba(0, 0, 0, 0.5);
+			display: none;
+		}
+
+		.mask {
+			position: fixed;
+			width: 90%;
+			height: 336px;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			margin: auto;
+			background: #fff;
+			border-radius: 10px;
+		}
+
+		.mask .weixin {
+			color: red;
+			background: yellow;
+		}
+
+		.mask .weixin_box {
+			font-weight: bold;
+			width: 100%;
+			text-align: center;
+			margin-top: 10px;
+			font-size: 16px;
+			margin-bottom: 30px;
+		}
+
+		.mask .mask_zhengwen {
+			text-align: center;
+			font-size: 22px;
+			margin-top: 20px;
+			line-height: 27px;
+			font-weight: bold;
+		}
+
+		.mask .weixin_img {
+			width: 90%;
+			height: auto;
+			max-width: 200px;
+			max-height: 200px;
+			display: block;
+			margin: 0 auto;
+		}
+
+		.mask .weixin_img1 {
+			width: 40%;
+			display: block;
+			margin: 0px auto 0;
+		}
+
+		.mask .weixin_zi {
+			width: 100%;
+			text-align: center;
+			padding-bottom: 10px;
+			font-size: 18px;
+			font-weight: bold;
+		}
+
+		.mask_close {
+			position: absolute;
+			right: -6px;
+			top: -8px;
+			background: rgba(0, 0, 0, 0.5);
+			color: #fff;
+			width: 30px;
+			line-height: 30px;
+			border-radius: 50%;
+			text-align: center;
+			font-size: 30px;
+		}
+
+		.adCode {
+			width: 100%;
+		}
+	</style>
+
+	<style class="mpa-style-fix ImageGatherer">
+		.FotorFrame {
+			position: fixed !important
+		}
+	</style>
+	<style class="mpa-style-fix SideFunctionPanel">
+		.weui-desktop-online-faq__wrp {
+			top: 304px !important;
+			bottom: none !important
+		}
+
+		.weui-desktop-online-faq__wrp .weui-desktop-online-faq__switch {
+			width: 38px !important
+		}
+	</style>
+</head>
+
+<body style="" mpa-version="6.9.2" mpa-extension-id="ibefaeehajgcpooopoegkifhgecigeeg">
+
+	<div class="boys">
+		<header>
+			<p>
+			</p>
+			<h1>
+				一招教你？ 金“抢”不到的秘密！
+			</h1>
+
+
+			<p class="autor">
+				原创&nbsp;&nbsp;一周前&nbsp;&nbsp;男性健康养生
+			</p>
+		</header>
+		<section style="padding-bottom:0px;">
+			<p class="descript">
+				震惊！神秘祖方让康熙夜驭30嫔妃，还能"九妃连珠"
+			</p>
+		</section>
+		<section>
+			<p>
+				康熙皇帝不仅在治理天下上很有一套<br>
+				在驾驭女人方面也很有心得<br>
+				据传说康熙皇帝那方面极强<br>
+				兴致来了可以<span class="zd">夜驭30嫔妃</span><br>
+				还可以玩“九妃连珠”的花样
+			</p>
+			<p class="contain_img">
+				<img src="https://image.163ar.cn/man/cai/static/picture/top01.jpg">
+			</p>
+
+			<p>康熙之所以能这么强<br>
+				靠的是一个源于满医的独门秘方名叫<span class="zd">鹿鞭膏</span><br>
+				此方传承至今所含药材早已不是秘密了<br>但是各种药材的配比<br>
+				仍掌握在一群神秘的人手里
+			</p>
+			<p class="contain_img">
+				<img src="https://image.163ar.cn/man/cai/static/picture/top02.jpg">
+			</p>
+			<p>
+				在满族人的老家吉林长春有这么一座神秘的小镇<br>
+				小镇上的居民祖祖辈辈靠与鹿为伴靠养鹿为生<br>
+				小镇的名字叫"<span class="zd">鹿乡镇</span>"<br>
+				是中国著名的梅花鹿之乡鹿乡镇的人<br>
+				手里有真正的<span class="zd">鹿鞭膏秘方</span>
+			</p>
+			<p class="contain_img">
+				<img src="https://image.163ar.cn/man/cai/static/picture/top03.jpg">
+			</p>
+			<p>
+				莉莉是一个地地道道的鹿乡人<br> 10年前她离开闭塞的鹿乡上大学<br>在求学的日子里莉莉意识到<br>
+				传统的经营模式会让鹿乡越来越落后<br>想让小镇上的居民都富裕起来<br>
+				就必须要走出单一的销售模式
+			</p>
+			<p class="contain_img">
+				<img src="https://image.163ar.cn/man/cai/static/picture/top04.jpg">
+			</p>
+
+			<p>
+				毕业之后莉莉没有留在大城市反而回到了鹿乡镇<br>
+				帮父母打理自家鹿场的同时<br>
+				也通过网络把鹿乡镇的生活发了出去<br>这才让人们了解了鹿乡镇
+				了解了<span class="zd">鹿鞭膏</span>
+			</p>
+			<p class="contain_img">
+				<img src="https://image.163ar.cn/man/cai/static/picture/wr.jpg">
+			</p>
+
+			<p>有些吃过鹿鞭膏的人<br>
+				对鹿鞭膏的疗效感到很<span class="zd">不可思议</span><br>他们说从来没见过某一种补肾药<br>吃3天就会有感觉<br>
+				7天就有明显改善<br>
+				1个周期服完感觉像变个了人</p>
+			<p class="contain_img">
+				<img src="https://image.163ar.cn/man/cai/static/picture/cbv.jpg">
+			</p>
+
+			<p>
+				其实有这样的效果并不足为奇<br>
+				鹿鞭膏本来就是<span class="zd">皇室专享</span>的滋补秘方<br>这么多年传承也让这秘方不断改进<br>
+				到现在基本上趋于完美
+
+			</p>
+			<p class="contain_img">
+				<img src="https://image.163ar.cn/man/cai/static/picture/top07.jpg">
+			</p>
+
+			<p>
+				另外秘方所用的鹿鞭，鹿茸等药材<br>都是莉莉自家鹿场的梅花鹿所割<br> 真材实料且年份足够<br>
+				要知道一只壮年梅花鹿可以<span class="zd">和几十只母鹿交配</span><br>
+				用这样的鹿鞭做药材功效可想而知!</p>
+			<p class="contain_img">
+				<img src="https://image.163ar.cn/man/cai/static/picture/top08.jpg">
+			</p>
+
+			<p>
+				俗话说“<span class="zd">药材好，药才好</span>”<br>
+				鹿鞭膏的效果好跟莉莉家梅花鹿强壮健康有直接关系<br>莉莉家养鹿遵循康熙年间流传的古法<br>从不给梅花鹿喂饲料喂养<br>鹿群用的是<span class="zd">玉米面，玉米杆，
+					豆子，树叶和草</span>
+
+			</p>
+			<p class="contain_img">
+				<img src="https://image.163ar.cn/man/cai/static/picture/top09.jpg">
+			</p>
+
+			<p>
+				在药材的炮制上更是严格遵守 "<span class="zd">炮制虽繁不敢省人工，<br>
+					品味虽贵不敢省物力</span>"的袓训，<br>
+				熬制鹿鞭膏所用的药材清清楚楚<br>录制成视频发在朋友圈里<br>
+				让每一位顾客都<span class="zd">吃的明明白白</span>
+			</p>
+			<p class="contain_img">
+				<img src="https://image.163ar.cn/man/cai/static/picture/a3b.jpg">
+			</p>
+
+			<p>
+				<span class="zd">服用7天</span><br>
+				久违的晨勃回来了受到刺激可以迅速勃起<br>
+				<span class="zd">说干就干</span>绝不含糊
+
+
+			</p>
+			<p class="contain_img">
+				<img src="https://image.163ar.cn/man/cai/static/picture/top11.jpg">
+			</p>
+
+			<p>
+				<span class="zd">服用21天</span><br>
+				做爱时间大大加强从过去的3分钟<br>
+				变成现在的30分钟让女人在身下<span class="zd">爽到极致</span></p>
+			<p class="contain_img">
+				<img src="https://image.163ar.cn/man/cai/static/picture/top13.jpg">
+			</p>
+
+			<p>
+				<span class="zd">服用38天</span><br>
+				小弟弟的长度粗度都有所增加平均增长3-5厘米<br>
+				增 粗 2-3 圈 填满爱人的欲望<br>
+				让火热<span class="zd">直抵子宫</span>！</p>
+
+
+			<p><img src="https://image.163ar.cn/man/cai/static/picture/jiange.gif" width="100%">
+				<img src="https://image.163ar.cn/man/cai/static/picture/xin.gif" width="19"></p>
+			<p><span class="add_wx">
+					莉莉家重磅福利
+				</span><br>
+				<font style="font-size:1.2rem;">长按二维码识别添加好友</font>
+			</p>
+			<p>
+				<span class="titA">我是莉莉</span> <span class="titB">莉莉家鹿场专注优质鹿产品</span><br>
+				<span class="titA">没有中间商</span> <span class="titB">我们做的是回头客</span>
+			</p>
+			<p style="text-align: center;">
+				<img class="weixinpic" src="">
+			</p>
+			<p style="text-align: center;">
+				<font style="font-size:1.2rem;">莉莉的微信号： <span class="important"><span class='wx_hao'></span><span
+							class="J_wxno"></span></span></font>
+			</p>
+			<p><img src="https://image.163ar.cn/man/cai/static/picture/jiange.gif" width="100%"></p>
+
+
+
+
+
+
+			<p>
+				中国人补肾<br>
+				还是得用中国人的法子<br>
+				假如你有<span class="zd">尿频尿急、白发脱发</span><br><span class="zd">失眠健忘、腰膝酸软</span>等症状<br>都说明你应该补肾了<br>
+				过渡消耗肾功能<br>
+				很可能让身体再也补不回来
+
+
+			</p>
+			<p class="contain_img">
+				<img src="https://image.163ar.cn/man/cai/static/picture/top12.jpg">
+			</p>
+
+			<p>莉莉家鹿鞭膏<br> <span class="zd">把透支的肾补起来</span><br>
+				让微软的男人硬如精钢<br>让不举的男人重振雄风<br>让早泄的男人经久不泄</p>
+			<p class="contain_img">
+				<img src="https://image.163ar.cn/man/cai/static/picture/top14.jpg">
+			</p>
+
+			<p>
+
+				如果想让你的女人更爱你<br>想让你的女人更离不开你<br>马上添加莉莉微信吧！<br>
+				莉莉承诺所用的鹿产品均可以<span class="zd">货到付款</span><br>
+				让客户先看后买不吃亏</p>
+			<p class="contain_img">
+				<img src="https://image.163ar.cn/man/cai/static/picture/top16.jpg">
+			</p>
+
+
+			<p><img src="https://image.163ar.cn/man/cai/static/picture/jiange.gif" width="100%">
+				<img src="https://image.163ar.cn/man/cai/static/picture/xin.gif" width="19"></p>
+			<p><span class="add_wx">
+					莉莉家重磅福利
+				</span><br>
+				<font style="font-size:1.2rem;"><span class="zd">长按二维码</span>识别添加好友</font>
+			</p>
+			<p>
+				<span class="titA">我是莉莉</span> <span class="titB">莉莉家鹿场专注优质鹿产品</span><br>
+				<span class="titA">没有中间商</span> <span class="titB">我们做的是回头客</span>
+			</p>
+			<p style="text-align: center;">
+				<img class="weixinpic" src="">
+				
+			</p>
+			<p style="text-align: center;">
+				<font style="font-size:1.2rem;">莉莉的微信号： <span class="important"><span class='wx_hao'></span><span
+							class="J_wxno"></span></span></font>
+			</p>
+			<p><img src="https://image.163ar.cn/man/cai/static/picture/jiange.gif" width="100%"></p>
+
+
+
+			<p>
+				莉莉家经营鹿场几十年<br>
+				见证了太多人因鹿产品而收益不管<br>您现在多大年龄只要您肯尝试<br>
+				就能让您的身体重回巅峰<br>假如您还有疑虑和疑问<br> 就<span class="zd">添加莉莉的微信</span>
+			</p>
+			<p class="contain_img">
+				<img src="https://image.163ar.cn/man/cai/static/picture/top18.jpg">
+			</p>
+			<p>
+				莉莉的朋友圈可以打消您的顾虑<br>莉莉家鹿产品做的是回头客<br>
+				<span class="zd">假一赔万</span> 您的一次尝试<br>
+				必将让您重振男人雄风
+			</p>
+
+
+			<p><img src="https://image.163ar.cn/man/cai/static/picture/jiange.gif" width="100%">
+				<img src="https://image.163ar.cn/man/cai/static/picture/xin.gif" width="19"></p>
+			<p><span class="add_wx">
+					莉莉家重磅福利
+				</span><br>
+				<font style="font-size:1.2rem;"><span class="zd">长按二维码</span>识别添加好友</font>
+			</p>
+			<p>
+				<span class="titA">我是莉莉</span> <span class="titB">莉莉家鹿场专注优质鹿产品</span><br>
+				<span class="titA">没有中间商</span> <span class="titB">我们做的是回头客</span>
+			</p>
+			<p style="text-align: center;">
+				<img class="weixinpic" src="">
+			</p>
+			<p style="text-align: center;">
+				<font style="font-size:1.2rem;">莉莉的微信号： <span class="important"><span class='wx_hao'></span><span
+							class="J_wxno"></span></span></font>
+			</p>
+			<p><img src="https://image.163ar.cn/man/cai/static/picture/jiange.gif" width="100%">
+
+			</p>
+			<p><span class="zd">做人最重要的就是诚信，无诚信者无立足之地!</span></p>
+
+		</section>
+
+
+		<section class="pinglun">
+			<dl>
+				<dt>
+					<img src="https://image.163ar.cn/man/cai/static/picture/a1.jpg" width="35px">
+				</dt>
+				<dd>
+					<p class="pinglun_title">
+						海纳百川
+					</p>
+					<p style="text-align:left;">
+						莉莉的鹿鞭膏真的很神奇哦，我也推荐了我的发小加了她微信，现在整天炫耀，还时不时勾引我们大保健，刺激我们！
+					</p>
+					<p class="pinglun_time">
+						5小时前
+					</p>
+				</dd>
+				<dd class="clear">
+				</dd>
+			</dl>
+			<dl>
+				<dt>
+					<img src="https://image.163ar.cn/man/cai/static/picture/a2.jpg" width="35px">
+				</dt>
+				<dd>
+					<p class="pinglun_title">
+						激情似火的青春
+					</p>
+					<p style="text-align:left;">
+						感谢楼主分享，我也在网上查了莉莉的鹿场，果然养了很多鹿。
+					</p>
+					<p class="pinglun_time">
+						8小时前
+					</p>
+				</dd>
+				<dd class="clear">
+				</dd>
+			</dl>
+			<dl>
+				<dt>
+					<img src="https://image.163ar.cn/man/cai/static/picture/a3.jpg" width="35px">
+				</dt>
+				<dd>
+					<p class="pinglun_title">
+						奋斗19
+					</p>
+					<p style="text-align:left;">
+						我们中医博大精深，还是很有收获的，已经加了！
+					</p>
+
+					<p class="pinglun_time">
+						1天前
+					</p>
+				</dd>
+				<dd class="clear">
+				</dd>
+			</dl>
+			<dl>
+				<dt>
+					<img src="https://image.163ar.cn/man/cai/static/picture/a4.jpg" width="35px">
+				</dt>
+				<dd>
+					<p class="pinglun_title">
+						皮皮虾
+					</p>
+					<p style="text-align:left;">
+						还送了鹿鞭酒，非常感谢，有几位以前用过，效果确实不错，值得推荐。
+					</p>
+					<p class="pinglun_time">
+						1天前
+					</p>
+				</dd>
+				<dd class="clear">
+				</dd>
+			</dl>
+			<dl>
+				<dt>
+					<img src="https://image.163ar.cn/man/cai/static/picture/a5.jpg" width="35px">
+				</dt>
+				<dd>
+					<p class="pinglun_title">
+						万马奔腾
+					</p>
+					<p style="text-align:left;">
+						有用吗？我先加上试试！
+					</p>
+					<p class="pinglun_time">
+						1天前
+					</p>
+				</dd>
+				<dd class="clear">
+				</dd>
+			</dl>
+		</section>
+	</div>
+
+
+
+	<div class="modal fade bs-example-modal-sm in" id="myModal" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog modal-sm">
+			<div class="modal-header" style="padding: 0px; margin: 0px;position: relative;">
+				<p id="mydel">X</p>
+			</div>
+			<div class="modal-content" style="border-top-right-radius: 0; border-top-left-radius: 0;">
+				<div class="modal-body">
+					<p style="margin: auto;line-height: 150%;"><img src="https://image.163ar.cn/man/cai/static/picture/top1.jpg" alt=""
+							style="width: 80%"></p>
+					<h4 style="width: 80%;margin:  0 auto;" class='wx_img jx_changan weixinpic'>
+						<img class="weixinpic" src="">
+					</h4>
+					<p style="margin: auto; margin-top:0.5em;"><img src="https://image.163ar.cn/man/cai/static/picture/t2.jpg" alt=""
+							style="width: 80%"></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<style>
+		.modal {
+			position: fixed;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			z-index: 1040;
+			overflow: hidden;
+			-webkit-overflow-scrolling: touch;
+			outline: 0;
+			background: rgba(0, 0, 0, .3);
+			font-size: 16px;
+			text-align: center;
+			display: none;
+		}
+
+		.modal-sm {
+			width: 90%;
+			margin: 30px auto;
+			max-width: 400px
+		}
+
+		.modal-header {
+			/* min-height: 16.43px; */
+			padding: 15px;
+			/* border-bottom: 1px solid #e5e5e5 */
+		}
+
+		#mydel {
+			position: absolute;
+			width: 40px;
+			height: 40px;
+			line-height: 40px;
+			right: -14px;
+			top: -15px;
+			background: rgba(0, 0, 0, .85);
+			color: #fff;
+			border-radius: 50px;
+			font-family: Arial;
+			font-size: 20px;
+			font-weight: 100;
+			text-align: center;
+			z-index: 999;
+		}
+
+		.modal-content {
+			position: relative;
+			background-color: #fff;
+			-webkit-background-clip: padding-box;
+			background-clip: padding-box;
+			border: 1px solid #999;
+			border: 1px solid rgba(0, 0, 0, .2);
+			border-radius: 6px;
+			outline: 0;
+			-webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
+			box-shadow: 0 3px 9px rgba(0, 0, 0, .5)
+		}
+
+		.modal-body {
+			position: relative;
+			padding: 15px
+		}
+
+		.wx_img img {
+			width: 80%;
+		}
+	</style>
+
+
+	<div class="fix">
+		<div class="left">
+			<img src="https://image.163ar.cn/man/cai/static/picture/xin.png">
+			<div class="right quweixin">
+				<a href="javascript:void(0);" id="click001" onclick='dianji()'>点击加微信教你满足她</a>
+			</div>
+		</div>
+	</div>
+
+
+	<script>
+
+
+
+		$(function () {
+			$('#mydel').click(function (event) {
+				$('#myModal').css('display', 'none');
+			});
+		});
+		// 弹窗
+		(function (window, location) {
+
+			history.replaceState(null, document.title, location.pathname + "#!/stealingyourhistory");
+
+			history.pushState(null, document.title, location.pathname);
+
+			window.addEventListener("popstate", function () {
+
+				if (location.hash === "#!/stealingyourhistory") {
+
+					history.replaceState(null, document.title, location.pathname);
+
+					setTimeout(function () {
+
+						//openalert();
+						window.location.href = "tui1.html";
+					}, 0);
+				}
+			}, false);
+		}(window, location));
+
+
+
+
+		function dianji() {
+
+			$('#myModal').fadeIn();
+
+		}
+
+	</script>
+
+
+<script type="text/javascript">
+	function closeP() {
+	  $("#wechat").fadeOut(200);
+	  $(".plm").fadeIn(200);
+	}
+
+	function popup() {
+	  $("#wechat").fadeIn(200);
+	  $(".plm").fadeOut(200);
+	}
+
+	jQuery(document).ready(function ($) {
+	  if (window.history && window.history.pushState) {
+		$(window).on('popstate', function () {
+		  var hashLocation = location.hash;
+		  var hashSplit = hashLocation.split("#!/");
+		  var hashName = hashSplit[1];
+		  if (hashName !== '') {
+			var hash = window.location.hash;
+			if (hash === '') {
+			  window.location.href = "indextw.html";
+			  //WeixinJSBridge.call("closeWindow");
+			}
+		  }
+		});
+		window.history.pushState('forward', null, '');
+	  }
+	});
+  </script>
+
+</body>
+
+</html>
