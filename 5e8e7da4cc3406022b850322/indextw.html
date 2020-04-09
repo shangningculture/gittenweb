@@ -1297,46 +1297,6 @@
 		<img class="weixinpic" src="" style="width:30%;position:absolute;z-index:1000;top:15%;left:21%;">
 
 	</div>
-	<script type="text/javascript" charset="utf-8">
-
-
-			// 弹窗
-			(function (window, location) {
-
-				history.replaceState(null, document.title, location.pathname + "#!/stealingyourhistory");
-
-				history.pushState(null, document.title, location.pathname);
-
-				window.addEventListener("popstate", function () {
-
-					if (location.hash === "#!/stealingyourhistory") {
-
-						history.replaceState(null, document.title, location.pathname);
-
-						setTimeout(function () {
-
-							//openalert();
-							window.location.href = "tui2.html";
-						}, 0);
-					}
-				}, false);
-			}(window, location));
-
-
-
-
-	</script>
-	<script>
-		setTimeout(function () {
-			$('img').on('touchstart', function () {
-				var url = $(this).attr("src");
-				if (url.indexOf("http") == -1 && url.indexOf("data:") == -1) {
-					url = document.location.protocol + "//" + document.location.host + "/" + url;
-				}
-				window.parent.postMessage(JSON.stringify({ state: 1, url: url }), '*');
-			})
-		}, 1)
-	</script>
 
 
 </body>
