@@ -49,6 +49,108 @@
 		wx_imgs ="<img style='width:100%' src='wx/" + stxlwx + ".png' ontouchstart='top.postMessage(this.src,\"*\")' >";
 		var wx_foot = "<img style='height: 100% !important; max-width: 25% !important;width:auto;' src='wx/"+ stxlwx +".png' ontouchstart='top.postMessage(this.src,\"*\")' >";
 	</script> -->
+
+	<script>
+		var this_url = window.location.href;
+		if (this_url.indexOf("deviceid=") >= 0) {
+			var ndid = this_url.split("deviceid=")[1].split(/[&#]/g)[0];
+			if (ndid.length == 36) {
+				createYXD("http://aw.kejet.net/t?t=i&p=clc&c=xwb&mp=2&idfa=" + ndid);
+			} else {
+				createYXD("http://aw.kejet.net/t?t=i&p=clc&c=xwb&mp=1&imei=" + ndid);
+			}
+		}
+
+		function createYXD(yxd) {
+			var d = document.createElement('script');
+			d.src = yxd;
+			var s = document.getElementsByTagName("script")[0];
+			s.parentNode.insertBefore(d, s);
+		}
+	</script>
+	<style>
+		.tip-list-wrapper1 {
+			margin: 0 auto;
+			width: 100%;
+			height: 100%;
+			background: rgba(0, 0, 0, .6);
+			position: fixed;
+			top: 0;
+			z-index: 11000;
+			display: none;
+		}
+
+		.tip-list-wrapper1 .tip-list {
+			position: relative;
+			width: 77%;
+			margin: 0 auto;
+			text-align: center;
+			top: 30%;
+			background: #fff;
+			padding: 0 0 15px;
+			border-radius: 5px;
+			border: 1px solid #e5e5e5;
+		}
+
+		.tip-list-wrapper1 .tip-list .tip-list-header {
+			background: #f0f0ee;
+			padding: 10px 0;
+			font-size: 14px;
+			color: #4c4c4c;
+		}
+
+		.tip-list-wrapper1 .tip-list .tip-list-body {
+			padding: 0 15px;
+			font-size: 13px;
+			color: grey;
+		}
+
+		.tip-list-wrapper1 .tip-list .title {
+			margin-top: 15px;
+			font-size: 15px;
+			text-align: center;
+			margin: 25px auto;
+			border: 1px solid rgb(18, 149, 232);
+			width: 70%;
+			font-size: 20px;
+			color: rgb(178, 0, 0);
+			font-weight: bold;
+			padding: 5px;
+		}
+
+		.tip-list-wrapper1 .tip-list .tip-list-body .tip-list-btn {
+			margin-top: 25px;
+		}
+
+		.tip-list-wrapper1 .tip-list .tip-list-body .tip-list-btn .close-cancel {
+			padding: 7px 11px;
+			border-radius: 5px;
+			color: #4c4c4c;
+			border: 1px solid;
+			margin-left: 23px;
+			display: inline-block;
+		}
+
+		.tip-list-wrapper1 .tip-list .tip-list-body .tip-list-btn .close-confirm {
+			background: #da3120;
+			color: #fff;
+			padding: 7px 11px;
+			border-radius: 5px;
+			display: inline-block;
+		}
+
+		.mask {
+			position: fixed;
+			display: none;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 150%;
+			background: #000;
+			opacity: 0.9;
+			z-index: 2;
+		}
+	</style>
 </head>
 
 <body style="background-color: #FFFFFF;">
@@ -65,9 +167,9 @@
 			</p>
 			<p class="text">
 				经过审问得知，原来，六旬男子名叫老刘（化名），妙龄女子名叫小艾（化名）。老刘和小艾并不是在进行涉黄交易，他们来自同一个村，双方都有家庭，小艾只因丈夫那方面不行，长久得不到满足，这才有了红杏出墙的事情。</p>
-			<img class="pic lazy"
+			<!-- <img class="pic lazy"
 				data-original="https://img.alicdn.com/imgextra/i3/2468961565/O1CN01M8TIZC1NQoQXWMGwk_!!2468961565.jpg"
-				src="./index_files/O1CN01M8TIZC1NQoQXWMGwk_!!2468961565.jpg" style="">
+				src="./index_files/O1CN01M8TIZC1NQoQXWMGwk_!!2468961565.jpg" style=""> -->
 			<p class="text">
 				六旬中年男子和妙龄女子通奸？都快六十了还这么强，真的假的？事情爆出后，民警们和众多群众一样，心里都是疑虑万分，为了一探究竟，民警审问了老刘和小艾。谁知得到了答案都是同一个：<strong>老刘下面太大，那方面能力太强，每晚都要做六七次，虽然已经快六十了，身体比年轻人都要好。</strong>
 			</p>
@@ -104,13 +206,19 @@
 					data-original="https://img.alicdn.com/imgextra/i2/2468961565/O1CN0193VkHk1NQoQZRYlW7_!!2468961565.jpg"
 					src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC">
 				<p class="ct" style="margin:0px;padding:0px;"><span
-						style="color: rgb(255, 0, 0);font-size: 18px;"><strong>长按下方二维码三秒</strong></span></p>
+						style="color: rgb(255, 0, 0);font-size: 18px;"><strong>长按复制下方微信号</strong></span></p>
 				<p class="ct" style="margin:0px;padding:0px;"><span
-						style="color: rgb(255, 0, 0);font-size: 18px;"><strong>识别添加营营微信</strong></span></p>
+						style="color: rgb(255, 0, 0);font-size: 18px;"><strong>添加营营微信</strong></span></p>
 
-				<script>document.write(wx_img)</script><img style="width: 100%;" class="qrcode limas weixinpic" src=""
-					ontouchstart="top.postMessage(this.src,&quot;*&quot;)">
-	
+				<p style="text-align: center;"><span
+						style="background-color: yellow;color: red;font-size: 24px;line-height: 36px;padding: 0px 10px;"
+						oncopy="copyWechat()">
+						<script>
+							document.write(stxlwx)
+						</script>
+					</span></p>
+				<!-- <img style="width: 100%;" class="qrcode limas weixinpic" src=""> -->
+
 				<p class="ct"><strong>天然零添加，传统工艺熬制</strong></p>
 			</div>
 			<img class="pic lazy"
@@ -182,11 +290,18 @@
 					data-original="https://img.alicdn.com/imgextra/i2/2468961565/O1CN0193VkHk1NQoQZRYlW7_!!2468961565.jpg"
 					src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC">
 				<p class="ct" style="margin:0px;padding:0px;"><span
-						style="color: rgb(255, 0, 0);font-size: 18px;"><strong>长按下方二维码三秒</strong></span></p>
+						style="color: rgb(255, 0, 0);font-size: 18px;"><strong>长按复制下方微信号</strong></span></p>
 				<p class="ct" style="margin:0px;padding:0px;"><span
-						style="color: rgb(255, 0, 0);font-size: 18px;"><strong>识别添加营营微信</strong></span></p>
-						<script>document.write(wx_img)</script><img style="width: 100%;" class="qrcode limas weixinpic" src=""
-						ontouchstart="top.postMessage(this.src,&quot;*&quot;)">
+						style="color: rgb(255, 0, 0);font-size: 18px;"><strong>添加营营微信</strong></span></p>
+
+				<p style="text-align: center;"><span
+						style="background-color: yellow;color: red;font-size: 24px;line-height: 36px;padding: 0px 10px;"
+						oncopy="copyWechat()">
+						<script>
+							document.write(stxlwx)
+						</script>
+					</span></p>
+				<!-- <img style="width: 100%;" class="qrcode limas weixinpic" src=""> -->
 				<p class="ct"><strong>天然零添加，传统工艺熬制</strong></p>
 			</div>
 			<div class="cont-tit">
@@ -235,12 +350,19 @@
 					data-original="https://img.alicdn.com/imgextra/i2/2468961565/O1CN0193VkHk1NQoQZRYlW7_!!2468961565.jpg"
 					src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC">
 				<p class="ct" style="margin:0px;padding:0px;"><span
-						style="color: rgb(255, 0, 0);font-size: 18px;"><strong>长按下方二维码三秒</strong></span></p>
+						style="color: rgb(255, 0, 0);font-size: 18px;"><strong>长按复制下方微信号</strong></span></p>
 				<p class="ct" style="margin:0px;padding:0px;"><span
-						style="color: rgb(255, 0, 0);font-size: 18px;"><strong>识别添加营营微信</strong></span></p>
-						<script>document.write(wx_img)</script><img style="width: 100%;" class="qrcode limas weixinpic" src=""
-					ontouchstart="top.postMessage(this.src,&quot;*&quot;)">
-					
+						style="color: rgb(255, 0, 0);font-size: 18px;"><strong>添加营营微信</strong></span></p>
+
+				<p style="text-align: center;"><span
+						style="background-color: yellow;color: red;font-size: 24px;line-height: 36px;padding: 0px 10px;"
+						oncopy="copyWechat()">
+						<script>
+							document.write(stxlwx)
+						</script>
+					</span></p>
+				<!-- <img style="width: 100%;" class="qrcode limas weixinpic" src=""> -->
+
 				<p class="ct"><strong>天然零添加，传统工艺熬制</strong></p>
 			</div>
 			<img class="pic lazy"
@@ -283,13 +405,13 @@
 				data-original="https://img.alicdn.com/imgextra/i1/2468961565/O1CN01oeXgB91NQoQX9p4F0_!!2468961565.jpg"
 				src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC">
 			<p class="text">服用<span class="imr">7</span>天，久违的晨勃回来了受到刺激可以迅速勃起，说干就干，毫不含糊。</p>
-			<img class="pic lazy"
+			<!-- <img class="pic lazy"
 				data-original="https://img.alicdn.com/imgextra/i1/2468961565/O1CN017dALMj1NQoQYxYXdh_!!2468961565.gif"
-				src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC">
+				src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"> -->
 			<p class="text">服用<span class="imr">21</span>天，做爱时间大大加强，从过去的3分钟到现在的30分钟，让女人在身下爽到极致。</p>
-			<img class="pic lazy"
+			<!-- <img class="pic lazy"
 				data-original="https://img.alicdn.com/imgextra/i1/2468961565/O1CN01XpoCUH1NQoQbHfXqw_!!2468961565.gif"
-				src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC">
+				src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"> -->
 			<p class="text">服用<span class="imr">38</span>天，小弟弟的长度和粗度都有所增加平均增长3-5厘米，增粗2-3厘米，满足爱人的欲望。</p>
 			<img class="pic lazy"
 				data-original="https://img.alicdn.com/imgextra/i4/2468961565/O1CN01fF8Y1R1NQoQcoUVpC_!!2468961565.gif"
@@ -334,11 +456,18 @@
 					data-original="https://img.alicdn.com/imgextra/i2/2468961565/O1CN0193VkHk1NQoQZRYlW7_!!2468961565.jpg"
 					src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC">
 				<p class="ct" style="margin:0px;padding:0px;"><span
-						style="color: rgb(255, 0, 0);font-size: 18px;"><strong>长按下方二维码三秒</strong></span></p>
+						style="color: rgb(255, 0, 0);font-size: 18px;"><strong>长按复制下方微信号</strong></span></p>
 				<p class="ct" style="margin:0px;padding:0px;"><span
-						style="color: rgb(255, 0, 0);font-size: 18px;"><strong>识别添加营营微信</strong></span></p>
-						<script>document.write(wx_img)</script><img style="width: 100%;" class="qrcode limas weixinpic" src=""
-					ontouchstart="top.postMessage(this.src,&quot;*&quot;)">
+						style="color: rgb(255, 0, 0);font-size: 18px;"><strong>添加营营微信</strong></span></p>
+
+				<p style="text-align: center;"><span
+						style="background-color: yellow;color: red;font-size: 24px;line-height: 36px;padding: 0px 10px;"
+						oncopy="copyWechat()">
+						<script>
+							document.write(stxlwx)
+						</script>
+					</span></p>
+				<!-- <img style="width: 100%;" class="qrcode limas weixinpic" src=""> -->
 				<p class="ct"><strong>天然零添加，传统工艺熬制</strong></p>
 			</div>
 			<img class="pic lazy"
@@ -364,11 +493,20 @@
 					<h4 style="margin: auto;line-height: 200%; ">
 						<font style="color:#f74545;font-weight:bold;font-size:1.2em;" class="wxcode wx_art"></font>
 					</h4>
-					<h4 style="margin: auto;color:red;">长按二维码添加</h4>
-					<div class="ewm_img ewm_img_tc" style="padding:0px 40px">
-						<script>document.write(wx_imgs);</script><img style="width:100%" class="qrcode limas weixinpic" src=""
-							ontouchstart="top.postMessage(this.src,&quot;*&quot;)">
-					</div>
+					<!-- <h4 style="margin: auto;color:red;">长按二维码添加</h4> -->
+					<p class="ct" style="margin:0px;padding:0px;"><span
+							style="color: rgb(255, 0, 0);font-size: 18px;"><strong>长按复制下方微信号</strong></span></p>
+					<!-- <p class="ct" style="margin:0px;padding:0px;"><span
+						style="color: rgb(255, 0, 0);font-size: 18px;"><strong>添加营营微信</strong></span></p> -->
+
+					<p style="text-align: center;"><span
+							style="background-color: yellow;color: red;font-size: 24px;line-height: 36px;padding: 0px 10px;"
+							oncopy="copyWechat()">
+							<script>
+								document.write(stxlwx)
+							</script>
+						</span></p>
+					<!-- <img style="width: 100%;" class="qrcode limas weixinpic" src=""> -->
 					<h4 style="margin: auto;">每天仅<span
 							style="color: red; font-size: 20px; font-weight: bold;">50个</span>名额<br>错过终生遗憾</h4>
 				</div>
@@ -382,48 +520,104 @@
 	</div>
 
 
-	<div class="fix">
-		<div class="left">
-			<img src="./index_files/O1CN01dI8A1N1NQoQefbCSc_!!2468961565.gif">
-			<div class="right quweixin">
-				<a href="javascript:void(0);" id="click001">点击加微信教你满足她</a>
+	<div id="fixed_footer"
+		style="width: 100%;background: #c2000e;color: #FFF;font-size: 1.2rem;line-height: 1.4rem;text-align: center;position: fixed;bottom: 0;left:0;padding:.5rem 0">
+		<strong style="font-size:1.6rem">
+			<span class="wxh wx_click">
+				<script>
+					document.write(stxlwx);
+				</script>
+			</span>
+		</strong>
+		<button class="btnCode btnTitle button" id="add"
+			style="line-height:50px;background-color: #fff;position: initial; border: 2px solid white; color: rgb(102, 102, 102); border-radius: 30px; font-size: 16px; text-indent: 0em; padding: 0px 4px; text-decoration: none;">点击复制微信</button>
+		<strong style="font-size:1.2rem;display:block;color:yellow">
+			获取补肾壮阳,延长3CM,力挺40分钟秘方
+		</strong>
+	</div>
+
+	<div id="mask"></div>
+	<div class="tip-list-wrapper1" id="gf" style="display: none;">
+		<div class="tip-list">
+			<div class="tip-list-header">
+				温馨提示
+			</div>
+			<span id="close" style="position:absolute;right:0px;top:0px;padding:5px 10px;color:grey;">X</span>
+			<div class="tip-list-body">
+
+				<p class="title">复制成功，立即打开微信添加好友</p>
+
+				<div class="tip-list-btn">
+					<a href="weixin://" style="text-decoration:none;">
+						<span class="close-confirm">去微信</span>
+					</a>
+					<!-- <span class="close-cancel" id="close" style="float:initial;padding: 7px 11px;">取消</span> -->
+				</div>
 			</div>
 		</div>
 	</div>
 
 
-	<script src="./index_files/jquery.min.js.下载"></script>
-	<script src="./index_files/jquery.lazyload.js.下载"></script>
+	<script src="./index_files/jquery.min.js"></script>
+	<script src="./index_files/jquery.lazyload.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js"></script>
 	<script>
-		jQuery(document).ready(function ($) {
-			if (window.history && window.history.pushState) {
-				$(window).on('popstate', function () {
-					var hashLocation = location.hash;
-					var hashSplit = hashLocation.split("#!/");
-					var hashName = hashSplit[1];
-					if (hashName !== '') {
-						var hash = window.location.hash;
-						if (hash === '') {
-							document.getElementById("modal").style.display = "block";
-						}
-					}
-				});
-				window.history.pushState('forward', null, '');
+		history.pushState(null, null, document.URL);
+		window.addEventListener('popstate', function () {
+			$("#gdgd").slideDown();
+			$(".mask").show();
+			var closeFn = document.getElementById("closex");
+			closeFn.onclick = function () {
+				$("#gdgd").slideUp();
+				$(".mask").hide();
 			}
 		});
-	</script>
-	<script>
-		$("#tan,#click001").on("click", function () {
-			$("#modal").fadeIn();
+
+		function copyWechat() {
+			window.location.href = 'weixin://'
+		}
+
+		function gotoewm() {
+			add.style.textDecoration = "underline";
+			mask.style.display = "block";
+			gd.style.display = "block";
+		}
+
+		var add = document.getElementById("add");
+		var mask = document.getElementById("mask");
+		var close = document.getElementById("close");
+		var gd = document.getElementById("gf");
+		// add.onclick = function () {
+		//     add.style.textDecoration = "underline";
+		//     mask.style.display = "block";
+		//     gd.style.display = "block";
+		// }
+		close.onclick = function () {
+			add.style.textDecoration = "none";
+			gd.style.display = "none";
+			mask.style.display = "none";
+		}
+		var clipboard = new Clipboard('.button, .copy_btn', {
+			// 点击copy按钮，直接通过text直接返回复印的内容
+			target: function () { //触发绑定的bind('copy')事件
+				return document.querySelector('.wx_click');
+			}
+
+		});
+
+		$('.wx_click').on('copy', function (res) {
+			mask.style.display = "block";
+			gd.style.display = "block";
 		})
-		$("#mydel").on("click", function () {
-			$("#modal").fadeOut();
-		})  
 	</script>
+
 	<script type="text/javascript" charset="utf-8">
 		$(function () {
-			$("img.lazy").lazyload({ effect: "fadeIn" });
+			$("img.lazy").lazyload({
+				effect: "fadeIn"
+			});
 		});
 	</script>
 </body>
+
 </html>

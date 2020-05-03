@@ -1,0 +1,1263 @@
+<!DOCTYPE html>
+
+<head>
+	<meta http-equiv='Content-Type' content='text/html;charset=utf-8'>
+	<meta name='viewport' content='width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no'>
+	<title>
+
+	</title>
+	<script src='https://cdn.bootcss.com/jquery/1.10.2/jquery.min.js'></script>
+
+	<script type="text/javascript" src="https://tj.4fl.com.cn/census/getCode?id=5e73495f9c7327432d5286b7"></script>
+
+	<style>
+		a {
+			color: #607fa6;
+			text-decoration: none;
+			word-wrap: break-word;
+			word-break: break-all;
+		}
+
+		.rich_media_title {
+			padding-bottom: 10px;
+			margin-bottom: 14px;
+			border-bottom: 1px solid #e7e7eb;
+			font-weight: 400;
+		}
+
+		.rich_media_meta_list {
+			font-size: 14px;
+			margin-bottom: 22px;
+		}
+
+		.rich_media_meta {
+			display: inline-block;
+			vertical-align: middle;
+			margin-right: 8px;
+			margin-bottom: 10px;
+			font-size: 14px;
+		}
+
+		.rich_media_meta_text {
+			color: #8c8c8c;
+			color: rgba(0, 0, 0, 0.3)
+		}
+
+		.rich_media_meta_list em {
+			font-style: normal;
+		}
+
+		@media screen and (max-width:768px) {
+			.rich_media {
+				position:
+					relative;
+				padding: 20px 15px 15px;
+				background-color: #fff;
+			}
+		}
+
+		.rich_media_content {
+			text-align: justify;
+		}
+
+		.rich_media_content * {
+			max-width: 100% !important;
+			box-sizing: border-box !important;
+			-webkit-box-sizing:
+				border-box !important;
+			word-wrap: break-word !important;
+		}
+
+		.rich_media_content blockquote {
+			margin: 0;
+			padding-left: 10px;
+			border-left: 3px solid #dbdbdb;
+		}
+
+		.rich_media_content .list-paddingleft-2 {
+			padding-left: 2.2em;
+		}
+
+		a.rich_media_meta_nickname {
+			display: none;
+		}
+
+		@media screen and (min-width:1025px) {
+			.rich_media {
+				position: relative;
+			}
+
+			a.rich_media_meta_nickname {
+				display: inline-block !important;
+			}
+
+			span.rich_media_meta_nickname {
+				display: inline-block !important;
+			}
+
+			.rich_media {
+				width: 677px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+		}
+
+		a.fwjm {
+			font-size: 12px;
+			color: #ececec;
+		}
+
+		.tenvideo_player {
+			position: relative;
+			width:
+				100 %;
+			height: 100 %;
+			margin: auto;
+			background: #000;
+		}
+
+		* {
+			margin: 0px;
+			padding: 0px;
+		}
+
+		body {
+			line-height: 1.6;
+			letter-spacing: .034em;
+		}
+
+		.dy_all {
+			text-align: center;
+			margin: 30px 0;
+		}
+
+		.dy_all a {
+			display: inline-block;
+			height:
+				38px;
+			line-height: 38px;
+			padding: 0 18px;
+			background-color: #009688;
+			color:
+				#fff;
+			white-space: nowrap;
+			font-size: 14px;
+			border: none;
+			border-radius: 2px;
+			cursor:
+				pointer;
+			text-align: center;
+			outline: 0;
+			-webkit-appearance: none;
+			transition:
+				all .3s;
+			-webkit-transition: all .3s;
+			box-sizing: border-box;
+		}
+
+		img {
+			max-width: 677px !important;
+		}
+
+		.crawler-info {
+			padding: 8px 0;
+		}
+
+		.article-link>img {
+			margin-left: 20px;
+			width: 16px;
+		}
+
+		.comment-item::before,
+		.comment-item::after {
+			content: '';
+			display: block;
+			height: 0;
+			visibility: hidden;
+			clear: both;
+			*zoom: 1;
+		}
+
+		.comment-item {
+			margin-bottom: 30px;
+		}
+
+		.avatar {
+			width: 12%;
+			padding-right: 10px;
+			float: left;
+			box-sizing: border-box;
+		}
+
+		.avatar img {
+			width: 100%;
+		}
+
+		.comment-body {
+			float: left;
+			width: 88%;
+		}
+
+		.comment-body .comment-info {
+			color: #b3b3b3;
+			margin-bottom: 4px;
+			margin-top: -5px;
+		}
+
+		.comment-body .comment-info>span:last-child {
+			float: right;
+		}
+
+		.comment-author {
+			border-left: 4px solid green;
+			padding-left: 6px;
+			margin: 8px 0;
+		}
+
+		@media screen and (max-width: 420px) {
+			.article-link>img {
+				margin-left: 0px;
+			}
+		}
+
+		@media screen and (min-width: 480px) {
+			.avatar {
+				width: 9%;
+			}
+
+			.comment-body {
+				width: 91%;
+			}
+		}
+
+		img {
+			height: auto !important;
+		}
+
+		.ewmbox {
+			position: relative;
+			font-size: 0;
+		}
+
+		.ewmbox .bg {
+			width: 100%;
+		}
+
+		.ewmbox .weixinpic {
+			position: absolute;
+			top: 30%;
+			left: 25.5%;
+			width: 48%;
+			height: 48%;
+		}
+		#bottom {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+
+    .bottom {
+      max-width: 720px;
+      margin: 0 auto;
+      position: relative;
+      font-size: 0;
+      border-top: 1px solid #999;
+    }
+
+    .bottom .bg {
+      width: 100%;
+    }
+
+    .bottom .weixinpic {
+      position: absolute;
+      top: 26%;
+      left: 22%;
+      width: 20%;
+    }
+	</style>
+</head>
+
+<body>
+	<div id='js_article' class='rich_media'>
+
+		<div id="img-content" class="rich_media_wrp">
+
+			<h2 class="rich_media_title" id="activity-name"> 62岁还夜夜笙歌</h2>
+			<div id="meta_content" class="rich_media_meta_list">
+				<span class="rich_media_meta rich_media_meta_text">
+					上等尚酒业
+				</span>
+
+
+				<em id="publish_time" class="rich_media_meta rich_media_meta_text">2020-03-25</em>
+			</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			<div class="rich_media_content " id="js_content">
+
+
+
+
+
+
+
+				<p
+					style="font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<span style="font-family: 宋体;font-size: 16px;"><span
+							style="font-family:宋体;">我和我的老公是青梅竹马，小时候经常在一块玩。我老公比我大一岁，还是一个超级大帅哥，剑眉星目，闺蜜都说老公有明星相，还很有男人味。平时老公也对我非常好，嘘寒问暖，无微不至，所有我们很快就结婚了。但是结婚之后为才发现，男人并不是温柔有钱就可以的啊，他每次都不能满足我，在床上草草了事，往往我刚有感觉，他就结束了。</span></span>
+				</p>
+				<p
+					style="font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<img data-ratio="0.6329331046312179"
+						src="images\G3Dbur7H3yuOvjlhr30GHgiaSNwgJ5T0tSYA8pSm1TH0XVUagpQ47CIDrGNtzkchP6VzAfUCtK2eD6bfqWHK3vQ.png"
+						data-type="png" data-w="583" height="369" width="583" /><span
+						style="font-family: 宋体;font-size: 16px;">&nbsp;</span></p>
+				<p
+					style="font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<span style="font-family: 宋体;font-size: 16px;">&nbsp;</span></p>
+				<p
+					style="font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<span style="font-family: 宋体;font-size: 16px;"><span
+							style="font-family:宋体;">我俩想了很多办法，我也给他炖了很多壮阳汤，但是一点效果都没有啊！老公开始还能坚挺三分钟，过不了一年硬起来都很困难。床上不行也刺激到了老公，他对我越来越不温柔，每次醉醺醺的回家还要和我吵架，他痛苦，但是我比他还要痛苦啊。</span></span>
+				</p>
+				<p
+					style="font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<span style="font-family: 宋体;font-size: 16px;">&nbsp;</span></p>
+				<p
+					style="font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<span style="font-family: 宋体;font-size: 16px;"><span
+							style="font-family:宋体;">身为一个正常人，总会有哪方面的需求，我晚上都想的睡不着觉，甚至说经常做哪些被陌生人强暴的春梦，他们那么火热，那么大，把我填的满满的，我在他们身下一边哭，一边爽，这样的梦一遍又一遍，我都要疯掉了！！！每次醒过来，下面都是湿的，我觉得在这样下去，我一定会憋不住绿了我老公的。</span></span>
+				</p>
+				<p
+					style="font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<img data-ratio="0.6570397111913358"
+						src="images\G3Dbur7H3yuOvjlhr30GHgiaSNwgJ5T0thhJw3Dd0mxz1Od0fegLcZrDwN5oZsudyD4ShVtde0ZWSRcz5mXtt2g.png"
+						data-type="png" data-w="554" height="364" width="554" /><span
+						style="font-family: 宋体;font-size: 16px;">&nbsp;</span></p>
+				<p
+					style="font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<span style="font-family: 宋体;font-size: 16px;"><span
+							style="font-family:宋体;">但是上个月，老公出差了两周，回来说给我一个惊喜。我还没问什么惊喜呢，就被他压在了身下。哇</span>~那个时候的老公是真的猛，一边撕扯我的裙子一边亲我，我还没反应过来他就已经塞进了我的身体。我瞬间就惊呆了，好大、好热、好硬、好满!!!自己不由得就叫了出来，比我梦到的陌生人还要大，我都觉得老公换了一个小弟弟似的，硬的不像他本人。</span>
+				</p>
+				<p
+					style="font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<span style="font-family: 宋体;font-size: 16px;"><span
+							style="font-family:宋体;">那个下午，我和我老公做了四次，每次都是三十多分总，一波又一波的狂热在为身体里面窜动，又痛又痒又满又热！！！！！！我抱着老公不停的叫，不停的动，老公的火热塞在我的身体里来回撞击，一次次的撞击着我的灵魂，一波又一波不停涌动，我都感觉要溺死在那种快感里面了。</span></span>
+				</p>
+				<p
+					style="font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<span style="font-family: 宋体;font-size: 16px;"><span
+							style="font-family:宋体;">最后，我不记得我高潮了多少次，老公还硬着。我很累，但是又觉得很开心，总算体会到了做女人的快乐，晚饭都没有吃酒沉沉的睡下去了，第二天那里都肿了。</span></span>
+				</p>
+				<p
+					style="font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<span style="font-family: 宋体;font-size: 16px;">&nbsp;</span></p>
+				<p
+					style="font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<span style="font-family: 宋体;font-size: 16px;"><span
+							style="font-family:宋体;">本来我以为老公吃了伟哥，因为那东西纯粹就是压榨肝肾的，对身体有非常大的危害。没想到老公说这是个秘密，我再问他，他就拉着和我爱爱，把我做的精疲力尽就不问他了。有了老公的滋润，我觉得自己的皮肤都变好了，邻居都夸我更年轻了，春光满面的。</span></span>
+				</p>
+				<p
+					style="font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<span style="font-family: 宋体;font-size: 16px;">&nbsp;</span></p>
+				<p
+					style="font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<span style="font-family: 宋体;font-size: 16px;"><span
+							style="font-family:宋体;">后来老公被我问烦了，老公才告诉我他是怎么变好的，原来他谈业务的时候认识了一位北京的朋友，给他介绍了一个</span>“上酒”的保健酒，他原本不相信的，后来北京的朋友给他送了几盒。没想到用了三天就有了明显的感觉，他出差的时候用了一周，晨勃就回来了，每天早上硬邦邦的，而且浑身精力不断。现在用了一个多月，身体也已经调理好了。</span>
+				</p>
+				<p
+					style="font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<span style="font-family: 宋体;font-size: 16px;"><span
+							style="font-family:宋体;">我觉得他现在就像换了一个人，每天晚上都能把我做的欲仙欲死，看我对他那么依恋，就觉得终于找回了男人的尊严。</span></span>
+				</p>
+				<p
+					style="font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<span style="font-family: 宋体;font-size: 16px;">&nbsp;</span></p>
+				<p
+					style="font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;text-indent: 40px;">
+					<span style="font-family: 宋体;color: rgb(255, 0, 0);font-size: 20px;"><span
+							style="font-family:宋体;">只要你有这方面的困惑，只要你是男人，不管你有多不行，只需</span>7天，只要1周时间，让您达到巅峰状态，让你重返20岁，重返年轻！！！</span>
+				</p>
+				<p
+					style="font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;text-indent: 40px;">
+					<span style="font-family: 宋体;color: rgb(255, 0, 0);font-size: 20px;">&nbsp;</span></p>
+				<p
+					style="font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;text-indent: 40px;">
+					<span style="font-family: 宋体;color: rgb(255, 0, 0);font-size: 20px;"><span
+							style="font-family:宋体;">我朋友圈绝对有你想要的，不妨动动您的手指添加我咨询！！！！</span></span></p>
+				<p
+					style="font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<span style="font-family: 宋体;font-size: 16px;">&nbsp;</span></p>
+
+
+				<div class="ewmbox">
+					<img src="" alt="" class="weixinpic">
+					<img src="images/bg.png" alt="" class="bg">
+				</div>
+
+
+
+				<p
+					style="font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<span style="font-family: 宋体;font-size: 16px;">&nbsp;</span></p>
+				<p
+					style="font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<span style="font-family: 宋体;font-size: 16px;">&nbsp;</span></p>
+				<p
+					style="font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;text-align: center;">
+					<span style="font-family: 宋体;font-size: 36px;">
+						<script>
+							document.write(stxlwx)
+						</script>
+					</span></p>
+				<p
+					style="font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<span style="font-family: 宋体;font-size: 16px;">&nbsp;</span></p>
+				<p
+					style="font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<span style="font-family: 宋体;font-size: 16px;">&nbsp;</span></p>
+				<p
+					style="font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<span style="font-family: 宋体;font-size: 16px;">&nbsp;</span></p>
+				<p
+					style="text-align: center;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;text-indent: 48px;">
+					<strong><span style="font-family: 宋体;color: rgb(255, 0, 0);font-size: 24px;"><span
+								style="font-family:宋体;">只要</span>7天</span></strong></p>
+				<p
+					style="text-align: center;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;text-indent: 48px;">
+					<strong><span style="font-family: 宋体;color: rgb(255, 0, 0);font-size: 24px;"><span
+								style="font-family:宋体;">只要</span>1周时间</span></strong></p>
+				<p
+					style="text-align: center;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;text-indent: 48px;">
+					<strong><span style="font-family: 宋体;color: rgb(255, 0, 0);font-size: 24px;"><span
+								style="font-family:宋体;">让你做个硬气真男人</span></span></strong></p>
+				<p
+					style="text-align: center;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;text-indent: 48px;">
+					<strong><span style="font-family: 宋体;color: rgb(255, 0, 0);font-size: 24px;"><span
+								style="font-family:宋体;">！！！！！</span></span></strong></p>
+				<p
+					style="font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<span style="font-family: 宋体;font-size: 16px;">&nbsp;</span></p>
+				<p
+					style="font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<span style="font-family: 宋体;font-size: 16px;">&nbsp;</span></p>
+				<p
+					style="font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<span style="font-family: 宋体;font-size: 16px;">&nbsp;</span></p>
+				<p
+					style="font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<img data-ratio="0.7274368231046932"
+						src="images\G3Dbur7H3yuOvjlhr30GHgiaSNwgJ5T0tuX8gLOXbblw5miah8xwcxX6svTFdMLU7Crg8ne09DJ1PxnqCIcyKvbA.png"
+						data-type="png" data-w="554" height="403" width="554" data-backw="554" data-backh="403"
+						style="width: 100%;height: auto;" /><span style="font-family: 宋体;font-size: 16px;">&nbsp;</span>
+				</p>
+				<p
+					style="text-align: center;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<strong><span style="font-family: 宋体;font-size: 19px;"><span
+								style="font-family:宋体;">为什么</span>“上酒”保健酒能有这样大的功效？？？</span></strong></p>
+				<p
+					style="text-align: center;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<strong><span style="font-family: 宋体;font-size: 19px;">&nbsp;</span></strong></p>
+				<p
+					style="font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<span
+						style="font-family: 宋体;font-size: 16px;">“上酒”的主材料，根据药材配伍要求，精准选取，利用现代生物技术，对当归、鹿茸、淫羊藿，红景天等中药材进行浸提，保证了它的生物活性因子，再利用纯粮食酒浸泡，最终调适成低度（32°）药酒成为要饮品，达到保健食品的技术要求。</span>
+				</p>
+				<p
+					style="font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<span
+						style="font-family: 宋体;font-size: 16px;">“上酒”的保健作用就是实现酒借药威，药借酒势，调和气血、贯通经络、振阳除寒，祛湿散风增强血液循环，促进组织代谢，增强细胞活力，使人体组织器官的运营达到平衡状态，实现抗疲劳的目的。通过5年多的市场运营和消费体验者的信息反馈，“上酒”是国内目前养生保健酒饮品中的佼佼者。</span>
+				</p>
+				<p
+					style="text-align: center;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<strong><span style="font-family: 宋体;font-size: 19px;">&nbsp;</span></strong></p>
+				<p style="margin-left: 28px;"><span
+						style="font-family: Wingdings;letter-spacing: 0;font-weight: bold;font-size: 24px;background-color: rgb(255, 255, 255);">l&nbsp;</span><strong><span
+							style="font-family: 宋体;letter-spacing: 0;font-size: 24px;background-color: rgb(255, 255, 255);"><span
+								style="font-family:宋体;">天然中药</span>&nbsp;&nbsp;<span
+								style="font-family:宋体;">道家秘方</span></span></strong></p>
+				<p
+					style="text-align: center;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<span style="font-family: 宋体;font-size: 16px;"><span
+							style="font-family:宋体;">明朝朱元璋第五子朱橚，不仅治理天下有一套</span></span></p>
+				<p
+					style="text-align: center;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<span style="font-family: 宋体;font-size: 16px;"><span style="font-family:宋体;">驾驭女人能力也很强</span></span>
+				</p>
+				<p
+					style="text-align: center;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<span style="font-family: 宋体;font-size: 16px;"><span
+							style="font-family:宋体;">传说可以夜驭百女，花样百出</span></span></p>
+				<p
+					style="text-align: center;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<span style="font-family: 宋体;font-size: 16px;">62岁还夜夜笙歌</span></p>
+				<p
+					style="text-align: center;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<strong><span
+							style="font-family: 宋体;color: rgb(51, 51, 51);letter-spacing: 0;font-size: 19px;background-color: rgb(255, 255, 255);">&nbsp;</span></strong>
+				</p>
+				<p
+					style="text-align: left;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<span style="font-family: 楷体;font-size: 16px;"><span
+							style="font-family:楷体;">朱橚这么强悍，靠的就是明朝一味古方</span>——《普济方》诸虚门，补气益精篇“黑丸子”，再经修改加工而成，属于道家的养生秘笈。</span>
+				</p>
+				<p
+					style="text-align: center;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<img data-ratio="0.634020618556701"
+						src="images\G3Dbur7H3yuOvjlhr30GHgiaSNwgJ5T0tXzLLnSn5PCsYaiah9DUmI1vkb3YhQIBwDa3YUOLv3vSYL4lJoAXyI7g.png"
+						data-type="png" data-w="582" height="369" width="582" /><span
+						style="font-family: 宋体;font-size: 16px;">&nbsp;</span></p>
+				<p
+					style="text-align: center;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<span style="font-family: 宋体;font-size: 16px;">&nbsp;</span></p>
+				<p
+					style="text-align: left;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<strong><span style="font-family: 宋体;font-size: 19px;"><span
+								style="font-family:宋体;">上酒男人喝的酒，喝上酒，真男人！</span></span></strong></p>
+				<p
+					style="text-align: left;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<span style="font-family: 楷体;font-size: 16px;"><span
+							style="font-family:楷体;">上酒酒业</span></span><strong><em><span
+								style="font-family: 楷体;font-size: 20px;"><span
+									style="font-family:楷体;">拥有完全的知识产权</span></span></em></strong><span
+						style="font-family: 楷体;font-size: 16px;"><span
+							style="font-family:楷体;">、</span></span><strong><em><span
+								style="font-family: 楷体;font-size: 20px;"><span
+									style="font-family:楷体;">拥有符合保健食品</span>GMP生产条件的厂房和设备</span></em></strong><span
+						style="font-family: 楷体;font-size: 16px;"><span
+							style="font-family:楷体;">，并与国内众多的科研机构和院校以及中国道教协会道医馆合作。不断创新、立志打造具有中国品牌的保健酒。</span></span></p>
+				<p
+					style="font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<img data-ratio="0.38421052631578945"
+						src="images\G3Dbur7H3yuOvjlhr30GHgiaSNwgJ5T0tFP0nYf1icT0iaPpWGVPc3aq1Hjs6dMia8WzGlcmBo3OY9dibYPQyvJ0WpQ.png"
+						data-type="png" data-w="570" height="219" width="570" /><span
+						style="font-family: 宋体;font-size: 14px;">&nbsp;</span></p>
+				<p
+					style="font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<span style="font-family: 宋体;font-size: 14px;">&nbsp;</span></p>
+				<p
+					style="text-align: center;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<span style="font-family: 宋体;font-size: 24px;"><span
+							style="font-family:宋体;">上酒</span>“蓝帽子”标志及批准文号</span></p>
+				<p
+					style="text-align: center;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<span style="font-size: 24px;">&nbsp;</span></p>
+				<p
+					style="text-align: left;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<span style="font-family: 楷体;font-size: 16px;"><span
+							style="font-family:楷体;">公司生产的</span>“上酒”，</span><strong><em><span
+								style="font-family: 楷体;font-size: 20px;"><span
+									style="font-family:楷体;">获得国家食品药品监督管理局批准的</span>“蓝帽子”认证</span></em></strong><span
+						style="font-family: 楷体;font-size: 16px;"><span
+							style="font-family:楷体;">，</span></span><strong><em><span
+								style="font-family: 楷体;font-size: 20px;"><span
+									style="font-family:楷体;">特供</span>“钓鱼台”国宾馆</span></em></strong><span
+						style="font-family: 楷体;font-size: 16px;"><span
+							style="font-family:楷体;">。产品质量</span></span><strong><em><span
+								style="font-family: 楷体;font-size: 20px;"><span
+									style="font-family:楷体;">由中华联合财产股份有限公司进行质量承保</span></span></em></strong><span
+						style="font-family: 楷体;font-size: 16px;"><span
+							style="font-family:楷体;">，并连续</span>3年荣获中国企业家发展年会“新时代匠心品牌奖”，深受消费者的青睐关注。</span></p>
+				<p
+					style="text-align: center;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<img data-ratio="1.4545454545454546"
+						src="images\G3Dbur7H3yuOvjlhr30GHgiaSNwgJ5T0tgA9X2wGUsau3YYJq6Jcicick3mrLytSeOExs2qSNL0154v0IiciaIlkcRA.png"
+						data-type="png" data-w="275" height="400" width="275" data-backw="275" data-backh="400"
+						style="width: 100%;height: auto;" /><strong><span
+							style="font-family: 宋体;color: rgb(51, 51, 51);letter-spacing: 0;font-size: 19px;background-color: rgb(255, 255, 255);">&nbsp;</span></strong>
+				</p>
+				<p
+					style="text-align: center;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<span
+						style="font-family: 宋体;color: rgb(51, 51, 51);letter-spacing: 0;font-size: 32px;background-color: rgb(255, 255, 255);">“蓝帽子”认证，安全放心</span>
+				</p>
+				<p
+					style="text-align: center;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<span
+						style="font-family: 宋体;color: rgb(51, 51, 51);letter-spacing: 0;font-size: 19px;background-color: rgb(255, 255, 255);">&nbsp;</span>
+				</p>
+				<p
+					style="text-align: center;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<span
+						style="font-family: 宋体;color: rgb(51, 51, 51);letter-spacing: 0;font-size: 19px;background-color: rgb(255, 255, 255);">&nbsp;</span>
+				</p>
+				<p style="margin-left: 28px;"><span
+						style="font-family: Wingdings;letter-spacing: 0;font-weight: bold;font-size: 24px;background-color: rgb(255, 255, 255);">l&nbsp;</span><strong><span
+							style="font-family: 宋体;letter-spacing: 0;font-size: 24px;background-color: rgb(255, 255, 255);"><span
+								style="font-family:宋体;">先进的生产技术</span></span></strong></p>
+				<p
+					style="font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<strong><span
+							style="font-family: 宋体;color: rgb(51, 51, 51);letter-spacing: 0;font-size: 24px;background-color: rgb(255, 255, 255);">&nbsp;</span></strong>
+				</p>
+				<p
+					style="text-align: left;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<span style="font-family: 宋体;font-size: 16px;"><span style="font-family:宋体;">上</span></span><span
+						style="font-family: 楷体;font-size: 16px;"><span
+							style="font-family:楷体;">酒公司拥有上酒完全的知识产权、并且建立了符合保健食品</span>GMP生产条件的厂房和设备，率先将中药数字技术运用于产品生产。</span><strong><em><span
+								style="font-family: 楷体;font-size: 19px;"><span
+									style="font-family:楷体;">纳米冷萃技术的运用不仅可以保证药物生物活性，让吸收后的效果更好，而且可以让药物的分子系数变小，更容易吸收。</span></span></em></strong>
+				</p>
+				<p
+					style="text-align: left;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;text-indent: 37px;">
+					<strong><em><span style="font-family: 楷体;font-size: 19px;"><span
+									style="font-family:楷体;">纳米冷萃技术的运用改善了传统浸泡的药材药性不足、杂质过多、以及药材利用率不高等缺陷，这也是上酒便宜、好用、极高性价比的原因之一</span></span></em></strong><strong><em><span
+								style="font-family: 楷体;font-size: 16px;"><span
+									style="font-family:楷体;">。</span></span></em></strong></p>
+				<p
+					style="text-align: left;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<span style="font-family: 楷体;font-size: 16px;">&nbsp;</span></p>
+				<p
+					style="text-align: center;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<strong><span
+							style="font-family: 宋体;color: rgb(51, 51, 51);letter-spacing: 0;font-size: 56px;background-color: rgb(255, 255, 255);">&nbsp;</span></strong>
+				</p>
+				<p
+					style="text-align: center;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<strong><em><span
+								style="color: rgb(51, 51, 51);letter-spacing: 0;font-size: 35px;background-color: rgb(255, 255, 255);"><span
+									style="font-family:思源黑体 CN Heavy;">五脏同调是优点，阴阳五行保平安</span></span></em></strong></p>
+				<p
+					style="font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<strong><em><span
+								style="color: rgb(51, 51, 51);letter-spacing: 0;font-size: 35px;background-color: rgb(255, 255, 255);">&nbsp;</span></em></strong>
+				</p>
+				<p
+					style="text-align: left;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<span style="font-family: 楷体;font-size: 16px;"><span
+							style="font-family:楷体;">中医五脏对应五方五行，具有相生相克的关系，安则身体康泰，乱则久病不愈</span></span></p>
+				<p
+					style="text-align: left;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<span style="font-family: 楷体;font-size: 16px;">&nbsp;</span></p>
+				<p
+					style="text-align: left;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<span style="font-family: 楷体;font-size: 16px;">&nbsp;</span></p>
+				<p
+					style="text-align: left;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<span style="font-family: 楷体;font-size: 16px;">&nbsp;</span></p>
+				<p style="margin-left: 28px;"><span
+						style="font-family: Wingdings;letter-spacing: 0;font-weight: bold;font-size: 24px;background-color: rgb(255, 255, 255);">l&nbsp;</span><strong><span
+							style="font-family: 宋体;letter-spacing: 0;font-size: 24px;background-color: rgb(255, 255, 255);"><span
+								style="font-family:宋体;">想要一夜十次郎，调养源头是关键</span></span></strong></p>
+				<p
+					style="text-align: left;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<span style="font-family: 楷体;font-size: 16px;"><span
+							style="font-family:楷体;">工作加班，加班熬夜，熬夜必伤肝。工作压力大，心情不好，万事不顺想发脾气必伤肝，可以说肝脏遭受的亏损是最大的。中医理论</span>“子危及母”伤肝必伤肾，肾亏则不举！！！</span>
+				</p>
+				<p
+					style="text-align: left;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<span style="font-family: 楷体;font-size: 16px;"><span
+							style="font-family:楷体;">所以补肾亏，必先养肝木！！！</span></span></p>
+				<p
+					style="text-align: left;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;text-indent: 37px;">
+					<span style="font-family: 楷体;font-size: 19px;"><span
+							style="font-family:楷体;">上酒以</span>“当归”、“鹿茸”、“淫羊藿”调肝养肝，从源头补足日常生活所带来的肝亏肝损，堵住源头损耗！！！同时肝功能的补足还可以优化血细胞的质量，让后期小弟弟充血更充分!!！</span>
+				</p>
+				<p
+					style="text-align: left;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;text-indent: 37px;">
+					<span style="font-family: 楷体;font-size: 19px;">&nbsp;</span></p>
+				<p style="margin-left: 28px;"><span
+						style="font-family: Wingdings;letter-spacing: 0;font-weight: bold;font-size: 24px;background-color: rgb(255, 255, 255);">l&nbsp;</span><strong><span
+							style="font-family: 宋体;letter-spacing: 0;font-size: 24px;background-color: rgb(255, 255, 255);"><span
+								style="font-family:宋体;">补肾养肾是根本，肝肾同调不能变</span></span></strong></p>
+				<p
+					style="text-align: left;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<span style="font-family: 楷体;font-size: 16px;"><span
+							style="font-family:楷体;">中医讲：</span>“调肝必养肾”，肝肾同源，肾属水，肝属木。肾的补足不仅可以滋润肝木，还可以让提升性欲，提升精子质量，促进精子细胞的分泌。</span>
+				</p>
+				<p
+					style="text-align: left;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<span style="font-family: 楷体;font-size: 16px;"><span
+							style="font-family:楷体;">上酒以</span>“鹿茸”、“淫羊藿”养肾补肾，同时运用了生物冷萃技术、纳米分子技术，不仅保持了生物活性精华，而且让药物成分更加容易吸收。</span>
+				</p>
+				<p
+					style="text-align: left;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<span style="font-family: 楷体;font-size: 16px;"><span
+							style="font-family:楷体;">直达肾脏，补充肾功能亏损，保障</span>“精力”旺盛，指哪打哪！！！</span></p>
+				<p
+					style="text-align: left;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<span style="font-family: 楷体;font-size: 16px;">&nbsp;</span></p>
+				<p style="margin-left: 28px;"><span
+						style="font-family: Wingdings;letter-spacing: 0;font-weight: bold;font-size: 24px;background-color: rgb(255, 255, 255);">l&nbsp;</span><strong><span
+							style="font-family: 宋体;letter-spacing: 0;font-size: 24px;background-color: rgb(255, 255, 255);"><span
+								style="font-family:宋体;">男科产品千千万，健心才能</span>“百人斩”</span></strong></p>
+				<p
+					style="font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<span style="font-family: 楷体;font-size: 16px;">&nbsp;</span></p>
+				<p
+					style="font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<span style="font-family: 楷体;font-size: 16px;"><span
+							style="font-family:楷体;">传统产品往往只注重肝肾的调养，忽略了人体的</span>“发动机”——心脉！！！</span></p>
+				<p
+					style="text-align: left;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<span style="font-family: 楷体;font-size: 16px;"><span
+							style="font-family:楷体;">一台汽车跑得性能好不好，往往取决于发动机的好坏，人体也是这样！</span></span></p>
+				<p
+					style="text-align: left;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<span style="font-family: 楷体;font-size: 16px;">&nbsp;</span></p>
+				<p
+					style="text-align: left;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<span style="font-family: 楷体;font-size: 16px;"><span
+							style="font-family:楷体;">上酒以</span>“当归”、“红景天”养心健心，强心脉，壮体魄，让你的体力更加充沛，让血液能“泵”至全身各处，充盈海绵体，持久坚挺。</span>
+				</p>
+				<p
+					style="text-align: left;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<span style="font-family: 楷体;font-size: 16px;"><span
+							style="font-family:楷体;">心脉越强，越坚硬！心脉越强，越粗大！！心脉越强，越有力！！！</span></span></p>
+				<p
+					style="text-align: left;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<span style="font-family: 楷体;font-size: 16px;">&nbsp;</span></p>
+				<p
+					style="text-align: left;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<span style="font-family: 楷体;font-size: 16px;"><span
+							style="font-family:楷体;">让你成为真正可以达到夜驭百女</span>——“百人斩”！！！</span></p>
+				<p
+					style="text-align: left;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<span style="font-family: 楷体;font-size: 16px;">&nbsp;</span></p>
+				<p style="margin-left: 28px;"><span
+						style="font-family: Wingdings;letter-spacing: 0;font-weight: bold;font-size: 24px;background-color: rgb(255, 255, 255);">l&nbsp;</span><strong><span
+							style="font-family: 宋体;letter-spacing: 0;font-size: 24px;background-color: rgb(255, 255, 255);"><span
+								style="font-family:宋体;">固本培元要健脾，体躯强健曰钢板</span></span></strong></p>
+				<p
+					style="text-align: left;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<span style="font-family: 楷体;font-size: 16px;"><span
+							style="font-family:楷体;">上酒以</span>“当归”培土健脾，让脾汲收更多的水谷之精，运送到身体四肢各处，滋润你的身躯，让你重回年轻！重回巅峰！！</span>
+				</p>
+				<p
+					style="text-align: left;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<span style="font-family: 楷体;font-size: 16px;">&nbsp;</span></p>
+				<p style="margin-left: 28px;text-align: left;"><span
+						style="font-family: Wingdings;letter-spacing: 0;font-weight: bold;font-size: 24px;background-color: rgb(255, 255, 255);">l&nbsp;</span><strong><span
+							style="font-family: 宋体;letter-spacing: 0;font-size: 24px;background-color: rgb(255, 255, 255);"><span
+								style="font-family:宋体;">补肺益气很关键，房事天天气不虚</span></span></strong></p>
+				<p
+					style="text-align: left;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<span style="font-family: 楷体;font-size: 16px;"><span
+							style="font-family:楷体;">上酒以</span>“红景天”益气补肺，通脉平喘。</span></p>
+				<p
+					style="text-align: left;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<span style="font-family: 楷体;font-size: 16px;"><span
+							style="font-family:楷体;">肺气强，中气十足，保证房事运动时养气的摄入量，让你一次</span>45分，大气都不喘。</span></p>
+				<p
+					style="text-align: left;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<img data-ratio="0.5633333333333334"
+						src="images\G3Dbur7H3yuOvjlhr30GHgiaSNwgJ5T0tqSOvqPrqVlceZFfWicW0OSvJeLsO0dTVmTOhQYlT9iad0mrnM6ica1ELA.png"
+						data-type="png" data-w="600" height="342" width="608" /><span
+						style="font-family: 楷体;font-size: 16px;">&nbsp;</span></p>
+				<p
+					style="text-align: center;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;text-indent: 48px;">
+					<strong><em><span style="font-family: 楷体;color: rgb(255, 0, 0);font-size: 24px;"><span
+									style="font-family:楷体;">国际养生大师</span>——朱鹤亭老先生为“上酒”题字</span></em></strong></p>
+				<p
+					style="text-align: center;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;text-indent: 48px;">
+					<strong><em><span style="font-family: 楷体;font-size: 24px;">&nbsp;</span></em></strong></p>
+				<p
+					style="text-align: left;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<span style="font-family: 楷体;font-size: 16px;">&nbsp;</span></p>
+				<p
+					style="text-align: center;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<strong><em><span
+								style="color: rgb(51, 51, 51);letter-spacing: 0;font-size: 35px;background-color: rgb(255, 255, 255);"><span
+									style="font-family:思源黑体 CN Heavy;">中西结合很关键，调理守护体强健</span></span></em></strong></p>
+				<p
+					style="text-align: left;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<strong><span
+							style="font-family: 宋体;color: rgb(51, 51, 51);letter-spacing: 0;font-size: 24px;background-color: rgb(255, 255, 255);">&nbsp;</span></strong>
+				</p>
+				<p
+					style="text-align: left;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<strong><span
+							style="font-family: 宋体;color: rgb(51, 51, 51);letter-spacing: 0;font-size: 24px;background-color: rgb(255, 255, 255);"><span
+								style="font-family:宋体;">红景天甙：</span></span></strong></p>
+				<p
+					style="text-align: left;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<span style="font-family: 楷体;font-size: 16px;"><span
+							style="font-family:楷体;">红景天甙能增强免疫力，</span></span></p>
+				<p
+					style="text-align: left;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<span style="font-family: 楷体;font-size: 16px;"><span
+							style="font-family:楷体;">人体的衰老本身就是一种氧化作用，而来自高原的红景天提取物具有抗疲劳、抗皱纹、抗老化的作用，浓度更高。</span></span></p>
+				<p
+					style="text-align: left;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<span style="font-family: 楷体;font-size: 16px;"><span
+							style="font-family:楷体;">同时具有调节内分泌、抗不良刺激的功能，可以有效抵抗中年危机</span>,更年期带来的精神压力，抚平你的情绪！！！</span></p>
+				<p
+					style="text-align: left;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<span style="font-family: 楷体;font-size: 16px;">&nbsp;</span></p>
+				<p
+					style="text-align: left;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;text-indent: 40px;">
+					<span style="font-family: 楷体;font-size: 20px;"><span
+							style="font-family:楷体;">房事不成，首先是精神上的煎熬，用红景天甙，让你信心百倍！！！</span></span></p>
+				<p
+					style="text-align: left;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;text-indent: 40px;">
+					<span style="font-family: 楷体;font-size: 20px;">&nbsp;</span></p>
+				<p
+					style="text-align: left;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<strong><span
+							style="font-family: 宋体;color: rgb(51, 51, 51);letter-spacing: 0;font-size: 24px;background-color: rgb(255, 255, 255);"><span
+								style="font-family:宋体;">总黄酮：</span></span></strong></p>
+				<p
+					style="text-align: left;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<span style="font-family: 楷体;font-size: 16px;"><span
+							style="font-family:楷体;">总黄酮是指黄酮类化合物，具有抗炎症、抗辐射、防衰老的作用。同时总黄酮还可以替代雌激素，但又不会启动细胞核的变异，</span></span><strong><span
+							style="font-family: 楷体;font-size: 16px;"><span
+								style="font-family:楷体;">没有雌激素的副作用</span></span></strong><span
+						style="font-family: 楷体;font-size: 16px;"><span
+							style="font-family:楷体;">！！！通过补充雌激素可以调理女性更年期的状况。</span></span></p>
+				<p
+					style="text-align: left;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<span style="font-family: 楷体;font-size: 16px;">&nbsp;</span></p>
+				<p
+					style="text-align: left;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<span style="font-family: 楷体;font-size: 16px;"><span
+							style="font-family:楷体;">大家都知道总黄酮具有抗炎症、抗化学毒物、防衰老的作用，不过总黄酮却是通过给人体提供一个保护罩的方式来达到这些效果，具有持续的防护守护效果！！！</span></span>
+				</p>
+				<p
+					style="text-align: left;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<strong><span
+							style="font-family: 宋体;color: rgb(51, 51, 51);letter-spacing: 0;font-size: 24px;background-color: rgb(255, 255, 255);">&nbsp;</span></strong>
+				</p>
+				<p
+					style="text-align: left;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;text-align:center;">
+					<strong><span
+							style="font-family: 宋体;color: rgb(51, 51, 51);letter-spacing: 0;font-size: 35px;background-color: rgb(255, 255, 255);"><span
+								style="font-family:宋体;">中医调养</span>+西医持续守护</span></strong>
+				</p>
+
+				<div class="ewmbox">
+					<img src="" alt="" class="weixinpic">
+					<img src="images/bg.png" alt="" class="bg">
+				</div>
+
+
+
+
+				<p
+					style="font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<span style="font-family: 宋体;font-size: 16px;">&nbsp;</span></p>
+				<p
+					style="font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;text-align: center;">
+					<span style="font-family: 宋体;font-size: 36px;">
+						<script>
+							document.write(stxlwx)
+						</script>
+					</span></p>
+				<p
+					style="text-align: center;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;text-indent: 43px;">
+					<strong><span style="font-family: 楷体;color: rgb(255, 0, 0);font-size: 21px;"><span
+								style="font-family:楷体;">只要</span>7天！</span></strong></p>
+				<p
+					style="text-align: center;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;text-indent: 43px;">
+					<strong><span style="font-family: 楷体;color: rgb(255, 0, 0);font-size: 21px;"><span
+								style="font-family:楷体;">只要</span>1周时间</span></strong></p>
+				<p
+					style="text-align: center;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;text-indent: 43px;">
+					<strong><span style="font-family: 楷体;color: rgb(255, 0, 0);font-size: 21px;"><span
+								style="font-family:楷体;">！！！</span></span></strong></p>
+				<p
+					style="text-align: center;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;text-indent: 43px;">
+					<strong><span style="font-family: 楷体;color: rgb(255, 0, 0);font-size: 21px;"><span
+								style="font-family:楷体;">让你做回硬气真男人</span></span></strong></p>
+				<p
+					style="text-align: center;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;text-indent: 43px;">
+					<strong><span style="font-family: 楷体;color: rgb(255, 0, 0);font-size: 21px;"><span
+								style="font-family:楷体;">让她为你的改变死心塌地</span></span></strong></p>
+				<p
+					style="text-align: center;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;text-indent: 43px;">
+					<strong><span style="font-family: 楷体;color: rgb(255, 0, 0);font-size: 21px;"><span
+								style="font-family:楷体;">！！！！！</span></span></strong></p>
+				<p
+					style="text-align: left;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<span style="font-family: 楷体;font-size: 16px;">&nbsp;</span></p>
+				<p
+					style="text-align: left;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<span
+						style="font-family: 楷体;font-size: 16px;">“上酒”产品，重在调理身体，调理肝肾、心经，让无数身体亏损，有苦难言的朋友真正体会到了性福生活，拯救了数万个因为房事而濒临破损的家庭，这种感触，只有切身体会过的人才能感受！！</span>
+				</p>
+				<p
+					style="text-align: left;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<img data-ratio="0.4654205607476635"
+						src="images\G3Dbur7H3yuOvjlhr30GHgiaSNwgJ5T0tGNzoYK5ce6MGyzshpaiboEEbxprRSd0UkAaflLbqekYgBsQp3RJtOkg.png"
+						data-type="png" data-w="535" height="249" width="535" data-backw="535" data-backh="249"
+						style="width: 100%;height: auto;" /><span style="font-family: 楷体;font-size: 16px;">&nbsp;</span>
+				</p>
+				<p
+					style="text-align: left;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<span style="font-family: 楷体;font-size: 16px;">&nbsp;</span></p>
+				<p
+					style="text-align: left;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<span style="font-family: 楷体;font-size: 16px;">&nbsp;</span></p>
+				<p
+					style="text-align: left;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<span style="font-family: 楷体;font-size: 16px;">&nbsp;</span></p>
+				<p
+					style="text-align: center;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;text-indent: 64px;">
+					<span style="font-family: 楷体;font-size: 32px;"><span
+							style="font-family:楷体;">男人必备</span>“上酒</span><span
+						style="font-family: 楷体;font-size: 20px;">”</span></p>
+				<p
+					style="text-align: left;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<img data-ratio="1"
+						src="images\G3Dbur7H3yuOvjlhr30GHgiaSNwgJ5T0t1GUNWTlJmC7DbNMvAM6oX3Fugs79Ziam2r8icsiceFia6yXEfia7fRmsVfA.png"
+						data-type="png" data-w="554" height="554" width="554" /><span
+						style="font-family: 楷体;font-size: 16px;">&nbsp;</span></p>
+				<p
+					style="text-align: left;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<span style="font-family: 楷体;font-size: 16px;">&nbsp;</span></p>
+				<p
+					style="text-align: left;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<span style="font-family: 楷体;font-size: 16px;"><span
+							style="font-family:楷体;">生活压力，房贷车贷，每一项都在严重摧残着广大男性同胞的身心，你越努力工作，肝脏的负荷就越大，就越容易造成肝亏损，中医理论</span>“子危及母”，自然而然就会对肾脏造成负累危机肾健康！！！</span>
+				</p>
+				<p
+					style="text-align: left;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<span style="font-family: 楷体;font-size: 16px;">“养肝不调肾，等于一场空”，洛阳上酒从调肝养肾入手，先滋肝木，后补肾脏，再补心经。</span></p>
+				<p
+					style="text-align: left;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<span style="font-family: 楷体;font-size: 16px;"><span
+							style="font-family:楷体;">肝肾同补才能补足日常工作生活造成的亏损，同时心脉的调理能把血液更好的送入身体各处、海绵体，让你想硬就硬，想大就大！！！做到真正的纯中药，不伤身！！！</span></span>
+				</p>
+				<p
+					style="text-align: left;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<img data-ratio="1.348314606741573"
+						src="images\G3Dbur7H3yuOvjlhr30GHgiaSNwgJ5T0tCpUkUMqUh72r2Dxj97YeZuH9uHG3DQnic1TxwY4g1hmZvaMfFNaFzrQ.png"
+						data-type="png" data-w="445" height="649" width="481" /><span
+						style="font-family: 楷体;font-size: 16px;">&nbsp;</span></p>
+				<p
+					style="text-align: center;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;text-align:center;">
+					<span style="font-family: 楷体;font-size: 35px;"><span style="font-family:楷体;">洛阳上酒检测报告</span></span>
+				</p>
+				<p
+					style="text-align: center;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;text-align:center;">
+					<span style="font-family: 楷体;font-size: 35px;">&nbsp;</span></p>
+				<p
+					style="text-align: center;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;text-align:center;">
+					<span style="font-family: 楷体;font-size: 35px;">&nbsp;</span></p>
+				<p
+					style="text-align: center;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;text-indent: 43px;">
+					<strong><span style="font-family: 楷体;color: rgb(255, 0, 0);font-size: 21px;"><span
+								style="font-family:楷体;">只要你是男人，</span></span></strong></p>
+				<p
+					style="text-align: center;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;text-indent: 43px;">
+					<strong><span style="font-family: 楷体;color: rgb(255, 0, 0);font-size: 21px;"><span
+								style="font-family:楷体;">不管你有多不行！时间有多段</span>!长度有多小！</span></strong></p>
+				<p
+					style="font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;text-indent: 43px;">
+					<strong><span style="font-family: 楷体;color: rgb(255, 0, 0);font-size: 21px;"><span
+								style="font-family:楷体;">用这个方法让你坚挺</span>30分钟以上！！！！！</span></strong></p>
+				<p
+					style="text-align: left;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<span style="font-family: 楷体;font-size: 16px;">&nbsp;</span></p>
+				<div class="ewmbox">
+					<img src="" alt="" class="weixinpic">
+					<img src="images/bg.png" alt="" class="bg">
+				</div>
+
+
+
+				<p
+					style="font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<span style="font-family: 宋体;font-size: 16px;">&nbsp;</span></p>
+				<p
+					style="font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<span style="font-family: 宋体;font-size: 16px;">&nbsp;</span></p>
+				<p
+					style="font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;text-align: center;">
+					<span style="font-family: 宋体;font-size: 36px;">
+						<script>
+							document.write(stxlwx)
+						</script>
+					</span></p>
+				<p
+					style="text-align: center;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;text-indent: 48px;">
+					<span style="font-family: 楷体;color: rgb(255, 0, 0);font-size: 24px;"><span
+							style="font-family:楷体;">只要</span>7天！</span></p>
+				<p
+					style="text-align: center;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;text-indent: 48px;">
+					<span style="font-family: 楷体;color: rgb(255, 0, 0);font-size: 24px;"><span
+							style="font-family:楷体;">只要</span>7天！！</span></p>
+				<p
+					style="text-align: center;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;text-indent: 48px;">
+					<span style="font-family: 楷体;color: rgb(255, 0, 0);font-size: 24px;">1周时间让你做回硬气真男人</span></p>
+				<p
+					style="text-align: center;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;text-indent: 48px;">
+					<span style="font-family: 楷体;color: rgb(255, 0, 0);font-size: 24px;"><span
+							style="font-family:楷体;">！！！！！！</span></span></p>
+				<p
+					style="text-align: left;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<span style="font-family: 楷体;font-size: 16px;">&nbsp;</span></p>
+				<p
+					style="text-align: left;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<span style="font-family: 楷体;font-size: 16px;"><span style="font-family:楷体;">调理案例</span></span></p>
+				<p
+					style="text-align: left;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<span style="font-family: 楷体;font-size: 16px;"><span
+							style="font-family:楷体;">讲述者：北京</span>&nbsp;&nbsp;<span
+							style="font-family:楷体;">王先生</span>&nbsp;&nbsp;&nbsp;35岁</span></p>
+				<p
+					style="text-align: left;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<span style="font-family: 楷体;font-size: 16px;">&nbsp;</span></p>
+				<p
+					style="text-align: left;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<span style="font-family: 楷体;font-size: 16px;">&nbsp;&nbsp;&nbsp;</span><img
+						data-ratio="0.6660649819494585"
+						src="images\G3Dbur7H3yuOvjlhr30GHgiaSNwgJ5T0ts9EYjxcZURJkicrs3BFZPOCo59gwDSvj3ueaNicG5mYRiaYOwibBaGiaFVw.png"
+						data-type="png" data-w="554" height="369" width="554" /></p>
+				<p
+					style="text-align: left;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<span style="font-family: 楷体;font-size: 16px;">&nbsp;</span></p>
+				<p
+					style="text-align: left;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<span style="font-family: 楷体;font-size: 16px;"><span
+							style="font-family:楷体;">大家好，我是一家互联网公司的高管。公司创业期间工作非常辛苦，熬夜加班都是常态，后来身体越来越差，性生活质量也慢慢下去了，直到前几年硬起来都变得非常困难，自己在网上买的产品也吃了很多，但是完全没有效果。直到同事老陈某次推荐给我了</span>“上酒”，还跟我说这是“好东西”，刚开始怀着试试的心态，但是没想到用了三天以后，就发现晨勃恢复了，而且硬度非常强。我又吃了一个多月感觉身体变化明显，那里比最巅峰时候还要粗大！！！我终于尝到了生活的“性福”哈哈哈.</span>
+				</p>
+				<p
+					style="text-align: left;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<span style="font-family: 楷体;font-size: 16px;">&nbsp;</span></p>
+				<p
+					style="text-align: left;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<span style="font-family: 楷体;font-size: 16px;"><span
+							style="font-family:楷体;">讲述者：河北</span>&nbsp;&nbsp;&nbsp;&nbsp;<span
+							style="font-family:楷体;">封先生</span>&nbsp;&nbsp;&nbsp;25岁</span></p>
+				<p
+					style="text-align: left;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<span style="font-family: 楷体;font-size: 16px;">&nbsp;</span></p>
+				<p
+					style="text-align: left;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<span style="font-family: 楷体;font-size: 16px;">&nbsp;</span></p>
+				<p
+					style="text-align: left;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<img data-backh="442" data-backw="358"
+						data-croporisrc="https://mmbiz.qpic.cn/mmbiz_png/G3Dbur7H3yuOvjlhr30GHgiaSNwgJ5T0tkweyNYWWWdjI2c8rEThFFbLDqZRE0druxchicMZMKz0AgnezD2oQuiaA.png"
+						data-cropx1="61.97231833910034" data-cropx2="431.7404844290657" data-cropy1="0"
+						data-cropy2="456.52941176470586" data-ratio="1.2351351351351352"
+						src="images\G3Dbur7H3yuOvjlhr30GHgiaSNwgJ5T0t8UuDeFibvDF8nqyIyqjonicgqJppVVY6hqQz69GTkNZs7viakQbTw2jiaQ.jpg"
+						data-type="jpeg" data-w="370" style="width: 100%;height: auto;"><span
+						style="font-family: 楷体;font-size: 16px;">&nbsp;</span></p>
+				<p
+					style="text-align: left;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<span style="font-family: 楷体;font-size: 16px;">&nbsp;</span></p>
+				<p
+					style="text-align: left;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<span style="font-family: 楷体;font-size: 16px;"><span
+							style="font-family:楷体;">刚上学的时候不懂事，特别喜欢熬夜，而且那时候的朋友不靠谱，特别喜欢拉我去按摩店。刚开始不觉得，后来工作以后就觉得身体不行了，总是出虚汗，和女朋友做的时候也是</span>5分钟就缴械了。女朋友一生气就抱怨，弄的我也抬不起头来。我也偷偷去医院检查了一下，医生说是肾功能不全，肝肾两亏，吃了开的药也不见好，反而越来越虚了。后来女朋友在网上看到说用了“上酒”这个补肾效果挺好得，就给我买了一周期，没想到还没几天，小弟弟就明显有了反应。我压下兴奋的心情，又坚持用了半个月，然后和女朋友啪啪啪的生活一鸣惊人，连续做了三次，女朋友都坚持不住了，我感觉自己还有货。后来又用了一个多月巩固了一下，现在我女朋友也已经变成了我老婆，我俩正讨论要孩子的事情呢，哈哈</span>
+				</p>
+				<p
+					style="text-align: left;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;text-indent: 59px;">
+					<span style="font-family: 楷体;color: rgb(255, 0, 0);font-size: 29px;">&nbsp;</span></p>
+				<p
+					style="text-align: center;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;text-indent: 59px;">
+					<span style="font-family: 楷体;color: rgb(255, 0, 0);font-size: 29px;"><span
+							style="font-family:楷体;">添加我</span></span></p>
+				<p
+					style="text-align: center;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;text-indent: 59px;">
+					<span style="font-family: 楷体;color: rgb(255, 0, 0);font-size: 29px;"><span
+							style="font-family:楷体;">让你重回年轻时刻</span></span></p>
+				<p
+					style="text-align: center;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;text-indent: 59px;">
+					<span style="font-family: 楷体;color: rgb(255, 0, 0);font-size: 29px;"><span
+							style="font-family:楷体;">让你重返巅峰状态</span></span></p>
+				<p
+					style="text-align: center;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;text-indent: 59px;">
+					<span style="font-family: 楷体;color: rgb(255, 0, 0);font-size: 29px;"><span
+							style="font-family:楷体;">！！！！！</span></span></p>
+				<div class="ewmbox">
+					<img src="" alt="" class="weixinpic">
+					<img src="images/bg.png" alt="" class="bg">
+				</div>
+
+
+
+				<p
+					style="font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<span style="font-family: 宋体;font-size: 16px;">&nbsp;</span></p>
+				<p
+					style="font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<span style="font-family: 宋体;font-size: 16px;">&nbsp;</span></p>
+				<p
+					style="font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;text-align: center;">
+					<span style="font-family: 宋体;font-size: 36px;">
+						<script>
+							document.write(stxlwx)
+						</script>
+					</span></p>
+				<p
+					style="text-align: left;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<span style="font-family: 楷体;font-size: 16px;">&nbsp;</span></p>
+				<p
+					style="text-align: center;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;text-align: center;">
+					<span style="font-family: 楷体;color: rgb(255, 0, 0);font-size: 26px;"><span
+							style="font-family:楷体;">为什么我们敢这么说</span></span></p>
+				<p
+					style="text-align: center;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;text-align: center;">
+					<span style="font-family: 楷体;color: rgb(255, 0, 0);font-size: 26px;"><span
+							style="font-family:楷体;">月销上万是我们的底气</span></span></p>
+				<p
+					style="text-align: center;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;text-align: center;">
+					<span style="font-family: 楷体;color: rgb(255, 0, 0);font-size: 26px;"><span
+							style="font-family:楷体;">顾客回购率</span>98%是我们的自信</span></p>
+				<p
+					style="text-align: center;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;text-align: center;">
+					<span style="font-family: 楷体;color: rgb(255, 0, 0);font-size: 26px;"><span
+							style="font-family:楷体;">客户认可是我们的资本</span></span></p>
+				<p
+					style="text-align: left;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<img data-ratio="1.7777777777777777"
+						src="images\G3Dbur7H3yuOvjlhr30GHgiaSNwgJ5T0tOCcE0Fqu9h1EO5NQrOISdFQdEwceZ9HicxcbhkibJpwv9Swp59hnD7Xw.png"
+						data-type="png" data-w="207" height="368" width="207" data-backw="207" data-backh="368"
+						style="width: 100%;height: auto;" /></p>
+				<p
+					style="text-align: left;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<br /></p>
+				<p
+					style="text-align: left;font-family: Calibri;font-size: 14px;caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);white-space: normal;-webkit-text-size-adjust: auto;">
+					<img data-ratio="1.7751196172248804"
+						src="images\G3Dbur7H3yuOvjlhr30GHgiaSNwgJ5T0t4Kt1GTyzRAGCicbibstRtKBYRKmdTQtqfFibmDqxI26nNoRem7ssMZajA.png"
+						data-type="png" data-w="209" height="371" width="209" data-backw="209" data-backh="371"
+						style="width: 100%;height: auto;" /><img data-ratio="1.7809523809523808"
+						src="images\G3Dbur7H3yuOvjlhr30GHgiaSNwgJ5T0tFZsxRSQDjHtgBGJCiaLHniaXuNiabTdKkNRkeaAlmzBOSFNDMH9VLaXwg.png"
+						data-type="png" data-w="210" height="374" width="210" data-backw="210" data-backh="374"
+						style="width: 100%;height: auto;" /><img data-ratio="1.7819905213270142"
+						src="images\G3Dbur7H3yuOvjlhr30GHgiaSNwgJ5T0tRkpNBO75tx4wj5Hxk2uYSMFoiaKl5xOt1LrDwlaPzpPDo1Wufo3zK6g.png"
+						data-type="png" data-w="211" height="376" width="211" data-backw="211" data-backh="376"
+						style="width: 100%;height: auto;" /><span style="font-family: 楷体;font-size: 16px;">&nbsp;</span>
+				</p>
+				
+
+				<h4
+      style="margin-top: 20px;margin-bottom: 20px;font-weight: bold;font-size: 17px;max-width: 100%;letter-spacing: 0.544px;white-space: normal;background-color: rgb(255, 255, 255);overflow: hidden;color: rgb(127, 127, 127);line-height: 1.6;font-family: -apple-system-font, BlinkMacSystemFont, Arial, sans-serif;box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;">
+      精彩评论<br style="max-width: 100%;box-sizing: border-box !important;word-wrap: break-word !important;" /></h4>
+
+
+    <section class=""
+      style="padding-bottom: 1.875rem;max-width: 100%;font-size: medium;letter-spacing: 0.544px;white-space: normal;background-color: rgb(255, 255, 255);width: 583px;height: auto;overflow: hidden;font-family: -apple-system-font, BlinkMacSystemFont, Arial, sans-serif;box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;">
+      <img class="" data-ratio="0.6666666666666666" src="https://image.163ar.cn/tangniao/003/images/0068.jpg"
+        data-type="jpeg" data-w="80"
+        style="background-color: rgb(215, 158, 55);border-width: 1px;border-style: solid;border-color: rgb(215, 158, 55);background-size: 22px;background-position: center center;background-repeat: no-repeat;border-radius: 50%;display: inline;color: rgb(255, 255, 255);box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;visibility: visible !important;width: 50px !important;">
+      <p class=""
+        style="padding-bottom: 6px;max-width: 100%;min-height: 1em;font-weight: bold;box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;">
+        教书育人小园丁</p>
+      <p class=""
+        style="padding: 4px 6px;max-width: 100%;min-height: 1em;background: rgb(248, 248, 248);border-radius: 4px;font-size: 14px;box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;">
+        效果确实挺明显的，感觉浑身暖洋洋的，喝了一段时间后，现在早上也有晨勃了，涨的很是舒服，最明显的是老婆的态度。现在每天都缠着想要，比我还兴奋，哈哈</p>
+      <p
+        style="margin-top: 8px;margin-bottom: 8px;max-width: 100%;min-height: 1em;color: rgb(153, 153, 153);font-size: 13px;box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;">
+        1分钟前</p>
+    </section>
+    <section class=""
+      style="padding-bottom: 1.875rem;max-width: 100%;font-size: medium;letter-spacing: 0.544px;white-space: normal;background-color: rgb(255, 255, 255);width: 583px;height: auto;overflow: hidden;font-family: -apple-system-font, BlinkMacSystemFont, Arial, sans-serif;box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;">
+      <img class="" data-ratio="0.6666666666666666" src="https://image.163ar.cn/tangniao/003/images/0069.jpg"
+        data-type="jpeg" data-w="80"
+        style="background-color: rgb(215, 158, 55);border-width: 1px;border-style: solid;border-color: rgb(215, 158, 55);background-size: 22px;background-position: center center;background-repeat: no-repeat;border-radius: 50%;display: inline;color: rgb(255, 255, 255);box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;visibility: visible !important;width: 50px !important;">
+      <p class=""
+        style="padding-bottom: 6px;max-width: 100%;min-height: 1em;font-weight: bold;box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;">
+        狭路相逢</p>
+      <p class=""
+        style="padding: 4px 6px;max-width: 100%;min-height: 1em;background: rgb(248, 248, 248);border-radius: 4px;font-size: 14px;box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;">
+        我是比较严重的，身体差的厉害，每次还不到一分钟，老婆都快急疯了。后来认识了老师，听了老师的仔细讲解后，抱着试一试的态度买了两个周期，结果第三天的时候居然有反应了，真的乐坏我了，哈哈，然后又喝了一段时间，最明显的是晨勃又回来了，而且每次做的时候能出来好多，感觉慢慢回到了年轻的时候，房事时间也到半个小时左右，关键是啥，老婆有次说以前都没有到底，现在顶到底了！！！没想到持续坚持下来还有这效果！！！
+      </p>
+
+      <p
+        style="margin-top: 8px;margin-bottom: 8px;max-width: 100%;min-height: 1em;color: rgb(153, 153, 153);font-size: 13px;box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;">
+        1分钟前</p>
+    </section>
+
+
+    <section class=""
+      style="padding-bottom: 1.875rem;max-width: 100%;font-size: medium;letter-spacing: 0.544px;white-space: normal;background-color: rgb(255, 255, 255);width: 583px;height: auto;overflow: hidden;font-family: -apple-system-font, BlinkMacSystemFont, Arial, sans-serif;box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;">
+      <img class="" data-ratio="0.6666666666666666" src="https://image.163ar.cn/tangniao/003/images/0070.jpg"
+        data-type="jpeg" data-w="400"
+        style="background-color: rgb(215, 158, 55);border-width: 1px;border-style: solid;border-color: rgb(215, 158, 55);background-size: 22px;background-position: center center;background-repeat: no-repeat;border-radius: 50%;display: inline;color: rgb(255, 255, 255);box-sizing: border-box !important;word-wrap: break-word !important;height: 34px !important;overflow-wrap: break-word !important;visibility: visible !important;width: 50px !important;">
+      <p class=""
+        style="padding-bottom: 6px;max-width: 100%;min-height: 1em;font-weight: bold;box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;">
+        煮酒自饮</p>
+      <p class=""
+        style="padding: 4px 6px;max-width: 100%;min-height: 1em;background: rgb(248, 248, 248);border-radius: 4px;font-size: 14px;box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;">
+        大概年龄上，我比你们都要小，我27，之前自己手淫比较多，结果结婚以后性生活很不幸福，这么说吧，我和老婆爱爱
+        最难的一步就是硬不起来。别提多丢人了，虽然老婆很爱我，没说什么，但我压力比山都大，我怕要不了多久，家都要崩，传出去太丢人了。试了好多办法也不见效，偶然间遇到老师，老师一语道破原因，配合产品给我定制了解决方案。现在我们孩子都有了，是老师挽救了我的家庭，在这里我要谢谢老师
+      </p>
+      <p
+        style="margin-top: 8px;margin-bottom: 8px;max-width: 100%;min-height: 1em;color: rgb(153, 153, 153);font-size: 13px;box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;">
+        1分钟前</p>
+    </section>
+    <section class=""
+      style="padding-bottom: 1.875rem;max-width: 100%;font-size: medium;letter-spacing: 0.544px;white-space: normal;background-color: rgb(255, 255, 255);width: 583px;height: auto;overflow: hidden;font-family: -apple-system-font, BlinkMacSystemFont, Arial, sans-serif;box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;">
+      <p class=""
+        style="padding-bottom: 6px;max-width: 100%;min-height: 1em;font-weight: bold;box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;">
+        花园宝宝</p>
+      <p class=""
+        style="padding: 4px 6px;max-width: 100%;min-height: 1em;background: rgb(248, 248, 248);border-radius: 4px;font-size: 14px;box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;">
+        我和楼上兄弟差不多，也是手淫有点多，后来不行了，多亏遇到了老师，不然后半生不知道要多坎坷。</p>
+
+
+      <p
+        style="margin-top: 8px;margin-bottom: 8px;max-width: 100%;min-height: 1em;color: rgb(153, 153, 153);font-size: 13px;box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;">
+        1分钟前</p>
+    </section>
+    <section class=""
+      style="padding-bottom: 1.875rem;max-width: 100%;font-size: medium;letter-spacing: 0.544px;white-space: normal;background-color: rgb(255, 255, 255);width: 583px;height: auto;overflow: hidden;font-family: -apple-system-font, BlinkMacSystemFont, Arial, sans-serif;box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;">
+      <p class=""
+        style="padding-bottom: 6px;max-width: 100%;min-height: 1em;font-weight: bold;box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;">
+        那年冬天</p>
+      <p class=""
+        style="padding: 4px 6px;max-width: 100%;min-height: 1em;background: rgb(248, 248, 248);border-radius: 4px;font-size: 14px;box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;">
+        我是经朋友介绍才认识老师的，起初我也不太信，究竟就有这么神奇的事吗，但是看朋友一脸正经我又有点半信半疑，后来老师很认真详细的给我讲解了产品的药理原理，不仅解决了我心底的疑问，还解决了我的难言之隐。不怕你们笑话，以前老婆骂我废物，烂屌，我都不敢反驳，不过现在用了产品以后被我收拾的服服帖帖的，每天晚上都想要，哈哈
+      </p>
+
+      <p
+        style="margin-top: 8px;margin-bottom: 8px;max-width: 100%;min-height: 1em;color: rgb(153, 153, 153);font-size: 13px;box-sizing: border-box !important;word-wrap: break-word !important;overflow-wrap: break-word !important;">
+        2分钟前</p>
+    </section>
+
+
+
+
+
+
+				
+			</div>
+
+
+
+
+			<div id="js_sponsor_ad_area"></div>
+
+
+
+			<div class="read-more__area" id="js_more_read_area" style="display:none;">
+
+			</div>
+
+
+
+
+		</div>
+
+	</div>
+
+	<div id="bottom">
+    <div class="bottom">
+      <img src="images/bottom.jpg" alt="" class="bg">
+      <img src="" alt="" class="weixinpic">
+    </div>
+  </div>
+
+</body>
